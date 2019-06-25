@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 命名空间mapper,如果有多个mapper文件，这个必须唯一 -->
+<mapper namespace="com.duoweidu.model">
+
+    <!--根据环境获取交易中心服务器名称-->
+    <select id="envTradecenter" resultType="com.duoweidu.model.table.ServerHost">
+        select * from server_host
+        where channel_id = #{channel_id} and env = #{env}
+    </select>
+
+    <!--根据备注获取交易中心接口路径-->
+    <select id="tradecenterPath" resultType="com.duoweidu.model.table.InterfacePath">
+        select * from interface_path
+        where channel_id = #{channel_id} and note = #{note}
+    </select>
+
+
+    <!--插入构建结果-->
+    <insert id="insetBuild" parameterType="com.duoweidu.model.table.Build">
+        insert into mid_build (enabled,message_status)
+        values (#{enabled},#{message_status})
+    </insert>
+
+    <!--获取构建状态-->
+    <select id="getBuild" resultType="com.duoweidu.model.table.Build">
+        select * from mid_build order by id desc limit 10
+    </select>
+
+    <!--插入报错结果-->
+    <insert id="testInsert" parameterType="com.duoweidu.model.table.ErrnoResult">
+        insert into mid_errno_result (env_id,path_id,build_id,params,status,result)
+        values (#{env_id},#{path_id},#{build_id},#{params},#{status},#{result})
+    </insert>
+</mapper>
