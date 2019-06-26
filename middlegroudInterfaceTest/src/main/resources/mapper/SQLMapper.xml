@@ -17,7 +17,7 @@
     </select>
 
     <!--根据接口id获取接口相关信息-->
-    <select id="getPath" resultType="com.duoweidu.model.table.InterfacePath">
+    <select id="getPathId" resultType="com.duoweidu.model.table.InterfacePath">
         select * from interface_path
         where id = #{id} and channel_id = #{channel_id}
     </select>
@@ -49,7 +49,7 @@
 
     <!--更新报错次数-->
     <insert id="updatePathErrnoCount" parameterType="com.duoweidu.model.table.InterfacePath">
-        update interface_path set errno_count = #{errno_count} where id = #{id} and channel = #{channel}
+        update interface_path set errno_count = #{errno_count} where id = #{id} and channel_id = #{channel_id}
     </insert>
 
 </mapper>

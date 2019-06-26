@@ -67,7 +67,7 @@ public class SqlGeneral {
      */
     public static InterfacePath getInterfacePathValue(int id, int channel_id) {
         InterfacePath interfacePath = new InterfacePath(id, channel_id);
-        return session.selectOne("getPath", interfacePath);
+        return session.selectOne("getPathId", interfacePath);
     }
 
     /**
