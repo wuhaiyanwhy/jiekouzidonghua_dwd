@@ -9,9 +9,8 @@ public class Create extends InterfaceTest {
 
     @Test(description = "创建账户")
     public void create() {
-        url = ConfigFileUrl.getUrlByKey("交易中心接口");
-        System.out.println("返回的值：" + SqlTradecenter.getTradeCenterPathId("交易中心接口"));
-        pathId = SqlTradecenter.getTradeCenterPathId("交易中心接口");
+        url = ConfigFileUrl.getUrlByKey("gatewayHttp");
+        pathId = SqlTradecenter.getTradeCenterPathId("gatewayHttp");
         process(true, false);
     }
 }
