@@ -4,33 +4,52 @@
 <!-- 命名空间mapper,如果有多个mapper文件，这个必须唯一 -->
 <mapper namespace="com.duoweidu.model">
 
-    <!--根据环境获取交易中心服务器名称-->
-    <select id="envTradecenter" resultType="com.duoweidu.model.table.ServerHost">
+    <!--根据环境获取服务器名称/Ip-->
+    <select id="getEnv" resultType="com.duoweidu.model.table.ServerHost">
         select * from server_host
         where channel_id = #{channel_id} and env = #{env}
     </select>
 
-    <!--根据备注获取交易中心接口路径-->
-    <select id="tradecenterPath" resultType="com.duoweidu.model.table.InterfacePath">
+    <!--根据接口名称获取接口路径-->
+    <select id="getPath" resultType="com.duoweidu.model.table.InterfacePath">
         select * from interface_path
-        where channel_id = #{channel_id} and note = #{note}
+        where channel_id = #{channel_id} and name = #{name}
     </select>
 
+    <!--根据接口id获取接口相关信息-->
+    <select id="getPath" resultType="com.duoweidu.model.table.InterfacePath">
+        select * from interface_path
+        where id = #{id} and channel_id = #{channel_id}
+    </select>
+
+    <!--获取参数值-->
+    <select id="getParam" resultType="com.duoweidu.model.table.Param">
+        select * from mid_param
+        where channel_id = #{channel_id} and env = #{env} and name = #{name}
+    </select>
 
     <!--插入构建结果-->
-    <insert id="insetBuild" parameterType="com.duoweidu.model.table.Build">
-        insert into mid_build (enabled,message_status)
-        values (#{enabled},#{message_status})
+    <insert id="insertBuild" parameterType="com.duoweidu.model.table.Build">
+        insert into mid_build (channel_id,env,enabled,message_status)
+        values (#{channel_id},#{env},#{enabled},#{message_status})
     </insert>
 
     <!--获取构建状态-->
     <select id="getBuild" resultType="com.duoweidu.model.table.Build">
-        select * from mid_build order by id desc limit 10
+        select * from mid_build
+        where channel_id = #{channel_id} and env = #{env}
+        order by id desc limit 10
     </select>
 
     <!--插入报错结果-->
-    <insert id="testInsert" parameterType="com.duoweidu.model.table.ErrnoResult">
-        insert into mid_errno_result (env_id,path_id,build_id,params,status,result)
-        values (#{env_id},#{path_id},#{build_id},#{params},#{status},#{result})
+    <insert id="insertErrnoResult" parameterType="com.duoweidu.model.table.ErrnoResult">
+        insert into mid_errno_result (channel_id,env_id,path_id,build_id,params,status,result)
+        values (#{channel_id},#{env_id},#{path_id},#{build_id},#{params},#{status},#{result})
     </insert>
+
+    <!--更新报错次数-->
+    <insert id="updatePathErrnoCount" parameterType="com.duoweidu.model.table.InterfacePath">
+        update interface_path set errno_count = #{errno_count} where id = #{id} and channel = #{channel}
+    </insert>
+
 </mapper>

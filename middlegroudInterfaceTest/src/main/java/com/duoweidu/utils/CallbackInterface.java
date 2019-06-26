@@ -26,16 +26,16 @@ public class CallbackInterface {
         defaultHttpClient = new DefaultHttpClient();
     }
 
-
     /**
      * 获取请求结果并加基本断言
      * @param response
      * @param url
+     * @param path_id
      * @param param
      * @return
      */
-    public static String getResult(HttpResponse response, String url, String param) {
-        GeneralAssert.codeAssert(response, url,param);
+    public static String getResult(HttpResponse response, String url, int path_id, String param) {
+        GeneralAssert.codeAssert(response, url, path_id, param);
         String result = null;
         try {
             result = EntityUtils.toString(response.getEntity(),"utf-8");
@@ -50,7 +50,7 @@ public class CallbackInterface {
             }
         }
         System.out.println("接口返回：" + result);
-        GeneralAssert.resultAssert(url,param,result);
+        GeneralAssert.resultAssert(url, path_id, param, result);
         return result;
 
     }
@@ -58,10 +58,11 @@ public class CallbackInterface {
     /**
      * GET请求
      * @param url
+     * @param path_id
      * @param param
      * @return
      */
-    public static String getStringResult(String url, String param) {
+    public static String getStringResult(String url, int path_id, String param) {
         HttpGet get = new HttpGet(url + "?" + param);
         GeneralConfig.defaultHttpClient.setCookieStore(GeneralConfig.store);
         HttpResponse response = null;
@@ -70,16 +71,17 @@ public class CallbackInterface {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return getResult(response, url, param);
+        return getResult(response, url, path_id, param);
     }
 
     /**
      * POST请求，LIST
      * @param url
+     * @param path_id
      * @param list
      * @return
      */
-    public static String postStringResult(String url, List<NameValuePair> list) {
+    public static String postStringResult(String url, int path_id,List<NameValuePair> list) {
         HttpPost post = new HttpPost(url);
         GeneralConfig.defaultHttpClient.setCookieStore(GeneralConfig.store);
         UrlEncodedFormEntity entity = null;
@@ -95,16 +97,17 @@ public class CallbackInterface {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return getResult(response, url, list.toString());
+        return getResult(response, url, path_id, list.toString());
     }
 
     /**
      * post请求，String
      * @param url
+     * @param path_id
      * @param param
      * @return
      */
-    public static String postStringResult(String url, String param) {
+    public static String postStringResult(String url, int path_id, String param) {
         HttpPost post = new HttpPost(url);
         post.setHeader("Content-Type", "application/json");
         GeneralConfig.defaultHttpClient.setCookieStore(GeneralConfig.store);
@@ -121,7 +124,7 @@ public class CallbackInterface {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return getResult(response, url, param);
+        return getResult(response, url, path_id, param);
     }
 
 

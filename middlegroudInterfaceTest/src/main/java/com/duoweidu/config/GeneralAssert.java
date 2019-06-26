@@ -19,7 +19,7 @@ public class GeneralAssert extends Assert {
      * @param status
      * @return
      */
-    public static String distinguishParamFailed(String faile,String uri,String param,String result,int status) {
+    public static String distinguishParamFailed(String faile, String uri, int path_id, String param, int status, String result) {
         String failed = null;
         String parameterFailed = null;
         String errnoResult = null;
@@ -40,9 +40,12 @@ public class GeneralAssert extends Assert {
         /**
          * 如果不是线上环境/调试状态时则不调用报错相关预警
          */
+        //插入报错数据
+        SqlTradecenter.insertTradeCenterErrnoResult(path_id, param, status, result);
+        //插入报错次数
+        SqlTradecenter.updateTradeCenterPathErrnoCount(path_id);
         if("prod".equals(ConfigFileUrl.getEnv()) && "false".equals(ConfigFileUrl.getDebug())) {
             GeneralConfig.errnoList.add(uri);
-            TestSql.inesrtErrnoResult(uri,param,status,errnoResult);
         }
         if (param == null) {
             return failed;
@@ -57,7 +60,7 @@ public class GeneralAssert extends Assert {
      * @param uri
      * @param param
      */
-    public static void codeAssert(HttpResponse response, String uri, String param) {
+    public static void codeAssert(HttpResponse response, String uri, int path_id, String param) {
         int statusCode =  response.getStatusLine().getStatusCode();
         if (statusCode != 200) {
             //需要一个HTTP_好的状态从响应和不得到它，你仍然必须消耗实体
@@ -68,7 +71,7 @@ public class GeneralAssert extends Assert {
                     e.printStackTrace();
                 }
             }
-            fail(distinguishParamFailed("返回的code不正确",uri,param,null,1));
+            fail(distinguishParamFailed("返回的code不正确", uri, path_id, param,1, null));
         }
 
     }
@@ -79,9 +82,9 @@ public class GeneralAssert extends Assert {
      * @param param
      * @param result
      */
-    public static void resultAssert(String uri,String param,String result) {
+    public static void resultAssert(String uri, int path_id, String param,String result) {
         if (result == null || result.equals("")) {
-            fail(distinguishParamFailed("返回的数据为空;", uri, param, result, 2));
+            fail(distinguishParamFailed("返回的数据为空;", uri, path_id, param,2, result));
         }
     }
 
@@ -93,9 +96,9 @@ public class GeneralAssert extends Assert {
      * @param param
      * @param result
      */
-    public static void errnoAssert(String errno, String errmsg, String uri, String param, String result) {
+    public static void errnoAssert(String errno, String errmsg, String uri, int path_id, String param, String result) {
         if(!errno.equals("0") || !errmsg.equals("success")){
-            fail(distinguishParamFailed("返回的errno不为0/errmsg不为success;\n返回的errno/errmsg:" + errno + "/" + errmsg, uri, param, result,3));
+            fail(distinguishParamFailed("返回的errno不为0/errmsg不为success;\n返回的errno/errmsg:" + errno + "/" + errmsg, uri, path_id, param,3, result));
         }
     }
 
@@ -106,9 +109,9 @@ public class GeneralAssert extends Assert {
      * @param param
      * @param result
      */
-    public static void dataAssert(Object data,String uri,String param,String result) {
+    public static void dataAssert(Object data, String uri, int path_id, String param, String result) {
         if(data.equals("{}")){
-            fail(distinguishParamFailed("返回的data数据为空;",uri,param,result,4));
+            fail(distinguishParamFailed("返回的data数据为空;", uri, path_id, param,4, result));
         }
     }
 
@@ -119,9 +122,9 @@ public class GeneralAssert extends Assert {
      * @param param
      * @param result
      */
-    public static void listAssert(JSONArray list, String uri, String param, String result) {
+    public static void listAssert(JSONArray list, String uri, int path_id, String param, String result) {
         if(list.length() <= 0){
-            fail(distinguishParamFailed("返回的list数据为空;",uri,param,result,5));
+            fail(distinguishParamFailed("返回的list数据为空;", uri, path_id, param, 5, result));
         }
     }
 
@@ -132,9 +135,9 @@ public class GeneralAssert extends Assert {
      * @param result
      * @param e
      */
-    public static void jsonAssert(String uri, String param, String result, JSONException e) {
+    public static void jsonAssert(String uri, int path_id, String param, String result, JSONException e) {
         fail(distinguishParamFailed("json解析错误;" +
-                "\n报错的代码:" + e.toString(),uri,param,result,6));
+                "\n报错的代码:" + e.toString(), uri, path_id, param, 6, result));
     }
 
     /**
@@ -144,8 +147,8 @@ public class GeneralAssert extends Assert {
      * @param param
      * @param result
      */
-    public static void detailedAssert(String faile, String uri, String param, String result) {
-        fail(distinguishParamFailed(faile,uri,param,result,7));
+    public static void detailedAssert(String faile, String uri, int path_id, String param, String result) {
+        fail(distinguishParamFailed(faile, uri, path_id, param, 7, result));
     }
 
 }

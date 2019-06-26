@@ -15,13 +15,13 @@ public class ConfigFileUrl {
 
     /**
      * 拼接url
-     * @param note
+     * @param name
      * @return
      */
-    public static String getUrlByKey(String note) {
+    public static String getUrlByKey(String name) {
         String protocol = SqlTradecenter.getTradeCenterProtocol();
         String server_name = SqlTradecenter.getTradeCenterServerName();
-        String path = SqlTradecenter.getTradeCenterPath(note);
+        String path = SqlTradecenter.getTradeCenterPath(name);
         if (path.isEmpty()) {
             throw new IllegalStateException("未知地址");
         }

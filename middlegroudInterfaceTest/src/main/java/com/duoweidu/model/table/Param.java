@@ -5,25 +5,27 @@ import lombok.Data;
 import java.sql.Timestamp;
 
 /**
- * 环境表model
+ * 接口参数表model
  */
 @Data
-public class ServerHost {
+public class Param {
 
     private int id;
     private int channel_id;
+    private int path_id;
     private int env;
-    private String protocol;
-    private String server_name;
-    private Timestamp created_at;
     private String name;
+    private String value;
+    private Timestamp created_at;
+    private String note;
 
-    public ServerHost() {
+    public  Param() {
 
     }
 
-    public ServerHost(int channel_id, int env) {
+    public Param(int channel_id, int env, String name) {
         this.channel_id = channel_id;
         this.env = env;
+        this.name = name;
     }
 }

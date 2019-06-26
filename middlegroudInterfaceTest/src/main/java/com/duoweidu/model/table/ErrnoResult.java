@@ -21,4 +21,18 @@ public class ErrnoResult {
     private Timestamp created_at;
     private String note;
 
+    public ErrnoResult() {
+
+    }
+
+    public ErrnoResult(int channel_id, int env_id, int path_id, int build_id, String params, int status, String result) {
+        this.channel_id = channel_id;
+        this.env_id = env_id;
+        this.path_id = path_id;
+        this.build_id = build_id;
+        this.params = params;
+        this.status = status;
+        this.result = result;
+    }
+
 }

@@ -2,6 +2,7 @@ package com.duoweidu.cases.interfaces;
 
 import com.alibaba.fastjson.JSON;
 import com.duoweidu.config.GeneralAssert;
+import com.duoweidu.config.SqlTradecenter;
 import com.duoweidu.utils.CallbackInterface;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
@@ -10,7 +11,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.testng.Assert;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class InterfaceTest {
@@ -18,17 +18,19 @@ public class InterfaceTest {
 
     //用来储存url
     protected String url;
-    //用来储存接口路径
-    protected String path;
+    //用来储存接口路径id
+    protected int path_id;
     //用来储存参数信息
     protected String param;
     //用来储存返回的结果
     protected String result;
-    //储存报错结果
+    //自定义报错结果
+    protected String failed;
+    //拼接错误结果并做处理
     protected String faile;
 
     {
-        faile = GeneralAssert.distinguishParamFailed(faile, param, result, result, 1);
+        faile = GeneralAssert.distinguishParamFailed(failed, url, path_id, param, 7, result );
     }
 
     protected <T> T sparseJson(Class<T> clazz) {
@@ -37,7 +39,7 @@ public class InterfaceTest {
             JSONObject data = jsonObject.getJSONObject("data");
             return JSON.parseObject(data.toString(), clazz);
         } catch (JSONException e) {
-            GeneralAssert.jsonAssert(url, param, result, e);
+            GeneralAssert.jsonAssert(url, path_id, param, result, e);
         }
         return null;
     }
@@ -46,13 +48,13 @@ public class InterfaceTest {
     protected void process(boolean isAssert,boolean isList) {
         System.out.println(url);
         //通用参数
-        String par = "v=" + TestSql.getOpenapiValue("v",4);
+        String par = "v=" + SqlTradecenter.getTradeCenterParamValue(0, "v");
         if (param != null) {
             this.param = par + "&" + param;
         }else {
             this.param = par;
         }
-        result = CallbackInterface.getStringResult(url,this.param);
+        result = CallbackInterface.getStringResult(url, path_id, this.param);
         if (isAssert == true) {
             generalAssertTest(isList);
         }
@@ -63,9 +65,9 @@ public class InterfaceTest {
     protected void process(List<NameValuePair> list, boolean isAssert, boolean isList) {
         System.out.println(url);
         //通用参数
-        list.add(new BasicNameValuePair("v",TestSql.getOpenapiValue("v",4)));
+        list.add(new BasicNameValuePair("v", SqlTradecenter.getTradeCenterParamValue(0, "v")));
         param = list.toString();
-        result = CallbackInterface.postStringResult(url, list);
+        result = CallbackInterface.postStringResult(url, path_id, list);
         if (isAssert == true) {
             generalAssertTest(isList);
         }
@@ -75,9 +77,9 @@ public class InterfaceTest {
     protected void generalAssertTest() {
         try {
             JSONObject jsonObject = new JSONObject(result);
-            GeneralAssert.errnoAssert(jsonObject.get("errno").toString(), jsonObject.get("errmsg").toString(), url, param, result);
+            GeneralAssert.errnoAssert(jsonObject.get("errno").toString(), jsonObject.get("errmsg").toString(), url, path_id, param, result);
         }catch (JSONException e){
-            GeneralAssert.jsonAssert(url,param,result,e);
+            GeneralAssert.jsonAssert(url, path_id, param, result, e);
         }
     }
 
@@ -86,13 +88,13 @@ public class InterfaceTest {
         try {
             JSONObject jsonObject = new JSONObject(result);
             JSONObject data = (JSONObject) jsonObject.get("data");
-            GeneralAssert.errnoAssert(jsonObject.get("errno").toString(), jsonObject.get("errmsg").toString(), url, param, result);
-            GeneralAssert.dataAssert(jsonObject.get("data").toString(), url, param, result);
+            GeneralAssert.errnoAssert(jsonObject.get("errno").toString(), jsonObject.get("errmsg").toString(), url, path_id, param, result);
+            GeneralAssert.dataAssert(jsonObject.get("data").toString(), url, path_id, param, result);
             if (isList == true) {
-                GeneralAssert.listAssert((JSONArray) data.get("list"), url, param, result);
+                GeneralAssert.listAssert((JSONArray) data.get("list"), url, path_id, param, result);
             }
         }catch (JSONException e){
-            GeneralAssert.jsonAssert(url,param,result,e);
+            GeneralAssert.jsonAssert(url, path_id, param, result, e);
         }
     }
 
