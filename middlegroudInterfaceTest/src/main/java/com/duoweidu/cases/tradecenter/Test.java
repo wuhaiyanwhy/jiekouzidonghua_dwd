@@ -1,7 +1,8 @@
 package com.duoweidu.cases.tradecenter;
 
+import com.duoweidu.cases.message.DingDing;
+import com.duoweidu.cases.message.Message;
 import com.duoweidu.config.SqlTradecenter;
-import com.duoweidu.utils.ConfigFileUrl;
 
 public class Test {
 
@@ -13,9 +14,12 @@ public class Test {
 //        System.out.println(SqlTradecenter.getTradeCenterBuildEnabled().toString());
 //        System.out.println(SqlTradecenter.getTradeCenterBuildMessageStatus().toString());
 //        SqlTradecenter.updateTradeCenterPathErrnoCount(1);
-        SqlTradecenter.insertTradeCenterErrnoResult(1,"1,2,3", 1,"123");
-        SqlTradecenter.insertTradeCenterBuild(1, 0);
-
+//        SqlTradecenter.insertTradeCenterErrnoResult(1,"1,2,3", 1,"123");
+//        SqlTradecenter.insertTradeCenterBuild(1, 0);
+        Message.sendMessage(SqlTradecenter.getParamValue(0, "mobile1"));
+        DingDing.push(SqlTradecenter.getParamValue(0, "mobile1"),
+                SqlTradecenter.getParamValue(0, "mobile2"),
+                SqlTradecenter.getParamValue(0, "mobile3"));
 
     }
 }

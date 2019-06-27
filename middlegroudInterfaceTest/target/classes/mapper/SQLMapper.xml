@@ -41,6 +41,13 @@
         order by id desc limit 10
     </select>
 
+    <select id="getBuildId" resultType="com.duoweidu.model.table.Build">
+        select * from mid_build
+        where channel_id = #{channel_id}
+        order by id desc limit 1
+    </select>
+
+
     <!--插入报错结果-->
     <insert id="insertErrnoResult" parameterType="com.duoweidu.model.table.ErrnoResult">
         insert into mid_errno_result (channel_id,env_id,path_id,build_id,params,status,result)

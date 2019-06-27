@@ -11,15 +11,15 @@ public class SqlTradecenter {
      * 交易中心渠道号默认为6
      * 1.好食期 2.爱抢购 3.觅食蜂 4.返一半 5.巨食阵 6.交易中心
      */
-    private static final int chanel_id = 6;
+    private static final int channel_id = 6;
 
     /**
      * 获取服务主机表的协议
      *
      * @return
      */
-    public static String getTradeCenterProtocol() {
-        return SqlGeneral.getServerHostValue(chanel_id).getProtocol();
+    public static String getProtocol() {
+        return SqlGeneral.getServerHostValue(channel_id).getProtocol();
     }
 
     /**
@@ -27,8 +27,8 @@ public class SqlTradecenter {
      *
      * @return
      */
-    public static String getTradeCenterServerName() {
-        return SqlGeneral.getServerHostValue(chanel_id).getServer_name();
+    public static String getServerName() {
+        return SqlGeneral.getServerHostValue(channel_id).getServer_name();
     }
 
     /**
@@ -36,8 +36,8 @@ public class SqlTradecenter {
      * @param name
      * @return
      */
-    public static String getTradeCenterPath(String name) {
-        return SqlGeneral.getInterfacePathValue(chanel_id, name).getPath();
+    public static String getPath(String name) {
+        return SqlGeneral.getInterfacePathValue(channel_id, name).getPath();
     }
 
     /**
@@ -45,8 +45,8 @@ public class SqlTradecenter {
      * @param name
      * @return
      */
-    public static int getTradeCenterPathId(String name) {
-        return SqlGeneral.getInterfacePathValue(chanel_id, name).getId();
+    public static int getPathId(String name) {
+        return SqlGeneral.getInterfacePathValue(channel_id, name).getId();
     }
 
     /**
@@ -54,16 +54,16 @@ public class SqlTradecenter {
      * @param id
      * @return
      */
-    public static int getTradeCenterPathErrnoCount(int id) {
-        return SqlGeneral.getInterfacePathValue(id, chanel_id).getErrno_count();
+    public static int getPathErrnoCount(int id) {
+        return SqlGeneral.getInterfacePathValue(id, channel_id).getErrno_count();
     }
 
     /**
      * 更新报错次数，根据path_id 自增1
      * @param id
      */
-    public static void updateTradeCenterPathErrnoCount(int id) {
-        SqlGeneral.updateInterfacePathErrnoCount(id, chanel_id, getTradeCenterPathErrnoCount(id) + 1);
+    public static void updatePathErrnoCount(int id) {
+        SqlGeneral.updateInterfacePathErrnoCount(id, channel_id, getPathErrnoCount(id) + 1);
     }
 
     /**
@@ -71,8 +71,8 @@ public class SqlTradecenter {
      * @param name
      * @return
      */
-    public static String getTradeCenterParamValue(String name) {
-        return SqlGeneral.getParamValue(chanel_id, name).getValue();
+    public static String getParamValue(String name) {
+        return SqlGeneral.getParamValue(channel_id, name).getValue();
     }
 
     /**
@@ -82,8 +82,8 @@ public class SqlTradecenter {
      * @param name
      * @return
      */
-    public static String getTradeCenterParamValue(int env, String name) {
-        return SqlGeneral.getParamValue(chanel_id, env, name).getValue();
+    public static String getParamValue(int env, String name) {
+        return SqlGeneral.getParamValue(channel_id, env, name).getValue();
     }
 
     /**
@@ -91,47 +91,32 @@ public class SqlTradecenter {
      * @param enabled
      * @param message_status
      */
-    public static void insertTradeCenterBuild(int enabled, int message_status) {
-        SqlGeneral.insertBuildValue(chanel_id, enabled, message_status);
+    public static void insertBuild(int enabled, int message_status) {
+        SqlGeneral.insertBuildValue(channel_id, enabled, message_status);
     }
 
     /**
      * 获取构建状态
      * @return
      */
-    public static ArrayList<Integer> getTradeCenterBuildEnabled() {
-
-        ArrayList<Integer> enabled = new ArrayList<>();
-        for (int i = 0; i < SqlGeneral.getBuild(chanel_id).size(); i++) {
-            enabled.add(SqlGeneral.getBuild(chanel_id).get(i).getEnabled());
-
-        }
-        return enabled;
+    public static ArrayList<Integer> getBuildEnabled() {
+        return SqlGeneral.getBuildEnabled(channel_id);
     }
 
     /**
      * 获取发送短信状态
      * @return
      */
-    public static ArrayList<Integer> getTradeCenterBuildMessageStatus() {
-
-        ArrayList<Integer> messageStatus = new ArrayList<>();
-        for (int i = 0; i < SqlGeneral.getBuild(chanel_id).size(); i++) {
-            messageStatus.add(SqlGeneral.getBuild(chanel_id).get(i).getMessage_status());
-        }
-        return messageStatus;
+    public static ArrayList<Integer> getBuildMessageStatus() {
+        return SqlGeneral.getBuildMessageStatus(channel_id);
     }
 
     /**
      * 获取最新的构建id
      * @return
      */
-    public static ArrayList<Integer> getTradeCenterBuildId() {
-        ArrayList<Integer> id = new ArrayList<>();
-        for (int i = 0; i < SqlGeneral.getBuild(chanel_id).size(); i++) {
-            id.add(SqlGeneral.getBuild(chanel_id).get(i).getId());
-        }
-        return id;
+    public static int getBuildId() {
+        return SqlGeneral.getBuildId(channel_id).getId();
     }
 
     /**
@@ -141,8 +126,8 @@ public class SqlTradecenter {
      * @param status
      * @param result
      */
-    public static void insertTradeCenterErrnoResult(int path_id, String params, int status, String result) {
-        SqlGeneral.insertErrnoResult(chanel_id, path_id, getTradeCenterBuildId().get(0), params, status, result);
+    public static void insertErrnoResult(int path_id, String params, int status, String result) {
+        SqlGeneral.insertErrnoResult(channel_id, path_id, getBuildId() + 1, params, status, result);
     }
 
 

@@ -10,7 +10,7 @@ public class Create extends InterfaceTest {
     @Test(description = "创建账户")
     public void create() {
         url = ConfigFileUrl.getUrlByKey("gatewayHttp");
-        pathId = SqlTradecenter.getTradeCenterPathId("gatewayHttp");
+        pathId = SqlTradecenter.getPathId("gatewayHttp");
         process(true, false);
     }
 }

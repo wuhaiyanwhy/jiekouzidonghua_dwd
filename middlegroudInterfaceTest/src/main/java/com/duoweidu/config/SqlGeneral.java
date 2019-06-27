@@ -6,6 +6,7 @@ import com.duoweidu.utils.DatabaseUtil;
 import org.apache.ibatis.session.SqlSession;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -45,6 +46,17 @@ public class SqlGeneral {
      */
     public static ServerHost getServerHostValue(int channel_id) {
         ServerHost serverHost = new ServerHost(channel_id, getEnv());
+        return session.selectOne("getEnv", serverHost);
+    }
+
+    /**
+     * 根据渠道和环境获取服务器主机表的值
+     * @param channel_id
+     * @param env
+     * @return
+     */
+    public static ServerHost getServerHostValue(int channel_id, int env) {
+        ServerHost serverHost = new ServerHost(channel_id, env);
         return session.selectOne("getEnv", serverHost);
     }
 
@@ -145,6 +157,43 @@ public class SqlGeneral {
         Build build = new Build(channel_id, getEnv());
         return session.selectList("getBuild", build);
     }
+
+    /**
+     * 获取构建状态
+     * @return
+     */
+    public static ArrayList<Integer> getBuildEnabled(int channel_id) {
+
+        ArrayList<Integer> enabled = new ArrayList<>();
+        for (int i = 0; i < SqlGeneral.getBuild(channel_id).size(); i++) {
+            enabled.add(SqlGeneral.getBuild(channel_id).get(i).getEnabled());
+
+        }
+        return enabled;
+    }
+
+    /**
+     * 获取发送短信状态
+     * @return
+     */
+    public static ArrayList<Integer> getBuildMessageStatus(int channel_id) {
+
+        ArrayList<Integer> messageStatus = new ArrayList<>();
+        for (int i = 0; i < SqlGeneral.getBuild(channel_id).size(); i++) {
+            messageStatus.add(SqlGeneral.getBuild(channel_id).get(i).getMessage_status());
+        }
+        return messageStatus;
+    }
+
+    /**
+     * 获取最新的构建id,跟环境无关
+     * @return
+     */
+    public static Build getBuildId(int channel_id) {
+        Build build = new Build(channel_id);
+        return session.selectOne("getBuildId", build);
+    }
+
 
     /**
      * 插入报错相关信息

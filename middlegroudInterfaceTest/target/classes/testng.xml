@@ -2,11 +2,21 @@
 
 <suite name = "中台接口测试">
 
-    <test name ="消息推送">
+    <test name ="交易中心">
         <classes >
             <class name="com.duoweidu.cases.tradecenter.Create">
                 <methods>
                     <include name="create"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name ="消息推送">
+        <classes >
+            <class name="com.duoweidu.cases.message.Build">
+                <methods>
+                    <include name="build"/>
                 </methods>
             </class>
         </classes>

@@ -22,6 +22,11 @@ public class Build {
 
     }
 
+    public Build(int channel_id) {
+
+        this.channel_id = channel_id;
+    }
+
     public Build(int channel_id, int env) {
 
         this.channel_id = channel_id;

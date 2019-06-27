@@ -41,10 +41,10 @@ public class GeneralAssert extends Assert {
          * 如果不是线上环境/调试状态时则不调用报错相关预警
          */
         //插入报错数据
-        SqlTradecenter.insertTradeCenterErrnoResult(path_id, param, status, errnoResult);
+        SqlTradecenter.insertErrnoResult(path_id, param, status, errnoResult);
         if("prod".equals(ConfigFileUrl.getEnv()) && "false".equals(ConfigFileUrl.getDebug())) {
             //插入报错次数
-            SqlTradecenter.updateTradeCenterPathErrnoCount(path_id);
+            SqlTradecenter.updatePathErrnoCount(path_id);
             GeneralConfig.errnoList.add(uri);
         }
         if (param == null) {

@@ -81,7 +81,7 @@ public class CallbackInterface {
      * @param list
      * @return
      */
-    public static String postStringResult(String url, int path_id,List<NameValuePair> list) {
+    public static String postStringResult(String url, int path_id, List<NameValuePair> list) {
         HttpPost post = new HttpPost(url);
         GeneralConfig.defaultHttpClient.setCookieStore(GeneralConfig.store);
         UrlEncodedFormEntity entity = null;

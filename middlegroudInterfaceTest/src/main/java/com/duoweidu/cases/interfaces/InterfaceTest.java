@@ -48,7 +48,7 @@ public class InterfaceTest {
     protected void process(boolean isAssert,boolean isList) {
         System.out.println(url);
         //通用参数
-        String par = "v=" + SqlTradecenter.getTradeCenterParamValue(0, "v");
+        String par = "v=" + SqlTradecenter.getParamValue(0, "v");
         if (param != null) {
             this.param = par + "&" + param;
         }else {
@@ -64,7 +64,7 @@ public class InterfaceTest {
     protected void process(List<NameValuePair> list, boolean isAssert, boolean isList) {
         System.out.println(url);
         //通用参数
-        list.add(new BasicNameValuePair("v", SqlTradecenter.getTradeCenterParamValue(0, "v")));
+        list.add(new BasicNameValuePair("v", SqlTradecenter.getParamValue(0, "v")));
         param = list.toString();
         result = CallbackInterface.postStringResult(url, pathId, list);
         if (isAssert == true) {

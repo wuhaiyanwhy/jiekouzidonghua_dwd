@@ -1,5 +1,6 @@
 package com.duoweidu.utils;
 
+import com.duoweidu.config.SqlGeneral;
 import com.duoweidu.config.SqlTradecenter;
 
 import java.util.Locale;
@@ -19,14 +20,32 @@ public class ConfigFileUrl {
      * @return
      */
     public static String getUrlByKey(String name) {
-        String protocol = SqlTradecenter.getTradeCenterProtocol();
-        String server_name = SqlTradecenter.getTradeCenterServerName();
-        String path = SqlTradecenter.getTradeCenterPath(name);
+        String protocol = SqlTradecenter.getProtocol();
+        String server_name = SqlTradecenter.getServerName();
+        String path = SqlTradecenter.getPath(name);
         if (path.isEmpty()) {
             throw new IllegalStateException("未知地址");
         }
         return protocol + "://" + server_name + path;
     }
+
+    /**
+     * 拼接url，根据渠道
+     * @param channel_id
+     * @param env
+     * @param name
+     * @return
+     */
+    public static String getUrlByKey(int channel_id, int env, String name) {
+        String protocol = SqlGeneral.getServerHostValue(channel_id, env).getProtocol();
+        String server_name = SqlGeneral.getServerHostValue(channel_id, env).getServer_name();
+        String path = SqlGeneral.getInterfacePathValue(channel_id, name).getPath();
+        if (path.isEmpty()) {
+            throw new IllegalStateException("未知地址");
+        }
+        return protocol + "://" + server_name + path;
+    }
+
 
     //环境
     public static String getEnv() {
