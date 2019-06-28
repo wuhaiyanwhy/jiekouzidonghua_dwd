@@ -2,15 +2,13 @@ package com.duoweidu.cases.interfaces;
 
 import com.alibaba.fastjson.JSON;
 import com.duoweidu.config.GeneralAssert;
-import com.duoweidu.config.SqlTradecenter;
 import com.duoweidu.utils.CallbackInterface;
 import org.apache.http.NameValuePair;
-import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.testng.Assert;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class InterfaceTest {
@@ -24,14 +22,6 @@ public class InterfaceTest {
     protected String param;
     //用来储存返回的结果
     protected String result;
-//    //自定义报错结果
-//    protected String failed;
-//    //拼接错误结果并做处理
-//    protected String faile;
-//
-//    {
-//        faile = GeneralAssert.distinguishParamFailed(failed, url, pathId, param, 7, result );
-//    }
 
     protected <T> T sparseJson(Class<T> clazz) {
         try {
@@ -47,13 +37,6 @@ public class InterfaceTest {
     //get请求
     protected void process(boolean isAssert,boolean isList) {
         System.out.println(url);
-        //通用参数
-        String par = "v=" + SqlTradecenter.getParamValue(0, "v");
-        if (param != null) {
-            this.param = par + "&" + param;
-        }else {
-            this.param = par;
-        }
         result = CallbackInterface.getStringResult(url, pathId, this.param);
         if (isAssert == true) {
             generalAssertTest(isList);
@@ -63,8 +46,6 @@ public class InterfaceTest {
     //post请求
     protected void process(List<NameValuePair> list, boolean isAssert, boolean isList) {
         System.out.println(url);
-        //通用参数
-        list.add(new BasicNameValuePair("v", SqlTradecenter.getParamValue(0, "v")));
         param = list.toString();
         result = CallbackInterface.postStringResult(url, pathId, list);
         if (isAssert == true) {
@@ -96,6 +77,64 @@ public class InterfaceTest {
             GeneralAssert.jsonAssert(url, pathId, param, result, e);
         }
     }
+
+
+    protected void detailAssertTest (int assertValue, String resultKey, int resultValue) {
+        if (resultValue != assertValue) {
+            GeneralAssert.detailedAssert("返回的" + resultKey + "不正确，应返回：" + assertValue + "，实际返回：" +
+                    resultValue, url, pathId, param, result);
+        }
+    }
+
+    protected void detailAssertTest (String assertValue, String resultKey, String resultValue) {
+        if (assertValue == null) {
+            if (resultValue != null) {
+                GeneralAssert.detailedAssert("返回的" + resultKey + "不正确，应返回：" + assertValue + "，实际返回：" +
+                        resultValue, url, pathId, param, result);
+            }
+        }else if (!resultValue.equals(assertValue)) {
+            GeneralAssert.detailedAssert("返回的" + resultKey + "不正确，应返回：" + assertValue + "，实际返回：" +
+                    resultValue, url, pathId, param, result);
+        }
+    }
+
+    protected void detailAssertTest (boolean assertValue, String resultKey, boolean resultValue) {
+        if (resultValue != assertValue) {
+            GeneralAssert.detailedAssert("返回的" + resultKey + "不正确，应返回：" + assertValue + "，实际返回：" +
+                    resultValue, url, pathId, param, result);
+        }
+    }
+
+    //判断返回的数组是否为空
+    protected void detailAssertTest (String resultKey, ArrayList resultValue) {
+        if (resultValue.size() <= 0) {
+            GeneralAssert.detailedAssert("返回的" + resultKey + "不应为空;", url, pathId, param, result);
+        }
+    }
+
+    //判断字段/对象是否为空，不会验证返回结果是否为0
+    protected void detailAssertTest (String resultKey, String resultValue) {
+        if (resultValue == null || resultValue.isEmpty() || resultValue.equals("{}")) {
+            GeneralAssert.detailedAssert("返回的" + resultKey + "不应为空/0" + "，实际返回：" +
+                    resultValue, url, pathId, param, result);
+        }
+    }
+
+    //判断字段是否为空，int类型，验证返回结果是否为0用此方法
+    protected void detailAssertTest (String resultKey, int resultValue) {
+        String resultValues = String.valueOf(resultValue);
+        if (resultValues == null || resultValues.isEmpty() || resultValues.equals("0") ) {
+            GeneralAssert.detailedAssert("返回的" + resultKey + "不应为空/0" + "，实际返回：" +
+                    resultValue, url, pathId, param, result);
+        }
+    }
+
+    //判断字段是否为空，boolean类型
+    protected void detailAssertTest (String resultKey, boolean resultValue) {
+        detailAssertTest(resultKey, String.valueOf(resultValue));
+    }
+
+
 
 
 }

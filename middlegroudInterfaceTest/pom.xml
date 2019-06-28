@@ -108,7 +108,7 @@
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>
-                            ./src/main/resources/testng.xml
+                            ./src/main/resources/tradeCenter.xml
                         </suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>

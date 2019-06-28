@@ -9,10 +9,10 @@ import com.duoweidu.utils.ConfigFileUrl;
 
 public class DingDing {
 
-    public static void push(String mobile1, String mobile2, String mobile3) {
+    public static void push(String content, String mobile1, String mobile2, String mobile3) {
         String param = "{\"msgtype\": \"text\", \n" +
                 "        \"text\": {\n" +
-                "        \"content\": \"中台接口又挂了，快去看测试报告\", \n" +
+                "        \"content\": \"" + content + "\", \n" +
                 "        },\n" +
                 "      \"at\": {\n" +
                 "        \"atMobiles\": [\n" +

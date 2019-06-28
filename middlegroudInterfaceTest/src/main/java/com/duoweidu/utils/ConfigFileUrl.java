@@ -57,4 +57,9 @@ public class ConfigFileUrl {
         return bundle.getString("debug");
     }
 
+    //当前渠道
+    public static String getChannel() {
+        return bundle.getString("channel");
+    }
+
 }

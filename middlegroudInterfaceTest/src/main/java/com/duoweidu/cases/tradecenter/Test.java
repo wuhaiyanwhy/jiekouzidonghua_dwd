@@ -16,10 +16,14 @@ public class Test {
 //        SqlTradecenter.updateTradeCenterPathErrnoCount(1);
 //        SqlTradecenter.insertTradeCenterErrnoResult(1,"1,2,3", 1,"123");
 //        SqlTradecenter.insertTradeCenterBuild(1, 0);
-        Message.sendMessage(SqlTradecenter.getParamValue(0, "mobile1"));
-        DingDing.push(SqlTradecenter.getParamValue(0, "mobile1"),
-                SqlTradecenter.getParamValue(0, "mobile2"),
-                SqlTradecenter.getParamValue(0, "mobile3"));
+//        Message.sendMessage(SqlTradecenter.getParamValue(0, "mobile1"));
+//        DingDing.push(SqlTradecenter.getParamValue(0, "mobile1"),
+//                SqlTradecenter.getParamValue(0, "mobile2"),
+//                SqlTradecenter.getParamValue(0, "mobile3"));
+
+        Message.sendMessage("【中台】接口已经多次报错了，快去钉钉查看测试报告！！！",
+                SqlTradecenter.getParamValue(0, "mobile1"),
+                SqlTradecenter.getParamValue(0, "hsqAppId"));
 
     }
 }

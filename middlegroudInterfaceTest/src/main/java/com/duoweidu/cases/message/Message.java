@@ -15,16 +15,15 @@ import java.util.List;
 
 public class Message {
 
-    public static void sendMessage(String mobile) {
+    public static void sendMessage(String content, String mobile, String appId) {
         String url = ConfigFileUrl.getUrlByKey(7, 0,  "smsSendbysoap");
-//        String url = "http://message.center.haoshiqi.net/sms/sendbysoap";
         System.out.println(url);
         System.out.println();
         List<NameValuePair> list = new LinkedList<>();
         list.add(new BasicNameValuePair("mobile", mobile));
         list.add(new BasicNameValuePair("sendType", "1"));
-        list.add(new BasicNameValuePair("content", "【中台】接口已经多次报错了，快去钉钉查看测试报告！！！"));
-//        list.add(new BasicNameValuePair("appId", SqlTradecenter.getTradeCenterParamValue(0, "appId")));
+        list.add(new BasicNameValuePair("content", content));
+        list.add(new BasicNameValuePair("appId", appId));
         CallbackInterface.postStringResult(url, 2, list);
     }
 }

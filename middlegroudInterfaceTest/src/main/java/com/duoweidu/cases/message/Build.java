@@ -23,7 +23,8 @@ public class Build {
             enabled = 0;
             //如果是线上并且不是调试状态则发送短信和钉钉提醒
             if ("prod".equals(ConfigFileUrl.getEnv()) && "false".equals(ConfigFileUrl.getDebug())) {
-                DingDing.push(SqlTradecenter.getParamValue(0, "mobile1"),
+                DingDing.push("中台接口又挂了，快去看测试报告",
+                        SqlTradecenter.getParamValue(0, "mobile1"),
                         SqlTradecenter.getParamValue(0, "mobile2"),
                         SqlTradecenter.getParamValue(0, "mobile3"));
                 System.out.println("钉钉消息发送成功");
@@ -36,9 +37,15 @@ public class Build {
             if (SqlGeneral.getBuildEnabled(6).get(0) == 0 && enabled == 0 &&
                     SqlGeneral.getBuildMessageStatus(6).toString().equals("[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]")) {
                 message_status = 1;
-                Message.sendMessage(SqlTradecenter.getParamValue(0, "mobile1"));
-                Message.sendMessage(SqlTradecenter.getParamValue(0, "mobile2"));
-                Message.sendMessage(SqlTradecenter.getParamValue(0, "mobile3"));
+                Message.sendMessage("【中台】接口已经多次报错了，快去钉钉查看测试报告！！！",
+                        SqlTradecenter.getParamValue(0, "mobile1"),
+                        SqlTradecenter.getParamValue(0, "hsqAppId"));
+                Message.sendMessage("【中台】接口已经多次报错了，快去钉钉查看测试报告！！！",
+                        SqlTradecenter.getParamValue(0, "mobile2"),
+                        SqlTradecenter.getParamValue(0, "hsqAppId"));
+                Message.sendMessage("【中台】接口已经多次报错了，快去钉钉查看测试报告！！！",
+                        SqlTradecenter.getParamValue(0, "mobile3"),
+                        SqlTradecenter.getParamValue(0, "hsqAppId"));
                 System.out.println("短信发送成功");
             }
         }
