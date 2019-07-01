@@ -15,7 +15,7 @@ public class Bill extends TradeCenterInterfaceTest {
     private BillData model;
 
     @Test(dependsOnGroups = "msfCreate", description = "获取对账单信息")
-    public void msf() {
+    public void msfBill() {
         List<NameValuePair> list = new LinkedList<>();
         list.add(new BasicNameValuePair("method", "account.bill"));
         list.add(new BasicNameValuePair("billdate", "20190529"));

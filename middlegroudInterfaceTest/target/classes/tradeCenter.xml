@@ -6,38 +6,38 @@
         <classes >
             <class name="com.duoweidu.cases.tradecenter.Create">
                 <methods>
-                    <include name="msf"/>
-                    <include name="iqg"/>
+                    <include name="msfCreate"/>
+                    <include name="iqgCreate"/>
                 </methods>
             </class>
 
             <class name="com.duoweidu.cases.tradecenter.Activate">
                 <methods>
-                    <include name="iqg"/>
+                    <include name="iqgActivate"/>
                 </methods>
             </class>
 
             <class name="com.duoweidu.cases.tradecenter.Freeze">
                 <methods>
-                    <include name="iqg"/>
+                    <include name="iqgFreeze"/>
                 </methods>
             </class>
 
             <class name="com.duoweidu.cases.tradecenter.Cancel">
                 <methods>
-                    <include name="iqg"/>
+                    <include name="iqgCancel"/>
                 </methods>
             </class>
 
             <class name="com.duoweidu.cases.tradecenter.Query">
                 <methods>
-                    <include name="msf"/>
+                    <include name="msfQuery"/>
                 </methods>
             </class>
 
             <class name="com.duoweidu.cases.tradecenter.QueryAll">
                 <methods>
-                    <include name="msf"/>
+                    <include name="msfQueryAll"/>
                 </methods>
             </class>
 
@@ -49,7 +49,62 @@
 
             <class name="com.duoweidu.cases.tradecenter.Bill">
                 <methods>
-                    <include name="msf"/>
+                    <include name="msfBill"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.tradecenter.CreateRecharge">
+                <methods>
+                    <include name="msfCreateRecharge"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.tradecenter.Recharge">
+                <methods>
+                    <include name="msfRecharge"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.tradecenter.QueryRecharge">
+                <methods>
+                    <include name="msfQueryRecharge"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.tradecenter.CreateAdjust">
+                <methods>
+                    <include name="msfCreateAdjust"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.tradecenter.Adjust">
+                <methods>
+                    <include name="msfAdjust"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.tradecenter.QueryAdjust">
+                <methods>
+                    <include name="msfQueryAdjust"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.tradecenter.InfoTypeCode">
+                <methods>
+                    <include name="msfInfoTypeCode"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.tradecenter.CreateOrder">
+                <methods>
+                    <include name="msfCreateOrder"/>
+                    <include name="msfCreateSubOrder"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.tradecenter.UpdateOrder">
+                <methods>
+                    <include name="msfUpdateOrder"/>
                 </methods>
             </class>
 

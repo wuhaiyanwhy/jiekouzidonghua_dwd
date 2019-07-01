@@ -9,4 +9,9 @@ public class TradecenterConfig {
     public static String msfAccountNumber;
     public static String iqgAccountNumber;
 
+    //创建充值单返回的tradeNo
+    public static String msfCreateRechargeTradeNo;
+    public static String msfCreateAdjustTradeNo;
+    public static String msfCreateOrderOrderNo;
+    public static String msfCreateOrderSubOrderNo;
 }

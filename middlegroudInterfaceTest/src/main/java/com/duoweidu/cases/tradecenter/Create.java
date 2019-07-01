@@ -25,10 +25,10 @@ public class Create extends InterfaceTest {
      * 这是已创建过得用户
      */
     @Test(groups = "msfCreate", description = "创建觅食蜂账户")
-    public void msf() {
+    public void msfCreate() {
         List<NameValuePair> list = new LinkedList<>();
         list.add(new BasicNameValuePair("method", "account.create"));
-        list.add(new BasicNameValuePair("accountTypeCode", "DWD_MSF_HONEY"));
+        list.add(new BasicNameValuePair("accountTypeCode", SqlTradecenter.getParamValue(0, "msfCurrency")));
         list.add(new BasicNameValuePair("availableAmount", "0"));
         list.add(new BasicNameValuePair("frozenAmount", "0"));
         list.add(new BasicNameValuePair("accountStatus", "2"));
@@ -50,10 +50,10 @@ public class Create extends InterfaceTest {
      * 这是新创建的用户
      */
     @Test(groups = "iqgCreate", description = "创建爱抢购账户")
-    public void iqg() {
+    public void iqgCreate() {
         List<NameValuePair> list = new LinkedList<>();
         list.add(new BasicNameValuePair("method", "account.create"));
-        list.add(new BasicNameValuePair("accountTypeCode", "DWD_IQG_COIN"));
+        list.add(new BasicNameValuePair("accountTypeCode", SqlTradecenter.getParamValue(0, "iqgCurrency")));
         list.add(new BasicNameValuePair("availableAmount", "0"));
         list.add(new BasicNameValuePair("frozenAmount", "0"));
         list.add(new BasicNameValuePair("accountStatus", "2"));
@@ -74,8 +74,8 @@ public class Create extends InterfaceTest {
     private void msfDetailAssert() {
         detailAssertTest(416, "account_id", model.account_id);
         detailAssertTest("0130d87d736ea9d126493c036e1a37340828ff5eb440bb56", "account_number", model.account_number);
-//        detailAssertTest(388, "available_amount", model.available_amount);
-//        detailAssertTest(0, "frozen_amount", model.frozen_amount);
+        detailAssertTest("available_amount", model.available_amount);
+        detailAssertTest("frozen_amount", String.valueOf(model.frozen_amount));
         detailAssertTest(1, "account_status", model.account_status);
         detailAssertTest(1559731193, "created_at", model.created_at);
         detailAssertTest("DWD_MSF_HONEY", "account_type_code", model.account_type_code);
@@ -85,13 +85,13 @@ public class Create extends InterfaceTest {
     }
 
     private void iqgDetailAssert() {
-//        detailAssertTest(477, "account_id", model.account_id);
-//        detailAssertTest("5f3f38eb6fa035bb941efe8e621d2cefd3c1b177abc76d32", "account_number", model.account_number);
+        detailAssertTest("account_id", model.account_id);
+        detailAssertTest("account_number", model.account_number);
         detailAssertTest(0, "available_amount", model.available_amount);
         detailAssertTest(0, "frozen_amount", model.frozen_amount);
-//        detailAssertTest(2, "account_status", model.account_status);
-//        detailAssertTest(1561709445, "created_at", model.created_at);
-//        detailAssertTest(1561709445, "updated_at", model.updated_at);
+        detailAssertTest("account_status", model.account_status);
+        detailAssertTest("created_at", model.created_at);
+        detailAssertTest("updated_at", model.updated_at);
         detailAssertTest("DWD_IQG_COIN", "account_type_code", model.account_type_code);
         detailAssertTest("爱抢购金币", "account_type_desc", model.account_type_desc);
         detailAssertTest("DWD_IQG_COIN", "currency", model.currency);

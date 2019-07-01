@@ -23,7 +23,7 @@ public class Cancel extends InterfaceTest {
     private ResultData model;
 
     @Test(dependsOnGroups = "iqgFreeze", description = "注销账户")
-    public void iqg() {
+    public void iqgCancel() {
         List<NameValuePair> list = new LinkedList<>();
         list.add(new BasicNameValuePair("method", "account.cancel"));
         list.add(new BasicNameValuePair("accountNumber", TradecenterConfig.iqgAccountNumber));

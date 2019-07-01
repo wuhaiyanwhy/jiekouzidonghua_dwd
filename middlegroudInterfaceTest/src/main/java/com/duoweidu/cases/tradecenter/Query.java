@@ -16,7 +16,7 @@ public class Query extends TradeCenterInterfaceTest {
     private CreateData model;
 
     @Test(dependsOnGroups = "msfCreate", description = "查询账户信息")
-    public void msf() {
+    public void msfQuery() {
         List<NameValuePair> list = new LinkedList<>();
         list.add(new BasicNameValuePair("method", "account.query"));
         list.add(new BasicNameValuePair("accountNumber", TradecenterConfig.msfAccountNumber));
@@ -30,8 +30,8 @@ public class Query extends TradeCenterInterfaceTest {
     private void detailAssert() {
         detailAssertTest(416, "account_id", model.account_id);
         detailAssertTest("0130d87d736ea9d126493c036e1a37340828ff5eb440bb56", "account_number", model.account_number);
-//        detailAssertTest(388, "available_amount", model.available_amount);
-//        detailAssertTest(0, "frozen_amount", model.frozen_amount);
+        detailAssertTest("available_amount", model.available_amount);
+        detailAssertTest("frozen_amount", String.valueOf(model.frozen_amount));
         detailAssertTest(1, "account_status", model.account_status);
         detailAssertTest(1559731193, "created_at", model.created_at);
         detailAssertTest("DWD_MSF_HONEY", "account_type_code", model.account_type_code);

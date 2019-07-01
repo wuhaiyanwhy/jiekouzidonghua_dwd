@@ -22,7 +22,7 @@ public class Activate extends InterfaceTest {
     private ResultData model;
 
     @Test(dependsOnGroups = "iqgCreate", description = "激活账户", groups = "iqgActivate")
-    public void iqg() {
+    public void iqgActivate() {
         List<NameValuePair> list = new LinkedList<>();
         list.add(new BasicNameValuePair("method", "account.activate"));
         list.add(new BasicNameValuePair("accountNumber", TradecenterConfig.iqgAccountNumber));

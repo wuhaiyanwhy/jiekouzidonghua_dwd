@@ -22,7 +22,7 @@ public class Freeze extends InterfaceTest {
     private ResultData model;
 
     @Test(dependsOnGroups = "iqgActivate", description = "冻结账户", groups = "iqgFreeze")
-    public void iqg() {
+    public void iqgFreeze() {
         List<NameValuePair> list = new LinkedList<>();
         list.add(new BasicNameValuePair("method", "account.freeze"));
         list.add(new BasicNameValuePair("accountNumber", TradecenterConfig.iqgAccountNumber));

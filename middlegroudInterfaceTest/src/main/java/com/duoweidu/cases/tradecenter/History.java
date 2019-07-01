@@ -16,7 +16,7 @@ public class History extends TradeCenterInterfaceTest {
     private HistoryData model;
 
     @Test(dependsOnGroups = "msfCreate", description = "查询账户资金日志(流水)")
-    public void msf() {
+    public void msfHistory() {
         List<NameValuePair> list = new LinkedList<>();
         list.add(new BasicNameValuePair("method", "account.history"));
         list.add(new BasicNameValuePair("accountNumber", TradecenterConfig.msfAccountNumber));

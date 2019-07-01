@@ -11,7 +11,7 @@ import java.util.List;
 public class QueryAll extends TradeCenterInterfaceTest {
 
     @Test(dependsOnGroups = "msfCreate", description = "查询用户名下所有用户")
-    public void msf() {
+    public void msfQueryAll() {
         List<NameValuePair> list = new LinkedList<>();
         list.add(new BasicNameValuePair("method","account.query_all"));
         list.add(new BasicNameValuePair("pageNum","1"));
