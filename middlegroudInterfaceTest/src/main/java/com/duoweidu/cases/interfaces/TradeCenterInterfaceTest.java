@@ -24,7 +24,7 @@ public class TradeCenterInterfaceTest extends InterfaceTest {
         String par = "version=" + SqlTradecenter.getParamValue(0, "version")
                 + "&ip=" + SqlTradecenter.getParamValue(0, "ip")
                 + "&userId=" + SqlTradecenter.getParamValue(0, "userId")
-                + "&appId=" + SqlTradecenter.getParamValue(0, "iqgAppId");
+                + "&appId=" + SqlTradecenter.getParamValue(0, "msfAppId");
         if (param != null) {
             this.param = par + "&" + param;
         }else {
@@ -44,7 +44,7 @@ public class TradeCenterInterfaceTest extends InterfaceTest {
         list.add(new BasicNameValuePair("version", SqlTradecenter.getParamValue(0, "version")));
         list.add(new BasicNameValuePair("ip", SqlTradecenter.getParamValue(0, "ip")));
         list.add(new BasicNameValuePair("userId", SqlTradecenter.getParamValue(0, "userId")));
-        list.add(new BasicNameValuePair("appId", SqlTradecenter.getParamValue(0, "iqgAppId")));
+        list.add(new BasicNameValuePair("appId", SqlTradecenter.getParamValue(0, "msfAppId")));
         param = list.toString();
         result = CallbackInterface.postStringResult(url, pathId, list);
         if (isAssert == true) {

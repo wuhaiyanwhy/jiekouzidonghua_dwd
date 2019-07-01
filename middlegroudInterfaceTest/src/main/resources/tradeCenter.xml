@@ -10,6 +10,49 @@
                     <include name="iqg"/>
                 </methods>
             </class>
+
+            <class name="com.duoweidu.cases.tradecenter.Activate">
+                <methods>
+                    <include name="iqg"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.tradecenter.Freeze">
+                <methods>
+                    <include name="iqg"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.tradecenter.Cancel">
+                <methods>
+                    <include name="iqg"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.tradecenter.Query">
+                <methods>
+                    <include name="msf"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.tradecenter.QueryAll">
+                <methods>
+                    <include name="msf"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.tradecenter.History">
+                <methods>
+                    <include name="msf"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.tradecenter.Bill">
+                <methods>
+                    <include name="msf"/>
+                </methods>
+            </class>
+
         </classes>
     </test>
 
