@@ -20,11 +20,11 @@ public class CreateRecharge extends TradeCenterInterfaceTest {
     public void msfCreateRecharge() {
         List<NameValuePair> list = new LinkedList<>();
         list.add(new BasicNameValuePair("method", "trade.create_recharge"));
-        list.add(new BasicNameValuePair("rechargeAmount", "100"));
-        list.add(new BasicNameValuePair("rechargeTypeCode", "DAILY_BONUS_dayan"));
-        list.add(new BasicNameValuePair("rechargeDesc", "觅食蜂充值"));
+        list.add(new BasicNameValuePair("rechargeAmount", SqlTradecenter.getParamValue(0, "rechargeAmount")));
+        list.add(new BasicNameValuePair("rechargeTypeCode", SqlTradecenter.getParamValue(0, "rechargeTypeCode")));
+        list.add(new BasicNameValuePair("rechargeDesc", SqlTradecenter.getParamValue(0, "rechargeDesc")));
         list.add(new BasicNameValuePair("accountNumber", TradecenterConfig.msfAccountNumber));
-        list.add(new BasicNameValuePair("channel", "Dwdpay/DwdpayServer"));
+        list.add(new BasicNameValuePair("channel", SqlTradecenter.getParamValue(0, "channel")));
         list.add(new BasicNameValuePair("currency", SqlTradecenter.getParamValue(0, "msfCurrency")));
         process(list, true, false);
         if ("beta".equals(ConfigFileUrl.getEnv())) {

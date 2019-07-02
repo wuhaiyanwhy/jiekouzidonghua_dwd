@@ -1,6 +1,7 @@
 package com.duoweidu.cases.tradecenter;
 
 import com.duoweidu.cases.interfaces.TradeCenterInterfaceTest;
+import com.duoweidu.config.SqlTradecenter;
 import com.duoweidu.config.TradecenterConfig;
 import com.duoweidu.model.tradecenter.CreateData;
 import com.duoweidu.utils.ConfigFileUrl;
@@ -29,14 +30,14 @@ public class Query extends TradeCenterInterfaceTest {
 
     private void detailAssert() {
         detailAssertTest(416, "account_id", model.account_id);
-        detailAssertTest("0130d87d736ea9d126493c036e1a37340828ff5eb440bb56", "account_number", model.account_number);
+        detailAssertTest(TradecenterConfig.msfAccountNumber, "account_number", model.account_number);
         detailAssertTest("available_amount", model.available_amount);
         detailAssertTest("frozen_amount", String.valueOf(model.frozen_amount));
         detailAssertTest(1, "account_status", model.account_status);
         detailAssertTest(1559731193, "created_at", model.created_at);
-        detailAssertTest("DWD_MSF_HONEY", "account_type_code", model.account_type_code);
-        detailAssertTest("觅食蜂蜂蜜", "account_type_desc", model.account_type_desc);
-        detailAssertTest("DWD_MSF_HONEY", "currency", model.currency);
+        detailAssertTest(SqlTradecenter.getParamValue(0, "msfCurrency"), "account_type_code", model.account_type_code);
+        detailAssertTest(SqlTradecenter.getParamValue(0, "msfAccountTypeDesc"), "account_type_desc", model.account_type_desc);
+        detailAssertTest(SqlTradecenter.getParamValue(0, "msfCurrency"), "currency", model.currency);
         detailAssertTest("", "reverse", model.reverse);
     }
 }

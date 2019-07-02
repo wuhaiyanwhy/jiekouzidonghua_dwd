@@ -1,6 +1,7 @@
 package com.duoweidu.cases.tradecenter;
 
 import com.duoweidu.cases.interfaces.TradeCenterInterfaceTest;
+import com.duoweidu.config.SqlTradecenter;
 import com.duoweidu.config.TradecenterConfig;
 import com.duoweidu.model.tradecenter.QueryRechargeData;
 import com.duoweidu.utils.ConfigFileUrl;
@@ -31,19 +32,19 @@ public class QueryRecharge extends TradeCenterInterfaceTest {
     private void detailAssert() {
 
         detailAssertTest(TradecenterConfig.msfCreateRechargeTradeNo, "trade_no", model.trade_no);
-        detailAssertTest(100, "recharge_amount", model.recharge_amount);
-        detailAssertTest("DWD_MSF_HONEY", "currency", model.currency);
+        detailAssertTest(SqlTradecenter.getParamValue(0, "rechargeAmount"), "recharge_amount", String.valueOf(model.recharge_amount));
+        detailAssertTest(SqlTradecenter.getParamValue(0, "msfCurrency"), "currency", model.currency);
         detailAssertTest(3, "recharge_status", model.recharge_status);
-        detailAssertTest("0130d87d736ea9d126493c036e1a37340828ff5eb440bb56", "account_number", model.account_number);
-        detailAssertTest("DAILY_BONUS_dayan", "recharge_type_code", model.recharge_type_code);
-        detailAssertTest("觅食蜂充值", "recharge_desc", model.recharge_desc);
+        detailAssertTest(TradecenterConfig.msfAccountNumber, "account_number", model.account_number);
+        detailAssertTest(SqlTradecenter.getParamValue(0, "rechargeTypeCode"), "recharge_type_code", model.recharge_type_code);
+        detailAssertTest(SqlTradecenter.getParamValue(0, "rechargeDesc"), "recharge_desc", model.recharge_desc);
         detailAssertTest("recharge_amount", model.origin_data.toString());
         detailAssertTest(TradecenterConfig.msfCreateRechargeTradeNo, "origin_data.trade_no", model.origin_data.trade_no);
-        detailAssertTest(100, "origin_data.recharge_amount", model.origin_data.recharge_amount);
-        detailAssertTest("DWD_MSF_HONEY", "origin_data.currency", model.origin_data.currency);
-        detailAssertTest("多维度Server支付", "origin_data.channel_name", model.origin_data.channel_name);
-        detailAssertTest("Dwdpay/DwdpayServer", "origin_data.channel_code", model.origin_data.channel_code);
-        detailAssertTest("0130d87d736ea9d126493c036e1a37340828ff5eb440bb56", "origin_data.account_number", model.origin_data.account_number);
+        detailAssertTest(SqlTradecenter.getParamValue(0, "rechargeAmount"), "origin_data.recharge_amount", String.valueOf(model.origin_data.recharge_amount));
+        detailAssertTest(SqlTradecenter.getParamValue(0, "msfCurrency"), "origin_data.currency", model.origin_data.currency);
+        detailAssertTest(SqlTradecenter.getParamValue(0, "channelName"), "origin_data.channel_name", model.origin_data.channel_name);
+        detailAssertTest(SqlTradecenter.getParamValue(0, "channel"), "origin_data.channel_code", model.origin_data.channel_code);
+        detailAssertTest(TradecenterConfig.msfAccountNumber, "origin_data.account_number", model.origin_data.account_number);
         detailAssertTest("origin_data.created_at", model.origin_data.created_at);
         detailAssertTest("origin_data.updated_at", model.origin_data.updated_at);
 

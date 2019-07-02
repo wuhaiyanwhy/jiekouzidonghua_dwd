@@ -1,6 +1,7 @@
 package com.duoweidu.cases.tradecenter;
 
 import com.duoweidu.cases.interfaces.TradeCenterInterfaceTest;
+import com.duoweidu.config.SqlTradecenter;
 import com.duoweidu.model.tradecenter.BillData;
 import com.duoweidu.utils.ConfigFileUrl;
 import org.apache.http.NameValuePair;
@@ -18,7 +19,7 @@ public class Bill extends TradeCenterInterfaceTest {
     public void msfBill() {
         List<NameValuePair> list = new LinkedList<>();
         list.add(new BasicNameValuePair("method", "account.bill"));
-        list.add(new BasicNameValuePair("billdate", "20190529"));
+        list.add(new BasicNameValuePair("billdate", SqlTradecenter.getParamValue(0, "billdate")));
         process(list, true, false);
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             model = sparseJson(BillData.class);
@@ -32,7 +33,7 @@ public class Bill extends TradeCenterInterfaceTest {
         detailAssertTest("accesskey", model.accesskey);
         detailAssertTest(1696, "filesize", model.filesize);
         detailAssertTest("b84b766278078bc085748c5a6ae76427f0d52ba6", "filesum", model.filesum);
-        detailAssertTest("20190529", "billdate", model.billdate);
+        detailAssertTest(SqlTradecenter.getParamValue(0, "billdate"), "billdate", model.billdate);
         detailAssertTest("", "reverse", model.reverse);
     }
 }

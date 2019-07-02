@@ -108,6 +108,29 @@
                 </methods>
             </class>
 
+            <class name="com.duoweidu.cases.tradecenter.UpdateSubOrder">
+                <methods>
+                    <include name="msfUpdateSubOrder"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.tradecenter.CreatePay">
+                <methods>
+                    <include name="msfCreatePay"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.tradecenter.Pay">
+                <methods>
+                    <include name="msfPay"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.tradecenter.QueryPay">
+                <methods>
+                    <include name="msfQueryPay"/>
+                </methods>
+            </class>
         </classes>
     </test>
 

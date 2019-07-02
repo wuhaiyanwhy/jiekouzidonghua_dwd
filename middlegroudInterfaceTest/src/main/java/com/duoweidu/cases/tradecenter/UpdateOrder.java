@@ -1,6 +1,7 @@
 package com.duoweidu.cases.tradecenter;
 
 import com.duoweidu.cases.interfaces.TradeCenterInterfaceTest;
+import com.duoweidu.config.SqlTradecenter;
 import com.duoweidu.config.TradecenterConfig;
 import com.duoweidu.model.tradecenter.UpdateOrderData;
 import com.duoweidu.utils.ConfigFileUrl;
@@ -20,10 +21,10 @@ public class UpdateOrder extends TradeCenterInterfaceTest {
         List<NameValuePair> list = new LinkedList<>();
         list.add(new BasicNameValuePair("method", "order.update_order"));
         list.add(new BasicNameValuePair("orderNo", TradecenterConfig.msfCreateOrderOrderNo));
-        list.add(new BasicNameValuePair("orderStatus", "dayan"));
-        list.add(new BasicNameValuePair("payStatus", "1"));
-        list.add(new BasicNameValuePair("settleAmount", "12"));
-        list.add(new BasicNameValuePair("commissionAmount", "98"));
+        list.add(new BasicNameValuePair("orderStatus", SqlTradecenter.getParamValue(0, "orderStatus")));
+        list.add(new BasicNameValuePair("payStatus", SqlTradecenter.getParamValue(0, "payStatus")));
+        list.add(new BasicNameValuePair("settleAmount", SqlTradecenter.getParamValue(0, "settleAmount")));
+        list.add(new BasicNameValuePair("commissionAmount", SqlTradecenter.getParamValue(0, "commissionAmount")));
         process(list, true, false);
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             model = sparseJson(UpdateOrderData.class);
@@ -34,8 +35,8 @@ public class UpdateOrder extends TradeCenterInterfaceTest {
     private void detailAssert() {
         detailAssertTest(TradecenterConfig.msfCreateOrderOrderNo, "order_no", model.order_no);
         detailAssertTest("changes", model.changes.toString());
-        detailAssertTest("dayan", "changes.order_status", model.changes.order_status);
-        detailAssertTest(98, "changes.commission_amount", model.changes.commission_amount);
+        detailAssertTest(SqlTradecenter.getParamValue(0, "orderStatus"), "changes.order_status", String.valueOf(model.changes.order_status));
+        detailAssertTest(SqlTradecenter.getParamValue(0, "commissionAmount"), "changes.commission_amount", String.valueOf(model.changes.commission_amount));
 
     }
 }

@@ -73,14 +73,14 @@ public class Create extends InterfaceTest {
 
     private void msfDetailAssert() {
         detailAssertTest(416, "account_id", model.account_id);
-        detailAssertTest("0130d87d736ea9d126493c036e1a37340828ff5eb440bb56", "account_number", model.account_number);
+        detailAssertTest(TradecenterConfig.msfAccountNumber, "account_number", model.account_number);
         detailAssertTest("available_amount", model.available_amount);
         detailAssertTest("frozen_amount", String.valueOf(model.frozen_amount));
         detailAssertTest(1, "account_status", model.account_status);
         detailAssertTest(1559731193, "created_at", model.created_at);
-        detailAssertTest("DWD_MSF_HONEY", "account_type_code", model.account_type_code);
-        detailAssertTest("觅食蜂蜂蜜", "account_type_desc", model.account_type_desc);
-        detailAssertTest("DWD_MSF_HONEY", "currency", model.currency);
+        detailAssertTest(SqlTradecenter.getParamValue(0, "msfCurrency"), "account_type_code", model.account_type_code);
+        detailAssertTest(SqlTradecenter.getParamValue(0, "msfAccountTypeDesc"), "account_type_desc", model.account_type_desc);
+        detailAssertTest(SqlTradecenter.getParamValue(0, "msfCurrency"), "currency", model.currency);
         detailAssertTest("", "reverse", model.reverse);
     }
 
@@ -92,9 +92,9 @@ public class Create extends InterfaceTest {
         detailAssertTest("account_status", model.account_status);
         detailAssertTest("created_at", model.created_at);
         detailAssertTest("updated_at", model.updated_at);
-        detailAssertTest("DWD_IQG_COIN", "account_type_code", model.account_type_code);
-        detailAssertTest("爱抢购金币", "account_type_desc", model.account_type_desc);
-        detailAssertTest("DWD_IQG_COIN", "currency", model.currency);
+        detailAssertTest(SqlTradecenter.getParamValue(0, "iqgCurrency"), "account_type_code", model.account_type_code);
+        detailAssertTest(SqlTradecenter.getParamValue(0, "iqgAccountTypeDesc"), "account_type_desc", model.account_type_desc);
+        detailAssertTest(SqlTradecenter.getParamValue(0, "iqgCurrency"), "currency", model.currency);
         detailAssertTest("", "reverse", model.reverse);
     }
 }
