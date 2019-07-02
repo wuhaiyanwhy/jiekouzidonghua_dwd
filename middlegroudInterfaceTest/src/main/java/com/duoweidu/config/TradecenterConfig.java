@@ -15,4 +15,5 @@ public class TradecenterConfig {
     public static String msfCreateOrderOrderNo;
     public static String msfCreateOrderSubOrderNo;
     public static String msfCreatePayTradeNo;
+    public static String msfCreateRefundTradeNo;
 }

@@ -131,6 +131,24 @@
                     <include name="msfQueryPay"/>
                 </methods>
             </class>
+
+            <class name="com.duoweidu.cases.tradecenter.CreateRefund">
+                <methods>
+                    <include name="msfCreateRefund"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.tradecenter.Refund">
+                <methods>
+                    <include name="msfRefund"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.tradecenter.QueryRefund">
+                <methods>
+                    <include name="msfQueryRefund"/>
+                </methods>
+            </class>
         </classes>
     </test>
 
