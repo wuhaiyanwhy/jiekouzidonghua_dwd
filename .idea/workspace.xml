@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="beb7a46c-64f2-4c66-8941-29beee6c53b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/TradeCenterOpadminInterfaceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenterOpadmin/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenterOpadmin/History.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/model/tradecenteropadmin/AccountData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/model/tradecenteropadmin/HistoryData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/tradeCenter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/tradeCenter.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/test-output/haoshiqiReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/test-output/haoshiqiReport.html" afterDir="false" />
-    </list>
+    <list default="true" id="beb7a46c-64f2-4c66-8941-29beee6c53b8" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/middlegroudInterfaceTest/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,14 +42,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="25" />
-          <entry key="java" value="14096" />
+          <entry key="java" value="14099" />
           <entry key="properties" value="113" />
           <entry key="xml" value="653" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="14096" />
+          <entry key="JAVA" value="14099" />
           <entry key="PLAIN_TEXT" value="25" />
           <entry key="Properties" value="113" />
           <entry key="SQL" value="9" />
@@ -145,8 +135,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenterOpadmin/History.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="233">
+              <caret line="42" column="57" lean-forward="true" selection-start-line="42" selection-start-column="57" selection-end-line="42" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -446,7 +436,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562135996598" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562139447316" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -555,14 +545,11 @@
       <option name="presentableId" value="Default" />
       <updated>1561372206923</updated>
       <workItem from="1561372208336" duration="29418000" />
-      <workItem from="1561532182543" duration="80326000" />
+      <workItem from="1561532182543" duration="81403000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.07.03 at 13h 59m 58s.xml">
-      <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.07.03 at 14h 00m 41s.xml">
       <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" configurationId="TestNG" />
     </history-entry>
@@ -590,13 +577,15 @@
     <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.07.03 at 14h 38m 30s.xml">
       <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.07.03 at 14h 39m 13s.xml">
+      <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109744000" />
+    <option name="totallyTimeSpent" value="110821000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="35" y="23" width="1245" height="777" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25353283" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -607,12 +596,12 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32779455" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49875313" visible="true" weight="0.53927493" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49875313" weight="0.53927493" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49958438" weight="0.39879155" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32930514" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32930514" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5004156" side_tool="true" weight="0.39879155" />
       <window_info anchor="bottom" id="Statistic" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
@@ -1072,8 +1061,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenterOpadmin/History.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="233">
+          <caret line="42" column="57" lean-forward="true" selection-start-line="42" selection-start-column="57" selection-end-line="42" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
