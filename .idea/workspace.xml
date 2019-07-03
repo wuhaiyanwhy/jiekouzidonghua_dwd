@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="beb7a46c-64f2-4c66-8941-29beee6c53b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/CreateRefund.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/QueryRefund.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/Refund.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/model/tradecenter/QueryRefundData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/model/tradecenter/RefundData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/TradeCenterOpadminInterfaceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenterOpadmin/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenterOpadmin/History.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/model/tradecenteropadmin/AccountData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/model/tradecenteropadmin/HistoryData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/TradecenterConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/TradecenterConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/cases/tradecenter/UpdateSubOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/cases/tradecenter/UpdateSubOrder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/config/TradecenterConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/config/TradecenterConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/tradeCenter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/tradeCenter.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/test-output/haoshiqiReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/test-output/haoshiqiReport.html" afterDir="false" />
     </list>
@@ -39,7 +36,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="17" />
-          <entry key="java" value="245" />
+          <entry key="java" value="252" />
           <entry key="properties" value="9" />
           <entry key="xml" value="34" />
         </counts>
@@ -47,7 +44,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="17" />
-          <entry key="JAVA" value="245" />
+          <entry key="JAVA" value="252" />
           <entry key="Properties" value="9" />
           <entry key="XML" value="34" />
         </counts>
@@ -55,47 +52,24 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="25" />
-          <entry key="java" value="13521" />
+          <entry key="java" value="14096" />
           <entry key="properties" value="113" />
-          <entry key="xml" value="628" />
+          <entry key="xml" value="653" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="13521" />
+          <entry key="JAVA" value="14096" />
           <entry key="PLAIN_TEXT" value="25" />
           <entry key="Properties" value="113" />
           <entry key="SQL" value="9" />
-          <entry key="XML" value="619" />
+          <entry key="XML" value="644" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/CreateRefund.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1553#1554#0" expanded="true" />
-                <element signature="e#1587#1588#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/TradecenterConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/Refund.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -108,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/QueryRefund.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="36" column="101" selection-start-line="36" selection-start-column="101" selection-end-line="36" selection-end-column="101" />
+            <state relative-caret-position="229">
+              <caret line="41" column="40" lean-forward="true" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -121,10 +95,79 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/model/tradecenter/QueryRefundData.java">
+        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/Activate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+            <state relative-caret-position="389">
+              <caret line="41" column="37" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/TradeCenterInterfaceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="337">
+              <caret line="52" column="5" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="52" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/TradeCenterOpadminInterfaceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="87" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenterOpadmin/Account.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenterOpadmin/History.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/model/tradecenteropadmin/HistoryData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/model/tradecenteropadmin/AccountData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -132,52 +175,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="145" selection-start-line="145" selection-end-line="145" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/model/tradecenter/RefundData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/CreateRecharge.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="33" column="72" lean-forward="true" selection-start-line="33" selection-start-column="72" selection-end-line="33" selection-end-column="72" />
+            <state relative-caret-position="198">
+              <caret line="164" column="36" selection-start-line="164" selection-start-column="36" selection-end-line="164" selection-end-column="36" />
               <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/CreateOrder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="110" selection-start-line="22" selection-start-column="110" selection-end-line="22" selection-end-column="110" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/CreateAdjust.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="27" lean-forward="true" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#test#0;n#suite#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -216,11 +217,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/Test.java" />
-        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/message/Build.java" />
-        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/model/tradecenter/CreateData.java" />
-        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/DetailAssert.java" />
-        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/InterfaceTest.java" />
         <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/model/tradecenter/ActivateData.java" />
         <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/model/tradecenter/ResultData.java" />
         <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/TradeCenterInterfaceTest.java" />
@@ -264,9 +260,14 @@
         <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/TradecenterConfig.java" />
         <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/model/tradecenter/RefundData.java" />
         <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/Refund.java" />
-        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" />
         <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/model/tradecenter/QueryRefundData.java" />
         <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/QueryRefund.java" />
+        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/TradeCenterOpadminInterfaceTest.java" />
+        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/model/tradecenteropadmin/AccountData.java" />
+        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenterOpadmin/Account.java" />
+        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" />
+        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/model/tradecenteropadmin/HistoryData.java" />
+        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenterOpadmin/History.java" />
       </list>
     </option>
   </component>
@@ -368,18 +369,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="duoweidu" type="462c0819:PsiDirectoryNode" />
               <item name="cases" type="462c0819:PsiDirectoryNode" />
-              <item name="message" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="middleground-onlineTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="middleground-onlineTest" type="462c0819:PsiDirectoryNode" />
-              <item name="middlegroudInterfaceTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="duoweidu" type="462c0819:PsiDirectoryNode" />
-              <item name="cases" type="462c0819:PsiDirectoryNode" />
-              <item name="tradecenter" type="462c0819:PsiDirectoryNode" />
+              <item name="tradecenterOpadmin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="middleground-onlineTest" type="b2602c69:ProjectViewProjectNode" />
@@ -410,18 +400,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="duoweidu" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="table" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="middleground-onlineTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="middleground-onlineTest" type="462c0819:PsiDirectoryNode" />
-              <item name="middlegroudInterfaceTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="duoweidu" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="tradecenter" type="462c0819:PsiDirectoryNode" />
+              <item name="tradecenteropadmin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="middleground-onlineTest" type="b2602c69:ProjectViewProjectNode" />
@@ -467,7 +446,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562068570091" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562135928002" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -576,50 +555,50 @@
       <option name="presentableId" value="Default" />
       <updated>1561372206923</updated>
       <workItem from="1561372208336" duration="29418000" />
-      <workItem from="1561532182543" duration="75393000" />
+      <workItem from="1561532182543" duration="80326000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.07.02 at 18h 27m 49s.xml">
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.07.03 at 13h 59m 58s.xml">
       <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.07.02 at 18h 29m 18s.xml">
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.07.03 at 14h 00m 41s.xml">
       <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.07.02 at 18h 57m 27s.xml">
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.07.03 at 14h 01m 26s.xml">
       <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.07.02 at 18h 58m 20s.xml">
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.07.03 at 14h 07m 46s.xml">
       <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.07.02 at 19h 00m 46s.xml">
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.07.03 at 14h 08m 09s.xml">
       <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.07.02 at 19h 01m 50s.xml">
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.07.03 at 14h 08m 48s.xml">
       <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.07.02 at 19h 34m 31s.xml">
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.07.03 at 14h 24m 37s.xml">
       <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.07.02 at 19h 42m 37s.xml">
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.07.03 at 14h 27m 35s.xml">
       <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.07.02 at 19h 43m 12s.xml">
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.07.03 at 14h 36m 36s.xml">
       <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.07.02 at 19h 46m 52s.xml">
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.07.03 at 14h 38m 30s.xml">
       <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104811000" />
+    <option name="totallyTimeSpent" value="109744000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="35" y="23" width="1245" height="777" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25353283" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25353283" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -628,7 +607,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32779455" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49875313" visible="true" weight="0.53927493" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49875313" visible="true" weight="0.53927493" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49958438" weight="0.39879155" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -658,64 +637,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/GeneralAssert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="49" column="28" lean-forward="true" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
-          <folding>
-            <element signature="docComment;method#distinguishParamFailed#0;class#GeneralAssert#0" />
-            <element signature="docComment;method#codeAssert#0;class#GeneralAssert#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/DetailAssert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="65" lean-forward="true" selection-start-line="10" selection-end-line="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/mapper/SQLMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="32" lean-forward="true" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/InterfaceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/TradeCenterInterfaceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="46" column="63" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="26" selection-start-line="23" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/model/tradecenter/AdjustData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -839,16 +760,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="33" column="125" selection-start-line="33" selection-start-column="125" selection-end-line="33" selection-end-column="125" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/Activate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="41" column="37" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1068,13 +979,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="145" selection-start-line="145" selection-end-line="145" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/model/tradecenter/QueryRefundData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -1094,8 +998,82 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/QueryRefund.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="36" column="101" selection-start-line="36" selection-start-column="101" selection-end-line="36" selection-end-column="101" />
+        <state relative-caret-position="229">
+          <caret line="41" column="40" lean-forward="true" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/Activate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="41" column="37" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/TradeCenterInterfaceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="52" column="5" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="52" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/model/tradecenteropadmin/AccountData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/TradeCenterOpadminInterfaceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenterOpadmin/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="164" column="36" selection-start-line="164" selection-start-column="36" selection-end-line="164" selection-end-column="36" />
+          <folding>
+            <element signature="n#test#0;n#suite#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/model/tradecenteropadmin/HistoryData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenterOpadmin/History.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -152,6 +152,22 @@
         </classes>
     </test>
 
+    <test name ="交易中心管理平台">
+        <classes >
+            <class name="com.duoweidu.cases.tradecenterOpadmin.Account">
+                <methods>
+                    <include name="account"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.tradecenterOpadmin.History">
+                <methods>
+                    <include name="history"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
     <test name ="消息推送">
         <classes >
             <class name="com.duoweidu.cases.message.Build">
