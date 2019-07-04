@@ -1,7 +1,7 @@
 package com.duoweidu.utils;
 
-import com.duoweidu.config.GeneralAssert;
 import com.duoweidu.config.GeneralConfig;
+import com.duoweidu.config.SqlDetail;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
@@ -10,50 +10,16 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.util.EntityUtils;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.List;
 
-/**
- * 接口调用相关
- */
-
-public class CallbackInterface {
+public class IqgCallbackInterface extends CallbackInterface {
     private static final DefaultHttpClient defaultHttpClient;
 
     static {
         defaultHttpClient = new DefaultHttpClient();
-    }
-
-    /**
-     * 获取请求结果并加基本断言
-     * @param response
-     * @param url
-     * @param path_id
-     * @param param
-     * @return
-     */
-    public static String getResult(HttpResponse response, String url, int path_id, String param) {
-        GeneralAssert.codeAssert(response, url, path_id, param);
-        String result = null;
-        try {
-            result = EntityUtils.toString(response.getEntity(),"utf-8");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        if ( response.getEntity() != null ) {
-            try {
-                response.getEntity().consumeContent();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-        System.out.println("接口返回：" + result);
-        GeneralAssert.resultAssert(url, path_id, param, result);
-        return result;
-
     }
 
     /**
@@ -65,6 +31,10 @@ public class CallbackInterface {
      */
     public static String getStringResult(String url, int path_id, String param) {
         HttpGet get = new HttpGet(url + "?" + param);
+        get.setHeader("User-Agent","AiQiangGou/5.7.0 (iPhone; iOS 12.0.1; Scale/3.00)");
+        get.setHeader("zoneid","21");
+        get.setHeader("version", SqlDetail.getParamValue(0, "version"));
+        get.setHeader("Accept","application/json");
         GeneralConfig.defaultHttpClient.setCookieStore(GeneralConfig.store);
         HttpResponse response = null;
         try {
@@ -84,6 +54,10 @@ public class CallbackInterface {
      */
     public static String postStringResult(String url, int path_id, List<NameValuePair> list) {
         HttpPost post = new HttpPost(url);
+        post.setHeader("User-Agent","AiQiangGou/5.7.0 (iPhone; iOS 12.0.1; Scale/3.00)");
+        post.setHeader("zoneid","21");
+        post.setHeader("version", SqlDetail.getParamValue(0, "version"));
+        post.setHeader("Accept","application/json");
         GeneralConfig.defaultHttpClient.setCookieStore(GeneralConfig.store);
         UrlEncodedFormEntity entity = null;
         try {
@@ -110,7 +84,10 @@ public class CallbackInterface {
      */
     public static String postStringResult(String url, int path_id, String param) {
         HttpPost post = new HttpPost(url);
-        post.setHeader("Content-Type", "application/json");
+        post.setHeader("User-Agent","AiQiangGou/5.7.0 (iPhone; iOS 12.0.1; Scale/3.00)");
+        post.setHeader("zoneid","21");
+        post.setHeader("version", SqlDetail.getParamValue(0, "version"));
+        post.setHeader("Accept","application/json");
         GeneralConfig.defaultHttpClient.setCookieStore(GeneralConfig.store);
         StringEntity entity = null;
         try {
@@ -137,6 +114,10 @@ public class CallbackInterface {
      */
     public static String deleteStringResult(String url, int path_id, String param) {
         HttpDelete delete = new HttpDelete(url);
+        delete.setHeader("User-Agent","AiQiangGou/5.7.0 (iPhone; iOS 12.0.1; Scale/3.00)");
+        delete.setHeader("zoneid","21");
+        delete.setHeader("version", SqlDetail.getParamValue(0, "version"));
+        delete.setHeader("Accept","application/json");
         GeneralConfig.defaultHttpClient.setCookieStore(GeneralConfig.store);
         HttpResponse response = null;
         try {

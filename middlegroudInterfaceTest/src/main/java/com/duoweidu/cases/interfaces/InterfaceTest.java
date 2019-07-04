@@ -53,6 +53,15 @@ public class InterfaceTest {
         }
     }
 
+    //delete请求
+    protected void processDelete(boolean isAssert, boolean isList) {
+        System.out.println(url);
+        result = CallbackInterface.deleteStringResult(url, pathId, this.param);
+        if (isAssert == true) {
+            generalAssertTest(isList);
+        }
+    }
+
     //通用断言判断，只判断errno
     protected void generalAssertTest() {
         try {

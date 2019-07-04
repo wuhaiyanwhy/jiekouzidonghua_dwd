@@ -22,7 +22,7 @@ public class Build {
             enabled = 0;
             //如果是线上并且不是调试状态则发送短信和钉钉提醒
             if ("prod".equals(ConfigFileUrl.getEnv()) && "false".equals(ConfigFileUrl.getDebug())) {
-                DingDing.push("中台接口又挂了，快去看测试报告",
+                DingDing.push("接口又挂了，快去看测试报告",
                         SqlDetail.getParamValue(0, "mobile1"),
                         SqlDetail.getParamValue(0, "mobile2"),
                         SqlDetail.getParamValue(0, "mobile3"));
