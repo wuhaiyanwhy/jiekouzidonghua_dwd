@@ -2,7 +2,6 @@ package com.duoweidu.cases.message;
 
 import com.duoweidu.config.GeneralConfig;
 import com.duoweidu.config.SqlDetail;
-import com.duoweidu.config.SqlGeneral;
 import com.duoweidu.utils.ConfigFileUrl;
 import org.testng.annotations.AfterSuite;
 
@@ -37,15 +36,15 @@ public class Build {
             if (SqlDetail.getBuildEnabled().get(0) == 0 && enabled == 0 &&
                     SqlDetail.getBuildMessageStatus().toString().equals("[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]")) {
                 message_status = 1;
-                Message.sendMessage("【中台】接口已经多次报错了，快去钉钉查看测试报告！！！",
+                Message.sendMessage("接口已经多次报错了，快去钉钉查看测试报告！！！",
                         SqlDetail.getParamValue(0, "mobile1"),
-                        SqlDetail.getParamValue(0, "hsqAppId"));
-                Message.sendMessage("【中台】接口已经多次报错了，快去钉钉查看测试报告！！！",
+                        SqlDetail.getParamValue(0, "appId"));
+                Message.sendMessage("接口已经多次报错了，快去钉钉查看测试报告！！！",
                         SqlDetail.getParamValue(0, "mobile2"),
-                        SqlDetail.getParamValue(0, "hsqAppId"));
-                Message.sendMessage("【中台】接口已经多次报错了，快去钉钉查看测试报告！！！",
+                        SqlDetail.getParamValue(0, "appId"));
+                Message.sendMessage("接口已经多次报错了，快去钉钉查看测试报告！！！",
                         SqlDetail.getParamValue(0, "mobile3"),
-                        SqlDetail.getParamValue(0, "hsqAppId"));
+                        SqlDetail.getParamValue(0, "appId"));
                 System.out.println("短信发送成功");
             }
         }
