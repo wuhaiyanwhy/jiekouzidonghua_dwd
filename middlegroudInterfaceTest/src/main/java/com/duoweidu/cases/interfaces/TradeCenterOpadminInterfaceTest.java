@@ -12,8 +12,8 @@ public class TradeCenterOpadminInterfaceTest extends InterfaceTest {
 
     //交易中心管理平台的接口都是一个
     {
-        url = ConfigFileUrl.getUrlByKey("adminHttp");
-        pathId = SqlTradecenter.getPathId("adminHttp");
+        url = ConfigFileUrl.getUrlByKey("admin.http.uri");
+        pathId = SqlTradecenter.getPathId("admin.http.uri");
     }
 
     //get请求

@@ -16,7 +16,7 @@ import java.util.List;
 public class Message {
 
     public static void sendMessage(String content, String mobile, String appId) {
-        String url = ConfigFileUrl.getUrlByKey(7, 0,  "smsSendbysoap");
+        String url = ConfigFileUrl.getUrlByKey(7, 0,  "sms.sendbysoap.uri");
         System.out.println(url);
         System.out.println();
         List<NameValuePair> list = new LinkedList<>();

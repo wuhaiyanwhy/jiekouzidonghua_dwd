@@ -15,8 +15,8 @@ import java.util.List;
 public class Create extends InterfaceTest {
 
     {
-        url = ConfigFileUrl.getUrlByKey("gatewayHttp");
-        pathId = SqlTradecenter.getPathId("gatewayHttp");
+        url = ConfigFileUrl.getUrlByKey("gateway.http.uri");
+        pathId = SqlTradecenter.getPathId("gateway.http.uri");
     }
 
     private CreateData model;

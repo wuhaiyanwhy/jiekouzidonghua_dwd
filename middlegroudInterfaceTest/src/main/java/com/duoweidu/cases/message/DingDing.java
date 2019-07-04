@@ -26,7 +26,7 @@ public class DingDing {
         //        String access_token = "46534ab567690b87fc5d5b57a5e2f12f0419ebbf98fcba665f1bbec724b3d733";
         //测试机器人
         String access_token = "a7ec70f9102935d838154bca2299b827634a474f0040f91a1a36babfb6a1ba0a";
-        String url = ConfigFileUrl.getUrlByKey(8, 0, "robotSend") +
+        String url = ConfigFileUrl.getUrlByKey(8, 0, "robot.send.uri") +
                 "?access_token=" + access_token;
         CallbackInterface.postStringResult(url, 3, param);
 

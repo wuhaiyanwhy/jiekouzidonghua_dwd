@@ -12,8 +12,8 @@ public class TradeCenterInterfaceTest extends InterfaceTest {
 
     //交易中心的接口都是一个
     {
-        url = ConfigFileUrl.getUrlByKey("gatewayHttp");
-        pathId = SqlTradecenter.getPathId("gatewayHttp");
+        url = ConfigFileUrl.getUrlByKey("gateway.http.uri");
+        pathId = SqlTradecenter.getPathId("gateway.http.uri");
     }
 
     //get请求
