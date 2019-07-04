@@ -1,7 +1,7 @@
 package com.duoweidu.cases.tradecenter;
 
 import com.duoweidu.cases.interfaces.TradeCenterInterfaceTest;
-import com.duoweidu.config.SqlTradecenter;
+import com.duoweidu.config.SqlDetail;
 import com.duoweidu.config.TradecenterConfig;
 import com.duoweidu.model.tradecenter.QueryRefundData;
 import com.duoweidu.utils.ConfigFileUrl;
@@ -32,14 +32,14 @@ public class QueryRefund extends TradeCenterInterfaceTest {
     private void detailAssert() {
         detailAssertTest(TradecenterConfig.msfCreateRefundTradeNo, "trade_no", model.trade_no);
         detailAssertTest(TradecenterConfig.msfCreatePayTradeNo, "pay_trade_no", model.pay_trade_no);
-        detailAssertTest(SqlTradecenter.getParamValue(0, "createRefundAmount"), "refund_amount", String.valueOf(model.refund_amount));
-        detailAssertTest(SqlTradecenter.getParamValue(0, "msfCurrency"), "currency", model.currency);
-        detailAssertTest(SqlTradecenter.getParamValue(0, "refundTypeCode"), "refund_type_code", model.refund_type_code);
-        detailAssertTest(SqlTradecenter.getParamValue(0, "refundDesc"), "refund_desc", model.refund_desc);
+        detailAssertTest(SqlDetail.getParamValue(0, "createRefundAmount"), "refund_amount", String.valueOf(model.refund_amount));
+        detailAssertTest(SqlDetail.getParamValue(0, "msfCurrency"), "currency", model.currency);
+        detailAssertTest(SqlDetail.getParamValue(0, "refundTypeCode"), "refund_type_code", model.refund_type_code);
+        detailAssertTest(SqlDetail.getParamValue(0, "refundDesc"), "refund_desc", model.refund_desc);
         detailAssertTest("origin_data", model.origin_data.toString());
         detailAssertTest(TradecenterConfig.msfAccountNumber, "origin_data.account_number", model.origin_data.account_number);
-        detailAssertTest(SqlTradecenter.getParamValue(0, "createRefundAmount"), "origin_data.refund_amount",String.valueOf(model.origin_data.refund_amount));
-        detailAssertTest(SqlTradecenter.getParamValue(0, "msfCurrency"), "origin_data.currency",String.valueOf(model.origin_data.currency));
+        detailAssertTest(SqlDetail.getParamValue(0, "createRefundAmount"), "origin_data.refund_amount",String.valueOf(model.origin_data.refund_amount));
+        detailAssertTest(SqlDetail.getParamValue(0, "msfCurrency"), "origin_data.currency",String.valueOf(model.origin_data.currency));
         detailAssertTest(TradecenterConfig.msfCreatePayTradeNo, "origin_data.pay_trade_no", model.origin_data.pay_trade_no);
 
     }

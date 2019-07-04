@@ -1,7 +1,7 @@
 package com.duoweidu.utils;
 
+import com.duoweidu.config.SqlDetail;
 import com.duoweidu.config.SqlGeneral;
-import com.duoweidu.config.SqlTradecenter;
 
 import java.util.Locale;
 import java.util.ResourceBundle;
@@ -20,9 +20,9 @@ public class ConfigFileUrl {
      * @return
      */
     public static String getUrlByKey(String name) {
-        String protocol = SqlTradecenter.getProtocol();
-        String server_name = SqlTradecenter.getServerName();
-        String path = SqlTradecenter.getPath(name);
+        String protocol = SqlDetail.getProtocol();
+        String server_name = SqlDetail.getServerName();
+        String path = SqlDetail.getPath(name);
         if (path.isEmpty()) {
             throw new IllegalStateException("未知地址");
         }
@@ -58,8 +58,8 @@ public class ConfigFileUrl {
     }
 
     //当前渠道
-    public static String getChannel() {
-        return bundle.getString("channel");
+    public static int getChannel() {
+        return Integer.parseInt(bundle.getString("channel"));
     }
 
 }

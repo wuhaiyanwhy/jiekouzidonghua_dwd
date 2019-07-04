@@ -1,7 +1,7 @@
 package com.duoweidu.cases.tradecenter;
 
 import com.duoweidu.cases.interfaces.TradeCenterInterfaceTest;
-import com.duoweidu.config.SqlTradecenter;
+import com.duoweidu.config.SqlDetail;
 import com.duoweidu.config.TradecenterConfig;
 import com.duoweidu.model.tradecenter.RefundData;
 import com.duoweidu.utils.ConfigFileUrl;
@@ -31,10 +31,10 @@ public class Refund extends TradeCenterInterfaceTest {
     private void detailAssert() {
         detailAssertTest(TradecenterConfig.msfCreateRefundTradeNo, "trade_no", model.trade_no);
         detailAssertTest(TradecenterConfig.msfCreatePayTradeNo, "pay_trade_no", model.pay_trade_no);
-        detailAssertTest(SqlTradecenter.getParamValue(0, "createRefundAmount"), "refund_amount", String.valueOf(model.refund_amount));
+        detailAssertTest(SqlDetail.getParamValue(0, "createRefundAmount"), "refund_amount", String.valueOf(model.refund_amount));
         detailAssertTest("origin_data", model.origin_data.toString());
         detailAssertTest(TradecenterConfig.msfAccountNumber, "account_number", model.origin_data.account_number);
-        detailAssertTest(SqlTradecenter.getParamValue(0, "createRefundAmount"), "refund_amount", String.valueOf(model.origin_data.refund_amount));
+        detailAssertTest(SqlDetail.getParamValue(0, "createRefundAmount"), "refund_amount", String.valueOf(model.origin_data.refund_amount));
         detailAssertTest("", "reverse", model.reverse);
 
     }

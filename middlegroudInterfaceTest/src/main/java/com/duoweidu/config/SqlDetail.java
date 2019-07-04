@@ -1,17 +1,19 @@
 package com.duoweidu.config;
 
+import com.duoweidu.utils.ConfigFileUrl;
+
 import java.util.ArrayList;
 
 /**
- * 交易中心sql
+ * 根据渠道判断详细sql
  */
-public class SqlTradecenter {
+public class SqlDetail {
 
     /**
      * 交易中心渠道号默认为6
      * 1.好食期 2.爱抢购 3.觅食蜂 4.返一半 5.巨食阵 6.交易中心
      */
-    private static final int channel_id = 6;
+    private static final int channel_id = ConfigFileUrl.getChannel();
 
     /**
      * 获取服务主机表的协议

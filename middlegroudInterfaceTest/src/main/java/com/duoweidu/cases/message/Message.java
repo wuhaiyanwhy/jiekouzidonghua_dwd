@@ -1,6 +1,5 @@
 package com.duoweidu.cases.message;
 
-import com.duoweidu.config.SqlTradecenter;
 import com.duoweidu.utils.CallbackInterface;
 import com.duoweidu.utils.ConfigFileUrl;
 import org.apache.http.NameValuePair;

@@ -1,7 +1,7 @@
 package com.duoweidu.cases.tradecenter;
 
 import com.duoweidu.cases.interfaces.TradeCenterInterfaceTest;
-import com.duoweidu.config.SqlTradecenter;
+import com.duoweidu.config.SqlDetail;
 import com.duoweidu.config.TradecenterConfig;
 import com.duoweidu.model.tradecenter.CreatePayData;
 import com.duoweidu.utils.ConfigFileUrl;
@@ -20,13 +20,13 @@ public class CreatePay extends TradeCenterInterfaceTest {
     public void msfCreatePay() {
         List<NameValuePair> list = new LinkedList<>();
         list.add(new BasicNameValuePair("method", "trade.create_pay"));
-        list.add(new BasicNameValuePair("channel", SqlTradecenter.getParamValue(0, "channel")));
+        list.add(new BasicNameValuePair("channel", SqlDetail.getParamValue(0, "channel")));
         list.add(new BasicNameValuePair("subject", "商品描述dayan哈哈"));
-        list.add(new BasicNameValuePair("totalAmount", SqlTradecenter.getParamValue(0, "totalAmount")));
+        list.add(new BasicNameValuePair("totalAmount", SqlDetail.getParamValue(0, "totalAmount")));
         list.add(new BasicNameValuePair("orderNo", TradecenterConfig.msfCreateOrderOrderNo));
-        list.add(new BasicNameValuePair("currency", SqlTradecenter.getParamValue(0, "msfCurrency")));
-        list.add(new BasicNameValuePair("payTypeCode", SqlTradecenter.getParamValue(0, "payTypeCode")));
-        list.add(new BasicNameValuePair("payDesc", SqlTradecenter.getParamValue(0, "payDesc")));
+        list.add(new BasicNameValuePair("currency", SqlDetail.getParamValue(0, "msfCurrency")));
+        list.add(new BasicNameValuePair("payTypeCode", SqlDetail.getParamValue(0, "payTypeCode")));
+        list.add(new BasicNameValuePair("payDesc", SqlDetail.getParamValue(0, "payDesc")));
         process(list, true, false);
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             model = sparseJson(CreatePayData.class);
