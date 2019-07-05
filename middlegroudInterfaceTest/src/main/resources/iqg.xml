@@ -12,8 +12,291 @@
                     <include name = "user_login_true"/>
                 </methods>
             </class>
+
+            <class name="com.duoweidu.cases.iqg.openapi.Order">
+                <methods>
+                    <include name = "order_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.Payment">
+                <methods>
+                    <include name = "payment_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.Getpayment">
+                <methods>
+                    <include name = "getpayment_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.OrderRedeemWithPin">
+                <methods>
+                    <include name = "order_redeem_with_pin_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.iqg.openapi.Item">
+                <methods>
+                    <include name = "item_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.Ad">
+                <methods>
+                    <include name = "ad_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.UserMyprofile">
+                <methods>
+                    <include name = "user_myprofile_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.Appconfig">
+                <methods>
+                    <include name = "appconfig_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.Zone21Categories">
+                <methods>
+                    <include name = "zone_21_categories_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.OrderTypeRedeem">
+                <methods>
+                    <include name = "order_type_redeem_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.UserAgreementChange">
+                <methods>
+                    <include name = "user_agreement_change_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.ItemBargain">
+                <methods>
+                    <include name = "item_bargain_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.ItemDetail">
+                <methods>
+                    <include name = "item_detail_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.OrderTypeAll">
+                <methods>
+                    <include name = "order_type_all_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.OrderTypeToComment">
+                <methods>
+                    <include name = "order_type_to_comment_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.OrderTypeRefund">
+                <methods>
+                    <include name = "order_type_refund_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.OrderDetail">
+                <methods>
+                    <include name = "order_detail_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.CouponActivitylist">
+                <methods>
+                    <include name = "coupon_activitylist_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.CouponActivitydetail">
+                <methods>
+                    <include name = "coupon_activitydetail_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.CouponorderBeforecreate">
+                <methods>
+                    <include name = "couponorder_beforecreate_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.CouponorderPaymentapply">
+                <methods>
+                    <include name = "couponorder_paymentapply_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.CouponorderPaymentresult">
+                <methods>
+                    <include name = "couponorder_paymentresult_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.UserCoupon">
+                <methods>
+                    <include name = "user_coupon_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.UserCoupondetail">
+                <methods>
+                    <include name = "user_coupondetail_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.StatsUserShare">
+                <methods>
+                    <include name = "stats_user_share_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.CoinShare">
+                <methods>
+                    <include name = "coin_share_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.CoinStatus">
+                <methods>
+                    <include name = "coin_status_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.CoinCheckIn">
+                <methods>
+                    <include name = "coin_check_in_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.Coindetail">
+                <methods>
+                    <include name = "coindetail_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.UserAuthCode">
+                <methods>
+                    <include name = "user_auth_code_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.UserChangeMyprofile">
+                <methods>
+                    <include name = "user_change_myprofile_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.UserOauthUserinfo">
+                <methods>
+                    <include name = "user_oauth_userinfo_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.UserBalanceDetail">
+                <methods>
+                    <include name = "user_balance_detail_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.CoinExchangeList">
+                <methods>
+                    <include name = "coin_exchange_list_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.CoinExchange">
+                <methods>
+                    <include name = "coin_exchange_true"/>
+                </methods>
+            </class>
+            <!--券的数据过多，等待优化在启用-->
+            <class name="com.duoweidu.cases.iqg.openapi.CouponAvailable">
+                <methods>
+                    <include name = "couponAvailableTrue"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.CouponHistory">
+                <methods>
+                    <include name = "couponHistoryTrue"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.Coupon">
+                <methods>
+                    <include name = "couponTrue"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.BargainToday">
+                <methods>
+                    <include name = "bargainTodayTrue"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.Notifivation">
+                <methods>
+                    <include name = "notifivationTrue"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.Zone21">
+                <methods>
+                    <include name = "zoneTrue"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.CouponRedeembypin">
+                <methods>
+                    <include name = "couponRedeembypinTrue"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.CouponActivitybranchlist">
+                <methods>
+                    <include name = "couponActivitybranchlistTrue"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.UserRefundprogress">
+                <methods>
+                    <include name = "userRefundprogressTrue"/>
+                </methods>
+            </class>
+            <!--先禁用，券数据过多-->
+            <class name="com.duoweidu.cases.iqg.openapi.DeleteCoupon">
+                <methods>
+                    <include name = "deleteCouponTrue"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.Comment">
+                <methods>
+                    <include name = "commentTrue"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.Zone">
+                <methods>
+                    <include name = "zoneTrue"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.BarginAvatar">
+                <methods>
+                    <include name = "barginAvatarTrue"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.AddressInfo">
+                <methods>
+                    <include name = "addressInfoTrue"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.CalcelOrder">
+                <methods>
+                    <include name = "calcelOrderTrue"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.BranchComments">
+                <methods>
+                    <include name = "branchCommentsTrue"/>
+                </methods>
+            </class>
+
+        </classes>
+
+
+    </test>
+
+    <test name="爱抢购接口测试用例(退出登录)">
+        <classes>
+            <class name="com.duoweidu.cases.iqg.openapi.UserLogin">
+                <methods>
+                    <include name="user_login_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.UserLogout">
+                <methods>
+                    <include name="userLogoutTrue"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.iqg.openapi.UserOauthRegisterAndLogin">
+                <methods>
+                    <include name = "user_oauth_register_and_login_true"/>
+                </methods>
+            </class>
         </classes>
     </test>
+
 
     <test name ="消息推送">
         <classes >

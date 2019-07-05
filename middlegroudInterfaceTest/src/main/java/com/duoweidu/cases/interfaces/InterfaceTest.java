@@ -2,7 +2,9 @@ package com.duoweidu.cases.interfaces;
 
 import com.alibaba.fastjson.JSON;
 import com.duoweidu.config.GeneralAssert;
+import com.duoweidu.config.SqlDetail;
 import com.duoweidu.utils.CallbackInterface;
+import com.duoweidu.utils.ConfigFileUrl;
 import org.apache.http.NameValuePair;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -32,6 +34,12 @@ public class InterfaceTest {
             GeneralAssert.jsonAssert(url, pathId, param, result, e);
         }
         return null;
+    }
+
+    //获取url和pathId
+    protected void setUrl(String key) {
+        url = ConfigFileUrl.getUrlByKey(key);
+        pathId = SqlDetail.getPathId(key);
     }
 
     //get请求
@@ -81,6 +89,26 @@ public class InterfaceTest {
             GeneralAssert.dataAssert(jsonObject.get("data").toString(), url, pathId, param, result);
             if (isList == true) {
                 GeneralAssert.listAssert((JSONArray) data.get("list"), url, pathId, param, result);
+            }
+        }catch (JSONException e){
+            GeneralAssert.jsonAssert(url, pathId, param, result, e);
+        }
+    }
+
+    //通用断言判断
+    protected void generalAssertTest(boolean isList, boolean isDataList) {
+        try {
+            JSONObject jsonObject = new JSONObject(result);
+            if (isDataList == true) {
+                JSONArray data = (JSONArray) jsonObject.get("data");
+                GeneralAssert.errnoAssert(data.toString(), jsonObject.get("errmsg").toString(), url, pathId, param, result);
+                GeneralAssert.dataAssert(data, url, pathId, param, result);
+                if (isList == true) {
+                    for (int i = 0; i < data.length(); i++) {
+                        JSONObject json = (JSONObject) data.get(i);
+                        GeneralAssert.listAssert((JSONArray) json.get("list"), url, pathId, param, result);
+                    }
+                }
             }
         }catch (JSONException e){
             GeneralAssert.jsonAssert(url, pathId, param, result, e);

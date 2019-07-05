@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 命名空间mapper,如果有多个mapper文件，这个必须唯一 -->
+<mapper namespace="com.duoweidu.model">
+
+    <!--更新product_order数据-->
+    <update id="updateProductOrder" parameterType="com.duoweidu.model.iqgTable.ProductOrder">
+        update product_order set created_at=#{created_at} where user_id=#{user_id} and status in (#{status1},#{status2})
+    </update>
+
+    <!--更新报错次数-->
+    <update id="updateTrdCouponOrder" parameterType="com.duoweidu.model.iqgTable.TrdCouponOrder">
+        update trd_coupon_order set created_at=#{created_at} where user_id=#{user_id} and coup_activity_id=#{coup_activity_id}
+    </update>
+
+</mapper>

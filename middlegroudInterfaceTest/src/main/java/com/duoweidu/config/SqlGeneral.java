@@ -5,7 +5,6 @@ import com.duoweidu.utils.ConfigFileUrl;
 import com.duoweidu.utils.DatabaseUtil;
 import org.apache.ibatis.session.SqlSession;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,11 +16,7 @@ public class SqlGeneral {
     private static SqlSession session;
 
     static {
-        try {
-            session = DatabaseUtil.getSqlSession();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        session = DatabaseUtil.getSqlSession();
     }
 
     /**

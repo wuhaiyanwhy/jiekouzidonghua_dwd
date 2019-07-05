@@ -108,8 +108,25 @@ public class GeneralAssert extends Assert {
     }
 
     /**
+     * 判断返回信息status下的code与message(iqg)
+     * @param status
+     * @param uri
+     * @param path_id
+     * @param param
+     * @param result
+     */
+    public static void statusTest(JSONObject status, String uri, int path_id, String param, String result) {
+
+        if (!status.get("code").toString().equals("10000")) {
+            fail(distinguishParamFailed("返回的status中code/message不正确;\n返回的status:" + status.toString(), uri, path_id, param, 3, result));
+        }else if (!status.get("message").toString().equals("成功") && !status.get("message").toString().equals("success")) {
+            fail(distinguishParamFailed("返回的status中code/message不正确;\n返回的status:" + status.toString(), uri, path_id, param, 3, result));
+        }
+    }
+
+
+    /**
      * 判断返回的data
-     *
      * @param data
      * @param uri
      * @param param
@@ -120,6 +137,21 @@ public class GeneralAssert extends Assert {
             fail(distinguishParamFailed("返回的data数据为空;", uri, path_id, param, 4, result));
         }
     }
+
+    /**
+     * 判断返回的data
+     * @param data
+     * @param uri
+     * @param path_id
+     * @param param
+     * @param result
+     */
+    public static void dataAssert(JSONArray data, String uri, int path_id, String param, String result) {
+        if (data.equals("{}")) {
+            fail(distinguishParamFailed("返回的data数据为空;", uri, path_id, param, 4, result));
+        }
+    }
+
 
     /**
      * 判断返回的list
@@ -160,15 +192,6 @@ public class GeneralAssert extends Assert {
         fail(distinguishParamFailed(faile, uri, path_id, param, 7, result));
     }
 
-    //判断返回信息status下的code与message
-    public static void statusTest(JSONObject status, String uri, int path_id, String param, String result) {
-
-        if (!status.get("code").toString().equals("10000")) {
-            fail(distinguishParamFailed("返回的status中code/message不正确;\n返回的status:" + status.toString(), uri, path_id, param, 3, result));
-        }else if (!status.get("message").toString().equals("成功") && !status.get("message").toString().equals("success")) {
-            fail(distinguishParamFailed("返回的status中code/message不正确;\n返回的status:" + status.toString(), uri, path_id, param, 3, result));
-        }
-    }
 
 
 }

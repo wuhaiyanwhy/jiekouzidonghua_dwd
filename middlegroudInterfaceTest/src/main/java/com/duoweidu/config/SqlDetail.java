@@ -1,6 +1,10 @@
 package com.duoweidu.config;
 
+import com.duoweidu.model.iqgTable.ProductOrder;
+import com.duoweidu.model.iqgTable.TrdCouponOrder;
 import com.duoweidu.utils.ConfigFileUrl;
+import com.duoweidu.utils.DatabaseUtil;
+import org.apache.ibatis.session.SqlSession;
 
 import java.util.ArrayList;
 
@@ -8,6 +12,13 @@ import java.util.ArrayList;
  * 根据渠道判断详细sql
  */
 public class SqlDetail {
+
+    private static SqlSession iqgBetaSession;
+
+    static {
+        iqgBetaSession = DatabaseUtil.getIqgBetaSqlSession();
+    }
+
 
     /**
      * 交易中心渠道号默认为6
@@ -132,5 +143,30 @@ public class SqlDetail {
         SqlGeneral.insertErrnoResult(channel_id, path_id, getBuildId() + 1, params, status, result);
     }
 
+    /**
+     * 更新product_order用户订单数据成功(iqg)
+     */
+    public static void iqgUptadeOrder() {
+        ProductOrder productOrder = new ProductOrder(getParamValue(0, "created_at"),
+                getParamValue(0, "user_id"),
+                "1", "5");
+        int res = iqgBetaSession.update("updateProductOrder", productOrder);
+        iqgBetaSession.commit();
+        if (res >0) {
+            System.out.println("更新product_order用户订单数据成功");
+        }
 
+    }
+
+    public static void iqgUptadeOneCouponOrder() {
+        TrdCouponOrder trdCouponOrder = new TrdCouponOrder(getParamValue(0, "created_at"),
+                getParamValue(0, "user_id"),
+                getParamValue(2, "oneCouponID"));
+        int res = iqgBetaSession.update("updateTrdCouponOrder", trdCouponOrder);
+        iqgBetaSession.commit();
+        if (res >0) {
+            System.out.println("更新trd_coupon_order用户订单数据成功");
+        }
+
+    }
 }

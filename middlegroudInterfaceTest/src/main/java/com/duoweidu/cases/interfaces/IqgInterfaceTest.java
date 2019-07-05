@@ -20,7 +20,7 @@ public class IqgInterfaceTest extends InterfaceTest {
         //通用参数
         String par = "version=" + SqlDetail.getParamValue(0, "version")
                 + "&lng=" + SqlDetail.getParamValue(0, "lng")
-                + "lat=" +  SqlDetail.getParamValue(0, "lat");
+                + "&lat=" +  SqlDetail.getParamValue(0, "lat");
         if (param != null) {
             this.param = par + "&" + param;
         }else {
@@ -55,7 +55,7 @@ public class IqgInterfaceTest extends InterfaceTest {
         //通用参数
         String par = "version=" + SqlDetail.getParamValue(0, "version")
                 + "&lng=" + SqlDetail.getParamValue(0, "lng")
-                + "lat=" +  SqlDetail.getParamValue(0, "lat");
+                + "&lat=" +  SqlDetail.getParamValue(0, "lat");
         if (param != null) {
             this.param = par + "&" + param;
         }else {
@@ -82,4 +82,38 @@ public class IqgInterfaceTest extends InterfaceTest {
             GeneralAssert.jsonAssert(url, pathId, param, result, e);
         }
     }
+
+    //通用断言判断
+    @Override
+    protected void generalAssertTest(boolean isList, boolean isDataList) {
+        try {
+            JSONObject jsonObject = new JSONObject(result);
+            if (isDataList == true) {
+                JSONArray data = (JSONArray) jsonObject.get("data");
+                GeneralAssert.statusTest((JSONObject) jsonObject.get("status"), url, pathId, param, result);
+                GeneralAssert.dataAssert(data, url, pathId, param, result);
+                if (isList == true) {
+                    for (int i = 0; i < data.length(); i++) {
+                        JSONObject json = (JSONObject) data.get(i);
+                        GeneralAssert.listAssert((JSONArray) json.get("list"), url, pathId, param, result);
+                    }
+                }
+            }
+        }catch (JSONException e){
+            GeneralAssert.jsonAssert(url, pathId, param, result, e);
+        }
+    }
+
+
+    //只判断status
+    protected void generalAssertStatus() {
+        try {
+            JSONObject jsonObject = new JSONObject(result);
+            GeneralAssert.statusTest((JSONObject) jsonObject.get("status"), url, pathId, param, result);
+        }catch (JSONException e){
+            GeneralAssert.jsonAssert(url, pathId, param, result, e);
+        }
+    }
+
+
 }
