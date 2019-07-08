@@ -297,7 +297,6 @@
         </classes>
     </test>
 
-
     <test name ="消息推送">
         <classes >
             <class name="com.duoweidu.cases.message.Build">

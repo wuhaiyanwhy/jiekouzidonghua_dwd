@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<suite name="返一半接口测试">
+
+    <test name ="返一半接口测试用例(openapi)">
+        <classes >
+            <!--无测试商家，禁用-->
+            <!--<class name="com.duoweidu.cases.fyb.openapi.UserAddskutocart">-->
+                <!--<methods>-->
+                    <!--<include name = "userAddskutocart"/>-->
+                <!--</methods>-->
+            <!--</class>-->
+            <!--<class name="com.duoweidu.cases.fyb.openapi.UserGetusercart">-->
+                <!--<methods>-->
+                    <!--<include name = "userGetusercart"/>-->
+                <!--</methods>-->
+            <!--</class>-->
+            <!--<class name="com.duoweidu.cases.fyb.openapi.UserDeletecartsku">-->
+                <!--<methods>-->
+                    <!--<include name = "userDeletecartsku"/>-->
+                <!--</methods>-->
+            <!--</class>-->
+            <!--<class name="com.duoweidu.cases.fyb.openapi.OrderOrderinit">-->
+                <!--<methods>-->
+                    <!--<include name = "orderOrderinit"/>-->
+                <!--</methods>-->
+            <!--</class>-->
+            <!--<class name="com.duoweidu.cases.fyb.openapi.OrderSubmitorder">-->
+                <!--<methods>-->
+                    <!--<include name = "orderSubmitorder"/>-->
+                <!--</methods>-->
+            <!--</class>-->
+            <!--<class name="com.duoweidu.cases.fyb.openapi.OrderOrderpay">-->
+                <!--<methods>-->
+                    <!--<include name = "orderOrderpay"/>-->
+                <!--</methods>-->
+            <!--</class>-->
+            <!--<class name="com.duoweidu.cases.fyb.openapi.OrderOrderpayconfirm">-->
+                <!--<methods>-->
+                    <!--<include name = "orderOrderpayconfirm"/>-->
+                <!--</methods>-->
+            <!--</class>-->
+            <!--<class name="com.duoweidu.cases.fyb.openapi.OrderCancelorder">-->
+                <!--<methods>-->
+                    <!--<include name = "orderCancelorder"/>-->
+                <!--</methods>-->
+            <!--</class>-->
+            <!--<class name="com.duoweidu.cases.fyb.openapi.UserSetdefaultaddress">-->
+                <!--<methods>-->
+                    <!--<include name = "userSetdefaultaddress"/>-->
+                <!--</methods>-->
+            <!--</class>-->
+            <!--分割线-->
+
+
+
+            <class name="com.duoweidu.cases.fyb.openapi.UserGetredbaginfo">
+                <methods>
+                    <include name = "user_login_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.UserLogin">
+                <methods>
+                    <include name = "userLogin"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.CommonInitconfig">
+                <methods>
+                    <include name = "commonInitconfig"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.CommonQiniutoken">
+                <methods>
+                    <include name = "commonQiniutoken"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.UserGetudesk">
+                <methods>
+                    <include name = "userGetudesk"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.CommonRecommendproducts">
+                <methods>
+                    <include name = "commonRecommendproducts"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.CategorySearch">
+                <methods>
+                    <include name = "categorySearch"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.ProductIteminfo">
+                <methods>
+                    <include name = "productIteminfo"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.CommonGuesslikeproducts">
+                <methods>
+                    <include name = "commonGuesslikeproducts"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.ProductCheckbuylimit">
+                <methods>
+                    <include name = "ProductCheckbuylimit"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.UserGetuserinviteinfo">
+                <methods>
+                    <include name = "userGetuserinviteinfo"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.ProductHotkeysearch">
+                <methods>
+                    <include name = "productHotkeysearch"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.CommonHotsearchsug">
+                <methods>
+                    <include name = "commonHotsearchsug"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.fyb.openapi.UserCheckusercart">
+                <methods>
+                    <include name = "userCheckusercart"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.OrderGetuserorders">
+                <methods>
+                    <include name = "orderGetuserorders"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.OrderOrderdetail">
+                <methods>
+                    <include name = "orderOrderdetail"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.OrderDeliverymessage">
+                <methods>
+                    <include name = "orderDeliverymessage"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.OrderUserorderconfirm">
+                <methods>
+                    <include name = "orderUserorderconfirm"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.fyb.openapi.RefundInit">
+                <methods>
+                    <include name = "refundInit"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.RefundApply">
+                <methods>
+                    <include name = "refundApply"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.OrderUserserviceorders">
+                <methods>
+                    <include name = "orderUserserviceorders"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.UserAddresslist">
+                <methods>
+                    <include name = "userAddresslist"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.UserAddresslist">
+                <methods>
+                    <include name = "userAddresslist"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.UserUpdateaddress">
+                <methods>
+                    <include name = "userUpdateaddress"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.fyb.openapi.UserAddaddress">
+                <methods>
+                    <include name = "userAddaddress"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.UserDeleteaddress">
+                <methods>
+                    <include name = "userDeleteaddress"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.NationProvincelist">
+                <methods>
+                    <include name = "nationProvincelist"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.NationCitylist">
+                <methods>
+                    <include name = "nationCitylist"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.NationDistrictlist">
+                <methods>
+                    <include name = "nationDistrictlist"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.UserNoticelist">
+                <methods>
+                    <include name = "userNoticelist"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.UserMutlireadnotices">
+                <methods>
+                    <include name = "userMutlireadnotices"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.CommonNoticestatus">
+                <methods>
+                    <include name = "commonNoticestatus"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.UserDashboard">
+                <methods>
+                    <include name = "userDashboard"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.UserFeedback">
+                <methods>
+                    <include name = "userFeedback"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.UserBindmobile">
+                <methods>
+                    <include name = "userBindmobile"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.CommonGetverifycode">
+                <methods>
+                    <include name = "commonGetverifycode"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.UserVouchercenter">
+                <methods>
+                    <include name = "userVouchercenter"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.UserVoucherlist">
+                <methods>
+                    <include name = "userVoucherlist"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.UserInvitelist">
+                <methods>
+                    <include name = "userInvitelist"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.UserInvitepopstatus">
+                <methods>
+                    <include name = "userInvitepopstatus"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.UserGetAwardVoucherStatus">
+                <methods>
+                    <include name = "userGetAwardVoucherStatus"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.UserGetAwardVoucher">
+                <methods>
+                    <include name = "userGetAwardVoucher"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+
+    <test name ="消息推送">
+        <classes >
+            <class name="com.duoweidu.cases.message.Build">
+                <methods>
+                    <include name="build"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <listeners>
+
+        <listener class-name="com.duoweidu.config.ExtentTestNGIReporterListener"/>
+    </listeners>
+
+</suite>

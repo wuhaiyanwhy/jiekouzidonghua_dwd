@@ -129,7 +129,7 @@ public class SqlDetail {
      * @return
      */
     public static int getBuildId() {
-        return SqlGeneral.getBuildId(channel_id).getId();
+        return SqlGeneral.getBuildId().getId();
     }
 
     /**

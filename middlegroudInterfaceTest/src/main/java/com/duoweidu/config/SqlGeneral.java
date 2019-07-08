@@ -181,12 +181,11 @@ public class SqlGeneral {
     }
 
     /**
-     * 获取最新的构建id,跟环境无关
+     * 获取最新的构建id,跟环境渠道无关
      * @return
      */
-    public static Build getBuildId(int channel_id) {
-        Build build = new Build(channel_id);
-        return session.selectOne("getBuildId", build);
+    public static Build getBuildId() {
+        return session.selectOne("getBuildId");
     }
 
 
