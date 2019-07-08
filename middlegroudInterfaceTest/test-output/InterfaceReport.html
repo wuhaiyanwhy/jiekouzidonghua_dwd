@@ -35,7 +35,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -49,7 +48,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jul 8, 2019 04:04:18 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jul 8, 2019 04:11:25 PM</span>
 				</a>
 			</li>
 			<li>
@@ -75,8 +74,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
-						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -91,12 +88,6 @@
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>返一半接口测试</a></li>
 					<li><a href='#'>返一半接口测试用例(openapi)</a></li>
-					<li><a href='#'>orderOrderinit</a></li>
-					<li><a href='#'>userGetusercart</a></li>
-					<li><a href='#'>orderSubmitorder</a></li>
-					<li><a href='#'>orderOrderpayconfirm</a></li>
-					<li><a href='#'>orderOrderpay</a></li>
-					<li><a href='#'>userAddskutocart</a></li>
 					<li><a href='#'>loginTrue</a></li>
 					<li><a href='#'>userAddaddress</a></li>
 					<li><a href='#'>消息推送</a></li>
@@ -147,10 +138,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='84.314%'><span class='strong'>43</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>42</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='3.922%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='11.765%'>6</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -162,10 +153,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='84%'><span class='strong'>42</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>41</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='4%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='12%'>6</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -180,19 +171,19 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>返一半接口测试 : 返一半接口测试用例(openapi)</span>
-						<span class='test-time'>Jul 8, 2019 04:04:18 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Jul 8, 2019 04:11:25 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 8, 2019 04:04:18 PM</span>
-	<span class='label end-time'>Jul 8, 2019 04:04:25 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+941ms</span>
+	<span class='label start-time'>Jul 8, 2019 04:11:25 PM</span>
+	<span class='label end-time'>Jul 8, 2019 04:11:32 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+906ms</span>
 </div>
-	<div class='test-desc'>Pass: 42 ; Fail: 2 ; Skip: 6 ; </div>
+	<div class='test-desc'>Pass: 41 ; Fail: 0 ; Skip: 0 ; </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
 				<span class='category label white-text'>返一半接口测试</span>
@@ -201,486 +192,11 @@
 	</div>
 	<ul class='collapsible node-list' data-collapsible='accordion'>
 		
-				<li class='node level-1 leaf fail' status='fail' test-id='2'>
-					<div class='collapsible-header'>
-						<div class='node-name'>orderOrderinit</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:21 PM</span>
-						<span class='node-duration'>0h 0m 4s+807ms</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>返一半接口测试</span>
-											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
-											<span class='category label white-text'>orderOrderinit</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='fail'>
-													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
-													<td class='step-details'><pre>java.lang.AssertionError: 
-返回的errno不为0/errmsg不为success;
-返回的errno/errmsg:1919610014/商品已下架
-请求的url:https://m.api.fanyiban.cn/order/orderinit
-参数：[skusInfo=[{"skuId":78088,"amount":1,"price":3990}], v=1.2.4, token=c769c73eb87c1a88cb07672d6a8cfd1b]
-cookie：null
-接口返回：{"errno":1919610014,"errmsg":"商品已下架","data":{},"timestamp":1562573061,"serverlogid":"2833091a4f7e21f45cc737a89956db18"}
-《-------------------------分割线-------------------------》
-	at org.testng.Assert.fail(Assert.java:94)
-	at com.duoweidu.config.GeneralAssert.errnoAssert(GeneralAssert.java:106)
-	at com.duoweidu.cases.interfaces.InterfaceTest.generalAssertTest(InterfaceTest.java:88)
-	at com.duoweidu.cases.interfaces.FybInterfaceTest.process(FybInterfaceTest.java:40)
-	at com.duoweidu.cases.fyb.openapi.OrderOrderinit.orderOrderinit(OrderOrderinit.java:21)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</pre></td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf fail' status='fail' test-id='3'>
-					<div class='collapsible-header'>
-						<div class='node-name'>userGetusercart</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:25 PM</span>
-						<span class='node-duration'>0h 0m 0s+917ms</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>返一半接口测试</span>
-											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
-											<span class='category label white-text'>userGetusercart</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='fail'>
-													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
-													<td class='step-details'><pre>java.lang.AssertionError: 
-返回的list数据为空;
-请求的url:https://m.api.fanyiban.cn/user/getusercart
-参数：v=1.2.4&token=c769c73eb87c1a88cb07672d6a8cfd1b
-cookie：null
-接口返回：{"errno":0,"errmsg":"success","data":{"list":[],"totalPage":0,"totalCnt":0,"singleSkuCnt":0,"totalSkuCnt":0,"expiredTime":0,"totalCartSkuCnt":0,"recommendList":[{"id":79820,"name":"【每桶120克】嗨吃家酸辣粉6桶装 120g*6","main_sku":101236,"main_sku_pic":"http:\/\/img2.haoshiqi.net\/maa20fc279497998cf81bd0732d63f9887.jpg","left_stock":44131,"locked_stock":5821,"thumbnail":"http:\/\/img2.haoshiqi.net\/maa20fc279497998cf81bd0732d63f9887.jpg","market_price":2990,"price":1880,"reversion":188,"deduction":188,"selled_cnt":48},{"id":74652,"name":"伊利安慕希原味 205g*12盒 礼盒装","main_sku":103100,"main_sku_pic":"http:\/\/img2.haoshiqi.net\/mae3e697e942522c45f64fd5b3cf55cb67.jpg","left_stock":230,"locked_stock":500,"thumbnail":"http:\/\/img2.haoshiqi.net\/mae3e697e942522c45f64fd5b3cf55cb67.jpg","market_price":4990,"price":3990,"reversion":399,"deduction":399,"selled_cnt":786},{"id":75299,"name":"新西兰进口牧恩纯牛奶营养早餐奶便携盒装牛奶 250ml*10盒","main_sku":92721,"main_sku_pic":"http:\/\/img2.haoshiqi.net\/mab4158111a134869fca4bde186b568b15.jpg","left_stock":853,"locked_stock":2221,"thumbnail":"http:\/\/img2.haoshiqi.net\/mab4158111a134869fca4bde186b568b15.jpg","market_price":8900,"price":2580,"reversion":258,"deduction":258,"selled_cnt":1765},{"id":41817,"name":"蒙牛小真果粒草莓味125ml*20盒","main_sku":94036,"main_sku_pic":"http:\/\/img2.haoshiqi.net\/ma0c5b9fe51b69bb9412d1dd90db408f2c.jpg","left_stock":871,"locked_stock":84685,"thumbnail":"http:\/\/img2.haoshiqi.net\/ma0c5b9fe51b69bb9412d1dd90db408f2c.jpg","market_price":2990,"price":2380,"reversion":238,"deduction":238,"selled_cnt":223},{"id":52803,"name":"慕丝妮散装肉松饼整箱 1000g","main_sku":87213,"main_sku_pic":"http:\/\/img2.haoshiqi.net\/ma8eb747fcb20ac06c022c0cbcfc9bbe21.jpg","left_stock":99675,"locked_stock":0,"thumbnail":"http:\/\/img2.haoshiqi.net\/ma8eb747fcb20ac06c022c0cbcfc9bbe21.jpg","market_price":2790,"price":1860,"reversion":186,"deduction":186,"selled_cnt":229},{"id":52294,"name":"裕昌超辣火鸡面装超辣速食方便面泡面网红干拌面国产辣鸡面 140克*4包","main_sku":88301,"main_sku_pic":"http:\/\/img2.haoshiqi.net\/ma26dc5e652d53b2984a45b7936f341b57.jpg","left_stock":39032,"locked_stock":61545,"thumbnail":"http:\/\/img2.haoshiqi.net\/ma26dc5e652d53b2984a45b7936f341b57.jpg","market_price":2380,"price":990,"reversion":99,"deduction":99,"selled_cnt":421},{"id":77933,"name":"慕滋苏打水 整箱350ml*12瓶","main_sku":97820,"main_sku_pic":"http:\/\/img2.haoshiqi.net\/ma048ce5797dc5a80542abf52f196783a3.jpg","left_stock":869,"locked_stock":2700,"thumbnail":"http:\/\/img2.haoshiqi.net\/ma048ce5797dc5a80542abf52f196783a3.jpg","market_price":1990,"price":1651,"reversion":165.1,"deduction":165.1,"selled_cnt":633},{"id":77648,"name":"蒙牛特仑苏纯牛奶全脂牛奶礼盒装 250ml*12盒","main_sku":97307,"main_sku_pic":"http:\/\/img2.haoshiqi.net\/ma0922204592605dfe7ce1e4b851d8693b.jpg","left_stock":499,"locked_stock":0,"thumbnail":"http:\/\/img2.haoshiqi.net\/ma0922204592605dfe7ce1e4b851d8693b.jpg","market_price":6500,"price":4500,"reversion":450,"deduction":450,"selled_cnt":301}],"activeVoucherMoney":0,"notActiveVoucherMoney":10000,"hasInvited":0,"hasNewUserBenefit":0},"timestamp":1562573065,"serverlogid":"0e1aadaacd09254c43860ed3d3c371d8"}
-《-------------------------分割线-------------------------》
-	at org.testng.Assert.fail(Assert.java:94)
-	at com.duoweidu.config.GeneralAssert.listAssert(GeneralAssert.java:166)
-	at com.duoweidu.cases.interfaces.InterfaceTest.generalAssertTest(InterfaceTest.java:91)
-	at com.duoweidu.cases.interfaces.FybInterfaceTest.process(FybInterfaceTest.java:26)
-	at com.duoweidu.cases.fyb.openapi.UserGetusercart.userGetusercart(UserGetusercart.java:11)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</pre></td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf skip' status='skip' test-id='4'>
-					<div class='collapsible-header'>
-						<div class='node-name'>orderSubmitorder</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:25 PM</span>
-						<span class='node-duration'>0h 0m 0s+670ms</span>
-						<span class='test-status right skip'>skip</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>返一半接口测试</span>
-											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
-											<span class='category label white-text'>orderSubmitorder</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='skip'>
-													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
-													<td class='step-details'><pre>java.lang.Throwable: Method OrderSubmitorder.orderSubmitorder()[pri:0, instance:com.duoweidu.cases.fyb.openapi.OrderSubmitorder@26ba2a48] depends on not successfully finished methods in group "orderOrderinit"
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</pre></td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf skip' status='skip' test-id='5'>
-					<div class='collapsible-header'>
-						<div class='node-name'>userSetdefaultaddress</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:25 PM</span>
-						<span class='node-duration'>0h 0m 0s+670ms</span>
-						<span class='test-status right skip'>skip</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>返一半接口测试</span>
-											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='skip'>
-													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
-													<td class='step-details'><pre>java.lang.Throwable: Method UserSetdefaultaddress.userSetdefaultaddress()[pri:0, instance:com.duoweidu.cases.fyb.openapi.UserSetdefaultaddress@735f7ae5] depends on not successfully finished methods in group "orderOrderinit"
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</pre></td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf skip' status='skip' test-id='6'>
-					<div class='collapsible-header'>
-						<div class='node-name'>userDeletecartsku</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:25 PM</span>
-						<span class='node-duration'>0h 0m 0s+307ms</span>
-						<span class='test-status right skip'>skip</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>返一半接口测试</span>
-											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='skip'>
-													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
-													<td class='step-details'><pre>java.lang.Throwable: Method UserDeletecartsku.userDeletecartsku()[pri:0, instance:com.duoweidu.cases.fyb.openapi.UserDeletecartsku@38082d64] depends on not successfully finished methods in group "userGetusercart"
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</pre></td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf skip' status='skip' test-id='7'>
-					<div class='collapsible-header'>
-						<div class='node-name'>orderOrderpayconfirm</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:25 PM</span>
-						<span class='node-duration'>0h 0m 0s+307ms</span>
-						<span class='test-status right skip'>skip</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>返一半接口测试</span>
-											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
-											<span class='category label white-text'>orderOrderpayconfirm</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='skip'>
-													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
-													<td class='step-details'><pre>java.lang.Throwable: Method OrderOrderpayconfirm.orderOrderpayconfirm()[pri:0, instance:com.duoweidu.cases.fyb.openapi.OrderOrderpayconfirm@13fee20c] depends on not successfully finished methods in group "orderOrderpay"
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</pre></td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf skip' status='skip' test-id='8'>
-					<div class='collapsible-header'>
-						<div class='node-name'>orderOrderpay</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:25 PM</span>
-						<span class='node-duration'>0h 0m 0s+308ms</span>
-						<span class='test-status right skip'>skip</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>返一半接口测试</span>
-											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
-											<span class='category label white-text'>orderOrderpay</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='skip'>
-													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
-													<td class='step-details'><pre>java.lang.Throwable: Method OrderOrderpay.orderOrderpay()[pri:0, instance:com.duoweidu.cases.fyb.openapi.OrderOrderpay@3b81a1bc] depends on not successfully finished methods in group "orderSubmitorder"
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</pre></td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf skip' status='skip' test-id='9'>
-					<div class='collapsible-header'>
-						<div class='node-name'>OrderCancelorder</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:25 PM</span>
-						<span class='node-duration'>0h 0m 0s+307ms</span>
-						<span class='test-status right skip'>skip</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>返一半接口测试</span>
-											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='skip'>
-													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
-													<td class='step-details'><pre>java.lang.Throwable: Method OrderCancelorder.OrderCancelorder()[pri:0, instance:com.duoweidu.cases.fyb.openapi.OrderCancelorder@783e6358] depends on not successfully finished methods in group "orderOrderpayconfirm"
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</pre></td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='10'>
-					<div class='collapsible-header'>
-						<div class='node-name'>userAddskutocart</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:18 PM</span>
-						<span class='node-duration'>0h 0m 7s+216ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>返一半接口测试</span>
-											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
-											<span class='category label white-text'>userAddskutocart</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='11'>
+				<li class='node level-1 leaf pass' status='pass' test-id='2'>
 					<div class='collapsible-header'>
 						<div class='node-name'>userGetredbaginfo</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:21 PM</span>
-						<span class='node-duration'>0h 0m 4s+637ms</span>
+						<span class='node-time'>Jul 8, 2019 04:11:25 PM</span>
+						<span class='node-duration'>0h 0m 7s+56ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -700,7 +216,7 @@ cookie：null
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
+													<td class='timestamp'>4:11:32 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -708,11 +224,11 @@ cookie：null
 								</div>
 						</div>
 				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='12'>
+				<li class='node level-1 leaf pass' status='pass' test-id='3'>
 					<div class='collapsible-header'>
 						<div class='node-name'>userLogin</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:21 PM</span>
-						<span class='node-duration'>0h 0m 4s+234ms</span>
+						<span class='node-time'>Jul 8, 2019 04:11:29 PM</span>
+						<span class='node-duration'>0h 0m 3s+720ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -733,7 +249,295 @@ cookie：null
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
+													<td class='timestamp'>4:11:32 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='4'>
+					<div class='collapsible-header'>
+						<div class='node-name'>commonInitconfig</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:29 PM</span>
+						<span class='node-duration'>0h 0m 3s+429ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>返一半接口测试</span>
+											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:11:32 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='5'>
+					<div class='collapsible-header'>
+						<div class='node-name'>commonQiniutoken</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:29 PM</span>
+						<span class='node-duration'>0h 0m 3s+359ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>返一半接口测试</span>
+											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:11:32 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='6'>
+					<div class='collapsible-header'>
+						<div class='node-name'>userGetudesk</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:29 PM</span>
+						<span class='node-duration'>0h 0m 3s+320ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>返一半接口测试</span>
+											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:11:32 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='7'>
+					<div class='collapsible-header'>
+						<div class='node-name'>commonRecommendproducts</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:29 PM</span>
+						<span class='node-duration'>0h 0m 3s+242ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>返一半接口测试</span>
+											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:11:32 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='8'>
+					<div class='collapsible-header'>
+						<div class='node-name'>categorySearch</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:29 PM</span>
+						<span class='node-duration'>0h 0m 3s+124ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>返一半接口测试</span>
+											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:11:32 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='9'>
+					<div class='collapsible-header'>
+						<div class='node-name'>productIteminfo</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:29 PM</span>
+						<span class='node-duration'>0h 0m 3s+73ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>返一半接口测试</span>
+											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:11:32 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='10'>
+					<div class='collapsible-header'>
+						<div class='node-name'>commonGuesslikeproducts</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:30 PM</span>
+						<span class='node-duration'>0h 0m 2s+843ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>返一半接口测试</span>
+											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:11:32 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='11'>
+					<div class='collapsible-header'>
+						<div class='node-name'>productCheckbuylimit</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:30 PM</span>
+						<span class='node-duration'>0h 0m 2s+760ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>返一半接口测试</span>
+											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:11:32 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='12'>
+					<div class='collapsible-header'>
+						<div class='node-name'>userGetuserinviteinfo</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:30 PM</span>
+						<span class='node-duration'>0h 0m 2s+635ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>返一半接口测试</span>
+											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:11:32 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -743,9 +547,9 @@ cookie：null
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='13'>
 					<div class='collapsible-header'>
-						<div class='node-name'>commonInitconfig</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:22 PM</span>
-						<span class='node-duration'>0h 0m 4s+99ms</span>
+						<div class='node-name'>productHotkeysearch</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:30 PM</span>
+						<span class='node-duration'>0h 0m 2s+580ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -765,7 +569,7 @@ cookie：null
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
+													<td class='timestamp'>4:11:32 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -775,9 +579,9 @@ cookie：null
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='14'>
 					<div class='collapsible-header'>
-						<div class='node-name'>commonQiniutoken</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:22 PM</span>
-						<span class='node-duration'>0h 0m 4s+44ms</span>
+						<div class='node-name'>commonHotsearchsug</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:30 PM</span>
+						<span class='node-duration'>0h 0m 2s+475ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -797,7 +601,7 @@ cookie：null
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
+													<td class='timestamp'>4:11:32 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -807,9 +611,9 @@ cookie：null
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='15'>
 					<div class='collapsible-header'>
-						<div class='node-name'>userGetudesk</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:22 PM</span>
-						<span class='node-duration'>0h 0m 4s+0ms</span>
+						<div class='node-name'>userCheckusercart</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:30 PM</span>
+						<span class='node-duration'>0h 0m 2s+424ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -829,7 +633,7 @@ cookie：null
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
+													<td class='timestamp'>4:11:32 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -839,9 +643,9 @@ cookie：null
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='16'>
 					<div class='collapsible-header'>
-						<div class='node-name'>commonRecommendproducts</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:22 PM</span>
-						<span class='node-duration'>0h 0m 3s+935ms</span>
+						<div class='node-name'>orderGetuserorders</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:30 PM</span>
+						<span class='node-duration'>0h 0m 2s+374ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -861,7 +665,7 @@ cookie：null
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
+													<td class='timestamp'>4:11:32 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -871,9 +675,9 @@ cookie：null
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='17'>
 					<div class='collapsible-header'>
-						<div class='node-name'>categorySearch</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:22 PM</span>
-						<span class='node-duration'>0h 0m 3s+830ms</span>
+						<div class='node-name'>orderOrderdetail</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:30 PM</span>
+						<span class='node-duration'>0h 0m 2s+209ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -893,7 +697,7 @@ cookie：null
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
+													<td class='timestamp'>4:11:32 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -903,9 +707,9 @@ cookie：null
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='18'>
 					<div class='collapsible-header'>
-						<div class='node-name'>productIteminfo</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:22 PM</span>
-						<span class='node-duration'>0h 0m 3s+737ms</span>
+						<div class='node-name'>orderDeliverymessage</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:30 PM</span>
+						<span class='node-duration'>0h 0m 2s+74ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -925,7 +729,7 @@ cookie：null
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
+													<td class='timestamp'>4:11:32 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -935,9 +739,9 @@ cookie：null
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='19'>
 					<div class='collapsible-header'>
-						<div class='node-name'>commonGuesslikeproducts</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:22 PM</span>
-						<span class='node-duration'>0h 0m 3s+521ms</span>
+						<div class='node-name'>orderUserorderconfirm</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:30 PM</span>
+						<span class='node-duration'>0h 0m 2s+23ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -957,7 +761,7 @@ cookie：null
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
+													<td class='timestamp'>4:11:32 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -967,9 +771,9 @@ cookie：null
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='20'>
 					<div class='collapsible-header'>
-						<div class='node-name'>productCheckbuylimit</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:22 PM</span>
-						<span class='node-duration'>0h 0m 3s+440ms</span>
+						<div class='node-name'>refundApply</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:31 PM</span>
+						<span class='node-duration'>0h 0m 1s+977ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -989,7 +793,7 @@ cookie：null
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
+													<td class='timestamp'>4:11:32 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -999,9 +803,9 @@ cookie：null
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='21'>
 					<div class='collapsible-header'>
-						<div class='node-name'>userGetuserinviteinfo</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:22 PM</span>
-						<span class='node-duration'>0h 0m 3s+333ms</span>
+						<div class='node-name'>orderUserserviceorders</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:31 PM</span>
+						<span class='node-duration'>0h 0m 1s+892ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1021,7 +825,7 @@ cookie：null
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
+													<td class='timestamp'>4:11:32 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1031,9 +835,9 @@ cookie：null
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='22'>
 					<div class='collapsible-header'>
-						<div class='node-name'>productHotkeysearch</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:22 PM</span>
-						<span class='node-duration'>0h 0m 3s+274ms</span>
+						<div class='node-name'>userAddresslist</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:31 PM</span>
+						<span class='node-duration'>0h 0m 1s+788ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1053,7 +857,7 @@ cookie：null
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
+													<td class='timestamp'>4:11:32 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1063,9 +867,9 @@ cookie：null
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='23'>
 					<div class='collapsible-header'>
-						<div class='node-name'>commonHotsearchsug</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:23 PM</span>
-						<span class='node-duration'>0h 0m 3s+149ms</span>
+						<div class='node-name'>userUpdateaddress</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:31 PM</span>
+						<span class='node-duration'>0h 0m 1s+660ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1085,7 +889,7 @@ cookie：null
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
+													<td class='timestamp'>4:11:32 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1095,297 +899,9 @@ cookie：null
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='24'>
 					<div class='collapsible-header'>
-						<div class='node-name'>userCheckusercart</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:23 PM</span>
-						<span class='node-duration'>0h 0m 3s+97ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>返一半接口测试</span>
-											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='25'>
-					<div class='collapsible-header'>
-						<div class='node-name'>orderGetuserorders</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:23 PM</span>
-						<span class='node-duration'>0h 0m 3s+44ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>返一半接口测试</span>
-											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='26'>
-					<div class='collapsible-header'>
-						<div class='node-name'>orderOrderdetail</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:23 PM</span>
-						<span class='node-duration'>0h 0m 2s+837ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>返一半接口测试</span>
-											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='27'>
-					<div class='collapsible-header'>
-						<div class='node-name'>orderDeliverymessage</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:23 PM</span>
-						<span class='node-duration'>0h 0m 2s+636ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>返一半接口测试</span>
-											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='28'>
-					<div class='collapsible-header'>
-						<div class='node-name'>orderUserorderconfirm</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:23 PM</span>
-						<span class='node-duration'>0h 0m 2s+583ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>返一半接口测试</span>
-											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='29'>
-					<div class='collapsible-header'>
-						<div class='node-name'>refundApply</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:23 PM</span>
-						<span class='node-duration'>0h 0m 2s+535ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>返一半接口测试</span>
-											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='30'>
-					<div class='collapsible-header'>
-						<div class='node-name'>orderUserserviceorders</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:23 PM</span>
-						<span class='node-duration'>0h 0m 2s+446ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>返一半接口测试</span>
-											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='31'>
-					<div class='collapsible-header'>
-						<div class='node-name'>userAddresslist</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:23 PM</span>
-						<span class='node-duration'>0h 0m 2s+346ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>返一半接口测试</span>
-											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='32'>
-					<div class='collapsible-header'>
-						<div class='node-name'>userUpdateaddress</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:24 PM</span>
-						<span class='node-duration'>0h 0m 2s+207ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>返一半接口测试</span>
-											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='33'>
-					<div class='collapsible-header'>
 						<div class='node-name'>userAddaddress</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:24 PM</span>
-						<span class='node-duration'>0h 0m 2s+103ms</span>
+						<span class='node-time'>Jul 8, 2019 04:11:31 PM</span>
+						<span class='node-duration'>0h 0m 1s+582ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1406,7 +922,295 @@ cookie：null
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
+													<td class='timestamp'>4:11:32 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='25'>
+					<div class='collapsible-header'>
+						<div class='node-name'>userNoticelist</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:31 PM</span>
+						<span class='node-duration'>0h 0m 1s+496ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>返一半接口测试</span>
+											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:11:32 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='26'>
+					<div class='collapsible-header'>
+						<div class='node-name'>userMutlireadnotices</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:31 PM</span>
+						<span class='node-duration'>0h 0m 1s+434ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>返一半接口测试</span>
+											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:11:32 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='27'>
+					<div class='collapsible-header'>
+						<div class='node-name'>commonNoticestatus</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:31 PM</span>
+						<span class='node-duration'>0h 0m 1s+384ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>返一半接口测试</span>
+											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:11:32 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='28'>
+					<div class='collapsible-header'>
+						<div class='node-name'>userDashboard</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:31 PM</span>
+						<span class='node-duration'>0h 0m 1s+338ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>返一半接口测试</span>
+											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:11:32 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='29'>
+					<div class='collapsible-header'>
+						<div class='node-name'>userFeedback</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:31 PM</span>
+						<span class='node-duration'>0h 0m 1s+163ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>返一半接口测试</span>
+											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:11:32 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='30'>
+					<div class='collapsible-header'>
+						<div class='node-name'>userBindmobile</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:31 PM</span>
+						<span class='node-duration'>0h 0m 1s+92ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>返一半接口测试</span>
+											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:11:32 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='31'>
+					<div class='collapsible-header'>
+						<div class='node-name'>commonGetverifycode</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:31 PM</span>
+						<span class='node-duration'>0h 0m 1s+41ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>返一半接口测试</span>
+											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:11:32 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='32'>
+					<div class='collapsible-header'>
+						<div class='node-name'>userVouchercenter</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:31 PM</span>
+						<span class='node-duration'>0h 0m 1s+3ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>返一半接口测试</span>
+											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:11:32 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='33'>
+					<div class='collapsible-header'>
+						<div class='node-name'>userVoucherlist</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:32 PM</span>
+						<span class='node-duration'>0h 0m 0s+909ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>返一半接口测试</span>
+											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:11:32 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1416,9 +1220,9 @@ cookie：null
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='34'>
 					<div class='collapsible-header'>
-						<div class='node-name'>userNoticelist</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:24 PM</span>
-						<span class='node-duration'>0h 0m 2s+2ms</span>
+						<div class='node-name'>userInvitelist</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:32 PM</span>
+						<span class='node-duration'>0h 0m 0s+818ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1438,7 +1242,7 @@ cookie：null
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
+													<td class='timestamp'>4:11:32 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1448,9 +1252,9 @@ cookie：null
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='35'>
 					<div class='collapsible-header'>
-						<div class='node-name'>userMutlireadnotices</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:24 PM</span>
-						<span class='node-duration'>0h 0m 1s+945ms</span>
+						<div class='node-name'>userInvitepopstatus</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:32 PM</span>
+						<span class='node-duration'>0h 0m 0s+765ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1470,7 +1274,7 @@ cookie：null
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
+													<td class='timestamp'>4:11:32 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1480,9 +1284,9 @@ cookie：null
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='36'>
 					<div class='collapsible-header'>
-						<div class='node-name'>commonNoticestatus</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:24 PM</span>
-						<span class='node-duration'>0h 0m 1s+883ms</span>
+						<div class='node-name'>userGetAwardVoucherStatus</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:32 PM</span>
+						<span class='node-duration'>0h 0m 0s+717ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1502,7 +1306,7 @@ cookie：null
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
+													<td class='timestamp'>4:11:32 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1512,9 +1316,9 @@ cookie：null
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='37'>
 					<div class='collapsible-header'>
-						<div class='node-name'>userDashboard</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:24 PM</span>
-						<span class='node-duration'>0h 0m 1s+817ms</span>
+						<div class='node-name'>userGetAwardVoucher</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:32 PM</span>
+						<span class='node-duration'>0h 0m 0s+639ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1534,7 +1338,7 @@ cookie：null
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
+													<td class='timestamp'>4:11:33 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1544,9 +1348,9 @@ cookie：null
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='38'>
 					<div class='collapsible-header'>
-						<div class='node-name'>userFeedback</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:24 PM</span>
-						<span class='node-duration'>0h 0m 1s+666ms</span>
+						<div class='node-name'>refundInit</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:32 PM</span>
+						<span class='node-duration'>0h 0m 0s+529ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1566,7 +1370,7 @@ cookie：null
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
+													<td class='timestamp'>4:11:33 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1576,9 +1380,9 @@ cookie：null
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='39'>
 					<div class='collapsible-header'>
-						<div class='node-name'>userBindmobile</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:24 PM</span>
-						<span class='node-duration'>0h 0m 1s+609ms</span>
+						<div class='node-name'>userDeleteaddress</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:32 PM</span>
+						<span class='node-duration'>0h 0m 0s+474ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1598,7 +1402,7 @@ cookie：null
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
+													<td class='timestamp'>4:11:33 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1608,9 +1412,9 @@ cookie：null
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='40'>
 					<div class='collapsible-header'>
-						<div class='node-name'>commonGetverifycode</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:24 PM</span>
-						<span class='node-duration'>0h 0m 1s+551ms</span>
+						<div class='node-name'>nationProvincelist</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:32 PM</span>
+						<span class='node-duration'>0h 0m 0s+423ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1630,7 +1434,7 @@ cookie：null
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
+													<td class='timestamp'>4:11:33 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1640,9 +1444,9 @@ cookie：null
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='41'>
 					<div class='collapsible-header'>
-						<div class='node-name'>userVouchercenter</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:24 PM</span>
-						<span class='node-duration'>0h 0m 1s+505ms</span>
+						<div class='node-name'>nationCitylist</div>						
+						<span class='node-time'>Jul 8, 2019 04:11:32 PM</span>
+						<span class='node-duration'>0h 0m 0s+388ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1662,7 +1466,7 @@ cookie：null
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
+													<td class='timestamp'>4:11:33 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1672,297 +1476,9 @@ cookie：null
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='42'>
 					<div class='collapsible-header'>
-						<div class='node-name'>userVoucherlist</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:24 PM</span>
-						<span class='node-duration'>0h 0m 1s+408ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>返一半接口测试</span>
-											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='43'>
-					<div class='collapsible-header'>
-						<div class='node-name'>userInvitelist</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:24 PM</span>
-						<span class='node-duration'>0h 0m 1s+305ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>返一半接口测试</span>
-											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='44'>
-					<div class='collapsible-header'>
-						<div class='node-name'>userInvitepopstatus</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:24 PM</span>
-						<span class='node-duration'>0h 0m 1s+251ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>返一半接口测试</span>
-											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='45'>
-					<div class='collapsible-header'>
-						<div class='node-name'>userGetAwardVoucherStatus</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:25 PM</span>
-						<span class='node-duration'>0h 0m 1s+196ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>返一半接口测试</span>
-											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='46'>
-					<div class='collapsible-header'>
-						<div class='node-name'>userGetAwardVoucher</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:25 PM</span>
-						<span class='node-duration'>0h 0m 1s+94ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>返一半接口测试</span>
-											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='47'>
-					<div class='collapsible-header'>
-						<div class='node-name'>refundInit</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:25 PM</span>
-						<span class='node-duration'>0h 0m 0s+746ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>返一半接口测试</span>
-											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='48'>
-					<div class='collapsible-header'>
-						<div class='node-name'>userDeleteaddress</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:25 PM</span>
-						<span class='node-duration'>0h 0m 0s+600ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>返一半接口测试</span>
-											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='49'>
-					<div class='collapsible-header'>
-						<div class='node-name'>nationProvincelist</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:25 PM</span>
-						<span class='node-duration'>0h 0m 0s+545ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>返一半接口测试</span>
-											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='50'>
-					<div class='collapsible-header'>
-						<div class='node-name'>nationCitylist</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:25 PM</span>
-						<span class='node-duration'>0h 0m 0s+501ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>返一半接口测试</span>
-											<span class='category label white-text'>返一半接口测试用例(openapi)</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='51'>
-					<div class='collapsible-header'>
 						<div class='node-name'>nationDistrictlist</div>						
-						<span class='node-time'>Jul 8, 2019 04:04:25 PM</span>
-						<span class='node-duration'>0h 0m 0s+445ms</span>
+						<span class='node-time'>Jul 8, 2019 04:11:32 PM</span>
+						<span class='node-duration'>0h 0m 0s+334ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1982,7 +1498,7 @@ cookie：null
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:04:26 PM</td>
+													<td class='timestamp'>4:11:33 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1995,16 +1511,16 @@ cookie：null
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='52'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='43'>
 					<div class='test-heading'>
 						<span class='test-name'>返一半接口测试 : 消息推送</span>
-						<span class='test-time'>Jul 8, 2019 04:04:25 PM</span>
+						<span class='test-time'>Jul 8, 2019 04:11:32 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 8, 2019 04:04:25 PM</span>
-	<span class='label end-time'>Jul 8, 2019 04:04:25 PM</span>
+	<span class='label start-time'>Jul 8, 2019 04:11:32 PM</span>
+	<span class='label end-time'>Jul 8, 2019 04:11:32 PM</span>
 	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
 </div>
 	<div class='test-desc'>Pass: 0 ; Fail: 0 ; Skip: 0 ; </div>
@@ -2071,15 +1587,13 @@ cookie：null
 						<span class='category-name'>返一半接口测试</span>
 						<span class='category-status right'>
 							<span class='label pass'>43</span>
-							<span class='label fail'>3</span>
-							<span class='label others'>6</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
 							<span class='label green accent-4 white-text'>Passed: 43</span>
-							<span class='label red lighten-1 white-text'>Failed: 3</span>
-							<span class='label yellow darken-2 white-text'>Others: 6</span>
+							
+							
 						</div>
 					
 						<div class='category-tests'>
@@ -2093,263 +1607,218 @@ cookie：null
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 8, 2019 04:04:18 PM</td>
+										<td>Jul 8, 2019 04:11:25 PM</td>
 										<td class='linked' test-id='1'>返一半接口测试用例(openapi)</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-									<tr>
-										<td>Jul 8, 2019 04:04:21 PM</td>
-										<td class='linked' test-id='2'>返一半接口测试用例(openapi).orderOrderinit</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-									<tr>
-										<td>Jul 8, 2019 04:04:25 PM</td>
-										<td class='linked' test-id='3'>返一半接口测试用例(openapi).userGetusercart</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-									<tr>
-										<td>Jul 8, 2019 04:04:25 PM</td>
-										<td class='linked' test-id='4'>返一半接口测试用例(openapi).orderSubmitorder</td>
-										<td><span class='test-status skip'>skip</span></td>
-									</tr>
-									<tr>
-										<td>Jul 8, 2019 04:04:25 PM</td>
-										<td class='linked' test-id='5'>返一半接口测试用例(openapi).userSetdefaultaddress</td>
-										<td><span class='test-status skip'>skip</span></td>
-									</tr>
-									<tr>
-										<td>Jul 8, 2019 04:04:25 PM</td>
-										<td class='linked' test-id='6'>返一半接口测试用例(openapi).userDeletecartsku</td>
-										<td><span class='test-status skip'>skip</span></td>
-									</tr>
-									<tr>
-										<td>Jul 8, 2019 04:04:25 PM</td>
-										<td class='linked' test-id='7'>返一半接口测试用例(openapi).orderOrderpayconfirm</td>
-										<td><span class='test-status skip'>skip</span></td>
-									</tr>
-									<tr>
-										<td>Jul 8, 2019 04:04:25 PM</td>
-										<td class='linked' test-id='8'>返一半接口测试用例(openapi).orderOrderpay</td>
-										<td><span class='test-status skip'>skip</span></td>
-									</tr>
-									<tr>
-										<td>Jul 8, 2019 04:04:25 PM</td>
-										<td class='linked' test-id='9'>返一半接口测试用例(openapi).OrderCancelorder</td>
-										<td><span class='test-status skip'>skip</span></td>
-									</tr>
-									<tr>
-										<td>Jul 8, 2019 04:04:18 PM</td>
-										<td class='linked' test-id='10'>返一半接口测试用例(openapi).userAddskutocart</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:21 PM</td>
-										<td class='linked' test-id='11'>返一半接口测试用例(openapi).userGetredbaginfo</td>
+										<td>Jul 8, 2019 04:11:25 PM</td>
+										<td class='linked' test-id='2'>返一半接口测试用例(openapi).userGetredbaginfo</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:21 PM</td>
-										<td class='linked' test-id='12'>返一半接口测试用例(openapi).userLogin</td>
+										<td>Jul 8, 2019 04:11:29 PM</td>
+										<td class='linked' test-id='3'>返一半接口测试用例(openapi).userLogin</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:22 PM</td>
-										<td class='linked' test-id='13'>返一半接口测试用例(openapi).commonInitconfig</td>
+										<td>Jul 8, 2019 04:11:29 PM</td>
+										<td class='linked' test-id='4'>返一半接口测试用例(openapi).commonInitconfig</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:22 PM</td>
-										<td class='linked' test-id='14'>返一半接口测试用例(openapi).commonQiniutoken</td>
+										<td>Jul 8, 2019 04:11:29 PM</td>
+										<td class='linked' test-id='5'>返一半接口测试用例(openapi).commonQiniutoken</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:22 PM</td>
-										<td class='linked' test-id='15'>返一半接口测试用例(openapi).userGetudesk</td>
+										<td>Jul 8, 2019 04:11:29 PM</td>
+										<td class='linked' test-id='6'>返一半接口测试用例(openapi).userGetudesk</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:22 PM</td>
-										<td class='linked' test-id='16'>返一半接口测试用例(openapi).commonRecommendproducts</td>
+										<td>Jul 8, 2019 04:11:29 PM</td>
+										<td class='linked' test-id='7'>返一半接口测试用例(openapi).commonRecommendproducts</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:22 PM</td>
-										<td class='linked' test-id='17'>返一半接口测试用例(openapi).categorySearch</td>
+										<td>Jul 8, 2019 04:11:29 PM</td>
+										<td class='linked' test-id='8'>返一半接口测试用例(openapi).categorySearch</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:22 PM</td>
-										<td class='linked' test-id='18'>返一半接口测试用例(openapi).productIteminfo</td>
+										<td>Jul 8, 2019 04:11:29 PM</td>
+										<td class='linked' test-id='9'>返一半接口测试用例(openapi).productIteminfo</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:22 PM</td>
-										<td class='linked' test-id='19'>返一半接口测试用例(openapi).commonGuesslikeproducts</td>
+										<td>Jul 8, 2019 04:11:30 PM</td>
+										<td class='linked' test-id='10'>返一半接口测试用例(openapi).commonGuesslikeproducts</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:22 PM</td>
-										<td class='linked' test-id='20'>返一半接口测试用例(openapi).productCheckbuylimit</td>
+										<td>Jul 8, 2019 04:11:30 PM</td>
+										<td class='linked' test-id='11'>返一半接口测试用例(openapi).productCheckbuylimit</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:22 PM</td>
-										<td class='linked' test-id='21'>返一半接口测试用例(openapi).userGetuserinviteinfo</td>
+										<td>Jul 8, 2019 04:11:30 PM</td>
+										<td class='linked' test-id='12'>返一半接口测试用例(openapi).userGetuserinviteinfo</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:22 PM</td>
-										<td class='linked' test-id='22'>返一半接口测试用例(openapi).productHotkeysearch</td>
+										<td>Jul 8, 2019 04:11:30 PM</td>
+										<td class='linked' test-id='13'>返一半接口测试用例(openapi).productHotkeysearch</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:23 PM</td>
-										<td class='linked' test-id='23'>返一半接口测试用例(openapi).commonHotsearchsug</td>
+										<td>Jul 8, 2019 04:11:30 PM</td>
+										<td class='linked' test-id='14'>返一半接口测试用例(openapi).commonHotsearchsug</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:23 PM</td>
-										<td class='linked' test-id='24'>返一半接口测试用例(openapi).userCheckusercart</td>
+										<td>Jul 8, 2019 04:11:30 PM</td>
+										<td class='linked' test-id='15'>返一半接口测试用例(openapi).userCheckusercart</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:23 PM</td>
-										<td class='linked' test-id='25'>返一半接口测试用例(openapi).orderGetuserorders</td>
+										<td>Jul 8, 2019 04:11:30 PM</td>
+										<td class='linked' test-id='16'>返一半接口测试用例(openapi).orderGetuserorders</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:23 PM</td>
-										<td class='linked' test-id='26'>返一半接口测试用例(openapi).orderOrderdetail</td>
+										<td>Jul 8, 2019 04:11:30 PM</td>
+										<td class='linked' test-id='17'>返一半接口测试用例(openapi).orderOrderdetail</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:23 PM</td>
-										<td class='linked' test-id='27'>返一半接口测试用例(openapi).orderDeliverymessage</td>
+										<td>Jul 8, 2019 04:11:30 PM</td>
+										<td class='linked' test-id='18'>返一半接口测试用例(openapi).orderDeliverymessage</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:23 PM</td>
-										<td class='linked' test-id='28'>返一半接口测试用例(openapi).orderUserorderconfirm</td>
+										<td>Jul 8, 2019 04:11:30 PM</td>
+										<td class='linked' test-id='19'>返一半接口测试用例(openapi).orderUserorderconfirm</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:23 PM</td>
-										<td class='linked' test-id='29'>返一半接口测试用例(openapi).refundApply</td>
+										<td>Jul 8, 2019 04:11:31 PM</td>
+										<td class='linked' test-id='20'>返一半接口测试用例(openapi).refundApply</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:23 PM</td>
-										<td class='linked' test-id='30'>返一半接口测试用例(openapi).orderUserserviceorders</td>
+										<td>Jul 8, 2019 04:11:31 PM</td>
+										<td class='linked' test-id='21'>返一半接口测试用例(openapi).orderUserserviceorders</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:23 PM</td>
-										<td class='linked' test-id='31'>返一半接口测试用例(openapi).userAddresslist</td>
+										<td>Jul 8, 2019 04:11:31 PM</td>
+										<td class='linked' test-id='22'>返一半接口测试用例(openapi).userAddresslist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:24 PM</td>
-										<td class='linked' test-id='32'>返一半接口测试用例(openapi).userUpdateaddress</td>
+										<td>Jul 8, 2019 04:11:31 PM</td>
+										<td class='linked' test-id='23'>返一半接口测试用例(openapi).userUpdateaddress</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:24 PM</td>
-										<td class='linked' test-id='33'>返一半接口测试用例(openapi).userAddaddress</td>
+										<td>Jul 8, 2019 04:11:31 PM</td>
+										<td class='linked' test-id='24'>返一半接口测试用例(openapi).userAddaddress</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:24 PM</td>
-										<td class='linked' test-id='34'>返一半接口测试用例(openapi).userNoticelist</td>
+										<td>Jul 8, 2019 04:11:31 PM</td>
+										<td class='linked' test-id='25'>返一半接口测试用例(openapi).userNoticelist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:24 PM</td>
-										<td class='linked' test-id='35'>返一半接口测试用例(openapi).userMutlireadnotices</td>
+										<td>Jul 8, 2019 04:11:31 PM</td>
+										<td class='linked' test-id='26'>返一半接口测试用例(openapi).userMutlireadnotices</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:24 PM</td>
-										<td class='linked' test-id='36'>返一半接口测试用例(openapi).commonNoticestatus</td>
+										<td>Jul 8, 2019 04:11:31 PM</td>
+										<td class='linked' test-id='27'>返一半接口测试用例(openapi).commonNoticestatus</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:24 PM</td>
-										<td class='linked' test-id='37'>返一半接口测试用例(openapi).userDashboard</td>
+										<td>Jul 8, 2019 04:11:31 PM</td>
+										<td class='linked' test-id='28'>返一半接口测试用例(openapi).userDashboard</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:24 PM</td>
-										<td class='linked' test-id='38'>返一半接口测试用例(openapi).userFeedback</td>
+										<td>Jul 8, 2019 04:11:31 PM</td>
+										<td class='linked' test-id='29'>返一半接口测试用例(openapi).userFeedback</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:24 PM</td>
-										<td class='linked' test-id='39'>返一半接口测试用例(openapi).userBindmobile</td>
+										<td>Jul 8, 2019 04:11:31 PM</td>
+										<td class='linked' test-id='30'>返一半接口测试用例(openapi).userBindmobile</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:24 PM</td>
-										<td class='linked' test-id='40'>返一半接口测试用例(openapi).commonGetverifycode</td>
+										<td>Jul 8, 2019 04:11:31 PM</td>
+										<td class='linked' test-id='31'>返一半接口测试用例(openapi).commonGetverifycode</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:24 PM</td>
-										<td class='linked' test-id='41'>返一半接口测试用例(openapi).userVouchercenter</td>
+										<td>Jul 8, 2019 04:11:31 PM</td>
+										<td class='linked' test-id='32'>返一半接口测试用例(openapi).userVouchercenter</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:24 PM</td>
-										<td class='linked' test-id='42'>返一半接口测试用例(openapi).userVoucherlist</td>
+										<td>Jul 8, 2019 04:11:32 PM</td>
+										<td class='linked' test-id='33'>返一半接口测试用例(openapi).userVoucherlist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:24 PM</td>
-										<td class='linked' test-id='43'>返一半接口测试用例(openapi).userInvitelist</td>
+										<td>Jul 8, 2019 04:11:32 PM</td>
+										<td class='linked' test-id='34'>返一半接口测试用例(openapi).userInvitelist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:24 PM</td>
-										<td class='linked' test-id='44'>返一半接口测试用例(openapi).userInvitepopstatus</td>
+										<td>Jul 8, 2019 04:11:32 PM</td>
+										<td class='linked' test-id='35'>返一半接口测试用例(openapi).userInvitepopstatus</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:25 PM</td>
-										<td class='linked' test-id='45'>返一半接口测试用例(openapi).userGetAwardVoucherStatus</td>
+										<td>Jul 8, 2019 04:11:32 PM</td>
+										<td class='linked' test-id='36'>返一半接口测试用例(openapi).userGetAwardVoucherStatus</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:25 PM</td>
-										<td class='linked' test-id='46'>返一半接口测试用例(openapi).userGetAwardVoucher</td>
+										<td>Jul 8, 2019 04:11:32 PM</td>
+										<td class='linked' test-id='37'>返一半接口测试用例(openapi).userGetAwardVoucher</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:25 PM</td>
-										<td class='linked' test-id='47'>返一半接口测试用例(openapi).refundInit</td>
+										<td>Jul 8, 2019 04:11:32 PM</td>
+										<td class='linked' test-id='38'>返一半接口测试用例(openapi).refundInit</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:25 PM</td>
-										<td class='linked' test-id='48'>返一半接口测试用例(openapi).userDeleteaddress</td>
+										<td>Jul 8, 2019 04:11:32 PM</td>
+										<td class='linked' test-id='39'>返一半接口测试用例(openapi).userDeleteaddress</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:25 PM</td>
-										<td class='linked' test-id='49'>返一半接口测试用例(openapi).nationProvincelist</td>
+										<td>Jul 8, 2019 04:11:32 PM</td>
+										<td class='linked' test-id='40'>返一半接口测试用例(openapi).nationProvincelist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:25 PM</td>
-										<td class='linked' test-id='50'>返一半接口测试用例(openapi).nationCitylist</td>
+										<td>Jul 8, 2019 04:11:32 PM</td>
+										<td class='linked' test-id='41'>返一半接口测试用例(openapi).nationCitylist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:25 PM</td>
-										<td class='linked' test-id='51'>返一半接口测试用例(openapi).nationDistrictlist</td>
+										<td>Jul 8, 2019 04:11:32 PM</td>
+										<td class='linked' test-id='42'>返一半接口测试用例(openapi).nationDistrictlist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:25 PM</td>
-										<td class='linked' test-id='52'>消息推送</td>
+										<td>Jul 8, 2019 04:11:32 PM</td>
+										<td class='linked' test-id='43'>消息推送</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -2362,15 +1831,13 @@ cookie：null
 						<span class='category-name'>返一半接口测试用例(openapi)</span>
 						<span class='category-status right'>
 							<span class='label pass'>42</span>
-							<span class='label fail'>3</span>
-							<span class='label others'>6</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
 							<span class='label green accent-4 white-text'>Passed: 42</span>
-							<span class='label red lighten-1 white-text'>Failed: 3</span>
-							<span class='label yellow darken-2 white-text'>Others: 6</span>
+							
+							
 						</div>
 					
 						<div class='category-tests'>
@@ -2384,462 +1851,213 @@ cookie：null
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 8, 2019 04:04:18 PM</td>
+										<td>Jul 8, 2019 04:11:25 PM</td>
 										<td class='linked' test-id='1'>返一半接口测试用例(openapi)</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-									<tr>
-										<td>Jul 8, 2019 04:04:21 PM</td>
-										<td class='linked' test-id='2'>返一半接口测试用例(openapi).orderOrderinit</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-									<tr>
-										<td>Jul 8, 2019 04:04:25 PM</td>
-										<td class='linked' test-id='3'>返一半接口测试用例(openapi).userGetusercart</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-									<tr>
-										<td>Jul 8, 2019 04:04:25 PM</td>
-										<td class='linked' test-id='4'>返一半接口测试用例(openapi).orderSubmitorder</td>
-										<td><span class='test-status skip'>skip</span></td>
-									</tr>
-									<tr>
-										<td>Jul 8, 2019 04:04:25 PM</td>
-										<td class='linked' test-id='5'>返一半接口测试用例(openapi).userSetdefaultaddress</td>
-										<td><span class='test-status skip'>skip</span></td>
-									</tr>
-									<tr>
-										<td>Jul 8, 2019 04:04:25 PM</td>
-										<td class='linked' test-id='6'>返一半接口测试用例(openapi).userDeletecartsku</td>
-										<td><span class='test-status skip'>skip</span></td>
-									</tr>
-									<tr>
-										<td>Jul 8, 2019 04:04:25 PM</td>
-										<td class='linked' test-id='7'>返一半接口测试用例(openapi).orderOrderpayconfirm</td>
-										<td><span class='test-status skip'>skip</span></td>
-									</tr>
-									<tr>
-										<td>Jul 8, 2019 04:04:25 PM</td>
-										<td class='linked' test-id='8'>返一半接口测试用例(openapi).orderOrderpay</td>
-										<td><span class='test-status skip'>skip</span></td>
-									</tr>
-									<tr>
-										<td>Jul 8, 2019 04:04:25 PM</td>
-										<td class='linked' test-id='9'>返一半接口测试用例(openapi).OrderCancelorder</td>
-										<td><span class='test-status skip'>skip</span></td>
-									</tr>
-									<tr>
-										<td>Jul 8, 2019 04:04:18 PM</td>
-										<td class='linked' test-id='10'>返一半接口测试用例(openapi).userAddskutocart</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:21 PM</td>
-										<td class='linked' test-id='11'>返一半接口测试用例(openapi).userGetredbaginfo</td>
+										<td>Jul 8, 2019 04:11:25 PM</td>
+										<td class='linked' test-id='2'>返一半接口测试用例(openapi).userGetredbaginfo</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:21 PM</td>
-										<td class='linked' test-id='12'>返一半接口测试用例(openapi).userLogin</td>
+										<td>Jul 8, 2019 04:11:29 PM</td>
+										<td class='linked' test-id='3'>返一半接口测试用例(openapi).userLogin</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:22 PM</td>
-										<td class='linked' test-id='13'>返一半接口测试用例(openapi).commonInitconfig</td>
+										<td>Jul 8, 2019 04:11:29 PM</td>
+										<td class='linked' test-id='4'>返一半接口测试用例(openapi).commonInitconfig</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:22 PM</td>
-										<td class='linked' test-id='14'>返一半接口测试用例(openapi).commonQiniutoken</td>
+										<td>Jul 8, 2019 04:11:29 PM</td>
+										<td class='linked' test-id='5'>返一半接口测试用例(openapi).commonQiniutoken</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:22 PM</td>
-										<td class='linked' test-id='15'>返一半接口测试用例(openapi).userGetudesk</td>
+										<td>Jul 8, 2019 04:11:29 PM</td>
+										<td class='linked' test-id='6'>返一半接口测试用例(openapi).userGetudesk</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:22 PM</td>
-										<td class='linked' test-id='16'>返一半接口测试用例(openapi).commonRecommendproducts</td>
+										<td>Jul 8, 2019 04:11:29 PM</td>
+										<td class='linked' test-id='7'>返一半接口测试用例(openapi).commonRecommendproducts</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:22 PM</td>
-										<td class='linked' test-id='17'>返一半接口测试用例(openapi).categorySearch</td>
+										<td>Jul 8, 2019 04:11:29 PM</td>
+										<td class='linked' test-id='8'>返一半接口测试用例(openapi).categorySearch</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:22 PM</td>
-										<td class='linked' test-id='18'>返一半接口测试用例(openapi).productIteminfo</td>
+										<td>Jul 8, 2019 04:11:29 PM</td>
+										<td class='linked' test-id='9'>返一半接口测试用例(openapi).productIteminfo</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:22 PM</td>
-										<td class='linked' test-id='19'>返一半接口测试用例(openapi).commonGuesslikeproducts</td>
+										<td>Jul 8, 2019 04:11:30 PM</td>
+										<td class='linked' test-id='10'>返一半接口测试用例(openapi).commonGuesslikeproducts</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:22 PM</td>
-										<td class='linked' test-id='20'>返一半接口测试用例(openapi).productCheckbuylimit</td>
+										<td>Jul 8, 2019 04:11:30 PM</td>
+										<td class='linked' test-id='11'>返一半接口测试用例(openapi).productCheckbuylimit</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:22 PM</td>
-										<td class='linked' test-id='21'>返一半接口测试用例(openapi).userGetuserinviteinfo</td>
+										<td>Jul 8, 2019 04:11:30 PM</td>
+										<td class='linked' test-id='12'>返一半接口测试用例(openapi).userGetuserinviteinfo</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:22 PM</td>
-										<td class='linked' test-id='22'>返一半接口测试用例(openapi).productHotkeysearch</td>
+										<td>Jul 8, 2019 04:11:30 PM</td>
+										<td class='linked' test-id='13'>返一半接口测试用例(openapi).productHotkeysearch</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:23 PM</td>
-										<td class='linked' test-id='23'>返一半接口测试用例(openapi).commonHotsearchsug</td>
+										<td>Jul 8, 2019 04:11:30 PM</td>
+										<td class='linked' test-id='14'>返一半接口测试用例(openapi).commonHotsearchsug</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:23 PM</td>
-										<td class='linked' test-id='24'>返一半接口测试用例(openapi).userCheckusercart</td>
+										<td>Jul 8, 2019 04:11:30 PM</td>
+										<td class='linked' test-id='15'>返一半接口测试用例(openapi).userCheckusercart</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:23 PM</td>
-										<td class='linked' test-id='25'>返一半接口测试用例(openapi).orderGetuserorders</td>
+										<td>Jul 8, 2019 04:11:30 PM</td>
+										<td class='linked' test-id='16'>返一半接口测试用例(openapi).orderGetuserorders</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:23 PM</td>
-										<td class='linked' test-id='26'>返一半接口测试用例(openapi).orderOrderdetail</td>
+										<td>Jul 8, 2019 04:11:30 PM</td>
+										<td class='linked' test-id='17'>返一半接口测试用例(openapi).orderOrderdetail</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:23 PM</td>
-										<td class='linked' test-id='27'>返一半接口测试用例(openapi).orderDeliverymessage</td>
+										<td>Jul 8, 2019 04:11:30 PM</td>
+										<td class='linked' test-id='18'>返一半接口测试用例(openapi).orderDeliverymessage</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:23 PM</td>
-										<td class='linked' test-id='28'>返一半接口测试用例(openapi).orderUserorderconfirm</td>
+										<td>Jul 8, 2019 04:11:30 PM</td>
+										<td class='linked' test-id='19'>返一半接口测试用例(openapi).orderUserorderconfirm</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:23 PM</td>
-										<td class='linked' test-id='29'>返一半接口测试用例(openapi).refundApply</td>
+										<td>Jul 8, 2019 04:11:31 PM</td>
+										<td class='linked' test-id='20'>返一半接口测试用例(openapi).refundApply</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:23 PM</td>
-										<td class='linked' test-id='30'>返一半接口测试用例(openapi).orderUserserviceorders</td>
+										<td>Jul 8, 2019 04:11:31 PM</td>
+										<td class='linked' test-id='21'>返一半接口测试用例(openapi).orderUserserviceorders</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:23 PM</td>
-										<td class='linked' test-id='31'>返一半接口测试用例(openapi).userAddresslist</td>
+										<td>Jul 8, 2019 04:11:31 PM</td>
+										<td class='linked' test-id='22'>返一半接口测试用例(openapi).userAddresslist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:24 PM</td>
-										<td class='linked' test-id='32'>返一半接口测试用例(openapi).userUpdateaddress</td>
+										<td>Jul 8, 2019 04:11:31 PM</td>
+										<td class='linked' test-id='23'>返一半接口测试用例(openapi).userUpdateaddress</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:24 PM</td>
-										<td class='linked' test-id='33'>返一半接口测试用例(openapi).userAddaddress</td>
+										<td>Jul 8, 2019 04:11:31 PM</td>
+										<td class='linked' test-id='24'>返一半接口测试用例(openapi).userAddaddress</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:24 PM</td>
-										<td class='linked' test-id='34'>返一半接口测试用例(openapi).userNoticelist</td>
+										<td>Jul 8, 2019 04:11:31 PM</td>
+										<td class='linked' test-id='25'>返一半接口测试用例(openapi).userNoticelist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:24 PM</td>
-										<td class='linked' test-id='35'>返一半接口测试用例(openapi).userMutlireadnotices</td>
+										<td>Jul 8, 2019 04:11:31 PM</td>
+										<td class='linked' test-id='26'>返一半接口测试用例(openapi).userMutlireadnotices</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:24 PM</td>
-										<td class='linked' test-id='36'>返一半接口测试用例(openapi).commonNoticestatus</td>
+										<td>Jul 8, 2019 04:11:31 PM</td>
+										<td class='linked' test-id='27'>返一半接口测试用例(openapi).commonNoticestatus</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:24 PM</td>
-										<td class='linked' test-id='37'>返一半接口测试用例(openapi).userDashboard</td>
+										<td>Jul 8, 2019 04:11:31 PM</td>
+										<td class='linked' test-id='28'>返一半接口测试用例(openapi).userDashboard</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:24 PM</td>
-										<td class='linked' test-id='38'>返一半接口测试用例(openapi).userFeedback</td>
+										<td>Jul 8, 2019 04:11:31 PM</td>
+										<td class='linked' test-id='29'>返一半接口测试用例(openapi).userFeedback</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:24 PM</td>
-										<td class='linked' test-id='39'>返一半接口测试用例(openapi).userBindmobile</td>
+										<td>Jul 8, 2019 04:11:31 PM</td>
+										<td class='linked' test-id='30'>返一半接口测试用例(openapi).userBindmobile</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:24 PM</td>
-										<td class='linked' test-id='40'>返一半接口测试用例(openapi).commonGetverifycode</td>
+										<td>Jul 8, 2019 04:11:31 PM</td>
+										<td class='linked' test-id='31'>返一半接口测试用例(openapi).commonGetverifycode</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:24 PM</td>
-										<td class='linked' test-id='41'>返一半接口测试用例(openapi).userVouchercenter</td>
+										<td>Jul 8, 2019 04:11:31 PM</td>
+										<td class='linked' test-id='32'>返一半接口测试用例(openapi).userVouchercenter</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:24 PM</td>
-										<td class='linked' test-id='42'>返一半接口测试用例(openapi).userVoucherlist</td>
+										<td>Jul 8, 2019 04:11:32 PM</td>
+										<td class='linked' test-id='33'>返一半接口测试用例(openapi).userVoucherlist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:24 PM</td>
-										<td class='linked' test-id='43'>返一半接口测试用例(openapi).userInvitelist</td>
+										<td>Jul 8, 2019 04:11:32 PM</td>
+										<td class='linked' test-id='34'>返一半接口测试用例(openapi).userInvitelist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:24 PM</td>
-										<td class='linked' test-id='44'>返一半接口测试用例(openapi).userInvitepopstatus</td>
+										<td>Jul 8, 2019 04:11:32 PM</td>
+										<td class='linked' test-id='35'>返一半接口测试用例(openapi).userInvitepopstatus</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:25 PM</td>
-										<td class='linked' test-id='45'>返一半接口测试用例(openapi).userGetAwardVoucherStatus</td>
+										<td>Jul 8, 2019 04:11:32 PM</td>
+										<td class='linked' test-id='36'>返一半接口测试用例(openapi).userGetAwardVoucherStatus</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:25 PM</td>
-										<td class='linked' test-id='46'>返一半接口测试用例(openapi).userGetAwardVoucher</td>
+										<td>Jul 8, 2019 04:11:32 PM</td>
+										<td class='linked' test-id='37'>返一半接口测试用例(openapi).userGetAwardVoucher</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:25 PM</td>
-										<td class='linked' test-id='47'>返一半接口测试用例(openapi).refundInit</td>
+										<td>Jul 8, 2019 04:11:32 PM</td>
+										<td class='linked' test-id='38'>返一半接口测试用例(openapi).refundInit</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:25 PM</td>
-										<td class='linked' test-id='48'>返一半接口测试用例(openapi).userDeleteaddress</td>
+										<td>Jul 8, 2019 04:11:32 PM</td>
+										<td class='linked' test-id='39'>返一半接口测试用例(openapi).userDeleteaddress</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:25 PM</td>
-										<td class='linked' test-id='49'>返一半接口测试用例(openapi).nationProvincelist</td>
+										<td>Jul 8, 2019 04:11:32 PM</td>
+										<td class='linked' test-id='40'>返一半接口测试用例(openapi).nationProvincelist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:25 PM</td>
-										<td class='linked' test-id='50'>返一半接口测试用例(openapi).nationCitylist</td>
+										<td>Jul 8, 2019 04:11:32 PM</td>
+										<td class='linked' test-id='41'>返一半接口测试用例(openapi).nationCitylist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 8, 2019 04:04:25 PM</td>
-										<td class='linked' test-id='51'>返一半接口测试用例(openapi).nationDistrictlist</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>orderOrderinit</span>
-						<span class='category-status right'>
-							<span class='label fail'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 8, 2019 04:04:21 PM</td>
-										<td class='linked' test-id='2'>返一半接口测试用例(openapi).orderOrderinit</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>userGetusercart</span>
-						<span class='category-status right'>
-							<span class='label fail'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 8, 2019 04:04:25 PM</td>
-										<td class='linked' test-id='3'>返一半接口测试用例(openapi).userGetusercart</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>orderSubmitorder</span>
-						<span class='category-status right'>
-							<span class='label others'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							
-							
-							<span class='label yellow darken-2 white-text'>Others: 1</span>
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 8, 2019 04:04:25 PM</td>
-										<td class='linked' test-id='4'>返一半接口测试用例(openapi).orderSubmitorder</td>
-										<td><span class='test-status skip'>skip</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>orderOrderpayconfirm</span>
-						<span class='category-status right'>
-							<span class='label others'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							
-							
-							<span class='label yellow darken-2 white-text'>Others: 1</span>
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 8, 2019 04:04:25 PM</td>
-										<td class='linked' test-id='7'>返一半接口测试用例(openapi).orderOrderpayconfirm</td>
-										<td><span class='test-status skip'>skip</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>orderOrderpay</span>
-						<span class='category-status right'>
-							<span class='label others'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							
-							
-							<span class='label yellow darken-2 white-text'>Others: 1</span>
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 8, 2019 04:04:25 PM</td>
-										<td class='linked' test-id='8'>返一半接口测试用例(openapi).orderOrderpay</td>
-										<td><span class='test-status skip'>skip</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>userAddskutocart</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 8, 2019 04:04:18 PM</td>
-										<td class='linked' test-id='10'>返一半接口测试用例(openapi).userAddskutocart</td>
+										<td>Jul 8, 2019 04:11:32 PM</td>
+										<td class='linked' test-id='42'>返一半接口测试用例(openapi).nationDistrictlist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -2872,8 +2090,8 @@ cookie：null
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 8, 2019 04:04:21 PM</td>
-										<td class='linked' test-id='12'>返一半接口测试用例(openapi).userLogin</td>
+										<td>Jul 8, 2019 04:11:29 PM</td>
+										<td class='linked' test-id='3'>返一半接口测试用例(openapi).userLogin</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -2906,8 +2124,8 @@ cookie：null
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 8, 2019 04:04:24 PM</td>
-										<td class='linked' test-id='33'>返一半接口测试用例(openapi).userAddaddress</td>
+										<td>Jul 8, 2019 04:11:31 PM</td>
+										<td class='linked' test-id='24'>返一半接口测试用例(openapi).userAddaddress</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -2940,8 +2158,8 @@ cookie：null
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 8, 2019 04:04:25 PM</td>
-										<td class='linked' test-id='52'>消息推送</td>
+										<td>Jul 8, 2019 04:11:32 PM</td>
+										<td class='linked' test-id='43'>消息推送</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -2961,304 +2179,6 @@ cookie：null
 	</div>
 </div>
 <!-- category view -->
-<div id='exception-view' class='view hide'>
-
-    <section id='controls'>
-        <div class='controls grey lighten-4'>
-            <!-- search -->
-            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
-                <a href="#" class='search-div'>
-                    <i class='material-icons'>search</i> Search
-                </a>
-
-                <div class='input-field left hide'>
-                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-                </div>
-
-            </div>
-            <!-- search -->
-        </div>
-    </section>
-
-    <div class='subview-left left'>
-
-        <div class='view-summary'>
-            <h5>Exceptions</h3>
-                <ul id='exception-collection' class='exception-collection'>
-
-                        <li class='exception displayed active'>
-                            <div class='exception-heading'>
-                                <span class='exception-name'>java.lang.AssertionError</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
-                            </div>
-                            <div class='exception-content hide'>
-                                <div class='exception-tests'>
-                                    <table class='bordered table-results'>
-                                        <thead>
-                                        <tr>
-                                            <th>Timestamp</th>
-                                            <th>TestName</th>
-                                            <th>Status</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                                    <tr>
-                                                        <td>Jul 8, 2019 04:04:21 PM</td>
-                                                        <td class='linked' test-id='2'>返一半接口测试用例(openapi).orderOrderinit</td>
-                                                        <td><pre><pre>java.lang.AssertionError: 
-返回的errno不为0/errmsg不为success;
-返回的errno/errmsg:1919610014/商品已下架
-请求的url:https://m.api.fanyiban.cn/order/orderinit
-参数：[skusInfo=[{"skuId":78088,"amount":1,"price":3990}], v=1.2.4, token=c769c73eb87c1a88cb07672d6a8cfd1b]
-cookie：null
-接口返回：{"errno":1919610014,"errmsg":"商品已下架","data":{},"timestamp":1562573061,"serverlogid":"2833091a4f7e21f45cc737a89956db18"}
-《-------------------------分割线-------------------------》
-	at org.testng.Assert.fail(Assert.java:94)
-	at com.duoweidu.config.GeneralAssert.errnoAssert(GeneralAssert.java:106)
-	at com.duoweidu.cases.interfaces.InterfaceTest.generalAssertTest(InterfaceTest.java:88)
-	at com.duoweidu.cases.interfaces.FybInterfaceTest.process(FybInterfaceTest.java:40)
-	at com.duoweidu.cases.fyb.openapi.OrderOrderinit.orderOrderinit(OrderOrderinit.java:21)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</pre></pre></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Jul 8, 2019 04:04:25 PM</td>
-                                                        <td class='linked' test-id='3'>返一半接口测试用例(openapi).userGetusercart</td>
-                                                        <td><pre><pre>java.lang.AssertionError: 
-返回的list数据为空;
-请求的url:https://m.api.fanyiban.cn/user/getusercart
-参数：v=1.2.4&token=c769c73eb87c1a88cb07672d6a8cfd1b
-cookie：null
-接口返回：{"errno":0,"errmsg":"success","data":{"list":[],"totalPage":0,"totalCnt":0,"singleSkuCnt":0,"totalSkuCnt":0,"expiredTime":0,"totalCartSkuCnt":0,"recommendList":[{"id":79820,"name":"【每桶120克】嗨吃家酸辣粉6桶装 120g*6","main_sku":101236,"main_sku_pic":"http:\/\/img2.haoshiqi.net\/maa20fc279497998cf81bd0732d63f9887.jpg","left_stock":44131,"locked_stock":5821,"thumbnail":"http:\/\/img2.haoshiqi.net\/maa20fc279497998cf81bd0732d63f9887.jpg","market_price":2990,"price":1880,"reversion":188,"deduction":188,"selled_cnt":48},{"id":74652,"name":"伊利安慕希原味 205g*12盒 礼盒装","main_sku":103100,"main_sku_pic":"http:\/\/img2.haoshiqi.net\/mae3e697e942522c45f64fd5b3cf55cb67.jpg","left_stock":230,"locked_stock":500,"thumbnail":"http:\/\/img2.haoshiqi.net\/mae3e697e942522c45f64fd5b3cf55cb67.jpg","market_price":4990,"price":3990,"reversion":399,"deduction":399,"selled_cnt":786},{"id":75299,"name":"新西兰进口牧恩纯牛奶营养早餐奶便携盒装牛奶 250ml*10盒","main_sku":92721,"main_sku_pic":"http:\/\/img2.haoshiqi.net\/mab4158111a134869fca4bde186b568b15.jpg","left_stock":853,"locked_stock":2221,"thumbnail":"http:\/\/img2.haoshiqi.net\/mab4158111a134869fca4bde186b568b15.jpg","market_price":8900,"price":2580,"reversion":258,"deduction":258,"selled_cnt":1765},{"id":41817,"name":"蒙牛小真果粒草莓味125ml*20盒","main_sku":94036,"main_sku_pic":"http:\/\/img2.haoshiqi.net\/ma0c5b9fe51b69bb9412d1dd90db408f2c.jpg","left_stock":871,"locked_stock":84685,"thumbnail":"http:\/\/img2.haoshiqi.net\/ma0c5b9fe51b69bb9412d1dd90db408f2c.jpg","market_price":2990,"price":2380,"reversion":238,"deduction":238,"selled_cnt":223},{"id":52803,"name":"慕丝妮散装肉松饼整箱 1000g","main_sku":87213,"main_sku_pic":"http:\/\/img2.haoshiqi.net\/ma8eb747fcb20ac06c022c0cbcfc9bbe21.jpg","left_stock":99675,"locked_stock":0,"thumbnail":"http:\/\/img2.haoshiqi.net\/ma8eb747fcb20ac06c022c0cbcfc9bbe21.jpg","market_price":2790,"price":1860,"reversion":186,"deduction":186,"selled_cnt":229},{"id":52294,"name":"裕昌超辣火鸡面装超辣速食方便面泡面网红干拌面国产辣鸡面 140克*4包","main_sku":88301,"main_sku_pic":"http:\/\/img2.haoshiqi.net\/ma26dc5e652d53b2984a45b7936f341b57.jpg","left_stock":39032,"locked_stock":61545,"thumbnail":"http:\/\/img2.haoshiqi.net\/ma26dc5e652d53b2984a45b7936f341b57.jpg","market_price":2380,"price":990,"reversion":99,"deduction":99,"selled_cnt":421},{"id":77933,"name":"慕滋苏打水 整箱350ml*12瓶","main_sku":97820,"main_sku_pic":"http:\/\/img2.haoshiqi.net\/ma048ce5797dc5a80542abf52f196783a3.jpg","left_stock":869,"locked_stock":2700,"thumbnail":"http:\/\/img2.haoshiqi.net\/ma048ce5797dc5a80542abf52f196783a3.jpg","market_price":1990,"price":1651,"reversion":165.1,"deduction":165.1,"selled_cnt":633},{"id":77648,"name":"蒙牛特仑苏纯牛奶全脂牛奶礼盒装 250ml*12盒","main_sku":97307,"main_sku_pic":"http:\/\/img2.haoshiqi.net\/ma0922204592605dfe7ce1e4b851d8693b.jpg","left_stock":499,"locked_stock":0,"thumbnail":"http:\/\/img2.haoshiqi.net\/ma0922204592605dfe7ce1e4b851d8693b.jpg","market_price":6500,"price":4500,"reversion":450,"deduction":450,"selled_cnt":301}],"activeVoucherMoney":0,"notActiveVoucherMoney":10000,"hasInvited":0,"hasNewUserBenefit":0},"timestamp":1562573065,"serverlogid":"0e1aadaacd09254c43860ed3d3c371d8"}
-《-------------------------分割线-------------------------》
-	at org.testng.Assert.fail(Assert.java:94)
-	at com.duoweidu.config.GeneralAssert.listAssert(GeneralAssert.java:166)
-	at com.duoweidu.cases.interfaces.InterfaceTest.generalAssertTest(InterfaceTest.java:91)
-	at com.duoweidu.cases.interfaces.FybInterfaceTest.process(FybInterfaceTest.java:26)
-	at com.duoweidu.cases.fyb.openapi.UserGetusercart.userGetusercart(UserGetusercart.java:11)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</pre></pre></td>
-                                                    </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </li>
-                        <li class='exception displayed active'>
-                            <div class='exception-heading'>
-                                <span class='exception-name'>java.lang.Throwable</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>6</span></span>
-                            </div>
-                            <div class='exception-content hide'>
-                                <div class='exception-tests'>
-                                    <table class='bordered table-results'>
-                                        <thead>
-                                        <tr>
-                                            <th>Timestamp</th>
-                                            <th>TestName</th>
-                                            <th>Status</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                                    <tr>
-                                                        <td>Jul 8, 2019 04:04:25 PM</td>
-                                                        <td class='linked' test-id='4'>返一半接口测试用例(openapi).orderSubmitorder</td>
-                                                        <td><pre><pre>java.lang.Throwable: Method OrderSubmitorder.orderSubmitorder()[pri:0, instance:com.duoweidu.cases.fyb.openapi.OrderSubmitorder@26ba2a48] depends on not successfully finished methods in group "orderOrderinit"
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</pre></pre></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Jul 8, 2019 04:04:25 PM</td>
-                                                        <td class='linked' test-id='5'>返一半接口测试用例(openapi).userSetdefaultaddress</td>
-                                                        <td><pre><pre>java.lang.Throwable: Method UserSetdefaultaddress.userSetdefaultaddress()[pri:0, instance:com.duoweidu.cases.fyb.openapi.UserSetdefaultaddress@735f7ae5] depends on not successfully finished methods in group "orderOrderinit"
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</pre></pre></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Jul 8, 2019 04:04:25 PM</td>
-                                                        <td class='linked' test-id='6'>返一半接口测试用例(openapi).userDeletecartsku</td>
-                                                        <td><pre><pre>java.lang.Throwable: Method UserDeletecartsku.userDeletecartsku()[pri:0, instance:com.duoweidu.cases.fyb.openapi.UserDeletecartsku@38082d64] depends on not successfully finished methods in group "userGetusercart"
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</pre></pre></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Jul 8, 2019 04:04:25 PM</td>
-                                                        <td class='linked' test-id='7'>返一半接口测试用例(openapi).orderOrderpayconfirm</td>
-                                                        <td><pre><pre>java.lang.Throwable: Method OrderOrderpayconfirm.orderOrderpayconfirm()[pri:0, instance:com.duoweidu.cases.fyb.openapi.OrderOrderpayconfirm@13fee20c] depends on not successfully finished methods in group "orderOrderpay"
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</pre></pre></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Jul 8, 2019 04:04:25 PM</td>
-                                                        <td class='linked' test-id='8'>返一半接口测试用例(openapi).orderOrderpay</td>
-                                                        <td><pre><pre>java.lang.Throwable: Method OrderOrderpay.orderOrderpay()[pri:0, instance:com.duoweidu.cases.fyb.openapi.OrderOrderpay@3b81a1bc] depends on not successfully finished methods in group "orderSubmitorder"
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</pre></pre></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Jul 8, 2019 04:04:25 PM</td>
-                                                        <td class='linked' test-id='9'>返一半接口测试用例(openapi).OrderCancelorder</td>
-                                                        <td><pre><pre>java.lang.Throwable: Method OrderCancelorder.OrderCancelorder()[pri:0, instance:com.duoweidu.cases.fyb.openapi.OrderCancelorder@783e6358] depends on not successfully finished methods in group "orderOrderpayconfirm"
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</pre></pre></td>
-                                                    </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </li>
-                </ul>
-        </div>
-    </div>
-
-    <div class='subview-right left'>
-        <div class='view-summary'>
-            <h5 class='exception-name'></h5>
-        </div>
-    </div>
-</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -3268,31 +2188,31 @@ cookie：null
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>51</div>
+					<div class='panel-lead'>42</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>50</div>
+					<div class='panel-lead'>41</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 8, 2019 04:04:18 PM</div>
+					<div class='panel-lead'>Jul 8, 2019 04:11:25 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 8, 2019 04:04:25 PM</div>
+			 		<div class='panel-lead'>Jul 8, 2019 04:11:32 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>6,941ms</div>
+					<div class='panel-lead'>6,906ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -3309,48 +2229,12 @@ cookie：null
 						<tr>
 							<td>返一半接口测试</td>
 							<td>43</td>
-							<td>3</td>
-							<td>6</td>
+							<td>0</td>
+							<td>0</td>
 						</tr>
 						<tr>
 							<td>返一半接口测试用例(openapi)</td>
 							<td>42</td>
-							<td>3</td>
-							<td>6</td>
-						</tr>
-						<tr>
-							<td>orderOrderinit</td>
-							<td>0</td>
-							<td>1</td>
-							<td>0</td>
-						</tr>
-						<tr>
-							<td>userGetusercart</td>
-							<td>0</td>
-							<td>1</td>
-							<td>0</td>
-						</tr>
-						<tr>
-							<td>orderSubmitorder</td>
-							<td>0</td>
-							<td>0</td>
-							<td>1</td>
-						</tr>
-						<tr>
-							<td>orderOrderpayconfirm</td>
-							<td>0</td>
-							<td>0</td>
-							<td>1</td>
-						</tr>
-						<tr>
-							<td>orderOrderpay</td>
-							<td>0</td>
-							<td>0</td>
-							<td>1</td>
-						</tr>
-						<tr>
-							<td>userAddskutocart</td>
-							<td>1</td>
 							<td>0</td>
 							<td>0</td>
 						</tr>
@@ -3385,22 +2269,22 @@ cookie：null
 
 		<script>
 			var statusGroup = {
-				passParent: 43,
-				failParent: 2,
+				passParent: 42,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 6,
-				exceptionsParent: 8,
+				skipParent: 0,
+				exceptionsParent: 0,
 				
-				passChild: 42,
-				failChild: 2,
+				passChild: 41,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
-				skipChild: 6,
+				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 8,
+				exceptionsChild: 0,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,
