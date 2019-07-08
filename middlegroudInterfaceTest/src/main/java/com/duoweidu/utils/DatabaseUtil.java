@@ -7,6 +7,7 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 import java.io.IOException;
 import java.io.Reader;
+import java.sql.SQLException;
 
 public class DatabaseUtil {
 
@@ -28,7 +29,14 @@ public class DatabaseUtil {
 
     //interface_test库
     public static SqlSession getSqlSession() {
-       return getSession("databaseConfig.xml");
+        SqlSession session = getSession("databaseConfig.xml");
+        //防止插入表情乱码
+        try {
+            session.getConnection().prepareStatement("SET NAMES 'utf8mb4'").execute();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+       return session;
     }
 
 
