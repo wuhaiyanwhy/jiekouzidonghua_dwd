@@ -44,10 +44,10 @@ public class GeneralAssert extends Assert {
          */
         //插入报错数据
         SqlDetail.insertErrnoResult(path_id, param, status, errnoResult);
+        GeneralConfig.errnoList.add(uri);
         if ("prod".equals(ConfigFileUrl.getEnv()) && "false".equals(ConfigFileUrl.getDebug())) {
             //插入报错次数
             SqlDetail.updatePathErrnoCount(path_id);
-            GeneralConfig.errnoList.add(uri);
         }
         if (param == null) {
             return failed;
