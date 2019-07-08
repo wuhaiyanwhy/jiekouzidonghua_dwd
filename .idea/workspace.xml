@@ -481,7 +481,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG./Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/test.xml">
+  <component name="RunManager" selected="TestNG./Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/fyb.xml">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.duoweidu.cases.tradecenter.Test" />
       <module name="middlegroudInterfaceTest" />
@@ -544,8 +544,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG./Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/test.xml" />
         <item itemvalue="TestNG./Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/fyb.xml" />
+        <item itemvalue="TestNG./Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/test.xml" />
         <item itemvalue="TestNG./Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/iqg.xml" />
         <item itemvalue="TestNG./Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" />
         <item itemvalue="Application.Test" />
