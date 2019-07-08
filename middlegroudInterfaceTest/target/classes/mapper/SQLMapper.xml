@@ -43,7 +43,6 @@
 
     <select id="getBuildId" resultType="com.duoweidu.model.table.Build">
         select * from mid_build
-        where channel_id = #{channel_id}
         order by id desc limit 1
     </select>
 
