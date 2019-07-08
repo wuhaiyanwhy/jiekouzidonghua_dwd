@@ -108,7 +108,7 @@
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>
-                            ./src/main/resources/fyb.xml
+                            ./src/main/resources/iqg.xml
                         </suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
