@@ -74,7 +74,7 @@ public class GeneralAssert extends Assert {
                     e.printStackTrace();
                 }
             }
-            fail(distinguishParamFailed("返回的code不正确", uri, path_id, param, 1, null));
+            fail(distinguishParamFailed("返回的code不等于200;\n返回的code:" + statusCode, uri, path_id, param, 1, null));
         }
 
     }
