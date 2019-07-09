@@ -1,16 +1,13 @@
 package com.duoweidu.cases.msf.openapi;
 
-import com.duoweidu.cases.interfacetest.OpenapiInterfaceTest;
-import com.duoweidu.utils.ConfigFileOpenapi;
+import com.duoweidu.cases.interfaces.MsfInterfaceTest;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
-
-public class UserGethoney extends OpenapiInterfaceTest {
+public class UserGethoney extends MsfInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "获取用户蜂蜜信息")
-    public void userGethoney() throws IOException {
-        url = ConfigFileOpenapi.getUrlByKey(ConfigFileOpenapi.USER_GETHONEY);
+    public void userGethoney() {
+        setUrl("user.gethoney.uri");
         process(true,false);
     }
 

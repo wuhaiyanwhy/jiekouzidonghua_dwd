@@ -1,19 +1,17 @@
 package com.duoweidu.cases.msf.openapi;
 
-import com.duoweidu.cases.interfacetest.OpenapiInterfaceTest;
-import com.duoweidu.utils.ConfigFileOpenapi;
+import com.duoweidu.cases.interfaces.MsfInterfaceTest;
 import org.apache.http.NameValuePair;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
-public class UserDailybonus extends OpenapiInterfaceTest {
+public class UserDailybonus extends MsfInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "签到领积分")
-    public void userDailybonus() throws IOException {
-        url = ConfigFileOpenapi.getUrlByKey(ConfigFileOpenapi.USER_DAILYBONUS);
+    public void userDailybonus() {
+        setUrl("user.dailybonus.uri");
         List<NameValuePair> list = new LinkedList<>();
         process(list,false,false);
     }

@@ -1,16 +1,13 @@
 package com.duoweidu.cases.msf.openapi;
 
-import com.duoweidu.cases.interfacetest.OpenapiInterfaceTest;
-import com.duoweidu.utils.ConfigFileOpenapi;
+import com.duoweidu.cases.interfaces.MsfInterfaceTest;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
-
-public class MessageType extends OpenapiInterfaceTest {
+public class MessageType extends MsfInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "消息首页")
-    public void messageType() throws IOException {
-        url = ConfigFileOpenapi.getUrlByKey(ConfigFileOpenapi.MESSAGE_TYPE);
+    public void messageType() {
+        setUrl("message.type.uri");
         process(true,false);
     }
 }

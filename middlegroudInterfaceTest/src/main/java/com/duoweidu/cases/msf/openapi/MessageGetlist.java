@@ -1,16 +1,13 @@
 package com.duoweidu.cases.msf.openapi;
 
-import com.duoweidu.cases.interfacetest.OpenapiInterfaceTest;
-import com.duoweidu.utils.ConfigFileOpenapi;
+import com.duoweidu.cases.interfaces.MsfInterfaceTest;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
-
-public class MessageGetlist extends OpenapiInterfaceTest {
+public class MessageGetlist extends MsfInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "消息列表")
-    public void messageGetlist() throws IOException {
-        url = ConfigFileOpenapi.getUrlByKey(ConfigFileOpenapi.MESSAGE_GETLIST);
+    public void messageGetlist() {
+        setUrl("message.getlist.uri");
         process(true,false);
     }
 }

@@ -1,16 +1,13 @@
 package com.duoweidu.cases.msf.openapi;
 
-import com.duoweidu.cases.interfacetest.OpenapiInterfaceTest;
-import com.duoweidu.utils.ConfigFileOpenapi;
+import com.duoweidu.cases.interfaces.InterfaceTest;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
-
-public class OrderList extends OpenapiInterfaceTest {
+public class OrderList extends InterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "订单列表接口")
-    public void orderList() throws IOException {
-        url = ConfigFileOpenapi.getUrlByKey(ConfigFileOpenapi.ORDER_LIST);
+    public void orderList() {
+        setUrl("order.list.uri");
         param = "page_num=1&page_limit=20";
         process(true,true);
     }

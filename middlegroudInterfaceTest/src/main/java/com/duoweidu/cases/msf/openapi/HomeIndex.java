@@ -1,16 +1,13 @@
 package com.duoweidu.cases.msf.openapi;
 
-import com.duoweidu.cases.interfacetest.OpenapiInterfaceTest;
-import com.duoweidu.utils.ConfigFileOpenapi;
+import com.duoweidu.cases.interfaces.MsfInterfaceTest;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
-
-public class HomeIndex extends OpenapiInterfaceTest {
+public class HomeIndex extends MsfInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "首页")
-    public void homeIndex() throws IOException {
-        url = ConfigFileOpenapi.getUrlByKey(ConfigFileOpenapi.HOME_INDEX);
+    public void homeIndex() {
+        setUrl("home.index.uri");
         process(true,false);
     }
 

@@ -1,16 +1,13 @@
 package com.duoweidu.cases.msf.openapi;
 
-import com.duoweidu.cases.interfacetest.OpenapiInterfaceTest;
-import com.duoweidu.utils.ConfigFileOpenapi;
+import com.duoweidu.cases.interfaces.MsfInterfaceTest;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
-
-public class OrderNoticepop extends OpenapiInterfaceTest {
+public class OrderNoticepop extends MsfInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "订单列表弹窗提示发笔记接口")
-    public void orderNoticepop() throws IOException {
-        url = ConfigFileOpenapi.getUrlByKey(ConfigFileOpenapi.ORDER_NOTICEPOP);
+    public void orderNoticepop() {
+        setUrl("order.noticepop.uri");
         process(true,false);
 
     }

@@ -1,18 +1,15 @@
 package com.duoweidu.cases.msf.openapi;
 
-import com.duoweidu.cases.interfacetest.OpenapiInterfaceTest;
-import com.duoweidu.config.TestSql;
-import com.duoweidu.utils.ConfigFileOpenapi;
+import com.duoweidu.cases.interfaces.MsfInterfaceTest;
+import com.duoweidu.config.SqlDetail;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
-
-public class ArticleFavoritelist extends OpenapiInterfaceTest {
+public class ArticleFavoritelist extends MsfInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "收藏列表接口")
-    public void articleFavoritelist() throws IOException {
-        url = ConfigFileOpenapi.getUrlByKey(ConfigFileOpenapi.ARTICLE_FAVORITELIST);
-        param = "id=" + TestSql.getValue("article_id");
+    public void articleFavoritelist() {
+        setUrl("article.favoritelist.uri");
+        param = "id=" + SqlDetail.getParamValue("article_id");
         process(true,true);
     }
 }

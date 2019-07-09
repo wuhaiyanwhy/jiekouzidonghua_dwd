@@ -1,25 +1,24 @@
 package com.duoweidu.cases.msf.openapi;
 
-import com.duoweidu.cases.interfacetest.OpenapiInterfaceTest;
-import com.duoweidu.config.TestConfigOpenapi;
-import com.duoweidu.utils.ConfigFileOpenapi;
+import com.duoweidu.cases.interfaces.MsfInterfaceTest;
+import com.duoweidu.config.MsfConfig;
+import com.duoweidu.utils.ConfigFileUrl;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
-public class OrderPaymentresult extends OpenapiInterfaceTest {
+public class OrderPaymentresult extends MsfInterfaceTest {
 
     @Test(dependsOnGroups = "orderPaymentapply",description = "订单支付结果查询")
-    public void orderPaymentresult() throws IOException {
-        url = ConfigFileOpenapi.getUrlByKey(ConfigFileOpenapi.ORDER_PAYMENTRESULT);
+    public void orderPaymentresult() {
+        setUrl("order.paymentresult.uri");
         List<NameValuePair> list = new LinkedList<>();
-        if ("beta".equals(ConfigFileOpenapi.getEnv())) {
-            list.add(new BasicNameValuePair("order_id", TestConfigOpenapi.orderId));
-            list.add(new BasicNameValuePair("trade_no", TestConfigOpenapi.tradeNo));
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            list.add(new BasicNameValuePair("order_id", MsfConfig.orderId));
+            list.add(new BasicNameValuePair("trade_no", MsfConfig.tradeNo));
         }
         process(list,false,false);
     }

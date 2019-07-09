@@ -66,7 +66,6 @@ public class CallbackInterface {
      */
     public static String getStringResult(String url, int path_id, String param) {
         HttpGet get = new HttpGet(url + "?" + param);
-        get.setHeader("Content-Type", "application/json");
         GeneralConfig.defaultHttpClient.setCookieStore(GeneralConfig.store);
         HttpResponse response = null;
         try {
@@ -86,7 +85,6 @@ public class CallbackInterface {
      */
     public static String postStringResult(String url, int path_id, List<NameValuePair> list) {
         HttpPost post = new HttpPost(url);
-        post.setHeader("Content-Type", "application/json");
         GeneralConfig.defaultHttpClient.setCookieStore(GeneralConfig.store);
         UrlEncodedFormEntity entity = null;
         try {
@@ -113,7 +111,6 @@ public class CallbackInterface {
      */
     public static String postStringResult(String url, int path_id, String param) {
         HttpPost post = new HttpPost(url);
-        post.setHeader("Content-Type", "application/json");
         GeneralConfig.defaultHttpClient.setCookieStore(GeneralConfig.store);
         StringEntity entity = null;
         try {
@@ -140,7 +137,6 @@ public class CallbackInterface {
      */
     public static String deleteStringResult(String url, int path_id, String param) {
         HttpDelete delete = new HttpDelete(url);
-        delete.setHeader("Content-Type", "application/json");
         GeneralConfig.defaultHttpClient.setCookieStore(GeneralConfig.store);
         HttpResponse response = null;
         try {

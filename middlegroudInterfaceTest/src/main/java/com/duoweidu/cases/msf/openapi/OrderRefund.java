@@ -1,18 +1,15 @@
 package com.duoweidu.cases.msf.openapi;
 
-import com.duoweidu.cases.interfacetest.OpenapiInterfaceTest;
-import com.duoweidu.config.TestSql;
-import com.duoweidu.utils.ConfigFileOpenapi;
+import com.duoweidu.cases.interfaces.MsfInterfaceTest;
+import com.duoweidu.config.SqlDetail;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
-
-public class OrderRefund extends OpenapiInterfaceTest {
+public class OrderRefund extends MsfInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "申请退款页面接口")
-    public void orderRefund() throws IOException {
-        url = ConfigFileOpenapi.getUrlByKey(ConfigFileOpenapi.ORDER_REFUND);
-        param = "order_id=" + TestSql.getValue("order_id");
+    public void orderRefund() {
+        setUrl("order.refund.uri");
+        param = "order_id=" + SqlDetail.getParamValue("order_id");
         process(false,false);
     }
 }

@@ -2,6 +2,7 @@ package com.duoweidu.config;
 
 import com.duoweidu.model.iqgTable.ProductOrder;
 import com.duoweidu.model.iqgTable.TrdCouponOrder;
+import com.duoweidu.model.msfTable.Order;
 import com.duoweidu.utils.ConfigFileUrl;
 import com.duoweidu.utils.DatabaseUtil;
 import org.apache.ibatis.session.SqlSession;
@@ -14,9 +15,11 @@ import java.util.ArrayList;
 public class SqlDetail {
 
     private static SqlSession iqgBetaSession;
+    private static SqlSession msfBetaSession;
 
     static {
         iqgBetaSession = DatabaseUtil.getIqgBetaSqlSession();
+        msfBetaSession = DatabaseUtil.getMsfBetaSqlSession();
     }
 
 
@@ -167,6 +170,16 @@ public class SqlDetail {
         if (res >0) {
             System.out.println("更新trd_coupon_order用户订单数据成功");
         }
+    }
 
+    public static void msfUpdateOrder() {
+        Order order = new Order(getParamValue(0, "created_at"),
+                getParamValue("user_id"),
+                1);
+        int res = msfBetaSession.update("updateOrder", order);
+        msfBetaSession.commit();
+        if (res > 0) {
+            System.out.println("更新t_order用户订单数据成功");
+        }
     }
 }

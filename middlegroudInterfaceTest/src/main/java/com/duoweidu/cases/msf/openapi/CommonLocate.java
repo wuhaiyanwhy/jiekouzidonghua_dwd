@@ -1,16 +1,13 @@
 package com.duoweidu.cases.msf.openapi;
 
-import com.duoweidu.cases.interfacetest.OpenapiInterfaceTest;
-import com.duoweidu.utils.ConfigFileOpenapi;
+import com.duoweidu.cases.interfaces.MsfInterfaceTest;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
-
-public class CommonLocate extends OpenapiInterfaceTest {
+public class CommonLocate extends MsfInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "获取定位")
-    public void commonLocate() throws IOException {
-        url = ConfigFileOpenapi.getUrlByKey(ConfigFileOpenapi.COMMON_LOCATE);
+    public void commonLocate() {
+        setUrl("common.locate.uri");
         process(true,false);
     }
 }

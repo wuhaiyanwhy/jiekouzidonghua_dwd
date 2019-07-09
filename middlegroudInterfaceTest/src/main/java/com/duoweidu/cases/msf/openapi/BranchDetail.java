@@ -1,20 +1,15 @@
 package com.duoweidu.cases.msf.openapi;
 
-import com.duoweidu.cases.interfacetest.OpenapiInterfaceTest;
-import com.duoweidu.config.TestSql;
-import com.duoweidu.utils.ConfigFileOpenapi;
+import com.duoweidu.cases.interfaces.MsfInterfaceTest;
+import com.duoweidu.config.SqlDetail;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
-
-public class BranchDetail extends OpenapiInterfaceTest {
+public class BranchDetail extends MsfInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "门店详情")
-    public void branchDetail() throws IOException {
-        url = ConfigFileOpenapi.getUrlByKey(ConfigFileOpenapi.BRANCH_DETAIL);
-        param = "id=" + TestSql.getValue("branch_id") +
-                "&lng=" + TestSql.getValue("lng",4) +
-                "&lat=" + TestSql.getValue("lat",4);
+    public void branchDetail() {
+        setUrl("branch.detail.uri");
+        param = "id=" + SqlDetail.getParamValue("branch_id");
         process(true,false);
     }
 }

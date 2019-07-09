@@ -1,18 +1,15 @@
 package com.duoweidu.cases.msf.openapi;
 
-import com.duoweidu.cases.interfacetest.OpenapiInterfaceTest;
-import com.duoweidu.config.TestSql;
-import com.duoweidu.utils.ConfigFileOpenapi;
+import com.duoweidu.cases.interfaces.MsfInterfaceTest;
+import com.duoweidu.config.SqlDetail;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
-
-public class ArticleTogglefavorite extends OpenapiInterfaceTest {
+public class ArticleTogglefavorite extends MsfInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "切换收藏的接口")
-    public void articleTogglefavorite() throws IOException {
-        url = ConfigFileOpenapi.getUrlByKey(ConfigFileOpenapi.ARTICLE_TOGGLEFAVORITE);
-        param = "id=" + TestSql.getValue("article_id");
+    public void articleTogglefavorite() {
+        setUrl("article.togglefavorite.uri");
+        param = "id=" + SqlDetail.getParamValue("article_id");
         process(true,false);
     }
 }

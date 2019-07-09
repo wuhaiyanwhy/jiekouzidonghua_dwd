@@ -1,6 +1,7 @@
 package com.duoweidu.config;
 
 import com.duoweidu.utils.ConfigFileUrl;
+import org.apache.http.Header;
 import org.apache.http.HttpResponse;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -39,6 +40,25 @@ public class GeneralAssert extends Assert {
         errnoResult = faile +
                 "\ncookie：" + GeneralConfig.store +
                 "\n接口返回：" + result;
+
+        //觅食蜂报错需要X-Request-ID
+        if (ConfigFileUrl.getChannel() == 3) {
+            Header header[] = GeneralConfig.response.getHeaders("X-Request-ID");
+            failed = "\n" + faile +
+                    "\n请求的url:" + uri +
+                    "\nCX-Request-ID: " + header[0].getValue() +
+                    "\n接口返回：" + result +
+                    "\n《-------------------------分割线-------------------------》";
+            parameterFailed = "\n" + faile +
+                    "\n请求的url:" + uri +
+                    "\n参数：" + param +
+                    "\nCX-Request-ID: " + header[0].getValue() +
+                    "\n接口返回：" + result +
+                    "\n《-------------------------分割线-------------------------》";
+            errnoResult = faile +
+                    "\nCX-Request-ID: " + header[0].getValue() +
+                    "\n接口返回：" + result;
+        }
         /**
          * 如果不是线上环境/调试状态时则不调用报错相关预警
          */
@@ -74,7 +94,7 @@ public class GeneralAssert extends Assert {
                     e.printStackTrace();
                 }
             }
-            fail(distinguishParamFailed("返回的code不正确", uri, path_id, param, 1, null));
+            fail(distinguishParamFailed("返回的code不等于200;\n返回的code:" + statusCode, uri, path_id, param, 1, null));
         }
 
     }

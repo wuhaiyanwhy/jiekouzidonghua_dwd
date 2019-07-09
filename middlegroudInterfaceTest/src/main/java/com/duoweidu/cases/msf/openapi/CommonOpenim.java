@@ -1,16 +1,13 @@
 package com.duoweidu.cases.msf.openapi;
 
-import com.duoweidu.cases.interfacetest.OpenapiInterfaceTest;
-import com.duoweidu.utils.ConfigFileOpenapi;
+import com.duoweidu.cases.interfaces.MsfInterfaceTest;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
-
-public class CommonOpenim extends OpenapiInterfaceTest {
+public class CommonOpenim extends MsfInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "获取Udesk参数")
-    public void commonOpenim() throws IOException {
-        url = ConfigFileOpenapi.getUrlByKey(ConfigFileOpenapi.COMMON_OPENIM);
+    public void commonOpenim() {
+        setUrl("common.openim.uri");
         process(true,false);
     }
 }

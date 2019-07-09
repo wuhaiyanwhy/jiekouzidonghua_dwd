@@ -1,16 +1,14 @@
 package com.duoweidu.cases.msf.openapi;
 
-import com.duoweidu.cases.interfacetest.OpenapiInterfaceTest;
-import com.duoweidu.utils.ConfigFileOpenapi;
+import com.duoweidu.cases.interfaces.MsfInterfaceTest;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
 
-public class ActivityList extends OpenapiInterfaceTest {
+public class ActivityList extends MsfInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "活动列表")
-    public void ActivityList() throws IOException {
-        url = ConfigFileOpenapi.getUrlByKey(ConfigFileOpenapi.ACTIVITY_LIST);
+    public void ActivityList() {
+        setUrl("activity.list.uri");
         process(true,true);
     }
 }

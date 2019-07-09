@@ -1,27 +1,26 @@
 package com.duoweidu.cases.msf.openapi;
 
-import com.duoweidu.cases.interfacetest.OpenapiInterfaceTest;
-import com.duoweidu.config.TestConfigOpenapi;
-import com.duoweidu.utils.ConfigFileOpenapi;
+import com.duoweidu.cases.interfaces.MsfInterfaceTest;
+import com.duoweidu.config.MsfConfig;
+import com.duoweidu.utils.ConfigFileUrl;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
-public class UserArticledelete extends OpenapiInterfaceTest {
+public class UserArticledelete extends MsfInterfaceTest {
 
     @Test(dependsOnGroups = "commentArticle",description = "删除文章")
-    public void userArticledelete() throws IOException {
-        url = ConfigFileOpenapi.getUrlByKey(ConfigFileOpenapi.USER_ARTICLEDELETE);
+    public void userArticledelete() {
+        setUrl("user.articledelete.uri");
         List<NameValuePair> list = new LinkedList<>();
-        if ("beta".equals(ConfigFileOpenapi.getEnv())) {
-            list.add(new BasicNameValuePair("article_id", TestConfigOpenapi.articleCreateId));
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            list.add(new BasicNameValuePair("article_id", MsfConfig.articleCreateId));
         }
         process(list,false,false);
-        if ("beta".equals(ConfigFileOpenapi.getEnv())) {
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
             generalAssertTest(false);
         }
     }

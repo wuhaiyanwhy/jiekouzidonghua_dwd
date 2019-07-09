@@ -1,16 +1,13 @@
 package com.duoweidu.cases.msf.openapi;
 
-import com.duoweidu.cases.interfacetest.OpenapiInterfaceTest;
-import com.duoweidu.utils.ConfigFileOpenapi;
+import com.duoweidu.cases.interfaces.MsfInterfaceTest;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
-
-public class InviteGetcode extends OpenapiInterfaceTest {
+public class InviteGetcode extends MsfInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "获取邀请码")
-    public void inviteGetcode() throws IOException {
-        url = ConfigFileOpenapi.getUrlByKey(ConfigFileOpenapi.INVITE_GETCODE);
+    public void inviteGetcode() {
+        setUrl("invite.getcode.uri");
         process(true,false);
     }
 }

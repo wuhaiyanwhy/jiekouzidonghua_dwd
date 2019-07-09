@@ -1,28 +1,27 @@
 package com.duoweidu.cases.msf.openapi;
 
-import com.duoweidu.cases.interfacetest.OpenapiInterfaceTest;
-import com.duoweidu.config.TestConfigOpenapi;
-import com.duoweidu.utils.ConfigFileOpenapi;
+import com.duoweidu.cases.interfaces.MsfInterfaceTest;
+import com.duoweidu.config.MsfConfig;
+import com.duoweidu.utils.ConfigFileUrl;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
-public class ArticleCreatecomment extends OpenapiInterfaceTest{
+public class ArticleCreatecomment extends MsfInterfaceTest {
 
     @Test(dependsOnGroups = "createArticle",description = "提交评论接口",groups = "commentArticle")
-    public void articleCreatecomment() throws IOException {
-        url = ConfigFileOpenapi.getUrlByKey(ConfigFileOpenapi.ARTICLE_CREATECOMMENT);
+    public void articleCreatecomment() {
+        setUrl("article.createcomment.uri");
         List<NameValuePair> list = new LinkedList<>();
-        if ("beta".equals(ConfigFileOpenapi.getEnv())) {
-            list.add(new BasicNameValuePair("id", TestConfigOpenapi.articleCreateId));
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            list.add(new BasicNameValuePair("id", MsfConfig.articleCreateId));
         }
         list.add(new BasicNameValuePair("content","很好哦"));
         process(list,false,false);
-        if ("beta".equals(ConfigFileOpenapi.getEnv())) {
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
             generalAssertTest(false);
         }
     }

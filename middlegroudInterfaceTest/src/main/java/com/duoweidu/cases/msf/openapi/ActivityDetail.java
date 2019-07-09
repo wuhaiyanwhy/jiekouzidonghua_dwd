@@ -1,18 +1,15 @@
 package com.duoweidu.cases.msf.openapi;
 
-import com.duoweidu.cases.interfacetest.OpenapiInterfaceTest;
-import com.duoweidu.config.TestSql;
-import com.duoweidu.utils.ConfigFileOpenapi;
+import com.duoweidu.cases.interfaces.MsfInterfaceTest;
+import com.duoweidu.config.SqlDetail;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
-
-public class ActivityDetail extends OpenapiInterfaceTest {
+public class ActivityDetail extends MsfInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "活动详情")
-    public void activityDetail() throws IOException {
-        url = ConfigFileOpenapi.getUrlByKey(ConfigFileOpenapi.ACTIVITY_DETAIL);
-        param = "activity_id=" + TestSql.getValue("activity_id");
+    public void activityDetail() {
+        setUrl("activity.detail.uri");
+        param = "activity_id=" + SqlDetail.getParamValue("activity_id");
         process(true,false);
     }
 }

@@ -1,18 +1,15 @@
 package com.duoweidu.cases.msf.openapi;
 
-import com.duoweidu.cases.interfacetest.OpenapiInterfaceTest;
-import com.duoweidu.config.TestSql;
-import com.duoweidu.utils.ConfigFileOpenapi;
+import com.duoweidu.cases.interfaces.MsfInterfaceTest;
+import com.duoweidu.config.SqlDetail;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
-
-public class ArticleLikeslist extends OpenapiInterfaceTest {
+public class ArticleLikeslist extends MsfInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "点赞列表")
-    public void articleLikeslist() throws IOException {
-        url = ConfigFileOpenapi.getUrlByKey(ConfigFileOpenapi.ARTICLE_LIKESLIST);
-        param = "id=" + TestSql.getValue("article_id");
+    public void articleLikeslist() {
+        setUrl("article.likeslist.uri");
+        param = "id=" + SqlDetail.getParamValue("article_id");
         process(true,true);
     }
 }

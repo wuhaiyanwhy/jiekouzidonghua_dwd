@@ -1,18 +1,15 @@
 package com.duoweidu.cases.msf.openapi;
 
-import com.duoweidu.cases.interfacetest.OpenapiInterfaceTest;
-import com.duoweidu.config.TestSql;
-import com.duoweidu.utils.ConfigFileOpenapi;
+import com.duoweidu.cases.interfaces.MsfInterfaceTest;
+import com.duoweidu.config.SqlDetail;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
-
-public class SearchTaglist extends OpenapiInterfaceTest {
+public class SearchTaglist extends MsfInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "搜索标签")
-    public void searchTaglist() throws IOException {
-        url = ConfigFileOpenapi.getUrlByKey(ConfigFileOpenapi.SEARCH_TAGSLIST);
-        param = "name=" + TestSql.getValue("tagName",4);
+    public void searchTaglist() {
+        setUrl("search.taglist.uri");
+        param = "name=" + SqlDetail.getParamValue(0, "tagName");
         process(true,true);
     }
 }

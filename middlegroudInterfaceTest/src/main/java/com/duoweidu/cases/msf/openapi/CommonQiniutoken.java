@@ -1,16 +1,13 @@
 package com.duoweidu.cases.msf.openapi;
 
-import com.duoweidu.cases.interfacetest.OpenapiInterfaceTest;
-import com.duoweidu.utils.ConfigFileOpenapi;
+import com.duoweidu.cases.interfaces.MsfInterfaceTest;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
-
-public class CommonQiniutoken extends OpenapiInterfaceTest {
+public class CommonQiniutoken extends MsfInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "获取七牛token")
-    public void commonQiniutoken() throws IOException {
-        url = ConfigFileOpenapi.getUrlByKey(ConfigFileOpenapi.COMMON_QINIUTOKEN);
+    public void commonQiniutoken() {
+        setUrl("common.qiniutoken.uri");
         param = "type=1";
         process(true,false);
     }

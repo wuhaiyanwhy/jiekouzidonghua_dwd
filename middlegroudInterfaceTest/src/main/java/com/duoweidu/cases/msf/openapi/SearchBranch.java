@@ -1,19 +1,13 @@
 package com.duoweidu.cases.msf.openapi;
 
-import com.duoweidu.cases.interfacetest.OpenapiInterfaceTest;
-import com.duoweidu.config.TestSql;
-import com.duoweidu.utils.ConfigFileOpenapi;
+import com.duoweidu.cases.interfaces.MsfInterfaceTest;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
-
-public class SearchBranch extends OpenapiInterfaceTest {
+public class SearchBranch extends MsfInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "地址搜索")
-    public void searchBranch() throws IOException {
-        url = ConfigFileOpenapi.getUrlByKey(ConfigFileOpenapi.SEARCH_BRANCH);
-        param = "lng=" + TestSql.getValue("lng",4) +
-                "&lat=" + TestSql.getValue("lat",4);
+    public void searchBranch() {
+        setUrl("search.branch.uri");
         process(true,false);
     }
 }
