@@ -19,7 +19,7 @@ public class MsfInterfaceTest extends InterfaceTest {
                 "&token=" + MsfConfig.token +
                 "&lng=" + SqlDetail.getParamValue(0, "lng") +
                 "&lat=" + SqlDetail.getParamValue(0, "lat") +
-                "&zone_id= " + SqlDetail.getParamValue(0, "zone_id") +
+                "&zone_id=" + SqlDetail.getParamValue(0, "zone_id") +
                 "&platform=" + SqlDetail.getParamValue(0, "platform");
         if (param != null) {
             this.param = par + "&" + param;

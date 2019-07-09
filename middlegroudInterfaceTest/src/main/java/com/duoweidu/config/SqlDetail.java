@@ -174,7 +174,7 @@ public class SqlDetail {
 
     public static void msfUpdateOrder() {
         Order order = new Order(getParamValue(0, "created_at"),
-                getParamValue("user_id"),
+                getParamValue(2, "user_id"),
                 1);
         int res = msfBetaSession.update("updateOrder", order);
         msfBetaSession.commit();

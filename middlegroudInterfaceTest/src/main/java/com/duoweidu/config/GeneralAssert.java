@@ -63,8 +63,10 @@ public class GeneralAssert extends Assert {
          * 如果不是线上环境/调试状态时则不调用报错相关预警
          */
         //插入报错数据
-        SqlDetail.insertErrnoResult(path_id, param, status, errnoResult);
-        GeneralConfig.errnoList.add(uri);
+        if (!"false".equals(ConfigFileUrl.getDebug())) {
+            SqlDetail.insertErrnoResult(path_id, param, status, errnoResult);
+            GeneralConfig.errnoList.add(uri);
+        }
         if ("prod".equals(ConfigFileUrl.getEnv()) && "false".equals(ConfigFileUrl.getDebug())) {
             //插入报错次数
             SqlDetail.updatePathErrnoCount(path_id);

@@ -2,88 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5bc0160-3889-4c0e-b618-58b839bf4186" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/model/msfTable/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/mapper/MsfBetaSQLMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/msfBetaDatabaseConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/mxf.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/MsfInterfaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/MsfInterfaceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ActivityArticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ActivityArticle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ActivityBargain.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ActivityBargain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ActivityDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ActivityDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ActivityList.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ActivityList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ActivitySharedetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ActivitySharedetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleArticlelist.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleArticlelist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleCommentlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleCommentlist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleCommentuserlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleCommentuserlist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleCreate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleCreatecomment.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleCreatecomment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleFavoritelist.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleFavoritelist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleInitdata.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleInitdata.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleInterestlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleInterestlist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleLikeslist.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleLikeslist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleSearchtags.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleSearchtags.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleTogglefavorite.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleTogglefavorite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleTogglelikes.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleTogglelikes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/BranchCatlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/BranchCatlist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/BranchDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/BranchDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/BranchNearcbd.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/BranchNearcbd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/CommonAppconfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/CommonAppconfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/CommonAppupdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/CommonAppupdate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/CommonAuthcode.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/CommonAuthcode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/CommonLocate.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/CommonLocate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/CommonOpenim.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/CommonOpenim.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/CommonQiniutoken.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/CommonQiniutoken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/CommonStaticcontent.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/CommonStaticcontent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/CommonZonelist.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/CommonZonelist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/HomeIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/HomeIndex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/InviteGetcode.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/InviteGetcode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/InviteInitdata.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/InviteInitdata.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/InviteReceiveboon.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/InviteReceiveboon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/MessageGetlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/MessageGetlist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/MessageType.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/MessageType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/MessageUnread.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/MessageUnread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/OrderCancel.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/OrderCancel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/OrderList.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/OrderList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/OrderNoticeack.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/OrderNoticeack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/OrderNoticepop.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/OrderNoticepop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/OrderPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/OrderPayment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/OrderPaymentapply.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/OrderPaymentapply.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/OrderPaymentresult.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/OrderPaymentresult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/OrderRedeem.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/OrderRedeem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/OrderRefund.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/OrderRefund.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/OrderRefundapply.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/OrderRefundapply.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/SearchBranch.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/SearchBranch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/SearchCbdnearlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/SearchCbdnearlist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/SearchHottags.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/SearchHottags.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/SearchTaglist.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/SearchTaglist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserArticledelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserArticledelete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserArticlelist.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserArticlelist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserDailybonus.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserDailybonus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserFavoritelist.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserFavoritelist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserFollowlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserFollowlist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserGethoney.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserGethoney.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserGethoneylog.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserGethoneylog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserLogout.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserLogout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserProfile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserResetmobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserResetmobile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserSetting.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserSetting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserTogglefollow.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserTogglefollow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserUpdateinfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserUpdateinfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/GeneralAssert.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/GeneralAssert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/MsfGeneralAssert.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/SqlDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/SqlDetail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/utils/CallbackInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/utils/CallbackInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/utils/DatabaseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/utils/DatabaseUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/switch.properties" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/switch.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/config/GeneralAssert.class" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/config/GeneralAssert.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/config/GeneralConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/config/GeneralConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/mxf.xml" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/mxf.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/cases/interfaces/MsfInterfaceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/cases/interfaces/MsfInterfaceTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/config/SqlDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/config/SqlDetail.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/utils/CallbackInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/utils/CallbackInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/utils/DatabaseUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/utils/DatabaseUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/switch.properties" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/switch.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/mxf.xml" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/mxf.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/test-output/InterfaceReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/test-output/InterfaceReport.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/middlegroudInterfaceTest/target/" />
@@ -103,27 +30,27 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="6" />
+          <entry key="java" value="12" />
           <entry key="properties" value="1" />
-          <entry key="xml" value="1" />
+          <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="6" />
+          <entry key="JAVA" value="12" />
           <entry key="Properties" value="1" />
-          <entry key="XML" value="1" />
+          <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="9" />
+          <entry key="java" value="48" />
           <entry key="properties" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="9" />
+          <entry key="JAVA" value="48" />
           <entry key="Properties" value="19" />
         </counts>
       </usages-collector>
@@ -132,42 +59,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/mxf.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserLogout.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="16" column="54" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserLogin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/MsfInterfaceTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/utils/CallbackInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="91" column="42" selection-start-line="91" selection-start-column="42" selection-end-line="91" selection-end-column="42" />
+            <state relative-caret-position="247">
+              <caret line="111" column="33" selection-start-line="111" selection-start-column="33" selection-end-line="111" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -193,13 +88,74 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/InterfaceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="87" selection-start-line="87" selection-end-line="87" />
+            <state relative-caret-position="158">
+              <caret line="44" column="11" lean-forward="true" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/MsfInterfaceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-233">
+              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/mxf.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="15" column="56" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ActivityList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/OrderPaymentapply.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/SqlDetail.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="176" column="33" lean-forward="true" selection-start-line="176" selection-start-column="33" selection-end-line="176" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/message/DingDing.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -207,9 +163,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/MsfInterfaceTest.java" />
         <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/switch.properties" />
         <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/utils/CallbackInterface.java" />
+        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/InterfaceTest.java" />
+        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/MsfInterfaceTest.java" />
+        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/mxf.xml" />
+        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/OrderPaymentapply.java" />
+        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/test.java" />
+        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/SqlDetail.java" />
       </list>
     </option>
   </component>
@@ -292,6 +253,28 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="duoweidu" type="462c0819:PsiDirectoryNode" />
+              <item name="cases" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="middleground-onlineTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="middleground-onlineTest" type="462c0819:PsiDirectoryNode" />
+              <item name="middlegroudInterfaceTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="duoweidu" type="462c0819:PsiDirectoryNode" />
+              <item name="cases" type="462c0819:PsiDirectoryNode" />
+              <item name="openapi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="middleground-onlineTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="middleground-onlineTest" type="462c0819:PsiDirectoryNode" />
+              <item name="middlegroudInterfaceTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="duoweidu" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -322,7 +305,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562668701565" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562670446505" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -336,7 +319,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG./Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/mxf.xml">
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.duoweidu.cases.interfaces.test" />
+      <module name="middlegroudInterfaceTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.duoweidu.cases.interfaces.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/mxf.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="middlegroudInterfaceTest" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/mxf.xml" />
@@ -347,9 +343,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="TestNG./Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/mxf.xml" />
+      <item itemvalue="Application.test" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG./Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/mxf.xml" />
+        <item itemvalue="Application.test" />
       </list>
     </recent_temporary>
   </component>
@@ -368,51 +369,50 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_mxf_xml - 2019.07.09 at 18h 17m 52s.xml">
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_mxf_xml - 2019.07.09 at 18h 45m 20s.xml">
       <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/mxf.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_mxf_xml - 2019.07.09 at 18h 18m 06s.xml">
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_mxf_xml - 2019.07.09 at 18h 53m 05s.xml">
       <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/mxf.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_mxf_xml - 2019.07.09 at 18h 20m 30s.xml">
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_mxf_xml - 2019.07.09 at 18h 54m 28s.xml">
       <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/mxf.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_mxf_xml - 2019.07.09 at 18h 21m 15s.xml">
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_mxf_xml - 2019.07.09 at 18h 54m 55s.xml">
       <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/mxf.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_mxf_xml - 2019.07.09 at 18h 22m 35s.xml">
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_mxf_xml - 2019.07.09 at 18h 56m 05s.xml">
       <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/mxf.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_mxf_xml - 2019.07.09 at 18h 23m 05s.xml">
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_mxf_xml - 2019.07.09 at 18h 56m 38s.xml">
       <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/mxf.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_mxf_xml - 2019.07.09 at 18h 24m 35s.xml">
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_mxf_xml - 2019.07.09 at 18h 58m 07s.xml">
       <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/mxf.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_mxf_xml - 2019.07.09 at 18h 24m 54s.xml">
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_mxf_xml - 2019.07.09 at 18h 58m 25s.xml">
       <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/mxf.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_mxf_xml - 2019.07.09 at 18h 25m 32s.xml">
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_mxf_xml - 2019.07.09 at 18h 59m 56s.xml">
       <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/mxf.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_mxf_xml - 2019.07.09 at 18h 26m 34s.xml">
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_mxf_xml - 2019.07.09 at 19h 02m 33s.xml">
       <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/mxf.xml" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1487000" />
+    <option name="totallyTimeSpent" value="2797000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="32" y="23" width="1246" height="777" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.32930514" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="2" />
@@ -420,21 +420,21 @@
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.32930514" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="6" />
-      <window_info anchor="bottom" id="Find" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.32930514" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.39879155" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.32930514" />
+      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.59516615" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.54531723" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -451,9 +451,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/mxf.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/switch.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -468,13 +465,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/InterfaceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="87" selection-start-line="87" selection-end-line="87" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserLogin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -482,17 +472,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/MsfInterfaceTest.java">
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/utils/CallbackInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
+          <caret line="111" column="33" selection-start-line="111" selection-start-column="33" selection-end-line="111" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/utils/CallbackInterface.java">
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/message/DingDing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="91" column="42" selection-start-line="91" selection-start-column="42" selection-end-line="91" selection-end-column="42" />
+        <state relative-caret-position="232">
+          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/InterfaceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="44" column="11" lean-forward="true" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/MsfInterfaceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-233">
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/OrderPaymentapply.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <folding>
+            <element signature="e#143#144#0" expanded="true" />
+            <element signature="e#185#186#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/SqlDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="176" column="33" lean-forward="true" selection-start-line="176" selection-start-column="33" selection-end-line="176" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/mxf.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="15" column="56" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ActivityList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>

@@ -111,6 +111,7 @@ public class CallbackInterface {
      */
     public static String postStringResult(String url, int path_id, String param) {
         HttpPost post = new HttpPost(url);
+        post.setHeader("Content-Type", "application/json");
         GeneralConfig.defaultHttpClient.setCookieStore(GeneralConfig.store);
         StringEntity entity = null;
         try {
