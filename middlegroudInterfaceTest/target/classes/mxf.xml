@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<suite name="觅食蜂接口测试">
+
+
+    <test name ="觅食蜂接口测试用例(openapi)">
+        <classes >
+
+            <class name="com.duoweidu.cases.msf.openapi.UserLogin">
+                <methods>
+                    <include name = "userLogin"/>
+                </methods>
+            </class>
+            <!--线上禁用砍价接口-->
+            <!--<class name="com.duoweidu.cases.msf.openapi.ActivityBargain">-->
+                <!--<methods>-->
+                    <!--<include name = "activityBargain"/>-->
+                <!--</methods>-->
+            <!--</class>-->
+            <!--接口需要优化，先禁用-->
+            <!--<class name="com.duoweidu.cases.msf.openapi.UserUpdateinfo">-->
+                <!--<methods>-->
+                    <!--<include name = "userUpdateinfo"/>-->
+                <!--</methods>-->
+            <!--</class>-->
+            <!--<class name="com.duoweidu.cases.msf.openapi.MessageType">-->
+                <!--<methods>-->
+                    <!--<include name = "messageType"/>-->
+                <!--</methods>-->
+            <!--</class>-->
+            <class name="com.duoweidu.cases.msf.openapi.CommonAppconfig">
+                <methods>
+                    <include name = "commonAppconfig"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.HomeIndex">
+                <methods>
+                    <include name = "homeIndex"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.ActivityList">
+                <methods>
+                    <include name = "activityList"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.ActivityDetail">
+                <methods>
+                    <include name = "activityDetail"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.CommonLocate">
+                <methods>
+                    <include name = "commonLocate"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.ArticleArticlelist">
+                <methods>
+                    <include name = "articleArticlelist"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.ArticleDetail">
+                <methods>
+                    <include name = "articleDetail"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.ArticleInterestlist">
+                <methods>
+                    <include name = "articleInterestlist"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.UserTogglefollow">
+                <methods>
+                    <include name = "userTogglefollow"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.ArticleTogglefavorite">
+                <methods>
+                    <include name = "articleTogglefavorite"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.ArticleTogglelikes">
+                <methods>
+                    <include name = "articleTogglelikes"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.ArticleCreatecomment">
+                <methods>
+                    <include name = "articleCreatecomment"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.MessageUnread">
+                <methods>
+                    <include name = "messageUnread"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.ArticleCreate">
+                <methods>
+                    <include name = "articleCreate"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.UserProfile">
+                <methods>
+                    <include name = "userProfile"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.UserFavoritelist">
+                <methods>
+                    <include name = "userFavoritelist"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.ArticleLikeslist">
+                <methods>
+                    <include name = "articleLikeslist"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.UserArticledelete">
+                <methods>
+                    <include name = "userArticledelete"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.CommonAuthcode">
+                <methods>
+                    <include name = "commonAuthcode"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.UserSetting">
+                <methods>
+                    <include name = "userSetting"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.msf.openapi.CommonQiniutoken">
+                <methods>
+                    <include name = "commonQiniutoken"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.UserResetmobile">
+                <methods>
+                    <include name = "userResetmobile"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.CommonZonelist">
+                <methods>
+                    <include name = "commonZonelist"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.BranchNearcbd">
+                <methods>
+                    <include name = "branchNearcbd"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.SearchCbdnearlist">
+                <methods>
+                    <include name = "searchCbdnearlist"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.SearchHottags">
+                <methods>
+                    <include name = "searchHottags"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.SearchBranch">
+                <methods>
+                    <include name = "searchBranch"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.SearchTaglist">
+                <methods>
+                    <include name = "searchTaglist"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.ArticleInitdata">
+                <methods>
+                    <include name = "articleInitdata"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.msf.openapi.ActivityArticle">
+                <methods>
+                    <include name = "activityArticle"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.OrderPayment">
+                <methods>
+                    <include name = "orderPayment"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.OrderPaymentapply">
+                <methods>
+                    <include name = "orderPaymentapply"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.OrderPaymentresult">
+                <methods>
+                    <include name = "orderPaymentresult"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.OrderCancel">
+                <methods>
+                    <include name = "orderCancel"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.OrderRedeem">
+                <methods>
+                    <include name = "orderRedeem"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.BranchCatlist">
+                <methods>
+                    <include name = "branchCatlist"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.CommonOpenim">
+                <methods>
+                    <include name = "commonOpenim"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.CommonAppupdate">
+                <methods>
+                    <include name = "commonAppupdate"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.ActivitySharedetail">
+                <methods>
+                    <include name = "activitySharedetail"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.OrderList">
+                <methods>
+                    <include name = "orderList"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.OrderRefund">
+                <methods>
+                    <include name = "orderRefund"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.OrderRefundapply">
+                <methods>
+                    <include name = "orderRefundapply"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.OrderNoticeack">
+                <methods>
+                    <include name = "orderNoticeack"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.OrderNoticepop">
+                <methods>
+                    <include name = "orderNoticepop"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.UserFollowlist">
+                <methods>
+                    <include name = "userFollowlist"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.UserArticlelist">
+                <methods>
+                    <include name = "userArticlelist"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.UserDailybonus">
+                <methods>
+                    <include name = "userDailybonus"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.UserGethoney">
+                <methods>
+                    <include name = "userGethoney"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.UserGethoneylog">
+                <methods>
+                    <include name = "userGethoneylog"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.InviteGetcode">
+                <methods>
+                    <include name = "inviteGetcode"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.MessageGetlist">
+                <methods>
+                    <include name = "messageGetlist"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.BranchDetail">
+                <methods>
+                    <include name = "branchDetail"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.ArticleCommentuserlist">
+                <methods>
+                    <include name = "articleCommentuserlist"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.ArticleCommentuserlist">
+                <methods>
+                    <include name = "articleCommentlist"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.ArticleSearchtags">
+                <methods>
+                    <include name = "articleSearchtags"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.ArticleFavoritelist">
+                <methods>
+                    <include name = "articleFavoritelist"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.CommonStaticcontent">
+                <methods>
+                    <include name = "commonStaticcontent"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.InviteInitdata">
+                <methods>
+                    <include name = "inviteInitdata"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.InviteReceiveboon">
+                <methods>
+                    <include name = "inviteReceiveboon"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+
+    <test name ="觅食蜂接口测试用例(退出登录)">
+        <classes>
+            <class name="com.duoweidu.cases.msf.openapi.UserLogout">
+                <methods>
+                    <include name = "userLogout"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name ="消息推送">
+        <classes >
+            <class name="com.duoweidu.cases.message.Build">
+                <methods>
+                    <include name="build"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <listeners>
+
+        <listener class-name="com.duoweidu.config.ExtentTestNGIReporterListener"/>
+    </listeners>
+
+</suite>
