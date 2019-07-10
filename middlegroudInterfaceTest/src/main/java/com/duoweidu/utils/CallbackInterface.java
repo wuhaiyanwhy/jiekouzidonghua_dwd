@@ -36,6 +36,7 @@ public class CallbackInterface {
      * @return
      */
     public static String getResult(HttpResponse response, String url, int path_id, String param) {
+        GeneralConfig.response = response;
         GeneralAssert.codeAssert(response, url, path_id, param);
         String result = null;
         try {
