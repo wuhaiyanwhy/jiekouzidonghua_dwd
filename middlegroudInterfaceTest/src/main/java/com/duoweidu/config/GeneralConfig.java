@@ -1,5 +1,6 @@
 package com.duoweidu.config;
 
+import org.apache.http.HttpResponse;
 import org.apache.http.client.CookieStore;
 import org.apache.http.impl.client.DefaultHttpClient;
 
@@ -21,6 +22,7 @@ public class GeneralConfig {
     public static CookieStore store;
     //声明http客户端
     public static DefaultHttpClient defaultHttpClient;
-
+    //储存response
+    public static HttpResponse response;
 
 }

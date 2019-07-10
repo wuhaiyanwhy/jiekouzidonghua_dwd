@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 命名空间mapper,如果有多个mapper文件，这个必须唯一 -->
+<mapper namespace="com.duoweidu.model">
+
+    <!--更新product_order数据-->
+    <update id="updateOrder" parameterType="com.duoweidu.model.msfTable.Order">
+        update t_order set created_at=#{created_at} where user_id=#{user_id} and status =#{status}
+    </update>
+
+</mapper>
