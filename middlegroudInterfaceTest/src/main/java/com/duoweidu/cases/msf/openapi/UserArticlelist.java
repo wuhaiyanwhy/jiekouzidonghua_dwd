@@ -1,9 +1,9 @@
 package com.duoweidu.cases.msf.openapi;
 
-import com.duoweidu.cases.interfaces.IqgInterfaceTest;
+import com.duoweidu.cases.interfaces.MsfInterfaceTest;
 import org.testng.annotations.Test;
 
-public class UserArticlelist extends IqgInterfaceTest {
+public class UserArticlelist extends MsfInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "美食笔记列表")
     public void userArticlelist() {
