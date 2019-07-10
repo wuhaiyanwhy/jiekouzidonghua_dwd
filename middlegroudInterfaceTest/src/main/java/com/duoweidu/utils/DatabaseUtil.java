@@ -45,4 +45,9 @@ public class DatabaseUtil {
         return getSession("iqgBetaDatabaseConfig.xml");
     }
 
+    //msf_beta库
+    public static SqlSession getMsfBetaSqlSession() {
+        return getSession("msfBetaDatabaseConfig.xml");
+    }
+
 }
