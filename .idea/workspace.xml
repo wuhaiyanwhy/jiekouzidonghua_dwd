@@ -3,17 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a5bc0160-3889-4c0e-b618-58b839bf4186" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleCreate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/OrderList.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/OrderList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserArticlelist.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserArticlelist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/GeneralAssert.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/GeneralAssert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/switch.properties" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/switch.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/cases/interfaces/MsfInterfaceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/cases/interfaces/MsfInterfaceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/cases/msf/openapi/ArticleCreate.class" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/cases/msf/openapi/ArticleCreate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/cases/msf/openapi/OrderList.class" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/cases/msf/openapi/OrderList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/cases/msf/openapi/UserArticlelist.class" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/cases/msf/openapi/UserArticlelist.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/config/GeneralAssert.class" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/config/GeneralAssert.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/switch.properties" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/switch.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/test-output/InterfaceReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/test-output/InterfaceReport.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/middlegroudInterfaceTest/target/" />
@@ -48,13 +38,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="144" />
-          <entry key="properties" value="44" />
+          <entry key="properties" value="48" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="144" />
-          <entry key="Properties" value="44" />
+          <entry key="Properties" value="48" />
         </counts>
       </usages-collector>
     </session>
@@ -64,8 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/switch.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+            <state relative-caret-position="60">
+              <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -314,7 +304,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562725262314" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562725834887" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -378,12 +368,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_mxf_xml - 2019.07.10 at 10h 13m 09s.xml">
-      <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/mxf.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_mxf_xml - 2019.07.10 at 10h 13m 47s.xml">
-      <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/mxf.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_mxf_xml - 2019.07.10 at 10h 14m 35s.xml">
       <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/mxf.xml" configurationId="TestNG" />
     </history-entry>
@@ -408,13 +392,18 @@
     <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_mxf_xml - 2019.07.10 at 10h 19m 36s.xml">
       <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/mxf.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_mxf_xml - 2019.07.10 at 10h 27m 54s.xml">
+      <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/mxf.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_mxf_xml - 2019.07.10 at 10h 28m 13s.xml">
+      <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/mxf.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6919000" />
+    <option name="totallyTimeSpent" value="7571000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="32" y="23" width="1246" height="777" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -427,11 +416,11 @@
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Statistic" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="4" weight="0.32930514" />
+      <window_info anchor="bottom" id="Terminal" order="4" visible="true" weight="0.32930514" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.32930514" />
-      <window_info anchor="bottom" id="Run" order="8" visible="true" weight="0.43957704" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.43957704" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.54531723" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
@@ -562,13 +551,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/mxf.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="56" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/GeneralAssert.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="53">
@@ -581,10 +563,17 @@
         <state relative-caret-position="-1175" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/mxf.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="56" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/switch.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        <state relative-caret-position="60">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
         </state>
       </provider>
     </entry>
