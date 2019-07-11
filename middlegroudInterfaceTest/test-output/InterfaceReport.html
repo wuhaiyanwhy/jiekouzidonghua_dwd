@@ -35,6 +35,7 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -48,7 +49,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jul 10, 2019 10:56:58 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Jul 10, 2019 04:15:06 PM</span>
 				</a>
 			</li>
 			<li>
@@ -74,6 +75,8 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -88,10 +91,10 @@
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>爱抢购接口测试</a></li>
 					<li><a href='#'>爱抢购接口测试用例(openapi)</a></li>
+					<li><a href='#'>itemBargain</a></li>
 					<li><a href='#'>loginTrue</a></li>
 					<li><a href='#'>oneCouponResult</a></li>
 					<li><a href='#'>orderTrue</a></li>
-					<li><a href='#'>itemBargain</a></li>
 					<li><a href='#'>oneCouponOrderTrue</a></li>
 					<li><a href='#'>爱抢购接口测试用例(退出登录)</a></li>
 					<li><a href='#'>UserOauthRegisterAndLogin</a></li>
@@ -143,10 +146,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>56</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='96.429%'><span class='strong'>54</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='1.786%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='1.786%'>1</span> others
 				</div>
 			</div>
 		</div>
@@ -158,10 +161,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>55</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='96.364%'><span class='strong'>53</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='1.818%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='1.818%'>1</span> others
 				</div>
 			</div>
 		</div>
@@ -176,19 +179,19 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>爱抢购接口测试 : 爱抢购接口测试用例(openapi)</span>
-						<span class='test-time'>Jul 10, 2019 10:56:58 AM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Jul 10, 2019 04:15:06 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 10, 2019 10:56:58 AM</span>
-	<span class='label end-time'>Jul 10, 2019 10:57:33 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 34s+712ms</span>
+	<span class='label start-time'>Jul 10, 2019 04:15:06 PM</span>
+	<span class='label end-time'>Jul 10, 2019 04:15:48 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 42s+356ms</span>
 </div>
-	<div class='test-desc'>Pass: 52 ; Fail: 0 ; Skip: 0 ; </div>
+	<div class='test-desc'>Pass: 50 ; Fail: 1 ; Skip: 1 ; </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
 				<span class='category label white-text'>爱抢购接口测试</span>
@@ -197,11 +200,130 @@
 	</div>
 	<ul class='collapsible node-list' data-collapsible='accordion'>
 		
-				<li class='node level-1 leaf pass' status='pass' test-id='2'>
+				<li class='node level-1 leaf fail' status='fail' test-id='2'>
+					<div class='collapsible-header'>
+						<div class='node-name'>item_bargain_true</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:18 PM</span>
+						<span class='node-duration'>0h 0m 33s+952ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>爱抢购接口测试</span>
+											<span class='category label white-text'>爱抢购接口测试用例(openapi)</span>
+											<span class='category label white-text'>itemBargain</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>4:15:52 PM</td>
+													<td class='step-details'><pre>java.lang.AssertionError: 
+返回的status中code/message不正确;
+返回的status:{"server_time":1562746516,"code":14002,"alert":"","message":"抱歉，您已经砍过价了"}
+请求的url:https://m.betaapi.iqianggou.com/api/item/656972/bargain
+参数：[version=5.7.0, lng=121.463, lat=31.234]
+cookie：[]
+接口返回：{"status":{"code":14002,"message":"抱歉，您已经砍过价了","alert":"","server_time":1562746516},"data":{"item":{"id":656972,"type":1,"name":"接口测试专用商品","description":"","menus":[{"name":"主菜","items":[{"name":"菜品","price":"188.00"}]}],"images":["http:\/\/img-agc.iqianggou.com\/a50dee5d8c78e5f2d36d2fd1f2027a2f","http:\/\/img-agc.iqianggou.com\/2d02145c8f510fe8ef44856365197456!420x420"],"start_price":30000,"floor_price":1,"market_price":30000,"unlock_price":1,"current_price":29992.89,"is_new":true,"left":10000,"tips":"1，不与店内其他优惠活动同享。\n2，商品图片由商户提供，仅供参考；实际商品以实物为准，如有不符，请于商户当面协商解决。\n3，请在点单前出示爱抢购订单，否则商家有权要求以正常价格买单。","freeze_period":1,"need_book":0,"allow_take_out":2,"weight":10,"redeem_period":3,"refund_type":1,"delivery_type":1,"source_type":1,"payment_way":[256,64,32,8,4,2,1],"start_time":1550505600,"end_time":4102502399,"enabled":true,"brand":"接口测试专用品牌","bargain":true,"bargain_range":0.1,"vendor_item_online":true,"like":3,"branches":[{"id":96852,"name":"测试门店(接口测试专用)","logo_small":"http:\/\/img-agc.iqianggou.com\/2d02145c8f510fe8ef44856365197456","description":"","redeem_type":[8,4,2,1],"address":"上海市徐汇区钦州路100号","tel":"021-12345678","lat":31.16044,"lng":121.43117,"redeem_time":"9:00-12:00","zone_id":21,"pin_enabled":true,"ad_title":"","ad_url":""}],"bargain_count":"1","stock_status":"1人正在抢购，只剩10000个啦","comments_count":"0","comments_limit":"5","special_tips":{"redeem_period":"有效期3天","need_book":"无需预约","refund_type":"支持退款"},"special_tips_array":[{"key":"redeem_period","text":"有效期3天","icon":"http:\/\/img2.haoshiqi.net\/ma42ba6cf1950ab6dc9d1031f85414c3e3.jpg"},{"key":"need_book","text":"无需预约","icon":"http:\/\/img2.haoshiqi.net\/ma5cf32cfc07133ee6c2ada706ffb5afcb.jpg"},{"key":"refund_type","text":"支持退款","icon":"http:\/\/img2.haoshiqi.net\/mafd78d0a1d7929b2009ec9757a2e77174.jpg"}],"tips_array":["兑换时间：加厚发卡号发客户开发回复","每人每1天每店限购一次"],"coup_activity":[{"id":10070,"title":"满1000减500元券","branch_id":96852}],"is_on_shelf":true,"step_price_first":0,"bargain_range_second":0,"step_price_second":0,"bargain_range_third":0,"cb_types":[1]}}}
+《-------------------------分割线-------------------------》
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.duoweidu.config.GeneralAssert.statusTest(GeneralAssert.java:143)
+	at com.duoweidu.cases.interfaces.IqgInterfaceTest.generalAssertTest(IqgInterfaceTest.java:76)
+	at com.duoweidu.cases.iqg.openapi.ItemBargain.item_bargain_true(ItemBargain.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf skip' status='skip' test-id='3'>
+					<div class='collapsible-header'>
+						<div class='node-name'>bargainTodayTrue</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:48 PM</span>
+						<span class='node-duration'>0h 0m 3s+723ms</span>
+						<span class='test-status right skip'>skip</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>爱抢购接口测试</span>
+											<span class='category label white-text'>爱抢购接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>4:15:52 PM</td>
+													<td class='step-details'><pre>java.lang.Throwable: Method BargainToday.bargainTodayTrue()[pri:0, instance:com.duoweidu.cases.iqg.openapi.BargainToday@1e67b872] depends on not successfully finished methods in group "itemBargain"
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='4'>
 					<div class='collapsible-header'>
 						<div class='node-name'>user_login_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:56:58 AM</span>
-						<span class='node-duration'>0h 0m 36s+457ms</span>
+						<span class='node-time'>Jul 10, 2019 04:15:06 PM</span>
+						<span class='node-duration'>0h 0m 45s+677ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -222,7 +344,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -230,11 +352,11 @@
 								</div>
 						</div>
 				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='3'>
+				<li class='node level-1 leaf pass' status='pass' test-id='5'>
 					<div class='collapsible-header'>
 						<div class='node-name'>userRefundprogressTrue</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:02 AM</span>
-						<span class='node-duration'>0h 0m 32s+398ms</span>
+						<span class='node-time'>Jul 10, 2019 04:15:11 PM</span>
+						<span class='node-duration'>0h 0m 40s+236ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -255,7 +377,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -263,11 +385,11 @@
 								</div>
 						</div>
 				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='4'>
+				<li class='node level-1 leaf pass' status='pass' test-id='6'>
 					<div class='collapsible-header'>
 						<div class='node-name'>order_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:03 AM</span>
-						<span class='node-duration'>0h 0m 32s+183ms</span>
+						<span class='node-time'>Jul 10, 2019 04:15:12 PM</span>
+						<span class='node-duration'>0h 0m 40s+71ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -288,71 +410,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='5'>
-					<div class='collapsible-header'>
-						<div class='node-name'>item_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:05 AM</span>
-						<span class='node-duration'>0h 0m 30s+339ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>爱抢购接口测试</span>
-											<span class='category label white-text'>爱抢购接口测试用例(openapi)</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='6'>
-					<div class='collapsible-header'>
-						<div class='node-name'>ad_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:05 AM</span>
-						<span class='node-duration'>0h 0m 30s+5ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>爱抢购接口测试</span>
-											<span class='category label white-text'>爱抢购接口测试用例(openapi)</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -362,9 +420,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='7'>
 					<div class='collapsible-header'>
-						<div class='node-name'>user_myprofile_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:05 AM</span>
-						<span class='node-duration'>0h 0m 29s+473ms</span>
+						<div class='node-name'>item_true</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:13 PM</span>
+						<span class='node-duration'>0h 0m 38s+276ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -384,7 +442,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -394,9 +452,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='8'>
 					<div class='collapsible-header'>
-						<div class='node-name'>appconfig_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:06 AM</span>
-						<span class='node-duration'>0h 0m 28s+659ms</span>
+						<div class='node-name'>ad_true</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:14 PM</span>
+						<span class='node-duration'>0h 0m 37s+800ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -416,7 +474,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -426,9 +484,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='9'>
 					<div class='collapsible-header'>
-						<div class='node-name'>zone_21_categories_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:07 AM</span>
-						<span class='node-duration'>0h 0m 27s+783ms</span>
+						<div class='node-name'>user_myprofile_true</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:14 PM</span>
+						<span class='node-duration'>0h 0m 37s+247ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -448,7 +506,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -458,9 +516,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='10'>
 					<div class='collapsible-header'>
-						<div class='node-name'>order_type_redeem_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:08 AM</span>
-						<span class='node-duration'>0h 0m 27s+295ms</span>
+						<div class='node-name'>appconfig_true</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:15 PM</span>
+						<span class='node-duration'>0h 0m 36s+525ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -480,7 +538,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -490,9 +548,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='11'>
 					<div class='collapsible-header'>
-						<div class='node-name'>user_agreement_change_test</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:08 AM</span>
-						<span class='node-duration'>0h 0m 26s+795ms</span>
+						<div class='node-name'>zone_21_categories_true</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:16 PM</span>
+						<span class='node-duration'>0h 0m 35s+702ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -512,7 +570,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -522,16 +580,15 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='12'>
 					<div class='collapsible-header'>
-						<div class='node-name'>item_bargain_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:09 AM</span>
-						<span class='node-duration'>0h 0m 26s+250ms</span>
+						<div class='node-name'>order_type_redeem_true</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:17 PM</span>
+						<span class='node-duration'>0h 0m 35s+102ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
 											<span class='category label white-text'>爱抢购接口测试</span>
 											<span class='category label white-text'>爱抢购接口测试用例(openapi)</span>
-											<span class='category label white-text'>itemBargain</span>
 									</div>
 								<div class='node-steps'>
 									<table class='bordered table-results'>
@@ -545,7 +602,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -555,9 +612,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='13'>
 					<div class='collapsible-header'>
-						<div class='node-name'>item_detail_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:09 AM</span>
-						<span class='node-duration'>0h 0m 25s+417ms</span>
+						<div class='node-name'>user_agreement_change_test</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:17 PM</span>
+						<span class='node-duration'>0h 0m 34s+496ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -577,7 +634,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -587,9 +644,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='14'>
 					<div class='collapsible-header'>
-						<div class='node-name'>order_type_all_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:10 AM</span>
-						<span class='node-duration'>0h 0m 24s+895ms</span>
+						<div class='node-name'>item_detail_true</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:19 PM</span>
+						<span class='node-duration'>0h 0m 33s+103ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -609,7 +666,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -619,9 +676,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='15'>
 					<div class='collapsible-header'>
-						<div class='node-name'>order_type_to_comment_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:11 AM</span>
-						<span class='node-duration'>0h 0m 24s+113ms</span>
+						<div class='node-name'>order_type_all_true</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:19 PM</span>
+						<span class='node-duration'>0h 0m 32s+354ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -641,7 +698,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -651,9 +708,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='16'>
 					<div class='collapsible-header'>
-						<div class='node-name'>order_type_refund_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:11 AM</span>
-						<span class='node-duration'>0h 0m 23s+462ms</span>
+						<div class='node-name'>order_type_to_comment_true</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:20 PM</span>
+						<span class='node-duration'>0h 0m 31s+664ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -673,7 +730,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -683,9 +740,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='17'>
 					<div class='collapsible-header'>
-						<div class='node-name'>order_detail_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:12 AM</span>
-						<span class='node-duration'>0h 0m 22s+857ms</span>
+						<div class='node-name'>order_type_refund_true</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:21 PM</span>
+						<span class='node-duration'>0h 0m 31s+44ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -705,7 +762,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -715,9 +772,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='18'>
 					<div class='collapsible-header'>
-						<div class='node-name'>coupon_activitylist_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:13 AM</span>
-						<span class='node-duration'>0h 0m 22s+236ms</span>
+						<div class='node-name'>order_detail_true</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:21 PM</span>
+						<span class='node-duration'>0h 0m 30s+388ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -737,7 +794,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -747,9 +804,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='19'>
 					<div class='collapsible-header'>
-						<div class='node-name'>coupon_activitydetail_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:13 AM</span>
-						<span class='node-duration'>0h 0m 21s+964ms</span>
+						<div class='node-name'>coupon_activitylist_true</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:22 PM</span>
+						<span class='node-duration'>0h 0m 29s+172ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -769,7 +826,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -779,9 +836,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='20'>
 					<div class='collapsible-header'>
-						<div class='node-name'>couponorder_beforecreate_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:13 AM</span>
-						<span class='node-duration'>0h 0m 21s+792ms</span>
+						<div class='node-name'>coupon_activitydetail_true</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:23 PM</span>
+						<span class='node-duration'>0h 0m 28s+753ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -801,7 +858,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -811,9 +868,41 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='21'>
 					<div class='collapsible-header'>
+						<div class='node-name'>couponorder_beforecreate_true</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:24 PM</span>
+						<span class='node-duration'>0h 0m 27s+842ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>爱抢购接口测试</span>
+											<span class='category label white-text'>爱抢购接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:15:52 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='22'>
+					<div class='collapsible-header'>
 						<div class='node-name'>couponorder_paymentapply_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:13 AM</span>
-						<span class='node-duration'>0h 0m 21s+430ms</span>
+						<span class='node-time'>Jul 10, 2019 04:15:25 PM</span>
+						<span class='node-duration'>0h 0m 27s+15ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -834,39 +923,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='22'>
-					<div class='collapsible-header'>
-						<div class='node-name'>user_coupon_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:15 AM</span>
-						<span class='node-duration'>0h 0m 19s+845ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>爱抢购接口测试</span>
-											<span class='category label white-text'>爱抢购接口测试用例(openapi)</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -876,9 +933,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='23'>
 					<div class='collapsible-header'>
-						<div class='node-name'>user_coupondetail_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:15 AM</span>
-						<span class='node-duration'>0h 0m 19s+650ms</span>
+						<div class='node-name'>user_coupon_true</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:26 PM</span>
+						<span class='node-duration'>0h 0m 26s+92ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -898,7 +955,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -908,9 +965,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='24'>
 					<div class='collapsible-header'>
-						<div class='node-name'>stats_user_share_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:15 AM</span>
-						<span class='node-duration'>0h 0m 19s+520ms</span>
+						<div class='node-name'>user_coupondetail_true</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:26 PM</span>
+						<span class='node-duration'>0h 0m 25s+778ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -930,7 +987,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -940,9 +997,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='25'>
 					<div class='collapsible-header'>
-						<div class='node-name'>coin_share_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:16 AM</span>
-						<span class='node-duration'>0h 0m 18s+925ms</span>
+						<div class='node-name'>stats_user_share_true</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:26 PM</span>
+						<span class='node-duration'>0h 0m 25s+173ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -962,7 +1019,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -972,9 +1029,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='26'>
 					<div class='collapsible-header'>
-						<div class='node-name'>coin_status_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:17 AM</span>
-						<span class='node-duration'>0h 0m 18s+19ms</span>
+						<div class='node-name'>coin_share_true</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:27 PM</span>
+						<span class='node-duration'>0h 0m 24s+455ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -994,7 +1051,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1004,9 +1061,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='27'>
 					<div class='collapsible-header'>
-						<div class='node-name'>coin_check_in_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:17 AM</span>
-						<span class='node-duration'>0h 0m 17s+422ms</span>
+						<div class='node-name'>coin_status_true</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:28 PM</span>
+						<span class='node-duration'>0h 0m 23s+744ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1026,7 +1083,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1036,9 +1093,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='28'>
 					<div class='collapsible-header'>
-						<div class='node-name'>coindetail_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:18 AM</span>
-						<span class='node-duration'>0h 0m 16s+662ms</span>
+						<div class='node-name'>coin_check_in_true</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:29 PM</span>
+						<span class='node-duration'>0h 0m 22s+820ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1058,7 +1115,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1068,9 +1125,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='29'>
 					<div class='collapsible-header'>
-						<div class='node-name'>user_auth_code_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:19 AM</span>
-						<span class='node-duration'>0h 0m 16s+110ms</span>
+						<div class='node-name'>coindetail_true</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:29 PM</span>
+						<span class='node-duration'>0h 0m 22s+198ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1090,7 +1147,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1100,9 +1157,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='30'>
 					<div class='collapsible-header'>
-						<div class='node-name'>user_change_myprofile_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:19 AM</span>
-						<span class='node-duration'>0h 0m 15s+579ms</span>
+						<div class='node-name'>user_auth_code_true</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:30 PM</span>
+						<span class='node-duration'>0h 0m 21s+383ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1122,7 +1179,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1132,9 +1189,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='31'>
 					<div class='collapsible-header'>
-						<div class='node-name'>user_oauth_userinfo_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:20 AM</span>
-						<span class='node-duration'>0h 0m 15s+84ms</span>
+						<div class='node-name'>user_change_myprofile_true</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:31 PM</span>
+						<span class='node-duration'>0h 0m 20s+569ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1154,7 +1211,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1164,9 +1221,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='32'>
 					<div class='collapsible-header'>
-						<div class='node-name'>user_balance_detail_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:20 AM</span>
-						<span class='node-duration'>0h 0m 14s+411ms</span>
+						<div class='node-name'>user_oauth_userinfo_true</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:32 PM</span>
+						<span class='node-duration'>0h 0m 19s+570ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1186,7 +1243,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1196,9 +1253,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='33'>
 					<div class='collapsible-header'>
-						<div class='node-name'>coin_exchange_list_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:21 AM</span>
-						<span class='node-duration'>0h 0m 13s+900ms</span>
+						<div class='node-name'>user_balance_detail_true</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:33 PM</span>
+						<span class='node-duration'>0h 0m 18s+178ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1218,7 +1275,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1228,9 +1285,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='34'>
 					<div class='collapsible-header'>
-						<div class='node-name'>coin_exchange_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:21 AM</span>
-						<span class='node-duration'>0h 0m 13s+419ms</span>
+						<div class='node-name'>coin_exchange_list_true</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:34 PM</span>
+						<span class='node-duration'>0h 0m 17s+477ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1250,7 +1307,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1260,9 +1317,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='35'>
 					<div class='collapsible-header'>
-						<div class='node-name'>couponAvailableTrue</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:23 AM</span>
-						<span class='node-duration'>0h 0m 11s+916ms</span>
+						<div class='node-name'>coin_exchange_true</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:35 PM</span>
+						<span class='node-duration'>0h 0m 16s+832ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1282,7 +1339,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1292,9 +1349,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='36'>
 					<div class='collapsible-header'>
-						<div class='node-name'>couponHistoryTrue</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:24 AM</span>
-						<span class='node-duration'>0h 0m 11s+333ms</span>
+						<div class='node-name'>couponAvailableTrue</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:37 PM</span>
+						<span class='node-duration'>0h 0m 15s+17ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1314,7 +1371,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1324,9 +1381,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='37'>
 					<div class='collapsible-header'>
-						<div class='node-name'>couponTrue</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:24 AM</span>
-						<span class='node-duration'>0h 0m 10s+826ms</span>
+						<div class='node-name'>couponHistoryTrue</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:37 PM</span>
+						<span class='node-duration'>0h 0m 14s+373ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1346,7 +1403,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1356,9 +1413,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='38'>
 					<div class='collapsible-header'>
-						<div class='node-name'>notifivationTrue</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:25 AM</span>
-						<span class='node-duration'>0h 0m 10s+167ms</span>
+						<div class='node-name'>couponTrue</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:38 PM</span>
+						<span class='node-duration'>0h 0m 13s+825ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1378,7 +1435,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1388,9 +1445,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='39'>
 					<div class='collapsible-header'>
-						<div class='node-name'>ZoneTrue</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:25 AM</span>
-						<span class='node-duration'>0h 0m 9s+649ms</span>
+						<div class='node-name'>notifivationTrue</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:38 PM</span>
+						<span class='node-duration'>0h 0m 13s+219ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1410,7 +1467,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1420,9 +1477,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='40'>
 					<div class='collapsible-header'>
-						<div class='node-name'>couponActivitybranchlistTrue</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:26 AM</span>
-						<span class='node-duration'>0h 0m 9s+139ms</span>
+						<div class='node-name'>ZoneTrue</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:39 PM</span>
+						<span class='node-duration'>0h 0m 12s+551ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1442,7 +1499,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1452,9 +1509,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='41'>
 					<div class='collapsible-header'>
-						<div class='node-name'>deleteCouponTrue</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:26 AM</span>
-						<span class='node-duration'>0h 0m 9s+37ms</span>
+						<div class='node-name'>couponActivitybranchlistTrue</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:40 PM</span>
+						<span class='node-duration'>0h 0m 11s+971ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1474,7 +1531,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1484,9 +1541,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='42'>
 					<div class='collapsible-header'>
-						<div class='node-name'>commentTrue</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:26 AM</span>
-						<span class='node-duration'>0h 0m 8s+559ms</span>
+						<div class='node-name'>deleteCouponTrue</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:40 PM</span>
+						<span class='node-duration'>0h 0m 11s+822ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1506,7 +1563,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1516,9 +1573,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='43'>
 					<div class='collapsible-header'>
-						<div class='node-name'>zoneTrue</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:27 AM</span>
-						<span class='node-duration'>0h 0m 8s+84ms</span>
+						<div class='node-name'>commentTrue</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:40 PM</span>
+						<span class='node-duration'>0h 0m 11s+256ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1538,7 +1595,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1548,9 +1605,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='44'>
 					<div class='collapsible-header'>
-						<div class='node-name'>barginAvatarTrue</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:27 AM</span>
-						<span class='node-duration'>0h 0m 7s+570ms</span>
+						<div class='node-name'>zoneTrue</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:41 PM</span>
+						<span class='node-duration'>0h 0m 10s+415ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1570,7 +1627,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1580,9 +1637,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='45'>
 					<div class='collapsible-header'>
-						<div class='node-name'>addressInfoTrue</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:28 AM</span>
-						<span class='node-duration'>0h 0m 7s+64ms</span>
+						<div class='node-name'>barginAvatarTrue</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:42 PM</span>
+						<span class='node-duration'>0h 0m 9s+816ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1602,7 +1659,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1612,9 +1669,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='46'>
 					<div class='collapsible-header'>
-						<div class='node-name'>calcelOrderTrue</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:29 AM</span>
-						<span class='node-duration'>0h 0m 6s+155ms</span>
+						<div class='node-name'>addressInfoTrue</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:43 PM</span>
+						<span class='node-duration'>0h 0m 9s+133ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1634,7 +1691,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1644,9 +1701,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='47'>
 					<div class='collapsible-header'>
-						<div class='node-name'>branchCommentsTrue</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:29 AM</span>
-						<span class='node-duration'>0h 0m 5s+630ms</span>
+						<div class='node-name'>calcelOrderTrue</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:43 PM</span>
+						<span class='node-duration'>0h 0m 8s+413ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1666,7 +1723,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1676,9 +1733,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='48'>
 					<div class='collapsible-header'>
-						<div class='node-name'>payment_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:30 AM</span>
-						<span class='node-duration'>0h 0m 5s+138ms</span>
+						<div class='node-name'>branchCommentsTrue</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:44 PM</span>
+						<span class='node-duration'>0h 0m 7s+685ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1698,7 +1755,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1708,9 +1765,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='49'>
 					<div class='collapsible-header'>
-						<div class='node-name'>getpayment_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:31 AM</span>
-						<span class='node-duration'>0h 0m 4s+251ms</span>
+						<div class='node-name'>payment_true</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:45 PM</span>
+						<span class='node-duration'>0h 0m 7s+138ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1730,7 +1787,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1740,9 +1797,9 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='50'>
 					<div class='collapsible-header'>
-						<div class='node-name'>order_redeem_with_pin_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:31 AM</span>
-						<span class='node-duration'>0h 0m 3s+469ms</span>
+						<div class='node-name'>getpayment_true</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:45 PM</span>
+						<span class='node-duration'>0h 0m 6s+247ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1762,7 +1819,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1772,9 +1829,41 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='51'>
 					<div class='collapsible-header'>
+						<div class='node-name'>order_redeem_with_pin_true</div>						
+						<span class='node-time'>Jul 10, 2019 04:15:47 PM</span>
+						<span class='node-duration'>0h 0m 5s+16ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>爱抢购接口测试</span>
+											<span class='category label white-text'>爱抢购接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:15:52 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='52'>
+					<div class='collapsible-header'>
 						<div class='node-name'>couponorder_paymentresult_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:32 AM</span>
-						<span class='node-duration'>0h 0m 2s+848ms</span>
+						<span class='node-time'>Jul 10, 2019 04:15:48 PM</span>
+						<span class='node-duration'>0h 0m 4s+15ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1795,39 +1884,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='52'>
-					<div class='collapsible-header'>
-						<div class='node-name'>bargainTodayTrue</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:32 AM</span>
-						<span class='node-duration'>0h 0m 2s+680ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>爱抢购接口测试</span>
-											<span class='category label white-text'>爱抢购接口测试用例(openapi)</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1838,8 +1895,8 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='53'>
 					<div class='collapsible-header'>
 						<div class='node-name'>couponRedeembypinTrue</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:33 AM</span>
-						<span class='node-duration'>0h 0m 2s+43ms</span>
+						<span class='node-time'>Jul 10, 2019 04:15:48 PM</span>
+						<span class='node-duration'>0h 0m 3s+753ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1859,7 +1916,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1875,14 +1932,14 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='54'>
 					<div class='test-heading'>
 						<span class='test-name'>爱抢购接口测试 : 爱抢购接口测试用例(退出登录)</span>
-						<span class='test-time'>Jul 10, 2019 10:57:33 AM</span>
+						<span class='test-time'>Jul 10, 2019 04:15:48 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 10, 2019 10:57:33 AM</span>
-	<span class='label end-time'>Jul 10, 2019 10:57:35 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+588ms</span>
+	<span class='label start-time'>Jul 10, 2019 04:15:48 PM</span>
+	<span class='label end-time'>Jul 10, 2019 04:15:51 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+843ms</span>
 </div>
 	<div class='test-desc'>Pass: 3 ; Fail: 0 ; Skip: 0 ; </div>
 	<div class='test-attributes'>
@@ -1896,8 +1953,8 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='55'>
 					<div class='collapsible-header'>
 						<div class='node-name'>user_login_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:33 AM</span>
-						<span class='node-duration'>0h 0m 1s+887ms</span>
+						<span class='node-time'>Jul 10, 2019 04:15:48 PM</span>
+						<span class='node-duration'>0h 0m 3s+381ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1918,7 +1975,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1929,8 +1986,8 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='56'>
 					<div class='collapsible-header'>
 						<div class='node-name'>user_oauth_register_and_login_true</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:34 AM</span>
-						<span class='node-duration'>0h 0m 1s+342ms</span>
+						<span class='node-time'>Jul 10, 2019 04:15:49 PM</span>
+						<span class='node-duration'>0h 0m 2s+359ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1951,7 +2008,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1962,8 +2019,8 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='57'>
 					<div class='collapsible-header'>
 						<div class='node-name'>userLogoutTrue</div>						
-						<span class='node-time'>Jul 10, 2019 10:57:34 AM</span>
-						<span class='node-duration'>0h 0m 0s+840ms</span>
+						<span class='node-time'>Jul 10, 2019 04:15:50 PM</span>
+						<span class='node-duration'>0h 0m 1s+546ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1983,7 +2040,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:57:35 AM</td>
+													<td class='timestamp'>4:15:52 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1999,14 +2056,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='58'>
 					<div class='test-heading'>
 						<span class='test-name'>爱抢购接口测试 : 消息推送</span>
-						<span class='test-time'>Jul 10, 2019 10:57:35 AM</span>
+						<span class='test-time'>Jul 10, 2019 04:15:51 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 10, 2019 10:57:35 AM</span>
-	<span class='label end-time'>Jul 10, 2019 10:57:35 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
+	<span class='label start-time'>Jul 10, 2019 04:15:51 PM</span>
+	<span class='label end-time'>Jul 10, 2019 04:15:51 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 	<div class='test-desc'>Pass: 0 ; Fail: 0 ; Skip: 0 ; </div>
 	<div class='test-attributes'>
@@ -2071,14 +2128,16 @@
 					<div class='category-heading'>
 						<span class='category-name'>爱抢购接口测试</span>
 						<span class='category-status right'>
-							<span class='label pass'>58</span>
+							<span class='label pass'>55</span>
+							<span class='label fail'>2</span>
+							<span class='label others'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 58</span>
-							
-							
+							<span class='label green accent-4 white-text'>Passed: 55</span>
+							<span class='label red lighten-1 white-text'>Failed: 2</span>
+							<span class='label yellow darken-2 white-text'>Others: 1</span>
 						</div>
 					
 						<div class='category-tests'>
@@ -2092,292 +2151,292 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 10, 2019 10:56:58 AM</td>
+										<td>Jul 10, 2019 04:15:06 PM</td>
 										<td class='linked' test-id='1'>爱抢购接口测试用例(openapi)</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:18 PM</td>
+										<td class='linked' test-id='2'>爱抢购接口测试用例(openapi).item_bargain_true</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:48 PM</td>
+										<td class='linked' test-id='3'>爱抢购接口测试用例(openapi).bargainTodayTrue</td>
+										<td><span class='test-status skip'>skip</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:06 PM</td>
+										<td class='linked' test-id='4'>爱抢购接口测试用例(openapi).user_login_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:56:58 AM</td>
-										<td class='linked' test-id='2'>爱抢购接口测试用例(openapi).user_login_true</td>
+										<td>Jul 10, 2019 04:15:11 PM</td>
+										<td class='linked' test-id='5'>爱抢购接口测试用例(openapi).userRefundprogressTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:02 AM</td>
-										<td class='linked' test-id='3'>爱抢购接口测试用例(openapi).userRefundprogressTrue</td>
+										<td>Jul 10, 2019 04:15:12 PM</td>
+										<td class='linked' test-id='6'>爱抢购接口测试用例(openapi).order_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:03 AM</td>
-										<td class='linked' test-id='4'>爱抢购接口测试用例(openapi).order_true</td>
+										<td>Jul 10, 2019 04:15:13 PM</td>
+										<td class='linked' test-id='7'>爱抢购接口测试用例(openapi).item_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:05 AM</td>
-										<td class='linked' test-id='5'>爱抢购接口测试用例(openapi).item_true</td>
+										<td>Jul 10, 2019 04:15:14 PM</td>
+										<td class='linked' test-id='8'>爱抢购接口测试用例(openapi).ad_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:05 AM</td>
-										<td class='linked' test-id='6'>爱抢购接口测试用例(openapi).ad_true</td>
+										<td>Jul 10, 2019 04:15:14 PM</td>
+										<td class='linked' test-id='9'>爱抢购接口测试用例(openapi).user_myprofile_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:05 AM</td>
-										<td class='linked' test-id='7'>爱抢购接口测试用例(openapi).user_myprofile_true</td>
+										<td>Jul 10, 2019 04:15:15 PM</td>
+										<td class='linked' test-id='10'>爱抢购接口测试用例(openapi).appconfig_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:06 AM</td>
-										<td class='linked' test-id='8'>爱抢购接口测试用例(openapi).appconfig_true</td>
+										<td>Jul 10, 2019 04:15:16 PM</td>
+										<td class='linked' test-id='11'>爱抢购接口测试用例(openapi).zone_21_categories_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:07 AM</td>
-										<td class='linked' test-id='9'>爱抢购接口测试用例(openapi).zone_21_categories_true</td>
+										<td>Jul 10, 2019 04:15:17 PM</td>
+										<td class='linked' test-id='12'>爱抢购接口测试用例(openapi).order_type_redeem_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:08 AM</td>
-										<td class='linked' test-id='10'>爱抢购接口测试用例(openapi).order_type_redeem_true</td>
+										<td>Jul 10, 2019 04:15:17 PM</td>
+										<td class='linked' test-id='13'>爱抢购接口测试用例(openapi).user_agreement_change_test</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:08 AM</td>
-										<td class='linked' test-id='11'>爱抢购接口测试用例(openapi).user_agreement_change_test</td>
+										<td>Jul 10, 2019 04:15:19 PM</td>
+										<td class='linked' test-id='14'>爱抢购接口测试用例(openapi).item_detail_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:09 AM</td>
-										<td class='linked' test-id='12'>爱抢购接口测试用例(openapi).item_bargain_true</td>
+										<td>Jul 10, 2019 04:15:19 PM</td>
+										<td class='linked' test-id='15'>爱抢购接口测试用例(openapi).order_type_all_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:09 AM</td>
-										<td class='linked' test-id='13'>爱抢购接口测试用例(openapi).item_detail_true</td>
+										<td>Jul 10, 2019 04:15:20 PM</td>
+										<td class='linked' test-id='16'>爱抢购接口测试用例(openapi).order_type_to_comment_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:10 AM</td>
-										<td class='linked' test-id='14'>爱抢购接口测试用例(openapi).order_type_all_true</td>
+										<td>Jul 10, 2019 04:15:21 PM</td>
+										<td class='linked' test-id='17'>爱抢购接口测试用例(openapi).order_type_refund_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:11 AM</td>
-										<td class='linked' test-id='15'>爱抢购接口测试用例(openapi).order_type_to_comment_true</td>
+										<td>Jul 10, 2019 04:15:21 PM</td>
+										<td class='linked' test-id='18'>爱抢购接口测试用例(openapi).order_detail_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:11 AM</td>
-										<td class='linked' test-id='16'>爱抢购接口测试用例(openapi).order_type_refund_true</td>
+										<td>Jul 10, 2019 04:15:22 PM</td>
+										<td class='linked' test-id='19'>爱抢购接口测试用例(openapi).coupon_activitylist_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:12 AM</td>
-										<td class='linked' test-id='17'>爱抢购接口测试用例(openapi).order_detail_true</td>
+										<td>Jul 10, 2019 04:15:23 PM</td>
+										<td class='linked' test-id='20'>爱抢购接口测试用例(openapi).coupon_activitydetail_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:13 AM</td>
-										<td class='linked' test-id='18'>爱抢购接口测试用例(openapi).coupon_activitylist_true</td>
+										<td>Jul 10, 2019 04:15:24 PM</td>
+										<td class='linked' test-id='21'>爱抢购接口测试用例(openapi).couponorder_beforecreate_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:13 AM</td>
-										<td class='linked' test-id='19'>爱抢购接口测试用例(openapi).coupon_activitydetail_true</td>
+										<td>Jul 10, 2019 04:15:25 PM</td>
+										<td class='linked' test-id='22'>爱抢购接口测试用例(openapi).couponorder_paymentapply_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:13 AM</td>
-										<td class='linked' test-id='20'>爱抢购接口测试用例(openapi).couponorder_beforecreate_true</td>
+										<td>Jul 10, 2019 04:15:26 PM</td>
+										<td class='linked' test-id='23'>爱抢购接口测试用例(openapi).user_coupon_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:13 AM</td>
-										<td class='linked' test-id='21'>爱抢购接口测试用例(openapi).couponorder_paymentapply_true</td>
+										<td>Jul 10, 2019 04:15:26 PM</td>
+										<td class='linked' test-id='24'>爱抢购接口测试用例(openapi).user_coupondetail_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:15 AM</td>
-										<td class='linked' test-id='22'>爱抢购接口测试用例(openapi).user_coupon_true</td>
+										<td>Jul 10, 2019 04:15:26 PM</td>
+										<td class='linked' test-id='25'>爱抢购接口测试用例(openapi).stats_user_share_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:15 AM</td>
-										<td class='linked' test-id='23'>爱抢购接口测试用例(openapi).user_coupondetail_true</td>
+										<td>Jul 10, 2019 04:15:27 PM</td>
+										<td class='linked' test-id='26'>爱抢购接口测试用例(openapi).coin_share_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:15 AM</td>
-										<td class='linked' test-id='24'>爱抢购接口测试用例(openapi).stats_user_share_true</td>
+										<td>Jul 10, 2019 04:15:28 PM</td>
+										<td class='linked' test-id='27'>爱抢购接口测试用例(openapi).coin_status_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:16 AM</td>
-										<td class='linked' test-id='25'>爱抢购接口测试用例(openapi).coin_share_true</td>
+										<td>Jul 10, 2019 04:15:29 PM</td>
+										<td class='linked' test-id='28'>爱抢购接口测试用例(openapi).coin_check_in_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:17 AM</td>
-										<td class='linked' test-id='26'>爱抢购接口测试用例(openapi).coin_status_true</td>
+										<td>Jul 10, 2019 04:15:29 PM</td>
+										<td class='linked' test-id='29'>爱抢购接口测试用例(openapi).coindetail_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:17 AM</td>
-										<td class='linked' test-id='27'>爱抢购接口测试用例(openapi).coin_check_in_true</td>
+										<td>Jul 10, 2019 04:15:30 PM</td>
+										<td class='linked' test-id='30'>爱抢购接口测试用例(openapi).user_auth_code_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:18 AM</td>
-										<td class='linked' test-id='28'>爱抢购接口测试用例(openapi).coindetail_true</td>
+										<td>Jul 10, 2019 04:15:31 PM</td>
+										<td class='linked' test-id='31'>爱抢购接口测试用例(openapi).user_change_myprofile_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:19 AM</td>
-										<td class='linked' test-id='29'>爱抢购接口测试用例(openapi).user_auth_code_true</td>
+										<td>Jul 10, 2019 04:15:32 PM</td>
+										<td class='linked' test-id='32'>爱抢购接口测试用例(openapi).user_oauth_userinfo_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:19 AM</td>
-										<td class='linked' test-id='30'>爱抢购接口测试用例(openapi).user_change_myprofile_true</td>
+										<td>Jul 10, 2019 04:15:33 PM</td>
+										<td class='linked' test-id='33'>爱抢购接口测试用例(openapi).user_balance_detail_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:20 AM</td>
-										<td class='linked' test-id='31'>爱抢购接口测试用例(openapi).user_oauth_userinfo_true</td>
+										<td>Jul 10, 2019 04:15:34 PM</td>
+										<td class='linked' test-id='34'>爱抢购接口测试用例(openapi).coin_exchange_list_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:20 AM</td>
-										<td class='linked' test-id='32'>爱抢购接口测试用例(openapi).user_balance_detail_true</td>
+										<td>Jul 10, 2019 04:15:35 PM</td>
+										<td class='linked' test-id='35'>爱抢购接口测试用例(openapi).coin_exchange_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:21 AM</td>
-										<td class='linked' test-id='33'>爱抢购接口测试用例(openapi).coin_exchange_list_true</td>
+										<td>Jul 10, 2019 04:15:37 PM</td>
+										<td class='linked' test-id='36'>爱抢购接口测试用例(openapi).couponAvailableTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:21 AM</td>
-										<td class='linked' test-id='34'>爱抢购接口测试用例(openapi).coin_exchange_true</td>
+										<td>Jul 10, 2019 04:15:37 PM</td>
+										<td class='linked' test-id='37'>爱抢购接口测试用例(openapi).couponHistoryTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:23 AM</td>
-										<td class='linked' test-id='35'>爱抢购接口测试用例(openapi).couponAvailableTrue</td>
+										<td>Jul 10, 2019 04:15:38 PM</td>
+										<td class='linked' test-id='38'>爱抢购接口测试用例(openapi).couponTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:24 AM</td>
-										<td class='linked' test-id='36'>爱抢购接口测试用例(openapi).couponHistoryTrue</td>
+										<td>Jul 10, 2019 04:15:38 PM</td>
+										<td class='linked' test-id='39'>爱抢购接口测试用例(openapi).notifivationTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:24 AM</td>
-										<td class='linked' test-id='37'>爱抢购接口测试用例(openapi).couponTrue</td>
+										<td>Jul 10, 2019 04:15:39 PM</td>
+										<td class='linked' test-id='40'>爱抢购接口测试用例(openapi).ZoneTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:25 AM</td>
-										<td class='linked' test-id='38'>爱抢购接口测试用例(openapi).notifivationTrue</td>
+										<td>Jul 10, 2019 04:15:40 PM</td>
+										<td class='linked' test-id='41'>爱抢购接口测试用例(openapi).couponActivitybranchlistTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:25 AM</td>
-										<td class='linked' test-id='39'>爱抢购接口测试用例(openapi).ZoneTrue</td>
+										<td>Jul 10, 2019 04:15:40 PM</td>
+										<td class='linked' test-id='42'>爱抢购接口测试用例(openapi).deleteCouponTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:26 AM</td>
-										<td class='linked' test-id='40'>爱抢购接口测试用例(openapi).couponActivitybranchlistTrue</td>
+										<td>Jul 10, 2019 04:15:40 PM</td>
+										<td class='linked' test-id='43'>爱抢购接口测试用例(openapi).commentTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:26 AM</td>
-										<td class='linked' test-id='41'>爱抢购接口测试用例(openapi).deleteCouponTrue</td>
+										<td>Jul 10, 2019 04:15:41 PM</td>
+										<td class='linked' test-id='44'>爱抢购接口测试用例(openapi).zoneTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:26 AM</td>
-										<td class='linked' test-id='42'>爱抢购接口测试用例(openapi).commentTrue</td>
+										<td>Jul 10, 2019 04:15:42 PM</td>
+										<td class='linked' test-id='45'>爱抢购接口测试用例(openapi).barginAvatarTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:27 AM</td>
-										<td class='linked' test-id='43'>爱抢购接口测试用例(openapi).zoneTrue</td>
+										<td>Jul 10, 2019 04:15:43 PM</td>
+										<td class='linked' test-id='46'>爱抢购接口测试用例(openapi).addressInfoTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:27 AM</td>
-										<td class='linked' test-id='44'>爱抢购接口测试用例(openapi).barginAvatarTrue</td>
+										<td>Jul 10, 2019 04:15:43 PM</td>
+										<td class='linked' test-id='47'>爱抢购接口测试用例(openapi).calcelOrderTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:28 AM</td>
-										<td class='linked' test-id='45'>爱抢购接口测试用例(openapi).addressInfoTrue</td>
+										<td>Jul 10, 2019 04:15:44 PM</td>
+										<td class='linked' test-id='48'>爱抢购接口测试用例(openapi).branchCommentsTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:29 AM</td>
-										<td class='linked' test-id='46'>爱抢购接口测试用例(openapi).calcelOrderTrue</td>
+										<td>Jul 10, 2019 04:15:45 PM</td>
+										<td class='linked' test-id='49'>爱抢购接口测试用例(openapi).payment_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:29 AM</td>
-										<td class='linked' test-id='47'>爱抢购接口测试用例(openapi).branchCommentsTrue</td>
+										<td>Jul 10, 2019 04:15:45 PM</td>
+										<td class='linked' test-id='50'>爱抢购接口测试用例(openapi).getpayment_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:30 AM</td>
-										<td class='linked' test-id='48'>爱抢购接口测试用例(openapi).payment_true</td>
+										<td>Jul 10, 2019 04:15:47 PM</td>
+										<td class='linked' test-id='51'>爱抢购接口测试用例(openapi).order_redeem_with_pin_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:31 AM</td>
-										<td class='linked' test-id='49'>爱抢购接口测试用例(openapi).getpayment_true</td>
+										<td>Jul 10, 2019 04:15:48 PM</td>
+										<td class='linked' test-id='52'>爱抢购接口测试用例(openapi).couponorder_paymentresult_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:31 AM</td>
-										<td class='linked' test-id='50'>爱抢购接口测试用例(openapi).order_redeem_with_pin_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:32 AM</td>
-										<td class='linked' test-id='51'>爱抢购接口测试用例(openapi).couponorder_paymentresult_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:32 AM</td>
-										<td class='linked' test-id='52'>爱抢购接口测试用例(openapi).bargainTodayTrue</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:33 AM</td>
+										<td>Jul 10, 2019 04:15:48 PM</td>
 										<td class='linked' test-id='53'>爱抢购接口测试用例(openapi).couponRedeembypinTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:33 AM</td>
+										<td>Jul 10, 2019 04:15:48 PM</td>
 										<td class='linked' test-id='54'>爱抢购接口测试用例(退出登录)</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:33 AM</td>
+										<td>Jul 10, 2019 04:15:48 PM</td>
 										<td class='linked' test-id='55'>爱抢购接口测试用例(退出登录).user_login_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:34 AM</td>
+										<td>Jul 10, 2019 04:15:49 PM</td>
 										<td class='linked' test-id='56'>爱抢购接口测试用例(退出登录).user_oauth_register_and_login_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:34 AM</td>
+										<td>Jul 10, 2019 04:15:50 PM</td>
 										<td class='linked' test-id='57'>爱抢购接口测试用例(退出登录).userLogoutTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:35 AM</td>
+										<td>Jul 10, 2019 04:15:51 PM</td>
 										<td class='linked' test-id='58'>消息推送</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -2390,13 +2449,309 @@
 					<div class='category-heading'>
 						<span class='category-name'>爱抢购接口测试用例(openapi)</span>
 						<span class='category-status right'>
-							<span class='label pass'>53</span>
+							<span class='label pass'>50</span>
+							<span class='label fail'>2</span>
+							<span class='label others'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 53</span>
+							<span class='label green accent-4 white-text'>Passed: 50</span>
+							<span class='label red lighten-1 white-text'>Failed: 2</span>
+							<span class='label yellow darken-2 white-text'>Others: 1</span>
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 10, 2019 04:15:06 PM</td>
+										<td class='linked' test-id='1'>爱抢购接口测试用例(openapi)</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:18 PM</td>
+										<td class='linked' test-id='2'>爱抢购接口测试用例(openapi).item_bargain_true</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:48 PM</td>
+										<td class='linked' test-id='3'>爱抢购接口测试用例(openapi).bargainTodayTrue</td>
+										<td><span class='test-status skip'>skip</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:06 PM</td>
+										<td class='linked' test-id='4'>爱抢购接口测试用例(openapi).user_login_true</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:11 PM</td>
+										<td class='linked' test-id='5'>爱抢购接口测试用例(openapi).userRefundprogressTrue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:12 PM</td>
+										<td class='linked' test-id='6'>爱抢购接口测试用例(openapi).order_true</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:13 PM</td>
+										<td class='linked' test-id='7'>爱抢购接口测试用例(openapi).item_true</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:14 PM</td>
+										<td class='linked' test-id='8'>爱抢购接口测试用例(openapi).ad_true</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:14 PM</td>
+										<td class='linked' test-id='9'>爱抢购接口测试用例(openapi).user_myprofile_true</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:15 PM</td>
+										<td class='linked' test-id='10'>爱抢购接口测试用例(openapi).appconfig_true</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:16 PM</td>
+										<td class='linked' test-id='11'>爱抢购接口测试用例(openapi).zone_21_categories_true</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:17 PM</td>
+										<td class='linked' test-id='12'>爱抢购接口测试用例(openapi).order_type_redeem_true</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:17 PM</td>
+										<td class='linked' test-id='13'>爱抢购接口测试用例(openapi).user_agreement_change_test</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:19 PM</td>
+										<td class='linked' test-id='14'>爱抢购接口测试用例(openapi).item_detail_true</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:19 PM</td>
+										<td class='linked' test-id='15'>爱抢购接口测试用例(openapi).order_type_all_true</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:20 PM</td>
+										<td class='linked' test-id='16'>爱抢购接口测试用例(openapi).order_type_to_comment_true</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:21 PM</td>
+										<td class='linked' test-id='17'>爱抢购接口测试用例(openapi).order_type_refund_true</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:21 PM</td>
+										<td class='linked' test-id='18'>爱抢购接口测试用例(openapi).order_detail_true</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:22 PM</td>
+										<td class='linked' test-id='19'>爱抢购接口测试用例(openapi).coupon_activitylist_true</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:23 PM</td>
+										<td class='linked' test-id='20'>爱抢购接口测试用例(openapi).coupon_activitydetail_true</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:24 PM</td>
+										<td class='linked' test-id='21'>爱抢购接口测试用例(openapi).couponorder_beforecreate_true</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:25 PM</td>
+										<td class='linked' test-id='22'>爱抢购接口测试用例(openapi).couponorder_paymentapply_true</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:26 PM</td>
+										<td class='linked' test-id='23'>爱抢购接口测试用例(openapi).user_coupon_true</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:26 PM</td>
+										<td class='linked' test-id='24'>爱抢购接口测试用例(openapi).user_coupondetail_true</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:26 PM</td>
+										<td class='linked' test-id='25'>爱抢购接口测试用例(openapi).stats_user_share_true</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:27 PM</td>
+										<td class='linked' test-id='26'>爱抢购接口测试用例(openapi).coin_share_true</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:28 PM</td>
+										<td class='linked' test-id='27'>爱抢购接口测试用例(openapi).coin_status_true</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:29 PM</td>
+										<td class='linked' test-id='28'>爱抢购接口测试用例(openapi).coin_check_in_true</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:29 PM</td>
+										<td class='linked' test-id='29'>爱抢购接口测试用例(openapi).coindetail_true</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:30 PM</td>
+										<td class='linked' test-id='30'>爱抢购接口测试用例(openapi).user_auth_code_true</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:31 PM</td>
+										<td class='linked' test-id='31'>爱抢购接口测试用例(openapi).user_change_myprofile_true</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:32 PM</td>
+										<td class='linked' test-id='32'>爱抢购接口测试用例(openapi).user_oauth_userinfo_true</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:33 PM</td>
+										<td class='linked' test-id='33'>爱抢购接口测试用例(openapi).user_balance_detail_true</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:34 PM</td>
+										<td class='linked' test-id='34'>爱抢购接口测试用例(openapi).coin_exchange_list_true</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:35 PM</td>
+										<td class='linked' test-id='35'>爱抢购接口测试用例(openapi).coin_exchange_true</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:37 PM</td>
+										<td class='linked' test-id='36'>爱抢购接口测试用例(openapi).couponAvailableTrue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:37 PM</td>
+										<td class='linked' test-id='37'>爱抢购接口测试用例(openapi).couponHistoryTrue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:38 PM</td>
+										<td class='linked' test-id='38'>爱抢购接口测试用例(openapi).couponTrue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:38 PM</td>
+										<td class='linked' test-id='39'>爱抢购接口测试用例(openapi).notifivationTrue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:39 PM</td>
+										<td class='linked' test-id='40'>爱抢购接口测试用例(openapi).ZoneTrue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:40 PM</td>
+										<td class='linked' test-id='41'>爱抢购接口测试用例(openapi).couponActivitybranchlistTrue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:40 PM</td>
+										<td class='linked' test-id='42'>爱抢购接口测试用例(openapi).deleteCouponTrue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:40 PM</td>
+										<td class='linked' test-id='43'>爱抢购接口测试用例(openapi).commentTrue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:41 PM</td>
+										<td class='linked' test-id='44'>爱抢购接口测试用例(openapi).zoneTrue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:42 PM</td>
+										<td class='linked' test-id='45'>爱抢购接口测试用例(openapi).barginAvatarTrue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:43 PM</td>
+										<td class='linked' test-id='46'>爱抢购接口测试用例(openapi).addressInfoTrue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:43 PM</td>
+										<td class='linked' test-id='47'>爱抢购接口测试用例(openapi).calcelOrderTrue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:44 PM</td>
+										<td class='linked' test-id='48'>爱抢购接口测试用例(openapi).branchCommentsTrue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:45 PM</td>
+										<td class='linked' test-id='49'>爱抢购接口测试用例(openapi).payment_true</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:45 PM</td>
+										<td class='linked' test-id='50'>爱抢购接口测试用例(openapi).getpayment_true</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:47 PM</td>
+										<td class='linked' test-id='51'>爱抢购接口测试用例(openapi).order_redeem_with_pin_true</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:48 PM</td>
+										<td class='linked' test-id='52'>爱抢购接口测试用例(openapi).couponorder_paymentresult_true</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 10, 2019 04:15:48 PM</td>
+										<td class='linked' test-id='53'>爱抢购接口测试用例(openapi).couponRedeembypinTrue</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>itemBargain</span>
+						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
 							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -2411,269 +2766,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 10, 2019 10:56:58 AM</td>
-										<td class='linked' test-id='1'>爱抢购接口测试用例(openapi)</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:56:58 AM</td>
-										<td class='linked' test-id='2'>爱抢购接口测试用例(openapi).user_login_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:02 AM</td>
-										<td class='linked' test-id='3'>爱抢购接口测试用例(openapi).userRefundprogressTrue</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:03 AM</td>
-										<td class='linked' test-id='4'>爱抢购接口测试用例(openapi).order_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:05 AM</td>
-										<td class='linked' test-id='5'>爱抢购接口测试用例(openapi).item_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:05 AM</td>
-										<td class='linked' test-id='6'>爱抢购接口测试用例(openapi).ad_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:05 AM</td>
-										<td class='linked' test-id='7'>爱抢购接口测试用例(openapi).user_myprofile_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:06 AM</td>
-										<td class='linked' test-id='8'>爱抢购接口测试用例(openapi).appconfig_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:07 AM</td>
-										<td class='linked' test-id='9'>爱抢购接口测试用例(openapi).zone_21_categories_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:08 AM</td>
-										<td class='linked' test-id='10'>爱抢购接口测试用例(openapi).order_type_redeem_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:08 AM</td>
-										<td class='linked' test-id='11'>爱抢购接口测试用例(openapi).user_agreement_change_test</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:09 AM</td>
-										<td class='linked' test-id='12'>爱抢购接口测试用例(openapi).item_bargain_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:09 AM</td>
-										<td class='linked' test-id='13'>爱抢购接口测试用例(openapi).item_detail_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:10 AM</td>
-										<td class='linked' test-id='14'>爱抢购接口测试用例(openapi).order_type_all_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:11 AM</td>
-										<td class='linked' test-id='15'>爱抢购接口测试用例(openapi).order_type_to_comment_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:11 AM</td>
-										<td class='linked' test-id='16'>爱抢购接口测试用例(openapi).order_type_refund_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:12 AM</td>
-										<td class='linked' test-id='17'>爱抢购接口测试用例(openapi).order_detail_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:13 AM</td>
-										<td class='linked' test-id='18'>爱抢购接口测试用例(openapi).coupon_activitylist_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:13 AM</td>
-										<td class='linked' test-id='19'>爱抢购接口测试用例(openapi).coupon_activitydetail_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:13 AM</td>
-										<td class='linked' test-id='20'>爱抢购接口测试用例(openapi).couponorder_beforecreate_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:13 AM</td>
-										<td class='linked' test-id='21'>爱抢购接口测试用例(openapi).couponorder_paymentapply_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:15 AM</td>
-										<td class='linked' test-id='22'>爱抢购接口测试用例(openapi).user_coupon_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:15 AM</td>
-										<td class='linked' test-id='23'>爱抢购接口测试用例(openapi).user_coupondetail_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:15 AM</td>
-										<td class='linked' test-id='24'>爱抢购接口测试用例(openapi).stats_user_share_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:16 AM</td>
-										<td class='linked' test-id='25'>爱抢购接口测试用例(openapi).coin_share_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:17 AM</td>
-										<td class='linked' test-id='26'>爱抢购接口测试用例(openapi).coin_status_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:17 AM</td>
-										<td class='linked' test-id='27'>爱抢购接口测试用例(openapi).coin_check_in_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:18 AM</td>
-										<td class='linked' test-id='28'>爱抢购接口测试用例(openapi).coindetail_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:19 AM</td>
-										<td class='linked' test-id='29'>爱抢购接口测试用例(openapi).user_auth_code_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:19 AM</td>
-										<td class='linked' test-id='30'>爱抢购接口测试用例(openapi).user_change_myprofile_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:20 AM</td>
-										<td class='linked' test-id='31'>爱抢购接口测试用例(openapi).user_oauth_userinfo_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:20 AM</td>
-										<td class='linked' test-id='32'>爱抢购接口测试用例(openapi).user_balance_detail_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:21 AM</td>
-										<td class='linked' test-id='33'>爱抢购接口测试用例(openapi).coin_exchange_list_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:21 AM</td>
-										<td class='linked' test-id='34'>爱抢购接口测试用例(openapi).coin_exchange_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:23 AM</td>
-										<td class='linked' test-id='35'>爱抢购接口测试用例(openapi).couponAvailableTrue</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:24 AM</td>
-										<td class='linked' test-id='36'>爱抢购接口测试用例(openapi).couponHistoryTrue</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:24 AM</td>
-										<td class='linked' test-id='37'>爱抢购接口测试用例(openapi).couponTrue</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:25 AM</td>
-										<td class='linked' test-id='38'>爱抢购接口测试用例(openapi).notifivationTrue</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:25 AM</td>
-										<td class='linked' test-id='39'>爱抢购接口测试用例(openapi).ZoneTrue</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:26 AM</td>
-										<td class='linked' test-id='40'>爱抢购接口测试用例(openapi).couponActivitybranchlistTrue</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:26 AM</td>
-										<td class='linked' test-id='41'>爱抢购接口测试用例(openapi).deleteCouponTrue</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:26 AM</td>
-										<td class='linked' test-id='42'>爱抢购接口测试用例(openapi).commentTrue</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:27 AM</td>
-										<td class='linked' test-id='43'>爱抢购接口测试用例(openapi).zoneTrue</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:27 AM</td>
-										<td class='linked' test-id='44'>爱抢购接口测试用例(openapi).barginAvatarTrue</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:28 AM</td>
-										<td class='linked' test-id='45'>爱抢购接口测试用例(openapi).addressInfoTrue</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:29 AM</td>
-										<td class='linked' test-id='46'>爱抢购接口测试用例(openapi).calcelOrderTrue</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:29 AM</td>
-										<td class='linked' test-id='47'>爱抢购接口测试用例(openapi).branchCommentsTrue</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:30 AM</td>
-										<td class='linked' test-id='48'>爱抢购接口测试用例(openapi).payment_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:31 AM</td>
-										<td class='linked' test-id='49'>爱抢购接口测试用例(openapi).getpayment_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:31 AM</td>
-										<td class='linked' test-id='50'>爱抢购接口测试用例(openapi).order_redeem_with_pin_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:32 AM</td>
-										<td class='linked' test-id='51'>爱抢购接口测试用例(openapi).couponorder_paymentresult_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:32 AM</td>
-										<td class='linked' test-id='52'>爱抢购接口测试用例(openapi).bargainTodayTrue</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 10, 2019 10:57:33 AM</td>
-										<td class='linked' test-id='53'>爱抢购接口测试用例(openapi).couponRedeembypinTrue</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>Jul 10, 2019 04:15:18 PM</td>
+										<td class='linked' test-id='2'>爱抢购接口测试用例(openapi).item_bargain_true</td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -2705,12 +2800,12 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 10, 2019 10:56:58 AM</td>
-										<td class='linked' test-id='2'>爱抢购接口测试用例(openapi).user_login_true</td>
+										<td>Jul 10, 2019 04:15:06 PM</td>
+										<td class='linked' test-id='4'>爱抢购接口测试用例(openapi).user_login_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:33 AM</td>
+										<td>Jul 10, 2019 04:15:48 PM</td>
 										<td class='linked' test-id='55'>爱抢购接口测试用例(退出登录).user_login_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -2744,13 +2839,13 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 10, 2019 10:57:02 AM</td>
-										<td class='linked' test-id='3'>爱抢购接口测试用例(openapi).userRefundprogressTrue</td>
+										<td>Jul 10, 2019 04:15:11 PM</td>
+										<td class='linked' test-id='5'>爱抢购接口测试用例(openapi).userRefundprogressTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:32 AM</td>
-										<td class='linked' test-id='51'>爱抢购接口测试用例(openapi).couponorder_paymentresult_true</td>
+										<td>Jul 10, 2019 04:15:48 PM</td>
+										<td class='linked' test-id='52'>爱抢购接口测试用例(openapi).couponorder_paymentresult_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -2783,42 +2878,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 10, 2019 10:57:03 AM</td>
-										<td class='linked' test-id='4'>爱抢购接口测试用例(openapi).order_true</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>itemBargain</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 10, 2019 10:57:09 AM</td>
-										<td class='linked' test-id='12'>爱抢购接口测试用例(openapi).item_bargain_true</td>
+										<td>Jul 10, 2019 04:15:12 PM</td>
+										<td class='linked' test-id='6'>爱抢购接口测试用例(openapi).order_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -2851,8 +2912,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 10, 2019 10:57:13 AM</td>
-										<td class='linked' test-id='21'>爱抢购接口测试用例(openapi).couponorder_paymentapply_true</td>
+										<td>Jul 10, 2019 04:15:25 PM</td>
+										<td class='linked' test-id='22'>爱抢购接口测试用例(openapi).couponorder_paymentapply_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -2885,22 +2946,22 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 10, 2019 10:57:33 AM</td>
+										<td>Jul 10, 2019 04:15:48 PM</td>
 										<td class='linked' test-id='54'>爱抢购接口测试用例(退出登录)</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:33 AM</td>
+										<td>Jul 10, 2019 04:15:48 PM</td>
 										<td class='linked' test-id='55'>爱抢购接口测试用例(退出登录).user_login_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:34 AM</td>
+										<td>Jul 10, 2019 04:15:49 PM</td>
 										<td class='linked' test-id='56'>爱抢购接口测试用例(退出登录).user_oauth_register_and_login_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 10, 2019 10:57:34 AM</td>
+										<td>Jul 10, 2019 04:15:50 PM</td>
 										<td class='linked' test-id='57'>爱抢购接口测试用例(退出登录).userLogoutTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -2934,7 +2995,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 10, 2019 10:57:34 AM</td>
+										<td>Jul 10, 2019 04:15:49 PM</td>
 										<td class='linked' test-id='56'>爱抢购接口测试用例(退出登录).user_oauth_register_and_login_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -2968,7 +3029,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 10, 2019 10:57:35 AM</td>
+										<td>Jul 10, 2019 04:15:51 PM</td>
 										<td class='linked' test-id='58'>消息推送</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -2989,6 +3050,147 @@
 	</div>
 </div>
 <!-- category view -->
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>java.lang.AssertionError</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Jul 10, 2019 04:15:18 PM</td>
+                                                        <td class='linked' test-id='2'>爱抢购接口测试用例(openapi).item_bargain_true</td>
+                                                        <td><pre><pre>java.lang.AssertionError: 
+返回的status中code/message不正确;
+返回的status:{"server_time":1562746516,"code":14002,"alert":"","message":"抱歉，您已经砍过价了"}
+请求的url:https://m.betaapi.iqianggou.com/api/item/656972/bargain
+参数：[version=5.7.0, lng=121.463, lat=31.234]
+cookie：[]
+接口返回：{"status":{"code":14002,"message":"抱歉，您已经砍过价了","alert":"","server_time":1562746516},"data":{"item":{"id":656972,"type":1,"name":"接口测试专用商品","description":"","menus":[{"name":"主菜","items":[{"name":"菜品","price":"188.00"}]}],"images":["http:\/\/img-agc.iqianggou.com\/a50dee5d8c78e5f2d36d2fd1f2027a2f","http:\/\/img-agc.iqianggou.com\/2d02145c8f510fe8ef44856365197456!420x420"],"start_price":30000,"floor_price":1,"market_price":30000,"unlock_price":1,"current_price":29992.89,"is_new":true,"left":10000,"tips":"1，不与店内其他优惠活动同享。\n2，商品图片由商户提供，仅供参考；实际商品以实物为准，如有不符，请于商户当面协商解决。\n3，请在点单前出示爱抢购订单，否则商家有权要求以正常价格买单。","freeze_period":1,"need_book":0,"allow_take_out":2,"weight":10,"redeem_period":3,"refund_type":1,"delivery_type":1,"source_type":1,"payment_way":[256,64,32,8,4,2,1],"start_time":1550505600,"end_time":4102502399,"enabled":true,"brand":"接口测试专用品牌","bargain":true,"bargain_range":0.1,"vendor_item_online":true,"like":3,"branches":[{"id":96852,"name":"测试门店(接口测试专用)","logo_small":"http:\/\/img-agc.iqianggou.com\/2d02145c8f510fe8ef44856365197456","description":"","redeem_type":[8,4,2,1],"address":"上海市徐汇区钦州路100号","tel":"021-12345678","lat":31.16044,"lng":121.43117,"redeem_time":"9:00-12:00","zone_id":21,"pin_enabled":true,"ad_title":"","ad_url":""}],"bargain_count":"1","stock_status":"1人正在抢购，只剩10000个啦","comments_count":"0","comments_limit":"5","special_tips":{"redeem_period":"有效期3天","need_book":"无需预约","refund_type":"支持退款"},"special_tips_array":[{"key":"redeem_period","text":"有效期3天","icon":"http:\/\/img2.haoshiqi.net\/ma42ba6cf1950ab6dc9d1031f85414c3e3.jpg"},{"key":"need_book","text":"无需预约","icon":"http:\/\/img2.haoshiqi.net\/ma5cf32cfc07133ee6c2ada706ffb5afcb.jpg"},{"key":"refund_type","text":"支持退款","icon":"http:\/\/img2.haoshiqi.net\/mafd78d0a1d7929b2009ec9757a2e77174.jpg"}],"tips_array":["兑换时间：加厚发卡号发客户开发回复","每人每1天每店限购一次"],"coup_activity":[{"id":10070,"title":"满1000减500元券","branch_id":96852}],"is_on_shelf":true,"step_price_first":0,"bargain_range_second":0,"step_price_second":0,"bargain_range_third":0,"cb_types":[1]}}}
+《-------------------------分割线-------------------------》
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.duoweidu.config.GeneralAssert.statusTest(GeneralAssert.java:143)
+	at com.duoweidu.cases.interfaces.IqgInterfaceTest.generalAssertTest(IqgInterfaceTest.java:76)
+	at com.duoweidu.cases.iqg.openapi.ItemBargain.item_bargain_true(ItemBargain.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>java.lang.Throwable</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Jul 10, 2019 04:15:48 PM</td>
+                                                        <td class='linked' test-id='3'>爱抢购接口测试用例(openapi).bargainTodayTrue</td>
+                                                        <td><pre><pre>java.lang.Throwable: Method BargainToday.bargainTodayTrue()[pri:0, instance:com.duoweidu.cases.iqg.openapi.BargainToday@1e67b872] depends on not successfully finished methods in group "itemBargain"
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
+        </div>
+    </div>
+</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -3010,19 +3212,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 10, 2019 10:56:58 AM</div>
+					<div class='panel-lead'>Jul 10, 2019 04:15:06 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 10, 2019 10:57:33 AM</div>
+			 		<div class='panel-lead'>Jul 10, 2019 04:15:48 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>34,712ms</div>
+					<div class='panel-lead'>42,356ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -3038,14 +3240,20 @@
 						</tr>
 						<tr>
 							<td>爱抢购接口测试</td>
-							<td>58</td>
-							<td>0</td>
-							<td>0</td>
+							<td>55</td>
+							<td>2</td>
+							<td>1</td>
 						</tr>
 						<tr>
 							<td>爱抢购接口测试用例(openapi)</td>
-							<td>53</td>
+							<td>50</td>
+							<td>2</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>itemBargain</td>
 							<td>0</td>
+							<td>1</td>
 							<td>0</td>
 						</tr>
 						<tr>
@@ -3062,12 +3270,6 @@
 						</tr>
 						<tr>
 							<td>orderTrue</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-						</tr>
-						<tr>
-							<td>itemBargain</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -3109,22 +3311,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 56,
-				failParent: 0,
+				passParent: 54,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 0,
-				exceptionsParent: 0,
+				skipParent: 1,
+				exceptionsParent: 2,
 				
-				passChild: 55,
-				failChild: 0,
+				passChild: 53,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
-				skipChild: 0,
+				skipChild: 1,
 				infoChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 2,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,
