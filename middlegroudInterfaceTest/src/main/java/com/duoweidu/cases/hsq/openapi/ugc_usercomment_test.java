@@ -1,19 +1,17 @@
 package com.duoweidu.cases.hsq.openapi;
 
 import com.duoweidu.cases.interfaces.HsqInterfaceTest;
-import com.duoweidu.utils.ConfigFileUrl;
 import org.apache.http.NameValuePair;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
 public class ugc_usercomment_test extends HsqInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "评价")
-    public void ugc_usercomment_true() throws IOException {
-        url = ConfigFileUrl.getUrlByKey(ConfigFileUrl.UGC_USERCOMMENT);
+    public void ugc_usercomment_true() {
+        setUrl("ugc.usercomment.uri");
         System.out.println();
         List<NameValuePair> list = new LinkedList<>();
         //无待评价订单，禁用

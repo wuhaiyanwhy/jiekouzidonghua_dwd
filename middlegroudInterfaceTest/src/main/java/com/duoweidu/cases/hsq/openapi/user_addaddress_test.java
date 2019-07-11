@@ -2,20 +2,18 @@ package com.duoweidu.cases.hsq.openapi;
 
 import com.duoweidu.cases.interfaces.HsqInterfaceTest;
 import com.duoweidu.config.HsqOpenapiConfig;
-import com.duoweidu.utils.ConfigFileUrl;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
 public class user_addaddress_test extends HsqInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "添加用户地址",groups = "addaddress")
-    public void user_addaddress_true() throws IOException {
-        url = ConfigFileUrl.getUrlByKey(ConfigFileUrl.USER_ADDADDRESS);
+    public void user_addaddress_true() {
+        setUrl("user.addaddress.uri");
         List<NameValuePair> list = new LinkedList<>();
         list.add(new BasicNameValuePair("provinceId","2"));
         list.add(new BasicNameValuePair("province","北京"));
