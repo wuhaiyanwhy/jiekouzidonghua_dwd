@@ -62,4 +62,17 @@ public class ConfigFileUrl {
         return Integer.parseInt(bundle.getString("channel"));
     }
 
+
+    /**
+     * 有多个渠道时设置以下方法
+     * @return
+     */
+    public static int getChannel1() {
+        return Integer.parseInt(bundle.getString("channel1"));
+    }
+
+
+    public static int getChannel2() {
+        return Integer.parseInt(bundle.getString("channel2"));
+    }
 }
