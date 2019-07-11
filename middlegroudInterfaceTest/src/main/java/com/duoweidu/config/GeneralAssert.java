@@ -12,6 +12,21 @@ import java.io.IOException;
 
 public class GeneralAssert extends Assert {
 
+    public void genErrno(String uri, int path_id, String param int a, String errnoResult) {
+        /**
+         * 不是调试状态才往库里插入数据，线上环境会插入报错次数
+         */
+        if ("false".equals(ConfigFileUrl.getDebug())) {
+            //插入报错数据
+            SqlDetail.insertErrnoResult(path_id, param, a, errnoResult);
+            GeneralConfig.errnoList.add(uri);
+            if ("prod".equals(ConfigFileUrl.getEnv())) {
+                //插入报错次数
+                SqlDetail.updatePathErrnoCount(path_id);
+            }
+        }
+    }
+
     /**
      * 拼接报错结果
      *
@@ -59,18 +74,7 @@ public class GeneralAssert extends Assert {
                     "\nCX-Request-ID: " + header[0].getValue() +
                     "\n接口返回：" + result;
         }
-        /**
-         * 不是调试状态才往库里插入数据，线上环境会插入报错次数
-         */
-        if ("false".equals(ConfigFileUrl.getDebug())) {
-            //插入报错数据
-            SqlDetail.insertErrnoResult(path_id, param, status, errnoResult);
-            GeneralConfig.errnoList.add(uri);
-            if ("prod".equals(ConfigFileUrl.getEnv())) {
-                //插入报错次数
-                SqlDetail.updatePathErrnoCount(path_id);
-            }
-        }
+
         if (param == null) {
             return failed;
         } else {
