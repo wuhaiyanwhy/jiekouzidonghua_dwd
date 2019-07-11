@@ -1,5 +1,6 @@
 package com.duoweidu.config;
 
+import com.duoweidu.model.hsqTable.McActivityAssistanceEvent;
 import com.duoweidu.model.iqgTable.ProductOrder;
 import com.duoweidu.model.iqgTable.TrdCouponOrder;
 import com.duoweidu.model.msfTable.Order;
@@ -16,10 +17,12 @@ public class SqlDetail {
 
     private static SqlSession iqgBetaSession;
     private static SqlSession msfBetaSession;
+    private static SqlSession hsqBetaSession;
 
     static {
         iqgBetaSession = DatabaseUtil.getIqgBetaSqlSession();
         msfBetaSession = DatabaseUtil.getMsfBetaSqlSession();
+        hsqBetaSession = DatabaseUtil.getHsqBetaSqlSession();
     }
 
 
@@ -27,7 +30,9 @@ public class SqlDetail {
      * 交易中心渠道号默认为6
      * 1.好食期 2.爱抢购 3.觅食蜂 4.返一半 5.巨食阵 6.交易中心
      */
-    private static final int channel_id = ConfigFileUrl.getChannel();
+    public int channel_id() {
+        return ConfigFileUrl.getChannel();
+    }
 
     /**
      * 获取服务主机表的协议
@@ -35,7 +40,8 @@ public class SqlDetail {
      * @return
      */
     public static String getProtocol() {
-        return SqlGeneral.getServerHostValue(channel_id).getProtocol();
+        SqlDetail sqlDetail = new SqlDetail();
+        return SqlGeneral.getServerHostValue(sqlDetail.channel_id()).getProtocol();
     }
 
     /**
@@ -44,7 +50,8 @@ public class SqlDetail {
      * @return
      */
     public static String getServerName() {
-        return SqlGeneral.getServerHostValue(channel_id).getServer_name();
+        SqlDetail sqlDetail = new SqlDetail();
+        return SqlGeneral.getServerHostValue(sqlDetail.channel_id()).getServer_name();
     }
 
     /**
@@ -53,7 +60,8 @@ public class SqlDetail {
      * @return
      */
     public static String getPath(String name) {
-        return SqlGeneral.getInterfacePathValue(channel_id, name).getPath();
+        SqlDetail sqlDetail = new SqlDetail();
+        return SqlGeneral.getInterfacePathValue(sqlDetail.channel_id(), name).getPath();
     }
 
     /**
@@ -62,7 +70,8 @@ public class SqlDetail {
      * @return
      */
     public static int getPathId(String name) {
-        return SqlGeneral.getInterfacePathValue(channel_id, name).getId();
+        SqlDetail sqlDetail = new SqlDetail();
+        return SqlGeneral.getInterfacePathValue(sqlDetail.channel_id(), name).getId();
     }
 
     /**
@@ -71,7 +80,8 @@ public class SqlDetail {
      * @return
      */
     public static int getPathErrnoCount(int id) {
-        return SqlGeneral.getInterfacePathValue(id, channel_id).getErrno_count();
+        SqlDetail sqlDetail = new SqlDetail();
+        return SqlGeneral.getInterfacePathValue(id, sqlDetail.channel_id()).getErrno_count();
     }
 
     /**
@@ -79,7 +89,8 @@ public class SqlDetail {
      * @param id
      */
     public static void updatePathErrnoCount(int id) {
-        SqlGeneral.updateInterfacePathErrnoCount(id, channel_id, getPathErrnoCount(id) + 1);
+        SqlDetail sqlDetail = new SqlDetail();
+        SqlGeneral.updateInterfacePathErrnoCount(id, sqlDetail.channel_id(), getPathErrnoCount(id) + 1);
     }
 
     /**
@@ -88,7 +99,8 @@ public class SqlDetail {
      * @return
      */
     public static String getParamValue(String name) {
-        return SqlGeneral.getParamValue(channel_id, name).getValue();
+        SqlDetail sqlDetail = new SqlDetail();
+        return SqlGeneral.getParamValue(sqlDetail.channel_id(), name).getValue();
     }
 
     /**
@@ -99,7 +111,8 @@ public class SqlDetail {
      * @return
      */
     public static String getParamValue(int env, String name) {
-        return SqlGeneral.getParamValue(channel_id, env, name).getValue();
+        SqlDetail sqlDetail = new SqlDetail();
+        return SqlGeneral.getParamValue(sqlDetail.channel_id(), env, name).getValue();
     }
 
     /**
@@ -108,7 +121,8 @@ public class SqlDetail {
      * @param message_status
      */
     public static void insertBuild(int enabled, int message_status) {
-        SqlGeneral.insertBuildValue(channel_id, enabled, message_status);
+        SqlDetail sqlDetail = new SqlDetail();
+        SqlGeneral.insertBuildValue(sqlDetail.channel_id(), enabled, message_status);
     }
 
     /**
@@ -116,7 +130,8 @@ public class SqlDetail {
      * @return
      */
     public static ArrayList<Integer> getBuildEnabled() {
-        return SqlGeneral.getBuildEnabled(channel_id);
+        SqlDetail sqlDetail = new SqlDetail();
+        return SqlGeneral.getBuildEnabled(sqlDetail.channel_id());
     }
 
     /**
@@ -124,7 +139,8 @@ public class SqlDetail {
      * @return
      */
     public static ArrayList<Integer> getBuildMessageStatus() {
-        return SqlGeneral.getBuildMessageStatus(channel_id);
+        SqlDetail sqlDetail = new SqlDetail();
+        return SqlGeneral.getBuildMessageStatus(sqlDetail.channel_id());
     }
 
     /**
@@ -143,7 +159,8 @@ public class SqlDetail {
      * @param result
      */
     public static void insertErrnoResult(int path_id, String params, int status, String result) {
-        SqlGeneral.insertErrnoResult(channel_id, path_id, getBuildId() + 1, params, status, result);
+        SqlDetail sqlDetail = new SqlDetail();
+        SqlGeneral.insertErrnoResult(sqlDetail.channel_id(), path_id, getBuildId() + 1, params, status, result);
     }
 
     /**
@@ -161,6 +178,9 @@ public class SqlDetail {
 
     }
 
+    /**
+     * 更新trd_coupon_order用户订单数据成功（iqg）
+     */
     public static void iqgUptadeOneCouponOrder() {
         TrdCouponOrder trdCouponOrder = new TrdCouponOrder(getParamValue(0, "created_at"),
                 getParamValue(0, "user_id"),
@@ -172,6 +192,9 @@ public class SqlDetail {
         }
     }
 
+    /**
+     * 更新t_order用户订单数据成功（）msf
+     */
     public static void msfUpdateOrder() {
         Order order = new Order(getParamValue(0, "created_at"),
                 getParamValue(2, "user_id"),
@@ -180,6 +203,18 @@ public class SqlDetail {
         msfBetaSession.commit();
         if (res > 0) {
             System.out.println("更新t_order用户订单数据成功");
+        }
+    }
+
+    public static void hsqUpdateAssistanceEvent() {
+        McActivityAssistanceEvent mcActivityAssistanceEvent = new McActivityAssistanceEvent(1,
+                3,
+                getParamValue(2, "user_id"),
+                getParamValue(2, "activityId"));
+        int res = hsqBetaSession.update("updateAssistanceEvent", mcActivityAssistanceEvent);
+        hsqBetaSession.commit();
+        if (res > 0) {
+            System.out.println("助力免单数据更新成功，助力成功");
         }
     }
 }
