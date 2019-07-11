@@ -132,6 +132,34 @@
         </classes>
     </test>
 
+    <test name ="好食期接口测试用例(支付宝相关-积分小程序)">
+        <classes >
+
+            <class name="com.duoweidu.cases.hsq.openapi.point_skulist_test">
+                <methods>
+                    <include name = "point_skulist_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.openapi.point_iteminfo_test">
+                <methods>
+                    <include name = "point_iteminfo_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.openapi.tradecenter_orderlist_test">
+                <methods>
+                    <include name="tradecenter_orderlist_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.openapi.tradecenter_orderinfo_test">
+                <methods>
+                    <include name="tradecenter_orderinfo_true"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
     <test name ="好食期接口测试用例(openapi)">
         <classes >
 
@@ -529,12 +557,6 @@
                 </methods>
             </class>
 
-            <class name="com.duoweidu.cases.hsq.openapi.point_iteminfo_test">
-                <methods>
-                    <include name="point_iteminfo_true"/>
-                </methods>
-            </class>
-
             <class name="com.duoweidu.cases.hsq.openapi.market_pinactivitiesuserlist_test">
                 <methods>
                     <include name="market_pinactivitiesuserlist_true"/>
@@ -608,12 +630,6 @@
                 </methods>
             </class>
 
-            <class name="com.duoweidu.cases.hsq.openapi.point_skulist_test">
-                <methods>
-                    <include name="point_skulist_true"/>
-                </methods>
-            </class>
-
             <class name="com.duoweidu.cases.hsq.openapi.point_topicinfo_test">
                 <methods>
                     <include name="point_topicinfo_true"/>
@@ -641,18 +657,6 @@
             <class name="com.duoweidu.cases.hsq.openapi.tradecenter_ordercancel_test">
                 <methods>
                     <include name="tradecenter_ordercancel_true"/>
-                </methods>
-            </class>
-
-            <class name="com.duoweidu.cases.hsq.openapi.tradecenter_orderlist_test">
-                <methods>
-                    <include name="tradecenter_orderlist_true"/>
-                </methods>
-            </class>
-
-            <class name="com.duoweidu.cases.hsq.openapi.tradecenter_orderinfo_test">
-                <methods>
-                    <include name="tradecenter_orderinfo_true"/>
                 </methods>
             </class>
 

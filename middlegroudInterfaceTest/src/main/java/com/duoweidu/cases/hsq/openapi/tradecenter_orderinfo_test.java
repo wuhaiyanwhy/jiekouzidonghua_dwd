@@ -15,7 +15,7 @@ public class tradecenter_orderinfo_test extends HsqInterfaceTest {
     public void tradecenter_orderinfo_true() {
 
         setUrl("tradecenter.orderinfo.uri");
-        param = "token=" + SqlDetail.getParamValue("token") + "&orderId=" + SqlDetail.getParamValue(2, "pointOrderId");
+        param = "token=" + SqlDetail.getParamValue("token") + "&orderId=" + SqlDetail.getParamValue("pointOrderId");
         process(false, false);
 
         model = sparseJson(TradecenterOrderinfoData.class);
