@@ -1,5 +1,6 @@
 package com.duoweidu.config;
 
+import com.duoweidu.model.hsqTable.McActivityAssistanceEvent;
 import com.duoweidu.model.iqgTable.ProductOrder;
 import com.duoweidu.model.iqgTable.TrdCouponOrder;
 import com.duoweidu.model.msfTable.Order;
@@ -16,10 +17,12 @@ public class SqlDetail {
 
     private static SqlSession iqgBetaSession;
     private static SqlSession msfBetaSession;
+    private static SqlSession hsqBetaSession;
 
     static {
         iqgBetaSession = DatabaseUtil.getIqgBetaSqlSession();
         msfBetaSession = DatabaseUtil.getMsfBetaSqlSession();
+        hsqBetaSession = DatabaseUtil.getHsqBetaSqlSession();
     }
 
 
@@ -175,6 +178,9 @@ public class SqlDetail {
 
     }
 
+    /**
+     * 更新trd_coupon_order用户订单数据成功（iqg）
+     */
     public static void iqgUptadeOneCouponOrder() {
         TrdCouponOrder trdCouponOrder = new TrdCouponOrder(getParamValue(0, "created_at"),
                 getParamValue(0, "user_id"),
@@ -186,6 +192,9 @@ public class SqlDetail {
         }
     }
 
+    /**
+     * 更新t_order用户订单数据成功（）msf
+     */
     public static void msfUpdateOrder() {
         Order order = new Order(getParamValue(0, "created_at"),
                 getParamValue(2, "user_id"),
@@ -194,6 +203,18 @@ public class SqlDetail {
         msfBetaSession.commit();
         if (res > 0) {
             System.out.println("更新t_order用户订单数据成功");
+        }
+    }
+
+    public static void hsqUpdateAssistanceEvent() {
+        McActivityAssistanceEvent mcActivityAssistanceEvent = new McActivityAssistanceEvent(1,
+                3,
+                getParamValue(2, "user_id"),
+                getParamValue(2, "activityId"));
+        int res = hsqBetaSession.update("updateAssistanceEvent", mcActivityAssistanceEvent);
+        hsqBetaSession.commit();
+        if (res > 0) {
+            System.out.println("助力免单数据更新成功，助力成功");
         }
     }
 }

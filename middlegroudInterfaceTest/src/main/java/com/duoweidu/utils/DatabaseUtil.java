@@ -50,4 +50,10 @@ public class DatabaseUtil {
         return getSession("msfBetaDatabaseConfig.xml");
     }
 
+    //hsq_online库
+    public static SqlSession getHsqBetaSqlSession() {
+        return getSession("hsqBetaDatabaseConfig.xml");
+    }
+
+
 }
