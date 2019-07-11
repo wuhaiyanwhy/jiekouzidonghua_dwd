@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 命名空间mapper,如果有多个mapper文件，这个必须唯一 -->
+<mapper namespace="com.duoweidu.model">
+
+    <!--更新助力免单表数据，使其可以下单-->
+    <update id="updateAssistanceEvent" parameterType="com.duoweidu.model.hsqTable.McActivityAssistanceEvent">
+        update mc_activity_assistance_event
+        set join_count=#{join_count}, event_status=#{event_status}
+        where owner_id=#{owner_id} and assistance_id=#{assistance_id} order by id desc
+        limit 1
+    </update>
+
+</mapper>

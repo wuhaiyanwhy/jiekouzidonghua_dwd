@@ -2,7 +2,6 @@ package com.duoweidu.cases.hsq.openapi;
 
 import com.duoweidu.cases.interfaces.HsqInterfaceTest;
 import com.duoweidu.config.SqlDetail;
-import com.duoweidu.model.Interface.ZhimaZhimaskulistData;
 import com.duoweidu.model.hsq.ZhimaZhimaskulistData;
 import com.duoweidu.utils.ConfigFileUrl;
 import org.testng.annotations.Test;
@@ -13,7 +12,7 @@ public class ZhimaZhimaskulist extends HsqInterfaceTest {
 
     @Test(description = "芝麻首页商品列表")
     public void zhimaZhimaskulist() {
-        url = ConfigFileUrl.getUrlByKey(ConfigFileUrl.ZHIMA_ZHIMASKULIST);
+        setUrl("zhima.zhimaskulist.uri");
         param = "pageNum=1&pageSize=20&appId=" + SqlDetail.getParamValue(0, "zhimaAppId");
         process(true, true);
         model = sparseJson(ZhimaZhimaskulistData.class);

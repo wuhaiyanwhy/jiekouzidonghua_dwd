@@ -2,8 +2,7 @@ package com.duoweidu.cases.hsq.openapi;
 
 import com.duoweidu.cases.interfaces.HsqInterfaceTest;
 import com.duoweidu.config.SqlDetail;
-import com.duoweidu.model.Interface.ResData;
-import com.duoweidu.utils.ConfigFileUrl;
+import com.duoweidu.model.hsq.ResData;
 import org.testng.annotations.Test;
 
 public class ZhimaParticipatesync extends HsqInterfaceTest {
@@ -12,9 +11,9 @@ public class ZhimaParticipatesync extends HsqInterfaceTest {
 
     @Test(description = "用户合约数据同步")
     public void zhimaParticipatesync() {
-        url = ConfigFileUrl.getUrlByKey(ConfigFileUrl.ZHIMA_PARTICPATESYNC);
+        setUrl("zhima.participatesync.uri");
         param = "token=" + SqlDetail.getParamValue("token") +
-                "&appId=" + SqlDetail.getParamValue("zhimaAppId", 4);
+                "&appId=" + SqlDetail.getParamValue(0,"zhimaAppId");
         process(true,false);
         model = sparseJson(ResData.class);
         detailAssert();

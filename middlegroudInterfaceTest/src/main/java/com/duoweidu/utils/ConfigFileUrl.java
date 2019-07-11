@@ -30,6 +30,21 @@ public class ConfigFileUrl {
     }
 
     /**
+     * 拼接url
+     * @param name
+     * @return
+     */
+    public static String getUrlByKey(String name, int channel_id) {
+        String protocol = SqlGeneral.getServerHostValue(channel_id).getProtocol();
+        String server_name = SqlGeneral.getServerHostValue(channel_id).getServer_name();
+        String path = SqlGeneral.getInterfacePathValue(channel_id, name).getPath();
+        if (path.isEmpty()) {
+            throw new IllegalStateException("未知地址");
+        }
+        return protocol + "://" + server_name + path;
+    }
+
+    /**
      * 拼接url，根据渠道
      * @param channel_id
      * @param env
