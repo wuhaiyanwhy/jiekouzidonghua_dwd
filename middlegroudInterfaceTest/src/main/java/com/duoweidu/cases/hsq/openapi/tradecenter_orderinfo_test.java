@@ -1,7 +1,7 @@
 package com.duoweidu.cases.hsq.openapi;
 
 import com.duoweidu.cases.interfaces.HsqInterfaceTest;
-import com.duoweidu.config.SqlDetail;
+import com.duoweidu.config.sql.SqlDetail;
 import com.duoweidu.model.hsq.TradecenterOrderinfoData;
 import com.duoweidu.utils.ConfigFileUrl;
 import org.testng.annotations.Test;
@@ -15,7 +15,7 @@ public class tradecenter_orderinfo_test extends HsqInterfaceTest {
     public void tradecenter_orderinfo_true() {
 
         setUrl("tradecenter.orderinfo.uri");
-        param = "token=" + SqlDetail.getParamValue("token") + "&orderId=" + SqlDetail.getParamValue(2, "pointOrderId");
+        param = "token=" + SqlDetail.getParamValue("token") + "&orderId=" + SqlDetail.getParamValue("pointOrderId");
         process(false, false);
 
         model = sparseJson(TradecenterOrderinfoData.class);

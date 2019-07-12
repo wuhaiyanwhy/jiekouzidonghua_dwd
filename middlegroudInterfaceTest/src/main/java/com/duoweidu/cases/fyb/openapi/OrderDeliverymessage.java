@@ -1,7 +1,7 @@
 package com.duoweidu.cases.fyb.openapi;
 
 import com.duoweidu.cases.interfaces.FybInterfaceTest;
-import com.duoweidu.config.SqlDetail;
+import com.duoweidu.config.sql.SqlDetail;
 import org.testng.annotations.Test;
 
 public class OrderDeliverymessage extends FybInterfaceTest {

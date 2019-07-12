@@ -1,6 +1,6 @@
 package com.duoweidu.cases.interfaces;
 
-import com.duoweidu.config.SqlDetail;
+import com.duoweidu.config.sql.SqlDetail;
 import com.duoweidu.utils.CallbackInterface;
 import com.duoweidu.utils.ConfigFileUrl;
 import org.apache.http.NameValuePair;

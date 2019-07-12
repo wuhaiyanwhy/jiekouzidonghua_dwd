@@ -2,7 +2,7 @@ package com.duoweidu.cases.fyb.openapi;
 
 import com.duoweidu.cases.interfaces.FybInterfaceTest;
 import com.duoweidu.config.FybConfig;
-import com.duoweidu.config.SqlDetail;
+import com.duoweidu.config.sql.SqlDetail;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.testng.annotations.Test;

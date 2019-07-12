@@ -1,7 +1,7 @@
 package com.duoweidu.utils;
 
 import com.duoweidu.config.GeneralConfig;
-import com.duoweidu.config.SqlDetail;
+import com.duoweidu.config.sql.SqlDetail;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.entity.UrlEncodedFormEntity;

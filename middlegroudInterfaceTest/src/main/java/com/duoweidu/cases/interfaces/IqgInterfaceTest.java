@@ -1,7 +1,7 @@
 package com.duoweidu.cases.interfaces;
 
-import com.duoweidu.config.GeneralAssert;
-import com.duoweidu.config.SqlDetail;
+import com.duoweidu.config.generalAssert.GeneralAssert;
+import com.duoweidu.config.sql.SqlDetail;
 import com.duoweidu.utils.IqgCallbackInterface;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;

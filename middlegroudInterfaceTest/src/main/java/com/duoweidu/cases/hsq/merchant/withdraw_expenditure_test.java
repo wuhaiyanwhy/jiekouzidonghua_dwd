@@ -1,6 +1,6 @@
 package com.duoweidu.cases.hsq.merchant;
 
-import com.duoweidu.config.GeneralAssert;
+import com.duoweidu.config.generalAssert.GeneralAssert;
 import com.duoweidu.config.TestConfigMerchant;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;

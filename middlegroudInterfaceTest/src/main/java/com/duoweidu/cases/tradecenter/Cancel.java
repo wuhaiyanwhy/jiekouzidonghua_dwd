@@ -1,7 +1,7 @@
 package com.duoweidu.cases.tradecenter;
 
 import com.duoweidu.cases.interfaces.InterfaceTest;
-import com.duoweidu.config.SqlDetail;
+import com.duoweidu.config.sql.SqlDetail;
 import com.duoweidu.config.TradecenterConfig;
 import com.duoweidu.model.tradecenter.ResultData;
 import com.duoweidu.utils.ConfigFileUrl;

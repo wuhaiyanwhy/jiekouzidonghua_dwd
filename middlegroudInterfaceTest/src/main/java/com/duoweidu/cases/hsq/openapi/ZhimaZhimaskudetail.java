@@ -1,8 +1,8 @@
 package com.duoweidu.cases.hsq.openapi;
 
 import com.duoweidu.cases.interfaces.HsqInterfaceTest;
-import com.duoweidu.config.SqlDetail;
-import com.duoweidu.model.Interface.ZhimaZhimaskudetailData;
+import com.duoweidu.config.sql.SqlDetail;
+import com.duoweidu.model.hsq.ZhimaZhimaskudetailData;
 import com.duoweidu.utils.ConfigFileUrl;
 import org.testng.annotations.Test;
 
@@ -12,9 +12,9 @@ public class ZhimaZhimaskudetail extends HsqInterfaceTest {
 
     @Test(description = "芝麻商品详情页")
     public void zhimaZhimaskudetail() {
-        url = ConfigFileUrl.getUrlByKey(ConfigFileUrl.ZHIMA_ZHIMASKUDETAIL);
+        setUrl("zhima.zhimaskudetail.uri");
         param = "token=" + SqlDetail.getParamValue("token") +
-                "&zhimaId=" + SqlDetail.getParamValue("zhimaId", 2);
+                "&zhimaId=" + SqlDetail.getParamValue(2,"zhimaId");
         process(true,false);
         model = sparseJson(ZhimaZhimaskudetailData.class);
         if ("beta".equals(ConfigFileUrl.getEnv())) {

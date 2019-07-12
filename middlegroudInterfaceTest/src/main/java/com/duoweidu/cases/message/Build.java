@@ -1,7 +1,7 @@
 package com.duoweidu.cases.message;
 
 import com.duoweidu.config.GeneralConfig;
-import com.duoweidu.config.SqlDetail;
+import com.duoweidu.config.sql.SqlDetail;
 import com.duoweidu.utils.ConfigFileUrl;
 import org.testng.annotations.AfterSuite;
 

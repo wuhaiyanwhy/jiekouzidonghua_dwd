@@ -1,7 +1,7 @@
 package com.duoweidu.cases.tradecenter;
 
 import com.duoweidu.cases.message.Message;
-import com.duoweidu.config.SqlDetail;
+import com.duoweidu.config.sql.SqlDetail;
 
 public class Test {
 

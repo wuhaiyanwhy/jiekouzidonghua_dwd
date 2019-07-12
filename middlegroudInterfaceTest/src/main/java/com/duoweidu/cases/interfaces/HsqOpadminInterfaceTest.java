@@ -1,7 +1,7 @@
 package com.duoweidu.cases.interfaces;
 
-import com.duoweidu.config.GeneralAssert;
-import com.duoweidu.config.GeneralAssertMultiChannel1;
+import com.duoweidu.config.generalAssert.GeneralAssert;
+import com.duoweidu.config.generalAssert.GeneralAssertMultiChannel1;
 import com.duoweidu.config.SqlGeneral;
 import com.duoweidu.utils.ConfigFileUrl;
 import org.json.JSONArray;

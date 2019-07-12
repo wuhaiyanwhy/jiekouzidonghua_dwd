@@ -2,7 +2,7 @@ package com.duoweidu.cases.msf.openapi;
 
 import com.duoweidu.cases.interfaces.MsfInterfaceTest;
 import com.duoweidu.config.MsfConfig;
-import com.duoweidu.config.SqlDetail;
+import com.duoweidu.config.sql.SqlDetail;
 import com.duoweidu.utils.ConfigFileUrl;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;

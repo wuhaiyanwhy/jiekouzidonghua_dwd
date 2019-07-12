@@ -2,7 +2,7 @@ package com.duoweidu.cases.hsq.openapi;
 
 import com.duoweidu.cases.interfaces.HsqInterfaceTest;
 import com.duoweidu.config.HsqOpenapiConfig;
-import com.duoweidu.config.SqlDetail;
+import com.duoweidu.config.sql.SqlDetail;
 import com.duoweidu.model.hsq.TradecenterAssistanceordersubmitData;
 import com.duoweidu.utils.ConfigFileUrl;
 import org.apache.http.NameValuePair;

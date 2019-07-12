@@ -1,6 +1,6 @@
 package com.duoweidu.utils;
 
-import com.duoweidu.config.SqlDetail;
+import com.duoweidu.config.sql.SqlDetail;
 import com.duoweidu.config.SqlGeneral;
 
 import java.util.Locale;

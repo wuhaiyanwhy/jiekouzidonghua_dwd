@@ -1,6 +1,6 @@
 package com.duoweidu.cases.hsq.opadmin;
 
-import com.duoweidu.config.GeneralAssert;
+import com.duoweidu.config.generalAssert.GeneralAssert;
 import com.duoweidu.config.TestConfigOpadmin;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;

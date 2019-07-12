@@ -1,7 +1,7 @@
 package com.duoweidu.cases.tradecenterOpadmin;
 
 import com.duoweidu.cases.interfaces.TradeCenterOpadminInterfaceTest;
-import com.duoweidu.config.SqlDetail;
+import com.duoweidu.config.sql.SqlDetail;
 import com.duoweidu.model.tradecenteropadmin.AccountData;
 import com.duoweidu.utils.ConfigFileUrl;
 import org.apache.http.NameValuePair;

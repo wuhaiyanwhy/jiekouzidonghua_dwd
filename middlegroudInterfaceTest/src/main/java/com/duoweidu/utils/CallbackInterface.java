@@ -1,6 +1,6 @@
 package com.duoweidu.utils;
 
-import com.duoweidu.config.GeneralAssert;
+import com.duoweidu.config.generalAssert.GeneralAssert;
 import com.duoweidu.config.GeneralConfig;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
