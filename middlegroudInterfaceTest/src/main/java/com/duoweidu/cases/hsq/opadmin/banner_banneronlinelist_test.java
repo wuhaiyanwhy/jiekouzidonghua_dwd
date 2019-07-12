@@ -1,5 +1,6 @@
 package com.duoweidu.cases.hsq.opadmin;
 
+import com.duoweidu.cases.interfaces.HsqOpadminInterfaceTest;
 import com.duoweidu.config.generalAssert.GeneralAssert;
 import com.duoweidu.config.TestConfigOpadmin;
 import org.apache.http.HttpResponse;
@@ -15,7 +16,7 @@ import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
-public class banner_banneronlinelist_test {
+public class banner_banneronlinelist_test extends HsqOpadminInterfaceTest {
 
     //用来储存参数信息
     private String param;
@@ -27,6 +28,7 @@ public class banner_banneronlinelist_test {
 
         System.out.println(TestConfigOpadmin.banner_banneronlinelist);
         List<NameValuePair> list =  new LinkedList<>();
+        process(list, 2, true, false);
 
         String results = getJsonResult(list);
 
