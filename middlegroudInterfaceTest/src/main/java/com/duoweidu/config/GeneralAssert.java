@@ -12,13 +12,13 @@ import java.io.IOException;
 
 public class GeneralAssert extends Assert {
 
-    public void genErrno(String uri, int path_id, String param int a, String errnoResult) {
-        /**
-         * 不是调试状态才往库里插入数据，线上环境会插入报错次数
-         */
+    /**
+     * 不是调试状态才往库里插入数据，线上环境会插入报错次数
+     */
+    public void genErrno(String uri, int path_id, String param, int status, String errnoResult) {
         if ("false".equals(ConfigFileUrl.getDebug())) {
             //插入报错数据
-            SqlDetail.insertErrnoResult(path_id, param, a, errnoResult);
+            SqlDetail.insertErrnoResult(path_id, param, status, errnoResult);
             GeneralConfig.errnoList.add(uri);
             if ("prod".equals(ConfigFileUrl.getEnv())) {
                 //插入报错次数
@@ -74,6 +74,9 @@ public class GeneralAssert extends Assert {
                     "\nCX-Request-ID: " + header[0].getValue() +
                     "\n接口返回：" + result;
         }
+
+        GeneralAssert generalAssert = new GeneralAssert();
+        generalAssert.genErrno(uri, path_id, param, status, errnoResult);
 
         if (param == null) {
             return failed;
