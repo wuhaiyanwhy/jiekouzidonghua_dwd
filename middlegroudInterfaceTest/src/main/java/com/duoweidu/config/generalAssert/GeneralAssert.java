@@ -183,6 +183,21 @@ public class GeneralAssert extends Assert {
         }
     }
 
+    /**
+     * 判断返回的aaData
+     * @param aaData
+     * @param uri
+     * @param path_id
+     * @param param
+     * @param result
+     */
+    public static void aaDataTest(JSONArray aaData, String uri, int path_id, String param, String result) {
+        if(aaData.length() <= 0){
+            fail(distinguishParamFailed("返回的aaData数据为空;", uri, path_id, param, 4, result));
+        }
+
+    }
+
 
     /**
      * 判断返回的list
@@ -222,7 +237,6 @@ public class GeneralAssert extends Assert {
     public static void detailedAssert(String faile, String uri, int path_id, String param, String result) {
         fail(distinguishParamFailed(faile, uri, path_id, param, 7, result));
     }
-
 
 
 }
