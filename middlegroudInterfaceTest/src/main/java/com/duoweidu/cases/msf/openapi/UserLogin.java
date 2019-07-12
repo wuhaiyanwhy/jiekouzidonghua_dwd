@@ -4,7 +4,12 @@ import com.duoweidu.cases.interfaces.MsfInterfaceTest;
 import com.duoweidu.config.generalAssert.GeneralAssert;
 import com.duoweidu.config.GeneralConfig;
 import com.duoweidu.config.MsfConfig;
+<<<<<<< HEAD
 import com.duoweidu.config.sql.SqlDetail;
+=======
+import com.duoweidu.config.SqlDetail;
+import com.duoweidu.utils.CallbackInterface;
+>>>>>>> iqg-beta-why
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONException;
@@ -29,7 +34,7 @@ public class UserLogin extends MsfInterfaceTest {
 
         process(list,true,false);
         //cookie信息储存未默认值
-        GeneralConfig.store = GeneralConfig.defaultHttpClient.getCookieStore();
+        GeneralConfig.store = CallbackInterface.defaultHttpClient.getCookieStore();
         System.out.println("cookie信息：" + GeneralConfig.store);
         try {
             JSONObject jsonObject = new JSONObject(result);

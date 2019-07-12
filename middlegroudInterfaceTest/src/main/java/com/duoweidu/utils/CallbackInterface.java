@@ -21,7 +21,7 @@ import java.util.List;
  */
 
 public class CallbackInterface {
-    private static final DefaultHttpClient defaultHttpClient;
+    public static DefaultHttpClient defaultHttpClient;
 
     static {
         defaultHttpClient = new DefaultHttpClient();
@@ -66,7 +66,7 @@ public class CallbackInterface {
      */
     public static String getStringResult(String url, int path_id, String param) {
         HttpGet get = new HttpGet(url + "?" + param);
-        GeneralConfig.defaultHttpClient.setCookieStore(GeneralConfig.store);
+        CallbackInterface.defaultHttpClient.setCookieStore(GeneralConfig.store);
         HttpResponse response = null;
         try {
             response = defaultHttpClient.execute(get);
@@ -85,7 +85,7 @@ public class CallbackInterface {
      */
     public static String postStringResult(String url, int path_id, List<NameValuePair> list) {
         HttpPost post = new HttpPost(url);
-        GeneralConfig.defaultHttpClient.setCookieStore(GeneralConfig.store);
+        CallbackInterface.defaultHttpClient.setCookieStore(GeneralConfig.store);
         UrlEncodedFormEntity entity = null;
         try {
             entity = new UrlEncodedFormEntity(list, "utf-8");
@@ -112,7 +112,7 @@ public class CallbackInterface {
     public static String postStringResult(String url, int path_id, String param) {
         HttpPost post = new HttpPost(url);
         post.setHeader("Content-Type", "application/json");
-        GeneralConfig.defaultHttpClient.setCookieStore(GeneralConfig.store);
+        CallbackInterface.defaultHttpClient.setCookieStore(GeneralConfig.store);
         StringEntity entity = null;
         try {
             entity = new StringEntity(param, "utf-8");
@@ -138,7 +138,7 @@ public class CallbackInterface {
      */
     public static String deleteStringResult(String url, int path_id, String param) {
         HttpDelete delete = new HttpDelete(url);
-        GeneralConfig.defaultHttpClient.setCookieStore(GeneralConfig.store);
+        CallbackInterface.defaultHttpClient.setCookieStore(GeneralConfig.store);
         HttpResponse response = null;
         try {
             response = defaultHttpClient.execute(delete);
