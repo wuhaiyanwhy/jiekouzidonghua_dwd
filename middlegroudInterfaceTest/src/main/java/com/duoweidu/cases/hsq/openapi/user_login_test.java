@@ -3,6 +3,7 @@ package com.duoweidu.cases.hsq.openapi;
 import com.duoweidu.cases.interfaces.HsqInterfaceTest;
 import com.duoweidu.config.GeneralConfig;
 import com.duoweidu.config.SqlDetail;
+import com.duoweidu.utils.CallbackInterface;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.testng.annotations.Test;
@@ -22,7 +23,8 @@ public class user_login_test extends HsqInterfaceTest {
         list.add(new BasicNameValuePair("type", "1"));
         process(list,true,false);
         //cookie信息存为默认值
-        GeneralConfig.store = GeneralConfig.defaultHttpClient.getCookieStore();
+        GeneralConfig.store = CallbackInterface.defaultHttpClient.getCookieStore();
+        System.out.println(GeneralConfig.store);
 
     }
 
