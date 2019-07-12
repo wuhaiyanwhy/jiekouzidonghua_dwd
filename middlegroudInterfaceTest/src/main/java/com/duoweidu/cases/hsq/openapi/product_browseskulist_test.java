@@ -11,6 +11,6 @@ public class product_browseskulist_test extends HsqInterfaceTest {
         setUrl("product.browseskulist.uri");
         param = "browseRecords=28581:12345";
         process(false,false);
-        generalAssertTest();
+        statusAssertTest();
     }
 }

@@ -159,7 +159,6 @@
         </classes>
     </test>
 
-
     <test name ="好食期接口测试用例(openapi)">
         <classes >
 
@@ -887,6 +886,154 @@
                     <include name="user_logout_true"/>
                 </methods>
             </class>
+        </classes>
+    </test>
+
+    <test name ="好食期接口测试用例(商户平台)">
+        <classes >
+
+
+            <class name="com.duoweidu.cases.hsq.merchant.user_login_check_merchant_test">
+                <methods>
+                    <include name = "login_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.merchant.merchant_onlinechat_token_test">
+                <methods>
+                    <include name = "merchant_onlinechat_token_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.merchant.merchant_info_test">
+                <methods>
+                    <include name = "merchant_info_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.merchant.merchant_address_test">
+                <methods>
+                    <include name = "merchant_address_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.merchant.merchant_promotions_test">
+                <methods>
+                    <include name = "merchant_promotions_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.merchant.merchant_couponedit_test">
+                <methods>
+                    <include name = "merchant_couponedit_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.merchant.merchant_couponlist_test">
+                <methods>
+                    <include name = "merchant_couponlist_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.merchant.merchant_notice_test">
+                <methods>
+                    <include name = "merchant_notice_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.merchant.trade_productsoldlist_test">
+                <methods>
+                    <include name = "trade_productsoldlist_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.merchant.trade_ugc_ugclist_test">
+                <methods>
+                    <include name = "trade_ugc_ugclist_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.merchant.trade_merchant_ugclist_test">
+                <methods>
+                    <include name = "trade_merchant_ugclist_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.merchant.trade_statement_test">
+                <methods>
+                    <include name = "trade_statement_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.merchant.trade_statementlist_test">
+                <methods>
+                    <include name = "trade_statementlist_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.merchant.express_productsendlist_test">
+                <methods>
+                    <include name = "express_productsendlist_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.merchant.merchant_onlinechat_token_test">
+                <methods>
+                    <include name = "merchant_onlinechat_token_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.merchant.express_expressfeetemplate_test">
+                <methods>
+                    <include name = "express_expressfeetemplate_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.merchant.express_trance_merchant_test">
+                <methods>
+                    <include name = "express_trance_merchant_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.merchant.product_selectcategory_test">
+                <methods>
+                    <include name = "product_selectcategory_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.merchant.merchant_productskulist_test">
+                <methods>
+                    <include name = "merchant_productskulist_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.merchant.cs_refundlist_test">
+                <methods>
+                    <include name = "cs_refundlist_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.merchant.activity_topic_test">
+                <methods>
+                    <include name = "activity_topic_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.merchant.activity_gettopiclist_test">
+                <methods>
+                    <include name = "activity_gettopiclist_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.merchant.activity_registration_test">
+                <methods>
+                    <include name = "activity_registration_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.merchant.activity_getregistrationlist_test">
+                <methods>
+                    <include name = "activity_getregistrationlist_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.merchant.withdraw_income_test">
+                <methods>
+                    <include name = "withdraw_income_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.merchant.withdraw_income_list_merchant_test">
+                <methods>
+                    <include name = "withdraw_income_list_merchant_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.merchant.withdraw_expenditure_test">
+                <methods>
+                    <include name = "withdraw_expenditure_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.merchant.withdraw_expenditure_list_merchant_test">
+                <methods>
+                    <include name = "withdraw_expenditure_list_merchant_true"/>
+                </methods>
+            </class>
+
         </classes>
     </test>
 

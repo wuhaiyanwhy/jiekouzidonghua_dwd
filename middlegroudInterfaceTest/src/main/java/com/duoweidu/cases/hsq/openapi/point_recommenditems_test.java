@@ -10,6 +10,6 @@ public class point_recommenditems_test extends HsqInterfaceTest {
         setUrl("point.recommenditems.uri");
         param = "item_selected_cnt=3&data_rule=1";
         process(false,false);
-        generalAssertTest();
+        statusAssertTest();
     }
 }

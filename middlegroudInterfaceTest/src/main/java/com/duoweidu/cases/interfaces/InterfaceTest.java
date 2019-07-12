@@ -42,39 +42,89 @@ public class InterfaceTest {
         pathId = SqlDetail.getPathId(key);
     }
 
-    //get请求
-    protected void process(boolean isAssert,boolean isList) {
+    //get请求，不要断言
+    protected void process() {
         System.out.println(url);
         result = CallbackInterface.getStringResult(url, pathId, this.param);
+    }
+
+    //get请求，要基本断言,errno和data
+    protected void process(boolean isAssert) {
+        process();
+        if (isAssert == true) {
+            generalAssertTest();
+        }
+    }
+
+    //get请求,要基本断言加list
+    protected void process(boolean isAssert,boolean isList) {
+        process();
         if (isAssert == true) {
             generalAssertTest(isList);
         }
     }
 
-    //post请求
-    protected void process(List<NameValuePair> list, boolean isAssert, boolean isList) {
+    //post请求,不要断言
+    protected void process(List<NameValuePair> list) {
         System.out.println(url);
         param = list.toString();
         result = CallbackInterface.postStringResult(url, pathId, list);
+    }
+
+    //post请求，要基本断言，errno和data
+    protected void process(List<NameValuePair> list, boolean isAssert) {
+        process(list);
+        if (isAssert == true) {
+            generalAssertTest();
+        }
+    }
+
+    //post请求，要基本断言加list
+    protected void process(List<NameValuePair> list, boolean isAssert, boolean isList) {
+        process(list);
         if (isAssert == true) {
             generalAssertTest(isList);
         }
     }
 
-    //delete请求
-    protected void processDelete(boolean isAssert, boolean isList) {
+    //delete请求，不要断言
+    protected void processDelete() {
         System.out.println(url);
         result = CallbackInterface.deleteStringResult(url, pathId, this.param);
+    }
+
+    //delete请求，要基本断言，errno和data
+    protected void processDelete(boolean isAssert) {
+        processDelete();
+        if (isAssert == true) {
+            generalAssertTest();
+        }
+    }
+
+    //delete请求，要基本断言加list
+    protected void processDelete(boolean isAssert, boolean isList) {
+        processDelete();
         if (isAssert == true) {
             generalAssertTest(isList);
         }
     }
 
     //通用断言判断，只判断errno
+    protected void statusAssertTest() {
+        try {
+            JSONObject jsonObject = new JSONObject(result);
+            GeneralAssert.errnoAssert(jsonObject.get("errno").toString(), jsonObject.get("errmsg").toString(), url, pathId, param, result);
+        }catch (JSONException e){
+            GeneralAssert.jsonAssert(url, pathId, param, result, e);
+        }
+    }
+
+    //通用断言判断errno和data
     protected void generalAssertTest() {
         try {
             JSONObject jsonObject = new JSONObject(result);
             GeneralAssert.errnoAssert(jsonObject.get("errno").toString(), jsonObject.get("errmsg").toString(), url, pathId, param, result);
+            GeneralAssert.dataAssert(jsonObject.get("data").toString(), url, pathId, param, result);
         }catch (JSONException e){
             GeneralAssert.jsonAssert(url, pathId, param, result, e);
         }
