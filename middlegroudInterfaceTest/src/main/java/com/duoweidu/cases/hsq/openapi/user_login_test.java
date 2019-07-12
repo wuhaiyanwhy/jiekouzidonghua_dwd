@@ -2,12 +2,8 @@ package com.duoweidu.cases.hsq.openapi;
 
 import com.duoweidu.cases.interfaces.HsqInterfaceTest;
 import com.duoweidu.config.GeneralConfig;
-<<<<<<< HEAD
 import com.duoweidu.config.sql.SqlDetail;
-=======
-import com.duoweidu.config.SqlDetail;
 import com.duoweidu.utils.CallbackInterface;
->>>>>>> iqg-beta-why
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.testng.annotations.Test;
