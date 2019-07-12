@@ -1,5 +1,6 @@
 package com.duoweidu.cases.hsq.opadmin;
 
+import com.duoweidu.cases.interfaces.HsqOpadminInterfaceTest;
 import com.duoweidu.config.generalAssert.GeneralAssert;
 import com.duoweidu.config.TestConfigOpadmin;
 import org.apache.http.HttpResponse;
@@ -9,19 +10,14 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class activity_pinlottery_edit_test {
-
-    //用来储存参数信息
-    private String param;
-    //用来储存返回结果
-    private String result;
+public class activity_pinlottery_edit_test extends HsqOpadminInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "抽奖活动")
-    public void activity_pinlottery_edit_true() throws IOException {
+    public void activity_pinlottery_edit_true() {
 
-        System.out.println(TestConfigOpadmin.activity_pinlottery_edit);
+        setUrl("activity.pinlottery.edit.uri");
 
-        String results = getJsonResult();
+        process();
 
 
     }

@@ -15,7 +15,6 @@ public class activity_goods_list_test extends HsqOpadminInterfaceTest {
         setUrl("activity.goods.list.uri");
         List<NameValuePair> list = new LinkedList<>();
         process(list, true, true);
-        String results = getJsonResult(list);
 
     }
 
