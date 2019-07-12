@@ -14,14 +14,9 @@ public class GeneralConfig {
 
     public static List<String> errnoList = new ArrayList<>();
 
-    static {
-        defaultHttpClient = new DefaultHttpClient();
-    }
 
     //用来储存cookies信息的变量
     public static CookieStore store;
-    //声明http客户端
-    public static DefaultHttpClient defaultHttpClient;
     //储存response
     public static HttpResponse response;
 

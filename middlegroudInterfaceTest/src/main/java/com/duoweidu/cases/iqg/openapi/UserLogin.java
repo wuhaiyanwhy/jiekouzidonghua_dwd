@@ -2,7 +2,12 @@ package com.duoweidu.cases.iqg.openapi;
 
 import com.duoweidu.cases.interfaces.IqgInterfaceTest;
 import com.duoweidu.config.GeneralConfig;
+<<<<<<< HEAD
 import com.duoweidu.config.sql.SqlDetail;
+=======
+import com.duoweidu.config.SqlDetail;
+import com.duoweidu.utils.CallbackInterface;
+>>>>>>> 44ec4803acf31fc798d59b39a56a02df86467d07
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.testng.annotations.Test;
@@ -21,6 +26,6 @@ public class UserLogin extends IqgInterfaceTest {
         list.add(new BasicNameValuePair("password", SqlDetail.getParamValue(0, "password")));
         process(list, true, false);
         //cookie信息存为默认值
-        GeneralConfig.store = GeneralConfig.defaultHttpClient.getCookieStore();
+        GeneralConfig.store = CallbackInterface.defaultHttpClient.getCookieStore();
     }
 }
