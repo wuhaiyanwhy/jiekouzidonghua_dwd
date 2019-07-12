@@ -1,6 +1,5 @@
 package com.duoweidu.cases.interfaces;
 
-import com.duoweidu.config.generalAssert.GeneralAssert;
 import com.duoweidu.config.generalAssert.GeneralAssertMultiChannel1;
 import com.duoweidu.config.SqlGeneral;
 import com.duoweidu.utils.CallbackInterface;
@@ -47,14 +46,14 @@ public class HsqOpadminInterfaceTest extends InterfaceTest {
             JSONObject jsonObject = new JSONObject(result);
             if (type == 1) {
                 JSONObject data = (JSONObject) jsonObject.get("data");
-                GeneralAssert.errnoAssert(jsonObject.get("errno").toString(), jsonObject.get("errmsg").toString(), url, pathId, param, result);
-                GeneralAssert.dataAssert(jsonObject.get("data").toString(), url, pathId, param, result);
+                GeneralAssertMultiChannel1.errnoAssert(jsonObject.get("errno").toString(), jsonObject.get("errmsg").toString(), url, pathId, param, result);
+                GeneralAssertMultiChannel1.dataAssert(jsonObject.get("data").toString(), url, pathId, param, result);
                 if (isList == true) {
                     GeneralAssertMultiChannel1.listAssert((JSONArray) data.get("list"), url, pathId, param, result);
                 }
             }else if (type == 2) {
                 JSONArray aaData = (JSONArray) jsonObject.get("aaData");
-                GeneralAssert.aaDataTest(aaData, url, pathId, param, result);
+                GeneralAssertMultiChannel1.aaDataTest(aaData, url, pathId, param, result);
             }
         }catch (JSONException e){
             GeneralAssertMultiChannel1.jsonAssert(url, pathId, param, result, e);
@@ -65,7 +64,7 @@ public class HsqOpadminInterfaceTest extends InterfaceTest {
 
     //通用断言判断，只判断errno
     @Override
-    protected void generalAssertTest() {
+    protected void statusAssertTest() {
         try {
             JSONObject jsonObject = new JSONObject(result);
             GeneralAssertMultiChannel1.errnoAssert(jsonObject.get("errno").toString(), jsonObject.get("errmsg").toString(), url, pathId, param, result);
@@ -74,7 +73,19 @@ public class HsqOpadminInterfaceTest extends InterfaceTest {
         }
     }
 
+    //通用断言判断errno和data
+    @Override
+    protected void generalAssertTest() {
+        try {
+            JSONObject jsonObject = new JSONObject(result);
+            GeneralAssertMultiChannel1.errnoAssert(jsonObject.get("errno").toString(), jsonObject.get("errmsg").toString(), url, pathId, param, result);
+            GeneralAssertMultiChannel1.dataAssert(jsonObject.get("data").toString(), url, pathId, param, result);
+        }catch (JSONException e){
+            GeneralAssertMultiChannel1.jsonAssert(url, pathId, param, result, e);
+        }
+    }
 
+    //通用断言判断
     @Override
     protected void generalAssertTest(boolean isList) {
         try {
@@ -110,6 +121,7 @@ public class HsqOpadminInterfaceTest extends InterfaceTest {
             GeneralAssertMultiChannel1.jsonAssert(url, pathId, param, result, e);
         }
     }
+
 
 
     @Override
