@@ -1,7 +1,7 @@
 package com.duoweidu.utils;
 
 import com.duoweidu.config.sql.SqlDetail;
-import com.duoweidu.config.SqlGeneral;
+import com.duoweidu.config.sql.SqlGeneral;
 
 import java.util.Locale;
 import java.util.ResourceBundle;

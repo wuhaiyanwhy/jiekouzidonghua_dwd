@@ -1,4 +1,4 @@
-package com.duoweidu.config;
+package com.duoweidu.config.sql;
 
 import com.duoweidu.model.table.*;
 import com.duoweidu.utils.ConfigFileUrl;

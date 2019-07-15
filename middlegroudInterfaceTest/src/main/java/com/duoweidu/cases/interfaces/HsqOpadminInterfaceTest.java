@@ -1,7 +1,7 @@
 package com.duoweidu.cases.interfaces;
 
 import com.duoweidu.config.generalAssert.GeneralAssertMultiChannel1;
-import com.duoweidu.config.SqlGeneral;
+import com.duoweidu.config.sql.SqlGeneral;
 import com.duoweidu.utils.CallbackInterface;
 import com.duoweidu.utils.ConfigFileUrl;
 import org.apache.http.NameValuePair;
