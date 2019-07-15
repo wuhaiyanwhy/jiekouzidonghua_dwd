@@ -1,5 +1,6 @@
 package com.duoweidu.cases.hsq.opadmin;
 
+import com.duoweidu.cases.interfaces.HsqOpadminInterfaceTest;
 import com.duoweidu.config.generalAssert.GeneralAssert;
 import com.duoweidu.config.TestConfigOpadmin;
 import org.apache.http.HttpResponse;
@@ -12,15 +13,12 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class content_advertisemanage_list_test {
-
-    //用来储存返回结果
-    private String result;
+public class content_advertisemanage_list_test extends HsqOpadminInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "广告位管理列表")
-    public void content_advertisemanage_list_true() throws IOException {
+    public void content_advertisemanage_list_true() {
 
-        System.out.println(TestConfigOpadmin.content_advertisemanage_list);
+        setUrl("content.advertisemanage.list.uri");
         JSONObject param = new JSONObject();
         param.put("channel","1");
         param.put("status","");
