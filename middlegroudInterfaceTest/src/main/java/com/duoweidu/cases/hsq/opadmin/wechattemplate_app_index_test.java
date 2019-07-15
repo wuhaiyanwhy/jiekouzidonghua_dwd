@@ -1,43 +1,15 @@
 package com.duoweidu.cases.hsq.opadmin;
 
-import com.duoweidu.config.generalAssert.GeneralAssert;
-import com.duoweidu.config.TestConfigOpadmin;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.util.EntityUtils;
+import com.duoweidu.cases.interfaces.HsqOpadminInterfaceTest;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
-
-public class wechattemplate_app_index_test {
-
-    //用来储存参数信息
-    private String param;
-    //用来储存返回结果
-    private String result;
+public class wechattemplate_app_index_test extends HsqOpadminInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "公众号/小程序管理")
-    public void wechattemplate_app_index_true() throws IOException {
+    public void wechattemplate_app_index_true() {
 
-        System.out.println(TestConfigOpadmin.wechattemplate_app_index);
-
-        String results = getJsonResult();
-
-
+        setUrl("wechattemplate.app.index.uri");
+        process();
     }
 
-    private String getJsonResult() throws IOException {
-
-        HttpGet get = new HttpGet(TestConfigOpadmin.wechattemplate_app_index);
-        TestConfigOpadmin.defaultHttpClient.setCookieStore(TestConfigOpadmin.store);
-        HttpResponse response = TestConfigOpadmin.defaultHttpClient.execute(get);
-
-        GeneralAssert.codeTest(response,TestConfigOpadmin.wechattemplate_app_index,param);
-
-        result = EntityUtils.toString(response.getEntity(),"utf-8");
-        System.out.println("接口返回： " + result);
-
-        GeneralAssert.resultTest(TestConfigOpadmin.wechattemplate_app_index,param,result);
-        return result;
-    }
 }

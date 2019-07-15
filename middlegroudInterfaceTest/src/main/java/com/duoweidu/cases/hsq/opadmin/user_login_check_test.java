@@ -3,6 +3,7 @@ package com.duoweidu.cases.hsq.opadmin;
 import com.duoweidu.cases.interfaces.HsqOpadminInterfaceTest;
 import com.duoweidu.config.GeneralConfig;
 import com.duoweidu.config.sql.SqlDetailMultiChannel1;
+import com.duoweidu.utils.CallbackInterface;
 import com.duoweidu.utils.ConfigFileUrl;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
@@ -38,7 +39,7 @@ public class user_login_check_test extends HsqOpadminInterfaceTest {
         }
         process(list, false, false);
         //cookie信息存为默认值
-        GeneralConfig.store = GeneralConfig.defaultHttpClient.getCookieStore();
+        GeneralConfig.store = CallbackInterface.defaultHttpClient.getCookieStore();
 
     }
 
