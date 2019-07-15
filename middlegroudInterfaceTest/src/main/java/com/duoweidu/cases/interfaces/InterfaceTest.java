@@ -87,6 +87,28 @@ public class InterfaceTest {
         }
     }
 
+    //post（json传参）请求,不要断言
+    protected void process(String param) {
+        System.out.println(url);
+        result = CallbackInterface.postStringResult(url, pathId, param);
+    }
+
+    //post（json传参）请求，要基本断言，errno和data
+    protected void process(String param, boolean isAssert) {
+        process(param);
+        if (isAssert == true) {
+            generalAssertTest();
+        }
+    }
+
+    //post（json传参）请求，要基本断言加list
+    protected void process(String param, boolean isAssert, boolean isList) {
+        process(param);
+        if (isAssert == true) {
+            generalAssertTest(isList);
+        }
+    }
+
     //delete请求，不要断言
     protected void processDelete() {
         System.out.println(url);
