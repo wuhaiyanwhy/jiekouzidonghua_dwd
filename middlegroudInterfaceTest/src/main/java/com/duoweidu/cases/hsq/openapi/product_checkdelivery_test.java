@@ -9,7 +9,7 @@ public class product_checkdelivery_test extends HsqInterfaceTest {
     @Test(dependsOnGroups = "loginTrue",description = "检查单品是否符合配送范围")
     public void product_checkdelivery_true() {
         setUrl("product.checkdelivery.uri");
-        param = "provinceId=857&skuId=" + SqlDetail.getParamValue("skuId");
+        param = "provinceId=857&skuId=" + SqlDetail.getInstance().getParamValue("skuId");
         process(true,false);
     }
 }

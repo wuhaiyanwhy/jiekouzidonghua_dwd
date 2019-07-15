@@ -9,7 +9,7 @@ public class Item extends IqgInterfaceTest {
     @Test(dependsOnGroups = "loginTrue",description = "首页商品活动")
     public void item_true() {
         setUrl("item.uri");
-        param = "category_id=0&last_id=0&zone_id=" + SqlDetail.getParamValue(0, "zone_id");
+        param = "category_id=0&last_id=0&zone_id=" + SqlDetail.getInstance().getParamValue(0, "zone_id");
         process(true,false);
     }
 }

@@ -9,7 +9,7 @@ public class SearchTaglist extends MsfInterfaceTest {
     @Test(dependsOnGroups = "loginTrue",description = "搜索标签")
     public void searchTaglist() {
         setUrl("search.taglist.uri");
-        param = "name=" + SqlDetail.getParamValue(0, "tagName");
+        param = "name=" + SqlDetail.getInstance().getParamValue(0, "tagName");
         process(true,true);
     }
 }

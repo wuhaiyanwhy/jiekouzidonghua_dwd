@@ -15,7 +15,7 @@ public class product_productdetail_test extends HsqInterfaceTest {
     @Test(dependsOnGroups = "loginTrue", description = "获取图文详情")
     public void product_productdetail_true() throws IOException {
         setUrl("product.productdetail.uri");
-        param = "productId=" + SqlDetail.getParamValue("productId");
+        param = "productId=" + SqlDetail.getInstance().getParamValue("productId");
         process(true,false);
         model = sparseJson(ProductProductdetailData.class);
         generalDetaiAssert();
@@ -23,13 +23,13 @@ public class product_productdetail_test extends HsqInterfaceTest {
 
 
     private void generalDetaiAssert() throws IOException {
-        detailAssertTest(SqlDetail.getParamValue("productId"),"id", model.id);
+        detailAssertTest(SqlDetail.getInstance().getParamValue("productId"),"id", model.id);
         //有多层josnObject/jsonArray的用法
 //        model.subModel.text;
 //        model.subModelList.size();
         detailAssertTest(1, "source_type", model.source_type);
         detailAssertTest("1,6,18", "cate_ids", model.cate_ids);
-        detailAssertTest(SqlDetail.getParamValue("skuId"), "main_sku", model.main_sku);
+        detailAssertTest(SqlDetail.getInstance().getParamValue("skuId"), "main_sku", model.main_sku);
         detailAssertTest(1, "enabled", model.enabled);
         detailAssertTest(1, "package_type", model.package_type);
         detailAssertTest(0, "restriction_amount", model.restriction_amount);

@@ -15,7 +15,7 @@ public class UserDeletecartsku extends FybInterfaceTest {
     public void userDeletecartsku() {
         setUrl("user.deletecartsku.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("skusInfo","[{\"skuId\":"+ SqlDetail.getParamValue("skuId") +
+        list.add(new BasicNameValuePair("skusInfo","[{\"skuId\":"+ SqlDetail.getInstance().getParamValue("skuId") +
                 ",\"amount\":1}]"));
         process(list,true,false);
     }

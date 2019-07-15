@@ -9,7 +9,7 @@ public class BranchDetail extends MsfInterfaceTest {
     @Test(dependsOnGroups = "loginTrue",description = "门店详情")
     public void branchDetail() {
         setUrl("branch.detail.uri");
-        param = "id=" + SqlDetail.getParamValue("branch_id");
+        param = "id=" + SqlDetail.getInstance().getParamValue("branch_id");
         process(true,false);
     }
 }

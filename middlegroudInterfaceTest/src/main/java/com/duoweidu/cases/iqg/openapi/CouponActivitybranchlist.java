@@ -10,7 +10,7 @@ public class CouponActivitybranchlist extends IqgInterfaceTest {
     @Test(dependsOnGroups = "loginTrue",description = "一元券适用门店")
     public void couponActivitybranchlistTrue() {
         setUrl("coupon.activitybranchlist.uri");
-        param = "id=" + SqlDetail.getParamValue("branchId");
+        param = "id=" + SqlDetail.getInstance().getParamValue("branchId");
         process(true,false);
     }
 }

@@ -14,7 +14,7 @@ public class point_skulist_test extends HsqInterfaceTest {
     public void point_skulist_true() {
         setUrl("point.skulist.uri");
         param = "terminal=aliapp&pageNum=1&pageLimit=10&needPagination=1&pointChannelId=1&noHideLoading=true&appId=" +
-                SqlDetail.getParamValue(0, "pointAppId");
+                SqlDetail.getInstance().getParamValue(0, "pointAppId");
         process(true,true);
         model = sparseJson(PointSkulistData.class);
         detailAssert();

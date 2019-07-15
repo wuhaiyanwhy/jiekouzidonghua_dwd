@@ -1,5 +1,6 @@
 package com.duoweidu.cases.interfaces;
 
+import com.duoweidu.config.generalAssert.GeneralAssert;
 import com.duoweidu.config.generalAssert.GeneralAssertMultiChannel2;
 import com.duoweidu.config.sql.SqlGeneral;
 import com.duoweidu.utils.ConfigFileUrl;
@@ -11,11 +12,13 @@ import java.util.ArrayList;
 
 public class HsqMerchantInterfaceTest extends InterfaceTest {
 
+    protected GeneralAssert generalAssert = new GeneralAssertMultiChannel2();
+
     @Override
     //获取url和pathId
     protected void setUrl(String key) {
-        url = ConfigFileUrl.getUrlByKey(key, ConfigFileUrl.getChannel1());
-        pathId = SqlGeneral.getInterfacePathValue(ConfigFileUrl.getChannel1(), key).getId();
+        url = ConfigFileUrl.getUrlByKey(key, ConfigFileUrl.getChannel2());
+        pathId = SqlGeneral.getInterfacePathValue(ConfigFileUrl.getChannel2(), key).getId();
     }
 
     //通用断言判断，只判断errno
@@ -23,9 +26,9 @@ public class HsqMerchantInterfaceTest extends InterfaceTest {
     protected void statusAssertTest() {
         try {
             JSONObject jsonObject = new JSONObject(result);
-            GeneralAssertMultiChannel2.errnoAssert(jsonObject.get("errno").toString(), jsonObject.get("errmsg").toString(), url, pathId, param, result);
+            generalAssert.errnoAssert(jsonObject.get("errno").toString(), jsonObject.get("errmsg").toString(), url, pathId, param, result);
         }catch (JSONException e){
-            GeneralAssertMultiChannel2.jsonAssert(url, pathId, param, result, e);
+            generalAssert.jsonAssert(url, pathId, param, result, e);
         }
     }
 
@@ -34,10 +37,10 @@ public class HsqMerchantInterfaceTest extends InterfaceTest {
     protected void generalAssertTest() {
         try {
             JSONObject jsonObject = new JSONObject(result);
-            GeneralAssertMultiChannel2.errnoAssert(jsonObject.get("errno").toString(), jsonObject.get("errmsg").toString(), url, pathId, param, result);
-            GeneralAssertMultiChannel2.dataAssert(jsonObject.get("data").toString(), url, pathId, param, result);
+            generalAssert.errnoAssert(jsonObject.get("errno").toString(), jsonObject.get("errmsg").toString(), url, pathId, param, result);
+            generalAssert.dataAssert(jsonObject.get("data").toString(), url, pathId, param, result);
         }catch (JSONException e){
-            GeneralAssertMultiChannel2.jsonAssert(url, pathId, param, result, e);
+            generalAssert.jsonAssert(url, pathId, param, result, e);
         }
     }
 
@@ -47,13 +50,13 @@ public class HsqMerchantInterfaceTest extends InterfaceTest {
         try {
             JSONObject jsonObject = new JSONObject(result);
             JSONObject data = (JSONObject) jsonObject.get("data");
-            GeneralAssertMultiChannel2.errnoAssert(jsonObject.get("errno").toString(), jsonObject.get("errmsg").toString(), url, pathId, param, result);
-            GeneralAssertMultiChannel2.dataAssert(jsonObject.get("data").toString(), url, pathId, param, result);
+            generalAssert.errnoAssert(jsonObject.get("errno").toString(), jsonObject.get("errmsg").toString(), url, pathId, param, result);
+            generalAssert.dataAssert(jsonObject.get("data").toString(), url, pathId, param, result);
             if (isList == true) {
-                GeneralAssertMultiChannel2.listAssert((JSONArray) data.get("list"), url, pathId, param, result);
+                generalAssert.listAssert((JSONArray) data.get("list"), url, pathId, param, result);
             }
         }catch (JSONException e){
-            GeneralAssertMultiChannel2.jsonAssert(url, pathId, param, result, e);
+            generalAssert.jsonAssert(url, pathId, param, result, e);
         }
     }
 
@@ -64,24 +67,24 @@ public class HsqMerchantInterfaceTest extends InterfaceTest {
             JSONObject jsonObject = new JSONObject(result);
             if (isDataList == true) {
                 JSONArray data = (JSONArray) jsonObject.get("data");
-                GeneralAssertMultiChannel2.errnoAssert(data.toString(), jsonObject.get("errmsg").toString(), url, pathId, param, result);
-                GeneralAssertMultiChannel2.dataAssert(data, url, pathId, param, result);
+                generalAssert.errnoAssert(data.toString(), jsonObject.get("errmsg").toString(), url, pathId, param, result);
+                generalAssert.dataAssert(data, url, pathId, param, result);
                 if (isList == true) {
                     for (int i = 0; i < data.length(); i++) {
                         JSONObject json = (JSONObject) data.get(i);
-                        GeneralAssertMultiChannel2.listAssert((JSONArray) json.get("list"), url, pathId, param, result);
+                        generalAssert.listAssert((JSONArray) json.get("list"), url, pathId, param, result);
                     }
                 }
             }
         }catch (JSONException e){
-            GeneralAssertMultiChannel2.jsonAssert(url, pathId, param, result, e);
+            generalAssert.jsonAssert(url, pathId, param, result, e);
         }
     }
 
     @Override
     protected void detailAssertTest (int assertValue, String resultKey, int resultValue) {
         if (resultValue != assertValue) {
-            GeneralAssertMultiChannel2.detailedAssert("返回的" + resultKey + "不正确，应返回：" + assertValue + "，实际返回：" +
+            generalAssert.detailedAssert("返回的" + resultKey + "不正确，应返回：" + assertValue + "，实际返回：" +
                     resultValue, url, pathId, param, result);
         }
     }
@@ -90,11 +93,11 @@ public class HsqMerchantInterfaceTest extends InterfaceTest {
     protected void detailAssertTest (String assertValue, String resultKey, String resultValue) {
         if (assertValue == null) {
             if (resultValue != null) {
-                GeneralAssertMultiChannel2.detailedAssert("返回的" + resultKey + "不正确，应返回：" + assertValue + "，实际返回：" +
+                generalAssert.detailedAssert("返回的" + resultKey + "不正确，应返回：" + assertValue + "，实际返回：" +
                         resultValue, url, pathId, param, result);
             }
         }else if (!resultValue.equals(assertValue)) {
-            GeneralAssertMultiChannel2.detailedAssert("返回的" + resultKey + "不正确，应返回：" + assertValue + "，实际返回：" +
+            generalAssert.detailedAssert("返回的" + resultKey + "不正确，应返回：" + assertValue + "，实际返回：" +
                     resultValue, url, pathId, param, result);
         }
     }
@@ -102,7 +105,7 @@ public class HsqMerchantInterfaceTest extends InterfaceTest {
     @Override
     protected void detailAssertTest (boolean assertValue, String resultKey, boolean resultValue) {
         if (resultValue != assertValue) {
-            GeneralAssertMultiChannel2.detailedAssert("返回的" + resultKey + "不正确，应返回：" + assertValue + "，实际返回：" +
+            generalAssert.detailedAssert("返回的" + resultKey + "不正确，应返回：" + assertValue + "，实际返回：" +
                     resultValue, url, pathId, param, result);
         }
     }
@@ -111,7 +114,7 @@ public class HsqMerchantInterfaceTest extends InterfaceTest {
     @Override
     protected void detailAssertTest (String resultKey, ArrayList resultValue) {
         if (resultValue.size() <= 0) {
-            GeneralAssertMultiChannel2.detailedAssert("返回的" + resultKey + "不应为空;", url, pathId, param, result);
+            generalAssert.detailedAssert("返回的" + resultKey + "不应为空;", url, pathId, param, result);
         }
     }
 
@@ -119,7 +122,7 @@ public class HsqMerchantInterfaceTest extends InterfaceTest {
     @Override
     protected void detailAssertTest (String resultKey, String resultValue) {
         if (resultValue == null || resultValue.isEmpty() || resultValue.equals("{}")) {
-            GeneralAssertMultiChannel2.detailedAssert("返回的" + resultKey + "不应为空/0" + "，实际返回：" +
+            generalAssert.detailedAssert("返回的" + resultKey + "不应为空/0" + "，实际返回：" +
                     resultValue, url, pathId, param, result);
         }
     }
@@ -129,7 +132,7 @@ public class HsqMerchantInterfaceTest extends InterfaceTest {
     protected void detailAssertTest (String resultKey, int resultValue) {
         String resultValues = String.valueOf(resultValue);
         if (resultValues == null || resultValues.isEmpty() || resultValues.equals("0") ) {
-            GeneralAssertMultiChannel2.detailedAssert("返回的" + resultKey + "不应为空/0" + "，实际返回：" +
+            generalAssert.detailedAssert("返回的" + resultKey + "不应为空/0" + "，实际返回：" +
                     resultValue, url, pathId, param, result);
         }
     }

@@ -13,7 +13,7 @@ public class TradeCenterOpadminInterfaceTest extends InterfaceTest {
     //交易中心管理平台的接口都是一个
     {
         url = ConfigFileUrl.getUrlByKey("admin.http.uri");
-        pathId = SqlDetail.getPathId("admin.http.uri");
+        pathId = SqlDetail.getInstance().getPathId("admin.http.uri");
     }
 
     //get请求
@@ -21,8 +21,8 @@ public class TradeCenterOpadminInterfaceTest extends InterfaceTest {
     protected void process(boolean isAssert,boolean isList) {
         System.out.println(url);
         //通用参数
-        String par = "token=" + SqlDetail.getParamValue(0, "opadminToken")
-                + "&accountNumber=" + SqlDetail.getParamValue(0, "accountNumber");
+        String par = "token=" + SqlDetail.getInstance().getParamValue(0, "opadminToken")
+                + "&accountNumber=" + SqlDetail.getInstance().getParamValue(0, "accountNumber");
         if (param != null) {
             this.param = par + "&" + param;
         }else {
@@ -39,8 +39,8 @@ public class TradeCenterOpadminInterfaceTest extends InterfaceTest {
     protected void process(List<NameValuePair> list, boolean isAssert, boolean isList) {
         System.out.println(url);
         //通用参数
-        list.add(new BasicNameValuePair("token", SqlDetail.getParamValue(0, "opadminToken")));
-        list.add(new BasicNameValuePair("accountNumber", SqlDetail.getParamValue(0, "accountNumber")));
+        list.add(new BasicNameValuePair("token", SqlDetail.getInstance().getParamValue(0, "opadminToken")));
+        list.add(new BasicNameValuePair("accountNumber", SqlDetail.getInstance().getParamValue(0, "accountNumber")));
         param = list.toString();
         result = CallbackInterface.postStringResult(url, pathId, list);
         if (isAssert == true) {

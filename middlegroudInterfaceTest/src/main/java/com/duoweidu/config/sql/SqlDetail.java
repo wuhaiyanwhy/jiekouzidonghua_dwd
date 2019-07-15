@@ -25,6 +25,14 @@ public class SqlDetail {
         hsqBetaSession = DatabaseUtil.getHsqBetaSqlSession();
     }
 
+    private static SqlDetail instance;
+
+    public static SqlDetail getInstance() {
+        if (instance == null) {
+            instance = new SqlDetail();
+        }
+        return instance;
+    }
 
     /**
      * 交易中心渠道号默认为6
@@ -39,9 +47,8 @@ public class SqlDetail {
      *
      * @return
      */
-    public static String getProtocol() {
-        SqlDetail sqlDetail = new SqlDetail();
-        return SqlGeneral.getServerHostValue(sqlDetail.channel_id()).getProtocol();
+    public String getProtocol() {
+        return SqlGeneral.getServerHostValue(channel_id()).getProtocol();
     }
 
     /**
@@ -49,9 +56,8 @@ public class SqlDetail {
      *
      * @return
      */
-    public static String getServerName() {
-        SqlDetail sqlDetail = new SqlDetail();
-        return SqlGeneral.getServerHostValue(sqlDetail.channel_id()).getServer_name();
+    public String getServerName() {
+        return SqlGeneral.getServerHostValue(channel_id()).getServer_name();
     }
 
     /**
@@ -59,9 +65,8 @@ public class SqlDetail {
      * @param name
      * @return
      */
-    public static String getPath(String name) {
-        SqlDetail sqlDetail = new SqlDetail();
-        return SqlGeneral.getInterfacePathValue(sqlDetail.channel_id(), name).getPath();
+    public String getPath(String name) {
+        return SqlGeneral.getInterfacePathValue(channel_id(), name).getPath();
     }
 
     /**
@@ -69,9 +74,8 @@ public class SqlDetail {
      * @param name
      * @return
      */
-    public static int getPathId(String name) {
-        SqlDetail sqlDetail = new SqlDetail();
-        return SqlGeneral.getInterfacePathValue(sqlDetail.channel_id(), name).getId();
+    public int getPathId(String name) {
+        return SqlGeneral.getInterfacePathValue(channel_id(), name).getId();
     }
 
     /**
@@ -79,18 +83,16 @@ public class SqlDetail {
      * @param id
      * @return
      */
-    public static int getPathErrnoCount(int id) {
-        SqlDetail sqlDetail = new SqlDetail();
-        return SqlGeneral.getInterfacePathValue(id, sqlDetail.channel_id()).getErrno_count();
+    public int getPathErrnoCount(int id) {
+        return SqlGeneral.getInterfacePathValue(id, channel_id()).getErrno_count();
     }
 
     /**
      * 更新报错次数，根据path_id 自增1
      * @param id
      */
-    public static void updatePathErrnoCount(int id) {
-        SqlDetail sqlDetail = new SqlDetail();
-        SqlGeneral.updateInterfacePathErrnoCount(id, sqlDetail.channel_id(), getPathErrnoCount(id) + 1);
+    public void updatePathErrnoCount(int id) {
+        SqlGeneral.updateInterfacePathErrnoCount(id, channel_id(), getPathErrnoCount(id) + 1);
     }
 
     /**
@@ -98,9 +100,8 @@ public class SqlDetail {
      * @param name
      * @return
      */
-    public static String getParamValue(String name) {
-        SqlDetail sqlDetail = new SqlDetail();
-        return SqlGeneral.getParamValue(sqlDetail.channel_id(), name).getValue();
+    public String getParamValue(String name) {
+        return SqlGeneral.getParamValue(channel_id(), name).getValue();
     }
 
     /**
@@ -110,9 +111,8 @@ public class SqlDetail {
      * @param name
      * @return
      */
-    public static String getParamValue(int env, String name) {
-        SqlDetail sqlDetail = new SqlDetail();
-        return SqlGeneral.getParamValue(sqlDetail.channel_id(), env, name).getValue();
+    public String getParamValue(int env, String name) {
+        return SqlGeneral.getParamValue(channel_id(), env, name).getValue();
     }
 
     /**
@@ -120,27 +120,24 @@ public class SqlDetail {
      * @param enabled
      * @param message_status
      */
-    public static void insertBuild(int enabled, int message_status) {
-        SqlDetail sqlDetail = new SqlDetail();
-        SqlGeneral.insertBuildValue(sqlDetail.channel_id(), enabled, message_status);
+    public void insertBuild(int enabled, int message_status) {
+        SqlGeneral.insertBuildValue(channel_id(), enabled, message_status);
     }
 
     /**
      * 获取构建状态
      * @return
      */
-    public static ArrayList<Integer> getBuildEnabled() {
-        SqlDetail sqlDetail = new SqlDetail();
-        return SqlGeneral.getBuildEnabled(sqlDetail.channel_id());
+    public ArrayList<Integer> getBuildEnabled() {
+        return SqlGeneral.getBuildEnabled(channel_id());
     }
 
     /**
      * 获取发送短信状态
      * @return
      */
-    public static ArrayList<Integer> getBuildMessageStatus() {
-        SqlDetail sqlDetail = new SqlDetail();
-        return SqlGeneral.getBuildMessageStatus(sqlDetail.channel_id());
+    public ArrayList<Integer> getBuildMessageStatus() {
+        return SqlGeneral.getBuildMessageStatus(channel_id());
     }
 
     /**
@@ -158,15 +155,14 @@ public class SqlDetail {
      * @param status
      * @param result
      */
-    public static void insertErrnoResult(int path_id, String params, int status, String result) {
-        SqlDetail sqlDetail = new SqlDetail();
-        SqlGeneral.insertErrnoResult(sqlDetail.channel_id(), path_id, getBuildId() + 1, params, status, result);
+    public void insertErrnoResult(int path_id, String params, int status, String result) {
+        SqlGeneral.insertErrnoResult(channel_id(), path_id, getBuildId() + 1, params, status, result);
     }
 
     /**
      * 更新product_order用户订单数据成功(iqg)
      */
-    public static void iqgUptadeOrder() {
+    public void iqgUptadeOrder() {
         ProductOrder productOrder = new ProductOrder(getParamValue(0, "created_at"),
                 getParamValue(0, "user_id"),
                 "1", "5");
@@ -181,7 +177,7 @@ public class SqlDetail {
     /**
      * 更新trd_coupon_order用户订单数据成功（iqg）
      */
-    public static void iqgUptadeOneCouponOrder() {
+    public void iqgUptadeOneCouponOrder() {
         TrdCouponOrder trdCouponOrder = new TrdCouponOrder(getParamValue(0, "created_at"),
                 getParamValue(0, "user_id"),
                 getParamValue(2, "oneCouponID"));
@@ -195,7 +191,7 @@ public class SqlDetail {
     /**
      * 更新t_order用户订单数据成功（）msf
      */
-    public static void msfUpdateOrder() {
+    public void msfUpdateOrder() {
         Order order = new Order(getParamValue(0, "created_at"),
                 getParamValue(2, "user_id"),
                 1);
@@ -206,7 +202,7 @@ public class SqlDetail {
         }
     }
 
-    public static void hsqUpdateAssistanceEvent() {
+    public void hsqUpdateAssistanceEvent() {
         McActivityAssistanceEvent mcActivityAssistanceEvent = new McActivityAssistanceEvent(1,
                 3,
                 getParamValue(2, "user_id"),

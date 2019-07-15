@@ -15,7 +15,7 @@ public class tradecenter_ordercancel_test extends HsqInterfaceTest {
     public void tradecenter_ordercancel_true() {
         setUrl("tradecenter.ordercancel.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("orderId", SqlDetail.getParamValue("orderId")));
+        list.add(new BasicNameValuePair("orderId", SqlDetail.getInstance().getParamValue("orderId")));
         list.add(new BasicNameValuePair("reason","1"));
         list.add(new BasicNameValuePair("reasonId","1"));
         process(false,false);

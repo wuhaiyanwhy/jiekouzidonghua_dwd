@@ -9,7 +9,7 @@ public class ZhimaParticipatelist extends HsqInterfaceTest {
     @Test(description = "我的合约列表")
     public void zhimaParticipatelist() {
         setUrl("zhima.participatelist.uri");
-        param = "token=" + SqlDetail.getParamValue("token");
+        param = "token=" + SqlDetail.getInstance().getParamValue("token");
         process(true,false);
     }
 }

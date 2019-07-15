@@ -9,7 +9,7 @@ public class ArticleInterestlist extends MsfInterfaceTest {
     @Test(dependsOnGroups = "loginTrue",description = "详情页推荐文章列表接口（你可能感兴趣）")
     public void articleInterestlist() {
         setUrl("article.interestlist.uri");
-        param = "id=" + SqlDetail.getParamValue("article_id");
+        param = "id=" + SqlDetail.getInstance().getParamValue("article_id");
         process(true,false);
     }
 }

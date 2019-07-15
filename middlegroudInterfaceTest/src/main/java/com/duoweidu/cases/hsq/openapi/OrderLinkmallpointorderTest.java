@@ -16,12 +16,12 @@ public class OrderLinkmallpointorderTest extends HsqInterfaceTest {
     public void orderLinkmallpointorderTrue() {
         setUrl("order.linkmallpointorder.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("pointId", SqlDetail.getParamValue("pSkuId")));
+        list.add(new BasicNameValuePair("pointId", SqlDetail.getInstance().getParamValue("pSkuId")));
         list.add(new BasicNameValuePair("amount", "1"));
         list.add(new BasicNameValuePair("type", "buy"));
-        list.add(new BasicNameValuePair("token", SqlDetail.getParamValue("token")));
-        list.add(new BasicNameValuePair("terminal", SqlDetail.getParamValue(0, "terminal")));
-        list.add(new BasicNameValuePair("appId", SqlDetail.getParamValue(0, "pointAppId")));
+        list.add(new BasicNameValuePair("token", SqlDetail.getInstance().getParamValue("token")));
+        list.add(new BasicNameValuePair("terminal", SqlDetail.getInstance().getParamValue(0, "terminal")));
+        list.add(new BasicNameValuePair("appId", SqlDetail.getInstance().getParamValue(0, "pointAppId")));
         process(list,true,false);
     }
 }

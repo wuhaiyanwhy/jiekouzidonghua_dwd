@@ -15,9 +15,9 @@ public class OrderRedeem extends MsfInterfaceTest {
     public void orderRedeem() {
         setUrl("order.redeem.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("order_id", SqlDetail.getParamValue("order_id")));
+        list.add(new BasicNameValuePair("order_id", SqlDetail.getInstance().getParamValue("order_id")));
         list.add(new BasicNameValuePair("redeem_type","1"));
-        list.add(new BasicNameValuePair("code",SqlDetail.getParamValue(2, "code")));
+        list.add(new BasicNameValuePair("code",SqlDetail.getInstance().getParamValue(2, "code")));
         process(list,false,false);
 
     }

@@ -15,7 +15,7 @@ public class UserOauthUserinfo extends IqgInterfaceTest {
     public void user_oauth_userinfo_true() {
         setUrl("user.oauth.userinfo.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("code", SqlDetail.getParamValue(0, "code")));
+        list.add(new BasicNameValuePair("code", SqlDetail.getInstance().getParamValue(0, "code")));
         process(list,false,false);
     }
 }

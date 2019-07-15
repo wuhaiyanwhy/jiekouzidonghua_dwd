@@ -13,7 +13,7 @@ public class ZhimaZhimaskulist extends HsqInterfaceTest {
     @Test(description = "芝麻首页商品列表")
     public void zhimaZhimaskulist() {
         setUrl("zhima.zhimaskulist.uri");
-        param = "pageNum=1&pageSize=20&appId=" + SqlDetail.getParamValue(0, "zhimaAppId");
+        param = "pageNum=1&pageSize=20&appId=" + SqlDetail.getInstance().getParamValue(0, "zhimaAppId");
         process(true, true);
         model = sparseJson(ZhimaZhimaskulistData.class);
         detailAssert();

@@ -20,9 +20,9 @@ public class ConfigFileUrl {
      * @return
      */
     public static String getUrlByKey(String name) {
-        String protocol = SqlDetail.getProtocol();
-        String server_name = SqlDetail.getServerName();
-        String path = SqlDetail.getPath(name);
+        String protocol = SqlDetail.getInstance().getProtocol();
+        String server_name = SqlDetail.getInstance().getServerName();
+        String path = SqlDetail.getInstance().getPath(name);
         if (path.isEmpty()) {
             throw new IllegalStateException("未知地址");
         }

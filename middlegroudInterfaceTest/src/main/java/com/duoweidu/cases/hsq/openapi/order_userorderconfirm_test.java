@@ -15,7 +15,7 @@ public class order_userorderconfirm_test extends HsqInterfaceTest {
     public void order_userorderconfirm_pintuanTrue() {
         setUrl("order.userorderconfirm.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("orderId", SqlDetail.getParamValue("orderId")));
+        list.add(new BasicNameValuePair("orderId", SqlDetail.getInstance().getParamValue("orderId")));
         process(list,false,false);
     }
 

@@ -9,7 +9,7 @@ public class UserCheckusercart extends FybInterfaceTest {
     @Test(description = "检查用户购物车")
     public void userCheckusercart() {
         setUrl("user.checkusercart.uri");
-        param = "amount=1&skuId=" + SqlDetail.getParamValue("skuId");
+        param = "amount=1&skuId=" + SqlDetail.getInstance().getParamValue("skuId");
         process(false,false);
     }
 }

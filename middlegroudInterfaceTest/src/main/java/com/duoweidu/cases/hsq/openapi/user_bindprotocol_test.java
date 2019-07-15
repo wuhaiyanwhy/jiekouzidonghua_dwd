@@ -15,7 +15,7 @@ public class user_bindprotocol_test extends HsqInterfaceTest {
     public void user_bindprotocol_true() {
         setUrl("user.bindprotocol.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("version", SqlDetail.getParamValue("version")));
+        list.add(new BasicNameValuePair("version", SqlDetail.getInstance().getParamValue("version")));
         process(list,true,false);
     }
 }

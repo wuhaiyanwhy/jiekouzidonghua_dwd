@@ -22,7 +22,7 @@ public class ActivityAddassistancecomplaint extends HsqInterfaceTest {
         list.add(new BasicNameValuePair("message", "test"));
         list.add(new BasicNameValuePair("type_id", "1"));
         if ("beta".equals(ConfigFileUrl.getEnv())) {
-            list.add(new BasicNameValuePair("token", SqlDetail.getParamValue("token")));
+            list.add(new BasicNameValuePair("token", SqlDetail.getInstance().getParamValue("token")));
             process(list, true, false);
             model = sparseJson(ResData.class);
             detailAssert();

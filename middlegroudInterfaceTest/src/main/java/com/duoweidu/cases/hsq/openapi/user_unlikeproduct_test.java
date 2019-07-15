@@ -15,7 +15,7 @@ public class user_unlikeproduct_test extends HsqInterfaceTest {
     public void user_unlikeproduct_true() {
         setUrl("user.unlikeproduct.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("activityIds", SqlDetail.getParamValue("pinActivitiesId")));
+        list.add(new BasicNameValuePair("activityIds", SqlDetail.getInstance().getParamValue("pinActivitiesId")));
         process(list,true,false);
     }
 

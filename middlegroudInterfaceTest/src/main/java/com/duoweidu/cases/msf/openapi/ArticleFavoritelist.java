@@ -9,7 +9,7 @@ public class ArticleFavoritelist extends MsfInterfaceTest {
     @Test(dependsOnGroups = "loginTrue",description = "收藏列表接口")
     public void articleFavoritelist() {
         setUrl("article.favoritelist.uri");
-        param = "id=" + SqlDetail.getParamValue("article_id");
+        param = "id=" + SqlDetail.getInstance().getParamValue("article_id");
         process(true,true);
     }
 }

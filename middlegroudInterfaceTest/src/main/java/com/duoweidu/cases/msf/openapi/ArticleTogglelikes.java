@@ -9,7 +9,7 @@ public class ArticleTogglelikes extends MsfInterfaceTest {
     @Test(dependsOnGroups = "loginTrue",description = "点赞与取消点赞")
     public void articleTogglelikes() {
         setUrl("article.togglelikes.uri");
-        param = "id=" + SqlDetail.getParamValue("article_id");
+        param = "id=" + SqlDetail.getInstance().getParamValue("article_id");
         process(true,false);
     }
 }

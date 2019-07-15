@@ -9,7 +9,7 @@ public class tradecenter_ordersuccess_test extends HsqInterfaceTest {
     @Test(dependsOnGroups = "loginTrue",description = "积分订单成功页")
     public void tradecenter_ordersuccess_true() {
         setUrl("tradecenter.ordersuccess.uri");
-        param = "order_id=" + SqlDetail.getParamValue("orderId");
+        param = "order_id=" + SqlDetail.getInstance().getParamValue("orderId");
         process(true,false);
     }
 

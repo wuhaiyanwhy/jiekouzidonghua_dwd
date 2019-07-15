@@ -18,7 +18,7 @@ public class CouponRedeembypin extends IqgInterfaceTest {
         setUrl("coupon.redeembypin.uri");
         List<NameValuePair> list = new LinkedList<>();
         list.add(new BasicNameValuePair("coupReceiveId", IqgConfig.oneCouponReceivedId));
-        list.add(new BasicNameValuePair("pin", SqlDetail.getParamValue(2, "pin")));
+        list.add(new BasicNameValuePair("pin", SqlDetail.getInstance().getParamValue(2, "pin")));
         process(list,false,false);
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             generalAssertTest(false);

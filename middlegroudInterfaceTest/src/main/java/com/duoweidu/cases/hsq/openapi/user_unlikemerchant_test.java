@@ -16,7 +16,7 @@ public class user_unlikemerchant_test extends HsqInterfaceTest {
         setUrl("user.unlikemerchant.uri");
         List<NameValuePair> list = new LinkedList<>();
         BasicNameValuePair param1 = new BasicNameValuePair("merchantIdsJson","[   {     \"merchantId\" : "
-                + SqlDetail.getParamValue("merchantId") +",     \"sourceType\" : 1   } ]");
+                + SqlDetail.getInstance().getParamValue("merchantId") +",     \"sourceType\" : 1   } ]");
         list.add(param1);
         process(list,true,false);
     }

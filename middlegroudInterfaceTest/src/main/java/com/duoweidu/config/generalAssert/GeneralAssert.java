@@ -20,18 +20,17 @@ public class GeneralAssert extends Assert {
     public void genErrno(String uri, int path_id, String param, int status, String errnoResult) {
         if ("false".equals(ConfigFileUrl.getDebug())) {
             //插入报错数据
-            SqlDetail.insertErrnoResult(path_id, param, status, errnoResult);
+            SqlDetail.getInstance().insertErrnoResult(path_id, param, status, errnoResult);
             GeneralConfig.errnoList.add(uri);
             if ("prod".equals(ConfigFileUrl.getEnv())) {
                 //插入报错次数
-                SqlDetail.updatePathErrnoCount(path_id);
+                SqlDetail.getInstance().updatePathErrnoCount(path_id);
             }
         }
     }
 
     /**
      * 拼接报错结果
-     *
      * @param faile
      * @param uri
      * @param param

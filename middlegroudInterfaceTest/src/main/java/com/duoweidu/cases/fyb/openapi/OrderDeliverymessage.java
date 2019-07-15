@@ -9,7 +9,7 @@ public class OrderDeliverymessage extends FybInterfaceTest {
     @Test(description = "物流信息")
     public void orderDeliverymessage() {
         setUrl("order.deliverymessage.uri");
-        param = "orderId=" + SqlDetail.getParamValue("orderId");
+        param = "orderId=" + SqlDetail.getInstance().getParamValue("orderId");
         process(false,false);
     }
 }

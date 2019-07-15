@@ -16,8 +16,8 @@ public class ActivityBargain extends MsfInterfaceTest {
     public void activityBargain() {
         setUrl("activity.bargain.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("activity_id", SqlDetail.getParamValue("activity_id")));
-        list.add(new BasicNameValuePair("udid", SqlDetail.getParamValue("udid")));
+        list.add(new BasicNameValuePair("activity_id", SqlDetail.getInstance().getParamValue("activity_id")));
+        list.add(new BasicNameValuePair("udid", SqlDetail.getInstance().getParamValue("udid")));
 
         process(list,false,false);
         if ("beta".equals(ConfigFileUrl.getEnv())) {

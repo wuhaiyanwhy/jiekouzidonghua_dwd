@@ -9,7 +9,7 @@ public class order_deliverymessage_test extends HsqInterfaceTest {
     @Test(dependsOnGroups = "loginTrue",description = "查看物流")
     public void order_deliverymessage_true() {
         setUrl("order.deliverymessage.uri");
-        param = "orderId=" + SqlDetail.getParamValue("orderId");
+        param = "orderId=" + SqlDetail.getInstance().getParamValue("orderId");
         process(false,false);
     }
 

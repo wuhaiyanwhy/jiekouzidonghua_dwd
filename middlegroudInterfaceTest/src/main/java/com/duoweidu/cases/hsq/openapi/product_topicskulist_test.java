@@ -9,7 +9,7 @@ public class product_topicskulist_test extends HsqInterfaceTest {
     @Test(dependsOnGroups = "loginTrue",description = "获取专题商品列表")
     public void product_topicskulist_true() {
         setUrl("product.topicskulist.uri");
-        param = "topicCode=" + SqlDetail.getParamValue("topicCode");
+        param = "topicCode=" + SqlDetail.getInstance().getParamValue("topicCode");
         process(true,false);
     }
 }

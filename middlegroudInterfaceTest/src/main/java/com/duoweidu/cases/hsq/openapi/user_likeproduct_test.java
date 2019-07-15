@@ -15,8 +15,8 @@ public class user_likeproduct_test extends HsqInterfaceTest {
     public void user_likeproduct_true() {
         setUrl("user.likeproduct.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("activityId", SqlDetail.getParamValue("pinActivitiesId")));
-        list.add(new BasicNameValuePair("skuIds", SqlDetail.getParamValue("skuId")));
+        list.add(new BasicNameValuePair("activityId", SqlDetail.getInstance().getParamValue("pinActivitiesId")));
+        list.add(new BasicNameValuePair("skuIds", SqlDetail.getInstance().getParamValue("skuId")));
         process(list,true,false);
     }
 }

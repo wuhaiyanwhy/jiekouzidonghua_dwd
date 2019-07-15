@@ -15,7 +15,7 @@ public class OrderRefundapply extends MsfInterfaceTest {
     public void orderRefundapply() {
         setUrl("order.refundapply.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("order_id", SqlDetail.getParamValue("order_id")));
+        list.add(new BasicNameValuePair("order_id", SqlDetail.getInstance().getParamValue("order_id")));
         list.add(new BasicNameValuePair("refund_reason_id","1"));
         process(list,true,false);
     }

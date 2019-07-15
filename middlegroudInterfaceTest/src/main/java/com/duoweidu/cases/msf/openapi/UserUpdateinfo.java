@@ -15,7 +15,7 @@ public class UserUpdateinfo extends MsfInterfaceTest {
     public void userUpdateinfo() {
         setUrl("user.updateinfo.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("birthday", SqlDetail.getParamValue(0, "birthday")));
+        list.add(new BasicNameValuePair("birthday", SqlDetail.getInstance().getParamValue(0, "birthday")));
         process(list,true,false);
     }
 }

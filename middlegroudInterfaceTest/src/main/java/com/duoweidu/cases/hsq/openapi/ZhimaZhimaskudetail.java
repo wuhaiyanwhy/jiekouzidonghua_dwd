@@ -13,8 +13,8 @@ public class ZhimaZhimaskudetail extends HsqInterfaceTest {
     @Test(description = "芝麻商品详情页")
     public void zhimaZhimaskudetail() {
         setUrl("zhima.zhimaskudetail.uri");
-        param = "token=" + SqlDetail.getParamValue("token") +
-                "&zhimaId=" + SqlDetail.getParamValue(2,"zhimaId");
+        param = "token=" + SqlDetail.getInstance().getParamValue("token") +
+                "&zhimaId=" + SqlDetail.getInstance().getParamValue(2,"zhimaId");
         process(true,false);
         model = sparseJson(ZhimaZhimaskudetailData.class);
         if ("beta".equals(ConfigFileUrl.getEnv())) {

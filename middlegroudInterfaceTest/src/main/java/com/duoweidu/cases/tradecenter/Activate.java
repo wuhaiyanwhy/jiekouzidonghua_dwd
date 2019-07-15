@@ -16,7 +16,7 @@ public class Activate extends InterfaceTest {
 
     {
         url = ConfigFileUrl.getUrlByKey("gateway.http.uri");
-        pathId = SqlDetail.getPathId("gateway.http.uri");
+        pathId = SqlDetail.getInstance().getPathId("gateway.http.uri");
     }
 
     private ResultData model;
@@ -26,10 +26,10 @@ public class Activate extends InterfaceTest {
         List<NameValuePair> list = new LinkedList<>();
         list.add(new BasicNameValuePair("method", "account.activate"));
         list.add(new BasicNameValuePair("accountNumber", TradecenterConfig.iqgAccountNumber));
-        list.add(new BasicNameValuePair("version", SqlDetail.getParamValue(0, "version")));
-        list.add(new BasicNameValuePair("ip", SqlDetail.getParamValue(0, "ip")));
-        list.add(new BasicNameValuePair("userId", SqlDetail.getParamValue(0, "createUserId")));
-        list.add(new BasicNameValuePair("appId", SqlDetail.getParamValue(0, "iqgAppId")));
+        list.add(new BasicNameValuePair("version", SqlDetail.getInstance().getParamValue(0, "version")));
+        list.add(new BasicNameValuePair("ip", SqlDetail.getInstance().getParamValue(0, "ip")));
+        list.add(new BasicNameValuePair("userId", SqlDetail.getInstance().getParamValue(0, "createUserId")));
+        list.add(new BasicNameValuePair("appId", SqlDetail.getInstance().getParamValue(0, "iqgAppId")));
         process(list, true, false);
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             model = sparseJson(ResultData.class);

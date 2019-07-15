@@ -25,10 +25,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     @Test(dependsOnGroups = "loginTrue",description = "初始化订单（拼团）",groups = "orderinitPintuan")
     public void order_coupleorderinit_pintuanTrue() {
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getParamValue("pinActivitiesId")));
+        list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue("pinActivitiesId")));
         list.add(new BasicNameValuePair("amount","1"));
         list.add(new BasicNameValuePair("orderType","3"));
-        list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue("skuId")));
+        list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue("skuId")));
         list.add(new BasicNameValuePair("conformNewUser", "1"));
 
         interfaces(list);
@@ -40,10 +40,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     @Test(dependsOnGroups = "loginTrue",description = "初始化订单（单独购）",groups = "orderinitDandugou")
     public void order_coupleorderinit_dandugouTrue() {
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getParamValue("pinActivitiesId")));
+        list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue("pinActivitiesId")));
         list.add(new BasicNameValuePair("amount","1"));
         list.add(new BasicNameValuePair("orderType","2"));
-        list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue("skuId")));
+        list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue("skuId")));
         list.add(new BasicNameValuePair("conformNewUser", "1"));
 
         interfaces(list);
@@ -55,10 +55,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     @Test(dependsOnGroups = "loginTrue",description = "初始化订单（抽奖团拼团）",groups = "orderinitPintuan")
     public void order_coupleorderinit_chouPintuanTrue() {
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getParamValue("chouActivitiesId")));
+        list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue("chouActivitiesId")));
         list.add(new BasicNameValuePair("amount","1"));
         list.add(new BasicNameValuePair("orderType","4"));
-        list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue("chouSkuId")));
+        list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue("chouSkuId")));
         list.add(new BasicNameValuePair("conformNewUser", "1"));
 
         interfaces(list);
@@ -68,10 +68,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     @Test(dependsOnGroups = "loginTrue",description = "初始化订单（抽奖团单独购）",groups = "orderinitDandugou")
     public void order_coupleorderinit_chouDandugouTrue() {
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getParamValue("chouActivitiesId")));
+        list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue("chouActivitiesId")));
         list.add(new BasicNameValuePair("amount","1"));
         list.add(new BasicNameValuePair("orderType","5"));
-        list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue("chouSkuId")));
+        list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue("chouSkuId")));
         list.add(new BasicNameValuePair("conformNewUser", "1"));
 
         interfaces(list);
@@ -83,10 +83,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     public void order_coupleorderinit_activitiePintuanTrue() {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             List<NameValuePair> list = new LinkedList<>();
-            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getParamValue(2, "activitiePinActivitiesId")));
+            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue(2, "activitiePinActivitiesId")));
             list.add(new BasicNameValuePair("amount", "1"));
             list.add(new BasicNameValuePair("orderType", "3"));
-            list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue(2, "activitieSkuId")));
+            list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue(2, "activitieSkuId")));
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
@@ -102,10 +102,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     public void order_coupleorderinit_nolosePintuan2() {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             List<NameValuePair> list = new LinkedList<>();
-            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getParamValue(2, "losePinActivitiesId2")));
+            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue(2, "losePinActivitiesId2")));
             list.add(new BasicNameValuePair("amount", "1"));
             list.add(new BasicNameValuePair("orderType", "3"));
-            list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue(2, "loseSkuId2")));
+            list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue(2, "loseSkuId2")));
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
@@ -118,10 +118,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     @Test(dependsOnGroups = "loginTrue",description = "初始化订单（拼团）（多件优惠减钱第二件）", groups = "orderinitLosePintuan2")
     public void order_coupleorderinit_losePintuan2() {
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getParamValue("losePinActivitiesId2")));
+        list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue("losePinActivitiesId2")));
         list.add(new BasicNameValuePair("amount", "2"));
         list.add(new BasicNameValuePair("orderType", "3"));
-        list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue("loseSkuId2")));
+        list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue("loseSkuId2")));
         list.add(new BasicNameValuePair("conformNewUser", "1"));
 
         interfaces(list);
@@ -134,10 +134,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     public void order_coupleorderinit_losePintuan23() {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             List<NameValuePair> list = new LinkedList<>();
-            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getParamValue(2, "losePinActivitiesId23")));
+            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue(2, "losePinActivitiesId23")));
             list.add(new BasicNameValuePair("amount", "3"));
             list.add(new BasicNameValuePair("orderType", "3"));
-            list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue(2, "loseSkuId23")));
+            list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue(2, "loseSkuId23")));
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
@@ -151,10 +151,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     public void order_coupleorderinit_losePintuan24() {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             List<NameValuePair> list = new LinkedList<>();
-            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getParamValue(2, "losePinActivitiesId24")));
+            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue(2, "losePinActivitiesId24")));
             list.add(new BasicNameValuePair("amount", "4"));
             list.add(new BasicNameValuePair("orderType", "3"));
-            list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue(2, "loseSkuId24")));
+            list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue(2, "loseSkuId24")));
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
@@ -168,10 +168,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     public void order_coupleorderinit_losePintuan235() {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             List<NameValuePair> list = new LinkedList<>();
-            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getParamValue(2, "losePinActivitiesId235")));
+            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue(2, "losePinActivitiesId235")));
             list.add(new BasicNameValuePair("amount", "5"));
             list.add(new BasicNameValuePair("orderType", "3"));
-            list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue(2, "loseSkuId235")));
+            list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue(2, "loseSkuId235")));
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
@@ -185,10 +185,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     public void order_coupleorderinit_loseDandugou2345() {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             List<NameValuePair> list = new LinkedList<>();
-            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getParamValue(2, "losePinActivitiesId2345")));
+            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue(2, "losePinActivitiesId2345")));
             list.add(new BasicNameValuePair("amount", "5"));
             list.add(new BasicNameValuePair("orderType", "2"));
-            list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue(2, "loseSkuId2345")));
+            list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue(2, "loseSkuId2345")));
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
@@ -202,10 +202,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     public void order_coupleorderinit_discountPintuan3() {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             List<NameValuePair> list = new LinkedList<>();
-            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getParamValue(2, "discountPinActivitiesId3")));
+            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue(2, "discountPinActivitiesId3")));
             list.add(new BasicNameValuePair("amount", "3"));
             list.add(new BasicNameValuePair("orderType", "3"));
-            list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue(2, "discountSkuId3")));
+            list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue(2, "discountSkuId3")));
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
@@ -219,10 +219,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     public void order_coupleorderinit_discountPintuan34() {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             List<NameValuePair> list = new LinkedList<>();
-            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getParamValue(2, "discountPinActivitiesId34")));
+            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue(2, "discountPinActivitiesId34")));
             list.add(new BasicNameValuePair("amount", "4"));
             list.add(new BasicNameValuePair("orderType", "3"));
-            list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue(2, "discountSkuId34")));
+            list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue(2, "discountSkuId34")));
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
@@ -235,10 +235,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     @Test(dependsOnGroups = "loginTrue",description = "初始化订单（拼团）（多件优惠打折 三五件）", groups = "orderinitDiscountPintuan35")
     public void order_coupleorderinit_discountPintuan35() {
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getParamValue("discountPinActivitiesId35")));
+        list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue("discountPinActivitiesId35")));
         list.add(new BasicNameValuePair("amount", "5"));
         list.add(new BasicNameValuePair("orderType", "3"));
-        list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue("discountSkuId35")));
+        list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue("discountSkuId35")));
         list.add(new BasicNameValuePair("conformNewUser", "1"));
 
         interfaces(list);
@@ -249,10 +249,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     public void order_coupleorderinit_discountDandugou245() {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             List<NameValuePair> list = new LinkedList<>();
-            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getParamValue(2, "discountPinActivitiesId245")));
+            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue(2, "discountPinActivitiesId245")));
             list.add(new BasicNameValuePair("amount", "5"));
             list.add(new BasicNameValuePair("orderType", "2"));
-            list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue(2, "discountSkuId245")));
+            list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue(2, "discountSkuId245")));
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
@@ -266,10 +266,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     public void order_coupleorderinit_discountPintuan2345() {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             List<NameValuePair> list = new LinkedList<>();
-            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getParamValue(2, "discountPinActivitiesId2345")));
+            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue(2, "discountPinActivitiesId2345")));
             list.add(new BasicNameValuePair("amount", "5"));
             list.add(new BasicNameValuePair("orderType", "3"));
-            list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue(2, "discountSkuId2345")));
+            list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue(2, "discountSkuId2345")));
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
@@ -283,10 +283,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     public void order_coupleorderinit_payPintuan5() {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             List<NameValuePair> list = new LinkedList<>();
-            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getParamValue(2, "payPinActivitiesId5")));
+            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue(2, "payPinActivitiesId5")));
             list.add(new BasicNameValuePair("amount", "5"));
             list.add(new BasicNameValuePair("orderType", "3"));
-            list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue(2, "paySkuId5")));
+            list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue(2, "paySkuId5")));
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
@@ -300,10 +300,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     public void order_coupleorderinit_payDandugou45() {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             List<NameValuePair> list = new LinkedList<>();
-            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getParamValue(2, "payPinActivitiesId45")));
+            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue(2, "payPinActivitiesId45")));
             list.add(new BasicNameValuePair("amount", "5"));
             list.add(new BasicNameValuePair("orderType", "2"));
-            list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue(2, "paySkuId45")));
+            list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue(2, "paySkuId45")));
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
@@ -317,10 +317,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     public void order_coupleorderinit_payPintuan25() {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             List<NameValuePair> list = new LinkedList<>();
-            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getParamValue(2, "payPinActivitiesId25")));
+            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue(2, "payPinActivitiesId25")));
             list.add(new BasicNameValuePair("amount", "5"));
             list.add(new BasicNameValuePair("orderType", "3"));
-            list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue(2, "paySkuId25")));
+            list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue(2, "paySkuId25")));
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
@@ -334,10 +334,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     public void order_coupleorderinit_payPintuan235() {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             List<NameValuePair> list = new LinkedList<>();
-            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getParamValue(2, "payPinActivitiesId235")));
+            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue(2, "payPinActivitiesId235")));
             list.add(new BasicNameValuePair("amount", "5"));
             list.add(new BasicNameValuePair("orderType", "3"));
-            list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue(2, "paySkuId235")));
+            list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue(2, "paySkuId235")));
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
@@ -350,10 +350,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     @Test(dependsOnGroups = "loginTrue",description = "初始化订单（拼团）（多件优惠付钱 二三四五件）", groups = "orderinitPayPintuan2345")
     public void order_coupleorderinit_payPintuan2345() {
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getParamValue("payPinActivitiesId2345")));
+        list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue("payPinActivitiesId2345")));
         list.add(new BasicNameValuePair("amount", "5"));
         list.add(new BasicNameValuePair("orderType", "3"));
-        list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue("paySkuId2345")));
+        list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue("paySkuId2345")));
         list.add(new BasicNameValuePair("conformNewUser", "1"));
 
         interfaces(list);
@@ -364,10 +364,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     public void order_coupleorderinit_noPayPintuan2345() {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             List<NameValuePair> list = new LinkedList<>();
-            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getParamValue(2, "payPinActivitiesId2345")));
+            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue(2, "payPinActivitiesId2345")));
             list.add(new BasicNameValuePair("amount", "4"));
             list.add(new BasicNameValuePair("orderType", "3"));
-            list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue(2, "paySkuId2345")));
+            list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue(2, "paySkuId2345")));
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
@@ -381,10 +381,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     public void order_coupleorderinit_activiteLosePintuan2() {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             List<NameValuePair> list = new LinkedList<>();
-            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getParamValue(2, "activitieLosePinActivitiesId")));
+            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue(2, "activitieLosePinActivitiesId")));
             list.add(new BasicNameValuePair("amount", "2"));
             list.add(new BasicNameValuePair("orderType", "3"));
-            list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue(2, "activitieLoseSkuId")));
+            list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue(2, "activitieLoseSkuId")));
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
@@ -398,10 +398,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     public void order_coupleorderinit_activiteLosePintuan3() {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             List<NameValuePair> list = new LinkedList<>();
-            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getParamValue(2, "activitieLosePinActivitiesId")));
+            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue(2, "activitieLosePinActivitiesId")));
             list.add(new BasicNameValuePair("amount", "3"));
             list.add(new BasicNameValuePair("orderType", "3"));
-            list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue(2, "activitieLoseSkuId")));
+            list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue(2, "activitieLoseSkuId")));
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
@@ -415,10 +415,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     public void order_coupleorderinit_activiteLosePintuan4() {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             List<NameValuePair> list = new LinkedList<>();
-            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getParamValue(2, "activitieLosePinActivitiesId")));
+            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue(2, "activitieLosePinActivitiesId")));
             list.add(new BasicNameValuePair("amount", "4"));
             list.add(new BasicNameValuePair("orderType", "3"));
-            list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue(2, "activitieLoseSkuId")));
+            list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue(2, "activitieLoseSkuId")));
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
@@ -432,10 +432,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     public void order_coupleorderinit_activiteLosePintuan5() {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             List<NameValuePair> list = new LinkedList<>();
-            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getParamValue(2, "activitieLosePinActivitiesId")));
+            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue(2, "activitieLosePinActivitiesId")));
             list.add(new BasicNameValuePair("amount", "5"));
             list.add(new BasicNameValuePair("orderType", "3"));
-            list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue(2, "activitieLoseSkuId")));
+            list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue(2, "activitieLoseSkuId")));
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
@@ -449,10 +449,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     public void order_coupleorderinit_activiteLoseDandugou2() {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             List<NameValuePair> list = new LinkedList<>();
-            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getParamValue(2, "activitieLosePinActivitiesId")));
+            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue(2, "activitieLosePinActivitiesId")));
             list.add(new BasicNameValuePair("amount", "2"));
             list.add(new BasicNameValuePair("orderType", "2"));
-            list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue(2, "activitieLoseSkuId")));
+            list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue(2, "activitieLoseSkuId")));
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
@@ -466,10 +466,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     public void order_coupleorderinit_activiteDiscountPintuan2() {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             List<NameValuePair> list = new LinkedList<>();
-            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getParamValue(2, "activitieDiscountPinActivitiesId")));
+            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue(2, "activitieDiscountPinActivitiesId")));
             list.add(new BasicNameValuePair("amount", "2"));
             list.add(new BasicNameValuePair("orderType", "3"));
-            list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue(2, "activitieDiscountSkuId")));
+            list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue(2, "activitieDiscountSkuId")));
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
@@ -483,10 +483,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     public void order_coupleorderinit_activiteDiscountDandugou4() {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             List<NameValuePair> list = new LinkedList<>();
-            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getParamValue(2, "activitieDiscountPinActivitiesId")));
+            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue(2, "activitieDiscountPinActivitiesId")));
             list.add(new BasicNameValuePair("amount", "4"));
             list.add(new BasicNameValuePair("orderType", "2"));
-            list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue(2, "activitieDiscountSkuId")));
+            list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue(2, "activitieDiscountSkuId")));
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
@@ -502,10 +502,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     public void order_coupleorderinit_activiteDiscountPintuan5() {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             List<NameValuePair> list = new LinkedList<>();
-            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getParamValue(2, "activitieDiscountPinActivitiesId")));
+            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue(2, "activitieDiscountPinActivitiesId")));
             list.add(new BasicNameValuePair("amount", "5"));
             list.add(new BasicNameValuePair("orderType", "3"));
-            list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue(2, "activitieDiscountSkuId")));
+            list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue(2, "activitieDiscountSkuId")));
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
@@ -519,10 +519,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     public void order_coupleorderinit_activitePayPintuan2() {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             List<NameValuePair> list = new LinkedList<>();
-            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getParamValue(2, "activitiePayPinActivitiesId")));
+            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue(2, "activitiePayPinActivitiesId")));
             list.add(new BasicNameValuePair("amount", "2"));
             list.add(new BasicNameValuePair("orderType", "2"));
-            list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue(2, "activitiePaySkuId")));
+            list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue(2, "activitiePaySkuId")));
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
@@ -536,10 +536,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     public void order_coupleorderinit_activitePayPintuan3() {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             List<NameValuePair> list = new LinkedList<>();
-            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getParamValue(2, "activitiePayPinActivitiesId")));
+            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue(2, "activitiePayPinActivitiesId")));
             list.add(new BasicNameValuePair("amount", "3"));
             list.add(new BasicNameValuePair("orderType", "2"));
-            list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue(2, "activitiePaySkuId")));
+            list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue(2, "activitiePaySkuId")));
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
@@ -553,10 +553,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     public void order_coupleorderinit_activitePayPintuan5() {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             List<NameValuePair> list = new LinkedList<>();
-            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getParamValue(2, "activitiePayPinActivitiesId")));
+            list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue(2, "activitiePayPinActivitiesId")));
             list.add(new BasicNameValuePair("amount", "5"));
             list.add(new BasicNameValuePair("orderType", "2"));
-            list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue(2, "activitiePaySkuId")));
+            list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue(2, "activitiePaySkuId")));
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);

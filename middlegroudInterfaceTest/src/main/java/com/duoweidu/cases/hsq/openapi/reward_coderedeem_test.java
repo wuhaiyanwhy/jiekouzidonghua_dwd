@@ -19,7 +19,7 @@ public class reward_coderedeem_test extends HsqInterfaceTest {
     public void reward_coderedeem_true() {
         setUrl("reward.coderedeem.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("code", SqlDetail.getParamValue(2, "code")));
+        list.add(new BasicNameValuePair("code", SqlDetail.getInstance().getParamValue(2, "code")));
         process(list,false,false);
         if ("beta".equals(ConfigFileUrl.getEnv())){
             try {

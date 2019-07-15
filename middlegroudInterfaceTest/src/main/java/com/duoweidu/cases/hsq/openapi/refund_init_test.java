@@ -9,7 +9,7 @@ public class refund_init_test extends HsqInterfaceTest {
     @Test(dependsOnGroups = "loginTrue",description = "退款申请初始化")
     public void refund_init_true() {
         setUrl("refund.init.uri");
-        param = "orderId=" + SqlDetail.getParamValue("orderId");
+        param = "orderId=" + SqlDetail.getInstance().getParamValue("orderId");
         process(true,false);
     }
 

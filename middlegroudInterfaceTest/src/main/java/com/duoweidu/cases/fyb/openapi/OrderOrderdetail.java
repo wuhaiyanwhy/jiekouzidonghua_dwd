@@ -9,7 +9,7 @@ public class OrderOrderdetail extends FybInterfaceTest {
     @Test(description = "订单详情")
     public void orderOrderdetail() {
         setUrl("order.orderdetail.uri");
-        param = "orderId=" + SqlDetail.getParamValue("orderId");
+        param = "orderId=" + SqlDetail.getInstance().getParamValue("orderId");
         process(true,false);
     }
 }

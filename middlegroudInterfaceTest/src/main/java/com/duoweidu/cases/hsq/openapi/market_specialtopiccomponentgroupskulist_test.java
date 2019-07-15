@@ -9,7 +9,7 @@ public class market_specialtopiccomponentgroupskulist_test extends HsqInterfaceT
     @Test(dependsOnGroups = "loginTrue",description = "五福页尾铺品")
     public void market_specialtopiccomponentgroupskulist_true() {
         setUrl("market.specialtopiccomponentgroupskulist.uri");
-        param = "componentGroupId=" + SqlDetail.getParamValue("componentGroupId") + "&pageNum=1&pageLimit=20&topicCode=" + SqlDetail.getParamValue("wufuTopicCode");
+        param = "componentGroupId=" + SqlDetail.getInstance().getParamValue("componentGroupId") + "&pageNum=1&pageLimit=20&topicCode=" + SqlDetail.getInstance().getParamValue("wufuTopicCode");
         process(true,false);
     }
 

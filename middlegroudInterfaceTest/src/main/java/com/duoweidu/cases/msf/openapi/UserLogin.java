@@ -25,8 +25,8 @@ public class UserLogin extends MsfInterfaceTest {
         List<NameValuePair> list = new LinkedList<>();
         list.add(new BasicNameValuePair("login_type","5"));
         list.add(new BasicNameValuePair("remember","1"));
-        list.add(new BasicNameValuePair("mobile", SqlDetail.getParamValue(0, "mobile")));
-        list.add(new BasicNameValuePair("password",SqlDetail.getParamValue(0, "password")));
+        list.add(new BasicNameValuePair("mobile", SqlDetail.getInstance().getParamValue(0, "mobile")));
+        list.add(new BasicNameValuePair("password",SqlDetail.getInstance().getParamValue(0, "password")));
 
         process(list,true,false);
         //cookie信息储存未默认值

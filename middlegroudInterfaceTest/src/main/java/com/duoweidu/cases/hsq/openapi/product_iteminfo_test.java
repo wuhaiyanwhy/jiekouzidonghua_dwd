@@ -10,7 +10,7 @@ public class product_iteminfo_test extends HsqInterfaceTest {
     @Test(dependsOnGroups = "loginTrue",description = "单品详情页信息")
     public void product_iteminfo_true() {
         setUrl("product.iteminfo.uri");
-        param = "skuId=" + SqlDetail.getParamValue("skuId");
+        param = "skuId=" + SqlDetail.getInstance().getParamValue("skuId");
         process(true,false);
     }
 }

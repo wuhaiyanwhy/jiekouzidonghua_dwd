@@ -1,8 +1,8 @@
 package com.duoweidu.cases.hsq.openapi;
 
 import com.duoweidu.cases.interfaces.HsqInterfaceTest;
-import com.duoweidu.config.generalAssert.GeneralAssert;
 import com.duoweidu.config.HsqOpenapiConfig;
+import com.duoweidu.config.generalAssert.GeneralAssert;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.testng.annotations.Test;

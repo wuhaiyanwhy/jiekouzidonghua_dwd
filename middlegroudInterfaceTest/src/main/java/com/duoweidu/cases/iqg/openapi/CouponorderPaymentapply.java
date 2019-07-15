@@ -15,9 +15,9 @@ public class CouponorderPaymentapply extends IqgInterfaceTest {
     @Test(dependsOnGroups = "loginTrue",description = "一元券支付",groups = "oneCouponOrderTrue")
     public void couponorder_paymentapply_true() {
         setUrl("couponorder.paymentapply.uri");
-        param = "branchId=" + SqlDetail.getParamValue("branchId") +
-                "&coupActivityId=" + SqlDetail.getParamValue(2, "oneCouponID") +
-                "&couponOrderId=0&paymentChannelId=3&platform2=ios&zone_id" + SqlDetail.getParamValue(0, "zone_id");
+        param = "branchId=" + SqlDetail.getInstance().getParamValue("branchId") +
+                "&coupActivityId=" + SqlDetail.getInstance().getParamValue(2, "oneCouponID") +
+                "&couponOrderId=0&paymentChannelId=3&platform2=ios&zone_id" + SqlDetail.getInstance().getParamValue(0, "zone_id");
         process(false,false);
         try {
             if ("beta".equals(ConfigFileUrl.getEnv())) {

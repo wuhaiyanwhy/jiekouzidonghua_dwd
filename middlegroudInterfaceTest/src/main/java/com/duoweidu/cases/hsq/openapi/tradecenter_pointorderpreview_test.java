@@ -15,7 +15,7 @@ public class tradecenter_pointorderpreview_test extends HsqInterfaceTest {
     public void tradecenter_pointorderpreview_true() {
         setUrl("tradecenter.pointorderpreview.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("skusInfo","[{\"pSkuId\":"+ SqlDetail.getParamValue("pSkuId") +",\"amount\":1}]"));
+        list.add(new BasicNameValuePair("skusInfo","[{\"pSkuId\":"+ SqlDetail.getInstance().getParamValue("pSkuId") +",\"amount\":1}]"));
         process(list,false,false);
     }
 

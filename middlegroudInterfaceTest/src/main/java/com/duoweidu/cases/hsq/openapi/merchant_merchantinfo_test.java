@@ -9,7 +9,7 @@ public class merchant_merchantinfo_test extends HsqInterfaceTest {
     @Test(dependsOnGroups = "loginTrue",description = "获取商户信息")
     public void merchant_merchantinfo_true() {
         setUrl("merchant.merchantinfo.uri");
-        param = "merchantId="+ SqlDetail.getParamValue("merchantId");
+        param = "merchantId="+ SqlDetail.getInstance().getParamValue("merchantId");
         process(true,false);
     }
 }
