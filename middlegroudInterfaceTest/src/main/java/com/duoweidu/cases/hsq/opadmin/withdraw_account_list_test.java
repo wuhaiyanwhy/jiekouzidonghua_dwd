@@ -1,6 +1,8 @@
 package com.duoweidu.cases.hsq.opadmin;
 
 import com.duoweidu.cases.interfaces.HsqOpadminInterfaceTest;
+import com.duoweidu.config.generalAssert.GeneralAssertChannel;
+import com.duoweidu.utils.ConfigFileUrl;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.testng.annotations.Test;
@@ -14,7 +16,7 @@ public class withdraw_account_list_test extends HsqOpadminInterfaceTest {
         process();
         JSONObject jsonObject = new JSONObject(result);
         JSONArray list = (JSONArray) jsonObject.get("list");
-        generalAssert.listAssert(list, url, pathId, param, result);
+        GeneralAssertChannel.listAssert(ConfigFileUrl.getChannel1(), list, url, pathId, param, result);
 
     }
 

@@ -2,191 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50c9a098-cf9f-4ab6-b025-2838502e1902" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/generalAssert/GeneralAssertChannel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/fyb/openapi/OrderDeliverymessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/fyb/openapi/OrderDeliverymessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/fyb/openapi/OrderOrderdetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/fyb/openapi/OrderOrderdetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/fyb/openapi/OrderOrderinit.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/fyb/openapi/OrderOrderinit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/fyb/openapi/OrderUserorderconfirm.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/fyb/openapi/OrderUserorderconfirm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/fyb/openapi/ProductCheckbuylimit.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/fyb/openapi/ProductCheckbuylimit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/fyb/openapi/ProductHotkeysearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/fyb/openapi/ProductHotkeysearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/fyb/openapi/ProductIteminfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/fyb/openapi/ProductIteminfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/fyb/openapi/RefundApply.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/fyb/openapi/RefundApply.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/fyb/openapi/RefundInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/fyb/openapi/RefundInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/fyb/openapi/UserAddskutocart.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/fyb/openapi/UserAddskutocart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/fyb/openapi/UserCheckusercart.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/fyb/openapi/UserCheckusercart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/fyb/openapi/UserDeletecartsku.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/fyb/openapi/UserDeletecartsku.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/fyb/openapi/UserUpdateaddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/fyb/openapi/UserUpdateaddress.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/merchant/express_trance_merchant_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/merchant/express_trance_merchant_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/merchant/merchant_address_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/merchant/merchant_address_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/merchant/merchant_couponedit_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/merchant/merchant_couponedit_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/merchant/user_login_check_merchant_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/merchant/user_login_check_merchant_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/user_login_check_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/user_login_check_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/activity_goods_index_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/activity_goods_index_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/assistance_activity_template_list_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/assistance_activity_template_list_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/coupon_alipay_activity_list_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/coupon_alipay_activity_list_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/coupon_alipay_autopush_list_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/coupon_alipay_autopush_list_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/coupon_alipay_template_list_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/coupon_alipay_template_list_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/system_systemconfig_list_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/system_systemconfig_list_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/template_listinfo_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/template_listinfo_test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/withdraw_account_list_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/withdraw_account_list_test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/withdraw_expenditure_list_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/withdraw_expenditure_list_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/ActivityAddassistancecomplaint.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/ActivityAddassistancecomplaint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/ActivityAssistanceeventdetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/ActivityAssistanceeventdetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/ActivityAssistanceitemdetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/ActivityAssistanceitemdetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/ActivityAssistanceshareinfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/ActivityAssistanceshareinfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/ActivityAssistanceuserskulist.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/ActivityAssistanceuserskulist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/ActivitySubscribe.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/ActivitySubscribe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/AssistanceAlipayeventback.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/AssistanceAlipayeventback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/OrderLinkmallpointorderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/OrderLinkmallpointorderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/TradecenterAssistanceorderinit.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/TradecenterAssistanceorderinit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/TradecenterAssistanceordersubmit.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/TradecenterAssistanceordersubmit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/ZhimaParticipatechange.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/ZhimaParticipatechange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/ZhimaParticipatelist.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/ZhimaParticipatelist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/ZhimaParticipatesync.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/ZhimaParticipatesync.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/ZhimaZhimaskudetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/ZhimaZhimaskudetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/ZhimaZhimaskulist.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/ZhimaZhimaskulist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/market_lotteryactivityinfo_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/market_lotteryactivityinfo_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/market_pinactivitiesuserlist_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/market_pinactivitiesuserlist_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/market_specialtopiccomponentgroupskulist_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/market_specialtopiccomponentgroupskulist_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/market_specialtopiccomponentinfo_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/market_specialtopiccomponentinfo_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/market_subscribelottery_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/market_subscribelottery_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/merchant_coupleskulist_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/merchant_coupleskulist_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/merchant_merchantinfo_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/merchant_merchantinfo_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/order_cancelorder_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/order_cancelorder_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/order_checkpromotion_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/order_checkpromotion_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/order_coupleeventjoin_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/order_coupleeventjoin_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/order_coupleorderinit_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/order_coupleorderinit_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/order_deliverymessage_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/order_deliverymessage_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/order_orderdetail_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/order_orderdetail_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/order_orderinit_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/order_orderinit_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/order_orderpay_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/order_orderpay_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/order_orderpayconfirm_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/order_orderpayconfirm_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/order_submitorder_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/order_submitorder_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/order_userorderconfirm_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/order_userorderconfirm_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/point_iteminfo_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/point_iteminfo_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/point_skulist_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/point_skulist_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/point_topicbuskulist_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/point_topicbuskulist_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/point_topicinfo_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/point_topicinfo_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/product_checkdelivery_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/product_checkdelivery_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/product_coupleskudetail_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/product_coupleskudetail_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/product_iteminfo_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/product_iteminfo_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/product_productdetail_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/product_productdetail_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/product_topicskulist_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/product_topicskulist_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/product_topicskusinfo_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/product_topicskusinfo_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/refund_apply_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/refund_apply_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/refund_detail_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/refund_detail_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/refund_init_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/refund_init_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/reward_coderedeem_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/reward_coderedeem_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/shop_shopaptitude_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/shop_shopaptitude_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/tradecenter_ordercancel_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/tradecenter_ordercancel_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/tradecenter_orderinfo_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/tradecenter_orderinfo_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/tradecenter_orderlist_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/tradecenter_orderlist_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/tradecenter_ordersuccess_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/tradecenter_ordersuccess_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/tradecenter_pointorderpreview_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/tradecenter_pointorderpreview_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/tradecenter_pointordersubmit_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/tradecenter_pointordersubmit_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/ugc_ugclist_openapi_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/ugc_ugclist_openapi_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/user_addskutocart_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/user_addskutocart_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/user_bindprotocol_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/user_bindprotocol_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/user_checkusercart_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/user_checkusercart_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/user_coupleactivitiedetail_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/user_coupleactivitiedetail_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/user_deleteaddress_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/user_deleteaddress_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/user_deletecartsku_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/user_deletecartsku_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/user_likemerchant_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/user_likemerchant_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/user_likeproduct_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/user_likeproduct_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/user_likeproductfromcart_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/user_likeproductfromcart_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/user_login_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/user_login_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/user_setdefaultaddress_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/user_setdefaultaddress_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/user_unlikemerchant_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/user_unlikemerchant_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/user_unlikeproduct_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/user_unlikeproduct_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/user_updateaddress_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/user_updateaddress_test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/FybInterfaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/FybInterfaceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/HsqInterfaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/HsqInterfaceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/HsqMerchantInterfaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/HsqMerchantInterfaceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/HsqOpadminInterfaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/HsqOpadminInterfaceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/InterfaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/InterfaceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/IqgInterfaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/IqgInterfaceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/MsfInterfaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/MsfInterfaceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/TradeCenterInterfaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/TradeCenterInterfaceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/TradeCenterOpadminInterfaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/TradeCenterOpadminInterfaceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/Ad.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/Ad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/BargainToday.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/BargainToday.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/BarginAvatar.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/BarginAvatar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/CalcelOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/CalcelOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/CoinShare.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/CoinShare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/CouponActivitybranchlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/CouponActivitybranchlist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/CouponActivitydetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/CouponActivitydetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/CouponRedeembypin.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/CouponRedeembypin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/CouponorderBeforecreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/CouponorderBeforecreate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/CouponorderPaymentapply.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/CouponorderPaymentapply.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/Getpayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/Getpayment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/ItemBargain.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/ItemBargain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/ItemDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/ItemDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/OrderDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/OrderRedeemWithPin.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/OrderRedeemWithPin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/OrderTypeAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/OrderTypeAll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/StatsUserShare.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/StatsUserShare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/UserCoupondetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/UserCoupondetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/UserLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/UserLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/UserOauthUserinfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/iqg/openapi/UserOauthUserinfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/message/Build.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/message/Build.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ActivityArticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ActivityArticle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ActivityBargain.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ActivityBargain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ActivityDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ActivityDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ActivitySharedetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ActivitySharedetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleCommentlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleCommentlist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleCommentuserlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleCommentuserlist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleFavoritelist.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleFavoritelist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleInitdata.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleInitdata.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleInterestlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleInterestlist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleLikeslist.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleLikeslist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleSearchtags.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleSearchtags.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleTogglefavorite.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleTogglefavorite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleTogglelikes.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/ArticleTogglelikes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/BranchDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/BranchDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/CommonAuthcode.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/CommonAuthcode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/OrderPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/OrderPayment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/OrderPaymentapply.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/OrderPaymentapply.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/OrderRedeem.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/OrderRedeem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/OrderRefund.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/OrderRefund.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/OrderRefundapply.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/OrderRefundapply.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/SearchTaglist.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/SearchTaglist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserTogglefollow.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserTogglefollow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserUpdateinfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/msf/openapi/UserUpdateinfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/Activate.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/Activate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/Adjust.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/Adjust.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/Bill.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/Bill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/Cancel.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/Cancel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/Create.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/Create.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/CreateAdjust.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/CreateAdjust.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/CreateOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/CreateOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/CreatePay.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/CreatePay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/CreateRecharge.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/CreateRecharge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/CreateRefund.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/CreateRefund.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/Freeze.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/Freeze.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/Pay.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/Pay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/Query.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/Query.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/QueryAdjust.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/QueryAdjust.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/QueryPay.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/QueryPay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/QueryRecharge.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/QueryRecharge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/QueryRefund.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/QueryRefund.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/Recharge.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/Recharge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/Refund.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/Refund.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/UpdateOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/UpdateOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/UpdateSubOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenter/UpdateSubOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenterOpadmin/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/tradecenterOpadmin/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/HsqMerchantConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/HsqMerchantConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/HsqOpadminConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/HsqOpadminConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/HsqOpenapiConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/HsqOpenapiConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/generalAssert/GeneralAssert.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/generalAssert/GeneralAssert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/generalAssert/GeneralAssertMultiChannel1.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/generalAssert/GeneralAssertMultiChannel1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/generalAssert/GeneralAssertMultiChannel2.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/generalAssert/GeneralAssertMultiChannel2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/sql/SqlDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/sql/SqlDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/sql/SqlDetailMultiChannel1.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/sql/SqlDetailMultiChannel1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/sql/SqlDetailMultiChannel2.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/sql/SqlDetailMultiChannel2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/utils/ConfigFileUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/utils/ConfigFileUrl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/utils/IqgCallbackInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/utils/IqgCallbackInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/generalAssert/GeneralAssertMultiChannel1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/generalAssert/GeneralAssertMultiChannel2.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/hsq.xml" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/hsq.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/config/SqlGeneral.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/hsq.xml" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/hsq.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/switch.properties" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/switch.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/cases/hsq/opadmin/withdraw_account_list_test.class" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/cases/hsq/opadmin/withdraw_account_list_test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/cases/interfaces/HsqMerchantInterfaceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/cases/interfaces/HsqMerchantInterfaceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/cases/interfaces/HsqOpadminInterfaceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/cases/interfaces/HsqOpadminInterfaceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/config/generalAssert/GeneralAssert.class" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/config/generalAssert/GeneralAssert.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/test-output/InterfaceReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/test-output/InterfaceReport.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -202,29 +39,29 @@
     <session id="1054740520">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="272" />
-          <entry key="properties" value="4" />
-          <entry key="xml" value="6" />
+          <entry key="java" value="285" />
+          <entry key="properties" value="5" />
+          <entry key="xml" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="272" />
-          <entry key="Properties" value="4" />
-          <entry key="XML" value="6" />
+          <entry key="JAVA" value="285" />
+          <entry key="Properties" value="5" />
+          <entry key="XML" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1702" />
-          <entry key="properties" value="14" />
+          <entry key="java" value="2342" />
+          <entry key="properties" value="22" />
           <entry key="xml" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1702" />
-          <entry key="Properties" value="14" />
+          <entry key="JAVA" value="2342" />
+          <entry key="Properties" value="22" />
           <entry key="XML" value="12" />
         </counts>
       </usages-collector>
@@ -236,10 +73,22 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/generalAssert/GeneralAssertMultiChannel1.java">
+        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/generalAssert/GeneralAssertChannel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="696">
-              <caret line="65" column="70" selection-start-line="65" selection-start-column="70" selection-end-line="65" selection-end-column="70" />
+            <state relative-caret-position="73">
+              <caret line="206" column="23" selection-start-line="206" selection-start-column="23" selection-end-line="206" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/template_listinfo_test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="205">
+              <caret line="24" column="57" lean-forward="true" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -250,26 +99,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/withdraw_expenditure_list_test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/generalAssert/GeneralAssertMultiChannel2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="65" column="70" selection-start-line="65" selection-start-column="70" selection-end-line="65" selection-end-column="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/HsqMerchantInterfaceTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="126" column="9" lean-forward="true" selection-start-line="126" selection-start-column="9" selection-end-line="126" selection-end-column="9" />
+            <state relative-caret-position="73">
+              <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -278,28 +109,65 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/activity_goods_index_test.java">
+        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/assistance_activity_template_list_test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="105">
+              <caret line="28" column="63" selection-start-line="28" selection-start-column="63" selection-end-line="28" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/switch.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/coupon_alipay_activity_list_test.java">
+        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/coupon_alipay_template_list_test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+            <state relative-caret-position="107">
+              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/merchant/withdraw_expenditure_test.java">
+        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/system_systemconfig_list_test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="70">
+              <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/hsq.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="161" selection-start-line="161" selection-end-line="161" />
+              <folding>
+                <element signature="n#test#0;n#suite#0;n#!!top" />
+                <element signature="n#test#1;n#suite#0;n#!!top" />
+                <element signature="n#test#2;n#suite#0;n#!!top" />
+                <element signature="n#test#3;n#suite#0;n#!!top" />
+                <element signature="n#test#4;n#suite#0;n#!!top" />
+                <element signature="e#41161#71269#0" />
+                <element signature="e#71275#77682#0" />
+                <element signature="e#77688#77935#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/system_systemnotice_test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -307,32 +175,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/HsqOpadminInterfaceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/generalAssert/GeneralAssert.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="87" selection-start-line="40" selection-end-line="87" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/InterfaceTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="160" column="33" lean-forward="true" selection-start-line="160" selection-start-column="33" selection-end-line="160" selection-end-column="34" />
+            <state relative-caret-position="32">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -385,18 +229,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/merchant_merchantverifylist_test.java" />
-        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/sku_list_test.java" />
-        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/sku_search_test.java" />
-        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/sku_skuonlineverify_test.java" />
-        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/stock_jointaobaolist_test.java" />
-        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/stock_stock_jointaobao_test.java" />
-        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/system_adminappset_test.java" />
         <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/system_adminuseroploglist_test.java" />
         <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/system_adminuseroplogsearch_test.java" />
         <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/system_notice_list_test.java" />
         <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/system_notice_test.java" />
-        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/system_systemconfig_list_test.java" />
         <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/system_systemconfig_set_test.java" />
         <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/system_systemnotice_test.java" />
         <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/sql/SqlDetailMultiChannel1.java" />
@@ -423,19 +259,27 @@
         <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/HsqOpadminConfig.java" />
         <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/HsqMerchantConfig.java" />
         <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/user_login_check_test.java" />
-        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/hsq.xml" />
-        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/switch.properties" />
         <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/merchant/express_trance_merchant_test.java" />
         <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/merchant/merchant_address_test.java" />
         <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/merchant/merchant_couponedit_test.java" />
         <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/merchant/user_login_check_merchant_test.java" />
-        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/withdraw_account_list_test.java" />
-        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/withdraw_expenditure_list_test.java" />
-        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/HsqMerchantInterfaceTest.java" />
-        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/HsqOpadminInterfaceTest.java" />
-        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/generalAssert/GeneralAssert.java" />
         <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/generalAssert/GeneralAssertMultiChannel1.java" />
         <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/generalAssert/GeneralAssertMultiChannel2.java" />
+        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/generalAssert/GeneralAssertChannel.java" />
+        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/generalAssert/GeneralAssert.java" />
+        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/HsqMerchantInterfaceTest.java" />
+        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/HsqOpadminInterfaceTest.java" />
+        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/withdraw_account_list_test.java" />
+        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/activity_goods_index_test.java" />
+        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/coupon_alipay_activity_list_test.java" />
+        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/coupon_alipay_autopush_list_test.java" />
+        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/coupon_alipay_template_list_test.java" />
+        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/template_listinfo_test.java" />
+        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/assistance_activity_template_list_test.java" />
+        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/withdraw_expenditure_list_test.java" />
+        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/system_systemconfig_list_test.java" />
+        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/hsq.xml" />
+        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/switch.properties" />
       </list>
     </option>
   </component>
@@ -540,6 +384,18 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="duoweidu" type="462c0819:PsiDirectoryNode" />
               <item name="cases" type="462c0819:PsiDirectoryNode" />
+              <item name="hsq" type="462c0819:PsiDirectoryNode" />
+              <item name="opadmin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="middleground-onlineTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="middleground-onlineTest" type="462c0819:PsiDirectoryNode" />
+              <item name="middlegroudInterfaceTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="duoweidu" type="462c0819:PsiDirectoryNode" />
+              <item name="cases" type="462c0819:PsiDirectoryNode" />
               <item name="interfaces" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -562,6 +418,17 @@
               <item name="duoweidu" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
               <item name="generalAssert" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="middleground-onlineTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="middleground-onlineTest" type="462c0819:PsiDirectoryNode" />
+              <item name="middlegroudInterfaceTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="duoweidu" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="middleground-onlineTest" type="b2602c69:ProjectViewProjectNode" />
@@ -615,7 +482,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563176254073" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563186260617" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -725,24 +592,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq_xml - 2019.07.15 at 14h 10m 45s.xml">
-      <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq_xml - 2019.07.15 at 14h 54m 55s.xml">
-      <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq_xml - 2019.07.15 at 14h 56m 18s.xml">
-      <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq_xml - 2019.07.15 at 14h 56m 28s.xml">
-      <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq_xml - 2019.07.15 at 15h 03m 28s.xml">
-      <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq_xml - 2019.07.15 at 15h 05m 23s.xml">
-      <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq_xml - 2019.07.15 at 15h 13m 54s.xml">
       <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" configurationId="TestNG" />
     </history-entry>
@@ -755,9 +604,27 @@
     <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq_xml - 2019.07.15 at 15h 33m 03s.xml">
       <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq_xml - 2019.07.15 at 17h 27m 51s.xml">
+      <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq_xml - 2019.07.15 at 18h 02m 19s.xml">
+      <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq_xml - 2019.07.15 at 18h 12m 20s.xml">
+      <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq_xml - 2019.07.15 at 18h 14m 57s.xml">
+      <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq_xml - 2019.07.15 at 18h 21m 54s.xml">
+      <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq_xml - 2019.07.15 at 18h 23m 57s.xml">
+      <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21107000" />
+    <option name="totallyTimeSpent" value="25588000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="30" y="23" width="1250" height="777" extended-state="0" />
@@ -792,6 +659,37 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2557947" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.32930514" />
+      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="2" />
+      <window_info anchor="bottom" id="Statistic" order="3" weight="0.32930514" />
+      <window_info anchor="bottom" id="Terminal" order="4" weight="0.6404834" />
+      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.32930514" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.5740181" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.54531723" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -799,87 +697,19 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/HsqOpadminInterfaceTest.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/merchant_merchantverifylist_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/merchant_merchantverify_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/sku_list_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/sku_skuonlineverify_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/sku_search_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/stock_jointaobaolist_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/stock_stock_jointaobao_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/sql/SqlDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="157" column="10" selection-start-line="157" selection-start-column="10" selection-end-line="157" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/activity_goods_list_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/withdraw_income_list_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/withdraw_income_list_show_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/withdraw_audit_list_test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -942,14 +772,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/order_cancelorder_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+        <state relative-caret-position="38">
+          <caret line="31" column="37" lean-forward="true" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1456#1457#0" expanded="true" />
-            <element signature="e#1528#1529#0" expanded="true" />
-            <element signature="e#1658#1659#0" expanded="true" />
-            <element signature="e#1731#1732#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -980,8 +806,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/order_submitorder_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+        <state relative-caret-position="71">
+          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1086,20 +912,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/hsq.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="889" column="15" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="889" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/switch.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/merchant/express_productsendlist_test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1160,58 +972,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/withdraw_account_list_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/withdraw_expenditure_list_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/HsqMerchantInterfaceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="126" column="9" lean-forward="true" selection-start-line="126" selection-start-column="9" selection-end-line="126" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/merchant/withdraw_expenditure_test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/activity_goods_index_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/coupon_alipay_activity_list_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/HsqOpadminInterfaceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1225,30 +989,182 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/generalAssert/GeneralAssertMultiChannel1.java" />
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/generalAssert/GeneralAssertMultiChannel2.java" />
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/utils/CallbackInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="54" column="22" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/fyb/openapi/OrderCancelorder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/HsqInterfaceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/HsqMerchantInterfaceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="131" column="32" selection-start-line="131" selection-start-column="32" selection-end-line="131" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/withdraw_account_list_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="69" selection-start-line="18" selection-start-column="69" selection-end-line="18" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/product_coupleskudetail_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="350" column="65" selection-start-line="350" selection-start-column="65" selection-end-line="350" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/activity_goods_index_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/generalAssert/GeneralAssert.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="87" selection-start-line="40" selection-end-line="87" />
+        <state relative-caret-position="-1714">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/generalAssert/GeneralAssertMultiChannel1.java">
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/coupon_alipay_activity_list_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="65" column="70" selection-start-line="65" selection-start-column="70" selection-end-line="65" selection-end-column="70" />
+        <state relative-caret-position="138">
+          <caret line="20" selection-start-line="20" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/coupon_alipay_autopush_list_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="22" column="107" selection-start-line="22" selection-start-column="107" selection-end-line="22" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/coupon_alipay_template_list_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/generalAssert/GeneralAssertChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="206" column="23" selection-start-line="206" selection-start-column="23" selection-end-line="206" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/generalAssert/GeneralAssertMultiChannel2.java">
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/template_listinfo_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="65" column="70" selection-start-line="65" selection-start-column="70" selection-end-line="65" selection-end-column="70" />
+        <state relative-caret-position="205">
+          <caret line="24" column="57" lean-forward="true" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/assistance_activity_template_list_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="28" column="63" selection-start-line="28" selection-start-column="63" selection-end-line="28" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/HsqOpadminInterfaceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/withdraw_expenditure_list_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/system_systemnotice_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/opadmin/system_systemconfig_list_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/hsq.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="161" selection-start-line="161" selection-end-line="161" />
+          <folding>
+            <element signature="n#test#0;n#suite#0;n#!!top" />
+            <element signature="n#test#1;n#suite#0;n#!!top" />
+            <element signature="n#test#2;n#suite#0;n#!!top" />
+            <element signature="n#test#3;n#suite#0;n#!!top" />
+            <element signature="n#test#4;n#suite#0;n#!!top" />
+            <element signature="e#41161#71269#0" />
+            <element signature="e#71275#77682#0" />
+            <element signature="e#77688#77935#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/switch.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
         </state>
       </provider>
     </entry>
