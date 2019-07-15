@@ -18,7 +18,7 @@ public class user_checkusercart_test extends HsqInterfaceTest {
         list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue("skuId")));
         list.add(new BasicNameValuePair("amount","1"));
         process(list,false,false);
-        generalAssertTest();
+        statusAssertTest();
     }
 
 }

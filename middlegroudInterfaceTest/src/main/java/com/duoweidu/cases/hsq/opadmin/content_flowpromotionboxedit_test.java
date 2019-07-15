@@ -1,44 +1,17 @@
 package com.duoweidu.cases.hsq.opadmin;
 
-import com.duoweidu.config.generalAssert.GeneralAssert;
-import com.duoweidu.config.TestConfigOpadmin;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.util.EntityUtils;
+import com.duoweidu.cases.interfaces.HsqOpadminInterfaceTest;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
 
-public class content_flowpromotionboxedit_test {
-
-    //用来储存参数信息
-    private String param;
-    //用来储存返回结果
-    private String result;
+public class content_flowpromotionboxedit_test extends HsqOpadminInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "非固定推广位")
-    public void content_flowpromotionboxedit_true() throws IOException {
+    public void content_flowpromotionboxedit_true() {
 
-        System.out.println(TestConfigOpadmin.content_flowpromotionboxedit);
+        setUrl("content.flowpromotionboxedit.uri");
+        process(false,false);
 
-        String results = getJsonResult();
-
-
-    }
-
-    private String getJsonResult() throws IOException {
-
-        HttpGet get = new HttpGet(TestConfigOpadmin.content_flowpromotionboxedit);
-        TestConfigOpadmin.defaultHttpClient.setCookieStore(TestConfigOpadmin.store);
-        HttpResponse response = TestConfigOpadmin.defaultHttpClient.execute(get);
-
-        GeneralAssert.codeTest(response,TestConfigOpadmin.content_flowpromotionboxedit,param);
-
-        result = EntityUtils.toString(response.getEntity(),"utf-8");
-        System.out.println("接口返回： " + result);
-
-        GeneralAssert.resultTest(TestConfigOpadmin.content_flowpromotionboxedit,param,result);
-        return result;
     }
 
 }

@@ -1,6 +1,5 @@
 package com.duoweidu.config.sql;
 
-import com.duoweidu.config.SqlGeneral;
 import com.duoweidu.model.hsqTable.McActivityAssistanceEvent;
 import com.duoweidu.model.iqgTable.ProductOrder;
 import com.duoweidu.model.iqgTable.TrdCouponOrder;

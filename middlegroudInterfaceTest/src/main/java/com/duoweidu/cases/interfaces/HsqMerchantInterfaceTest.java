@@ -1,8 +1,7 @@
 package com.duoweidu.cases.interfaces;
 
-import com.duoweidu.config.generalAssert.GeneralAssert;
 import com.duoweidu.config.generalAssert.GeneralAssertMultiChannel2;
-import com.duoweidu.config.SqlGeneral;
+import com.duoweidu.config.sql.SqlGeneral;
 import com.duoweidu.utils.ConfigFileUrl;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -21,10 +20,22 @@ public class HsqMerchantInterfaceTest extends InterfaceTest {
 
     //通用断言判断，只判断errno
     @Override
+    protected void statusAssertTest() {
+        try {
+            JSONObject jsonObject = new JSONObject(result);
+            GeneralAssertMultiChannel2.errnoAssert(jsonObject.get("errno").toString(), jsonObject.get("errmsg").toString(), url, pathId, param, result);
+        }catch (JSONException e){
+            GeneralAssertMultiChannel2.jsonAssert(url, pathId, param, result, e);
+        }
+    }
+
+    //通用断言判断errno和data
+    @Override
     protected void generalAssertTest() {
         try {
             JSONObject jsonObject = new JSONObject(result);
             GeneralAssertMultiChannel2.errnoAssert(jsonObject.get("errno").toString(), jsonObject.get("errmsg").toString(), url, pathId, param, result);
+            GeneralAssertMultiChannel2.dataAssert(jsonObject.get("data").toString(), url, pathId, param, result);
         }catch (JSONException e){
             GeneralAssertMultiChannel2.jsonAssert(url, pathId, param, result, e);
         }
@@ -36,8 +47,8 @@ public class HsqMerchantInterfaceTest extends InterfaceTest {
         try {
             JSONObject jsonObject = new JSONObject(result);
             JSONObject data = (JSONObject) jsonObject.get("data");
-            GeneralAssert.errnoAssert(jsonObject.get("errno").toString(), jsonObject.get("errmsg").toString(), url, pathId, param, result);
-            GeneralAssert.dataAssert(jsonObject.get("data").toString(), url, pathId, param, result);
+            GeneralAssertMultiChannel2.errnoAssert(jsonObject.get("errno").toString(), jsonObject.get("errmsg").toString(), url, pathId, param, result);
+            GeneralAssertMultiChannel2.dataAssert(jsonObject.get("data").toString(), url, pathId, param, result);
             if (isList == true) {
                 GeneralAssertMultiChannel2.listAssert((JSONArray) data.get("list"), url, pathId, param, result);
             }
@@ -66,7 +77,6 @@ public class HsqMerchantInterfaceTest extends InterfaceTest {
             GeneralAssertMultiChannel2.jsonAssert(url, pathId, param, result, e);
         }
     }
-
 
     @Override
     protected void detailAssertTest (int assertValue, String resultKey, int resultValue) {

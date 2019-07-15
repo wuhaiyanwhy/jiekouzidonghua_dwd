@@ -4,12 +4,8 @@ import com.duoweidu.cases.interfaces.MsfInterfaceTest;
 import com.duoweidu.config.generalAssert.GeneralAssert;
 import com.duoweidu.config.GeneralConfig;
 import com.duoweidu.config.MsfConfig;
-<<<<<<< HEAD
 import com.duoweidu.config.sql.SqlDetail;
-=======
-import com.duoweidu.config.SqlDetail;
 import com.duoweidu.utils.CallbackInterface;
->>>>>>> 44ec4803acf31fc798d59b39a56a02df86467d07
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONException;

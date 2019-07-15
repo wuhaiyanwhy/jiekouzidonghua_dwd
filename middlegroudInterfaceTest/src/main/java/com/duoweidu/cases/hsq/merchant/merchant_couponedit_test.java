@@ -1,36 +1,13 @@
 package com.duoweidu.cases.hsq.merchant;
 
-import com.duoweidu.config.generalAssert.GeneralAssert;
-import com.duoweidu.config.TestConfigMerchant;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.util.EntityUtils;
+import com.duoweidu.cases.interfaces.HsqMerchantInterfaceTest;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
-
-public class merchant_couponedit_test {
-
-    //用来储存返回结果
-    private String result;
+public class merchant_couponedit_test extends HsqMerchantInterfaceTest {
 
     @Test(groups = "loginTrue",description = "优惠券管理")
-    public void merchant_couponedit_true() throws IOException {
-        System.out.println(TestConfigMerchant.merchant_couponedit);
-        String results = getJsonResult();
+    public void merchant_couponedit_true() {
+        setUrl("merchant.couponedit.uri");
     }
 
-    private String getJsonResult() throws IOException {
-        HttpGet get = new HttpGet(TestConfigMerchant.merchant_couponedit);
-        TestConfigMerchant.defaultHttpClient.setCookieStore(TestConfigMerchant.store);
-        HttpResponse response = TestConfigMerchant.defaultHttpClient.execute(get);
-
-        GeneralAssert.codeTest(response,TestConfigMerchant.merchant_couponedit,null);
-
-        result = EntityUtils.toString(response.getEntity(),"utf-8");
-        System.out.println("接口返回： " + result);
-
-        GeneralAssert.resultTest(TestConfigMerchant.merchant_couponedit,null,result);
-        return result;
-    }
 }

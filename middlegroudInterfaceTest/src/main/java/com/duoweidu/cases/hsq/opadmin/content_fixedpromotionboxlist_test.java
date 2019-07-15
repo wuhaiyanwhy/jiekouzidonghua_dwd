@@ -1,58 +1,20 @@
 package com.duoweidu.cases.hsq.opadmin;
 
-import com.duoweidu.config.generalAssert.GeneralAssert;
-import com.duoweidu.config.TestConfigOpadmin;
-import org.apache.http.HttpResponse;
+import com.duoweidu.cases.interfaces.HsqOpadminInterfaceTest;
 import org.apache.http.NameValuePair;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.util.EntityUtils;
-import org.json.JSONObject;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
-public class content_fixedpromotionboxlist_test {
-
-    //用来储存参数信息
-    private String param;
-    //用来储存返回结果
-    private String result;
+public class content_fixedpromotionboxlist_test extends HsqOpadminInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "固定推广位列表")
-    public void content_fixedpromotionboxlist_true() throws IOException {
+    public void content_fixedpromotionboxlist_true() {
 
-        System.out.println(TestConfigOpadmin.content_fixedpromotionboxlist);
+        setUrl("content.fixedpromotionboxlist.uri");
         List<NameValuePair> list = new LinkedList<>();
-
-        String results = getJsonResult(list);
-
-        JSONObject jsonObject = new JSONObject(results);
-//        JSONArray aaData = (JSONArray) jsonObject.get("aaData");
-//        GeneralAssert.aaDataTest(aaData,TestConfigOpadmin.content_fixedpromotionboxlist,param,result);
-
-
-    }
-
-    private String getJsonResult(List<NameValuePair>  list) throws IOException {
-
-        HttpPost post = new HttpPost(TestConfigOpadmin.content_fixedpromotionboxlist);
-        UrlEncodedFormEntity entity = new UrlEncodedFormEntity(list,"utf-8");
-        post.setEntity(entity);
-        TestConfigOpadmin.defaultHttpClient.setCookieStore(TestConfigOpadmin.store);
-        HttpResponse response = TestConfigOpadmin.defaultHttpClient.execute(post);
-
-        GeneralAssert.codeTest(response,TestConfigOpadmin.content_fixedpromotionboxlist,param);
-
-        result = EntityUtils.toString(response.getEntity(),"utf-8");
-        System.out.println("接口返回： " + result);
-
-        GeneralAssert.resultTest(TestConfigOpadmin.content_fixedpromotionboxlist,param,result);
-
-        return result;
-
+        process(list,false,false);
 
     }
 }

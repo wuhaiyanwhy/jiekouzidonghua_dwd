@@ -1,36 +1,14 @@
 package com.duoweidu.cases.hsq.merchant;
 
-import com.duoweidu.config.generalAssert.GeneralAssert;
-import com.duoweidu.config.TestConfigMerchant;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.util.EntityUtils;
+import com.duoweidu.cases.interfaces.HsqMerchantInterfaceTest;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
-
-public class express_expressfeetemplate_test {
-
-    //用来储存返回结果
-    private String result;
+public class express_expressfeetemplate_test extends HsqMerchantInterfaceTest {
 
     @Test(groups = "loginTrue",description = "运费模板")
-    public void express_expressfeetemplate_true() throws IOException {
-        System.out.println(TestConfigMerchant.express_expressfeetemplate);
-        String results = getJsonResult();
+    public void express_expressfeetemplate_true() {
+        setUrl("express.expressfeetemplate.uri");
+        process();
     }
 
-    private String getJsonResult() throws IOException {
-        HttpGet get = new HttpGet(TestConfigMerchant.express_expressfeetemplate);
-        TestConfigMerchant.defaultHttpClient.setCookieStore(TestConfigMerchant.store);
-        HttpResponse response = TestConfigMerchant.defaultHttpClient.execute(get);
-
-        GeneralAssert.codeTest(response,TestConfigMerchant.express_expressfeetemplate,null);
-
-        result = EntityUtils.toString(response.getEntity(),"utf-8");
-        System.out.println("接口返回： " + result);
-
-        GeneralAssert.resultTest(TestConfigMerchant.express_expressfeetemplate,null,result);
-        return result;
-    }
 }
