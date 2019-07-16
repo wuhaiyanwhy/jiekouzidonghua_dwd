@@ -1,8 +1,5 @@
 package com.duoweidu.config;
 
-import org.apache.http.client.CookieStore;
-import org.apache.http.impl.client.DefaultHttpClient;
-
 import java.util.ArrayList;
 import java.util.List;
 
