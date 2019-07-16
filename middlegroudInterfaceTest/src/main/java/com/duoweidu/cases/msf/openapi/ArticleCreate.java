@@ -27,8 +27,6 @@ public class ArticleCreate extends MsfInterfaceTest {
             list.add(new BasicNameValuePair("os_version", "12.2"));
             list.add(new BasicNameValuePair("device", "iPhone"));
             list.add(new BasicNameValuePair("star", "50"));
-            list.add(new BasicNameValuePair("star", "50"));
-            list.add(new BasicNameValuePair("star", "50"));
         }
         process(list,false,false);
         if ("beta".equals(ConfigFileUrl.getEnv())) {
