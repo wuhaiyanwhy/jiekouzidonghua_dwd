@@ -1,62 +1,28 @@
 package com.duoweidu.cases.hsq.opadmin;
 
-import com.duoweidu.config.generalAssert.GeneralAssert;
-import com.duoweidu.config.TestConfigOpadmin;
-import org.apache.http.HttpResponse;
+import com.duoweidu.cases.interfaces.HsqOpadminInterfaceTest;
 import org.apache.http.NameValuePair;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.util.EntityUtils;
-import org.json.JSONArray;
-import org.json.JSONObject;
+import org.apache.http.message.BasicNameValuePair;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
-public class template_listinfo_test {
-
-    //用来储存参数信息
-    private String param;
-    //用来储存返回结果
-    private String result;
+public class template_listinfo_test extends HsqOpadminInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "首页模板配置列表")
-    public void template_listinfo_true() throws IOException {
+    public void template_listinfo_true() {
 
-        System.out.println(TestConfigOpadmin.template_listinfo);
+        setUrl("template.listinfo.uri");
         List<NameValuePair> list = new LinkedList<>();
-
-        String results = getJsonResult(list);
-
-        JSONObject jsonObject = new JSONObject(results);
-        JSONObject data = (JSONObject) jsonObject.get("data");
-        GeneralAssert.dataTest(data.toString(),TestConfigOpadmin.template_listinfo,param,result);
-        JSONArray listJson = (JSONArray) data.get("list");
-        GeneralAssert.listTest(listJson,TestConfigOpadmin.template_listinfo,param,result);
-
-
+        list.add(new BasicNameValuePair("pageNum", "1"));
+        list.add(new BasicNameValuePair("pageLimit", "20"));
+        list.add(new BasicNameValuePair("title", ""));
+        list.add(new BasicNameValuePair("start_time", ""));
+        list.add(new BasicNameValuePair("end_time", ""));
+        list.add(new BasicNameValuePair("date_range", "[]"));
+        list.add(new BasicNameValuePair("status", "1"));
+        list.add(new BasicNameValuePair("channel", "1"));
+        process(list, true, true);
     }
-
-    private String getJsonResult(List<NameValuePair>  list) throws IOException {
-
-        HttpPost post = new HttpPost(TestConfigOpadmin.template_listinfo+"?pageNum=1&pageLimit=20&title=&start_time=&end_time=&date_range=[]&status=&channel=1");
-        UrlEncodedFormEntity entity = new UrlEncodedFormEntity(list,"utf-8");
-        post.setEntity(entity);
-        TestConfigOpadmin.defaultHttpClient.setCookieStore(TestConfigOpadmin.store);
-        HttpResponse response = TestConfigOpadmin.defaultHttpClient.execute(post);
-
-        GeneralAssert.codeTest(response,TestConfigOpadmin.template_listinfo,param);
-
-        result = EntityUtils.toString(response.getEntity(),"utf-8");
-        System.out.println("接口返回： " + result);
-
-        GeneralAssert.resultTest(TestConfigOpadmin.template_listinfo,param,result);
-
-        return result;
-
-
-    }
-
 }

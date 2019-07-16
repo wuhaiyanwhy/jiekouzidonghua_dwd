@@ -13,7 +13,7 @@ public class ActivityAssistanceuserskulist extends HsqInterfaceTest {
 
     private void genActivity(int eventStatus) {
         setUrl("activity.assistanceuserskulist.uri");
-        param = "token=" + SqlDetail.getParamValue("token") +
+        param = "token=" + SqlDetail.getInstance().getParamValue("token") +
                 "&pageNum=1&pageLimit=10needPagination=1&eventStatus=" + eventStatus + "&activityType=1&terminal=aliapp";
         process(true,false);
     }

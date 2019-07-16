@@ -15,10 +15,10 @@ public class user_addskutocart_test extends HsqInterfaceTest {
     public void user_addskutocart_true() {
         setUrl("user.addskutocart.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue("skuId")));
+        list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue("skuId")));
         list.add(new BasicNameValuePair("amount","1"));
         list.add(new BasicNameValuePair("type","1"));
-        list.add(new BasicNameValuePair("price", SqlDetail.getParamValue("price")));
+        list.add(new BasicNameValuePair("price", SqlDetail.getInstance().getParamValue("price")));
         process(list,true,false);
     }
 }

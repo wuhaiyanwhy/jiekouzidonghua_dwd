@@ -18,9 +18,9 @@ public class IqgInterfaceTest extends InterfaceTest {
     protected void process(boolean isAssert,boolean isList) {
         System.out.println(url);
         //通用参数
-        String par = "version=" + SqlDetail.getParamValue(0, "version")
-                + "&lng=" + SqlDetail.getParamValue(0, "lng")
-                + "&lat=" +  SqlDetail.getParamValue(0, "lat");
+        String par = "version=" + SqlDetail.getInstance().getParamValue(0, "version")
+                + "&lng=" + SqlDetail.getInstance().getParamValue(0, "lng")
+                + "&lat=" +  SqlDetail.getInstance().getParamValue(0, "lat");
         if (param != null) {
             this.param = par + "&" + param;
         }else {
@@ -37,9 +37,9 @@ public class IqgInterfaceTest extends InterfaceTest {
     protected void process(List<NameValuePair> list, boolean isAssert, boolean isList) {
         System.out.println(url);
         //通用参数
-        list.add(new BasicNameValuePair("version", SqlDetail.getParamValue(0, "version")));
-        list.add(new BasicNameValuePair("lng", SqlDetail.getParamValue(0, "lng")));
-        list.add(new BasicNameValuePair("lat", SqlDetail.getParamValue(0, "lat")));
+        list.add(new BasicNameValuePair("version", SqlDetail.getInstance().getParamValue(0, "version")));
+        list.add(new BasicNameValuePair("lng", SqlDetail.getInstance().getParamValue(0, "lng")));
+        list.add(new BasicNameValuePair("lat", SqlDetail.getInstance().getParamValue(0, "lat")));
         param = list.toString();
         result = IqgCallbackInterface.postStringResult(url, pathId, list);
         if (isAssert == true) {
@@ -53,9 +53,9 @@ public class IqgInterfaceTest extends InterfaceTest {
     protected void processDelete(boolean isAssert, boolean isList) {
         System.out.println(url);
         //通用参数
-        String par = "version=" + SqlDetail.getParamValue(0, "version")
-                + "&lng=" + SqlDetail.getParamValue(0, "lng")
-                + "&lat=" +  SqlDetail.getParamValue(0, "lat");
+        String par = "version=" + SqlDetail.getInstance().getParamValue(0, "version")
+                + "&lng=" + SqlDetail.getInstance().getParamValue(0, "lng")
+                + "&lat=" +  SqlDetail.getInstance().getParamValue(0, "lat");
         if (param != null) {
             this.param = par + "&" + param;
         }else {

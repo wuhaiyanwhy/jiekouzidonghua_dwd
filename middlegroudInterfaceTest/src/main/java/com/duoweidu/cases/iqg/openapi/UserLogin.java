@@ -18,8 +18,8 @@ public class UserLogin extends IqgInterfaceTest {
     public void user_login_true() {
         setUrl("user.login.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("mobile", SqlDetail.getParamValue(0, "mobile")));
-        list.add(new BasicNameValuePair("password", SqlDetail.getParamValue(0, "password")));
+        list.add(new BasicNameValuePair("mobile", SqlDetail.getInstance().getParamValue(0, "mobile")));
+        list.add(new BasicNameValuePair("password", SqlDetail.getInstance().getParamValue(0, "password")));
         process(list, true, false);
         //cookie信息存为默认值
         GeneralConfig.store = CallbackInterface.defaultHttpClient.getCookieStore();

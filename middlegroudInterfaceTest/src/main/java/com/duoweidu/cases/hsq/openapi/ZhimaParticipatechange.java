@@ -12,8 +12,8 @@ public class ZhimaParticipatechange extends HsqInterfaceTest {
     @Test(description = "用户合约上报")
     public void zhimaParticipatechange() {
         setUrl("zhima.participatechange.uri");
-        param = "token=" + SqlDetail.getParamValue("token") +
-                "&appId=" + SqlDetail.getParamValue(0,"zhimaAppId") +
+        param = "token=" + SqlDetail.getInstance().getParamValue("token") +
+                "&appId=" + SqlDetail.getInstance().getParamValue(0,"zhimaAppId") +
                 "&change=create";
         process(true,false);
         model = sparseJson(ResData.class);

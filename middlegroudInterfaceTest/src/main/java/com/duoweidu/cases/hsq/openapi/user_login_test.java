@@ -18,8 +18,8 @@ public class user_login_test extends HsqInterfaceTest {
     public void login_true() {
         setUrl("user.login.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("mobile", SqlDetail.getParamValue(0,"mobile")));
-        list.add(new BasicNameValuePair("password",SqlDetail.getParamValue(0, "password")));
+        list.add(new BasicNameValuePair("mobile", SqlDetail.getInstance().getParamValue(0,"mobile")));
+        list.add(new BasicNameValuePair("password",SqlDetail.getInstance().getParamValue(0, "password")));
         list.add(new BasicNameValuePair("type", "1"));
         process(list,true,false);
         //cookie信息存为默认值

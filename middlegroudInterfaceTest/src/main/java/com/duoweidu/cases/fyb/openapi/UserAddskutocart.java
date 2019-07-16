@@ -15,8 +15,8 @@ public class UserAddskutocart extends FybInterfaceTest {
     public void userAddskutocart() {
         setUrl("user.addskutocart.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("price", SqlDetail.getParamValue("price")));
-        list.add(new BasicNameValuePair("skuId", SqlDetail.getParamValue("skuId")));
+        list.add(new BasicNameValuePair("price", SqlDetail.getInstance().getParamValue("price")));
+        list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue("skuId")));
         list.add(new BasicNameValuePair("type","1"));
         list.add(new BasicNameValuePair("amount","1"));
         process(list,true,false);

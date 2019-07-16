@@ -19,7 +19,7 @@ public class ActivityAssistanceitemdetail extends HsqInterfaceTest {
 
     @Test(description = "助力免单详情")
     public void noPayActivityAssistanceitemdetail() {
-        genDetail(SqlDetail.getParamValue(2, "noPayActivityId"));
+        genDetail(SqlDetail.getInstance().getParamValue(2, "noPayActivityId"));
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             generalAssertTest(false);
             model = sparseJson(ActivityAssistanceitemdetailData.class);
@@ -30,7 +30,7 @@ public class ActivityAssistanceitemdetail extends HsqInterfaceTest {
 
     @Test(description = "助力免单详情")
     public void payActivityAssistanceitemdetail() {
-        genDetail(SqlDetail.getParamValue(2, "payActivityId"));
+        genDetail(SqlDetail.getInstance().getParamValue(2, "payActivityId"));
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             generalAssertTest(false);
             model = sparseJson(ActivityAssistanceitemdetailData.class);

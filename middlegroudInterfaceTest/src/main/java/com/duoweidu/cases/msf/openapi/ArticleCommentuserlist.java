@@ -9,7 +9,7 @@ public class ArticleCommentuserlist extends MsfInterfaceTest {
     @Test(dependsOnGroups = "loginTrue",description = "获取当前文章评论用户接口")
     public void articleCommentuserlist() {
         setUrl("article.commentuserlist.uri");
-        param = "article_id=" + SqlDetail.getParamValue("article_id");
+        param = "article_id=" + SqlDetail.getInstance().getParamValue("article_id");
         process(true,true);
     }
 }

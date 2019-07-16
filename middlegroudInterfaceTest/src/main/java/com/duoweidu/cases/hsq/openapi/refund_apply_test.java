@@ -15,7 +15,7 @@ public class refund_apply_test extends HsqInterfaceTest {
     public void refund_apply_true() {
         setUrl("refund.apply.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("orderId", SqlDetail.getParamValue("orderId")));
+        list.add(new BasicNameValuePair("orderId", SqlDetail.getInstance().getParamValue("orderId")));
         list.add(new BasicNameValuePair("refundMethod","1"));
         list.add(new BasicNameValuePair("reasonId","103"));
         process(false,false);

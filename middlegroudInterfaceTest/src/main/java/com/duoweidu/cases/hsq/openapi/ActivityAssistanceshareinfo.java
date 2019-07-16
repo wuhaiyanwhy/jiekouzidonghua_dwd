@@ -19,9 +19,9 @@ public class ActivityAssistanceshareinfo extends HsqInterfaceTest {
     public void activityAssistanceshareinfo() {
         setUrl("activity.assistanceshareinfo.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("token", SqlDetail.getParamValue("token")));
-        list.add(new BasicNameValuePair("activityId", SqlDetail.getParamValue(2, "noPayActivityId")));
-        list.add(new BasicNameValuePair("eventId", SqlDetail.getParamValue(2, "noPayActivityEventId")));
+        list.add(new BasicNameValuePair("token", SqlDetail.getInstance().getParamValue("token")));
+        list.add(new BasicNameValuePair("activityId", SqlDetail.getInstance().getParamValue(2, "noPayActivityId")));
+        list.add(new BasicNameValuePair("eventId", SqlDetail.getInstance().getParamValue(2, "noPayActivityEventId")));
         process(list, false, false);
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             generalAssertTest(false);

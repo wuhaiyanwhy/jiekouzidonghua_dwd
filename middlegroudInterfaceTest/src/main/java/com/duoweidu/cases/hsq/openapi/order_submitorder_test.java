@@ -1,8 +1,8 @@
 package com.duoweidu.cases.hsq.openapi;
 
 import com.duoweidu.cases.interfaces.HsqInterfaceTest;
-import com.duoweidu.config.generalAssert.GeneralAssert;
 import com.duoweidu.config.HsqOpenapiConfig;
+import com.duoweidu.config.generalAssert.GeneralAssert;
 import com.duoweidu.config.sql.SqlDetail;
 import com.duoweidu.model.hsq.OrderSubmitorderData;
 import com.duoweidu.utils.ConfigFileUrl;
@@ -117,7 +117,7 @@ public class order_submitorder_test extends HsqInterfaceTest {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             List<NameValuePair> list = new LinkedList<>();
             list.add(new BasicNameValuePair("orderType", "11"));
-            list.add(new BasicNameValuePair("token", SqlDetail.getParamValue("token")));
+            list.add(new BasicNameValuePair("token", SqlDetail.getInstance().getParamValue("token")));
             submitorderConfig(list, HsqOpenapiConfig.orderInitResult);
         }
 

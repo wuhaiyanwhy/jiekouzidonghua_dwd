@@ -31,10 +31,10 @@ public class Adjust extends TradeCenterInterfaceTest {
     private void detailAssert() {
         detailAssertTest(TradecenterConfig.msfCreateAdjustTradeNo, "trade_no", model.trade_no);
         detailAssertTest(TradecenterConfig.msfAccountNumber, "account_number", model.account_number);
-        detailAssertTest(SqlDetail.getParamValue(0, "adjustAmount"), "adjust_amount", String.valueOf(model.adjust_amount));
-        detailAssertTest(SqlDetail.getParamValue(0, "msfCurrency"), "currency", model.currency);
-        detailAssertTest(SqlDetail.getParamValue(0, "adjustTypeCode"), "adjust_type_code", model.adjust_type_code);
-        detailAssertTest(SqlDetail.getParamValue(0, "adjustDesc"), "adjust_desc", model.adjust_desc);
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "adjustAmount"), "adjust_amount", String.valueOf(model.adjust_amount));
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "msfCurrency"), "currency", model.currency);
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "adjustTypeCode"), "adjust_type_code", model.adjust_type_code);
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "adjustDesc"), "adjust_desc", model.adjust_desc);
         detailAssertTest("", "reverse", model.reverse);
 
     }

@@ -9,7 +9,7 @@ public class ProductIteminfo extends FybInterfaceTest {
     @Test(description = "产品详情")
     public void productIteminfo() {
         setUrl("product.iteminfo.uri");
-        param = "skuId=" + SqlDetail.getParamValue("skuId");
+        param = "skuId=" + SqlDetail.getInstance().getParamValue("skuId");
         process(true,false);
     }
 }

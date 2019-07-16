@@ -889,6 +889,829 @@
         </classes>
     </test>
 
+    <test name ="好食期接口测试用例(管理平台)">
+        <classes >
+            <class name="com.duoweidu.cases.hsq.opadmin.user_login_check_test">
+                <methods>
+                    <include name = "login_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.user_channel_list_test">
+                <methods>
+                    <include name = "user_channel_list_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.market_actcodesearch_test">
+                <methods>
+                    <include name = "market_actcodesearch_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.market_actcodelist_test">
+                <methods>
+                    <include name = "market_actcodelist_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.market_couponactsearch_test">
+                <methods>
+                    <include name = "market_couponactsearch_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.market_couponsearch_test">
+                <methods>
+                    <include name = "market_couponsearch_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.market_couponlist_test">
+                <methods>
+                    <include name = "market_couponlist_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.market_couponactsearch_test">
+                <methods>
+                    <include name = "market_couponactsearch_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.market_couponoprcdlist_test">
+                <methods>
+                    <include name = "market_couponoprcdlist_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.coupon_alipay_template_test">
+                <methods>
+                    <include name = "coupon_alipay_template_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.coupon_alipay_template_list_test">
+                <methods>
+                    <include name = "coupon_alipay_template_list_test"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.coupon_alipay_activity_index_test">
+                <methods>
+                    <include name = "coupon_alipay_activity_index_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.coupon_alipay_activity_list_test">
+                <methods>
+                    <include name = "coupon_alipay_activity_list_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.coupon_alipay_autopush_test">
+                <methods>
+                    <include name = "coupon_alipay_autopush_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.coupon_alipay_autopush_list_test">
+                <methods>
+                    <include name = "coupon_alipay_autopush_list_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.coupon_alipay_usage_test">
+                <methods>
+                    <include name = "coupon_alipay_usage_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.market_firstorderdiscount_test">
+                <methods>
+                    <include name = "market_firstorderdiscount_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.anticheat_rule_search_test">
+                <methods>
+                    <include name = "anticheat_rule_search_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.anticheat_rule_list_test">
+                <methods>
+                    <include name = "anticheat_rule_list_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.stock_stock_jointaobao_test">
+                <methods>
+                    <include name = "stock_stock_jointaobao_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.stock_jointaobaolist_test">
+                <methods>
+                    <include name = "stock_jointaobaolist_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.content_hotsearchsug_index_test">
+                <methods>
+                    <include name = "content_hotsearchsug_index_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.content_hotsearchsug_list_test">
+                <methods>
+                    <include name = "content_hotsearchsug_list_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.content_topnavigatesearch_test">
+                <methods>
+                    <include name = "content_topnavigatesearch_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.content_topnavigatelist_test">
+                <methods>
+                    <include name = "content_topnavigatelist_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.banner_banneredit_test">
+                <methods>
+                    <include name = "banner_banneredit_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.banner_banneronlinelist_test">
+                <methods>
+                    <include name = "banner_banneronlinelist_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.content_labelbuttonsearch_test">
+                <methods>
+                    <include name = "content_labelbuttonsearch_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.content_labelbuttonlist_test">
+                <methods>
+                    <include name = "content_labelbuttonlist_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.content_fixedpromotionboxedit_test">
+                <methods>
+                    <include name = "content_fixedpromotionboxedit_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.content_fixedpromotionboxlist_test">
+                <methods>
+                    <include name = "content_fixedpromotionboxlist_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.template_listinfo_test">
+                <methods>
+                    <include name = "template_listinfo_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.content_flowpromotionboxedit_test">
+                <methods>
+                    <include name = "content_flowpromotionboxedit_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.content_flowpromotionboxlist_test">
+                <methods>
+                    <include name = "content_flowpromotionboxlist_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.content_titlebarmanage_index_test">
+                <methods>
+                    <include name = "content_titlebarmanage_index_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.content_titlebarmanage_list_test">
+                <methods>
+                    <include name = "content_titlebarmanage_list_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.content_recommendactive_index_test">
+                <methods>
+                    <include name = "content_recommendactive_index_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.content_recommendactive_list_test">
+                <methods>
+                    <include name = "content_recommendactive_list_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.content_advertisemanage_index_test">
+                <methods>
+                    <include name = "content_advertisemanage_index_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.content_advertisemanage_list_test">
+                <methods>
+                    <include name = "content_advertisemanage_list_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.activity_goods_index_test">
+                <methods>
+                    <include name = "activity_goods_index_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.activity_goods_list_test">
+                <methods>
+                    <include name = "activity_goods_list_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.content_specialsearch_test">
+                <methods>
+                    <include name = "content_specialsearch_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.content_speciallist_test">
+                <methods>
+                    <include name = "content_speciallist_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.content_customspecialsearch_test">
+                <methods>
+                    <include name = "content_customspecialsearch_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.content_customspeciallist_test">
+                <methods>
+                    <include name = "content_customspeciallist_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.wechattemplate_templatelist_test">
+                <methods>
+                    <include name = "wechattemplate_templatelist_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.wechattemplate_templateonlinelist_test">
+                <methods>
+                    <include name = "wechattemplate_templateonlinelist_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.wechat_wechatfanssearch_test">
+                <methods>
+                    <include name = "wechat_wechatfanssearch_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.wechat_wechatfanslist_test">
+                <methods>
+                    <include name = "wechat_wechatfanslist_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.market_mtcnotifytpl_show_test">
+                <methods>
+                    <include name = "market_mtcnotifytpl_show_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.market_mtcnotify_list_test">
+                <methods>
+                    <include name = "market_mtcnotify_list_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.market_mtceventnotify_show_test">
+                <methods>
+                    <include name = "market_mtceventnotify_show_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.market_mtceventnotify_list_test">
+                <methods>
+                    <include name = "market_mtceventnotify_list_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.activity_pinonlinesearch_test">
+                <methods>
+                    <include name = "activity_pinonlinesearch_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.activity_pinlotteryonline_list_test">
+                <methods>
+                    <include name = "activity_pinlotteryonline_list_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.activity_pinlottery_edit_test">
+                <methods>
+                    <include name = "activity_pinlottery_edit_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.activity_pinlottery_list_test">
+                <methods>
+                    <include name = "activity_pinlottery_list_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.activity_pinlottery_winnerlist_test">
+                <methods>
+                    <include name = "activity_pinlottery_winnerlist_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.activity_pointsku_edit_test">
+                <methods>
+                    <include name = "activity_pointsku_edit_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.activity_pointsku_list_test">
+                <methods>
+                    <include name = "activity_pointsku_list_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.activity_pointsku_config_administration_test">
+                <methods>
+                    <include name = "activity_pointsku_config_administration_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.activity_pointsku_config_list_test">
+                <methods>
+                    <include name = "activity_pointsku_config_list_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.activity_pointwao_index_test">
+                <methods>
+                    <include name = "activity_pointwao_index_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.activity_pointwao_list_test">
+                <methods>
+                    <include name = "activity_pointwao_list_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.assistance_list_test">
+                <methods>
+                    <include name = "assistance_list_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.assistance_activity_info_list_test">
+                <methods>
+                    <include name = "assistance_activity_info_list_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.assistance_activity_template_test">
+                <methods>
+                    <include name = "assistance_activity_template_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.assistance_activity_template_list_test">
+                <methods>
+                    <include name = "assistance_activity_template_list_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.content_wechataccountsettings_test">
+                <methods>
+                    <include name = "content_wechataccountsettings_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.launchbanner_banneredit_test">
+                <methods>
+                    <include name = "launchbanner_banneredit_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.launchbanner_banneronlinelist_test">
+                <methods>
+                    <include name = "launchbanner_banneronlinelist_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.activity_topic_index_test">
+                <methods>
+                    <include name = "activity_topic_index_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.activity_topic_list_test">
+                <methods>
+                    <include name = "activity_topic_list_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.activity_topic_audit_index_test">
+                <methods>
+                    <include name = "activity_topic_audit_index_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.activity_topic_audit_list_test">
+                <methods>
+                    <include name = "activity_topic_audit_list_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.wechattemplate_app_index_test">
+                <methods>
+                    <include name = "wechattemplate_app_index_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.wechattemplate_app_list_test">
+                <methods>
+                    <include name = "wechattemplate_app_list_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.wechattemplate_template_index_test">
+                <methods>
+                    <include name = "wechattemplate_template_index_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.wechattemplate_template_list_test">
+                <methods>
+                    <include name = "wechattemplate_template_list_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.wechattemplate_messagepush_index_test">
+                <methods>
+                    <include name = "wechattemplate_messagepush_index_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.wechattemplate_subscribesmessagepush_index_test">
+                <methods>
+                    <include name = "wechattemplate_subscribesmessagepush_index_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.wechattemplate_subscribesmessagepush_list_test">
+                <methods>
+                    <include name = "wechattemplate_subscribesmessagepush_list_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.alipaytemplate_app_list_test">
+                <methods>
+                    <include name = "alipaytemplate_app_list_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.alipaytemplate_template_index_test">
+                <methods>
+                    <include name = "alipaytemplate_template_index_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.alipaytemplate_template_list_test">
+                <methods>
+                    <include name = "alipaytemplate_template_list_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.alipaytemplate_messagepush_index_test">
+                <methods>
+                    <include name = "alipaytemplate_messagepush_index_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.alipaytemplate_messagepush_list_test">
+                <methods>
+                    <include name = "alipaytemplate_messagepush_list_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.market_mtcevent_index_test">
+                <methods>
+                    <include name = "market_mtcevent_index_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.market_mtcevent_list_test">
+                <methods>
+                    <include name = "market_mtcevent_list_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.merchant_merchantverify_test">
+                <methods>
+                    <include name = "merchant_merchantverify_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.merchant_merchantverifylist_test">
+                <methods>
+                    <include name = "merchant_merchantverifylist_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.merchant_brandverify_test">
+                <methods>
+                    <include name = "merchant_brandverify_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.merchant_brandverifylist_test">
+                <methods>
+                    <include name = "merchant_brandverifylist_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.merchant_couponverify_test">
+                <methods>
+                    <include name = "merchant_couponverify_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.dealer_dealeraudit_test">
+                <methods>
+                    <include name = "dealer_dealeraudit_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.dealer_dealerlicenselist_test">
+                <methods>
+                    <include name = "dealer_dealerlicenselist_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.sku_skuonlineverify_test">
+                <methods>
+                    <include name = "sku_skuonlineverify_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.ugc_ugcsearch_test">
+                <methods>
+                    <include name = "ugc_ugcsearch_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.ugc_ugclist_test">
+                <methods>
+                    <include name = "ugc_ugclist_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.trade_ordersearch_test">
+                <methods>
+                    <include name = "trade_ordersearch_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.trade_orderlist_test">
+                <methods>
+                    <include name = "trade_orderlist_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.trade_refundlist_test">
+                <methods>
+                    <include name = "trade_refundlist_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.trade_nonuserapplyrefundlist_test">
+                <methods>
+                    <include name = "trade_nonuserapplyrefundlist_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.trade_paymentabnormalsearch_test">
+                <methods>
+                    <include name = "trade_paymentabnormalsearch_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.trade_payment_orderpaymentlist_test">
+                <methods>
+                    <include name = "trade_payment_orderpaymentlist_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.trade_payment_abnormallist_test">
+                <methods>
+                    <include name = "trade_payment_abnormallist_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.express_trance_test">
+                <methods>
+                    <include name = "express_trance_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.sku_search_test">
+                <methods>
+                    <include name = "sku_search_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.sku_list_test">
+                <methods>
+                    <include name = "sku_list_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.finance_statement_test">
+                <methods>
+                    <include name = "finance_statement_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.finance_statementorder_test">
+                <methods>
+                    <include name = "finance_statementorder_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.finance_statementorderlist_test">
+                <methods>
+                    <include name = "finance_statementorderlist_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.withdraw_account_list_show_test">
+                <methods>
+                    <include name = "withdraw_account_list_show_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.withdraw_account_list_test">
+                <methods>
+                    <include name = "withdraw_account_list_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.withdraw_audit_list_show_test">
+                <methods>
+                    <include name = "withdraw_audit_list_show_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.withdraw_audit_list_test">
+                <methods>
+                    <include name = "withdraw_audit_list_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.withdraw_income_list_show_test">
+                <methods>
+                    <include name = "withdraw_income_list_show_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.withdraw_income_list_test">
+                <methods>
+                    <include name = "withdraw_income_list_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.withdraw_expenditure_list_show_test">
+                <methods>
+                    <include name = "withdraw_expenditure_list_show_true"/>
+                </methods>
+            </class>
+
+            <!--需要优化先禁用-->
+            <class name="com.duoweidu.cases.hsq.opadmin.withdraw_expenditure_list_test">
+                <methods>
+                    <include name = "withdraw_expenditure_list_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.system_systemnotice_test">
+                <methods>
+                    <include name = "system_systemnotice_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.system_notice_test">
+                <methods>
+                    <include name = "system_notice_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.system_notice_list_test">
+                <methods>
+                    <include name = "system_notice_list_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.system_adminuseroplogsearch_test">
+                <methods>
+                    <include name = "system_adminuseroplogsearch_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.system_adminuseroploglist_test">
+                <methods>
+                    <include name = "system_adminuseroploglist_true"/>
+                </methods>
+            </class>
+
+
+            <class name="com.duoweidu.cases.hsq.opadmin.system_adminappset_test">
+                <methods>
+                    <include name = "system_adminappset_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.system_systemconfig_set_test">
+                <methods>
+                    <include name = "system_systemconfig_set_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.opadmin.system_systemconfig_list_test">
+                <methods>
+                    <include name = "system_systemconfig_list_true"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+
     <test name ="好食期接口测试用例(商户平台)">
         <classes >
 

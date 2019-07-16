@@ -15,7 +15,7 @@ public class user_likemerchant_test extends HsqInterfaceTest {
     public void user_likemerchant_true() {
         setUrl("user.likemerchant.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("merchantId", SqlDetail.getParamValue("merchantId")));
+        list.add(new BasicNameValuePair("merchantId", SqlDetail.getInstance().getParamValue("merchantId")));
         process(list,true,false);
     }
 }

@@ -24,7 +24,7 @@ public class tradecenter_orderlist_test extends HsqInterfaceTest {
     @Test(description = "订单列表")
     public void tradecenter_orderlist_true() {
 
-        param = "token=" + SqlDetail.getParamValue("token");
+        param = "token=" + SqlDetail.getInstance().getParamValue("token");
         interfaces();
 
         // 如果只有一页，则不需要根据最后一页查询订单
@@ -39,7 +39,7 @@ public class tradecenter_orderlist_test extends HsqInterfaceTest {
     // "订单列表-查询最后一页的订单"
     public void tradecenter_orderlist_true_totalPage() {
 
-        param = "token=" + SqlDetail.getParamValue("token") + "&pageNum=" + HsqOpenapiConfig.totalPage;
+        param = "token=" + SqlDetail.getInstance().getParamValue("token") + "&pageNum=" + HsqOpenapiConfig.totalPage;
         interfaces();
         tradecenterOrderlistAssert();
 

@@ -14,9 +14,9 @@ public class ActivityAssistanceeventdetail extends HsqInterfaceTest {
     @Test(description = "创建助力",groups = "activityAssistanceeventdetail")
     public void activityAssistanceeventdetail() {
         setUrl("activity.assistanceeventdetail.uri");
-        param = "activityId=" + SqlDetail.getParamValue(2, "noPayActivityId") +
+        param = "activityId=" + SqlDetail.getInstance().getParamValue(2, "noPayActivityId") +
                 "&activityType=1" +
-                "&token=" + SqlDetail.getParamValue("token");
+                "&token=" + SqlDetail.getInstance().getParamValue("token");
         process(false, false);
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             generalAssertTest(false);
@@ -25,7 +25,7 @@ public class ActivityAssistanceeventdetail extends HsqInterfaceTest {
             //储存接口返回的eventId
             HsqOpenapiConfig.activityEventId = model.assistance_event.event_id;
             //更新助力免单数据，使其可以下单
-            SqlDetail.hsqUpdateAssistanceEvent();
+            SqlDetail.getInstance().hsqUpdateAssistanceEvent();
         }
     }
 

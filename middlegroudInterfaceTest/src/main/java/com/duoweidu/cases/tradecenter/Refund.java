@@ -31,10 +31,10 @@ public class Refund extends TradeCenterInterfaceTest {
     private void detailAssert() {
         detailAssertTest(TradecenterConfig.msfCreateRefundTradeNo, "trade_no", model.trade_no);
         detailAssertTest(TradecenterConfig.msfCreatePayTradeNo, "pay_trade_no", model.pay_trade_no);
-        detailAssertTest(SqlDetail.getParamValue(0, "createRefundAmount"), "refund_amount", String.valueOf(model.refund_amount));
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "createRefundAmount"), "refund_amount", String.valueOf(model.refund_amount));
         detailAssertTest("origin_data", model.origin_data.toString());
         detailAssertTest(TradecenterConfig.msfAccountNumber, "account_number", model.origin_data.account_number);
-        detailAssertTest(SqlDetail.getParamValue(0, "createRefundAmount"), "refund_amount", String.valueOf(model.origin_data.refund_amount));
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "createRefundAmount"), "refund_amount", String.valueOf(model.origin_data.refund_amount));
         detailAssertTest("", "reverse", model.reverse);
 
     }

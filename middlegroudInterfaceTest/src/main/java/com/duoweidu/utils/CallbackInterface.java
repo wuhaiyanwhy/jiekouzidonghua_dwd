@@ -109,7 +109,8 @@ public class CallbackInterface {
      * @param param
      * @return
      */
-    public static String postStringResult(String url, int path_id, String param) {
+    public static String
+    postStringResult(String url, int path_id, String param) {
         HttpPost post = new HttpPost(url);
         post.setHeader("Content-Type", "application/json");
         CallbackInterface.defaultHttpClient.setCookieStore(GeneralConfig.store);

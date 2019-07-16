@@ -22,7 +22,7 @@ public class product_coupleskudetail_test extends HsqInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue", description = "二人购商品详情")
     public void product_coupleskudetail_true() throws IOException {
-        param = "pinActivitiesId=" + SqlDetail.getParamValue("pinActivitiesId");
+        param = "pinActivitiesId=" + SqlDetail.getInstance().getParamValue("pinActivitiesId");
         interfaces();
         generalDetailAssert();
     }
@@ -30,7 +30,7 @@ public class product_coupleskudetail_test extends HsqInterfaceTest {
     @Test(dependsOnGroups = "loginTrue", description = "二人购商品详情（参加活动报名）")
     public void product_coupleskudetail_activitieTrue() throws IOException {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
-            param = "pinActivitiesId=" + SqlDetail.getParamValue(2, "activitiePinActivitiesId");
+            param = "pinActivitiesId=" + SqlDetail.getInstance().getParamValue(2, "activitiePinActivitiesId");
             interfaces();
             activitieDetailAssert();
         }else {
@@ -41,7 +41,7 @@ public class product_coupleskudetail_test extends HsqInterfaceTest {
     @Test(dependsOnGroups = "loginTrue", description = "二人购商品详情(多件优惠第二件减钱)")
     public void product_coupleskudetail_lose2() throws IOException {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
-            param = "pinActivitiesId=" + SqlDetail.getParamValue("losePinActivitiesId2");
+            param = "pinActivitiesId=" + SqlDetail.getInstance().getParamValue("losePinActivitiesId2");
             interfaces();
             loseDetailAssert2();
         }else {
@@ -52,7 +52,7 @@ public class product_coupleskudetail_test extends HsqInterfaceTest {
     @Test(dependsOnGroups = "loginTrue", description = "二人购商品详情(多件优惠二三四五付钱)")
     public void product_coupleskudetail_pay2345() throws IOException {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
-            param = "pinActivitiesId=" + SqlDetail.getParamValue("payPinActivitiesId2345");
+            param = "pinActivitiesId=" + SqlDetail.getInstance().getParamValue("payPinActivitiesId2345");
             interfaces();
             payDetailAssert2345();
         }else {

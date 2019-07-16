@@ -17,7 +17,7 @@ public class Comment extends IqgInterfaceTest {
         List<NameValuePair> list = new LinkedList<>();
         list.add(new BasicNameValuePair("content","好"));
         list.add(new BasicNameValuePair("item_level","5"));
-        list.add(new BasicNameValuePair("order_id", SqlDetail.getParamValue("orderId")));
+        list.add(new BasicNameValuePair("order_id", SqlDetail.getInstance().getParamValue("orderId")));
         list.add(new BasicNameValuePair("service_level","5"));
         process(list,false,false);
 

@@ -14,8 +14,8 @@ public class FybInterfaceTest extends InterfaceTest {
     protected void process(boolean isAssert,boolean isList) {
         System.out.println(url);
         //通用参数
-        String par = "v=" + SqlDetail.getParamValue(0, "v")
-                + "&token=" + SqlDetail.getParamValue("token");
+        String par = "v=" + SqlDetail.getInstance().getParamValue(0, "v")
+                + "&token=" + SqlDetail.getInstance().getParamValue("token");
         if (param != null) {
             this.param = par + "&" + param;
         }else {
@@ -32,8 +32,8 @@ public class FybInterfaceTest extends InterfaceTest {
     protected void process(List<NameValuePair> list, boolean isAssert, boolean isList) {
         System.out.println(url);
         //通用参数
-        list.add(new BasicNameValuePair("v", SqlDetail.getParamValue(0, "v")));
-        list.add(new BasicNameValuePair("token", SqlDetail.getParamValue("token")));
+        list.add(new BasicNameValuePair("v", SqlDetail.getInstance().getParamValue(0, "v")));
+        list.add(new BasicNameValuePair("token", SqlDetail.getInstance().getParamValue("token")));
         param = list.toString();
         result = CallbackInterface.postStringResult(url, pathId, list);
         if (isAssert == true) {

@@ -15,7 +15,7 @@ public class market_subscribelottery_test extends HsqInterfaceTest {
     public void market_subscribelottery_true() {
         setUrl("market.subscribelottery.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getParamValue("chouActivitiesId")));
+        list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue("chouActivitiesId")));
         list.add(new BasicNameValuePair("type", "1"));
         process(list,true,false);
     }

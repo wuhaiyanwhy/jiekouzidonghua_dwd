@@ -9,7 +9,7 @@ public class ArticleTogglefavorite extends MsfInterfaceTest {
     @Test(dependsOnGroups = "loginTrue",description = "切换收藏的接口")
     public void articleTogglefavorite() {
         setUrl("article.togglefavorite.uri");
-        param = "id=" + SqlDetail.getParamValue("article_id");
+        param = "id=" + SqlDetail.getInstance().getParamValue("article_id");
         process(true,false);
     }
 }

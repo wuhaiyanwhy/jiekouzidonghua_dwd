@@ -20,11 +20,11 @@ public class TradecenterAssistanceorderinit extends HsqInterfaceTest {
     public void tradecenterAssistanceorderinit() {
         setUrl("tradecenter.assistanceorderinit.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("activityId", SqlDetail.getParamValue(2, "noPayActivityId")));
+        list.add(new BasicNameValuePair("activityId", SqlDetail.getInstance().getParamValue(2, "noPayActivityId")));
         list.add(new BasicNameValuePair("activityEventId", String.valueOf(HsqOpenapiConfig.activityEventId)));
         list.add(new BasicNameValuePair("orderType", "7"));
         list.add(new BasicNameValuePair("amount", "1"));
-        list.add(new BasicNameValuePair("token", SqlDetail.getParamValue("token")));
+        list.add(new BasicNameValuePair("token", SqlDetail.getInstance().getParamValue("token")));
         process(list,false,false);
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             generalAssertTest(false);

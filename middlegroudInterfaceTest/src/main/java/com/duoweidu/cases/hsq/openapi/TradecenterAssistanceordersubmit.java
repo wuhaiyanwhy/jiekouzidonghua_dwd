@@ -20,9 +20,9 @@ public class TradecenterAssistanceordersubmit extends HsqInterfaceTest {
     public void tradecenterAssistanceordersubmit() {
         setUrl("tradecenter.assistanceordersubmit.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("token", SqlDetail.getParamValue("token")));
+        list.add(new BasicNameValuePair("token", SqlDetail.getInstance().getParamValue("token")));
         list.add(new BasicNameValuePair("confirmOrderSerialId", HsqOpenapiConfig.activityConfirmSid));
-        list.add(new BasicNameValuePair("activityId", SqlDetail.getParamValue(2, "activityId")));
+        list.add(new BasicNameValuePair("activityId", SqlDetail.getInstance().getParamValue(2, "activityId")));
         list.add(new BasicNameValuePair("tokactivityEventId", String.valueOf(HsqOpenapiConfig.activityEventId)));
         list.add(new BasicNameValuePair("orderType", "7"));
         list.add(new BasicNameValuePair("amount", "1"));

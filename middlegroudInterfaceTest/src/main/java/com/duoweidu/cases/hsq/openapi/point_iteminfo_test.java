@@ -15,7 +15,7 @@ public class point_iteminfo_test extends HsqInterfaceTest {
     @Test(description = "积分商品详情页列表")
     public void point_iteminfo_true() {
         setUrl("point.iteminfo.uri");
-        param = "pSkuId=" + SqlDetail.getParamValue("pSkuId");
+        param = "pSkuId=" + SqlDetail.getInstance().getParamValue("pSkuId");
         process(true, false);
 
         model = sparseJson(PointIteminfoData.class);

@@ -1,60 +1,36 @@
 package com.duoweidu.cases.hsq.opadmin;
 
-import com.duoweidu.config.generalAssert.GeneralAssert;
-import com.duoweidu.config.TestConfigOpadmin;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.util.EntityUtils;
+import com.duoweidu.cases.interfaces.HsqOpadminInterfaceTest;
+import com.duoweidu.config.generalAssert.GeneralAssertChannel;
+import com.duoweidu.utils.ConfigFileUrl;
+import org.apache.http.NameValuePair;
+import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
+import java.util.LinkedList;
+import java.util.List;
 
-
-public class withdraw_expenditure_list_test {
-
-    //用来储存返回结果
-    private String result;
+public class withdraw_expenditure_list_test extends HsqOpadminInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "商户支出明细列表")
-    public void withdraw_expenditure_list_true() throws IOException {
+    public void withdraw_expenditure_list_true() {
 
-        System.out.println(TestConfigOpadmin.withdraw_expenditure_list);
-        JSONObject param = new JSONObject();
-        param.put("createStartTime","2019-01-01");
-        param.put("createEndTime","2019-01-15");
-        param.put("updateStartTime","null");
-        param.put("updateEndTime","null");
-        param.put("endStatus","0");
-        param.put("type","0");
+        setUrl("withdraw.expenditure.list.uri");
+        List<NameValuePair> list = new LinkedList<>();
+        list.add(new BasicNameValuePair("createStartTime","2019-01-01"));
+        list.add(new BasicNameValuePair("createEndTime","2019-01-15"));
+        list.add(new BasicNameValuePair("updateStartTime","null"));
+        list.add(new BasicNameValuePair("updateEndTime","null"));
+        list.add(new BasicNameValuePair("endStatus","0"));
+        list.add(new BasicNameValuePair("type","0"));
 
-        String results = getJsonResult(param);
-
-        JSONObject jsonObject = new JSONObject(results);
+        process(list);
+        JSONObject jsonObject = new JSONObject(result);
         JSONArray listJson = (JSONArray) jsonObject.get("list");
-        GeneralAssert.listTest(listJson,TestConfigOpadmin.withdraw_expenditure_list,param.toString(),result);
-
-
-    }
-
-    private String getJsonResult(JSONObject  param) throws IOException {
-
-        HttpGet get = new HttpGet(TestConfigOpadmin.withdraw_expenditure_list);
-//        StringEntity entity = new StringEntity(param.toString(),"utf-8");
-//        post.setEntity(entity);
-        TestConfigOpadmin.defaultHttpClient.setCookieStore(TestConfigOpadmin.store);
-        HttpResponse response = TestConfigOpadmin.defaultHttpClient.execute(get);
-
-        GeneralAssert.codeTest(response,TestConfigOpadmin.withdraw_expenditure_list, param.toString());
-
-        result = EntityUtils.toString(response.getEntity(),"utf-8");
-        System.out.println("接口返回： " + result);
-
-        GeneralAssert.resultTest(TestConfigOpadmin.withdraw_expenditure_list,param.toString(),result);
-
-        return result;
-
+        GeneralAssertChannel.listAssert(ConfigFileUrl.getChannel1(), listJson, url, pathId, param.toString(), result);
 
     }
+
 }

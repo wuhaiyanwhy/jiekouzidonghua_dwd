@@ -21,9 +21,9 @@ public class CreateRefund extends TradeCenterInterfaceTest {
         List<NameValuePair> list = new LinkedList<>();
         list.add(new BasicNameValuePair("method", "trade.create_refund"));
         list.add(new BasicNameValuePair("tradeNo", TradecenterConfig.msfCreatePayTradeNo));
-        list.add(new BasicNameValuePair("refundAmount", SqlDetail.getParamValue(0, "createRefundAmount")));
-        list.add(new BasicNameValuePair("refundTypeCode", SqlDetail.getParamValue(0, "refundTypeCode")));
-        list.add(new BasicNameValuePair("refundDesc", SqlDetail.getParamValue(0, "refundDesc")));
+        list.add(new BasicNameValuePair("refundAmount", SqlDetail.getInstance().getParamValue(0, "createRefundAmount")));
+        list.add(new BasicNameValuePair("refundTypeCode", SqlDetail.getInstance().getParamValue(0, "refundTypeCode")));
+        list.add(new BasicNameValuePair("refundDesc", SqlDetail.getInstance().getParamValue(0, "refundDesc")));
         list.add(new BasicNameValuePair("orderNo", TradecenterConfig.msfCreateOrderOrderNo));
         process(list, true, false);
         if ("beta".equals(ConfigFileUrl.getEnv())) {

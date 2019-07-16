@@ -9,7 +9,7 @@ public class ProductHotkeysearch extends FybInterfaceTest {
     @Test(description = "商品搜索")
     public void productHotkeysearch() {
         setUrl("product.hotkeysearch.uri");
-        param = "q=" + SqlDetail.getParamValue(0, "q")  +
+        param = "q=" + SqlDetail.getInstance().getParamValue(0, "q")  +
                 "&sort=asc&sortType=id&needPagination=1&pageNum=1&pageLimit=20";
         process(true,true);
     }

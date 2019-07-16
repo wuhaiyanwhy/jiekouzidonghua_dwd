@@ -15,7 +15,7 @@ public class tradecenter_pointordersubmit_test extends HsqInterfaceTest {
     public void tradecenter_pointordersubmit_true() {
         setUrl("tradecenter.pointordersubmit.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("skusInfo","[{\"pSkuId\":" + SqlDetail.getParamValue("pSkuId") + ",\"amount\":1}]"));
+        list.add(new BasicNameValuePair("skusInfo","[{\"pSkuId\":" + SqlDetail.getInstance().getParamValue("pSkuId") + ",\"amount\":1}]"));
         list.add(new BasicNameValuePair("addressId","596"));
         process(list,false,false);
     }

@@ -9,7 +9,7 @@ public class OrderTypeAll extends IqgInterfaceTest {
     @Test(dependsOnGroups = "loginTrue",description = "全部订单")
     public void order_type_all_true() {
         setUrl("order.type.all.uri");
-        param = "last_id=0&zone_id=" + SqlDetail.getParamValue(0, "zone_id");
+        param = "last_id=0&zone_id=" + SqlDetail.getInstance().getParamValue(0, "zone_id");
         process(false,false);
         generalAssertTest(false, true);
     }

@@ -9,7 +9,7 @@ public class ArticleInitdata extends MsfInterfaceTest {
     @Test(dependsOnGroups = "loginTrue",description = "发布页初始化")
     public void articleInitdata() {
         setUrl("article.initdata.uri");
-        param = "order_id=" + SqlDetail.getParamValue("order_id");
+        param = "order_id=" + SqlDetail.getInstance().getParamValue("order_id");
         process(true,false);
     }
 }

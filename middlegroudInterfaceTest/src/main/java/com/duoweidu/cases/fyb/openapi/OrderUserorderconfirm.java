@@ -15,7 +15,7 @@ public class OrderUserorderconfirm extends FybInterfaceTest {
     public void orderUserorderconfirm() {
         setUrl("order.userorderconfirm.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("orderId", SqlDetail.getParamValue("orderId")));
+        list.add(new BasicNameValuePair("orderId", SqlDetail.getInstance().getParamValue("orderId")));
         process(list,false,false);
     }
 }

@@ -19,8 +19,8 @@ public class ActivitySubscribe extends HsqInterfaceTest {
     public void activitySubscribe() {
         setUrl("activity.subscribe.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("token", SqlDetail.getParamValue("token")));
-        list.add(new BasicNameValuePair("activityId", SqlDetail.getParamValue(2, "subscribeActivityId")));
+        list.add(new BasicNameValuePair("token", SqlDetail.getInstance().getParamValue("token")));
+        list.add(new BasicNameValuePair("activityId", SqlDetail.getInstance().getParamValue(2, "subscribeActivityId")));
         list.add(new BasicNameValuePair("subscribe", "1"));
         list.add(new BasicNameValuePair("activityType", "1"));
 
@@ -37,8 +37,8 @@ public class ActivitySubscribe extends HsqInterfaceTest {
     public void activitySubscribeCancel() {
         setUrl("activity.subscribe.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("token", SqlDetail.getParamValue("token")));
-        list.add(new BasicNameValuePair("activityId", SqlDetail.getParamValue(2, "subscribeActivityId")));
+        list.add(new BasicNameValuePair("token", SqlDetail.getInstance().getParamValue("token")));
+        list.add(new BasicNameValuePair("activityId", SqlDetail.getInstance().getParamValue(2, "subscribeActivityId")));
         list.add(new BasicNameValuePair("subscribe", "2"));
         list.add(new BasicNameValuePair("activityType", "1"));
 

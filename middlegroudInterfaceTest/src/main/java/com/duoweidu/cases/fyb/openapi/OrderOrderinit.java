@@ -16,8 +16,8 @@ public class OrderOrderinit extends FybInterfaceTest {
     public void orderOrderinit() {
         setUrl("order.orderinit.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("skusInfo","[{\"skuId\":"+ SqlDetail.getParamValue("skuId") +
-                ",\"amount\":1,\"price\":" + SqlDetail.getParamValue("price") + "}]"));
+        list.add(new BasicNameValuePair("skusInfo","[{\"skuId\":"+ SqlDetail.getInstance().getParamValue("skuId") +
+                ",\"amount\":1,\"price\":" + SqlDetail.getInstance().getParamValue("price") + "}]"));
         process(list,true,false);
         FybConfig.orderinitResult = result;
 

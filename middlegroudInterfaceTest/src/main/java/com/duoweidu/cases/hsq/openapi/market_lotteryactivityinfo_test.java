@@ -13,7 +13,7 @@ public class market_lotteryactivityinfo_test extends HsqInterfaceTest {
     @Test(dependsOnGroups = "loginTrue",description = "抽奖团活动信息")
     public void market_lotteryactivityinfo_true() {
         setUrl("market.lotteryactivityinfo.uri");
-        param = "pinActivitiesId=" + SqlDetail.getParamValue("chouActivitiesId");
+        param = "pinActivitiesId=" + SqlDetail.getInstance().getParamValue("chouActivitiesId");
         process(true,false);
         model = sparseJson(MarketLotteryactivityinfoData.class);
         detailAssert();
@@ -24,7 +24,7 @@ public class market_lotteryactivityinfo_test extends HsqInterfaceTest {
         detailAssertTest(1, "canBuy", model.canBuy);
         detailAssertTest(0, "canSub", model.canSub);
         detailAssertTest(0, "canUnSub", model.canUnSub);
-        detailAssertTest(Integer.parseInt(SqlDetail.getParamValue("chouActivitiesId")), "pinActivitiesId", model.pinActivitiesId);
+        detailAssertTest(Integer.parseInt(SqlDetail.getInstance().getParamValue("chouActivitiesId")), "pinActivitiesId", model.pinActivitiesId);
         detailAssertTest(2, "type", model.type);
         detailAssertTest(1, "remindStatus", model.remindStatus);
         detailAssertTest(0, "hasBeenLottery", model.hasBeenLottery);

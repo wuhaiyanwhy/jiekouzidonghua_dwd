@@ -10,7 +10,7 @@ public class BargainToday extends IqgInterfaceTest {
     @Test(dependsOnGroups = "itemBargain",description = "今日关注")
     public void bargainTodayTrue() {
         url = ConfigFileUrl.getUrlByKey("bargain.today.uri");
-        pathId = SqlDetail.getPathId("bargain.today.uri");
+        pathId = SqlDetail.getInstance().getPathId("bargain.today.uri");
         process(false,false);
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             generalAssertTest(false, true);

@@ -39,7 +39,7 @@ public class InterfaceTest {
     //获取url和pathId
     protected void setUrl(String key) {
         url = ConfigFileUrl.getUrlByKey(key);
-        pathId = SqlDetail.getPathId(key);
+        pathId = SqlDetail.getInstance().getPathId(key);
     }
 
     //get请求，不要断言

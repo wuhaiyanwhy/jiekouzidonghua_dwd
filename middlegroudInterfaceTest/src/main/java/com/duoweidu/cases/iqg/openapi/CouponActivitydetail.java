@@ -10,8 +10,8 @@ public class CouponActivitydetail extends IqgInterfaceTest {
     @Test(dependsOnGroups = "loginTrue",description = "一元券详情")
     public void coupon_activitydetail_true() {
         setUrl("coupon.activitydetail.uri");
-        param = "branchId=" + SqlDetail.getParamValue("branchId") +
-                "&id=" + SqlDetail.getParamValue(2, "oneCouponID");
+        param = "branchId=" + SqlDetail.getInstance().getParamValue("branchId") +
+                "&id=" + SqlDetail.getInstance().getParamValue(2, "oneCouponID");
         process(false,false);
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             generalAssertTest(false);

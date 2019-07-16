@@ -15,7 +15,7 @@ public class UserUpdateaddress extends FybInterfaceTest {
     public void userUpdateaddress() {
         setUrl("user.updateaddress.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("addressId", SqlDetail.getParamValue("addressId")));
+        list.add(new BasicNameValuePair("addressId", SqlDetail.getInstance().getParamValue("addressId")));
         list.add(new BasicNameValuePair("city","上海市"));
         list.add(new BasicNameValuePair("cityId","857"));
         list.add(new BasicNameValuePair("contacter","测试"));

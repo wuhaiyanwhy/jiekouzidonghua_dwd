@@ -18,7 +18,7 @@ public class user_likeproductfromcart_test extends HsqInterfaceTest {
         BasicNameValuePair param1 = new BasicNameValuePair("skusInfo",
                 "[\n" +
                         "  {\n" +
-                        "    \"skuId\" : " + SqlDetail.getParamValue("skuId") + ",\n" +
+                        "    \"skuId\" : " + SqlDetail.getInstance().getParamValue("skuId") + ",\n" +
                         "    \"amount\" : \"1\"\n" +
                         "  }\n" +
                         "]");

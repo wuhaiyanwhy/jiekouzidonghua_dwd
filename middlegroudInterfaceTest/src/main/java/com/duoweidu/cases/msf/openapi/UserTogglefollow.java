@@ -15,7 +15,7 @@ public class UserTogglefollow extends MsfInterfaceTest {
     public void userTogglefollow() {
         setUrl("user.togglefollow.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("follow_user_id", SqlDetail.getParamValue("follow_user_id")));
+        list.add(new BasicNameValuePair("follow_user_id", SqlDetail.getInstance().getParamValue("follow_user_id")));
         process(list,true,false);
     }
 

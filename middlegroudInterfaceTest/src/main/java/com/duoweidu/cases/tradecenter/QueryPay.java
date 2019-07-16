@@ -31,16 +31,16 @@ public class QueryPay extends TradeCenterInterfaceTest {
     private void detailAssert() {
         detailAssertTest(false, "has_refund", model.has_refund);
         detailAssertTest(3, "status", model.status);
-        detailAssertTest(SqlDetail.getParamValue(0, "totalAmount"), "total_amount", String.valueOf(model.total_amount));
-        detailAssertTest(SqlDetail.getParamValue(0, "payTypeCode"), "pay_type_code", model.pay_type_code);
-        detailAssertTest(SqlDetail.getParamValue(0, "payDesc"), "pay_desc", model.pay_desc);
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "totalAmount"), "total_amount", String.valueOf(model.total_amount));
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "payTypeCode"), "pay_type_code", model.pay_type_code);
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "payDesc"), "pay_desc", model.pay_desc);
         detailAssertTest("origin_data", model.origin_data.toString());
         detailAssertTest(TradecenterConfig.msfCreatePayTradeNo, "origin_data.trade_no", model.origin_data.trade_no);
         detailAssertTest(TradecenterConfig.msfCreateOrderOrderNo, "origin_data.order_no", model.origin_data.order_no);
-        detailAssertTest(SqlDetail.getParamValue(0, "totalAmount"), "origin_data.pay_amount", String.valueOf(model.origin_data.pay_amount));
-        detailAssertTest(SqlDetail.getParamValue(0, "msfCurrency"), "origin_data.currency", model.origin_data.currency);
-        detailAssertTest(SqlDetail.getParamValue(0, "channelName"), "origin_data.channel_name", model.origin_data.channel_name);
-        detailAssertTest(SqlDetail.getParamValue(0, "channel"), "origin_data.channel_code", model.origin_data.channel_code);
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "totalAmount"), "origin_data.pay_amount", String.valueOf(model.origin_data.pay_amount));
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "msfCurrency"), "origin_data.currency", model.origin_data.currency);
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "channelName"), "origin_data.channel_name", model.origin_data.channel_name);
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "channel"), "origin_data.channel_code", model.origin_data.channel_code);
         detailAssertTest(TradecenterConfig.msfAccountNumber, "origin_data.account_number", model.origin_data.account_number);
         detailAssertTest(3, "origin_data.pay_status", model.origin_data.pay_status);
         detailAssertTest(1, "origin_data.pay_finished", model.origin_data.pay_finished);

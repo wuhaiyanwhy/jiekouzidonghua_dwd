@@ -9,7 +9,7 @@ public class order_coupleeventjoin_test extends HsqInterfaceTest {
     @Test(dependsOnGroups = "loginTrue",description = "邀请好友参团")
     public void order_coupleeventjoin_true() {
         setUrl("order.coupleeventjoin.uri");
-        param = "orderId="+ SqlDetail.getParamValue("orderId");
+        param = "orderId="+ SqlDetail.getInstance().getParamValue("orderId");
         process(true,false);
     }
 }

@@ -20,11 +20,11 @@ public class CreateAdjust extends TradeCenterInterfaceTest {
     public void msfCreateAdjust() {
         List<NameValuePair> list = new LinkedList<>();
         list.add(new BasicNameValuePair("method", "trade.create_adjust"));
-        list.add(new BasicNameValuePair("adjustAmount", SqlDetail.getParamValue(0, "adjustAmount")));
+        list.add(new BasicNameValuePair("adjustAmount", SqlDetail.getInstance().getParamValue(0, "adjustAmount")));
         list.add(new BasicNameValuePair("accountNumber", TradecenterConfig.msfAccountNumber));
-        list.add(new BasicNameValuePair("currency", SqlDetail.getParamValue(0, "msfCurrency")));
-        list.add(new BasicNameValuePair("adjustTypeCode", SqlDetail.getParamValue(0, "adjustTypeCode")));
-        list.add(new BasicNameValuePair("adjustDesc", SqlDetail.getParamValue(0, "adjustDesc")));
+        list.add(new BasicNameValuePair("currency", SqlDetail.getInstance().getParamValue(0, "msfCurrency")));
+        list.add(new BasicNameValuePair("adjustTypeCode", SqlDetail.getInstance().getParamValue(0, "adjustTypeCode")));
+        list.add(new BasicNameValuePair("adjustDesc", SqlDetail.getInstance().getParamValue(0, "adjustDesc")));
         process(list, true, false);
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             model = sparseJson(TradeNoData.class);

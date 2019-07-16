@@ -9,8 +9,8 @@ public class CalcelOrder extends IqgInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "取消订单")
     public void calcelOrderTrue() {
-        url = ConfigFileUrl.getUrlByKey("calcel.order.uri") + SqlDetail.getParamValue("orderId");
-        pathId = SqlDetail.getPathId("calcel.order.uri");
+        url = ConfigFileUrl.getUrlByKey("calcel.order.uri") + SqlDetail.getInstance().getParamValue("orderId");
+        pathId = SqlDetail.getInstance().getPathId("calcel.order.uri");
         processDelete(false,false);
         generalAssertStatus();
     }

@@ -18,12 +18,12 @@ public class order_checkpromotion_test extends HsqInterfaceTest {
     public void order_checkpromotion_true() {
         setUrl("order.checkpromotion.uri");
         try {
-            param = "pinActivitiesId=" + SqlDetail.getParamValue("pinActivitiesId") +
+            param = "pinActivitiesId=" + SqlDetail.getInstance().getParamValue("pinActivitiesId") +
                     "&skusInfo=" + URLEncoder.encode("[\n" +
                     "  {\n" +
-                    "    \"skuId\" : \"" + SqlDetail.getParamValue("skuId") + "\",\n" +
+                    "    \"skuId\" : \"" + SqlDetail.getInstance().getParamValue("skuId") + "\",\n" +
                     "    \"amount\" : \"1\",\n" +
-                    "    \"price\" : \"" + SqlDetail.getParamValue("price") + "\"\n" +
+                    "    \"price\" : \"" + SqlDetail.getInstance().getParamValue("price") + "\"\n" +
                     "  }\n" +
                     "]", "GBK") +
                     "&orderType=2" +

@@ -15,7 +15,7 @@ public class CoinShare extends IqgInterfaceTest {
     public void coin_share_true() {
         setUrl("coin.share.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("id", SqlDetail.getParamValue(2, "activityId")));
+        list.add(new BasicNameValuePair("id", SqlDetail.getInstance().getParamValue(2, "activityId")));
         list.add(new BasicNameValuePair("shareType","bargain"));
         process(list,false,false);
     }
