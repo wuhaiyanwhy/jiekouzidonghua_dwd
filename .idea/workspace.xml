@@ -450,7 +450,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG./Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml">
+  <component name="RunManager" selected="TestNG./Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/iqg.xml">
     <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/fyb.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="middlegroudInterfaceTest" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/fyb.xml" />
@@ -510,11 +510,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG./Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/iqg.xml" />
         <item itemvalue="TestNG./Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" />
         <item itemvalue="TestNG./Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" />
         <item itemvalue="TestNG./Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/fyb.xml" />
         <item itemvalue="TestNG./Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/msf.xml" />
-        <item itemvalue="TestNG./Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/iqg.xml" />
       </list>
     </recent_temporary>
   </component>
