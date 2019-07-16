@@ -5,7 +5,6 @@ import com.duoweidu.config.sql.SqlGeneral;
 import com.duoweidu.utils.ConfigFileUrl;
 import org.apache.http.NameValuePair;
 import org.json.JSONObject;
-import org.testng.annotations.Test;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -17,7 +16,6 @@ import static com.duoweidu.utils.JenkinsCallbackInterface.postStringResult;
  */
 public class JenkinsBuild {
 
-    @Test(description = "获取最后一次构建信息")
     public static void jenkinsLastBuild() {
         String uri = "hsq.prod.lastBuild.uri";
         if (ConfigFileUrl.getChannel() == 2){
