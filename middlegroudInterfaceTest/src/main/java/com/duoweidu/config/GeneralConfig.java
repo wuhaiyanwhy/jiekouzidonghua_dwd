@@ -18,5 +18,7 @@ public class GeneralConfig {
     public static CookieStore store;
     //储存response
     public static HttpResponse response;
+    //储存最后一次构建的url
+    public static String url;
 
 }
