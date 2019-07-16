@@ -18,7 +18,7 @@ public class TradeCenterInterfaceTest extends InterfaceTest {
 
     //get请求
     @Override
-    protected void process(boolean isAssert,boolean isList) {
+    protected void process() {
         System.out.println(url);
         //通用参数
         String par = "version=" + SqlDetail.getInstance().getParamValue(0, "version")
@@ -31,14 +31,11 @@ public class TradeCenterInterfaceTest extends InterfaceTest {
             this.param = par;
         }
         result = CallbackInterface.getStringResult(url, pathId, this.param);
-        if (isAssert == true) {
-            generalAssertTest(isList);
-        }
     }
 
     //post请求
     @Override
-    protected void process(List<NameValuePair> list, boolean isAssert, boolean isList) {
+    protected void process(List<NameValuePair> list) {
         System.out.println(url);
         //通用参数
         list.add(new BasicNameValuePair("version", SqlDetail.getInstance().getParamValue(0, "version")));
@@ -47,8 +44,5 @@ public class TradeCenterInterfaceTest extends InterfaceTest {
         list.add(new BasicNameValuePair("appId", SqlDetail.getInstance().getParamValue(0, "msfAppId")));
         param = list.toString();
         result = CallbackInterface.postStringResult(url, pathId, list);
-        if (isAssert == true) {
-            generalAssertTest(isList);
-        }
     }
 }

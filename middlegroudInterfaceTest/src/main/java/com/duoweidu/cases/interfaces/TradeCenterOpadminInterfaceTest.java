@@ -18,7 +18,7 @@ public class TradeCenterOpadminInterfaceTest extends InterfaceTest {
 
     //get请求
     @Override
-    protected void process(boolean isAssert,boolean isList) {
+    protected void process() {
         System.out.println(url);
         //通用参数
         String par = "token=" + SqlDetail.getInstance().getParamValue(0, "opadminToken")
@@ -29,22 +29,16 @@ public class TradeCenterOpadminInterfaceTest extends InterfaceTest {
             this.param = par;
         }
         result = CallbackInterface.getStringResult(url, pathId, this.param);
-        if (isAssert == true) {
-            generalAssertTest(isList);
-        }
     }
 
     //post请求
     @Override
-    protected void process(List<NameValuePair> list, boolean isAssert, boolean isList) {
+    protected void process(List<NameValuePair> list) {
         System.out.println(url);
         //通用参数
         list.add(new BasicNameValuePair("token", SqlDetail.getInstance().getParamValue(0, "opadminToken")));
         list.add(new BasicNameValuePair("accountNumber", SqlDetail.getInstance().getParamValue(0, "accountNumber")));
         param = list.toString();
         result = CallbackInterface.postStringResult(url, pathId, list);
-        if (isAssert == true) {
-            generalAssertTest(isList);
-        }
     }
 }
