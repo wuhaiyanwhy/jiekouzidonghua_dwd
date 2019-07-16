@@ -49,7 +49,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jul 16, 2019 03:54:09 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jul 16, 2019 05:25:48 PM</span>
 				</a>
 			</li>
 			<li>
@@ -76,6 +76,7 @@
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
 						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -88,19 +89,13 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>中台接口测试</a></li>
-					<li><a href='#'>交易中心</a></li>
-					<li><a href='#'>msfCreate</a></li>
-					<li><a href='#'>iqgCreate</a></li>
-					<li><a href='#'>iqgActivate</a></li>
-					<li><a href='#'>createRecharge</a></li>
-					<li><a href='#'>msfCreateAdjust</a></li>
-					<li><a href='#'>msfCreateOrder</a></li>
-					<li><a href='#'>iqgFreeze</a></li>
-					<li><a href='#'>msfCreatePay</a></li>
-					<li><a href='#'>msfCreateRefund</a></li>
-					<li><a href='#'>msfRefund</a></li>
-					<li><a href='#'>交易中心管理平台</a></li>
+					<li><a href='#'>觅食蜂接口测试</a></li>
+					<li><a href='#'>觅食蜂接口测试用例(openapi)</a></li>
+					<li><a href='#'>createArticle</a></li>
+					<li><a href='#'>commentArticle</a></li>
+					<li><a href='#'>loginTrue</a></li>
+					<li><a href='#'>orderPaymentapply</a></li>
+					<li><a href='#'>觅食蜂接口测试用例(退出登录)</a></li>
 					<li><a href='#'>消息推送</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
@@ -149,10 +144,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='93.103%'><span class='strong'>27</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='95.082%'><span class='strong'>58</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='6.897%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='1.639%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='3.279%'>2</span> others
 				</div>
 			</div>
 		</div>
@@ -164,10 +159,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='92.857%'><span class='strong'>26</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='95%'><span class='strong'>57</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='7.143%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='1.667%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='3.333%'>2</span> others
 				</div>
 			</div>
 		</div>
@@ -182,39 +177,39 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>中台接口测试 : 交易中心</span>
-						<span class='test-time'>Jul 16, 2019 03:54:09 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>觅食蜂接口测试 : 觅食蜂接口测试用例(openapi)</span>
+						<span class='test-time'>Jul 16, 2019 05:25:48 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 16, 2019 03:54:09 PM</span>
-	<span class='label end-time'>Jul 16, 2019 03:54:13 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+855ms</span>
+	<span class='label start-time'>Jul 16, 2019 05:25:48 PM</span>
+	<span class='label end-time'>Jul 16, 2019 05:25:59 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 10s+695ms</span>
 </div>
-	<div class='test-desc'>Pass: 26 ; Fail: 0 ; Skip: 0 ; </div>
+	<div class='test-desc'>Pass: 56 ; Fail: 1 ; Skip: 2 ; </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>中台接口测试</span>
-				<span class='category label white-text'>交易中心</span>
+				<span class='category label white-text'>觅食蜂接口测试</span>
+				<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
 			</div>
 	</div>
 	<ul class='collapsible node-list' data-collapsible='accordion'>
 		
-				<li class='node level-1 leaf pass' status='pass' test-id='2'>
+				<li class='node level-1 leaf fail' status='fail' test-id='2'>
 					<div class='collapsible-header'>
-						<div class='node-name'>msfCreate</div>						
-						<span class='node-time'>Jul 16, 2019 03:54:09 PM</span>
-						<span class='node-duration'>0h 0m 4s+332ms</span>
-						<span class='test-status right pass'>pass</span>
+						<div class='node-name'>articleCreate</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:52 PM</span>
+						<span class='node-duration'>0h 0m 6s+753ms</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
-											<span class='category label white-text'>中台接口测试</span>
-											<span class='category label white-text'>交易中心</span>
-											<span class='category label white-text'>msfCreate</span>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+											<span class='category label white-text'>createArticle</span>
 									</div>
 								<div class='node-steps'>
 									<table class='bordered table-results'>
@@ -226,28 +221,65 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:54:14 PM</td>
-													<td class='step-details'>Test passed</td>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'><pre>java.lang.AssertionError: 
+返回的errno不为0/errmsg不为success;
+返回的errno/errmsg:91210014/每分钟只能发布一篇文章，请稍后再试
+请求的url:https://m.betaapi.mishifeng.com/open/article/create
+参数：[title=标题测试的, content=美食体验的内容，居然还要13个字真的是，搞定, pic_list=[{"height":399,"width":360,"pic":"https:\/\/img.mishifeng.com\/FjsIIq6rvZanTL8YO2k-MtCLIMkB"},{"pic":"https:\/\/img.mishifeng.com\/FnNanPN6r2QM5ye0-y_l_8gcYZsd","height":909,"width":880}], stat_id=2EE6C938-EDE8-4E20-92C0-630A7A1F7066, timestamp=1562724496, os_version=12.2, device=iPhone, star=50, version=1.7.0, token=4a77989d91d6a4343661898bbb8a11a8, lng=121.4306271701389, lat=31.16045817057292, zone_id=21, platform=ios]
+CX-Request-ID: 12b6f8e3a65e048c0f38f3833bd03115
+接口返回：{"errno":91210014,"errmsg":"每分钟只能发布一篇文章，请稍后再试","data":{},"timestamp":1563269153,"serverlogid":0}
+《-------------------------分割线-------------------------》
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.duoweidu.config.generalAssert.GeneralAssertChannel.errnoAssert(GeneralAssertChannel.java:145)
+	at com.duoweidu.config.generalAssert.GeneralAssert.errnoAssert(GeneralAssert.java:46)
+	at com.duoweidu.cases.interfaces.InterfaceTest.generalAssertTest(InterfaceTest.java:160)
+	at com.duoweidu.cases.msf.openapi.ArticleCreate.articleCreate(ArticleCreate.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='3'>
+				<li class='node level-1 leaf skip' status='skip' test-id='3'>
 					<div class='collapsible-header'>
-						<div class='node-name'>iqgCreate</div>						
-						<span class='node-time'>Jul 16, 2019 03:54:11 PM</span>
-						<span class='node-duration'>0h 0m 2s+926ms</span>
-						<span class='test-status right pass'>pass</span>
+						<div class='node-name'>articleCreatecomment</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:58 PM</span>
+						<span class='node-duration'>0h 0m 1s+534ms</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
-											<span class='category label white-text'>中台接口测试</span>
-											<span class='category label white-text'>交易中心</span>
-											<span class='category label white-text'>iqgCreate</span>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+											<span class='category label white-text'>commentArticle</span>
 									</div>
 								<div class='node-steps'>
 									<table class='bordered table-results'>
@@ -259,28 +291,45 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:54:14 PM</td>
-													<td class='step-details'>Test passed</td>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'><pre>java.lang.Throwable: Method ArticleCreatecomment.articleCreatecomment()[pri:0, instance:com.duoweidu.cases.msf.openapi.ArticleCreatecomment@5d624da6] depends on not successfully finished methods in group "createArticle"
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='4'>
+				<li class='node level-1 leaf skip' status='skip' test-id='4'>
 					<div class='collapsible-header'>
-						<div class='node-name'>iqgActivate</div>						
-						<span class='node-time'>Jul 16, 2019 03:54:11 PM</span>
-						<span class='node-duration'>0h 0m 2s+786ms</span>
-						<span class='test-status right pass'>pass</span>
+						<div class='node-name'>userArticledelete</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:59 PM</span>
+						<span class='node-duration'>0h 0m 0s+498ms</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
-											<span class='category label white-text'>中台接口测试</span>
-											<span class='category label white-text'>交易中心</span>
-											<span class='category label white-text'>iqgActivate</span>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
 									</div>
 								<div class='node-steps'>
 									<table class='bordered table-results'>
@@ -292,10 +341,28 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:54:14 PM</td>
-													<td class='step-details'>Test passed</td>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'><pre>java.lang.Throwable: Method UserArticledelete.userArticledelete()[pri:0, instance:com.duoweidu.cases.msf.openapi.UserArticledelete@614c5515] depends on not successfully finished methods in group "commentArticle"
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></td>
 												</tr>
 										</tbody>
 									</table>
@@ -304,15 +371,16 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='5'>
 					<div class='collapsible-header'>
-						<div class='node-name'>msfQuery</div>						
-						<span class='node-time'>Jul 16, 2019 03:54:11 PM</span>
-						<span class='node-duration'>0h 0m 2s+691ms</span>
+						<div class='node-name'>userLogin</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:48 PM</span>
+						<span class='node-duration'>0h 0m 11s+146ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
-											<span class='category label white-text'>中台接口测试</span>
-											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+											<span class='category label white-text'>loginTrue</span>
 									</div>
 								<div class='node-steps'>
 									<table class='bordered table-results'>
@@ -326,7 +394,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:54:14 PM</td>
+													<td class='timestamp'>5:25:59 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -336,15 +404,15 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='6'>
 					<div class='collapsible-header'>
-						<div class='node-name'>msfQueryAll</div>						
-						<span class='node-time'>Jul 16, 2019 03:54:11 PM</span>
-						<span class='node-duration'>0h 0m 2s+624ms</span>
+						<div class='node-name'>commonAppconfig</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:51 PM</span>
+						<span class='node-duration'>0h 0m 8s+490ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
-											<span class='category label white-text'>中台接口测试</span>
-											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
 									</div>
 								<div class='node-steps'>
 									<table class='bordered table-results'>
@@ -358,7 +426,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:54:14 PM</td>
+													<td class='timestamp'>5:25:59 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -368,15 +436,15 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='7'>
 					<div class='collapsible-header'>
-						<div class='node-name'>msfHistory</div>						
-						<span class='node-time'>Jul 16, 2019 03:54:11 PM</span>
-						<span class='node-duration'>0h 0m 2s+558ms</span>
+						<div class='node-name'>homeIndex</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:51 PM</span>
+						<span class='node-duration'>0h 0m 8s+358ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
-											<span class='category label white-text'>中台接口测试</span>
-											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
 									</div>
 								<div class='node-steps'>
 									<table class='bordered table-results'>
@@ -390,7 +458,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:54:14 PM</td>
+													<td class='timestamp'>5:25:59 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -400,15 +468,15 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='8'>
 					<div class='collapsible-header'>
-						<div class='node-name'>msfBill</div>						
-						<span class='node-time'>Jul 16, 2019 03:54:11 PM</span>
-						<span class='node-duration'>0h 0m 2s+417ms</span>
+						<div class='node-name'>ActivityList</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:51 PM</span>
+						<span class='node-duration'>0h 0m 8s+114ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
-											<span class='category label white-text'>中台接口测试</span>
-											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
 									</div>
 								<div class='node-steps'>
 									<table class='bordered table-results'>
@@ -422,7 +490,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:54:14 PM</td>
+													<td class='timestamp'>5:25:59 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -432,16 +500,15 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='9'>
 					<div class='collapsible-header'>
-						<div class='node-name'>msfCreateRecharge</div>						
-						<span class='node-time'>Jul 16, 2019 03:54:11 PM</span>
-						<span class='node-duration'>0h 0m 2s+303ms</span>
+						<div class='node-name'>activityDetail</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:51 PM</span>
+						<span class='node-duration'>0h 0m 7s+919ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
-											<span class='category label white-text'>中台接口测试</span>
-											<span class='category label white-text'>交易中心</span>
-											<span class='category label white-text'>createRecharge</span>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
 									</div>
 								<div class='node-steps'>
 									<table class='bordered table-results'>
@@ -455,7 +522,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:54:14 PM</td>
+													<td class='timestamp'>5:25:59 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -465,16 +532,15 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='10'>
 					<div class='collapsible-header'>
-						<div class='node-name'>msfCreateAdjust</div>						
-						<span class='node-time'>Jul 16, 2019 03:54:12 PM</span>
-						<span class='node-duration'>0h 0m 2s+183ms</span>
+						<div class='node-name'>commonLocate</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:51 PM</span>
+						<span class='node-duration'>0h 0m 7s+746ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
-											<span class='category label white-text'>中台接口测试</span>
-											<span class='category label white-text'>交易中心</span>
-											<span class='category label white-text'>msfCreateAdjust</span>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
 									</div>
 								<div class='node-steps'>
 									<table class='bordered table-results'>
@@ -488,7 +554,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:54:14 PM</td>
+													<td class='timestamp'>5:25:59 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -498,15 +564,15 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='11'>
 					<div class='collapsible-header'>
-						<div class='node-name'>msfInfoTypeCode</div>						
-						<span class='node-time'>Jul 16, 2019 03:54:12 PM</span>
-						<span class='node-duration'>0h 0m 2s+74ms</span>
+						<div class='node-name'>articleArticlelist</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:51 PM</span>
+						<span class='node-duration'>0h 0m 7s+661ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
-											<span class='category label white-text'>中台接口测试</span>
-											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
 									</div>
 								<div class='node-steps'>
 									<table class='bordered table-results'>
@@ -520,7 +586,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:54:14 PM</td>
+													<td class='timestamp'>5:25:59 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -530,16 +596,15 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='12'>
 					<div class='collapsible-header'>
-						<div class='node-name'>msfCreateOrder</div>						
-						<span class='node-time'>Jul 16, 2019 03:54:12 PM</span>
-						<span class='node-duration'>0h 0m 1s+977ms</span>
+						<div class='node-name'>articleDetail</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:52 PM</span>
+						<span class='node-duration'>0h 0m 7s+492ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
-											<span class='category label white-text'>中台接口测试</span>
-											<span class='category label white-text'>交易中心</span>
-											<span class='category label white-text'>msfCreateOrder</span>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
 									</div>
 								<div class='node-steps'>
 									<table class='bordered table-results'>
@@ -553,7 +618,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:54:14 PM</td>
+													<td class='timestamp'>5:25:59 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -563,15 +628,15 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='13'>
 					<div class='collapsible-header'>
-						<div class='node-name'>msfCreateSubOrder</div>						
-						<span class='node-time'>Jul 16, 2019 03:54:12 PM</span>
-						<span class='node-duration'>0h 0m 1s+872ms</span>
+						<div class='node-name'>articleInterestlist</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:52 PM</span>
+						<span class='node-duration'>0h 0m 7s+346ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
-											<span class='category label white-text'>中台接口测试</span>
-											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
 									</div>
 								<div class='node-steps'>
 									<table class='bordered table-results'>
@@ -585,7 +650,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:54:14 PM</td>
+													<td class='timestamp'>5:25:59 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -595,16 +660,15 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='14'>
 					<div class='collapsible-header'>
-						<div class='node-name'>iqgFreeze</div>						
-						<span class='node-time'>Jul 16, 2019 03:54:12 PM</span>
-						<span class='node-duration'>0h 0m 1s+775ms</span>
+						<div class='node-name'>userTogglefollow</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:52 PM</span>
+						<span class='node-duration'>0h 0m 7s+252ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
-											<span class='category label white-text'>中台接口测试</span>
-											<span class='category label white-text'>交易中心</span>
-											<span class='category label white-text'>iqgFreeze</span>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
 									</div>
 								<div class='node-steps'>
 									<table class='bordered table-results'>
@@ -618,7 +682,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:54:14 PM</td>
+													<td class='timestamp'>5:25:59 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -628,15 +692,15 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='15'>
 					<div class='collapsible-header'>
-						<div class='node-name'>msfRecharge</div>						
-						<span class='node-time'>Jul 16, 2019 03:54:12 PM</span>
-						<span class='node-duration'>0h 0m 1s+707ms</span>
+						<div class='node-name'>articleTogglefavorite</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:52 PM</span>
+						<span class='node-duration'>0h 0m 7s+128ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
-											<span class='category label white-text'>中台接口测试</span>
-											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
 									</div>
 								<div class='node-steps'>
 									<table class='bordered table-results'>
@@ -650,7 +714,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:54:14 PM</td>
+													<td class='timestamp'>5:25:59 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -660,15 +724,15 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='16'>
 					<div class='collapsible-header'>
-						<div class='node-name'>msfQueryRecharge</div>						
-						<span class='node-time'>Jul 16, 2019 03:54:12 PM</span>
-						<span class='node-duration'>0h 0m 1s+610ms</span>
+						<div class='node-name'>articleTogglelikes</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:52 PM</span>
+						<span class='node-duration'>0h 0m 7s+21ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
-											<span class='category label white-text'>中台接口测试</span>
-											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
 									</div>
 								<div class='node-steps'>
 									<table class='bordered table-results'>
@@ -682,7 +746,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:54:14 PM</td>
+													<td class='timestamp'>5:25:59 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -692,15 +756,15 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='17'>
 					<div class='collapsible-header'>
-						<div class='node-name'>msfAdjust</div>						
-						<span class='node-time'>Jul 16, 2019 03:54:12 PM</span>
-						<span class='node-duration'>0h 0m 1s+532ms</span>
+						<div class='node-name'>messageUnread</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:52 PM</span>
+						<span class='node-duration'>0h 0m 6s+906ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
-											<span class='category label white-text'>中台接口测试</span>
-											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
 									</div>
 								<div class='node-steps'>
 									<table class='bordered table-results'>
@@ -714,7 +778,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:54:14 PM</td>
+													<td class='timestamp'>5:25:59 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -724,15 +788,15 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='18'>
 					<div class='collapsible-header'>
-						<div class='node-name'>msfQueryAdjust</div>						
-						<span class='node-time'>Jul 16, 2019 03:54:12 PM</span>
-						<span class='node-duration'>0h 0m 1s+457ms</span>
+						<div class='node-name'>userProfile</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:53 PM</span>
+						<span class='node-duration'>0h 0m 6s+490ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
-											<span class='category label white-text'>中台接口测试</span>
-											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
 									</div>
 								<div class='node-steps'>
 									<table class='bordered table-results'>
@@ -746,7 +810,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:54:14 PM</td>
+													<td class='timestamp'>5:25:59 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -756,15 +820,15 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='19'>
 					<div class='collapsible-header'>
-						<div class='node-name'>msfUpdateOrder</div>						
-						<span class='node-time'>Jul 16, 2019 03:54:12 PM</span>
-						<span class='node-duration'>0h 0m 1s+387ms</span>
+						<div class='node-name'>userFavoritelist</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:53 PM</span>
+						<span class='node-duration'>0h 0m 6s+265ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
-											<span class='category label white-text'>中台接口测试</span>
-											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
 									</div>
 								<div class='node-steps'>
 									<table class='bordered table-results'>
@@ -778,7 +842,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:54:14 PM</td>
+													<td class='timestamp'>5:25:59 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -788,15 +852,15 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='20'>
 					<div class='collapsible-header'>
-						<div class='node-name'>msfUpdateSubOrder</div>						
-						<span class='node-time'>Jul 16, 2019 03:54:12 PM</span>
-						<span class='node-duration'>0h 0m 1s+265ms</span>
+						<div class='node-name'>articleLikeslist</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:53 PM</span>
+						<span class='node-duration'>0h 0m 6s+137ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
-											<span class='category label white-text'>中台接口测试</span>
-											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
 									</div>
 								<div class='node-steps'>
 									<table class='bordered table-results'>
@@ -810,7 +874,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:54:14 PM</td>
+													<td class='timestamp'>5:25:59 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -820,16 +884,15 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='21'>
 					<div class='collapsible-header'>
-						<div class='node-name'>msfCreatePay</div>						
-						<span class='node-time'>Jul 16, 2019 03:54:13 PM</span>
-						<span class='node-duration'>0h 0m 1s+169ms</span>
+						<div class='node-name'>commonAuthcode</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:53 PM</span>
+						<span class='node-duration'>0h 0m 5s+980ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
-											<span class='category label white-text'>中台接口测试</span>
-											<span class='category label white-text'>交易中心</span>
-											<span class='category label white-text'>msfCreatePay</span>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
 									</div>
 								<div class='node-steps'>
 									<table class='bordered table-results'>
@@ -843,7 +906,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:54:14 PM</td>
+													<td class='timestamp'>5:25:59 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -853,15 +916,15 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='22'>
 					<div class='collapsible-header'>
-						<div class='node-name'>iqgCancel</div>						
-						<span class='node-time'>Jul 16, 2019 03:54:13 PM</span>
-						<span class='node-duration'>0h 0m 1s+70ms</span>
+						<div class='node-name'>userSetting</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:53 PM</span>
+						<span class='node-duration'>0h 0m 5s+848ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
-											<span class='category label white-text'>中台接口测试</span>
-											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
 									</div>
 								<div class='node-steps'>
 									<table class='bordered table-results'>
@@ -875,7 +938,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:54:14 PM</td>
+													<td class='timestamp'>5:25:59 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -885,15 +948,15 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='23'>
 					<div class='collapsible-header'>
-						<div class='node-name'>msfPay</div>						
-						<span class='node-time'>Jul 16, 2019 03:54:13 PM</span>
-						<span class='node-duration'>0h 0m 1s+7ms</span>
+						<div class='node-name'>commonQiniutoken</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:53 PM</span>
+						<span class='node-duration'>0h 0m 5s+734ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
-											<span class='category label white-text'>中台接口测试</span>
-											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
 									</div>
 								<div class='node-steps'>
 									<table class='bordered table-results'>
@@ -907,7 +970,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:54:14 PM</td>
+													<td class='timestamp'>5:25:59 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -917,15 +980,15 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='24'>
 					<div class='collapsible-header'>
-						<div class='node-name'>msfQueryPay</div>						
-						<span class='node-time'>Jul 16, 2019 03:54:13 PM</span>
-						<span class='node-duration'>0h 0m 0s+913ms</span>
+						<div class='node-name'>userResetmobile</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:53 PM</span>
+						<span class='node-duration'>0h 0m 5s+679ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
-											<span class='category label white-text'>中台接口测试</span>
-											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
 									</div>
 								<div class='node-steps'>
 									<table class='bordered table-results'>
@@ -939,7 +1002,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:54:14 PM</td>
+													<td class='timestamp'>5:25:59 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -949,16 +1012,15 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='25'>
 					<div class='collapsible-header'>
-						<div class='node-name'>msfCreateRefund</div>						
-						<span class='node-time'>Jul 16, 2019 03:54:13 PM</span>
-						<span class='node-duration'>0h 0m 0s+840ms</span>
+						<div class='node-name'>commonZonelist</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:54 PM</span>
+						<span class='node-duration'>0h 0m 5s+625ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
-											<span class='category label white-text'>中台接口测试</span>
-											<span class='category label white-text'>交易中心</span>
-											<span class='category label white-text'>msfCreateRefund</span>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
 									</div>
 								<div class='node-steps'>
 									<table class='bordered table-results'>
@@ -972,7 +1034,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:54:14 PM</td>
+													<td class='timestamp'>5:25:59 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -982,16 +1044,15 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='26'>
 					<div class='collapsible-header'>
-						<div class='node-name'>msfRefund</div>						
-						<span class='node-time'>Jul 16, 2019 03:54:13 PM</span>
-						<span class='node-duration'>0h 0m 0s+727ms</span>
+						<div class='node-name'>branchNearcbd</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:54 PM</span>
+						<span class='node-duration'>0h 0m 5s+542ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
-											<span class='category label white-text'>中台接口测试</span>
-											<span class='category label white-text'>交易中心</span>
-											<span class='category label white-text'>msfRefund</span>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
 									</div>
 								<div class='node-steps'>
 									<table class='bordered table-results'>
@@ -1005,7 +1066,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:54:14 PM</td>
+													<td class='timestamp'>5:25:59 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1015,15 +1076,15 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='27'>
 					<div class='collapsible-header'>
-						<div class='node-name'>msfQueryRefund</div>						
-						<span class='node-time'>Jul 16, 2019 03:54:13 PM</span>
-						<span class='node-duration'>0h 0m 0s+637ms</span>
+						<div class='node-name'>searchCbdnearlist</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:54 PM</span>
+						<span class='node-duration'>0h 0m 5s+406ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
-											<span class='category label white-text'>中台接口测试</span>
-											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
 									</div>
 								<div class='node-steps'>
 									<table class='bordered table-results'>
@@ -1037,7 +1098,1064 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:54:14 PM</td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='28'>
+					<div class='collapsible-header'>
+						<div class='node-name'>searchHottags</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:54 PM</span>
+						<span class='node-duration'>0h 0m 5s+285ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='29'>
+					<div class='collapsible-header'>
+						<div class='node-name'>searchBranch</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:54 PM</span>
+						<span class='node-duration'>0h 0m 5s+193ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='30'>
+					<div class='collapsible-header'>
+						<div class='node-name'>searchTaglist</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:54 PM</span>
+						<span class='node-duration'>0h 0m 4s+992ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='31'>
+					<div class='collapsible-header'>
+						<div class='node-name'>articleInitdata</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:54 PM</span>
+						<span class='node-duration'>0h 0m 4s+829ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='32'>
+					<div class='collapsible-header'>
+						<div class='node-name'>activityArticle</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:54 PM</span>
+						<span class='node-duration'>0h 0m 4s+706ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='33'>
+					<div class='collapsible-header'>
+						<div class='node-name'>orderPayment</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:55 PM</span>
+						<span class='node-duration'>0h 0m 4s+603ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='34'>
+					<div class='collapsible-header'>
+						<div class='node-name'>orderPaymentapply</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:55 PM</span>
+						<span class='node-duration'>0h 0m 4s+410ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+											<span class='category label white-text'>orderPaymentapply</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='35'>
+					<div class='collapsible-header'>
+						<div class='node-name'>orderRedeem</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:55 PM</span>
+						<span class='node-duration'>0h 0m 3s+872ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='36'>
+					<div class='collapsible-header'>
+						<div class='node-name'>branchCatlist</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:55 PM</span>
+						<span class='node-duration'>0h 0m 3s+751ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='37'>
+					<div class='collapsible-header'>
+						<div class='node-name'>commonOpenim</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:55 PM</span>
+						<span class='node-duration'>0h 0m 3s+662ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='38'>
+					<div class='collapsible-header'>
+						<div class='node-name'>commonAppupdate</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:56 PM</span>
+						<span class='node-duration'>0h 0m 3s+589ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='39'>
+					<div class='collapsible-header'>
+						<div class='node-name'>activitySharedetail</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:56 PM</span>
+						<span class='node-duration'>0h 0m 3s+493ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='40'>
+					<div class='collapsible-header'>
+						<div class='node-name'>orderList</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:56 PM</span>
+						<span class='node-duration'>0h 0m 3s+369ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='41'>
+					<div class='collapsible-header'>
+						<div class='node-name'>orderRefund</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:56 PM</span>
+						<span class='node-duration'>0h 0m 3s+258ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='42'>
+					<div class='collapsible-header'>
+						<div class='node-name'>orderRefundapply</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:56 PM</span>
+						<span class='node-duration'>0h 0m 3s+147ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='43'>
+					<div class='collapsible-header'>
+						<div class='node-name'>orderNoticeack</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:56 PM</span>
+						<span class='node-duration'>0h 0m 3s+28ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='44'>
+					<div class='collapsible-header'>
+						<div class='node-name'>orderNoticepop</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:56 PM</span>
+						<span class='node-duration'>0h 0m 2s+958ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='45'>
+					<div class='collapsible-header'>
+						<div class='node-name'>userFollowlist</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:56 PM</span>
+						<span class='node-duration'>0h 0m 2s+891ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='46'>
+					<div class='collapsible-header'>
+						<div class='node-name'>userArticlelist</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:56 PM</span>
+						<span class='node-duration'>0h 0m 2s+805ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='47'>
+					<div class='collapsible-header'>
+						<div class='node-name'>userDailybonus</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:56 PM</span>
+						<span class='node-duration'>0h 0m 2s+710ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='48'>
+					<div class='collapsible-header'>
+						<div class='node-name'>userGethoney</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:57 PM</span>
+						<span class='node-duration'>0h 0m 2s+621ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='49'>
+					<div class='collapsible-header'>
+						<div class='node-name'>userGethoneylog</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:57 PM</span>
+						<span class='node-duration'>0h 0m 2s+524ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='50'>
+					<div class='collapsible-header'>
+						<div class='node-name'>inviteGetcode</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:57 PM</span>
+						<span class='node-duration'>0h 0m 2s+438ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='51'>
+					<div class='collapsible-header'>
+						<div class='node-name'>messageGetlist</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:57 PM</span>
+						<span class='node-duration'>0h 0m 2s+347ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='52'>
+					<div class='collapsible-header'>
+						<div class='node-name'>branchDetail</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:57 PM</span>
+						<span class='node-duration'>0h 0m 2s+199ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='53'>
+					<div class='collapsible-header'>
+						<div class='node-name'>articleCommentuserlist</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:57 PM</span>
+						<span class='node-duration'>0h 0m 2s+36ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='54'>
+					<div class='collapsible-header'>
+						<div class='node-name'>articleSearchtags</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:57 PM</span>
+						<span class='node-duration'>0h 0m 1s+978ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='55'>
+					<div class='collapsible-header'>
+						<div class='node-name'>articleFavoritelist</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:57 PM</span>
+						<span class='node-duration'>0h 0m 1s+907ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='56'>
+					<div class='collapsible-header'>
+						<div class='node-name'>commonStaticcontent</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:57 PM</span>
+						<span class='node-duration'>0h 0m 1s+803ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='57'>
+					<div class='collapsible-header'>
+						<div class='node-name'>inviteInitdata</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:57 PM</span>
+						<span class='node-duration'>0h 0m 1s+724ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='58'>
+					<div class='collapsible-header'>
+						<div class='node-name'>inviteReceiveboon</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:58 PM</span>
+						<span class='node-duration'>0h 0m 1s+658ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='59'>
+					<div class='collapsible-header'>
+						<div class='node-name'>orderPaymentresult</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:58 PM</span>
+						<span class='node-duration'>0h 0m 1s+596ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='60'>
+					<div class='collapsible-header'>
+						<div class='node-name'>orderCancel</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:58 PM</span>
+						<span class='node-duration'>0h 0m 1s+85ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1050,38 +2168,38 @@
 				</li>
 				
 				
-				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='28'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='61'>
 					<div class='test-heading'>
-						<span class='test-name'>中台接口测试 : 交易中心管理平台</span>
-						<span class='test-time'>Jul 16, 2019 03:54:13 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-name'>觅食蜂接口测试 : 觅食蜂接口测试用例(退出登录)</span>
+						<span class='test-time'>Jul 16, 2019 05:25:59 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 16, 2019 03:54:13 PM</span>
-	<span class='label end-time'>Jul 16, 2019 03:54:13 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+251ms</span>
+	<span class='label start-time'>Jul 16, 2019 05:25:59 PM</span>
+	<span class='label end-time'>Jul 16, 2019 05:25:59 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+191ms</span>
 </div>
-	<div class='test-desc'>Pass: 0 ; Fail: 2 ; Skip: 0 ; </div>
+	<div class='test-desc'>Pass: 1 ; Fail: 0 ; Skip: 0 ; </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>中台接口测试</span>
-				<span class='category label white-text'>交易中心管理平台</span>
+				<span class='category label white-text'>觅食蜂接口测试</span>
+				<span class='category label white-text'>觅食蜂接口测试用例(退出登录)</span>
 			</div>
 	</div>
 	<ul class='collapsible node-list' data-collapsible='accordion'>
 		
-				<li class='node level-1 leaf fail' status='fail' test-id='29'>
+				<li class='node level-1 leaf pass' status='pass' test-id='62'>
 					<div class='collapsible-header'>
-						<div class='node-name'>account</div>						
-						<span class='node-time'>Jul 16, 2019 03:54:13 PM</span>
-						<span class='node-duration'>0h 0m 0s+572ms</span>
-						<span class='test-status right fail'>fail</span>
+						<div class='node-name'>userLogout</div>						
+						<span class='node-time'>Jul 16, 2019 05:25:59 PM</span>
+						<span class='node-duration'>0h 0m 0s+554ms</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
-											<span class='category label white-text'>中台接口测试</span>
-											<span class='category label white-text'>交易中心管理平台</span>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(退出登录)</span>
 									</div>
 								<div class='node-steps'>
 									<table class='bordered table-results'>
@@ -1093,118 +2211,10 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='fail'>
-													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-													<td class='timestamp'>3:54:14 PM</td>
-													<td class='step-details'><pre>java.lang.AssertionError: 
-返回的errno不为0/errmsg不为success;
-返回的errno/errmsg:9300013/登录Token已经失效
-请求的url:https://trade.beta.doweidu.com/open/admin/http
-参数：[method=get account.account, token=NGVjNzQ0ZjFhNTM4ZmNjY2U0MGNkMzMzNDcyMjYxOWMx, accountNumber=c4b9ba8a2810292f0ad2b5440436fc896c2733dc20968cd4]
-cookie：null
-接口返回：{"errno":9300013,"errmsg":"登录Token已经失效","data":{},"timestamp":1563263653,"serverlogid":0}
-《-------------------------分割线-------------------------》
-	at org.testng.Assert.fail(Assert.java:94)
-	at com.duoweidu.config.generalAssert.GeneralAssertChannel.errnoAssert(GeneralAssertChannel.java:145)
-	at com.duoweidu.config.generalAssert.GeneralAssert.errnoAssert(GeneralAssert.java:46)
-	at com.duoweidu.cases.interfaces.InterfaceTest.generalAssertTest(InterfaceTest.java:160)
-	at com.duoweidu.cases.interfaces.InterfaceTest.process(InterfaceTest.java:86)
-	at com.duoweidu.cases.tradecenterOpadmin.Account.account(Account.java:22)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</pre></td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf fail' status='fail' test-id='30'>
-					<div class='collapsible-header'>
-						<div class='node-name'>history</div>						
-						<span class='node-time'>Jul 16, 2019 03:54:13 PM</span>
-						<span class='node-duration'>0h 0m 0s+429ms</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>中台接口测试</span>
-											<span class='category label white-text'>交易中心管理平台</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='fail'>
-													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-													<td class='timestamp'>3:54:14 PM</td>
-													<td class='step-details'><pre>java.lang.AssertionError: 
-返回的errno不为0/errmsg不为success;
-返回的errno/errmsg:9300013/登录Token已经失效
-请求的url:https://trade.beta.doweidu.com/open/admin/http
-参数：[method=get account.history, pageNum=2, pageSize=10, token=NGVjNzQ0ZjFhNTM4ZmNjY2U0MGNkMzMzNDcyMjYxOWMx, accountNumber=c4b9ba8a2810292f0ad2b5440436fc896c2733dc20968cd4]
-cookie：null
-接口返回：{"errno":9300013,"errmsg":"登录Token已经失效","data":{},"timestamp":1563263653,"serverlogid":0}
-《-------------------------分割线-------------------------》
-	at org.testng.Assert.fail(Assert.java:94)
-	at com.duoweidu.config.generalAssert.GeneralAssertChannel.errnoAssert(GeneralAssertChannel.java:145)
-	at com.duoweidu.config.generalAssert.GeneralAssert.errnoAssert(GeneralAssert.java:46)
-	at com.duoweidu.cases.interfaces.InterfaceTest.generalAssertTest(InterfaceTest.java:160)
-	at com.duoweidu.cases.interfaces.InterfaceTest.process(InterfaceTest.java:86)
-	at com.duoweidu.cases.tradecenterOpadmin.History.history(History.java:23)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</pre></td>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:25:59 PM</td>
+													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
 									</table>
@@ -1216,22 +2226,22 @@ cookie：null
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='31'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='63'>
 					<div class='test-heading'>
-						<span class='test-name'>中台接口测试 : 消息推送</span>
-						<span class='test-time'>Jul 16, 2019 03:54:13 PM</span>
+						<span class='test-name'>觅食蜂接口测试 : 消息推送</span>
+						<span class='test-time'>Jul 16, 2019 05:25:59 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 16, 2019 03:54:13 PM</span>
-	<span class='label end-time'>Jul 16, 2019 03:54:13 PM</span>
+	<span class='label start-time'>Jul 16, 2019 05:25:59 PM</span>
+	<span class='label end-time'>Jul 16, 2019 05:25:59 PM</span>
 	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 	<div class='test-desc'>Pass: 0 ; Fail: 0 ; Skip: 0 ; </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>中台接口测试</span>
+				<span class='category label white-text'>觅食蜂接口测试</span>
 				<span class='category label white-text'>消息推送</span>
 			</div>
 	</div>
@@ -1289,17 +2299,18 @@ cookie：null
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>中台接口测试</span>
+						<span class='category-name'>觅食蜂接口测试</span>
 						<span class='category-status right'>
-							<span class='label pass'>28</span>
-							<span class='label fail'>3</span>
+							<span class='label pass'>59</span>
+							<span class='label fail'>2</span>
+							<span class='label others'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 28</span>
-							<span class='label red lighten-1 white-text'>Failed: 3</span>
-							
+							<span class='label green accent-4 white-text'>Passed: 59</span>
+							<span class='label red lighten-1 white-text'>Failed: 2</span>
+							<span class='label yellow darken-2 white-text'>Others: 2</span>
 						</div>
 					
 						<div class='category-tests'>
@@ -1313,707 +2324,825 @@ cookie：null
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 16, 2019 03:54:09 PM</td>
-										<td class='linked' test-id='1'>交易中心</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:09 PM</td>
-										<td class='linked' test-id='2'>交易中心.msfCreate</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:11 PM</td>
-										<td class='linked' test-id='3'>交易中心.iqgCreate</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:11 PM</td>
-										<td class='linked' test-id='4'>交易中心.iqgActivate</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:11 PM</td>
-										<td class='linked' test-id='5'>交易中心.msfQuery</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:11 PM</td>
-										<td class='linked' test-id='6'>交易中心.msfQueryAll</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:11 PM</td>
-										<td class='linked' test-id='7'>交易中心.msfHistory</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:11 PM</td>
-										<td class='linked' test-id='8'>交易中心.msfBill</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:11 PM</td>
-										<td class='linked' test-id='9'>交易中心.msfCreateRecharge</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:12 PM</td>
-										<td class='linked' test-id='10'>交易中心.msfCreateAdjust</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:12 PM</td>
-										<td class='linked' test-id='11'>交易中心.msfInfoTypeCode</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:12 PM</td>
-										<td class='linked' test-id='12'>交易中心.msfCreateOrder</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:12 PM</td>
-										<td class='linked' test-id='13'>交易中心.msfCreateSubOrder</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:12 PM</td>
-										<td class='linked' test-id='14'>交易中心.iqgFreeze</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:12 PM</td>
-										<td class='linked' test-id='15'>交易中心.msfRecharge</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:12 PM</td>
-										<td class='linked' test-id='16'>交易中心.msfQueryRecharge</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:12 PM</td>
-										<td class='linked' test-id='17'>交易中心.msfAdjust</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:12 PM</td>
-										<td class='linked' test-id='18'>交易中心.msfQueryAdjust</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:12 PM</td>
-										<td class='linked' test-id='19'>交易中心.msfUpdateOrder</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:12 PM</td>
-										<td class='linked' test-id='20'>交易中心.msfUpdateSubOrder</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:13 PM</td>
-										<td class='linked' test-id='21'>交易中心.msfCreatePay</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:13 PM</td>
-										<td class='linked' test-id='22'>交易中心.iqgCancel</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:13 PM</td>
-										<td class='linked' test-id='23'>交易中心.msfPay</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:13 PM</td>
-										<td class='linked' test-id='24'>交易中心.msfQueryPay</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:13 PM</td>
-										<td class='linked' test-id='25'>交易中心.msfCreateRefund</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:13 PM</td>
-										<td class='linked' test-id='26'>交易中心.msfRefund</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:13 PM</td>
-										<td class='linked' test-id='27'>交易中心.msfQueryRefund</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:13 PM</td>
-										<td class='linked' test-id='28'>交易中心管理平台</td>
+										<td>Jul 16, 2019 05:25:48 PM</td>
+										<td class='linked' test-id='1'>觅食蜂接口测试用例(openapi)</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Jul 16, 2019 03:54:13 PM</td>
-										<td class='linked' test-id='29'>交易中心管理平台.account</td>
+										<td>Jul 16, 2019 05:25:52 PM</td>
+										<td class='linked' test-id='2'>觅食蜂接口测试用例(openapi).articleCreate</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Jul 16, 2019 03:54:13 PM</td>
-										<td class='linked' test-id='30'>交易中心管理平台.history</td>
+										<td>Jul 16, 2019 05:25:58 PM</td>
+										<td class='linked' test-id='3'>觅食蜂接口测试用例(openapi).articleCreatecomment</td>
+										<td><span class='test-status skip'>skip</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:59 PM</td>
+										<td class='linked' test-id='4'>觅食蜂接口测试用例(openapi).userArticledelete</td>
+										<td><span class='test-status skip'>skip</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:48 PM</td>
+										<td class='linked' test-id='5'>觅食蜂接口测试用例(openapi).userLogin</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:51 PM</td>
+										<td class='linked' test-id='6'>觅食蜂接口测试用例(openapi).commonAppconfig</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:51 PM</td>
+										<td class='linked' test-id='7'>觅食蜂接口测试用例(openapi).homeIndex</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:51 PM</td>
+										<td class='linked' test-id='8'>觅食蜂接口测试用例(openapi).ActivityList</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:51 PM</td>
+										<td class='linked' test-id='9'>觅食蜂接口测试用例(openapi).activityDetail</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:51 PM</td>
+										<td class='linked' test-id='10'>觅食蜂接口测试用例(openapi).commonLocate</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:51 PM</td>
+										<td class='linked' test-id='11'>觅食蜂接口测试用例(openapi).articleArticlelist</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:52 PM</td>
+										<td class='linked' test-id='12'>觅食蜂接口测试用例(openapi).articleDetail</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:52 PM</td>
+										<td class='linked' test-id='13'>觅食蜂接口测试用例(openapi).articleInterestlist</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:52 PM</td>
+										<td class='linked' test-id='14'>觅食蜂接口测试用例(openapi).userTogglefollow</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:52 PM</td>
+										<td class='linked' test-id='15'>觅食蜂接口测试用例(openapi).articleTogglefavorite</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:52 PM</td>
+										<td class='linked' test-id='16'>觅食蜂接口测试用例(openapi).articleTogglelikes</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:52 PM</td>
+										<td class='linked' test-id='17'>觅食蜂接口测试用例(openapi).messageUnread</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:53 PM</td>
+										<td class='linked' test-id='18'>觅食蜂接口测试用例(openapi).userProfile</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:53 PM</td>
+										<td class='linked' test-id='19'>觅食蜂接口测试用例(openapi).userFavoritelist</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:53 PM</td>
+										<td class='linked' test-id='20'>觅食蜂接口测试用例(openapi).articleLikeslist</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:53 PM</td>
+										<td class='linked' test-id='21'>觅食蜂接口测试用例(openapi).commonAuthcode</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:53 PM</td>
+										<td class='linked' test-id='22'>觅食蜂接口测试用例(openapi).userSetting</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:53 PM</td>
+										<td class='linked' test-id='23'>觅食蜂接口测试用例(openapi).commonQiniutoken</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:53 PM</td>
+										<td class='linked' test-id='24'>觅食蜂接口测试用例(openapi).userResetmobile</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:54 PM</td>
+										<td class='linked' test-id='25'>觅食蜂接口测试用例(openapi).commonZonelist</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:54 PM</td>
+										<td class='linked' test-id='26'>觅食蜂接口测试用例(openapi).branchNearcbd</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:54 PM</td>
+										<td class='linked' test-id='27'>觅食蜂接口测试用例(openapi).searchCbdnearlist</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:54 PM</td>
+										<td class='linked' test-id='28'>觅食蜂接口测试用例(openapi).searchHottags</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:54 PM</td>
+										<td class='linked' test-id='29'>觅食蜂接口测试用例(openapi).searchBranch</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:54 PM</td>
+										<td class='linked' test-id='30'>觅食蜂接口测试用例(openapi).searchTaglist</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:54 PM</td>
+										<td class='linked' test-id='31'>觅食蜂接口测试用例(openapi).articleInitdata</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:54 PM</td>
+										<td class='linked' test-id='32'>觅食蜂接口测试用例(openapi).activityArticle</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:55 PM</td>
+										<td class='linked' test-id='33'>觅食蜂接口测试用例(openapi).orderPayment</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:55 PM</td>
+										<td class='linked' test-id='34'>觅食蜂接口测试用例(openapi).orderPaymentapply</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:55 PM</td>
+										<td class='linked' test-id='35'>觅食蜂接口测试用例(openapi).orderRedeem</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:55 PM</td>
+										<td class='linked' test-id='36'>觅食蜂接口测试用例(openapi).branchCatlist</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:55 PM</td>
+										<td class='linked' test-id='37'>觅食蜂接口测试用例(openapi).commonOpenim</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:56 PM</td>
+										<td class='linked' test-id='38'>觅食蜂接口测试用例(openapi).commonAppupdate</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:56 PM</td>
+										<td class='linked' test-id='39'>觅食蜂接口测试用例(openapi).activitySharedetail</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:56 PM</td>
+										<td class='linked' test-id='40'>觅食蜂接口测试用例(openapi).orderList</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:56 PM</td>
+										<td class='linked' test-id='41'>觅食蜂接口测试用例(openapi).orderRefund</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:56 PM</td>
+										<td class='linked' test-id='42'>觅食蜂接口测试用例(openapi).orderRefundapply</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:56 PM</td>
+										<td class='linked' test-id='43'>觅食蜂接口测试用例(openapi).orderNoticeack</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:56 PM</td>
+										<td class='linked' test-id='44'>觅食蜂接口测试用例(openapi).orderNoticepop</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:56 PM</td>
+										<td class='linked' test-id='45'>觅食蜂接口测试用例(openapi).userFollowlist</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:56 PM</td>
+										<td class='linked' test-id='46'>觅食蜂接口测试用例(openapi).userArticlelist</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:56 PM</td>
+										<td class='linked' test-id='47'>觅食蜂接口测试用例(openapi).userDailybonus</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:57 PM</td>
+										<td class='linked' test-id='48'>觅食蜂接口测试用例(openapi).userGethoney</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:57 PM</td>
+										<td class='linked' test-id='49'>觅食蜂接口测试用例(openapi).userGethoneylog</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:57 PM</td>
+										<td class='linked' test-id='50'>觅食蜂接口测试用例(openapi).inviteGetcode</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:57 PM</td>
+										<td class='linked' test-id='51'>觅食蜂接口测试用例(openapi).messageGetlist</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:57 PM</td>
+										<td class='linked' test-id='52'>觅食蜂接口测试用例(openapi).branchDetail</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:57 PM</td>
+										<td class='linked' test-id='53'>觅食蜂接口测试用例(openapi).articleCommentuserlist</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:57 PM</td>
+										<td class='linked' test-id='54'>觅食蜂接口测试用例(openapi).articleSearchtags</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:57 PM</td>
+										<td class='linked' test-id='55'>觅食蜂接口测试用例(openapi).articleFavoritelist</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:57 PM</td>
+										<td class='linked' test-id='56'>觅食蜂接口测试用例(openapi).commonStaticcontent</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:57 PM</td>
+										<td class='linked' test-id='57'>觅食蜂接口测试用例(openapi).inviteInitdata</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:58 PM</td>
+										<td class='linked' test-id='58'>觅食蜂接口测试用例(openapi).inviteReceiveboon</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:58 PM</td>
+										<td class='linked' test-id='59'>觅食蜂接口测试用例(openapi).orderPaymentresult</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:58 PM</td>
+										<td class='linked' test-id='60'>觅食蜂接口测试用例(openapi).orderCancel</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:59 PM</td>
+										<td class='linked' test-id='61'>觅食蜂接口测试用例(退出登录)</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:59 PM</td>
+										<td class='linked' test-id='62'>觅食蜂接口测试用例(退出登录).userLogout</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:59 PM</td>
+										<td class='linked' test-id='63'>消息推送</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>觅食蜂接口测试用例(openapi)</span>
+						<span class='category-status right'>
+							<span class='label pass'>56</span>
+							<span class='label fail'>2</span>
+							<span class='label others'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 56</span>
+							<span class='label red lighten-1 white-text'>Failed: 2</span>
+							<span class='label yellow darken-2 white-text'>Others: 2</span>
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 16, 2019 05:25:48 PM</td>
+										<td class='linked' test-id='1'>觅食蜂接口测试用例(openapi)</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Jul 16, 2019 03:54:13 PM</td>
-										<td class='linked' test-id='31'>消息推送</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>交易中心</span>
-						<span class='category-status right'>
-							<span class='label pass'>27</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 27</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 16, 2019 03:54:09 PM</td>
-										<td class='linked' test-id='1'>交易中心</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:09 PM</td>
-										<td class='linked' test-id='2'>交易中心.msfCreate</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:11 PM</td>
-										<td class='linked' test-id='3'>交易中心.iqgCreate</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:11 PM</td>
-										<td class='linked' test-id='4'>交易中心.iqgActivate</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:11 PM</td>
-										<td class='linked' test-id='5'>交易中心.msfQuery</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:11 PM</td>
-										<td class='linked' test-id='6'>交易中心.msfQueryAll</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:11 PM</td>
-										<td class='linked' test-id='7'>交易中心.msfHistory</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:11 PM</td>
-										<td class='linked' test-id='8'>交易中心.msfBill</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:11 PM</td>
-										<td class='linked' test-id='9'>交易中心.msfCreateRecharge</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:12 PM</td>
-										<td class='linked' test-id='10'>交易中心.msfCreateAdjust</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:12 PM</td>
-										<td class='linked' test-id='11'>交易中心.msfInfoTypeCode</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:12 PM</td>
-										<td class='linked' test-id='12'>交易中心.msfCreateOrder</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:12 PM</td>
-										<td class='linked' test-id='13'>交易中心.msfCreateSubOrder</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:12 PM</td>
-										<td class='linked' test-id='14'>交易中心.iqgFreeze</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:12 PM</td>
-										<td class='linked' test-id='15'>交易中心.msfRecharge</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:12 PM</td>
-										<td class='linked' test-id='16'>交易中心.msfQueryRecharge</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:12 PM</td>
-										<td class='linked' test-id='17'>交易中心.msfAdjust</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:12 PM</td>
-										<td class='linked' test-id='18'>交易中心.msfQueryAdjust</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:12 PM</td>
-										<td class='linked' test-id='19'>交易中心.msfUpdateOrder</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:12 PM</td>
-										<td class='linked' test-id='20'>交易中心.msfUpdateSubOrder</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:13 PM</td>
-										<td class='linked' test-id='21'>交易中心.msfCreatePay</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:13 PM</td>
-										<td class='linked' test-id='22'>交易中心.iqgCancel</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:13 PM</td>
-										<td class='linked' test-id='23'>交易中心.msfPay</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:13 PM</td>
-										<td class='linked' test-id='24'>交易中心.msfQueryPay</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:13 PM</td>
-										<td class='linked' test-id='25'>交易中心.msfCreateRefund</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:13 PM</td>
-										<td class='linked' test-id='26'>交易中心.msfRefund</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 16, 2019 03:54:13 PM</td>
-										<td class='linked' test-id='27'>交易中心.msfQueryRefund</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>msfCreate</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 16, 2019 03:54:09 PM</td>
-										<td class='linked' test-id='2'>交易中心.msfCreate</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>iqgCreate</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 16, 2019 03:54:11 PM</td>
-										<td class='linked' test-id='3'>交易中心.iqgCreate</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>iqgActivate</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 16, 2019 03:54:11 PM</td>
-										<td class='linked' test-id='4'>交易中心.iqgActivate</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>createRecharge</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 16, 2019 03:54:11 PM</td>
-										<td class='linked' test-id='9'>交易中心.msfCreateRecharge</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>msfCreateAdjust</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 16, 2019 03:54:12 PM</td>
-										<td class='linked' test-id='10'>交易中心.msfCreateAdjust</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>msfCreateOrder</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 16, 2019 03:54:12 PM</td>
-										<td class='linked' test-id='12'>交易中心.msfCreateOrder</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>iqgFreeze</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 16, 2019 03:54:12 PM</td>
-										<td class='linked' test-id='14'>交易中心.iqgFreeze</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>msfCreatePay</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 16, 2019 03:54:13 PM</td>
-										<td class='linked' test-id='21'>交易中心.msfCreatePay</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>msfCreateRefund</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 16, 2019 03:54:13 PM</td>
-										<td class='linked' test-id='25'>交易中心.msfCreateRefund</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>msfRefund</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 16, 2019 03:54:13 PM</td>
-										<td class='linked' test-id='26'>交易中心.msfRefund</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>交易中心管理平台</span>
-						<span class='category-status right'>
-							<span class='label fail'>3</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							
-							<span class='label red lighten-1 white-text'>Failed: 3</span>
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 16, 2019 03:54:13 PM</td>
-										<td class='linked' test-id='28'>交易中心管理平台</td>
+										<td>Jul 16, 2019 05:25:52 PM</td>
+										<td class='linked' test-id='2'>觅食蜂接口测试用例(openapi).articleCreate</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Jul 16, 2019 03:54:13 PM</td>
-										<td class='linked' test-id='29'>交易中心管理平台.account</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td>Jul 16, 2019 05:25:58 PM</td>
+										<td class='linked' test-id='3'>觅食蜂接口测试用例(openapi).articleCreatecomment</td>
+										<td><span class='test-status skip'>skip</span></td>
 									</tr>
 									<tr>
-										<td>Jul 16, 2019 03:54:13 PM</td>
-										<td class='linked' test-id='30'>交易中心管理平台.history</td>
+										<td>Jul 16, 2019 05:25:59 PM</td>
+										<td class='linked' test-id='4'>觅食蜂接口测试用例(openapi).userArticledelete</td>
+										<td><span class='test-status skip'>skip</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:48 PM</td>
+										<td class='linked' test-id='5'>觅食蜂接口测试用例(openapi).userLogin</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:51 PM</td>
+										<td class='linked' test-id='6'>觅食蜂接口测试用例(openapi).commonAppconfig</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:51 PM</td>
+										<td class='linked' test-id='7'>觅食蜂接口测试用例(openapi).homeIndex</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:51 PM</td>
+										<td class='linked' test-id='8'>觅食蜂接口测试用例(openapi).ActivityList</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:51 PM</td>
+										<td class='linked' test-id='9'>觅食蜂接口测试用例(openapi).activityDetail</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:51 PM</td>
+										<td class='linked' test-id='10'>觅食蜂接口测试用例(openapi).commonLocate</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:51 PM</td>
+										<td class='linked' test-id='11'>觅食蜂接口测试用例(openapi).articleArticlelist</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:52 PM</td>
+										<td class='linked' test-id='12'>觅食蜂接口测试用例(openapi).articleDetail</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:52 PM</td>
+										<td class='linked' test-id='13'>觅食蜂接口测试用例(openapi).articleInterestlist</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:52 PM</td>
+										<td class='linked' test-id='14'>觅食蜂接口测试用例(openapi).userTogglefollow</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:52 PM</td>
+										<td class='linked' test-id='15'>觅食蜂接口测试用例(openapi).articleTogglefavorite</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:52 PM</td>
+										<td class='linked' test-id='16'>觅食蜂接口测试用例(openapi).articleTogglelikes</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:52 PM</td>
+										<td class='linked' test-id='17'>觅食蜂接口测试用例(openapi).messageUnread</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:53 PM</td>
+										<td class='linked' test-id='18'>觅食蜂接口测试用例(openapi).userProfile</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:53 PM</td>
+										<td class='linked' test-id='19'>觅食蜂接口测试用例(openapi).userFavoritelist</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:53 PM</td>
+										<td class='linked' test-id='20'>觅食蜂接口测试用例(openapi).articleLikeslist</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:53 PM</td>
+										<td class='linked' test-id='21'>觅食蜂接口测试用例(openapi).commonAuthcode</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:53 PM</td>
+										<td class='linked' test-id='22'>觅食蜂接口测试用例(openapi).userSetting</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:53 PM</td>
+										<td class='linked' test-id='23'>觅食蜂接口测试用例(openapi).commonQiniutoken</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:53 PM</td>
+										<td class='linked' test-id='24'>觅食蜂接口测试用例(openapi).userResetmobile</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:54 PM</td>
+										<td class='linked' test-id='25'>觅食蜂接口测试用例(openapi).commonZonelist</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:54 PM</td>
+										<td class='linked' test-id='26'>觅食蜂接口测试用例(openapi).branchNearcbd</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:54 PM</td>
+										<td class='linked' test-id='27'>觅食蜂接口测试用例(openapi).searchCbdnearlist</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:54 PM</td>
+										<td class='linked' test-id='28'>觅食蜂接口测试用例(openapi).searchHottags</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:54 PM</td>
+										<td class='linked' test-id='29'>觅食蜂接口测试用例(openapi).searchBranch</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:54 PM</td>
+										<td class='linked' test-id='30'>觅食蜂接口测试用例(openapi).searchTaglist</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:54 PM</td>
+										<td class='linked' test-id='31'>觅食蜂接口测试用例(openapi).articleInitdata</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:54 PM</td>
+										<td class='linked' test-id='32'>觅食蜂接口测试用例(openapi).activityArticle</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:55 PM</td>
+										<td class='linked' test-id='33'>觅食蜂接口测试用例(openapi).orderPayment</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:55 PM</td>
+										<td class='linked' test-id='34'>觅食蜂接口测试用例(openapi).orderPaymentapply</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:55 PM</td>
+										<td class='linked' test-id='35'>觅食蜂接口测试用例(openapi).orderRedeem</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:55 PM</td>
+										<td class='linked' test-id='36'>觅食蜂接口测试用例(openapi).branchCatlist</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:55 PM</td>
+										<td class='linked' test-id='37'>觅食蜂接口测试用例(openapi).commonOpenim</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:56 PM</td>
+										<td class='linked' test-id='38'>觅食蜂接口测试用例(openapi).commonAppupdate</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:56 PM</td>
+										<td class='linked' test-id='39'>觅食蜂接口测试用例(openapi).activitySharedetail</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:56 PM</td>
+										<td class='linked' test-id='40'>觅食蜂接口测试用例(openapi).orderList</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:56 PM</td>
+										<td class='linked' test-id='41'>觅食蜂接口测试用例(openapi).orderRefund</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:56 PM</td>
+										<td class='linked' test-id='42'>觅食蜂接口测试用例(openapi).orderRefundapply</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:56 PM</td>
+										<td class='linked' test-id='43'>觅食蜂接口测试用例(openapi).orderNoticeack</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:56 PM</td>
+										<td class='linked' test-id='44'>觅食蜂接口测试用例(openapi).orderNoticepop</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:56 PM</td>
+										<td class='linked' test-id='45'>觅食蜂接口测试用例(openapi).userFollowlist</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:56 PM</td>
+										<td class='linked' test-id='46'>觅食蜂接口测试用例(openapi).userArticlelist</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:56 PM</td>
+										<td class='linked' test-id='47'>觅食蜂接口测试用例(openapi).userDailybonus</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:57 PM</td>
+										<td class='linked' test-id='48'>觅食蜂接口测试用例(openapi).userGethoney</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:57 PM</td>
+										<td class='linked' test-id='49'>觅食蜂接口测试用例(openapi).userGethoneylog</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:57 PM</td>
+										<td class='linked' test-id='50'>觅食蜂接口测试用例(openapi).inviteGetcode</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:57 PM</td>
+										<td class='linked' test-id='51'>觅食蜂接口测试用例(openapi).messageGetlist</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:57 PM</td>
+										<td class='linked' test-id='52'>觅食蜂接口测试用例(openapi).branchDetail</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:57 PM</td>
+										<td class='linked' test-id='53'>觅食蜂接口测试用例(openapi).articleCommentuserlist</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:57 PM</td>
+										<td class='linked' test-id='54'>觅食蜂接口测试用例(openapi).articleSearchtags</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:57 PM</td>
+										<td class='linked' test-id='55'>觅食蜂接口测试用例(openapi).articleFavoritelist</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:57 PM</td>
+										<td class='linked' test-id='56'>觅食蜂接口测试用例(openapi).commonStaticcontent</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:57 PM</td>
+										<td class='linked' test-id='57'>觅食蜂接口测试用例(openapi).inviteInitdata</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:58 PM</td>
+										<td class='linked' test-id='58'>觅食蜂接口测试用例(openapi).inviteReceiveboon</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:58 PM</td>
+										<td class='linked' test-id='59'>觅食蜂接口测试用例(openapi).orderPaymentresult</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:58 PM</td>
+										<td class='linked' test-id='60'>觅食蜂接口测试用例(openapi).orderCancel</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>createArticle</span>
+						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 16, 2019 05:25:52 PM</td>
+										<td class='linked' test-id='2'>觅食蜂接口测试用例(openapi).articleCreate</td>
 										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>commentArticle</span>
+						<span class='category-status right'>
+							<span class='label others'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							
+							<span class='label yellow darken-2 white-text'>Others: 1</span>
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 16, 2019 05:25:58 PM</td>
+										<td class='linked' test-id='3'>觅食蜂接口测试用例(openapi).articleCreatecomment</td>
+										<td><span class='test-status skip'>skip</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>loginTrue</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 16, 2019 05:25:48 PM</td>
+										<td class='linked' test-id='5'>觅食蜂接口测试用例(openapi).userLogin</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>orderPaymentapply</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 16, 2019 05:25:55 PM</td>
+										<td class='linked' test-id='34'>觅食蜂接口测试用例(openapi).orderPaymentapply</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>觅食蜂接口测试用例(退出登录)</span>
+						<span class='category-status right'>
+							<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 16, 2019 05:25:59 PM</td>
+										<td class='linked' test-id='61'>觅食蜂接口测试用例(退出登录)</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 16, 2019 05:25:59 PM</td>
+										<td class='linked' test-id='62'>觅食蜂接口测试用例(退出登录).userLogout</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -2045,8 +3174,8 @@ cookie：null
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 16, 2019 03:54:13 PM</td>
-										<td class='linked' test-id='31'>消息推送</td>
+										<td>Jul 16, 2019 05:25:59 PM</td>
+										<td class='linked' test-id='63'>消息推送</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -2094,7 +3223,7 @@ cookie：null
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
                                 <span class='exception-name'>java.lang.AssertionError</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
                             </div>
                             <div class='exception-content hide'>
                                 <div class='exception-tests'>
@@ -2108,22 +3237,21 @@ cookie：null
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Jul 16, 2019 03:54:13 PM</td>
-                                                        <td class='linked' test-id='29'>交易中心管理平台.account</td>
+                                                        <td>Jul 16, 2019 05:25:52 PM</td>
+                                                        <td class='linked' test-id='2'>觅食蜂接口测试用例(openapi).articleCreate</td>
                                                         <td><pre><pre>java.lang.AssertionError: 
 返回的errno不为0/errmsg不为success;
-返回的errno/errmsg:9300013/登录Token已经失效
-请求的url:https://trade.beta.doweidu.com/open/admin/http
-参数：[method=get account.account, token=NGVjNzQ0ZjFhNTM4ZmNjY2U0MGNkMzMzNDcyMjYxOWMx, accountNumber=c4b9ba8a2810292f0ad2b5440436fc896c2733dc20968cd4]
-cookie：null
-接口返回：{"errno":9300013,"errmsg":"登录Token已经失效","data":{},"timestamp":1563263653,"serverlogid":0}
+返回的errno/errmsg:91210014/每分钟只能发布一篇文章，请稍后再试
+请求的url:https://m.betaapi.mishifeng.com/open/article/create
+参数：[title=标题测试的, content=美食体验的内容，居然还要13个字真的是，搞定, pic_list=[{"height":399,"width":360,"pic":"https:\/\/img.mishifeng.com\/FjsIIq6rvZanTL8YO2k-MtCLIMkB"},{"pic":"https:\/\/img.mishifeng.com\/FnNanPN6r2QM5ye0-y_l_8gcYZsd","height":909,"width":880}], stat_id=2EE6C938-EDE8-4E20-92C0-630A7A1F7066, timestamp=1562724496, os_version=12.2, device=iPhone, star=50, version=1.7.0, token=4a77989d91d6a4343661898bbb8a11a8, lng=121.4306271701389, lat=31.16045817057292, zone_id=21, platform=ios]
+CX-Request-ID: 12b6f8e3a65e048c0f38f3833bd03115
+接口返回：{"errno":91210014,"errmsg":"每分钟只能发布一篇文章，请稍后再试","data":{},"timestamp":1563269153,"serverlogid":0}
 《-------------------------分割线-------------------------》
 	at org.testng.Assert.fail(Assert.java:94)
 	at com.duoweidu.config.generalAssert.GeneralAssertChannel.errnoAssert(GeneralAssertChannel.java:145)
 	at com.duoweidu.config.generalAssert.GeneralAssert.errnoAssert(GeneralAssert.java:46)
 	at com.duoweidu.cases.interfaces.InterfaceTest.generalAssertTest(InterfaceTest.java:160)
-	at com.duoweidu.cases.interfaces.InterfaceTest.process(InterfaceTest.java:86)
-	at com.duoweidu.cases.tradecenterOpadmin.Account.account(Account.java:22)
+	at com.duoweidu.cases.msf.openapi.ArticleCreate.articleCreate(ArticleCreate.java:33)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -2150,31 +3278,55 @@ cookie：null
 	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
 </pre></pre></td>
                                                     </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>java.lang.Throwable</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
                                                     <tr>
-                                                        <td>Jul 16, 2019 03:54:13 PM</td>
-                                                        <td class='linked' test-id='30'>交易中心管理平台.history</td>
-                                                        <td><pre><pre>java.lang.AssertionError: 
-返回的errno不为0/errmsg不为success;
-返回的errno/errmsg:9300013/登录Token已经失效
-请求的url:https://trade.beta.doweidu.com/open/admin/http
-参数：[method=get account.history, pageNum=2, pageSize=10, token=NGVjNzQ0ZjFhNTM4ZmNjY2U0MGNkMzMzNDcyMjYxOWMx, accountNumber=c4b9ba8a2810292f0ad2b5440436fc896c2733dc20968cd4]
-cookie：null
-接口返回：{"errno":9300013,"errmsg":"登录Token已经失效","data":{},"timestamp":1563263653,"serverlogid":0}
-《-------------------------分割线-------------------------》
-	at org.testng.Assert.fail(Assert.java:94)
-	at com.duoweidu.config.generalAssert.GeneralAssertChannel.errnoAssert(GeneralAssertChannel.java:145)
-	at com.duoweidu.config.generalAssert.GeneralAssert.errnoAssert(GeneralAssert.java:46)
-	at com.duoweidu.cases.interfaces.InterfaceTest.generalAssertTest(InterfaceTest.java:160)
-	at com.duoweidu.cases.interfaces.InterfaceTest.process(InterfaceTest.java:86)
-	at com.duoweidu.cases.tradecenterOpadmin.History.history(History.java:23)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+                                                        <td>Jul 16, 2019 05:25:58 PM</td>
+                                                        <td class='linked' test-id='3'>觅食蜂接口测试用例(openapi).articleCreatecomment</td>
+                                                        <td><pre><pre>java.lang.Throwable: Method ArticleCreatecomment.articleCreatecomment()[pri:0, instance:com.duoweidu.cases.msf.openapi.ArticleCreatecomment@5d624da6] depends on not successfully finished methods in group "createArticle"
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jul 16, 2019 05:25:59 PM</td>
+                                                        <td class='linked' test-id='4'>觅食蜂接口测试用例(openapi).userArticledelete</td>
+                                                        <td><pre><pre>java.lang.Throwable: Method UserArticledelete.userArticledelete()[pri:0, instance:com.duoweidu.cases.msf.openapi.UserArticledelete@614c5515] depends on not successfully finished methods in group "commentArticle"
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
 	at org.testng.TestRunner.privateRun(TestRunner.java:756)
@@ -2217,31 +3369,31 @@ cookie：null
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>29</div>
+					<div class='panel-lead'>61</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>28</div>
+					<div class='panel-lead'>60</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 16, 2019 03:54:09 PM</div>
+					<div class='panel-lead'>Jul 16, 2019 05:25:48 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 16, 2019 03:54:13 PM</div>
+			 		<div class='panel-lead'>Jul 16, 2019 05:25:59 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>3,855ms</div>
+					<div class='panel-lead'>10,695ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -2256,81 +3408,45 @@ cookie：null
 							<th>Others</th>
 						</tr>
 						<tr>
-							<td>中台接口测试</td>
-							<td>28</td>
-							<td>3</td>
+							<td>觅食蜂接口测试</td>
+							<td>59</td>
+							<td>2</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>觅食蜂接口测试用例(openapi)</td>
+							<td>56</td>
+							<td>2</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>createArticle</td>
+							<td>0</td>
+							<td>1</td>
 							<td>0</td>
 						</tr>
 						<tr>
-							<td>交易中心</td>
-							<td>27</td>
+							<td>commentArticle</td>
 							<td>0</td>
 							<td>0</td>
+							<td>1</td>
 						</tr>
 						<tr>
-							<td>msfCreate</td>
+							<td>loginTrue</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
 						</tr>
 						<tr>
-							<td>iqgCreate</td>
+							<td>orderPaymentapply</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
 						</tr>
 						<tr>
-							<td>iqgActivate</td>
-							<td>1</td>
+							<td>觅食蜂接口测试用例(退出登录)</td>
+							<td>2</td>
 							<td>0</td>
-							<td>0</td>
-						</tr>
-						<tr>
-							<td>createRecharge</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-						</tr>
-						<tr>
-							<td>msfCreateAdjust</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-						</tr>
-						<tr>
-							<td>msfCreateOrder</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-						</tr>
-						<tr>
-							<td>iqgFreeze</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-						</tr>
-						<tr>
-							<td>msfCreatePay</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-						</tr>
-						<tr>
-							<td>msfCreateRefund</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-						</tr>
-						<tr>
-							<td>msfRefund</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-						</tr>
-						<tr>
-							<td>交易中心管理平台</td>
-							<td>0</td>
-							<td>3</td>
 							<td>0</td>
 						</tr>
 						<tr>
@@ -2352,22 +3468,22 @@ cookie：null
 
 		<script>
 			var statusGroup = {
-				passParent: 27,
-				failParent: 2,
+				passParent: 58,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 0,
-				exceptionsParent: 2,
+				skipParent: 2,
+				exceptionsParent: 3,
 				
-				passChild: 26,
-				failChild: 2,
+				passChild: 57,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
-				skipChild: 0,
+				skipChild: 2,
 				infoChild: 0,
-				exceptionsChild: 2,
+				exceptionsChild: 3,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,
