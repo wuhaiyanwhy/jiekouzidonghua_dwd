@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="ChangeListManager">
     <list default="true" id="50c9a098-cf9f-4ab6-b025-2838502e1902" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/merchant/activity_getregistrationlist_test.java" afterDir="false" />
@@ -1400,6 +1401,13 @@
         </RuleState>
       </list>
     </option>
+=======
+  <component name="FavoritesManager">
+    <favorites_list name="middleground-onlineTest" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563268089326" />
+>>>>>>> iqg-beta
   </component>
   <component name="RunManager" selected="TestNG./Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/iqg.xml">
     <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/fyb.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
@@ -1469,6 +1477,7 @@
       </list>
     </recent_temporary>
   </component>
+<<<<<<< HEAD
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -1689,4 +1698,6 @@
       </state>
     </states>
   </component>
+=======
+>>>>>>> iqg-beta
 </project>
