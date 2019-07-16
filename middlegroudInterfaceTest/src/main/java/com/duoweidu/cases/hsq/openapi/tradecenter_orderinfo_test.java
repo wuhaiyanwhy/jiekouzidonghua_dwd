@@ -121,15 +121,15 @@ public class tradecenter_orderinfo_test extends HsqInterfaceTest {
 
             //确认订单页，公告显示，公告ID存在
             if (model.message != null) {
-                detailAssertTest(18, "model.message.id", model.message.id);
-                detailAssertTest(1, "model.message.channel_id", model.message.channel_id);
-                detailAssertTest(4, "model.message.position", model.message.position);
-                detailAssertTest(1557987292, "model.message.start_time", model.message.start_time);
-                detailAssertTest(1588240457, "model.message.end_time", model.message.end_time);
-                detailAssertTest("详情页测试公告", "model.message.title", model.message.title);
-                detailAssertTest("确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告", "model.message.content", model.message.content);
-                detailAssertTest(2, "model.message.status", model.message.status);
-                detailAssertTest(1, "model.message.is_deleted", model.message.is_deleted);
+                detailAssertTest("model.message.id", model.message.id);
+                detailAssertTest("model.message.channel_id", model.message.channel_id);
+                detailAssertTest( "model.message.position", model.message.position);
+                detailAssertTest( "model.message.start_time", model.message.start_time);
+                detailAssertTest( "model.message.end_time", model.message.end_time);
+                detailAssertTest( "model.message.title", model.message.title);
+                detailAssertTest("model.message.content", model.message.content);
+                detailAssertTest( "model.message.status", model.message.status);
+                detailAssertTest( "model.message.is_deleted", model.message.is_deleted);
             }
         }
 
@@ -237,16 +237,15 @@ public class tradecenter_orderinfo_test extends HsqInterfaceTest {
 
             //确认订单页，公告显示，公告ID存在
             if (model.message != null) {
-//            detailAssertTest(18, "model.message.id", model.message.id);
-//            detailAssertTest(1, "model.message.channel_id", model.message.channel_id);
-//            detailAssertTest(4, "model.message.position", model.message.position);
-//            detailAssertTest(1557987292, "model.message.start_time", model.message.start_time);
-//            detailAssertTest(1588240457, "model.message.end_time", model.message.end_time);
-//            detailAssertTest("详情页测试公告", "model.message.title", model.message.title);
-//            detailAssertTest("确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告", "model.message.content", model.message.content);
-//            detailAssertTest(2, "model.message.status", model.message.status);
-//            detailAssertTest(1, "model.message.is_deleted", model.message.is_deleted);
-
+                detailAssertTest("model.message.id", model.message.id);
+                detailAssertTest("model.message.channel_id", model.message.channel_id);
+                detailAssertTest("model.message.position", model.message.position);
+                detailAssertTest("model.message.start_time", model.message.start_time);
+                detailAssertTest("model.message.end_time", model.message.end_time);
+                detailAssertTest("model.message.title", model.message.title);
+                detailAssertTest("model.message.content", model.message.content);
+                detailAssertTest("model.message.status", model.message.status);
+                detailAssertTest("model.message.is_deleted", model.message.is_deleted);
             }
         }
     }
