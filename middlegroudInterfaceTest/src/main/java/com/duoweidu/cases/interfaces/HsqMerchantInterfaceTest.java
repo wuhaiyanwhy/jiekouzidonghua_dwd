@@ -9,7 +9,8 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class HsqMerchantInterfaceTest extends InterfaceTest {
+public class
+HsqMerchantInterfaceTest extends InterfaceTest {
 
     @Override
     //获取url和pathId
