@@ -31,7 +31,6 @@ public class GeneralAssertChannel extends Assert {
             GeneralConfig.errnoList.add(uri);
             if ("prod".equals(ConfigFileUrl.getEnv())) {
                 //插入报错次数
-                SqlDetail.getInstance().updatePathErrnoCount(path_id);
                 SqlGeneral.updateInterfacePathErrnoCount(path_id, channel_id,
                         SqlGeneral.getInterfacePathValue(path_id, channel_id).getErrno_count() + 1);
             }
