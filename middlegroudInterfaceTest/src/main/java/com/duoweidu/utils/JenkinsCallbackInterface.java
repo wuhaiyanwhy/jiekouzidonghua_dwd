@@ -1,6 +1,7 @@
 package com.duoweidu.utils;
 
 import com.duoweidu.config.GeneralConfig;
+import com.duoweidu.config.sql.SqlGeneral;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
@@ -18,8 +19,8 @@ public class JenkinsCallbackInterface extends CallbackInterface {
     static {
         defaultHttpClient = new DefaultHttpClient();
     }
-    private static final String key = "admin";
-    private static final String value = "Iamyourdaddy";
+    private static final String key = SqlGeneral.getParamValue(11, 0, "username").getValue();
+    private static final String value = SqlGeneral.getParamValue(11, 0, "password").getValue();
 
     private static String getHeader() {
         String auth = key + ":" + value;
