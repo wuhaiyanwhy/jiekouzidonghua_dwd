@@ -2,7 +2,7 @@ package com.duoweidu.cases.fyb.openapi;
 
 import com.duoweidu.cases.interfaces.FybInterfaceTest;
 import com.duoweidu.config.FybConfig;
-import com.duoweidu.config.GeneralAssert;
+import com.duoweidu.config.generalAssert.GeneralAssert;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.testng.annotations.Test;

@@ -1,7 +1,7 @@
 package com.duoweidu.utils;
 
-import com.duoweidu.config.SqlDetail;
-import com.duoweidu.config.SqlGeneral;
+import com.duoweidu.config.sql.SqlDetail;
+import com.duoweidu.config.sql.SqlGeneral;
 
 import java.util.Locale;
 import java.util.ResourceBundle;
@@ -20,9 +20,24 @@ public class ConfigFileUrl {
      * @return
      */
     public static String getUrlByKey(String name) {
-        String protocol = SqlDetail.getProtocol();
-        String server_name = SqlDetail.getServerName();
-        String path = SqlDetail.getPath(name);
+        String protocol = SqlDetail.getInstance().getProtocol();
+        String server_name = SqlDetail.getInstance().getServerName();
+        String path = SqlDetail.getInstance().getPath(name);
+        if (path.isEmpty()) {
+            throw new IllegalStateException("未知地址");
+        }
+        return protocol + "://" + server_name + path;
+    }
+
+    /**
+     * 拼接url
+     * @param name
+     * @return
+     */
+    public static String getUrlByKey(String name, int channel_id) {
+        String protocol = SqlGeneral.getServerHostValue(channel_id).getProtocol();
+        String server_name = SqlGeneral.getServerHostValue(channel_id).getServer_name();
+        String path = SqlGeneral.getInterfacePathValue(channel_id, name).getPath();
         if (path.isEmpty()) {
             throw new IllegalStateException("未知地址");
         }
@@ -62,4 +77,17 @@ public class ConfigFileUrl {
         return Integer.parseInt(bundle.getString("channel"));
     }
 
+
+    /**
+     * 有多个渠道时设置以下方法
+     * @return
+     */
+    public static int getChannel1() {
+        return Integer.parseInt(bundle.getString("channel1"));
+    }
+
+
+    public static int getChannel2() {
+        return Integer.parseInt(bundle.getString("channel2"));
+    }
 }

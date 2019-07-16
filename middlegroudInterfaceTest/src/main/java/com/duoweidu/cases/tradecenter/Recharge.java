@@ -1,7 +1,7 @@
 package com.duoweidu.cases.tradecenter;
 
 import com.duoweidu.cases.interfaces.TradeCenterInterfaceTest;
-import com.duoweidu.config.SqlDetail;
+import com.duoweidu.config.sql.SqlDetail;
 import com.duoweidu.config.TradecenterConfig;
 import com.duoweidu.model.tradecenter.RechargeData;
 import com.duoweidu.utils.ConfigFileUrl;
@@ -30,10 +30,10 @@ public class Recharge extends TradeCenterInterfaceTest {
 
     private void detailAssert() {
 
-        detailAssertTest(SqlDetail.getParamValue(0, "rechargeAmount"), "recharge_amount", String.valueOf(model.recharge_amount));
-        detailAssertTest(SqlDetail.getParamValue(0, "msfCurrency"), "currency", model.currency);
-        detailAssertTest(SqlDetail.getParamValue(0, "rechargeTypeCode"), "recharge_type_code", model.recharge_type_code);
-        detailAssertTest(SqlDetail.getParamValue(0, "rechargeDesc"), "recharge_desc", model.recharge_desc);
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "rechargeAmount"), "recharge_amount", String.valueOf(model.recharge_amount));
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "msfCurrency"), "currency", model.currency);
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "rechargeTypeCode"), "recharge_type_code", model.recharge_type_code);
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "rechargeDesc"), "recharge_desc", model.recharge_desc);
         detailAssertTest("", "reverse", model.reverse);
 
     }

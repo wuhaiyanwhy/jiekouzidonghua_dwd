@@ -1,8 +1,8 @@
 package com.duoweidu.cases.interfaces;
 
 import com.alibaba.fastjson.JSON;
-import com.duoweidu.config.GeneralAssert;
-import com.duoweidu.config.SqlDetail;
+import com.duoweidu.config.generalAssert.GeneralAssert;
+import com.duoweidu.config.sql.SqlDetail;
 import com.duoweidu.utils.CallbackInterface;
 import com.duoweidu.utils.ConfigFileUrl;
 import org.apache.http.NameValuePair;
@@ -39,42 +39,114 @@ public class InterfaceTest {
     //获取url和pathId
     protected void setUrl(String key) {
         url = ConfigFileUrl.getUrlByKey(key);
-        pathId = SqlDetail.getPathId(key);
+        pathId = SqlDetail.getInstance().getPathId(key);
     }
 
-    //get请求
-    protected void process(boolean isAssert,boolean isList) {
+    //get请求，不要断言
+    protected void process() {
         System.out.println(url);
         result = CallbackInterface.getStringResult(url, pathId, this.param);
+    }
+
+    //get请求，要基本断言,errno和data
+    protected void process(boolean isAssert) {
+        process();
+        if (isAssert == true) {
+            generalAssertTest();
+        }
+    }
+
+    //get请求,要基本断言加list
+    protected void process(boolean isAssert,boolean isList) {
+        process();
         if (isAssert == true) {
             generalAssertTest(isList);
         }
     }
 
-    //post请求
-    protected void process(List<NameValuePair> list, boolean isAssert, boolean isList) {
+    //post请求,不要断言
+    protected void process(List<NameValuePair> list) {
         System.out.println(url);
         param = list.toString();
         result = CallbackInterface.postStringResult(url, pathId, list);
+    }
+
+    //post请求，要基本断言，errno和data
+    protected void process(List<NameValuePair> list, boolean isAssert) {
+        process(list);
+        if (isAssert == true) {
+            generalAssertTest();
+        }
+    }
+
+    //post请求，要基本断言加list
+    protected void process(List<NameValuePair> list, boolean isAssert, boolean isList) {
+        process(list);
         if (isAssert == true) {
             generalAssertTest(isList);
         }
     }
 
-    //delete请求
-    protected void processDelete(boolean isAssert, boolean isList) {
+    //post（json传参）请求,不要断言
+    protected void process(String param) {
+        System.out.println(url);
+        result = CallbackInterface.postStringResult(url, pathId, param);
+    }
+
+    //post（json传参）请求，要基本断言，errno和data
+    protected void process(String param, boolean isAssert) {
+        process(param);
+        if (isAssert == true) {
+            generalAssertTest();
+        }
+    }
+
+    //post（json传参）请求，要基本断言加list
+    protected void process(String param, boolean isAssert, boolean isList) {
+        process(param);
+        if (isAssert == true) {
+            generalAssertTest(isList);
+        }
+    }
+
+    //delete请求，不要断言
+    protected void processDelete() {
         System.out.println(url);
         result = CallbackInterface.deleteStringResult(url, pathId, this.param);
+    }
+
+    //delete请求，要基本断言，errno和data
+    protected void processDelete(boolean isAssert) {
+        processDelete();
+        if (isAssert == true) {
+            generalAssertTest();
+        }
+    }
+
+    //delete请求，要基本断言加list
+    protected void processDelete(boolean isAssert, boolean isList) {
+        processDelete();
         if (isAssert == true) {
             generalAssertTest(isList);
         }
     }
 
     //通用断言判断，只判断errno
+    protected void statusAssertTest() {
+        try {
+            JSONObject jsonObject = new JSONObject(result);
+            GeneralAssert.errnoAssert(jsonObject.get("errno").toString(), jsonObject.get("errmsg").toString(), url, pathId, param, result);
+        }catch (JSONException e){
+            GeneralAssert.jsonAssert(url, pathId, param, result, e);
+        }
+    }
+
+    //通用断言判断errno和data
     protected void generalAssertTest() {
         try {
             JSONObject jsonObject = new JSONObject(result);
             GeneralAssert.errnoAssert(jsonObject.get("errno").toString(), jsonObject.get("errmsg").toString(), url, pathId, param, result);
+            GeneralAssert.dataAssert(jsonObject.get("data").toString(), url, pathId, param, result);
         }catch (JSONException e){
             GeneralAssert.jsonAssert(url, pathId, param, result, e);
         }

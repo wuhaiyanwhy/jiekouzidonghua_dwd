@@ -1,7 +1,7 @@
 package com.duoweidu.cases.fyb.openapi;
 
 import com.duoweidu.cases.interfaces.FybInterfaceTest;
-import com.duoweidu.config.SqlDetail;
+import com.duoweidu.config.sql.SqlDetail;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.testng.annotations.Test;
@@ -15,7 +15,7 @@ public class UserUpdateaddress extends FybInterfaceTest {
     public void userUpdateaddress() {
         setUrl("user.updateaddress.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("addressId", SqlDetail.getParamValue("addressId")));
+        list.add(new BasicNameValuePair("addressId", SqlDetail.getInstance().getParamValue("addressId")));
         list.add(new BasicNameValuePair("city","上海市"));
         list.add(new BasicNameValuePair("cityId","857"));
         list.add(new BasicNameValuePair("contacter","测试"));

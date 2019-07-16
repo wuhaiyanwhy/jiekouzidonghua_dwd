@@ -1,7 +1,7 @@
 package com.duoweidu.cases.fyb.openapi;
 
 import com.duoweidu.cases.interfaces.FybInterfaceTest;
-import com.duoweidu.config.SqlDetail;
+import com.duoweidu.config.sql.SqlDetail;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.testng.annotations.Test;
@@ -15,7 +15,7 @@ public class RefundApply extends FybInterfaceTest {
     public void refundApply() {
         setUrl("refund.apply.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("orderId", SqlDetail.getParamValue("orderId")));
+        list.add(new BasicNameValuePair("orderId", SqlDetail.getInstance().getParamValue("orderId")));
         list.add(new BasicNameValuePair("refundMethod","1"));
         list.add(new BasicNameValuePair("reasonId","103"));
         process(list,false,false);

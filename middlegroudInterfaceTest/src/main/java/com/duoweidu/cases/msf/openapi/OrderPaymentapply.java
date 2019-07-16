@@ -2,7 +2,7 @@ package com.duoweidu.cases.msf.openapi;
 
 import com.duoweidu.cases.interfaces.MsfInterfaceTest;
 import com.duoweidu.config.MsfConfig;
-import com.duoweidu.config.SqlDetail;
+import com.duoweidu.config.sql.SqlDetail;
 import com.duoweidu.utils.ConfigFileUrl;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
@@ -18,12 +18,12 @@ public class OrderPaymentapply extends MsfInterfaceTest {
     public void orderPaymentapply() {
         setUrl("order.paymentapply.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("activity_id", SqlDetail.getParamValue(2, "pay_activity_id")));
-        list.add(new BasicNameValuePair("pay_channel_id",SqlDetail.getParamValue(0, "pay_channel_id")));
+        list.add(new BasicNameValuePair("activity_id", SqlDetail.getInstance().getParamValue(2, "pay_activity_id")));
+        list.add(new BasicNameValuePair("pay_channel_id",SqlDetail.getInstance().getParamValue(0, "pay_channel_id")));
         process(list,false,false);
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             generalAssertTest(false);
-            SqlDetail.msfUpdateOrder();
+            SqlDetail.getInstance().msfUpdateOrder();
             JSONObject jsonObject = new JSONObject(result);
             JSONObject data = (JSONObject) jsonObject.get("data");
             MsfConfig.orderId = data.get("order_id").toString();

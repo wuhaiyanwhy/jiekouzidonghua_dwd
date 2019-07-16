@@ -1,7 +1,7 @@
 package com.duoweidu.utils;
 
 import com.duoweidu.config.GeneralConfig;
-import com.duoweidu.config.SqlDetail;
+import com.duoweidu.config.sql.SqlDetail;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
@@ -33,9 +33,9 @@ public class IqgCallbackInterface extends CallbackInterface {
         HttpGet get = new HttpGet(url + "?" + param);
         get.setHeader("User-Agent","AiQiangGou/5.7.0 (iPhone; iOS 12.0.1; Scale/3.00)");
         get.setHeader("zoneid","21");
-        get.setHeader("version", SqlDetail.getParamValue(0, "version"));
+        get.setHeader("version", SqlDetail.getInstance().getParamValue(0, "version"));
         get.setHeader("Accept","application/json");
-        GeneralConfig.defaultHttpClient.setCookieStore(GeneralConfig.store);
+        CallbackInterface.defaultHttpClient.setCookieStore(GeneralConfig.store);
         HttpResponse response = null;
         try {
             response = defaultHttpClient.execute(get);
@@ -56,9 +56,9 @@ public class IqgCallbackInterface extends CallbackInterface {
         HttpPost post = new HttpPost(url);
         post.setHeader("User-Agent","AiQiangGou/5.7.0 (iPhone; iOS 12.0.1; Scale/3.00)");
         post.setHeader("zoneid","21");
-        post.setHeader("version", SqlDetail.getParamValue(0, "version"));
+        post.setHeader("version", SqlDetail.getInstance().getParamValue(0, "version"));
         post.setHeader("Accept","application/json");
-        GeneralConfig.defaultHttpClient.setCookieStore(GeneralConfig.store);
+        CallbackInterface.defaultHttpClient.setCookieStore(GeneralConfig.store);
         UrlEncodedFormEntity entity = null;
         try {
             entity = new UrlEncodedFormEntity(list, "utf-8");
@@ -86,9 +86,9 @@ public class IqgCallbackInterface extends CallbackInterface {
         HttpPost post = new HttpPost(url);
         post.setHeader("User-Agent","AiQiangGou/5.7.0 (iPhone; iOS 12.0.1; Scale/3.00)");
         post.setHeader("zoneid","21");
-        post.setHeader("version", SqlDetail.getParamValue(0, "version"));
+        post.setHeader("version", SqlDetail.getInstance().getParamValue(0, "version"));
         post.setHeader("Accept","application/json");
-        GeneralConfig.defaultHttpClient.setCookieStore(GeneralConfig.store);
+        CallbackInterface.defaultHttpClient.setCookieStore(GeneralConfig.store);
         StringEntity entity = null;
         try {
             entity = new StringEntity(param, "utf-8");
@@ -116,9 +116,9 @@ public class IqgCallbackInterface extends CallbackInterface {
         HttpDelete delete = new HttpDelete(url);
         delete.setHeader("User-Agent","AiQiangGou/5.7.0 (iPhone; iOS 12.0.1; Scale/3.00)");
         delete.setHeader("zoneid","21");
-        delete.setHeader("version", SqlDetail.getParamValue(0, "version"));
+        delete.setHeader("version", SqlDetail.getInstance().getParamValue(0, "version"));
         delete.setHeader("Accept","application/json");
-        GeneralConfig.defaultHttpClient.setCookieStore(GeneralConfig.store);
+        CallbackInterface.defaultHttpClient.setCookieStore(GeneralConfig.store);
         HttpResponse response = null;
         try {
             response = defaultHttpClient.execute(delete);

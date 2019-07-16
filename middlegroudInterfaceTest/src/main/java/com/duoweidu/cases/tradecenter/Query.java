@@ -1,7 +1,7 @@
 package com.duoweidu.cases.tradecenter;
 
 import com.duoweidu.cases.interfaces.TradeCenterInterfaceTest;
-import com.duoweidu.config.SqlDetail;
+import com.duoweidu.config.sql.SqlDetail;
 import com.duoweidu.config.TradecenterConfig;
 import com.duoweidu.model.tradecenter.CreateData;
 import com.duoweidu.utils.ConfigFileUrl;
@@ -35,9 +35,9 @@ public class Query extends TradeCenterInterfaceTest {
         detailAssertTest("frozen_amount", String.valueOf(model.frozen_amount));
         detailAssertTest(1, "account_status", model.account_status);
         detailAssertTest(1559731193, "created_at", model.created_at);
-        detailAssertTest(SqlDetail.getParamValue(0, "msfCurrency"), "account_type_code", model.account_type_code);
-        detailAssertTest(SqlDetail.getParamValue(0, "msfAccountTypeDesc"), "account_type_desc", model.account_type_desc);
-        detailAssertTest(SqlDetail.getParamValue(0, "msfCurrency"), "currency", model.currency);
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "msfCurrency"), "account_type_code", model.account_type_code);
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "msfAccountTypeDesc"), "account_type_desc", model.account_type_desc);
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "msfCurrency"), "currency", model.currency);
         detailAssertTest("", "reverse", model.reverse);
     }
 }

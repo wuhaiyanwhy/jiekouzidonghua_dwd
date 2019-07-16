@@ -1,7 +1,7 @@
 package com.duoweidu.cases.tradecenter;
 
 import com.duoweidu.cases.interfaces.TradeCenterInterfaceTest;
-import com.duoweidu.config.SqlDetail;
+import com.duoweidu.config.sql.SqlDetail;
 import com.duoweidu.config.TradecenterConfig;
 import com.duoweidu.model.tradecenter.PayData;
 import com.duoweidu.utils.ConfigFileUrl;
@@ -31,11 +31,11 @@ public class Pay extends TradeCenterInterfaceTest {
 
     private void detailAssert() {
         detailAssertTest(TradecenterConfig.msfCreatePayTradeNo, "trade_no", model.trade_no);
-        detailAssertTest(SqlDetail.getParamValue(0, "totalAmount"), "pay_amount", String.valueOf(model.pay_amount));
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "totalAmount"), "pay_amount", String.valueOf(model.pay_amount));
         detailAssertTest(3, "pay_status", model.pay_status);
-        detailAssertTest(SqlDetail.getParamValue(0, "msfCurrency"), "currency", String.valueOf(model.currency));
-        detailAssertTest(SqlDetail.getParamValue(0, "payTypeCode"), "pay_type_code", String.valueOf(model.pay_type_code));
-        detailAssertTest(SqlDetail.getParamValue(0, "payDesc"), "pay_type_desc", String.valueOf(model.pay_type_desc));
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "msfCurrency"), "currency", String.valueOf(model.currency));
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "payTypeCode"), "pay_type_code", String.valueOf(model.pay_type_code));
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "payDesc"), "pay_type_desc", String.valueOf(model.pay_type_desc));
         detailAssertTest("", "reverse", model.reverse);
     }
 }

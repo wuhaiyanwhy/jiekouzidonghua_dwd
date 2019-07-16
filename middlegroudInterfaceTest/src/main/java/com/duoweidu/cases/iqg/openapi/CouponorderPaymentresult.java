@@ -1,7 +1,7 @@
 package com.duoweidu.cases.iqg.openapi;
 
 import com.duoweidu.cases.interfaces.IqgInterfaceTest;
-import com.duoweidu.config.GeneralAssert;
+import com.duoweidu.config.generalAssert.GeneralAssert;
 import com.duoweidu.config.IqgConfig;
 import com.duoweidu.utils.ConfigFileUrl;
 import org.json.JSONException;

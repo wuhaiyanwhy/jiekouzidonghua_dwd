@@ -1,7 +1,7 @@
 package com.duoweidu.cases.iqg.openapi;
 
 import com.duoweidu.cases.interfaces.IqgInterfaceTest;
-import com.duoweidu.config.SqlDetail;
+import com.duoweidu.config.sql.SqlDetail;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.testng.annotations.Test;
@@ -17,7 +17,7 @@ public class Comment extends IqgInterfaceTest {
         List<NameValuePair> list = new LinkedList<>();
         list.add(new BasicNameValuePair("content","好"));
         list.add(new BasicNameValuePair("item_level","5"));
-        list.add(new BasicNameValuePair("order_id", SqlDetail.getParamValue("orderId")));
+        list.add(new BasicNameValuePair("order_id", SqlDetail.getInstance().getParamValue("orderId")));
         list.add(new BasicNameValuePair("service_level","5"));
         process(list,false,false);
 

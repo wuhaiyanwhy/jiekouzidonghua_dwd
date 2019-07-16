@@ -2,7 +2,6 @@ package com.duoweidu.config;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.CookieStore;
-import org.apache.http.impl.client.DefaultHttpClient;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,15 +13,12 @@ public class GeneralConfig {
 
     public static List<String> errnoList = new ArrayList<>();
 
-    static {
-        defaultHttpClient = new DefaultHttpClient();
-    }
 
     //用来储存cookies信息的变量
     public static CookieStore store;
-    //声明http客户端
-    public static DefaultHttpClient defaultHttpClient;
     //储存response
     public static HttpResponse response;
+    //储存最后一次构建的url
+    public static String url;
 
 }

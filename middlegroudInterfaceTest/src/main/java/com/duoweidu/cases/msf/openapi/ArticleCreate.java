@@ -2,7 +2,6 @@ package com.duoweidu.cases.msf.openapi;
 
 import com.duoweidu.cases.interfaces.MsfInterfaceTest;
 import com.duoweidu.config.MsfConfig;
-import com.duoweidu.config.SqlDetail;
 import com.duoweidu.utils.ConfigFileUrl;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
@@ -27,8 +26,6 @@ public class ArticleCreate extends MsfInterfaceTest {
             list.add(new BasicNameValuePair("timestamp", "1562724496"));
             list.add(new BasicNameValuePair("os_version", "12.2"));
             list.add(new BasicNameValuePair("device", "iPhone"));
-            list.add(new BasicNameValuePair("star", "50"));
-            list.add(new BasicNameValuePair("star", "50"));
             list.add(new BasicNameValuePair("star", "50"));
         }
         process(list,false,false);

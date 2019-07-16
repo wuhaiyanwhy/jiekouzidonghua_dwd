@@ -1,7 +1,7 @@
 package com.duoweidu.cases.fyb.openapi;
 
 import com.duoweidu.cases.interfaces.FybInterfaceTest;
-import com.duoweidu.config.SqlDetail;
+import com.duoweidu.config.sql.SqlDetail;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.testng.annotations.Test;
@@ -15,7 +15,7 @@ public class UserDeletecartsku extends FybInterfaceTest {
     public void userDeletecartsku() {
         setUrl("user.deletecartsku.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("skusInfo","[{\"skuId\":"+ SqlDetail.getParamValue("skuId") +
+        list.add(new BasicNameValuePair("skusInfo","[{\"skuId\":"+ SqlDetail.getInstance().getParamValue("skuId") +
                 ",\"amount\":1}]"));
         process(list,true,false);
     }

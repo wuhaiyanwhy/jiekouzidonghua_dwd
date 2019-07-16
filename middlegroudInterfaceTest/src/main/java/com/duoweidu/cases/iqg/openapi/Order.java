@@ -1,9 +1,9 @@
 package com.duoweidu.cases.iqg.openapi;
 
 import com.duoweidu.cases.interfaces.IqgInterfaceTest;
-import com.duoweidu.config.GeneralAssert;
+import com.duoweidu.config.generalAssert.GeneralAssert;
 import com.duoweidu.config.IqgConfig;
-import com.duoweidu.config.SqlDetail;
+import com.duoweidu.config.sql.SqlDetail;
 import com.duoweidu.utils.ConfigFileUrl;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
@@ -20,13 +20,13 @@ public class Order extends IqgInterfaceTest {
     public void order_true() {
         //修改用户订单数据，使其可以下单
         if ("beta".equals(ConfigFileUrl.getEnv())) {
-            SqlDetail.iqgUptadeOrder();
+            SqlDetail.getInstance().iqgUptadeOrder();
         }
         url = ConfigFileUrl.getUrlByKey("order.uri");
-        pathId = SqlDetail.getPathId("order.uri");
+        pathId = SqlDetail.getInstance().getPathId("order.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("item_id", SqlDetail.getParamValue("buyActivityId")));
-        list.add(new BasicNameValuePair("price",SqlDetail.getParamValue(2, "price")));
+        list.add(new BasicNameValuePair("item_id", SqlDetail.getInstance().getParamValue("buyActivityId")));
+        list.add(new BasicNameValuePair("price",SqlDetail.getInstance().getParamValue(2, "price")));
         process(list,false,false);
         IqgConfig.orderResult = result;
         if ("beta".equals(ConfigFileUrl.getEnv())) {

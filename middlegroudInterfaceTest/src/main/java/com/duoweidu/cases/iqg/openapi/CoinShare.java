@@ -1,7 +1,7 @@
 package com.duoweidu.cases.iqg.openapi;
 
 import com.duoweidu.cases.interfaces.IqgInterfaceTest;
-import com.duoweidu.config.SqlDetail;
+import com.duoweidu.config.sql.SqlDetail;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.testng.annotations.Test;
@@ -15,7 +15,7 @@ public class CoinShare extends IqgInterfaceTest {
     public void coin_share_true() {
         setUrl("coin.share.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("id", SqlDetail.getParamValue(2, "activityId")));
+        list.add(new BasicNameValuePair("id", SqlDetail.getInstance().getParamValue(2, "activityId")));
         list.add(new BasicNameValuePair("shareType","bargain"));
         process(list,false,false);
     }
