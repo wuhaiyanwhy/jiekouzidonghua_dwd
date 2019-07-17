@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<suite name="巨食阵接口测试">
+
+    <test name ="巨食阵接口测试用例(openapi)">
+        <classes >
+
+            <class name="com.duoweidu.cases.jsz.openapi.ActivityGetactivityinfo">
+                <methods>
+                    <include name = "ActivityGetactivityinfo"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.jsz.openapi.ActivityGetactivitylist">
+                <methods>
+                    <include name = "ActivityGetactivitylist"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.jsz.openapi.ActivityGetactivityinfo">
+                <methods>
+                    <include name = "ActivityGetactivityinfo"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.jsz.openapi.ActivityGetactivitylist">
+                <methods>
+                    <include name = "ActivityGetactivitylist"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.jsz.openapi.FeedbackApplyrefund">
+                <methods>
+                    <include name = "FeedbackApplyrefund"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.jsz.openapi.FeedbackFeedbackitemlist">
+                <methods>
+                    <include name = "feedbackFeedbackitemlist1"/>
+                    <include name = "feedbackFeedbackitemlist2"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.jsz.openapi.OrderBeforecreate">
+                <methods>
+                    <include name = "OrderBeforecreate"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.jsz.openapi.OrderCancelorder">
+                <methods>
+                    <include name = "OrderCancelorder"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.jsz.openapi.OrderCancreateorder">
+                <methods>
+                    <include name = "OrderCancreateorder"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.jsz.openapi.OrderCreateorder">
+                <methods>
+                    <include name = "OrderCreateorder"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.jsz.openapi.OrderOrderdetail">
+                <methods>
+                    <include name = "OrderOrderdetail"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.jsz.openapi.OrderOrderlist">
+                <methods>
+                    <include name = "OrderOrderlist"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.jsz.openapi.OrderPayorder">
+                <methods>
+                    <include name = "OrderPayorder"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.jsz.openapi.OrderQueryorder">
+                <methods>
+                    <include name = "OrderQueryorder"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.jsz.openapi.UserLogin2">
+                <methods>
+                    <include name = "UserLogin2"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.jsz.openapi.UserLogincallback">
+                <methods>
+                    <include name = "UserLogincallback"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.jsz.openapi.UserMyincome">
+                <methods>
+                    <include name = "UserMyincome"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.jsz.openapi.UserRegister2">
+                <methods>
+                    <include name = "UserRegister2"/>
+                </methods>
+            </class>
+
+
+
+
+        </classes>
+    </test>
+
+    <test name ="消息推送">
+        <classes >
+            <class name="com.duoweidu.cases.message.Build">
+                <methods>
+                    <include name="build"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <listeners>
+
+        <listener class-name="com.duoweidu.config.ExtentTestNGIReporterListener"/>
+    </listeners>
+
+</suite>

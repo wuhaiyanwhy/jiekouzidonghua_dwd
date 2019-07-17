@@ -42,7 +42,7 @@
             <!--</class>-->
             <!--<class name="com.duoweidu.cases.fyb.openapi.OrderCancelorder">-->
                 <!--<methods>-->
-                    <!--<include name = "orderCancelorder"/>-->
+                    <!--<include name = "OrderCancelorder"/>-->
                 <!--</methods>-->
             <!--</class>-->
             <!--<class name="com.duoweidu.cases.fyb.openapi.UserSetdefaultaddress">-->
