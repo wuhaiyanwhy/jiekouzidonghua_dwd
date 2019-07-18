@@ -2,7 +2,7 @@ package com.duoweidu.cases.interfaces;
 
 import com.duoweidu.config.generalAssert.GeneralAssertChannel;
 import com.duoweidu.config.sql.SqlGeneral;
-import com.duoweidu.utils.CallbackInterface;
+import com.duoweidu.utils.CallbackInterfaceChannel;
 import com.duoweidu.utils.ConfigFileUrl;
 import org.apache.http.NameValuePair;
 import org.json.JSONArray;
@@ -14,6 +14,7 @@ import java.util.List;
 
 public class HsqOpadminInterfaceTest extends InterfaceTest {
 
+    public static final int channel_id = ConfigFileUrl.getChannel1();
     @Override
     //获取url和pathId
     protected void setUrl(String key) {
@@ -21,10 +22,24 @@ public class HsqOpadminInterfaceTest extends InterfaceTest {
         pathId = SqlGeneral.getInterfacePathValue(ConfigFileUrl.getChannel1(), key).getId();
     }
 
+    //get请求，不要断言
+    @Override
+    protected void process() {
+        System.out.println(url);
+        result = CallbackInterfaceChannel.getStringResult(channel_id, url, pathId, this.param);
+    }
+
+    //post请求,不要断言
+    @Override
+    protected void process(List<NameValuePair> list) {
+        System.out.println(url);
+        param = list.toString();
+        result = CallbackInterfaceChannel.postStringResult(channel_id, url, pathId, list);
+    }
+
     //get请求,type=1 ==> data, type=2 ==>aaData
     protected void process(int type, boolean isAssert, boolean isList) {
-        System.out.println(url);
-        result = CallbackInterface.getStringResult(url, pathId, this.param);
+        process();
         if (isAssert == true) {
             generalAssertTest(type, isList);
         }
@@ -32,9 +47,7 @@ public class HsqOpadminInterfaceTest extends InterfaceTest {
 
     //post请求,type=1 ==> data, type=2 ==>aaData
     protected void process(List<NameValuePair> list, int type, boolean isAssert, boolean isList) {
-        System.out.println(url);
-        param = list.toString();
-        result = CallbackInterface.postStringResult(url, pathId, list);
+        process(list);
         if (isAssert == true) {
             generalAssertTest(type, isList);
         }
