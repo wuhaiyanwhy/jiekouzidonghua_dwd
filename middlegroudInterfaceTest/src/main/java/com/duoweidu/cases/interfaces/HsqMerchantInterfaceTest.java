@@ -2,21 +2,42 @@ package com.duoweidu.cases.interfaces;
 
 import com.duoweidu.config.generalAssert.GeneralAssertChannel;
 import com.duoweidu.config.sql.SqlGeneral;
+import com.duoweidu.utils.CallbackInterfaceChannel;
 import com.duoweidu.utils.ConfigFileUrl;
+import org.apache.http.NameValuePair;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class
 HsqMerchantInterfaceTest extends InterfaceTest {
+
+    public static final int channel_id = ConfigFileUrl.getChannel2();
 
     @Override
     //获取url和pathId
     protected void setUrl(String key) {
         url = ConfigFileUrl.getUrlByKey(key, ConfigFileUrl.getChannel2());
         pathId = SqlGeneral.getInterfacePathValue(ConfigFileUrl.getChannel2(), key).getId();
+    }
+
+
+    //get请求，不要断言
+    @Override
+    protected void process() {
+        System.out.println(url);
+        result = CallbackInterfaceChannel.getStringResult(channel_id, url, pathId, this.param);
+    }
+
+    //post请求,不要断言
+    @Override
+    protected void process(List<NameValuePair> list) {
+        System.out.println(url);
+        param = list.toString();
+        result = CallbackInterfaceChannel.postStringResult(channel_id, url, pathId, list);
     }
 
     //通用断言判断，只判断errno
