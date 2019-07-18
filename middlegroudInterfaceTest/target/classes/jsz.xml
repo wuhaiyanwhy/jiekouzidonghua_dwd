@@ -15,6 +15,37 @@
                     <include name = "ActivityGetactivitylist"/>
                 </methods>
             </class>
+            <class name="com.duoweidu.cases.jsz.openapi.AddressSearch">
+                <methods>
+                    <include name = "AddressSearch"/>
+
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.jsz.openapi.CommonCbdlist">
+                <methods>
+                    <include name = "CommonCbdlist"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.jsz.openapi.CommonGetposter">
+                <methods>
+                    <include name = "CommonGetposter"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.jsz.openapi.CommonQrcodeimg">
+                <methods>
+                    <include name = "CommonQrcodeimg"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.jsz.openapi.CommonWxsign">
+                <methods>
+                    <include name = "CommonWxsign"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.jsz.openapi.CommonZonelist">
+                <methods>
+                    <include name = "CommonZonelist"/>
+                </methods>
+            </class>
             <class name="com.duoweidu.cases.jsz.openapi.ActivityGetactivityinfo">
                 <methods>
                     <include name = "ActivityGetactivityinfo"/>
@@ -32,8 +63,8 @@
             </class>
             <class name="com.duoweidu.cases.jsz.openapi.FeedbackFeedbackitemlist">
                 <methods>
-                    <include name = "feedbackFeedbackitemlist1"/>
-                    <include name = "feedbackFeedbackitemlist2"/>
+                    <include name = "FeedbackFeedbackitemlist1"/>
+                    <include name = "FeedbackFeedbackitemlist2"/>
                 </methods>
             </class>
             <class name="com.duoweidu.cases.jsz.openapi.OrderBeforecreate">
@@ -63,7 +94,13 @@
             </class>
             <class name="com.duoweidu.cases.jsz.openapi.OrderOrderlist">
                 <methods>
-                    <include name = "OrderOrderlist"/>
+                    <include name = "OrderOrderlist1"/>
+                    <include name = "OrderOrderlist2"/>
+                    <include name = "OrderOrderlist3"/>
+                    <include name = "OrderOrderlist4"/>
+                    <include name = "OrderOrderlist5"/>
+                    <include name = "OrderOrderlist6"/>
+                    <include name = "OrderOrderlist7"/>
                 </methods>
             </class>
             <class name="com.duoweidu.cases.jsz.openapi.OrderPayorder">
@@ -74,6 +111,16 @@
             <class name="com.duoweidu.cases.jsz.openapi.OrderQueryorder">
                 <methods>
                     <include name = "OrderQueryorder"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.jsz.openapi.UserHome">
+                <methods>
+                    <include name = "UserHome"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.jsz.openapi.UserJoinmembers">
+                <methods>
+                    <include name = "UserJoinmembers"/>
                 </methods>
             </class>
             <class name="com.duoweidu.cases.jsz.openapi.UserLogin2">
@@ -96,8 +143,6 @@
                     <include name = "UserRegister2"/>
                 </methods>
             </class>
-
-
 
 
         </classes>

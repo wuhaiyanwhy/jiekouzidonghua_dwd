@@ -12,6 +12,8 @@ public class OrderQueryorder extends JszInterfaceTest {
         setUrl("order.queryorder.uri");
         param = "id=" + SqlDetail.getInstance().getParamValue("id") +
                 "&paymentId=" + JszConfig.payment_id ;
-        process(true, false);
+        process(false, false);
+
     }
+
 }

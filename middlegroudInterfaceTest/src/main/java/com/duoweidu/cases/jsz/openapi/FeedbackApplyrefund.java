@@ -14,9 +14,6 @@ public class FeedbackApplyrefund extends JszInterfaceTest {
     public void feedbackApplyrefund() {
         setUrl("feedback.applyrefund.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("orderId", ""));
-        list.add(new BasicNameValuePair("feedbackItemId", ""));
-        list.add(new BasicNameValuePair("feedback", ""));
-        process(list,true, false);
+        process(list,false, false);
     }
 }

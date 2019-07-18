@@ -13,7 +13,6 @@ public class OrderCancreateorder extends JszInterfaceTest {
     @Test(dependsOnGroups = "UserLogincallback",description = "检测是否可以购买")
     public void orderCancreateorder() {
         setUrl("order.cancreateorder.uri");
-        List<NameValuePair> list = new LinkedList<>();
         param = "activityId=" + SqlDetail.getInstance().getParamValue("activityId");
         process(true, false);
     }
