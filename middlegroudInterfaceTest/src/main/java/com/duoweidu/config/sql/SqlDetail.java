@@ -213,4 +213,8 @@ public class SqlDetail {
             System.out.println("助力免单数据更新成功，助力成功");
         }
     }
+
+    public String getChannelName() {
+        return SqlGeneral.getChannelName(channel_id());
+    }
 }
