@@ -588,18 +588,6 @@
                 </methods>
             </class>
 
-            <!--<class name="com.duoweidu.cases.hsq.openapi.point_index_test">-->
-            <!--<methods>-->
-            <!--<include name="point_index_true"/>-->
-            <!--</methods>-->
-            <!--</class>-->
-
-            <!--<class name="com.duoweidu.cases.hsq.openapi.point_recommenditems_test">-->
-            <!--<methods>-->
-            <!--<include name="point_recommenditems_true"/>-->
-            <!--</methods>-->
-            <!--</class>-->
-
             <class name="com.duoweidu.cases.hsq.openapi.market_pinactivitiesuserlist_test">
                 <methods>
                     <include name="market_pinactivitiesuserlist_true"/>
@@ -672,30 +660,6 @@
                     <include name="common_qiniutoken_true"/>
                 </methods>
             </class>
-
-            <!--<class name="com.duoweidu.cases.hsq.openapi.point_topicinfo_test">-->
-            <!--<methods>-->
-            <!--<include name="point_topicinfo_true"/>-->
-            <!--</methods>-->
-            <!--</class>-->
-
-            <!--<class name="com.duoweidu.cases.hsq.openapi.point_topicbuskulist_test">-->
-            <!--<methods>-->
-            <!--<include name="point_topicbuskulist_true"/>-->
-            <!--</methods>-->
-            <!--</class>-->
-
-            <!--<class name="com.duoweidu.cases.hsq.openapi.tradecenter_pointorderpreview_test">-->
-            <!--<methods>-->
-            <!--<include name="tradecenter_pointorderpreview_true"/>-->
-            <!--</methods>-->
-            <!--</class>-->
-
-            <!--<class name="com.duoweidu.cases.hsq.openapi.tradecenter_pointordersubmit_test">-->
-            <!--<methods>-->
-            <!--<include name="tradecenter_pointordersubmit_true"/>-->
-            <!--</methods>-->
-            <!--</class>-->
 
             <class name="com.duoweidu.cases.hsq.openapi.tradecenter_ordercancel_test">
                 <methods>

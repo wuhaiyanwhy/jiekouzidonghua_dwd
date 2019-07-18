@@ -26,10 +26,11 @@ public class order_linkmallpointorder_test extends HsqInterfaceTest {
         list.add(new BasicNameValuePair("pointId", SqlDetail.getInstance().getParamValue("pSkuId")));
         list.add(new BasicNameValuePair("type", "buy"));
         process(list, true, false);
-        model=sparseJson(OrderLinkmallpointorderData.class);
+        model = sparseJson(OrderLinkmallpointorderData.class);
         detailAssert();
     }
+
     private void detailAssert() {
-        detailAssertTest( "link", model.link);
+        detailAssertTest("link", model.link);
     }
 }
