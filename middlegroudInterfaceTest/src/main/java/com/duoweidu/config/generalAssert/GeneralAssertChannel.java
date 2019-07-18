@@ -104,7 +104,7 @@ public class GeneralAssertChannel extends Assert {
      */
     public static void codeAssert(int channel_id, HttpResponse response, String uri, int path_id, String param) {
         int statusCode = response.getStatusLine().getStatusCode();
-        if (statusCode != 200) {
+        if (statusCode == 200) {
             //需要一个HTTP_好的状态从响应和不得到它，你仍然必须消耗实体
             if (response.getEntity() != null) {
                 try {
