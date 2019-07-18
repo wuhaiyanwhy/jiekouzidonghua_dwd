@@ -1814,10 +1814,16 @@
   </component>
   <component name="PropertiesComponent">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563268089326" />
 >>>>>>> iqg-beta
 =======
+=======
+>>>>>>> iqg-beta
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563436390354" />
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563439268831" />
+>>>>>>> hsq-beta
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -1842,7 +1848,11 @@
     </option>
 >>>>>>> iqg-beta
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="TestNG./Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/iqg.xml">
+=======
+  <component name="RunManager" selected="TestNG./Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml">
+>>>>>>> hsq-beta
     <configuration name="JenkinsCallbackInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.duoweidu.utils.JenkinsCallbackInterface" />
       <module name="middlegroudInterfaceTest" />
@@ -1908,7 +1918,10 @@
     </list>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="TestNG./Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/iqg.xml" />
+=======
+>>>>>>> hsq-beta
         <item itemvalue="TestNG./Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.JenkinsCallbackInterface" />
