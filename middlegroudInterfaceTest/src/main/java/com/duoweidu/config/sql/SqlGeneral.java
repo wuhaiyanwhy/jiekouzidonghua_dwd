@@ -207,4 +207,8 @@ public class SqlGeneral {
         }
 //        session.close();
     }
+
+    public static String getChannelName(int channel_id) {
+        return session.selectOne("getChannelName", channel_id);
+    }
 }
