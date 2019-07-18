@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+<suite name="好食期接口测试">
+
+
+
+    <test name ="好食期接口测试用例(支付宝相关-积分小程序)">
+        <classes >
+
+            <class name="com.duoweidu.cases.hsq.openapi.point_skulist_test">
+                <methods>
+                    <include name = "point_skulist_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.openapi.point_iteminfo_test">
+                <methods>
+                    <include name = "point_iteminfo_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.openapi.tradecenter_orderlist_test">
+                <methods>
+                    <include name="tradecenter_orderlist_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.openapi.tradecenter_orderinfo_test">
+                <methods>
+                    <include name="tradecenter_orderinfo_true"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <listeners>
+
+        <listener class-name="com.duoweidu.config.ExtentTestNGIReporterListener"/>
+    </listeners>
+
+</suite>
