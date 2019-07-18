@@ -1,7 +1,6 @@
 package com.duoweidu.config.generalAssert;
 
 import com.duoweidu.config.GeneralConfig;
-import com.duoweidu.config.sql.SqlDetail;
 import com.duoweidu.config.sql.SqlGeneral;
 import com.duoweidu.utils.ConfigFileUrl;
 import org.apache.http.Header;

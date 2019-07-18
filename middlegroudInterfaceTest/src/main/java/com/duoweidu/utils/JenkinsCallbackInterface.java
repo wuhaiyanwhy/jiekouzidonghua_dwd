@@ -6,7 +6,6 @@ import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
-import org.apache.http.impl.client.DefaultHttpClient;
 import org.codehaus.plexus.util.Base64;
 
 import java.io.IOException;
@@ -16,9 +15,6 @@ import java.util.List;
 
 public class JenkinsCallbackInterface extends CallbackInterface {
 
-    static {
-        defaultHttpClient = new DefaultHttpClient();
-    }
     private static final String key = SqlGeneral.getParamValue(11, 0, "username").getValue();
     private static final String value = SqlGeneral.getParamValue(11, 0, "password").getValue();
 
@@ -46,6 +42,6 @@ public class JenkinsCallbackInterface extends CallbackInterface {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return getResult(response, url, path_id, list.toString());
+        return getResult(11, response, url, path_id, list.toString());
     }
 }

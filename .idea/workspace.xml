@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="50c9a098-cf9f-4ab6-b025-2838502e1902" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/cases/message/Test.class" afterDir="false" />
+=======
+    <list default="true" id="2856b196-f899-4cc7-a69c-571e35f4f77d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/utils/CallbackInterfaceChannel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/utils/CallbackInterfaceChannel.class" afterDir="false" />
+>>>>>>> hsq-beta
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/message/Build.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/message/Build.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/sql/SqlDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/sql/SqlDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/sql/SqlGeneral.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/sql/SqlGeneral.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/mapper/SQLMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/mapper/SQLMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/HsqMerchantInterfaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/HsqMerchantInterfaceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/HsqOpadminInterfaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/interfaces/HsqOpadminInterfaceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/generalAssert/GeneralAssertChannel.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/generalAssert/GeneralAssertChannel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/utils/CallbackInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/utils/CallbackInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/utils/IqgCallbackInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/utils/IqgCallbackInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/utils/JenkinsCallbackInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/utils/JenkinsCallbackInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/switch.properties" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/switch.properties" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/cases/message/Build.class" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/cases/message/Build.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/config/sql/SqlDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/config/sql/SqlDetail.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/config/sql/SqlGeneral.class" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/config/sql/SqlGeneral.class" afterDir="false" />
@@ -16,47 +25,83 @@
       <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/switch.properties" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/switch.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/test-output/InterfaceReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/test-output/InterfaceReport.html" afterDir="false" />
     </list>
+=======
+      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/cases/interfaces/HsqMerchantInterfaceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/cases/interfaces/HsqMerchantInterfaceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/cases/interfaces/HsqOpadminInterfaceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/cases/interfaces/HsqOpadminInterfaceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/config/generalAssert/GeneralAssertChannel.class" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/config/generalAssert/GeneralAssertChannel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/utils/CallbackInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/utils/CallbackInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/utils/IqgCallbackInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/utils/IqgCallbackInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/utils/JenkinsCallbackInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/target/classes/com/duoweidu/utils/JenkinsCallbackInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest/test-output/InterfaceReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/middlegroudInterfaceTest/test-output/InterfaceReport.html" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/middlegroudInterfaceTest/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+>>>>>>> hsq-beta
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ErrorTreeViewConfiguration">
-    <option name="hideWarnings" value="true" />
-    <option name="HIDE_WARNINGS" value="true" />
-  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1054740520">
+<<<<<<< HEAD
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="properties" value="5" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
+=======
+      <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="Properties" value="5" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="java" value="1" />
+          <entry key="properties" value="1" />
+          <entry key="xml" value="2" />
+>>>>>>> hsq-beta
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+<<<<<<< HEAD
+          <entry key="Properties" value="5" />
+=======
+          <entry key="JAVA" value="1" />
+          <entry key="Properties" value="1" />
+          <entry key="XML" value="2" />
+>>>>>>> hsq-beta
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+<<<<<<< HEAD
           <entry key="xml" value="3" />
+=======
+          <entry key="java" value="1" />
+          <entry key="properties" value="4" />
+>>>>>>> hsq-beta
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+<<<<<<< HEAD
           <entry key="XML" value="3" />
+=======
+          <entry key="JAVA" value="1" />
+          <entry key="Properties" value="4" />
+>>>>>>> hsq-beta
         </counts>
       </usages-collector>
     </session>
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="middleground-onlineTest" />
   </component>
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/switch.properties">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="150">
               <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
@@ -80,10 +125,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="179">
               <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+=======
+            <state relative-caret-position="15">
+              <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+>>>>>>> hsq-beta
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/message/Build.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -98,13 +148,21 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="106">
               <caret line="59" selection-start-line="59" selection-end-line="59" />
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/generalAssert/GeneralAssertChannel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="106" column="24" selection-start-line="106" selection-start-column="24" selection-end-line="106" selection-end-column="24" />
+>>>>>>> hsq-beta
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/sql/SqlGeneral.java">
+        <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="165">
               <caret line="214" selection-start-line="214" selection-end-line="214" />
             </state>
@@ -130,48 +188,13 @@
                 <element signature="e#3413#3414#0" expanded="true" />
               </folding>
             </state>
+=======
+            <state relative-caret-position="-1172" />
+>>>>>>> hsq-beta
           </provider>
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>channel</find>
-      <find>/sms/checkverifycode</find>
-      <find>OpenapiInterfaceTest</find>
-      <find>ConfigFileOpenapi</find>
-      <find>import com.duoweidu.cases.interfacetest.HsqInterfaceTest;</find>
-      <find>import com.duoweidu.config.TestSql;</find>
-      <find>TestSql.getOpenapiValue</find>
-      <find>TestConfigOpenapi</find>
-      <find>SqlDetail</find>
-      <find>Gen</find>
-      <find>General</find>
-      <find>SqlDetail\.</find>
-      <find>SqlDetailMultiChannel1.</find>
-      <find>SqlDetailMultiChannel1</find>
-      <find>GeneralAssertMultiChannel2</find>
-      <find>GeneralAssertMultiChannel1</find>
-      <find>build</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-      <replace>HsqInterfaceTest</replace>
-      <replace>ConfigFileUrl</replace>
-      <replace>import com.duoweidu.cases.interfaces.HsqInterfaceTest;</replace>
-      <replace>import com.duoweidu.config.SqlDetail;</replace>
-      <replace>SqlDetail.getParamValue</replace>
-      <replace>HsqOpenapiConfig</replace>
-      <replace>SqlDetail.getInstance().</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -179,6 +202,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/TradecenterAssistanceorderinit.java" />
         <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/order_orderpayconfirm_test.java" />
         <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi/order_orderpay_test.java" />
@@ -230,6 +254,10 @@
         <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/message/Test.java" />
         <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/message/Build.java" />
         <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/switch.properties" />
+=======
+        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/switch.properties" />
+        <option value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/generalAssert/GeneralAssertChannel.java" />
+>>>>>>> hsq-beta
       </list>
     </option>
   </component>
@@ -239,6 +267,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+<<<<<<< HEAD
   <component name="MavenProjectNavigator">
     <treeState>
       <expand>
@@ -256,12 +285,13 @@
     <option name="width" value="1246" />
     <option name="height" value="777" />
   </component>
+=======
+>>>>>>> hsq-beta
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -318,38 +348,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="duoweidu" type="462c0819:PsiDirectoryNode" />
-              <item name="cases" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="middleground-onlineTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="middleground-onlineTest" type="462c0819:PsiDirectoryNode" />
-              <item name="middlegroudInterfaceTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="duoweidu" type="462c0819:PsiDirectoryNode" />
-              <item name="cases" type="462c0819:PsiDirectoryNode" />
-              <item name="message" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="middleground-onlineTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="middleground-onlineTest" type="462c0819:PsiDirectoryNode" />
-              <item name="middlegroudInterfaceTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="duoweidu" type="462c0819:PsiDirectoryNode" />
-              <item name="cases" type="462c0819:PsiDirectoryNode" />
-              <item name="tradecenterOpadmin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="middleground-onlineTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="middleground-onlineTest" type="462c0819:PsiDirectoryNode" />
-              <item name="middlegroudInterfaceTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="duoweidu" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -371,8 +369,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="duoweidu" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="sql" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="middleground-onlineTest" type="b2602c69:ProjectViewProjectNode" />
@@ -392,30 +389,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="middleground-onlineTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="middleground-onlineTest" type="462c0819:PsiDirectoryNode" />
-              <item name="middlegroudInterfaceTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="middleground-onlineTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="middleground-onlineTest" type="462c0819:PsiDirectoryNode" />
-              <item name="middlegroudInterfaceTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563436390354" />
 =======
@@ -431,6 +414,11 @@
       <recent name="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/hsq/openapi" />
       <recent name="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/model/hsq" />
     </key>
+=======
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563443310604" />
+>>>>>>> hsq-beta
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -444,6 +432,7 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <component name="RunManager" selected="TestNG./Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/iqg.xml">
 =======
@@ -486,6 +475,10 @@
       </method>
     </configuration>
     <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/iqg.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+=======
+  <component name="RunManager">
+    <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+>>>>>>> hsq-beta
       <module name="middlegroudInterfaceTest" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/iqg.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
@@ -495,6 +488,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="middlegroudInterfaceTest" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" />
@@ -522,6 +516,11 @@
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.JenkinsCallbackInterface" />
         <item itemvalue="TestNG./Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" />
+=======
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG./Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" />
+>>>>>>> hsq-beta
       </list>
     </recent_temporary>
   </component>
@@ -530,16 +529,17 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a5bc0160-3889-4c0e-b618-58b839bf4186" name="Default Changelist" comment="" />
-      <created>1562667156443</created>
+      <changelist id="2856b196-f899-4cc7-a69c-571e35f4f77d" name="Default Changelist" comment="" />
+      <created>1563442892827</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1562667156443</updated>
-      <workItem from="1562667157874" duration="1487000" />
+      <updated>1563442892827</updated>
+      <workItem from="1563442894630" duration="237000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
+<<<<<<< HEAD
     <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq_xml - 2019.07.18 at 09h 58m 40s.xml">
       <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" configurationId="TestNG" />
     </history-entry>
@@ -547,15 +547,12 @@
       <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" configurationId="TestNG" />
     </history-entry>
     <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq_xml - 2019.07.18 at 10h 09m 23s.xml">
+=======
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq_xml - 2019.07.18 at 17h 44m 09s.xml">
+>>>>>>> hsq-beta
       <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq_xml - 2019.07.18 at 11h 11m 54s.xml">
-      <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq_xml - 2019.07.18 at 11h 25m 21s.xml">
-      <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq_xml - 2019.07.18 at 11h 27m 23s.xml">
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq_xml - 2019.07.18 at 17h 46m 44s.xml">
       <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" configurationId="TestNG" />
     </history-entry>
     <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq_xml - 2019.07.18 at 15h 46m 59s.xml">
@@ -572,6 +569,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="939000" />
   </component>
   <component name="ToolWindowManager">
@@ -598,47 +596,44 @@
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" weight="0.3294702" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16453674" />
+=======
+    <option name="totallyTimeSpent" value="240000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="35" y="23" width="1245" height="777" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24937657" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Designer" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32908705" />
-      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="2" />
-      <window_info anchor="bottom" id="Statistic" order="3" weight="0.32930514" />
-      <window_info anchor="bottom" id="Terminal" order="4" weight="0.32165605" />
-      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Message" order="6" />
-      <window_info anchor="bottom" id="Find" order="7" weight="0.32930514" />
-      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.43949044" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.54531723" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="bottom" id="Messages" weight="0.32930514" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Statistic" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32930514" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Maven Projects" />
+>>>>>>> hsq-beta
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" weight="0.3294702" />
-    </layout-to-restore>
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -647,6 +642,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/cases/message/Build.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-15">
@@ -772,5 +768,29 @@
         </settings>
       </state>
     </states>
+=======
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1172" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/switch.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/java/com/duoweidu/config/generalAssert/GeneralAssertChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="106" column="24" selection-start-line="106" selection-start-column="24" selection-end-line="106" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> hsq-beta
   </component>
 </project>
