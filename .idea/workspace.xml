@@ -446,7 +446,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563435684225" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563439268831" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -470,7 +470,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test">
+  <component name="RunManager" selected="TestNG./Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml">
     <configuration name="JenkinsCallbackInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.duoweidu.utils.JenkinsCallbackInterface" />
       <module name="middlegroudInterfaceTest" />
@@ -536,8 +536,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test" />
         <item itemvalue="TestNG./Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" />
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.JenkinsCallbackInterface" />
         <item itemvalue="TestNG./Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" />
         <item itemvalue="TestNG./Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/fyb.xml" />
