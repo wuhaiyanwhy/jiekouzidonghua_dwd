@@ -222,7 +222,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563443135984" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563443310604" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -266,6 +266,14 @@
       <workItem from="1563442894630" duration="237000" />
     </task>
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq_xml - 2019.07.18 at 17h 44m 09s.xml">
+      <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq_xml - 2019.07.18 at 17h 46m 44s.xml">
+      <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="240000" />
