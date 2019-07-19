@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class point_topicbuskulist_test extends HsqInterfaceTest {
 
-    @Test(description = "获取积分信息列表(老专题)")
+    @Test(description = "获取积分专题sku信息列表(老专题)")
     public void point_topicbuskulist_true() {
         setUrl("point.topicbuskulist.uri");
         param = "pointChannelId=1&topicCode=" + SqlDetail.getInstance().getParamValue("topicCode");

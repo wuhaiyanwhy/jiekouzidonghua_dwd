@@ -34,7 +34,8 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+						<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
 		<!-- report name -->
@@ -47,7 +48,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jul 18, 2019 07:28:45 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jul 19, 2019 04:59:23 PM</span>
 				</a>
 			</li>
 			<li>
@@ -73,6 +74,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -123,10 +125,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>11</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='90.909%'><span class='strong'>10</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='9.091%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -138,10 +140,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>11</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='90.909%'><span class='strong'>10</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='9.091%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -156,17 +158,17 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>point_index_true</span>
-						<span class='test-time'>Jul 18, 2019 07:28:45 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>point_recommenditems_true</span>
+						<span class='test-time'>Jul 19, 2019 04:59:25 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 18, 2019 07:28:45 PM</span>
-	<span class='label end-time'>Jul 18, 2019 07:28:46 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+369ms</span>
+	<span class='label start-time'>Jul 19, 2019 04:59:25 PM</span>
+	<span class='label end-time'>Jul 19, 2019 04:59:25 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+120ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -178,10 +180,52 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:28:47 PM</td>
-					<td class='step-details'>Test passed</td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>4:59:27 PM</td>
+					<td class='step-details'><pre>java.lang.AssertionError: 
+json解析错误;
+报错的代码:org.json.JSONException: JSONObject["data"] is not a JSONObject.
+请求的url:https://m.betaapi.haoshiqi.net/point/recommenditems
+参数：v=3.4.6&item_selected_cnt=3&data_rule=1
+cookie：null
+接口返回：{"errno":0,"errmsg":"success","data":[{"id":2845,"thumbnail":"http://img2.haoshiqi.net/mab1285a0e58003c05ae633be7751b2b23.jpg?imageView2/0/w/420/h/420/q/70","point":10,"price":1,"name":"test0415","merchant_type":2,"enabled":1},{"id":2848,"thumbnail":"http://img2.haoshiqi.net/mafa96f64265271d23bcdd2cdf3a5a163a.jpg?imageView2/0/w/420/h/420/q/70","point":10,"price":1,"name":"啊啊啊啊商品信息图","merchant_type":2,"enabled":1},{"id":2888,"thumbnail":"http://img2.haoshiqi.net/ma1b798379033ade2aa2c38ea6965667b1.jpg?imageView2/0/w/420/h/420/q/70","point":10,"price":1,"name":"水果水果水果水果水果水果","merchant_type":2,"enabled":1}],"timestamp":1563526765,"serverlogid":"00aff416-bee9-452a-9cdd-3c5303a43120"}
+《-------------------------分割线-------------------------》
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.duoweidu.config.generalAssert.GeneralAssertChannel.jsonAssert(GeneralAssertChannel.java:237)
+	at com.duoweidu.config.generalAssert.GeneralAssert.jsonAssert(GeneralAssert.java:119)
+	at com.duoweidu.cases.interfaces.InterfaceTest.sparseJson(InterfaceTest.java:34)
+	at com.duoweidu.cases.hsq.openapi.point_recommenditems_test.point_recommenditems_true(point_recommenditems_test.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at com.intellij.rt.execution.application.AppMainV2.main(AppMainV2.java:131)
+</pre></td>
 				</tr>
 			</tbody>
 		</table>
@@ -192,15 +236,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
-						<span class='test-name'>point_topicinfo_true</span>
-						<span class='test-time'>Jul 18, 2019 07:28:46 PM</span>
+						<span class='test-name'>point_index_true</span>
+						<span class='test-time'>Jul 19, 2019 04:59:23 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 18, 2019 07:28:46 PM</span>
-	<span class='label end-time'>Jul 18, 2019 07:28:46 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+58ms</span>
+	<span class='label start-time'>Jul 19, 2019 04:59:23 PM</span>
+	<span class='label end-time'>Jul 19, 2019 04:59:25 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+395ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -214,7 +258,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:28:47 PM</td>
+					<td class='timestamp'>4:59:27 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -226,15 +270,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
 					<div class='test-heading'>
-						<span class='test-name'>point_recommenditems_true</span>
-						<span class='test-time'>Jul 18, 2019 07:28:46 PM</span>
+						<span class='test-name'>point_topicinfo_true</span>
+						<span class='test-time'>Jul 19, 2019 04:59:25 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 18, 2019 07:28:46 PM</span>
-	<span class='label end-time'>Jul 18, 2019 07:28:46 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+32ms</span>
+	<span class='label start-time'>Jul 19, 2019 04:59:25 PM</span>
+	<span class='label end-time'>Jul 19, 2019 04:59:25 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+128ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -248,7 +292,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:28:47 PM</td>
+					<td class='timestamp'>4:59:27 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -261,14 +305,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
 					<div class='test-heading'>
 						<span class='test-name'>point_topicbuskulist_true</span>
-						<span class='test-time'>Jul 18, 2019 07:28:46 PM</span>
+						<span class='test-time'>Jul 19, 2019 04:59:25 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 18, 2019 07:28:46 PM</span>
-	<span class='label end-time'>Jul 18, 2019 07:28:46 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+51ms</span>
+	<span class='label start-time'>Jul 19, 2019 04:59:25 PM</span>
+	<span class='label end-time'>Jul 19, 2019 04:59:25 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+159ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -282,7 +326,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:28:47 PM</td>
+					<td class='timestamp'>4:59:27 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -295,14 +339,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
 					<div class='test-heading'>
 						<span class='test-name'>point_skulist_true</span>
-						<span class='test-time'>Jul 18, 2019 07:28:46 PM</span>
+						<span class='test-time'>Jul 19, 2019 04:59:25 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 18, 2019 07:28:46 PM</span>
-	<span class='label end-time'>Jul 18, 2019 07:28:46 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+61ms</span>
+	<span class='label start-time'>Jul 19, 2019 04:59:25 PM</span>
+	<span class='label end-time'>Jul 19, 2019 04:59:25 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+163ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -316,7 +360,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:28:47 PM</td>
+					<td class='timestamp'>4:59:27 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -329,14 +373,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
 					<div class='test-heading'>
 						<span class='test-name'>point_iteminfo_true</span>
-						<span class='test-time'>Jul 18, 2019 07:28:46 PM</span>
+						<span class='test-time'>Jul 19, 2019 04:59:25 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 18, 2019 07:28:46 PM</span>
-	<span class='label end-time'>Jul 18, 2019 07:28:46 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+75ms</span>
+	<span class='label start-time'>Jul 19, 2019 04:59:25 PM</span>
+	<span class='label end-time'>Jul 19, 2019 04:59:26 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+565ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -350,7 +394,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:28:47 PM</td>
+					<td class='timestamp'>4:59:27 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -363,14 +407,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
 					<div class='test-heading'>
 						<span class='test-name'>tradecenter_pointorderpreview_true</span>
-						<span class='test-time'>Jul 18, 2019 07:28:46 PM</span>
+						<span class='test-time'>Jul 19, 2019 04:59:26 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 18, 2019 07:28:46 PM</span>
-	<span class='label end-time'>Jul 18, 2019 07:28:47 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+61ms</span>
+	<span class='label start-time'>Jul 19, 2019 04:59:26 PM</span>
+	<span class='label end-time'>Jul 19, 2019 04:59:26 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+228ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -384,7 +428,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:28:47 PM</td>
+					<td class='timestamp'>4:59:27 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -397,14 +441,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
 					<div class='test-heading'>
 						<span class='test-name'>tradecenter_pointordersubmit_true</span>
-						<span class='test-time'>Jul 18, 2019 07:28:47 PM</span>
+						<span class='test-time'>Jul 19, 2019 04:59:26 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 18, 2019 07:28:47 PM</span>
-	<span class='label end-time'>Jul 18, 2019 07:28:47 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+64ms</span>
+	<span class='label start-time'>Jul 19, 2019 04:59:26 PM</span>
+	<span class='label end-time'>Jul 19, 2019 04:59:26 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+95ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -418,7 +462,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:28:47 PM</td>
+					<td class='timestamp'>4:59:27 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -431,14 +475,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
 					<div class='test-heading'>
 						<span class='test-name'>order_linkmallpointorder_true</span>
-						<span class='test-time'>Jul 18, 2019 07:28:47 PM</span>
+						<span class='test-time'>Jul 19, 2019 04:59:26 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 18, 2019 07:28:47 PM</span>
-	<span class='label end-time'>Jul 18, 2019 07:28:47 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+113ms</span>
+	<span class='label start-time'>Jul 19, 2019 04:59:26 PM</span>
+	<span class='label end-time'>Jul 19, 2019 04:59:26 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+197ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -452,7 +496,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:28:47 PM</td>
+					<td class='timestamp'>4:59:27 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -465,14 +509,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
 					<div class='test-heading'>
 						<span class='test-name'>tradecenter_orderlist_true</span>
-						<span class='test-time'>Jul 18, 2019 07:28:47 PM</span>
+						<span class='test-time'>Jul 19, 2019 04:59:26 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 18, 2019 07:28:47 PM</span>
-	<span class='label end-time'>Jul 18, 2019 07:28:47 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+294ms</span>
+	<span class='label start-time'>Jul 19, 2019 04:59:26 PM</span>
+	<span class='label end-time'>Jul 19, 2019 04:59:27 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+550ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -486,7 +530,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:28:47 PM</td>
+					<td class='timestamp'>4:59:27 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -499,14 +543,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
 					<div class='test-heading'>
 						<span class='test-name'>tradecenter_orderinfo_true</span>
-						<span class='test-time'>Jul 18, 2019 07:28:47 PM</span>
+						<span class='test-time'>Jul 19, 2019 04:59:27 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 18, 2019 07:28:47 PM</span>
-	<span class='label end-time'>Jul 18, 2019 07:28:47 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+105ms</span>
+	<span class='label start-time'>Jul 19, 2019 04:59:27 PM</span>
+	<span class='label end-time'>Jul 19, 2019 04:59:27 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+201ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -520,7 +564,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:28:47 PM</td>
+					<td class='timestamp'>4:59:27 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -554,6 +598,109 @@
 </div>
 <!-- test view -->
 <!-- category view -->
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>java.lang.AssertionError</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Jul 19, 2019 04:59:25 PM</td>
+                                                        <td class='linked' test-id='1'>point_recommenditems_true</td>
+                                                        <td><pre><pre>java.lang.AssertionError: 
+json解析错误;
+报错的代码:org.json.JSONException: JSONObject["data"] is not a JSONObject.
+请求的url:https://m.betaapi.haoshiqi.net/point/recommenditems
+参数：v=3.4.6&item_selected_cnt=3&data_rule=1
+cookie：null
+接口返回：{"errno":0,"errmsg":"success","data":[{"id":2845,"thumbnail":"http://img2.haoshiqi.net/mab1285a0e58003c05ae633be7751b2b23.jpg?imageView2/0/w/420/h/420/q/70","point":10,"price":1,"name":"test0415","merchant_type":2,"enabled":1},{"id":2848,"thumbnail":"http://img2.haoshiqi.net/mafa96f64265271d23bcdd2cdf3a5a163a.jpg?imageView2/0/w/420/h/420/q/70","point":10,"price":1,"name":"啊啊啊啊商品信息图","merchant_type":2,"enabled":1},{"id":2888,"thumbnail":"http://img2.haoshiqi.net/ma1b798379033ade2aa2c38ea6965667b1.jpg?imageView2/0/w/420/h/420/q/70","point":10,"price":1,"name":"水果水果水果水果水果水果","merchant_type":2,"enabled":1}],"timestamp":1563526765,"serverlogid":"00aff416-bee9-452a-9cdd-3c5303a43120"}
+《-------------------------分割线-------------------------》
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.duoweidu.config.generalAssert.GeneralAssertChannel.jsonAssert(GeneralAssertChannel.java:237)
+	at com.duoweidu.config.generalAssert.GeneralAssert.jsonAssert(GeneralAssert.java:119)
+	at com.duoweidu.cases.interfaces.InterfaceTest.sparseJson(InterfaceTest.java:34)
+	at com.duoweidu.cases.hsq.openapi.point_recommenditems_test.point_recommenditems_true(point_recommenditems_test.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at com.intellij.rt.execution.application.AppMainV2.main(AppMainV2.java:131)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
+        </div>
+    </div>
+</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -575,19 +722,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 18, 2019 07:28:45 PM</div>
+					<div class='panel-lead'>Jul 19, 2019 04:59:23 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 18, 2019 07:28:46 PM</div>
+			 		<div class='panel-lead'>Jul 19, 2019 04:59:25 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>1,369ms</div>
+					<div class='panel-lead'>1,395ms</div>
 				</div>
 			</div>
 		</div>
@@ -600,22 +747,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 11,
-				failParent: 0,
+				passParent: 10,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				
-				passChild: 11,
-				failChild: 0,
+				passChild: 10,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 1,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

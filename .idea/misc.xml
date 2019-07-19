@@ -10,5 +10,8 @@
       </list>
     </option>
   </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/middlegroudInterfaceTest/src/main/resources/hsq-test.xml" />
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_10" default="false" project-jdk-name="12" project-jdk-type="JavaSDK" />
 </project>

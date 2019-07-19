@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class point_index_test extends HsqInterfaceTest {
 
-    PointIndexData model;
+    private PointIndexData model;
 
     @Test(description = "积分首页")
     public void point_index_true() {

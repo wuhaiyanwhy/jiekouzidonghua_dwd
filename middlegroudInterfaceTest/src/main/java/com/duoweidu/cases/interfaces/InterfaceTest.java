@@ -25,11 +25,37 @@ public class InterfaceTest {
     //用来储存返回的结果
     protected String result;
 
+    protected <T> T sparseJsonResult(Class<T> clazz) {
+        try {
+            JSONObject jsonObject = new JSONObject(result);
+            return JSON.parseObject(result, clazz);
+        } catch (JSONException e) {
+            GeneralAssert.jsonAssert(url, pathId, param, result, e);
+        }
+        return null;
+    }
+
     protected <T> T sparseJson(Class<T> clazz) {
         try {
             JSONObject jsonObject = new JSONObject(result);
             JSONObject data = jsonObject.getJSONObject("data");
             return JSON.parseObject(data.toString(), clazz);
+        } catch (JSONException e) {
+            GeneralAssert.jsonAssert(url, pathId, param, result, e);
+        }
+        return null;
+    }
+
+    protected <T> T sparseJson(Class<T> clazz, boolean isDataList) {
+        try {
+            JSONObject jsonObject = new JSONObject(result);
+            if (isDataList == false) {
+                JSONObject data = jsonObject.getJSONObject("data");
+                return JSON.parseObject(data.toString(), clazz);
+            }else {
+                JSONArray data = jsonObject.getJSONArray("data");
+                return  JSON.parseObject(data.toString(), clazz);
+            }
         } catch (JSONException e) {
             GeneralAssert.jsonAssert(url, pathId, param, result, e);
         }
@@ -173,7 +199,7 @@ public class InterfaceTest {
             JSONObject jsonObject = new JSONObject(result);
             if (isDataList == true) {
                 JSONArray data = (JSONArray) jsonObject.get("data");
-                GeneralAssert.errnoAssert(data.toString(), jsonObject.get("errmsg").toString(), url, pathId, param, result);
+                GeneralAssert.errnoAssert(jsonObject.get("errno").toString(), jsonObject.get("errmsg").toString(), url, pathId, param, result);
                 GeneralAssert.dataAssert(data, url, pathId, param, result);
                 if (isList == true) {
                     for (int i = 0; i < data.length(); i++) {
