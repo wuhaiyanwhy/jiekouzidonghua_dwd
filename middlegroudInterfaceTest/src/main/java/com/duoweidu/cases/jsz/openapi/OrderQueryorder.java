@@ -10,7 +10,7 @@ public class OrderQueryorder extends JszInterfaceTest {
     @Test(dependsOnGroups = "OrderCreateorder",description = "支付结果同步查询")
     public void orderQueryorder() {
         setUrl("order.queryorder.uri");
-        param = "id=" + SqlDetail.getInstance().getParamValue("id") +
+        param = "id=" + JszConfig.order_id +
                 "&paymentId=" + JszConfig.payment_id ;
         process(false, false);
 

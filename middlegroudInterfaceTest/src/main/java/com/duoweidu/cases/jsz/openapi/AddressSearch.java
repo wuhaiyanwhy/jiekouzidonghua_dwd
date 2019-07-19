@@ -6,11 +6,11 @@ import org.testng.annotations.Test;
 
 public class AddressSearch extends JszInterfaceTest{
 
-    @Test(dependsOnGroups = "UserLogincallback",description = "地址搜索")
+    @Test(description = "地址搜索")
     public void addressSearch() {
         setUrl("address.search.uri");
-        param = "keyword=" + SqlDetail.getInstance().getParamValue("keyword") +
-                "&city=" + SqlDetail.getInstance().getParamValue("city") ;
+        param = "keyword=" + SqlDetail.getInstance().getParamValue(0,"keyword") +
+                "&city=" + SqlDetail.getInstance().getParamValue(0,"city") ;
         process(true, false);
     }
 }

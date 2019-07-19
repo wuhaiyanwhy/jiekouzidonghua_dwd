@@ -6,10 +6,10 @@ import org.testng.annotations.Test;
 
 public class CommonQrcodeimg extends JszInterfaceTest {
 
-    @Test(dependsOnGroups = "UserLogincallback",description = "二维码")
+    @Test(description = "二维码")
     public void commonQrcodeimg() {
         setUrl("common.qrcodeimg.uri");
-        param = "content=" + SqlDetail.getInstance().getParamValue("content");
+        param = "content=" + SqlDetail.getInstance().getParamValue(0,"content");
         process(false, false);
     }
 }

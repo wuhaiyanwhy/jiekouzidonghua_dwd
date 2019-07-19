@@ -11,7 +11,7 @@ import java.util.List;
 
 public class OrderPayorder extends JszInterfaceTest {
 
-    @Test(dependsOnGroups = "OrderCreateorder",description = "支付")
+    @Test(dependsOnGroups = "OrderCreateorder",groups = "OrderPayorder",description = "支付")
     public void orderPayorder() {
         setUrl("order.payorder.uri");
         List<NameValuePair> list = new LinkedList<>();

@@ -14,14 +14,14 @@ public class FeedbackFeedbackitemlist extends JszInterfaceTest {
 
     }
 
-    @Test(dependsOnGroups = "UserLogincallback",description = "退款原因列表1")
+    @Test(description = "退款原因列表1")
     public void feedbackFeedbackitemlist1() {
-        feedbackitemlist(SqlDetail.getInstance().getParamValue(2,"type1"));
+        feedbackitemlist(SqlDetail.getInstance().getParamValue(0,"type1"));
     }
 
-    @Test(dependsOnGroups = "UserLogincallback",description = "退款原因列表2")
+    @Test(description = "退款原因列表2")
     public void feedbackFeedbackitemlist2() {
-        feedbackitemlist(SqlDetail.getInstance().getParamValue(2,"type2"));
+        feedbackitemlist(SqlDetail.getInstance().getParamValue(0,"type2"));
 
     }
 }

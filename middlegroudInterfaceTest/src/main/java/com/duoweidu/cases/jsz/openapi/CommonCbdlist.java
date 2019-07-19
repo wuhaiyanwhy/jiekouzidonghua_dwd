@@ -6,10 +6,10 @@ import org.testng.annotations.Test;
 
 public class CommonCbdlist extends JszInterfaceTest {
 
-    @Test(dependsOnGroups = "UserLogincallback",description = "热门商业圈")
+    @Test(description = "热门商业圈")
     public void commonCbdlist() {
         setUrl("common.cbdlist.uri");
-        param = "zoneId=" + SqlDetail.getInstance().getParamValue("zoneId");
+        param = "zoneId=" + SqlDetail.getInstance().getParamValue(0,"zoneId");
         process(true, false);
     }
 }

@@ -3,6 +3,8 @@ package com.duoweidu.cases.jsz.openapi;
 import com.duoweidu.cases.interfaces.JszInterfaceTest;
 import com.duoweidu.config.JszConfig;
 import com.duoweidu.config.generalAssert.GeneralAssert;
+import com.duoweidu.config.sql.SqlDetail;
+import com.duoweidu.utils.ConfigFileUrl;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONException;
@@ -18,8 +20,13 @@ public class OrderCreateorder extends JszInterfaceTest {
     public void orderCreateorder() {
         setUrl("order.createorder.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("activityId", "10000"));
-        process(list, true, false);
+        list.add(new BasicNameValuePair("activityId", SqlDetail.getInstance().getParamValue("activityId")));
+        process(list, false, false);
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            generalAssertTest(false);
+        }
+
+
         try {
             JSONObject jsonObject = new JSONObject(result);
             JSONObject data = (JSONObject) jsonObject.get("data");

@@ -2,18 +2,15 @@ package com.duoweidu.cases.jsz.openapi;
 
 import com.duoweidu.cases.interfaces.JszInterfaceTest;
 import com.duoweidu.config.sql.SqlDetail;
-import org.apache.http.NameValuePair;
 import org.testng.annotations.Test;
 
-import java.util.LinkedList;
-import java.util.List;
 
 public class OrderOrderdetail extends JszInterfaceTest {
 
-    @Test(dependsOnGroups = "UserLogincallback",description = "订单详情")
+    @Test(description = "订单详情")
     public void orderOrderdetail() {
         setUrl("order.orderlist.uri");
-        param = "id=" + SqlDetail.getInstance().getParamValue("id");
+        param = "activityId=" + SqlDetail.getInstance().getParamValue("activityId");
         process(true, false);
     }
 }

@@ -94,13 +94,13 @@
             </class>
             <class name="com.duoweidu.cases.jsz.openapi.OrderOrderlist">
                 <methods>
-                    <include name = "OrderOrderlist1"/>
-                    <include name = "OrderOrderlist2"/>
-                    <include name = "OrderOrderlist3"/>
-                    <include name = "OrderOrderlist4"/>
-                    <include name = "OrderOrderlist5"/>
-                    <include name = "OrderOrderlist6"/>
-                    <include name = "OrderOrderlist7"/>
+                    <include name = "orderOrderlist1"/>
+                    <include name = "orderOrderlist2"/>
+                    <include name = "orderOrderlist3"/>
+                    <include name = "orderOrderlist4"/>
+                    <include name = "orderOrderlist5"/>
+                    <include name = "orderOrderlist6"/>
+                    <include name = "orderOrderlist7"/>
                 </methods>
             </class>
             <class name="com.duoweidu.cases.jsz.openapi.OrderPayorder">

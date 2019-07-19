@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class CommonWxsign extends JszInterfaceTest {
 
-    @Test(dependsOnGroups = "UserLogincallback",description = "微信jsapi_ticket签名")
+    @Test(description = "微信jsapi_ticket签名")
     public void commonWxsign() {
         setUrl("common.wxsign.uri");
 //        param = "appId=" + SqlDetail.getInstance().getParamValue(0, "appId");

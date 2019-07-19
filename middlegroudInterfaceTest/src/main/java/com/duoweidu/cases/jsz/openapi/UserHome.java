@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class UserHome extends JszInterfaceTest {
 
-    @Test(dependsOnGroups = "UserLogincallback",description = "用户个人中心")
+    @Test(description = "用户个人中心")
     public void userHome() {
         setUrl("user.home.uri");
         process(true, false);

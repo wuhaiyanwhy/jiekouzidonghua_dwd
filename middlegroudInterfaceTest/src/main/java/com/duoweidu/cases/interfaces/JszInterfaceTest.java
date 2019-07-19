@@ -15,7 +15,11 @@ public class JszInterfaceTest extends InterfaceTest {
         System.out.println(url);
         //通用参数
         String par = "v=" + SqlDetail.getInstance().getParamValue(0, "v")
-                + "&token=" + SqlDetail.getInstance().getParamValue("token");
+                + "&token=" + SqlDetail.getInstance().getParamValue("token")
+                + "&zoneId=" + SqlDetail.getInstance().getParamValue(0,"zoneId")
+                + "&lng=" + SqlDetail.getInstance().getParamValue(0,"lng")
+                + "&lat=" + SqlDetail.getInstance().getParamValue(0,"lat")
+                + "&appId=" + SqlDetail.getInstance().getParamValue(0,"oauth_appid");
         if (param != null) {
             this.param = par + "&" + param;
         }else {
@@ -31,6 +35,10 @@ public class JszInterfaceTest extends InterfaceTest {
         //通用参数
         list.add(new BasicNameValuePair("v", SqlDetail.getInstance().getParamValue(0, "v")));
         list.add(new BasicNameValuePair("token", SqlDetail.getInstance().getParamValue("token")));
+        list.add(new BasicNameValuePair("zoneId", SqlDetail.getInstance().getParamValue(0,"zoneId")));
+        list.add(new BasicNameValuePair("lng", SqlDetail.getInstance().getParamValue(0,"lng")));
+        list.add(new BasicNameValuePair("lat", SqlDetail.getInstance().getParamValue(0,"lat")));
+        list.add(new BasicNameValuePair("oauth_appid", SqlDetail.getInstance().getParamValue(0,"oauth_appid")));
         param = list.toString();
         result = CallbackInterface.postStringResult(url, pathId, list);
     }

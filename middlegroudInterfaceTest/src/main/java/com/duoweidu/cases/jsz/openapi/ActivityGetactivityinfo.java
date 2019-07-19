@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class ActivityGetactivityinfo extends JszInterfaceTest {
 
-    @Test(dependsOnGroups = "UserLogincallback",description = "活动详情")
+    @Test(description = "活动详情")
     public void activityGetactivityinfo() {
         setUrl("activityGetactivityinfo.uri");
         param = "activityId=" + SqlDetail.getInstance().getParamValue("activityId");

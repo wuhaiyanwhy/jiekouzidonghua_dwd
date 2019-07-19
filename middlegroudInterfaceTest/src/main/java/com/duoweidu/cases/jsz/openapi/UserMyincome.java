@@ -9,7 +9,7 @@ import java.util.List;
 
 public class UserMyincome extends JszInterfaceTest {
 
-    @Test(dependsOnGroups = "UserLogincallback",description = "我的收益")
+    @Test(description = "我的收益")
     public void userMyincome() {
         setUrl("user.myincome.uri");
         List<NameValuePair> list = new LinkedList<>();

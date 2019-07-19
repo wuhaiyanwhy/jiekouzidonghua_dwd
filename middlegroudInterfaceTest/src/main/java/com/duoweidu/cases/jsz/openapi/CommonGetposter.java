@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class CommonGetposter extends JszInterfaceTest {
 
-    @Test(dependsOnGroups = "UserLogincallback",description = "获取分享海报")
+    @Test(description = "获取分享海报")
     public void commonGetposter() {
         setUrl("common.getposter.uri");
         param = "qrCnt=" + SqlDetail.getInstance().getParamValue("qrCnt") +
