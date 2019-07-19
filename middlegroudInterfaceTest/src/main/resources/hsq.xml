@@ -134,6 +134,75 @@
 
     <test name="好食期接口测试用例(支付宝相关-积分小程序)">
         <classes>
+            <!--积分首页，已是：/common/index_v1-->
+            <class name="com.duoweidu.cases.hsq.openapi.point_index_test">
+                <methods>
+                    <include name="point_index_true"/>
+                </methods>
+            </class>
+            <!--积分商品推荐列表(猜你喜欢)-->
+            <class name="com.duoweidu.cases.hsq.openapi.point_recommenditems_test">
+                <methods>
+                    <include name="point_recommenditems_true"/>
+                </methods>
+            </class>
+            <!--获取积分专题信息(老专题)-->
+            <class name="com.duoweidu.cases.hsq.openapi.point_topicinfo_test">
+                <methods>
+                    <include name="point_topicinfo_true"/>
+                </methods>
+            </class>
+            <!--获取积分专题sku信息列表(老专题)-->
+            <class name="com.duoweidu.cases.hsq.openapi.point_topicbuskulist_test">
+                <methods>
+                    <include name="point_topicbuskulist_true"/>
+                </methods>
+            </class>
+            <!--积分商品列表-->
+            <class name="com.duoweidu.cases.hsq.openapi.point_skulist_test">
+                <methods>
+                    <include name="point_skulist_true"/>
+                </methods>
+            </class>
+            <!--积分商品详情页列表-->
+            <class name="com.duoweidu.cases.hsq.openapi.point_iteminfo_test">
+                <methods>
+                    <include name="point_iteminfo_true"/>
+                </methods>
+            </class>
+            <!--未入淘-->
+            <!--积分初始化，提交；目前不好写，总是提示：亲，授权不足,请重新打开页面-->
+            <class name="com.duoweidu.cases.hsq.openapi.tradecenter_pointorderpreview_test">
+                <methods>
+                    <include name="tradecenter_pointorderpreview_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.openapi.tradecenter_pointordersubmit_test">
+                <methods>
+                    <include name="tradecenter_pointordersubmit_true"/>
+                </methods>
+            </class>
+            <!--入淘，初始化接口-->
+            <class name="com.duoweidu.cases.hsq.openapi.order_linkmallpointorder_test">
+                <methods>
+                    <include name="order_linkmallpointorder_true"/>
+                </methods>
+            </class>
+            <!--订单列表-->
+            <class name="com.duoweidu.cases.hsq.openapi.tradecenter_orderlist_test">
+                <methods>
+                    <include name="tradecenter_orderlist_true"/>
+                </methods>
+            </class>
+            <!--积分订单订单详情-->
+            <class name="com.duoweidu.cases.hsq.openapi.tradecenter_orderinfo_test">
+                <methods>
+                    <include name="tradecenter_orderinfo_true"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+        <classes>
             <!--积分首页，应是：/common/index_v1-->
             <class name="com.duoweidu.cases.hsq.openapi.point_index_test">
                 <methods>
