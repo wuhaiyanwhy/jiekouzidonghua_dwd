@@ -43,12 +43,13 @@ public class InterfaceTest {
     }
 
     /**
-     * 解析json obj
+     * 解析json key (result实际是obj格式)
      * @return
      */
-    protected JSONObject JsonKey(JSONObject key) {
+    protected JSONObject JsonStringKeyObj(String res, String key) {
         try {
-            return key;
+            JSONObject results = new JSONObject(res);
+            return (JSONObject) results.get(key);
         }catch (JSONException e) {
             GeneralAssertChannel.jsonAssert(channel_id(), url, pathId, param, result, e);
         }
@@ -56,12 +57,13 @@ public class InterfaceTest {
     }
 
     /**
-     * 解析json array
+     * 解析json key (result实际是obj格式)
      * @return
      */
-    protected JSONArray JsonKey(JSONArray key) {
+    protected JSONArray JsonStringKeyArray(String res, String key) {
         try {
-            return key;
+            JSONObject results = new JSONObject(res);
+            return (JSONArray) results.get(key);
         }catch (JSONException e) {
             GeneralAssertChannel.jsonAssert(channel_id(), url, pathId, param, result, e);
         }
@@ -69,12 +71,13 @@ public class InterfaceTest {
     }
 
     /**
-     * 解析json int
+     * 解析json key (result实际是obj格式)
      * @return
      */
-    protected int JsonKey(int key) {
+    protected int JsonStringKeyInt(String res, String key) {
         try {
-            return key;
+            JSONObject results = new JSONObject(res);
+            return (int) results.get(key);
         }catch (JSONException e) {
             GeneralAssertChannel.jsonAssert(channel_id(), url, pathId, param, result, e);
         }
@@ -82,17 +85,64 @@ public class InterfaceTest {
     }
 
     /**
-     * 解析json String
+     * 解析json key (result实际是obj格式)
      * @return
      */
-    protected String JsonKey(String key) {
+    protected String JsonStringKeyString(String res, String key) {
         try {
-            return key;
+            JSONObject results = new JSONObject(res);
+            return (String) results.get(key);
         }catch (JSONException e) {
             GeneralAssertChannel.jsonAssert(channel_id(), url, pathId, param, result, e);
         }
         return null;
     }
+
+    /**
+     * 解析json key (result实际是array格式)
+     * @return
+     */
+    protected JSONArray JsonArrayKeyArray(ArrayList res, String key) {
+        try {
+            for (int i = 0; i < res.size(); i++) {
+                JSONObject jsonObject = (JSONObject) res.get(i);
+                return (JSONArray) jsonObject.get(key);
+            }
+        }catch (JSONException e) {
+            GeneralAssertChannel.jsonAssert(channel_id(), url, pathId, param, result, e);
+        }
+        return null;
+    }
+
+    /**
+     * 解析json key (result实际是array格式)
+     * @return
+     */
+    protected String JsonArrayKeyString(ArrayList res, String key, int num) {
+        try {
+            JSONObject jsonObject = (JSONObject) res.get(num);
+            return (String) jsonObject.get(key);
+        }catch (JSONException e) {
+            GeneralAssertChannel.jsonAssert(channel_id(), url, pathId, param, result, e);
+        }
+        return null;
+    }
+
+    /**
+     * 解析json key (result实际是array格式)
+     * @return
+     */
+    protected int JsonArrayKeyInt(ArrayList res, String key, int num) {
+        try {
+            JSONObject jsonObject = (JSONObject) res.get(num);
+            return (int) jsonObject.get(key);
+        }catch (JSONException e) {
+            GeneralAssertChannel.jsonAssert(channel_id(), url, pathId, param, result, e);
+        }
+        return Integer.parseInt(null);
+    }
+
+
 
     /**
      * 解析json result
@@ -106,108 +156,6 @@ public class InterfaceTest {
         }
         return null;
     }
-
-    /**
-     * 解析json key
-     * @return
-     */
-    protected JSONObject JsonKeyObj(String key) {
-        try {
-            JSONObject results = JsonResult();
-            return (JSONObject) results.get(key);
-        }catch (JSONException e) {
-            GeneralAssertChannel.jsonAssert(channel_id(), url, pathId, param, result, e);
-        }
-        return null;
-    }
-
-    /**
-     * 解析json key
-     * @return
-     */
-    protected int JsonKeyInt(String key) {
-        try {
-            JSONObject results = JsonResult();
-            return (int) results.get(key);
-        }catch (JSONException e) {
-            GeneralAssertChannel.jsonAssert(channel_id(), url, pathId, param, result, e);
-        }
-        return Integer.parseInt(null);
-    }
-
-    /**
-     * 解析json key
-     * @return
-     */
-    protected String JsonKeyString(String key) {
-        try {
-            JSONObject results = JsonResult();
-            return (String) results.get(key);
-        }catch (JSONException e) {
-            GeneralAssertChannel.jsonAssert(channel_id(), url, pathId, param, result, e);
-        }
-        return null;
-    }
-
-    /**
-     * 解析json keyList
-     * @return
-     */
-    protected JSONArray JsonKeyList(String key) {
-        try {
-            JSONObject results = JsonResult();
-            return (JSONArray) results.get(key);
-        }catch (JSONException e) {
-            GeneralAssertChannel.jsonAssert(channel_id(), url, pathId, param, result, e);
-        }
-        return null;
-    }
-
-    /**
-     * 解析json errno
-     * @return
-     */
-    protected int JsonErrno() {
-        return JsonKeyInt("errno");
-    }
-
-    /**
-     * 解析json errnmsg
-     * @return
-     */
-    protected String JsonErrmsg() {
-        return JsonKeyString("errmsg");
-    }
-
-    /**
-     * 解析json data
-     * @return
-     */
-    protected JSONObject JsonData() {
-        return JsonKeyObj("data");
-    }
-
-    /**
-     * 解析json dataList
-     * @return
-     */
-    protected JSONArray JsonDataList() {
-        return JsonKeyList("data");
-    }
-
-    /**
-     * 解析json List
-     * @return
-     */
-    protected JSONArray JsonList() {
-        try {
-            return (JSONArray) JsonData().get("list");
-        }catch (JSONException e) {
-            GeneralAssertChannel.jsonAssert(channel_id(), url, pathId, param, result, e);
-        }
-        return null;
-    }
-
 
     /**
      * 解析result
@@ -226,7 +174,7 @@ public class InterfaceTest {
      * @return
      */
     protected <T> T sparseJson(Class<T> clazz) {
-        return JSON.parseObject(JsonData().toString(), clazz);
+        return JSON.parseObject(JsonStringKeyObj(result, "data").toString(), clazz);
     }
 
     /**
@@ -236,7 +184,7 @@ public class InterfaceTest {
      * @return
      */
     protected <T> T sparseJsonList(Class<T> clazz) {
-        return (T) JSON.parseArray(JsonDataList().toString(), clazz);
+        return (T) JSON.parseArray(JsonStringKeyArray(result, "data").toString(), clazz);
     }
 
 
@@ -375,7 +323,7 @@ public class InterfaceTest {
      * 通用断言判断，只判断errno
      */
     protected void statusAssertTest() {
-        GeneralAssertChannel.errnoAssert(channel_id(), String.valueOf(JsonErrno()), JsonErrmsg(), url, pathId, param, result);
+        GeneralAssertChannel.errnoAssert(channel_id(), String.valueOf(JsonStringKeyInt(result, "errno")), JsonStringKeyString(result, "errmsg"), url, pathId, param, result);
     }
 
     /**
@@ -383,7 +331,7 @@ public class InterfaceTest {
      */
     protected void generalAssertTest() {
         statusAssertTest();
-        GeneralAssertChannel.dataAssert(channel_id(), JsonData(), url, pathId, param, result);
+        GeneralAssertChannel.dataAssert(channel_id(), JsonStringKeyObj(result, "data"), url, pathId, param, result);
     }
 
     /**
@@ -393,7 +341,7 @@ public class InterfaceTest {
     protected void generalAssertTest(boolean isList) {
         generalAssertTest();
         if (isList == true) {
-            GeneralAssertChannel.listAssert(channel_id(), JsonList(), url, pathId, param, result);
+            GeneralAssertChannel.listAssert(channel_id(), JsonStringKeyArray(JsonStringKeyObj(result, "data").toString(), "list"), url, pathId, param, result);
         }
     }
 
@@ -407,10 +355,10 @@ public class InterfaceTest {
         try {
             if (isDataList == true) {
                 statusAssertTest();
-                GeneralAssertChannel.dataAssert(channel_id(), JsonDataList(), url, pathId, param, result);
+                GeneralAssertChannel.dataAssert(channel_id(), JsonStringKeyArray(result, "data"), url, pathId, param, result);
                 if (isList == true) {
-                    for (int i = 0; i < JsonDataList().length(); i++) {
-                        JSONObject json = (JSONObject) JsonDataList().get(i);
+                    for (int i = 0; i < JsonStringKeyArray(result, "data").length(); i++) {
+                        JSONObject json = (JSONObject) JsonStringKeyArray(result, "data").get(i);
                         GeneralAssertChannel.listAssert(channel_id(), (JSONArray) json.get("list"), url, pathId, param, result);
                     }
                 }
