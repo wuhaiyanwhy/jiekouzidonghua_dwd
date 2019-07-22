@@ -11,7 +11,7 @@ public class OrderTypeAll extends IqgInterfaceTest {
         setUrl("order.type.all.uri");
         param = "last_id=0&zone_id=" + SqlDetail.getInstance().getParamValue(0, "zone_id");
         process(false,false);
-        generalAssertTest(false, true);
+        generalAssertTest(true, false);
     }
 
 }

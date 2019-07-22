@@ -9,6 +9,6 @@ public class Zone extends IqgInterfaceTest {
     public void zoneTrue() {
         setUrl("zone.uri");
         process(false,false);
-        generalAssertTest(false, true);
+        generalAssertTest(true, false);
     }
 }

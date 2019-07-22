@@ -9,6 +9,6 @@ public class OrderTypeRefund extends IqgInterfaceTest {
     public void order_type_refund_true() {
         setUrl("order.type.refund.uri");
         process(false,false);
-        generalAssertTest(false, true);
+        generalAssertTest(true, false);
     }
 }
