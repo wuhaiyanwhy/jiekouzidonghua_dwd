@@ -13,7 +13,7 @@ public class BargainToday extends IqgInterfaceTest {
         pathId = SqlDetail.getInstance().getPathId("bargain.today.uri");
         process(false,false);
         if ("beta".equals(ConfigFileUrl.getEnv())) {
-            generalAssertTest(false, true);
+            generalAssertTest(true, false);
         }
     }
 }

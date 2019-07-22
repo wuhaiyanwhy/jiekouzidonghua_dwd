@@ -1,7 +1,6 @@
 package com.duoweidu.utils;
 
 import com.duoweidu.config.GeneralConfig;
-import com.duoweidu.config.generalAssert.GeneralAssert;
 import com.duoweidu.config.generalAssert.GeneralAssertChannel;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
@@ -36,7 +35,7 @@ public class CallbackInterfaceChannel {
      */
     public static String getResult(int channel_id, HttpResponse response, String url, int path_id, String param) {
         GeneralConfig.response = response;
-        GeneralAssert.codeAssert(response, url, path_id, param);
+        GeneralAssertChannel.codeAssert(channel_id, response, url, path_id, param);
         String result = null;
         try {
             result = EntityUtils.toString(response.getEntity(),"utf-8");
