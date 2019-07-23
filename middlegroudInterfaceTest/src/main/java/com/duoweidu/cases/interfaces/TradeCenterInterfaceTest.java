@@ -4,6 +4,7 @@ import com.duoweidu.config.sql.SqlDetail;
 import com.duoweidu.utils.CallbackInterface;
 import com.duoweidu.utils.ConfigFileUrl;
 import org.apache.http.NameValuePair;
+import org.apache.http.client.utils.URLEncodedUtils;
 import org.apache.http.message.BasicNameValuePair;
 
 import java.util.List;
@@ -30,6 +31,7 @@ public class TradeCenterInterfaceTest extends InterfaceTest {
         }else {
             this.param = par;
         }
+        System.out.println("参数：" + param);
         result = CallbackInterface.getStringResult(url, pathId, this.param);
     }
 
@@ -42,7 +44,8 @@ public class TradeCenterInterfaceTest extends InterfaceTest {
         list.add(new BasicNameValuePair("ip", SqlDetail.getInstance().getParamValue(0, "ip")));
         list.add(new BasicNameValuePair("userId", SqlDetail.getInstance().getParamValue(0, "userId")));
         list.add(new BasicNameValuePair("appId", SqlDetail.getInstance().getParamValue(0, "msfAppId")));
-        param = list.toString();
+        param = URLEncodedUtils.format(list, "Utf-8");
+        System.out.println("参数：" + param);
         result = CallbackInterface.postStringResult(url, pathId, list);
     }
 }

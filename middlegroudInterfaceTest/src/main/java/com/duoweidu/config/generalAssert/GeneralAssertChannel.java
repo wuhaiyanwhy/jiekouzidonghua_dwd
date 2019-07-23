@@ -94,6 +94,22 @@ public class GeneralAssertChannel extends Assert {
         }
     }
 
+
+    public static void timeTest(int channel_id, long time, HttpResponse response, String uri, int path_id, String param) {
+        if(time >= 3000){
+            //需要一个HTTP_好的状态从响应和不得到它，你仍然必须消耗实体
+            if (response.getEntity() != null) {
+                try {
+                    response.getEntity().consumeContent();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            fail(distinguishParamFailed(channel_id, "接口响应超时;\n实际响应时间：" + time + "ms", uri, path_id, param, 1, null));
+        }
+
+    }
+
     /**
      * 判断返回的code
      * @param channel_id

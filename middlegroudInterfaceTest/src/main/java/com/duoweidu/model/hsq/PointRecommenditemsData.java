@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 public class PointRecommenditemsData {
 
+    public int errno;
+    public String errmsg;
     public ArrayList<DataModel> data;
 
     public static class DataModel {
@@ -15,4 +17,7 @@ public class PointRecommenditemsData {
         public int merchant_type;
         public int enabled;
     }
+
+    public int timestamp;
+    public String serverlogid;
 }
