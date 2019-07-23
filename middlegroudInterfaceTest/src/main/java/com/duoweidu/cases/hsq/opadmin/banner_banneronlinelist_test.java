@@ -14,7 +14,7 @@ public class banner_banneronlinelist_test extends HsqOpadminInterfaceTest {
 
         setUrl("banner.banneronlinelist.uri");
         List<NameValuePair> list =  new LinkedList<>();
-        process(list,2,true,false);
+        process(list,2,false,false);
 
     }
 }

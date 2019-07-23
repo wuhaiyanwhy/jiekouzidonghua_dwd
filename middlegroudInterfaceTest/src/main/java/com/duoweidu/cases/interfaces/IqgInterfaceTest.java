@@ -88,7 +88,7 @@ public class IqgInterfaceTest extends InterfaceTest {
 
     //通用断言判断
     @Override
-    protected void generalAssertTest(boolean isList, boolean isDataList) {
+    protected void generalAssertTest(boolean isDataList, boolean isList) {
         try {
             JSONObject jsonObject = new JSONObject(result);
             if (isDataList == true) {
