@@ -8,6 +8,7 @@ import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpDelete;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
+import org.apache.http.client.utils.URLEncodedUtils;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
@@ -65,13 +66,15 @@ public class CallbackInterfaceChannel {
      */
     public static String getStringResult(int channel_id, String url, int path_id, String param) {
         HttpGet get = new HttpGet(url + "?" + param);
-        CallbackInterface.defaultHttpClient.setCookieStore(GeneralConfig.store);
+        defaultHttpClient.setCookieStore(GeneralConfig.store);
+        long startTime1 = System.currentTimeMillis();
         HttpResponse response = null;
         try {
             response = defaultHttpClient.execute(get);
         } catch (IOException e) {
             e.printStackTrace();
         }
+        GeneralAssertChannel.timeTest(channel_id, System.currentTimeMillis()-startTime1, response, url, path_id, param );
         return getResult(channel_id, response, url, path_id, param);
     }
 
@@ -85,7 +88,7 @@ public class CallbackInterfaceChannel {
      */
     public static String postStringResult(int channel_id, String url, int path_id, List<NameValuePair> list) {
         HttpPost post = new HttpPost(url);
-        CallbackInterface.defaultHttpClient.setCookieStore(GeneralConfig.store);
+        defaultHttpClient.setCookieStore(GeneralConfig.store);
         UrlEncodedFormEntity entity = null;
         try {
             entity = new UrlEncodedFormEntity(list, "utf-8");
@@ -93,12 +96,15 @@ public class CallbackInterfaceChannel {
             e.printStackTrace();
         }
         post.setEntity(entity);
+        long startTime1 = System.currentTimeMillis();
         HttpResponse response = null;
         try {
             response = defaultHttpClient.execute(post);
         } catch (IOException e) {
             e.printStackTrace();
         }
+        String param = URLEncodedUtils.format(list, "Utf-8");
+        GeneralAssertChannel.timeTest(channel_id, System.currentTimeMillis()-startTime1, response, url, path_id, param );
         return getResult(channel_id, response, url, path_id, list.toString());
     }
 
@@ -113,7 +119,7 @@ public class CallbackInterfaceChannel {
     public static String postStringResult(int channel_id, String url, int path_id, String param) {
         HttpPost post = new HttpPost(url);
         post.setHeader("Content-Type", "application/json");
-        CallbackInterface.defaultHttpClient.setCookieStore(GeneralConfig.store);
+        defaultHttpClient.setCookieStore(GeneralConfig.store);
         StringEntity entity = null;
         try {
             entity = new StringEntity(param, "utf-8");
@@ -121,12 +127,14 @@ public class CallbackInterfaceChannel {
             e.printStackTrace();
         }
         post.setEntity(entity);
+        long startTime1 = System.currentTimeMillis();
         HttpResponse response = null;
         try {
             response = defaultHttpClient.execute(post);
         } catch (IOException e) {
             e.printStackTrace();
         }
+        GeneralAssertChannel.timeTest(channel_id, System.currentTimeMillis()-startTime1, response, url, path_id, param );
         return getResult(channel_id, response, url, path_id, param);
     }
 
@@ -140,13 +148,15 @@ public class CallbackInterfaceChannel {
      */
     public static String deleteStringResult(int channel_id, String url, int path_id, String param) {
         HttpDelete delete = new HttpDelete(url);
-        CallbackInterface.defaultHttpClient.setCookieStore(GeneralConfig.store);
+        defaultHttpClient.setCookieStore(GeneralConfig.store);
+        long startTime1 = System.currentTimeMillis();
         HttpResponse response = null;
         try {
             response = defaultHttpClient.execute(delete);
         } catch (IOException e) {
             e.printStackTrace();
         }
+        GeneralAssertChannel.timeTest(channel_id, System.currentTimeMillis()-startTime1, response, url, path_id, param );
         return getResult(channel_id, response, url, path_id, param);
     }
 

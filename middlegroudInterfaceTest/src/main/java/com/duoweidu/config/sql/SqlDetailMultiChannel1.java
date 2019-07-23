@@ -4,11 +4,21 @@ import com.duoweidu.utils.ConfigFileUrl;
 
 public class SqlDetailMultiChannel1 extends SqlDetail {
 
+    private static SqlDetail instance;
+
+    @Override
     public int channel_id() {
         int channelId = super.channel_id();
         if (ConfigFileUrl.getChannel1() != 0) {
             channelId = ConfigFileUrl.getChannel1();
         }
         return channelId;
+    }
+
+    public static SqlDetail getInstance() {
+        if (instance == null) {
+            instance = new SqlDetailMultiChannel1();
+        }
+        return instance;
     }
 }

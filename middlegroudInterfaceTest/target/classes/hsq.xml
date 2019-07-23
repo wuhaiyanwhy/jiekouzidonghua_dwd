@@ -134,25 +134,25 @@
 
     <test name="好食期接口测试用例(支付宝相关-积分小程序)">
         <classes>
-            <!--积分首页，应是：/common/index_v1-->
+            <!--积分首页，已是：/common/index_v1-->
             <class name="com.duoweidu.cases.hsq.openapi.point_index_test">
                 <methods>
                     <include name="point_index_true"/>
                 </methods>
             </class>
-            <!--获取积分专题sku信息-->
-            <class name="com.duoweidu.cases.hsq.openapi.point_topicinfo_test">
-                <methods>
-                    <include name="point_topicinfo_true"/>
-                </methods>
-            </class>
-            <!--积分商品推荐列表-->
+            <!--积分商品推荐列表(猜你喜欢)-->
             <class name="com.duoweidu.cases.hsq.openapi.point_recommenditems_test">
                 <methods>
                     <include name="point_recommenditems_true"/>
                 </methods>
             </class>
-            <!--获取积分信息列表(老专题)-->
+            <!--获取积分专题信息(老专题)-->
+            <class name="com.duoweidu.cases.hsq.openapi.point_topicinfo_test">
+                <methods>
+                    <include name="point_topicinfo_true"/>
+                </methods>
+            </class>
+            <!--获取积分专题sku信息列表(老专题)-->
             <class name="com.duoweidu.cases.hsq.openapi.point_topicbuskulist_test">
                 <methods>
                     <include name="point_topicbuskulist_true"/>
