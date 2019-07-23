@@ -66,21 +66,27 @@ public class GeneralAssertChannel extends Assert {
                 "\n接口返回：" + result;
 
         //觅食蜂报错需要X-Request-ID
-        if (ConfigFileUrl.getChannel() == 3) {
+        if (ConfigFileUrl.getChannel() == 1) {
             Header header[] = GeneralConfig.response.getHeaders("X-Request-ID");
+
+            String requsetId = null;
+            if (header.length > 0) {
+                requsetId = header[0].getValue();
+            }
+
             failed = "\n" + faile +
                     "\n请求的url:" + uri +
-                    "\nCX-Request-ID: " + header[0].getValue() +
+                    "\nCX-Request-ID: " + requsetId +
                     "\n接口返回：" + result +
                     "\n《-------------------------分割线-------------------------》";
             parameterFailed = "\n" + faile +
                     "\n请求的url:" + uri +
                     "\n参数：" + param +
-                    "\nCX-Request-ID: " + header[0].getValue() +
+                    "\nCX-Request-ID: " + requsetId +
                     "\n接口返回：" + result +
                     "\n《-------------------------分割线-------------------------》";
             errnoResult = faile +
-                    "\nCX-Request-ID: " + header[0].getValue() +
+                    "\nCX-Request-ID: " + requsetId +
                     "\n接口返回：" + result;
         }
 
