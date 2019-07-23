@@ -201,7 +201,6 @@
                 </methods>
             </class>
         </classes>
-    </test>
         <classes>
             <!--积分首页，应是：/common/index_v1-->
             <class name="com.duoweidu.cases.hsq.openapi.point_index_test">
