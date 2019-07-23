@@ -27,7 +27,6 @@ public class InterfaceTest {
 
     /**
      * 获取渠道id
-     * @return
      */
     public int channel_id() {
         return ConfigFileUrl.getChannel();
@@ -35,7 +34,6 @@ public class InterfaceTest {
 
     /**
      * 获取url和pathId
-     * @param key
      */
     protected void setUrl(String key) {
         url = ConfigFileUrl.getUrlByKey(key, channel_id());
@@ -44,7 +42,6 @@ public class InterfaceTest {
 
     /**
      * 解析json key (result实际是obj格式)
-     * @return
      */
     protected JSONObject JsonStringKeyObj(String res, String key) {
         try {
@@ -58,7 +55,6 @@ public class InterfaceTest {
 
     /**
      * 解析json key (result实际是obj格式)
-     * @return
      */
     protected JSONArray JsonStringKeyArray(String res, String key) {
         try {
@@ -72,7 +68,6 @@ public class InterfaceTest {
 
     /**
      * 解析json key (result实际是obj格式)
-     * @return
      */
     protected int JsonStringKeyInt(String res, String key) {
         try {
@@ -86,7 +81,6 @@ public class InterfaceTest {
 
     /**
      * 解析json key (result实际是obj格式)
-     * @return
      */
     protected String JsonStringKeyString(String res, String key) {
         try {
@@ -100,7 +94,6 @@ public class InterfaceTest {
 
     /**
      * 解析json key (result实际是array格式)
-     * @return
      */
     protected JSONArray JsonArrayKeyArray(ArrayList res, String key) {
         try {
@@ -116,7 +109,6 @@ public class InterfaceTest {
 
     /**
      * 解析json key (result实际是array格式)
-     * @return
      */
     protected String JsonArrayKeyString(ArrayList res, String key, int num) {
         try {
@@ -130,7 +122,6 @@ public class InterfaceTest {
 
     /**
      * 解析json key (result实际是array格式)
-     * @return
      */
     protected int JsonArrayKeyInt(ArrayList res, String key, int num) {
         try {
@@ -146,7 +137,6 @@ public class InterfaceTest {
 
     /**
      * 解析json result
-     * @return
      */
     protected JSONObject JsonResult() {
         try {
@@ -159,30 +149,24 @@ public class InterfaceTest {
 
     /**
      * 解析result
-     * @param clazz
-     * @param <T>
-     * @return
      */
+    @SuppressWarnings("unchecked")
     protected <T> T sparseJsonResult(Class<T> clazz) {
         return JSON.parseObject(result, clazz);
     }
 
     /**
      * 解析data
-     * @param clazz
-     * @param <T>
-     * @return
      */
+    @SuppressWarnings("unchecked")
     protected <T> T sparseJson(Class<T> clazz) {
         return JSON.parseObject(JsonStringKeyObj(result, "data").toString(), clazz);
     }
 
     /**
      * 解析dataList
-     * @param clazz
-     * @param <T>
-     * @return
      */
+    @SuppressWarnings("unchecked")
     protected <T> T sparseJsonList(Class<T> clazz) {
         return (T) JSON.parseArray(JsonStringKeyArray(result, "data").toString(), clazz);
     }
@@ -198,7 +182,6 @@ public class InterfaceTest {
 
     /**
      * get请求，要基本断言,errno和data
-     * @param isAssert
      */
     protected void process(boolean isAssert) {
         process();
@@ -209,8 +192,6 @@ public class InterfaceTest {
 
     /**
      * get请求,要基本断言加list
-     * @param isAssert
-     * @param isList
      */
     protected void process(boolean isAssert,boolean isList) {
         process();
@@ -221,7 +202,6 @@ public class InterfaceTest {
 
     /**
      * post请求,不要断言
-     * @param list
      */
     protected void process(List<NameValuePair> list) {
         System.out.println(url);
@@ -231,8 +211,6 @@ public class InterfaceTest {
 
     /**
      * post请求，要基本断言，errno和data
-     * @param list
-     * @param isAssert
      */
     protected void process(List<NameValuePair> list, boolean isAssert) {
         process(list);
@@ -243,9 +221,6 @@ public class InterfaceTest {
 
     /**
      * post请求，要基本断言加list
-     * @param list
-     * @param isAssert
-     * @param isList
      */
     protected void process(List<NameValuePair> list, boolean isAssert, boolean isList) {
         process(list);
@@ -256,7 +231,6 @@ public class InterfaceTest {
 
     /**
      * post（json传参）请求,不要断言
-     * @param param
      */
     protected void process(String param) {
         System.out.println(url);
@@ -265,8 +239,6 @@ public class InterfaceTest {
 
     /**
      * post（json传参）请求，要基本断言，errno和data
-     * @param param
-     * @param isAssert
      */
     protected void process(String param, boolean isAssert) {
         process(param);
@@ -277,9 +249,6 @@ public class InterfaceTest {
 
     /**
      * post（json传参）请求，要基本断言加list
-     * @param param
-     * @param isAssert
-     * @param isList
      */
     protected void process(String param, boolean isAssert, boolean isList) {
         process(param);
@@ -298,7 +267,6 @@ public class InterfaceTest {
 
     /**
      * delete请求，要基本断言，errno和data
-     * @param isAssert
      */
     protected void processDelete(boolean isAssert) {
         processDelete();
@@ -309,8 +277,6 @@ public class InterfaceTest {
 
     /**
      * delete请求，要基本断言加list
-     * @param isAssert
-     * @param isList
      */
     protected void processDelete(boolean isAssert, boolean isList) {
         processDelete();
@@ -336,7 +302,6 @@ public class InterfaceTest {
 
     /**
      * 通用断言判断errno和data和list
-     * @param isList
      */
     protected void generalAssertTest(boolean isList) {
         generalAssertTest();
@@ -347,8 +312,6 @@ public class InterfaceTest {
 
     /**
      * 通用断言判断errno和dataList
-     * @param isDataList
-     * @param isList
      */
     protected void generalAssertTest(boolean isDataList, boolean isList) {
 
@@ -371,9 +334,6 @@ public class InterfaceTest {
 
     /**
      * 详细断言 具体返回值对比 int
-     * @param assertValue
-     * @param resultKey
-     * @param resultValue
      */
     protected void detailAssertTest (int assertValue, String resultKey, int resultValue) {
         if (resultValue != assertValue) {
@@ -384,9 +344,6 @@ public class InterfaceTest {
 
     /**
      * 详细断言 具体返回值对比 String
-     * @param assertValue
-     * @param resultKey
-     * @param resultValue
      */
     protected void detailAssertTest (String assertValue, String resultKey, String resultValue) {
         if (assertValue == null) {
@@ -402,9 +359,6 @@ public class InterfaceTest {
 
     /**
      * 详细断言 具体返回值对比 boolean
-     * @param assertValue
-     * @param resultKey
-     * @param resultValue
      */
     protected void detailAssertTest (boolean assertValue, String resultKey, boolean resultValue) {
         if (resultValue != assertValue) {
@@ -415,8 +369,6 @@ public class InterfaceTest {
 
     /**
      * 判断返回的数组是否为空
-     * @param resultKey
-     * @param resultValue
      */
     protected void detailAssertTest (String resultKey, ArrayList resultValue) {
         if (resultValue.size() <= 0) {
@@ -426,8 +378,6 @@ public class InterfaceTest {
 
     /**
      * 判断字段/对象是否为空，不会验证返回结果是否为0
-     * @param resultKey
-     * @param resultValue
      */
     protected void detailAssertTest (String resultKey, String resultValue) {
         if (resultValue == null || resultValue.isEmpty() || resultValue.equals("{}")) {
@@ -438,8 +388,6 @@ public class InterfaceTest {
 
     /**
      * 判断字段是否为空，int类型，验证返回结果是否为0用此方法
-     * @param resultKey
-     * @param resultValue
      */
     protected void detailAssertTest (String resultKey, int resultValue) {
         String resultValues = String.valueOf(resultValue);
@@ -451,8 +399,6 @@ public class InterfaceTest {
 
     /**
      * 判断字段是否为空，boolean类型
-     * @param resultKey
-     * @param resultValue
      */
     protected void detailAssertTest (String resultKey, boolean resultValue) {
         detailAssertTest(resultKey, String.valueOf(resultValue));
