@@ -6,6 +6,7 @@ import com.duoweidu.config.sql.SqlGeneral;
 import com.duoweidu.utils.CallbackInterfaceChannel;
 import com.duoweidu.utils.ConfigFileUrl;
 import org.apache.http.NameValuePair;
+import org.apache.http.client.utils.URLEncodedUtils;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -177,6 +178,7 @@ public class InterfaceTest {
      */
     protected void process() {
         System.out.println(url);
+        System.out.println("参数：" + param);
         result = CallbackInterfaceChannel.getStringResult(channel_id(), url, pathId, this.param);
     }
 
@@ -205,7 +207,8 @@ public class InterfaceTest {
      */
     protected void process(List<NameValuePair> list) {
         System.out.println(url);
-        param = list.toString();
+        param = URLEncodedUtils.format(list, "Utf-8");
+        System.out.println("参数：" + param);
         result = CallbackInterfaceChannel.postStringResult(channel_id(), url, pathId, list);
     }
 
@@ -234,6 +237,7 @@ public class InterfaceTest {
      */
     protected void process(String param) {
         System.out.println(url);
+        System.out.println("参数：" + param);
         result = CallbackInterfaceChannel.postStringResult(channel_id(), url, pathId, param);
     }
 
@@ -262,6 +266,7 @@ public class InterfaceTest {
      */
     protected void processDelete() {
         System.out.println(url);
+        System.out.println("参数：" + param);
         result = CallbackInterfaceChannel.deleteStringResult(channel_id(), url, pathId, this.param);
     }
 

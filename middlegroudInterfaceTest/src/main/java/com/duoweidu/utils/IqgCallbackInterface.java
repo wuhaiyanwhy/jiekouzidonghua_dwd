@@ -1,6 +1,7 @@
 package com.duoweidu.utils;
 
 import com.duoweidu.config.GeneralConfig;
+import com.duoweidu.config.generalAssert.GeneralAssertChannel;
 import com.duoweidu.config.sql.SqlDetail;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
@@ -8,8 +9,8 @@ import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpDelete;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
+import org.apache.http.client.utils.URLEncodedUtils;
 import org.apache.http.entity.StringEntity;
-import org.apache.http.impl.client.DefaultHttpClient;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -30,13 +31,15 @@ public class IqgCallbackInterface extends CallbackInterface {
         get.setHeader("zoneid","21");
         get.setHeader("version", SqlDetail.getInstance().getParamValue(0, "version"));
         get.setHeader("Accept","application/json");
-        CallbackInterface.defaultHttpClient.setCookieStore(GeneralConfig.store);
+        CallbackInterfaceChannel.defaultHttpClient.setCookieStore(GeneralConfig.store);
+        long startTime1 = System.currentTimeMillis();
         HttpResponse response = null;
         try {
             response = defaultHttpClient.execute(get);
         } catch (IOException e) {
             e.printStackTrace();
         }
+        GeneralAssertChannel.timeTest(channel_id, System.currentTimeMillis()-startTime1, response, url, path_id, param);
         return getResult(channel_id, response, url, path_id, param);
     }
 
@@ -53,7 +56,7 @@ public class IqgCallbackInterface extends CallbackInterface {
         post.setHeader("zoneid","21");
         post.setHeader("version", SqlDetail.getInstance().getParamValue(0, "version"));
         post.setHeader("Accept","application/json");
-        CallbackInterface.defaultHttpClient.setCookieStore(GeneralConfig.store);
+        CallbackInterfaceChannel.defaultHttpClient.setCookieStore(GeneralConfig.store);
         UrlEncodedFormEntity entity = null;
         try {
             entity = new UrlEncodedFormEntity(list, "utf-8");
@@ -61,12 +64,15 @@ public class IqgCallbackInterface extends CallbackInterface {
             e.printStackTrace();
         }
         post.setEntity(entity);
+        long startTime1 = System.currentTimeMillis();
         HttpResponse response = null;
         try {
             response = defaultHttpClient.execute(post);
         } catch (IOException e) {
             e.printStackTrace();
         }
+        String param = URLEncodedUtils.format(list, "Utf-8");
+        GeneralAssertChannel.timeTest(channel_id, System.currentTimeMillis()-startTime1, response, url, path_id, param);
         return getResult(channel_id, response, url, path_id, list.toString());
     }
 
@@ -83,7 +89,7 @@ public class IqgCallbackInterface extends CallbackInterface {
         post.setHeader("zoneid","21");
         post.setHeader("version", SqlDetail.getInstance().getParamValue(0, "version"));
         post.setHeader("Accept","application/json");
-        CallbackInterface.defaultHttpClient.setCookieStore(GeneralConfig.store);
+        CallbackInterfaceChannel.defaultHttpClient.setCookieStore(GeneralConfig.store);
         StringEntity entity = null;
         try {
             entity = new StringEntity(param, "utf-8");
@@ -91,12 +97,14 @@ public class IqgCallbackInterface extends CallbackInterface {
             e.printStackTrace();
         }
         post.setEntity(entity);
+        long startTime1 = System.currentTimeMillis();
         HttpResponse response = null;
         try {
             response = defaultHttpClient.execute(post);
         } catch (IOException e) {
             e.printStackTrace();
         }
+        GeneralAssertChannel.timeTest(channel_id, System.currentTimeMillis()-startTime1, response, url, path_id, param);
         return getResult(channel_id, response, url, path_id, param);
     }
 
@@ -113,13 +121,15 @@ public class IqgCallbackInterface extends CallbackInterface {
         delete.setHeader("zoneid","21");
         delete.setHeader("version", SqlDetail.getInstance().getParamValue(0, "version"));
         delete.setHeader("Accept","application/json");
-        CallbackInterface.defaultHttpClient.setCookieStore(GeneralConfig.store);
+        CallbackInterfaceChannel.defaultHttpClient.setCookieStore(GeneralConfig.store);
+        long startTime1 = System.currentTimeMillis();
         HttpResponse response = null;
         try {
             response = defaultHttpClient.execute(delete);
         } catch (IOException e) {
             e.printStackTrace();
         }
+        GeneralAssertChannel.timeTest(channel_id, System.currentTimeMillis()-startTime1, response, url, path_id, param);
         return getResult(channel_id, response, url, path_id, param);
     }
 
