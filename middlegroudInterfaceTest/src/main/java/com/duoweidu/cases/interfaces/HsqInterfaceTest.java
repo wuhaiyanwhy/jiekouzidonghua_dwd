@@ -3,6 +3,7 @@ package com.duoweidu.cases.interfaces;
 import com.duoweidu.config.sql.SqlDetail;
 import com.duoweidu.utils.CallbackInterface;
 import org.apache.http.NameValuePair;
+import org.apache.http.client.utils.URLEncodedUtils;
 import org.apache.http.message.BasicNameValuePair;
 
 import java.util.List;
@@ -20,6 +21,7 @@ public class HsqInterfaceTest extends InterfaceTest {
         }else {
             this.param = par;
         }
+        System.out.println("参数：" + param);
         result = CallbackInterface.getStringResult(url, pathId, this.param);
     }
 
@@ -29,7 +31,8 @@ public class HsqInterfaceTest extends InterfaceTest {
         System.out.println(url);
         //通用参数
         list.add(new BasicNameValuePair("v", SqlDetail.getInstance().getParamValue(0, "v")));
-        param = list.toString();
+        param = URLEncodedUtils.format(list, "Utf-8");
+        System.out.println("参数：" + param);
         result = CallbackInterface.postStringResult(url, pathId, list);
     }
 

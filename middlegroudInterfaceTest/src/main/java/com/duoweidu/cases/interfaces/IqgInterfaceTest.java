@@ -4,6 +4,7 @@ import com.duoweidu.config.generalAssert.GeneralAssert;
 import com.duoweidu.config.sql.SqlDetail;
 import com.duoweidu.utils.IqgCallbackInterface;
 import org.apache.http.NameValuePair;
+import org.apache.http.client.utils.URLEncodedUtils;
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -26,6 +27,7 @@ public class IqgInterfaceTest extends InterfaceTest {
         }else {
             this.param = par;
         }
+        System.out.println("参数：" + param);
         result = IqgCallbackInterface.getStringResult(url, pathId, this.param);
     }
 
@@ -37,7 +39,8 @@ public class IqgInterfaceTest extends InterfaceTest {
         list.add(new BasicNameValuePair("version", SqlDetail.getInstance().getParamValue(0, "version")));
         list.add(new BasicNameValuePair("lng", SqlDetail.getInstance().getParamValue(0, "lng")));
         list.add(new BasicNameValuePair("lat", SqlDetail.getInstance().getParamValue(0, "lat")));
-        param = list.toString();
+        param = URLEncodedUtils.format(list, "Utf-8");
+        System.out.println("参数：" + param);
         result = IqgCallbackInterface.postStringResult(url, pathId, list);
     }
 
@@ -55,6 +58,7 @@ public class IqgInterfaceTest extends InterfaceTest {
         }else {
             this.param = par;
         }
+        System.out.println("参数：" + param);
         result = IqgCallbackInterface.deleteStringResult(url, pathId, this.param);
     }
 
