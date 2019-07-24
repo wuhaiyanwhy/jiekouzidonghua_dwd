@@ -90,4 +90,14 @@ public class ConfigFileUrl {
     public static int getChannel2() {
         return Integer.parseInt(bundle.getString("channel2"));
     }
+
+    //获取接口的限制时间
+    public static int getLimitTime() {
+        return Integer.parseInt(bundle.getString("limitTime"));
+    }
+
+    //后台的限制时间特殊处理
+    public static int getLimitTime1() {
+        return Integer.parseInt(bundle.getString("limitTime1"));
+    }
 }
