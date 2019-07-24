@@ -66,7 +66,7 @@ public class GeneralAssertChannel extends Assert {
                 "\n接口返回：" + result;
 
         //觅食蜂报错需要X-Request-ID
-        if (ConfigFileUrl.getChannel() == 1) {
+        if (ConfigFileUrl.getChannel() == 3) {
             Header header[] = GeneralConfig.response.getHeaders("X-Request-ID");
 
             String requsetId = null;
