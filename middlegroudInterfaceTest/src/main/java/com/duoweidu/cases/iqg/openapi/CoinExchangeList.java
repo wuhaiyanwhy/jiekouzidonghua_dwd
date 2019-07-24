@@ -9,7 +9,7 @@ public class CoinExchangeList extends IqgInterfaceTest {
     public void coin_exchange_list_true() {
         setUrl("coin.exchange_list.uri");
         process(false,false);
-        generalAssertTest(false, true);
+        generalAssertTest(true, false);
     }
 
 }

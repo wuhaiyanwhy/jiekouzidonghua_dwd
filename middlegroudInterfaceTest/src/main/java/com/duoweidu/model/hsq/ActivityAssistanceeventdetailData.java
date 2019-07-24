@@ -56,9 +56,9 @@ public class ActivityAssistanceeventdetailData {
     }
 
     public static class SuccessEventModel {
-        public UserInfoModel userInfo;
-        public int created_at;
-        public String success_time;
+            public UserInfoModel userInfo;
+            public int created_at;
+            public String success_time;
 
         public static class UserInfoModel{
             public int user_id;
