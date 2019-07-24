@@ -18,8 +18,8 @@ public class CallbackInterface extends CallbackInterfaceChannel{
      * @param param
      * @return
      */
-    public static String getStringResult(String url, int path_id, String param) {
-        return CallbackInterfaceChannel.getStringResult(channel_id, url, path_id, param);
+    public static String getStringResult(long limitTime, String url, int path_id, String param) {
+        return CallbackInterfaceChannel.getStringResult(channel_id, limitTime, url, path_id, param);
     }
 
     /**
@@ -29,8 +29,8 @@ public class CallbackInterface extends CallbackInterfaceChannel{
      * @param list
      * @return
      */
-    public static String postStringResult(String url, int path_id, List<NameValuePair> list) {
-        return CallbackInterfaceChannel.postStringResult(channel_id, url, path_id, list);
+    public static String postStringResult(long limitTime, String url, int path_id, List<NameValuePair> list) {
+        return CallbackInterfaceChannel.postStringResult(channel_id, limitTime, url, path_id, list);
     }
 
     /**
@@ -40,8 +40,8 @@ public class CallbackInterface extends CallbackInterfaceChannel{
      * @param param
      * @return
      */
-    public static String postStringResult(String url, int path_id, String param) {
-        return CallbackInterfaceChannel.postStringResult(channel_id, url, path_id, param);
+    public static String postStringResult(long limitTime, String url, int path_id, String param) {
+        return CallbackInterfaceChannel.postStringResult(channel_id, limitTime, url, path_id, param);
     }
 
     /**
@@ -51,8 +51,8 @@ public class CallbackInterface extends CallbackInterfaceChannel{
      * @param param
      * @return
      */
-    public static String deleteStringResult(String url, int path_id, String param) {
-        return CallbackInterfaceChannel.deleteStringResult(channel_id, url, path_id, param);
+    public static String deleteStringResult(long limitTime, String url, int path_id, String param) {
+        return CallbackInterfaceChannel.deleteStringResult(channel_id, limitTime, url, path_id, param);
     }
 
 }

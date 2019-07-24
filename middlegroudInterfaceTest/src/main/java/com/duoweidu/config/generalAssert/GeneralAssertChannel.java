@@ -68,19 +68,25 @@ public class GeneralAssertChannel extends Assert {
         //觅食蜂报错需要X-Request-ID
         if (ConfigFileUrl.getChannel() == 3) {
             Header header[] = GeneralConfig.response.getHeaders("X-Request-ID");
+
+            String requsetId = null;
+            if (header.length > 0) {
+                requsetId = header[0].getValue();
+            }
+
             failed = "\n" + faile +
                     "\n请求的url:" + uri +
-                    "\nCX-Request-ID: " + header[0].getValue() +
+                    "\nCX-Request-ID: " + requsetId +
                     "\n接口返回：" + result +
                     "\n《-------------------------分割线-------------------------》";
             parameterFailed = "\n" + faile +
                     "\n请求的url:" + uri +
                     "\n参数：" + param +
-                    "\nCX-Request-ID: " + header[0].getValue() +
+                    "\nCX-Request-ID: " + requsetId +
                     "\n接口返回：" + result +
                     "\n《-------------------------分割线-------------------------》";
             errnoResult = faile +
-                    "\nCX-Request-ID: " + header[0].getValue() +
+                    "\nCX-Request-ID: " + requsetId +
                     "\n接口返回：" + result;
         }
 
@@ -95,8 +101,8 @@ public class GeneralAssertChannel extends Assert {
     }
 
 
-    public static void timeTest(int channel_id, long time, HttpResponse response, String uri, int path_id, String param) {
-        if(time >= 3000){
+    public static void timeTest(int channel_id, long limitTime, long responseTime, HttpResponse response, String uri, int path_id, String param) {
+        if(responseTime >= limitTime){
             //需要一个HTTP_好的状态从响应和不得到它，你仍然必须消耗实体
             if (response.getEntity() != null) {
                 try {
@@ -105,7 +111,7 @@ public class GeneralAssertChannel extends Assert {
                     e.printStackTrace();
                 }
             }
-            fail(distinguishParamFailed(channel_id, "接口响应超时;\n实际响应时间：" + time + "ms", uri, path_id, param, 1, null));
+            fail(distinguishParamFailed(channel_id, "接口响应超时;\n限制时间：" + limitTime + "ms;  实际响应时间：" + responseTime + "ms", uri, path_id, param, 1, null));
         }
 
     }

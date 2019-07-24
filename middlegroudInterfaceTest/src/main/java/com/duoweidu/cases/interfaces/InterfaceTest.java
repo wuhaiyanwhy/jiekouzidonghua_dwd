@@ -26,6 +26,12 @@ public class InterfaceTest {
     //用来储存返回的结果
     protected String result;
 
+
+    //设置接口响应的默认限制时间
+    protected long limitTime() {
+        return ConfigFileUrl.getLimitTime();
+    }
+
     /**
      * 获取渠道id
      */
@@ -179,7 +185,7 @@ public class InterfaceTest {
     protected void process() {
         System.out.println(url);
         System.out.println("参数：" + param);
-        result = CallbackInterfaceChannel.getStringResult(channel_id(), url, pathId, this.param);
+        result = CallbackInterfaceChannel.getStringResult(channel_id(), limitTime(), url, pathId, this.param);
     }
 
     /**
@@ -209,7 +215,7 @@ public class InterfaceTest {
         System.out.println(url);
         param = URLEncodedUtils.format(list, "Utf-8");
         System.out.println("参数：" + param);
-        result = CallbackInterfaceChannel.postStringResult(channel_id(), url, pathId, list);
+        result = CallbackInterfaceChannel.postStringResult(channel_id(), limitTime(), url, pathId, list);
     }
 
     /**
@@ -238,7 +244,7 @@ public class InterfaceTest {
     protected void process(String param) {
         System.out.println(url);
         System.out.println("参数：" + param);
-        result = CallbackInterfaceChannel.postStringResult(channel_id(), url, pathId, param);
+        result = CallbackInterfaceChannel.postStringResult(channel_id(), limitTime(), url, pathId, param);
     }
 
     /**
@@ -267,7 +273,7 @@ public class InterfaceTest {
     protected void processDelete() {
         System.out.println(url);
         System.out.println("参数：" + param);
-        result = CallbackInterfaceChannel.deleteStringResult(channel_id(), url, pathId, this.param);
+        result = CallbackInterfaceChannel.deleteStringResult(channel_id(), limitTime(), url, pathId, this.param);
     }
 
     /**

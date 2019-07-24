@@ -28,7 +28,7 @@ public class IqgInterfaceTest extends InterfaceTest {
             this.param = par;
         }
         System.out.println("参数：" + param);
-        result = IqgCallbackInterface.getStringResult(url, pathId, this.param);
+        result = IqgCallbackInterface.getStringResult(limitTime(), url, pathId, this.param);
     }
 
     //post请求
@@ -41,7 +41,7 @@ public class IqgInterfaceTest extends InterfaceTest {
         list.add(new BasicNameValuePair("lat", SqlDetail.getInstance().getParamValue(0, "lat")));
         param = URLEncodedUtils.format(list, "Utf-8");
         System.out.println("参数：" + param);
-        result = IqgCallbackInterface.postStringResult(url, pathId, list);
+        result = IqgCallbackInterface.postStringResult(limitTime(), url, pathId, list);
     }
 
 
@@ -59,7 +59,7 @@ public class IqgInterfaceTest extends InterfaceTest {
             this.param = par;
         }
         System.out.println("参数：" + param);
-        result = IqgCallbackInterface.deleteStringResult(url, pathId, this.param);
+        result = IqgCallbackInterface.deleteStringResult(limitTime(), url, pathId, this.param);
     }
 
     //通用断言判断

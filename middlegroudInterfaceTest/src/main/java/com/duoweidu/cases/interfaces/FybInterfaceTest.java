@@ -23,7 +23,7 @@ public class FybInterfaceTest extends InterfaceTest {
             this.param = par;
         }
         System.out.println("参数：" + param);
-        result = CallbackInterface.getStringResult(url, pathId, this.param);
+        result = CallbackInterface.getStringResult(limitTime(), url, pathId, this.param);
     }
 
     //post请求
@@ -35,6 +35,6 @@ public class FybInterfaceTest extends InterfaceTest {
         list.add(new BasicNameValuePair("token", SqlDetail.getInstance().getParamValue("token")));
         param = URLEncodedUtils.format(list, "Utf-8");
         System.out.println("参数：" + param);
-        result = CallbackInterface.postStringResult(url, pathId, list);
+        result = CallbackInterface.postStringResult(limitTime(), url, pathId, list);
     }
 }

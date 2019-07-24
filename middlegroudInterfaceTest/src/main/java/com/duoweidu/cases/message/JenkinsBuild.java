@@ -22,8 +22,10 @@ public class JenkinsBuild {
             uri = "iqg.prod.lastBuild.uri";
         }else if (ConfigFileUrl.getChannel() == 3) {
             uri = "msf.prod.lastBuild.uri";
-        }else if (ConfigFileUrl.getChannel() ==4) {
+        }else if (ConfigFileUrl.getChannel() == 4) {
             uri = "fyb.prod.lastBuild.uri";
+        }else if (ConfigFileUrl.getChannel() == 5) {
+            uri = "jsz.prod.lastBuild.uri";
         }
 
         String url = ConfigFileUrl.getUrlByKey(11, 0, uri);
