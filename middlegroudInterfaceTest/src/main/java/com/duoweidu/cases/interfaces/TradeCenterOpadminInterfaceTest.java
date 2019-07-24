@@ -4,6 +4,7 @@ import com.duoweidu.config.sql.SqlDetail;
 import com.duoweidu.utils.CallbackInterface;
 import com.duoweidu.utils.ConfigFileUrl;
 import org.apache.http.NameValuePair;
+import org.apache.http.client.utils.URLEncodedUtils;
 import org.apache.http.message.BasicNameValuePair;
 
 import java.util.List;
@@ -28,7 +29,8 @@ public class TradeCenterOpadminInterfaceTest extends InterfaceTest {
         }else {
             this.param = par;
         }
-        result = CallbackInterface.getStringResult(url, pathId, this.param);
+        System.out.println("参数：" + param);
+        result = CallbackInterface.getStringResult(limitTime(), url, pathId, this.param);
     }
 
     //post请求
@@ -38,7 +40,8 @@ public class TradeCenterOpadminInterfaceTest extends InterfaceTest {
         //通用参数
         list.add(new BasicNameValuePair("token", SqlDetail.getInstance().getParamValue(0, "opadminToken")));
         list.add(new BasicNameValuePair("accountNumber", SqlDetail.getInstance().getParamValue(0, "accountNumber")));
-        param = list.toString();
-        result = CallbackInterface.postStringResult(url, pathId, list);
+        param = URLEncodedUtils.format(list, "Utf-8");
+        System.out.println("参数：" + param);
+        result = CallbackInterface.postStringResult(limitTime(), url, pathId, list);
     }
 }
