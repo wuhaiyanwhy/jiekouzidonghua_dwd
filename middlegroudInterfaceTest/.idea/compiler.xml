@@ -9,8 +9,5 @@
         <module name="middlegroudInterfaceTest" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="middlegroudInterfaceTest" target="7" />
-    </bytecodeTargetLevel>
   </component>
 </project>
