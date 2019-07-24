@@ -30,7 +30,7 @@ public class TradeCenterOpadminInterfaceTest extends InterfaceTest {
             this.param = par;
         }
         System.out.println("参数：" + param);
-        result = CallbackInterface.getStringResult(url, pathId, this.param);
+        result = CallbackInterface.getStringResult(limitTime(), url, pathId, this.param);
     }
 
     //post请求
@@ -42,6 +42,6 @@ public class TradeCenterOpadminInterfaceTest extends InterfaceTest {
         list.add(new BasicNameValuePair("accountNumber", SqlDetail.getInstance().getParamValue(0, "accountNumber")));
         param = URLEncodedUtils.format(list, "Utf-8");
         System.out.println("参数：" + param);
-        result = CallbackInterface.postStringResult(url, pathId, list);
+        result = CallbackInterface.postStringResult(limitTime(), url, pathId, list);
     }
 }
