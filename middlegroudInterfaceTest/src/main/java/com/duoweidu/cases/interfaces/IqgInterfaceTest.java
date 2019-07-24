@@ -4,6 +4,7 @@ import com.duoweidu.config.generalAssert.GeneralAssert;
 import com.duoweidu.config.sql.SqlDetail;
 import com.duoweidu.utils.IqgCallbackInterface;
 import org.apache.http.NameValuePair;
+import org.apache.http.client.utils.URLEncodedUtils;
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -26,7 +27,8 @@ public class IqgInterfaceTest extends InterfaceTest {
         }else {
             this.param = par;
         }
-        result = IqgCallbackInterface.getStringResult(url, pathId, this.param);
+        System.out.println("参数：" + param);
+        result = IqgCallbackInterface.getStringResult(limitTime(), url, pathId, this.param);
     }
 
     //post请求
@@ -37,8 +39,9 @@ public class IqgInterfaceTest extends InterfaceTest {
         list.add(new BasicNameValuePair("version", SqlDetail.getInstance().getParamValue(0, "version")));
         list.add(new BasicNameValuePair("lng", SqlDetail.getInstance().getParamValue(0, "lng")));
         list.add(new BasicNameValuePair("lat", SqlDetail.getInstance().getParamValue(0, "lat")));
-        param = list.toString();
-        result = IqgCallbackInterface.postStringResult(url, pathId, list);
+        param = URLEncodedUtils.format(list, "Utf-8");
+        System.out.println("参数：" + param);
+        result = IqgCallbackInterface.postStringResult(limitTime(), url, pathId, list);
     }
 
 
@@ -55,7 +58,8 @@ public class IqgInterfaceTest extends InterfaceTest {
         }else {
             this.param = par;
         }
-        result = IqgCallbackInterface.deleteStringResult(url, pathId, this.param);
+        System.out.println("参数：" + param);
+        result = IqgCallbackInterface.deleteStringResult(limitTime(), url, pathId, this.param);
     }
 
     //通用断言判断
@@ -88,7 +92,7 @@ public class IqgInterfaceTest extends InterfaceTest {
 
     //通用断言判断
     @Override
-    protected void generalAssertTest(boolean isList, boolean isDataList) {
+    protected void generalAssertTest(boolean isDataList, boolean isList) {
         try {
             JSONObject jsonObject = new JSONObject(result);
             if (isDataList == true) {
