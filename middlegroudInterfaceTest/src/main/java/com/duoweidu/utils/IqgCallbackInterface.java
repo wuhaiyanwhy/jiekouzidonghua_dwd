@@ -25,7 +25,7 @@ public class IqgCallbackInterface extends CallbackInterface {
      * @param param
      * @return
      */
-    public static String getStringResult(String url, int path_id, String param) {
+    public static String getStringResult(String url, long limitTime, int path_id, String param) {
         HttpGet get = new HttpGet(url + "?" + param);
         get.setHeader("User-Agent","AiQiangGou/5.7.0 (iPhone; iOS 12.0.1; Scale/3.00)");
         get.setHeader("zoneid","21");
@@ -39,7 +39,7 @@ public class IqgCallbackInterface extends CallbackInterface {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        GeneralAssertChannel.timeTest(channel_id, System.currentTimeMillis()-startTime1, response, url, path_id, param);
+        GeneralAssertChannel.timeTest(channel_id, limitTime,System.currentTimeMillis()-startTime1, response, url, path_id, param);
         return getResult(channel_id, response, url, path_id, param);
     }
 
@@ -50,7 +50,7 @@ public class IqgCallbackInterface extends CallbackInterface {
      * @param list
      * @return
      */
-    public static String postStringResult(String url, int path_id, List<NameValuePair> list) {
+    public static String postStringResult(String url, long limitTime, int path_id, List<NameValuePair> list) {
         HttpPost post = new HttpPost(url);
         post.setHeader("User-Agent","AiQiangGou/5.7.0 (iPhone; iOS 12.0.1; Scale/3.00)");
         post.setHeader("zoneid","21");
@@ -72,7 +72,7 @@ public class IqgCallbackInterface extends CallbackInterface {
             e.printStackTrace();
         }
         String param = URLEncodedUtils.format(list, "Utf-8");
-        GeneralAssertChannel.timeTest(channel_id, System.currentTimeMillis()-startTime1, response, url, path_id, param);
+        GeneralAssertChannel.timeTest(channel_id, limitTime, System.currentTimeMillis()-startTime1, response, url, path_id, param);
         return getResult(channel_id, response, url, path_id, list.toString());
     }
 
@@ -83,7 +83,7 @@ public class IqgCallbackInterface extends CallbackInterface {
      * @param param
      * @return
      */
-    public static String postStringResult(String url, int path_id, String param) {
+    public static String postStringResult(String url, long limitTime, int path_id, String param) {
         HttpPost post = new HttpPost(url);
         post.setHeader("User-Agent","AiQiangGou/5.7.0 (iPhone; iOS 12.0.1; Scale/3.00)");
         post.setHeader("zoneid","21");
@@ -104,7 +104,7 @@ public class IqgCallbackInterface extends CallbackInterface {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        GeneralAssertChannel.timeTest(channel_id, System.currentTimeMillis()-startTime1, response, url, path_id, param);
+        GeneralAssertChannel.timeTest(channel_id, limitTime, System.currentTimeMillis()-startTime1, response, url, path_id, param);
         return getResult(channel_id, response, url, path_id, param);
     }
 
@@ -115,7 +115,7 @@ public class IqgCallbackInterface extends CallbackInterface {
      * @param param
      * @return
      */
-    public static String deleteStringResult(String url, int path_id, String param) {
+    public static String deleteStringResult(String url, long limitTime, int path_id, String param) {
         HttpDelete delete = new HttpDelete(url);
         delete.setHeader("User-Agent","AiQiangGou/5.7.0 (iPhone; iOS 12.0.1; Scale/3.00)");
         delete.setHeader("zoneid","21");
@@ -129,7 +129,7 @@ public class IqgCallbackInterface extends CallbackInterface {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        GeneralAssertChannel.timeTest(channel_id, System.currentTimeMillis()-startTime1, response, url, path_id, param);
+        GeneralAssertChannel.timeTest(channel_id, limitTime, System.currentTimeMillis()-startTime1, response, url, path_id, param);
         return getResult(channel_id, response, url, path_id, param);
     }
 

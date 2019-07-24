@@ -11,10 +11,11 @@ import java.util.List;
 
 public class HsqOpadminInterfaceTest extends InterfaceTest {
 
-    /**
-     * 获取渠道id
-     * @return
-     */
+    @Override
+    protected long limitTime() {
+        return ConfigFileUrl.getLimitTime1();
+    }
+
     @Override
     public int channel_id() {
         return ConfigFileUrl.getChannel1();

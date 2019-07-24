@@ -28,7 +28,7 @@ public class DingDing {
 //        String access_token = "011d7f2e2d810d471150daaab456b34338a5a9fcd0a9769577a858c679273155";
         String url = ConfigFileUrl.getUrlByKey(8, 0, "robot.send.uri") +
                 "?access_token=" + access_token;
-        CallbackInterface.postStringResult(url, 3, param);
+        CallbackInterface.postStringResult(ConfigFileUrl.getLimitTime1(), url, 3, param);
 
     }
 
