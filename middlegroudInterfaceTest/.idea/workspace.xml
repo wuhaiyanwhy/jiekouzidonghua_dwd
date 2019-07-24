@@ -1,7 +1,176 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b34fd79-3c17-4409-8174-58d45490f47e" name="Default Changelist" comment="" />
+    <list default="true" id="0b34fd79-3c17-4409-8174-58d45490f47e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/order_linkmallpointorder_test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/interfaces/JszInterfaceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/interfaces/MsfOpadminInterfaceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/jsz/openapi/ActivityGetactivityinfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/jsz/openapi/ActivityGetactivitylist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/jsz/openapi/AddressSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/jsz/openapi/CommonCbdlist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/jsz/openapi/CommonGetposter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/jsz/openapi/CommonQrcodeimg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/jsz/openapi/CommonWxsign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/jsz/openapi/CommonZonelist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/jsz/openapi/FeedbackApplyrefund.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/jsz/openapi/FeedbackFeedbackitemlist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/jsz/openapi/OrderBeforecreate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/jsz/openapi/OrderCancelorder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/jsz/openapi/OrderCancreateorder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/jsz/openapi/OrderCreateorder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/jsz/openapi/OrderOrderdetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/jsz/openapi/OrderOrderlist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/jsz/openapi/OrderPayorder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/jsz/openapi/OrderQueryorder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/jsz/openapi/UserHome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/jsz/openapi/UserJoinmembers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/jsz/openapi/UserLogin2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/jsz/openapi/UserLogincallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/jsz/openapi/UserMyincome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/jsz/openapi/UserRegister2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/msf/opadmin/AdminMerchantList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/config/JszConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/model/hsq/OrderLinkmallpointorderData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/model/hsq/PointIndexData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/model/hsq/PointRecommenditemsData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/model/hsq/PointTopicinfoData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/model/jsz/ActivityGetactivityinfoData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/jsz.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/middlegroudInterfaceTest.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/hsq/openapi/order_linkmallpointorder_test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/interfaces/JszInterfaceTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/interfaces/MsfOpadminInterfaceTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/jsz/openapi/ActivityGetactivityinfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/jsz/openapi/ActivityGetactivitylist.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/jsz/openapi/AddressSearch.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/jsz/openapi/CommonCbdlist.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/jsz/openapi/CommonGetposter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/jsz/openapi/CommonQrcodeimg.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/jsz/openapi/CommonWxsign.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/jsz/openapi/CommonZonelist.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/jsz/openapi/FeedbackApplyrefund.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/jsz/openapi/FeedbackFeedbackitemlist.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/jsz/openapi/OrderBeforecreate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/jsz/openapi/OrderCancelorder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/jsz/openapi/OrderCancreateorder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/jsz/openapi/OrderCreateorder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/jsz/openapi/OrderOrderdetail.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/jsz/openapi/OrderOrderlist.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/jsz/openapi/OrderPayorder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/jsz/openapi/OrderQueryorder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/jsz/openapi/UserHome.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/jsz/openapi/UserJoinmembers.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/jsz/openapi/UserLogin2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/jsz/openapi/UserLogincallback.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/jsz/openapi/UserMyincome.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/jsz/openapi/userRegister2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/msf/opadmin/AdminMerchantList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/config/JszConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/model/hsq/OrderLinkmallpointorderData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/model/hsq/PointIndexData$BannerListModel$UserFlowModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/model/hsq/PointIndexData$BannerListModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/model/hsq/PointIndexData$LabelsModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/model/hsq/PointIndexData$SkuListModel$ListModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/model/hsq/PointIndexData$SkuListModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/model/hsq/PointIndexData$SubButtonListMOdel$SubDataModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/model/hsq/PointIndexData$SubButtonListMOdel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/model/hsq/PointIndexData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/model/hsq/PointRecommenditemsData$DataModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/model/hsq/PointRecommenditemsData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/model/hsq/PointTopicinfoData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/model/jsz/ActivityGetactivityinfoData$BranchModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/model/jsz/ActivityGetactivityinfoData$ItemModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/model/jsz/ActivityGetactivityinfoData$SpecialTipsModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/model/jsz/ActivityGetactivityinfoData$TipsArrayModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/model/jsz/ActivityGetactivityinfoData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/hsq-dayan-test.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/jsz.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlegroudInterfaceTest.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/merchant/merchant_onlinechat_token_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/merchant/merchant_onlinechat_token_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/opadmin/banner_banneronlinelist_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/opadmin/banner_banneronlinelist_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/point_index_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/point_index_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/point_recommenditems_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/point_recommenditems_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/point_topicbuskulist_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/point_topicbuskulist_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/point_topicinfo_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/point_topicinfo_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/tradecenter_orderinfo_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/tradecenter_orderinfo_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/tradecenter_pointorderpreview_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/tradecenter_pointorderpreview_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/tradecenter_pointordersubmit_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/tradecenter_pointordersubmit_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/interfaces/FybInterfaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/interfaces/FybInterfaceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/interfaces/HsqInterfaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/interfaces/HsqInterfaceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/interfaces/HsqMerchantInterfaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/interfaces/HsqMerchantInterfaceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/interfaces/HsqOpadminInterfaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/interfaces/HsqOpadminInterfaceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/interfaces/InterfaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/interfaces/InterfaceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/interfaces/IqgInterfaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/interfaces/IqgInterfaceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/interfaces/MsfInterfaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/interfaces/MsfInterfaceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/interfaces/TradeCenterInterfaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/interfaces/TradeCenterInterfaceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/interfaces/TradeCenterOpadminInterfaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/interfaces/TradeCenterOpadminInterfaceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/iqg/openapi/BargainToday.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/iqg/openapi/BargainToday.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/iqg/openapi/CoinExchangeList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/iqg/openapi/CoinExchangeList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/iqg/openapi/OrderTypeAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/iqg/openapi/OrderTypeAll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/iqg/openapi/OrderTypeRefund.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/iqg/openapi/OrderTypeRefund.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/iqg/openapi/Zone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/iqg/openapi/Zone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/iqg/openapi/Zone21Categories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/iqg/openapi/Zone21Categories.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/message/DingDing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/message/DingDing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/message/JenkinsBuild.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/message/JenkinsBuild.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/message/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/message/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/config/generalAssert/GeneralAssertChannel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/config/generalAssert/GeneralAssertChannel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/config/sql/SqlDetailMultiChannel1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/config/sql/SqlDetailMultiChannel1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/config/sql/SqlDetailMultiChannel2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/config/sql/SqlDetailMultiChannel2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/model/hsq/ActivityAssistanceeventdetailData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/model/hsq/ActivityAssistanceeventdetailData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/utils/CallbackInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/utils/CallbackInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/utils/CallbackInterfaceChannel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/utils/CallbackInterfaceChannel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/utils/ConfigFileUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/utils/ConfigFileUrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/utils/IqgCallbackInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/utils/IqgCallbackInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hsq.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hsq.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/msf.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/msf.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/switch.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/switch.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/hsq/merchant/merchant_onlinechat_token_test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/hsq/merchant/merchant_onlinechat_token_test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/hsq/opadmin/banner_banneronlinelist_test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/hsq/opadmin/banner_banneronlinelist_test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/hsq/openapi/point_index_test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/hsq/openapi/point_index_test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/hsq/openapi/point_recommenditems_test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/hsq/openapi/point_recommenditems_test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/hsq/openapi/point_topicbuskulist_test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/hsq/openapi/point_topicbuskulist_test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/hsq/openapi/point_topicinfo_test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/hsq/openapi/point_topicinfo_test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/hsq/openapi/tradecenter_orderinfo_test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/hsq/openapi/tradecenter_orderinfo_test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/hsq/openapi/tradecenter_pointorderpreview_test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/hsq/openapi/tradecenter_pointorderpreview_test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/hsq/openapi/tradecenter_pointordersubmit_test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/hsq/openapi/tradecenter_pointordersubmit_test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/interfaces/FybInterfaceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/interfaces/FybInterfaceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/interfaces/HsqInterfaceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/interfaces/HsqInterfaceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/interfaces/HsqMerchantInterfaceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/interfaces/HsqMerchantInterfaceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/interfaces/HsqOpadminInterfaceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/interfaces/HsqOpadminInterfaceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/interfaces/InterfaceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/interfaces/InterfaceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/interfaces/IqgInterfaceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/interfaces/IqgInterfaceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/interfaces/MsfInterfaceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/interfaces/MsfInterfaceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/interfaces/TradeCenterInterfaceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/interfaces/TradeCenterInterfaceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/interfaces/TradeCenterOpadminInterfaceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/interfaces/TradeCenterOpadminInterfaceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/iqg/openapi/BargainToday.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/iqg/openapi/BargainToday.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/iqg/openapi/CoinExchangeList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/iqg/openapi/CoinExchangeList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/iqg/openapi/OrderTypeAll.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/iqg/openapi/OrderTypeAll.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/iqg/openapi/OrderTypeRefund.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/iqg/openapi/OrderTypeRefund.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/iqg/openapi/Zone.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/iqg/openapi/Zone.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/iqg/openapi/Zone21Categories.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/iqg/openapi/Zone21Categories.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/message/DingDing.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/message/DingDing.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/message/JenkinsBuild.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/message/JenkinsBuild.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/message/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/message/Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/config/GeneralAssertMultiChannel1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/config/GeneralAssertMultiChannel2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/config/generalAssert/GeneralAssertChannel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/config/generalAssert/GeneralAssertChannel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/config/generalAssert/GeneralAssertMultiChannel1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/config/generalAssert/GeneralAssertMultiChannel2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/config/sql/SqlDetailMultiChannel1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/config/sql/SqlDetailMultiChannel1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/config/sql/SqlDetailMultiChannel2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/config/sql/SqlDetailMultiChannel2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/utils/CallbackInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/utils/CallbackInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/utils/CallbackInterfaceChannel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/utils/CallbackInterfaceChannel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/utils/ConfigFileUrl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/utils/ConfigFileUrl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/utils/IqgCallbackInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/utils/IqgCallbackInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hsq.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hsq.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/msf.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/msf.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/switch.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/switch.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/InterfaceReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/InterfaceReport.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,10 +186,137 @@
           <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="1" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="1" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="1" />
+          <entry key="properties" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1" />
+          <entry key="Properties" value="4" />
+        </counts>
+      </usages-collector>
     </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/switch.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/config/generalAssert/GeneralAssertChannel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="164" column="28" selection-start-line="164" selection-start-column="28" selection-end-line="164" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/interfaces/IqgInterfaceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1290" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/utils/CallbackInterfaceChannel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-952">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/utils/CallbackInterface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="11" column="68" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/iqg/openapi/Ad.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/iqg/openapi/AddressInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="11" column="20" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/iqg/openapi/Item.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/iqg/openapi/ItemBargain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="117">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/resources/switch.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/config/generalAssert/GeneralAssertChannel.java" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -40,7 +336,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -80,19 +375,73 @@
               <item name="middlegroudInterfaceTest" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="duoweidu" type="462c0819:PsiDirectoryNode" />
+              <item name="cases" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="middlegroudInterfaceTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="middlegroudInterfaceTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="duoweidu" type="462c0819:PsiDirectoryNode" />
+              <item name="cases" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="middlegroudInterfaceTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="middlegroudInterfaceTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="duoweidu" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="middlegroudInterfaceTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="middlegroudInterfaceTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="duoweidu" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="generalAssert" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="middlegroudInterfaceTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="middlegroudInterfaceTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="duoweidu" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="middlegroudInterfaceTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="middlegroudInterfaceTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="middlegroudInterfaceTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="middlegroudInterfaceTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563966685561" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563968590449" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Problems" />
@@ -112,7 +461,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG./Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/iqg.xml">
+    <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/iqg.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="middlegroudInterfaceTest" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/main/resources/iqg.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/msf.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="middlegroudInterfaceTest" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/main/resources/msf.xml" />
@@ -123,8 +482,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="TestNG./Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/msf.xml" />
+      <item itemvalue="TestNG./Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/iqg.xml" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG./Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/iqg.xml" />
         <item itemvalue="TestNG./Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/msf.xml" />
       </list>
     </recent_temporary>
@@ -147,42 +511,46 @@
     <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_msf_xml - 2019.07.24 at 19h 01m 10s.xml">
       <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/msf.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_iqg_xml - 2019.07.24 at 19h 42m 03s.xml">
+      <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/iqg.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="664000" />
+    <option name="totallyTimeSpent" value="733000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="36" y="23" width="1244" height="777" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24958402" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24958402" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" weight="0.32930514" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Statistic" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32930514" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32930514" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.45770392" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32930514" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Statistic" order="11" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32930514" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +558,58 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/interfaces/IqgInterfaceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/utils/IqgCallbackInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="28" column="57" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1290" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/switch.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/utils/CallbackInterfaceChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-952">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/config/generalAssert/GeneralAssertChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="164" column="28" selection-start-line="164" selection-start-column="28" selection-end-line="164" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>

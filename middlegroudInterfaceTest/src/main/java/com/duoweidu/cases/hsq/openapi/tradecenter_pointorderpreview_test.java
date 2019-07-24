@@ -11,10 +11,11 @@ import java.util.List;
 
 public class tradecenter_pointorderpreview_test extends HsqInterfaceTest {
 
-    @Test(dependsOnGroups = "loginTrue",description = "积分订单初始化")
+    @Test(description = "积分订单初始化")
     public void tradecenter_pointorderpreview_true() {
         setUrl("tradecenter.pointorderpreview.uri");
         List<NameValuePair> list = new LinkedList<>();
+        list.add(new BasicNameValuePair("token", SqlDetail.getInstance().getParamValue("token")));
         list.add(new BasicNameValuePair("skusInfo","[{\"pSkuId\":"+ SqlDetail.getInstance().getParamValue("pSkuId") +",\"amount\":1}]"));
         process(list,false,false);
     }
