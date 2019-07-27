@@ -2,9 +2,15 @@ package com.duoweidu.cases.hsq.openapi;
 
 import com.duoweidu.cases.interfaces.HsqInterfaceTest;
 import com.duoweidu.model.hsq.CommonIndexZhimaData;
+import com.duoweidu.utils.ConfigFileUrl;
 import org.testng.annotations.Test;
 
 public class CommonIndexZhima extends HsqInterfaceTest {
+
+    //此接口响应时间过长不受我们控制
+    protected long limitTime() {
+        return 3000;
+    }
 
     private CommonIndexZhimaData model;
 
