@@ -106,7 +106,7 @@ public class GeneralAssertChannel extends Assert {
             //需要一个HTTP_好的状态从响应和不得到它，你仍然必须消耗实体
             if (response.getEntity() != null) {
                 try {
-                    response.getEntity().consumeContent();
+                    response.getEntity().getContent().close();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -129,7 +129,7 @@ public class GeneralAssertChannel extends Assert {
             //需要一个HTTP_好的状态从响应和不得到它，你仍然必须消耗实体
             if (response.getEntity() != null) {
                 try {
-                    response.getEntity().consumeContent();
+                    response.getEntity().getContent().close();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
