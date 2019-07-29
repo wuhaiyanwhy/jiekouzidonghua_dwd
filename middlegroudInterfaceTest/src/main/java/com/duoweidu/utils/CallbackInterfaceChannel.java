@@ -45,7 +45,7 @@ public class CallbackInterfaceChannel {
         }
         if ( response.getEntity() != null ) {
             try {
-                response.getEntity().consumeContent();
+                response.getEntity().getContent().close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
