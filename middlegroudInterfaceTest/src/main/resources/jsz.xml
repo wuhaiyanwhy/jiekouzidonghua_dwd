@@ -135,7 +135,9 @@
             </class>
             <class name="com.duoweidu.cases.jsz.openapi.UserMyincome">
                 <methods>
-                    <include name = "UserMyincome"/>
+                    <include name = "UserMyincome0"/>
+                    <include name = "UserMyincome1"/>
+                    <include name = "UserMyincome2"/>
                 </methods>
             </class>
             <class name="com.duoweidu.cases.jsz.openapi.UserRegister2">

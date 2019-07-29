@@ -36,7 +36,7 @@ public class ActivityGetactivityinfo extends JszInterfaceTest {
         detailAssertTest( "redeem_time", model.redeem_time);
         detailAssertTest( "refund_expired", model.refund_expired);
 //        detailAssertTest( "poster", model.poster);
-        detailAssertTest( 3,"sales_volume", model.sales_volume);
+        detailAssertTest( "sales_volume", model.sales_volume);
         detailAssertTest( "images",model.item.images);
         detailAssertTest( "巨食阵接口测试品(勿动)","name", model.item.name);
         detailAssertTest( "description", model.item.description);

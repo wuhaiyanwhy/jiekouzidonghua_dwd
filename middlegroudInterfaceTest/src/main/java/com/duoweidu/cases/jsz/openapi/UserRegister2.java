@@ -15,7 +15,7 @@ public class UserRegister2 extends JszInterfaceTest {
     public void userRegister2() {
         setUrl("user.register2.uri");
         List<NameValuePair> list = new LinkedList<>();
-        list.add(new BasicNameValuePair("mobile", SqlDetail.getInstance().getParamValue(0,"mobile")));
+//        list.add(new BasicNameValuePair("mobile", SqlDetail.getInstance().getParamValue(0,"mobile")));
         process(list,false,false);
 
     }
