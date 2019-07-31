@@ -1,0 +1,214 @@
+<html>
+<head>
+<title>TestNG:  好食期接口测试用例(商户平台)</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>好食期接口测试用例(商户平台)</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>27/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jul 22 18:11:47 CST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>4 seconds (4422 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.merchant.activity_getregistrationlist_test.activity_getregistrationlist_true()'><b>activity_getregistrationlist_true</b><br>Test class: com.duoweidu.cases.hsq.merchant.activity_getregistrationlist_test<br>Test method: 报名营销活动列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.merchant.activity_getregistrationlist_test@7e050be1</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.merchant.activity_gettopiclist_test.activity_gettopiclist_true()'><b>activity_gettopiclist_true</b><br>Test class: com.duoweidu.cases.hsq.merchant.activity_gettopiclist_test<br>Test method: 查看营销活动列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.merchant.activity_gettopiclist_test@40016ce1</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.merchant.activity_registration_test.activity_registration_true()'><b>activity_registration_true</b><br>Test class: com.duoweidu.cases.hsq.merchant.activity_registration_test<br>Test method: 报名营销活动</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.merchant.activity_registration_test@203765b2</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.merchant.activity_topic_test.activity_topic_true()'><b>activity_topic_true</b><br>Test class: com.duoweidu.cases.hsq.merchant.activity_topic_test<br>Test method: 查看营销活动</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.merchant.activity_topic_test@6d0114c0</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.merchant.cs_refundlist_test.cs_refundlist_true()'><b>cs_refundlist_true</b><br>Test class: com.duoweidu.cases.hsq.merchant.cs_refundlist_test<br>Test method: 退款管理</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.merchant.cs_refundlist_test@a9a8ec3</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.merchant.express_expressfeetemplate_test.express_expressfeetemplate_true()'><b>express_expressfeetemplate_true</b><br>Test class: com.duoweidu.cases.hsq.merchant.express_expressfeetemplate_test<br>Test method: 运费模板</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.merchant.express_expressfeetemplate_test@76596288</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.merchant.express_productsendlist_test.express_productsendlist_true()'><b>express_productsendlist_true</b><br>Test class: com.duoweidu.cases.hsq.merchant.express_productsendlist_test<br>Test method: 发货</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.merchant.express_productsendlist_test@75527e36</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.merchant.express_trance_merchant_test.express_trance_merchant_true()'><b>express_trance_merchant_true</b><br>Test class: com.duoweidu.cases.hsq.merchant.express_trance_merchant_test<br>Test method: 物流跟踪</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.merchant.express_trance_merchant_test@6d815fb7</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.merchant.user_login_check_merchant_test.login_true()'><b>login_true</b><br>Test class: com.duoweidu.cases.hsq.merchant.user_login_check_merchant_test<br>Test method: 用户成功登陆接口</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.merchant.user_login_check_merchant_test@2aa6bbad</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.merchant.merchant_address_test.merchant_address_true()'><b>merchant_address_true</b><br>Test class: com.duoweidu.cases.hsq.merchant.merchant_address_test<br>Test method: 地址管理</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.merchant.merchant_address_test@4b5ad306</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.merchant.merchant_couponedit_test.merchant_couponedit_true()'><b>merchant_couponedit_true</b><br>Test class: com.duoweidu.cases.hsq.merchant.merchant_couponedit_test<br>Test method: 优惠券管理</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.merchant.merchant_couponedit_test@48a46b0f</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.merchant.merchant_couponlist_test.merchant_couponlist_true()'><b>merchant_couponlist_true</b><br>Test class: com.duoweidu.cases.hsq.merchant.merchant_couponlist_test<br>Test method: 优惠券管理列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.merchant.merchant_couponlist_test@1426370c</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.merchant.merchant_info_test.merchant_info_true()'><b>merchant_info_true</b><br>Test class: com.duoweidu.cases.hsq.merchant.merchant_info_test<br>Test method: 商户信息</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.merchant.merchant_info_test@6f867b0c</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.merchant.merchant_notice_test.merchant_notice_true()'><b>merchant_notice_true</b><br>Test class: com.duoweidu.cases.hsq.merchant.merchant_notice_test<br>Test method: 店铺公告</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.merchant.merchant_notice_test@9f9146d</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.merchant.merchant_onlinechat_token_test.merchant_onlinechat_token_true()'><b>merchant_onlinechat_token_true</b><br>Test class: com.duoweidu.cases.hsq.merchant.merchant_onlinechat_token_test<br>Test method: 商户平台token</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.merchant.merchant_onlinechat_token_test@6b2ef50e</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.merchant.merchant_productskulist_test.merchant_productskulist_true()'><b>merchant_productskulist_true</b><br>Test class: com.duoweidu.cases.hsq.merchant.merchant_productskulist_test<br>Test method: 商户列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.merchant.merchant_productskulist_test@376af784</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.merchant.merchant_promotions_test.merchant_promotions_true()'><b>merchant_promotions_true</b><br>Test class: com.duoweidu.cases.hsq.merchant.merchant_promotions_test<br>Test method: 促销管理</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.merchant.merchant_promotions_test@54be6213</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.merchant.product_selectcategory_test.product_selectcategory_true()'><b>product_selectcategory_true</b><br>Test class: com.duoweidu.cases.hsq.merchant.product_selectcategory_test<br>Test method: 发布新商品</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.merchant.product_selectcategory_test@51af8049</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.merchant.trade_merchant_ugclist_test.trade_merchant_ugclist_true()'><b>trade_merchant_ugclist_true</b><br>Test class: com.duoweidu.cases.hsq.merchant.trade_merchant_ugclist_test<br>Test method: 评价管理列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.merchant.trade_merchant_ugclist_test@605c7a9e</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.merchant.trade_productsoldlist_test.trade_productsoldlist_true()'><b>trade_productsoldlist_true</b><br>Test class: com.duoweidu.cases.hsq.merchant.trade_productsoldlist_test<br>Test method: 已卖出的宝贝</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.merchant.trade_productsoldlist_test@2ef041bb</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.merchant.trade_statement_test.trade_statement_true()'><b>trade_statement_true</b><br>Test class: com.duoweidu.cases.hsq.merchant.trade_statement_test<br>Test method: 对账明细</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.merchant.trade_statement_test@21c75084</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.merchant.trade_statementlist_test.trade_statementlist_true()'><b>trade_statementlist_true</b><br>Test class: com.duoweidu.cases.hsq.merchant.trade_statementlist_test<br>Test method: 对账明细列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.merchant.trade_statementlist_test@d16209e</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.merchant.trade_ugc_ugclist_test.trade_ugc_ugclist_true()'><b>trade_ugc_ugclist_true</b><br>Test class: com.duoweidu.cases.hsq.merchant.trade_ugc_ugclist_test<br>Test method: 评价管理</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.merchant.trade_ugc_ugclist_test@45e7bb79</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.merchant.withdraw_expenditure_list_merchant_test.withdraw_expenditure_list_merchant_true()'><b>withdraw_expenditure_list_merchant_true</b><br>Test class: com.duoweidu.cases.hsq.merchant.withdraw_expenditure_list_merchant_test<br>Test method: 贷款账户列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.merchant.withdraw_expenditure_list_merchant_test@1d6713dd</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.merchant.withdraw_expenditure_test.withdraw_expenditure_true()'><b>withdraw_expenditure_true</b><br>Test class: com.duoweidu.cases.hsq.merchant.withdraw_expenditure_test<br>Test method: 贷款账户</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.merchant.withdraw_expenditure_test@4b6b5352</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.merchant.withdraw_income_list_merchant_test.withdraw_income_list_merchant_true()'><b>withdraw_income_list_merchant_true</b><br>Test class: com.duoweidu.cases.hsq.merchant.withdraw_income_list_merchant_test<br>Test method: 收入明细列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.merchant.withdraw_income_list_merchant_test@506aa618</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.merchant.withdraw_income_test.withdraw_income_true()'><b>withdraw_income_true</b><br>Test class: com.duoweidu.cases.hsq.merchant.withdraw_income_test<br>Test method: 收入明细</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.merchant.withdraw_income_test@1b47b7f5</td></tr>
+</table><p>
+</body>
+</html>

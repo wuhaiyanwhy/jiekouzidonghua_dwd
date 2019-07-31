@@ -1,0 +1,154 @@
+<html>
+<head>
+<title>TestNG:  好食期接口测试用例(支付宝相关-助力免单流程)</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>好食期接口测试用例(支付宝相关-助力免单流程)</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>15/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jul 22 18:11:09 CST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>1 seconds (1023 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.ActivityAddassistancecomplaint.activityAddassistancecomplaint()'><b>activityAddassistancecomplaint</b><br>Test class: com.duoweidu.cases.hsq.openapi.ActivityAddassistancecomplaint<br>Test method: 助力免单用户投诉</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.ActivityAddassistancecomplaint@7c0e2abd</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.ActivityAssistancecomplainttype.activityAssistancecomplainttype()'><b>activityAssistancecomplainttype</b><br>Test class: com.duoweidu.cases.hsq.openapi.ActivityAssistancecomplainttype<br>Test method: 获取助力免单客诉类型</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.ActivityAssistancecomplainttype@3c756e4d</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.ActivityAssistanceeventdetail.activityAssistanceeventdetail()'><b>activityAssistanceeventdetail</b><br>Test class: com.duoweidu.cases.hsq.openapi.ActivityAssistanceeventdetail<br>Test method: 创建助力</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.ActivityAssistanceeventdetail@5afa04c</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.ActivityAssistanceshareinfo.activityAssistanceshareinfo()'><b>activityAssistanceshareinfo</b><br>Test class: com.duoweidu.cases.hsq.openapi.ActivityAssistanceshareinfo<br>Test method: 获取分享图片信息</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.ActivityAssistanceshareinfo@6a2bcfcb</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.ActivityAssistanceskulist.activityAssistanceskulist()'><b>activityAssistanceskulist</b><br>Test class: com.duoweidu.cases.hsq.openapi.ActivityAssistanceskulist<br>Test method: 助力免单列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.ActivityAssistanceskulist@2344fc66</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.ActivityAssistanceuserskulist.activityAssistanceuserskulist()'><b>activityAssistanceuserskulist</b><br>Test class: com.duoweidu.cases.hsq.openapi.ActivityAssistanceuserskulist<br>Test method: 我的免单-助力中</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.ActivityAssistanceuserskulist@66d2e7d9</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.ActivityAssistanceuserskulist.activityAssistanceuserskulistFalse()'><b>activityAssistanceuserskulistFalse</b><br>Test class: com.duoweidu.cases.hsq.openapi.ActivityAssistanceuserskulist<br>Test method: 我的免单-助力失败</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.ActivityAssistanceuserskulist@66d2e7d9</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.ActivityAssistanceuserskulist.activityAssistanceuserskulistTrue()'><b>activityAssistanceuserskulistTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.ActivityAssistanceuserskulist<br>Test method: 我的免单-助力成功</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.ActivityAssistanceuserskulist@66d2e7d9</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.ActivitySubscribe.activitySubscribe()'><b>activitySubscribe</b><br>Test class: com.duoweidu.cases.hsq.openapi.ActivitySubscribe<br>Test method: 订阅助力</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.ActivitySubscribe@1efbd816</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.ActivitySubscribe.activitySubscribeCancel()'><b>activitySubscribeCancel</b><br>Test class: com.duoweidu.cases.hsq.openapi.ActivitySubscribe<br>Test method: 取消订阅</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.ActivitySubscribe@1efbd816</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.AssistanceAlipayeventback.assistanceAlipayeventback()'><b>assistanceAlipayeventback</b><br>Test class: com.duoweidu.cases.hsq.openapi.AssistanceAlipayeventback<br>Test method: 帮忙助力</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.AssistanceAlipayeventback@4de8b406</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.ActivityAssistanceitemdetail.noPayActivityAssistanceitemdetail()'><b>noPayActivityAssistanceitemdetail</b><br>Test class: com.duoweidu.cases.hsq.openapi.ActivityAssistanceitemdetail<br>Test method: 助力免单详情</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.ActivityAssistanceitemdetail@458ad742</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.ActivityAssistanceitemdetail.payActivityAssistanceitemdetail()'><b>payActivityAssistanceitemdetail</b><br>Test class: com.duoweidu.cases.hsq.openapi.ActivityAssistanceitemdetail<br>Test method: 助力免单详情</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.ActivityAssistanceitemdetail@458ad742</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.TradecenterAssistanceorderinit.tradecenterAssistanceorderinit()'><b>tradecenterAssistanceorderinit</b><br>Test class: com.duoweidu.cases.hsq.openapi.TradecenterAssistanceorderinit<br>Test method: 助力免单订单初始化</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.TradecenterAssistanceorderinit@6ea12c19</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.TradecenterAssistanceordersubmit.tradecenterAssistanceordersubmit()'><b>tradecenterAssistanceordersubmit</b><br>Test class: com.duoweidu.cases.hsq.openapi.TradecenterAssistanceordersubmit<br>Test method: 助力免单订单提交</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.TradecenterAssistanceordersubmit@7921b0a2</td></tr>
+</table><p>
+</body>
+</html>
