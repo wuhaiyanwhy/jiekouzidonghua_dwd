@@ -45,7 +45,7 @@ public class CallbackInterfaceChannel {
         }
         if ( response.getEntity() != null ) {
             try {
-                response.getEntity().consumeContent();
+                response.getEntity().getContent().close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -74,7 +74,7 @@ public class CallbackInterfaceChannel {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        GeneralAssertChannel.timeTest(channel_id, limitTime, System.currentTimeMillis()-startTime1, response, url, path_id, param );
+        GeneralAssertChannel.timeAssert(channel_id, limitTime, System.currentTimeMillis()-startTime1, response, url, path_id, param );
         return getResult(channel_id, response, url, path_id, param);
     }
 
@@ -104,7 +104,7 @@ public class CallbackInterfaceChannel {
             e.printStackTrace();
         }
         String param = URLEncodedUtils.format(list, "Utf-8");
-        GeneralAssertChannel.timeTest(channel_id, limitTime, System.currentTimeMillis()-startTime1, response, url, path_id, param );
+        GeneralAssertChannel.timeAssert(channel_id, limitTime, System.currentTimeMillis()-startTime1, response, url, path_id, param );
         return getResult(channel_id, response, url, path_id, list.toString());
     }
 
@@ -134,7 +134,7 @@ public class CallbackInterfaceChannel {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        GeneralAssertChannel.timeTest(channel_id, limitTime, System.currentTimeMillis()-startTime1, response, url, path_id, param );
+        GeneralAssertChannel.timeAssert(channel_id, limitTime, System.currentTimeMillis()-startTime1, response, url, path_id, param );
         return getResult(channel_id, response, url, path_id, param);
     }
 
@@ -156,7 +156,7 @@ public class CallbackInterfaceChannel {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        GeneralAssertChannel.timeTest(channel_id, limitTime, System.currentTimeMillis()-startTime1, response, url, path_id, param );
+        GeneralAssertChannel.timeAssert(channel_id, limitTime, System.currentTimeMillis()-startTime1, response, url, path_id, param );
         return getResult(channel_id, response, url, path_id, param);
     }
 

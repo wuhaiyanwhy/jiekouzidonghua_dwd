@@ -11,7 +11,10 @@ import java.util.List;
  */
 public class GeneralConfig {
 
+    //储存总报错次数
     public static List<String> errnoList = new ArrayList<>();
+    //储存接口超时时间报错次数
+    public static List<String> limitTimeList = new ArrayList<>();
 
 
     //用来储存cookies信息的变量

@@ -1,0 +1,719 @@
+<html>
+<head>
+<title>TestNG:  好食期接口测试用例(管理平台)</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>好食期接口测试用例(管理平台)</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>128/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jul 22 18:11:24 CST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>23 seconds (23427 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.activity_goods_index_test.activity_goods_index_true()'><b>activity_goods_index_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.activity_goods_index_test<br>Test method: 商品列表排序管理</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.activity_goods_index_test@601eb4af</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.activity_goods_list_test.activity_goods_list_true()'><b>activity_goods_list_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.activity_goods_list_test<br>Test method: 商品列表排序列表</td>
+<td></td>
+<td>1</td>
+<td>com.duoweidu.cases.hsq.opadmin.activity_goods_list_test@11ede87f</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.activity_pinlottery_edit_test.activity_pinlottery_edit_true()'><b>activity_pinlottery_edit_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.activity_pinlottery_edit_test<br>Test method: 抽奖活动</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.activity_pinlottery_edit_test@217235f5</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.activity_pinlottery_list_test.activity_pinlottery_list_true()'><b>activity_pinlottery_list_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.activity_pinlottery_list_test<br>Test method: 抽奖活动列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.activity_pinlottery_list_test@4b41587d</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.activity_pinlottery_winnerlist_test.activity_pinlottery_winnerlist_true()'><b>activity_pinlottery_winnerlist_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.activity_pinlottery_winnerlist_test<br>Test method: 抽奖活动winnerList</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.activity_pinlottery_winnerlist_test@4aebee4b</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.activity_pinlotteryonline_list_test.activity_pinlotteryonline_list_true()'><b>activity_pinlotteryonline_list_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.activity_pinlotteryonline_list_test<br>Test method: 抽奖团管理列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.activity_pinlotteryonline_list_test@79957f11</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.activity_pinonlinesearch_test.activity_pinonlinesearch_true()'><b>activity_pinonlinesearch_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.activity_pinonlinesearch_test<br>Test method: 抽奖团管理搜索</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.activity_pinonlinesearch_test@6b8d54da</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.activity_pointsku_config_administration_test.activity_pointsku_config_administration_true()'><b>activity_pointsku_config_administration_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.activity_pointsku_config_administration_test<br>Test method: 支付宝活动商详管理</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.activity_pointsku_config_administration_test@697a0948</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.activity_pointsku_config_list_test.activity_pointsku_config_list_true()'><b>activity_pointsku_config_list_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.activity_pointsku_config_list_test<br>Test method: 支付宝活动商祥管理列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.activity_pointsku_config_list_test@7cf63b9a</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.activity_pointsku_edit_test.activity_pointsku_edit_true()'><b>activity_pointsku_edit_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.activity_pointsku_edit_test<br>Test method: 支付宝活动管理</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.activity_pointsku_edit_test@18d47df0</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.activity_pointsku_list_test.activity_pointsku_list_true()'><b>activity_pointsku_list_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.activity_pointsku_list_test<br>Test method: 支付宝活动管理列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.activity_pointsku_list_test@28393e82</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.activity_pointwao_index_test.activity_pointwao_index_true()'><b>activity_pointwao_index_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.activity_pointwao_index_test<br>Test method: 支付宝链接地址配置管理</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.activity_pointwao_index_test@4776e209</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.activity_pointwao_list_test.activity_pointwao_list_true()'><b>activity_pointwao_list_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.activity_pointwao_list_test<br>Test method: 支付宝链接管理地址配置管理列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.activity_pointwao_list_test@265a094b</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.activity_topic_audit_index_test.activity_topic_audit_index_true()'><b>activity_topic_audit_index_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.activity_topic_audit_index_test<br>Test method: 审核SABC活动</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.activity_topic_audit_index_test@b14b60a</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.activity_topic_audit_list_test.activity_topic_audit_list_true()'><b>activity_topic_audit_list_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.activity_topic_audit_list_test<br>Test method: 审核SABC活动列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.activity_topic_audit_list_test@1a7cb3a4</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.activity_topic_index_test.activity_topic_index_true()'><b>activity_topic_index_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.activity_topic_index_test<br>Test method: 发布SABC活动</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.activity_topic_index_test@634ca3e7</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.activity_topic_list_test.activity_topic_list_true()'><b>activity_topic_list_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.activity_topic_list_test<br>Test method: 发布SABC活动列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.activity_topic_list_test@ab4aa5e</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.alipaytemplate_app_list_test.alipaytemplate_app_list_test()'><b>alipaytemplate_app_list_test</b><br>Test class: com.duoweidu.cases.hsq.opadmin.alipaytemplate_app_list_test<br>Test method: 关联消息模板支付宝列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.alipaytemplate_app_list_test@cbd40c1</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.alipaytemplate_messagepush_index_test.alipaytemplate_messagepush_index_true()'><b>alipaytemplate_messagepush_index_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.alipaytemplate_messagepush_index_test<br>Test method: 订单消息推送(支付宝)</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.alipaytemplate_messagepush_index_test@7889b4b9</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.alipaytemplate_messagepush_list_test.alipaytemplate_messagepush_list_true()'><b>alipaytemplate_messagepush_list_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.alipaytemplate_messagepush_list_test<br>Test method: 订单消息推送列表(支付宝)</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.alipaytemplate_messagepush_list_test@1e545821</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.alipaytemplate_template_index_test.alipaytemplate_template_index_true()'><b>alipaytemplate_template_index_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.alipaytemplate_template_index_test<br>Test method: 管理消息模板</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.alipaytemplate_template_index_test@4fa86cb8</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.alipaytemplate_template_list_test.alipaytemplate_template_list_true()'><b>alipaytemplate_template_list_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.alipaytemplate_template_list_test<br>Test method: 管理消息模板列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.alipaytemplate_template_list_test@54c60202</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.anticheat_rule_list_test.anticheat_rule_list_true()'><b>anticheat_rule_list_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.anticheat_rule_list_test<br>Test method: 反作弊管理列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.anticheat_rule_list_test@412ebe64</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.anticheat_rule_search_test.anticheat_rule_search_true()'><b>anticheat_rule_search_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.anticheat_rule_search_test<br>Test method: 反作弊管理搜索</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.anticheat_rule_search_test@2c3158e0</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.assistance_activity_info_list_test.assistance_activity_info_list_true()'><b>assistance_activity_info_list_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.assistance_activity_info_list_test<br>Test method: 助力免单活动管理列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.assistance_activity_info_list_test@5234b61a</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.assistance_activity_template_list_test.assistance_activity_template_list_true()'><b>assistance_activity_template_list_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.assistance_activity_template_list_test<br>Test method: 助力免单分享模板列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.assistance_activity_template_list_test@54c425b1</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.assistance_activity_template_test.assistance_activity_template_true()'><b>assistance_activity_template_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.assistance_activity_template_test<br>Test method: 助力免单分享模板</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.assistance_activity_template_test@22a260ff</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.assistance_list_test.assistance_list_true()'><b>assistance_list_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.assistance_list_test<br>Test method: 助力免单活动管理</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.assistance_list_test@1f536481</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.banner_banneredit_test.banner_banneredit_true()'><b>banner_banneredit_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.banner_banneredit_test<br>Test method: 首页banner</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.banner_banneredit_test@599a9cb2</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.banner_banneronlinelist_test.banner_banneronlinelist_true()'><b>banner_banneronlinelist_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.banner_banneronlinelist_test<br>Test method: 首页banner列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.banner_banneronlinelist_test@3a1b36a1</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.content_advertisemanage_index_test.content_advertisemanage_index_true()'><b>content_advertisemanage_index_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.content_advertisemanage_index_test<br>Test method: 广告位管理</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.content_advertisemanage_index_test@9cfc77</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.content_advertisemanage_list_test.content_advertisemanage_list_true()'><b>content_advertisemanage_list_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.content_advertisemanage_list_test<br>Test method: 广告位管理列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.content_advertisemanage_list_test@7418d76e</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.content_customspeciallist_test.content_customspeciallist_true()'><b>content_customspeciallist_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.content_customspeciallist_test<br>Test method: 自定义专题列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.content_customspeciallist_test@2f9a10df</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.content_customspecialsearch_test.content_customspecialsearch_true()'><b>content_customspecialsearch_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.content_customspecialsearch_test<br>Test method: 自定义专题搜索</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.content_customspecialsearch_test@51cab489</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.content_fixedpromotionboxedit_test.content_fixedpromotionboxedit_true()'><b>content_fixedpromotionboxedit_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.content_fixedpromotionboxedit_test<br>Test method: 固定推广位</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.content_fixedpromotionboxedit_test@46a795de</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.content_fixedpromotionboxlist_test.content_fixedpromotionboxlist_true()'><b>content_fixedpromotionboxlist_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.content_fixedpromotionboxlist_test<br>Test method: 固定推广位列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.content_fixedpromotionboxlist_test@256a0d95</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.content_flowpromotionboxedit_test.content_flowpromotionboxedit_true()'><b>content_flowpromotionboxedit_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.content_flowpromotionboxedit_test<br>Test method: 非固定推广位</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.content_flowpromotionboxedit_test@4bf03fee</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.content_flowpromotionboxlist_test.content_flowpromotionboxlist_true()'><b>content_flowpromotionboxlist_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.content_flowpromotionboxlist_test<br>Test method: 非固定推广位列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.content_flowpromotionboxlist_test@31834a2b</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.content_hotsearchsug_index_test.content_hotsearchsug_index_true()'><b>content_hotsearchsug_index_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.content_hotsearchsug_index_test<br>Test method: 搜索热词</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.content_hotsearchsug_index_test@39549f33</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.content_hotsearchsug_list_test.content_hotsearchsug_list_true()'><b>content_hotsearchsug_list_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.content_hotsearchsug_list_test<br>Test method: 搜索热词列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.content_hotsearchsug_list_test@dbddbe3</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.content_labelbuttonlist_test.content_labelbuttonlist_true()'><b>content_labelbuttonlist_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.content_labelbuttonlist_test<br>Test method: 标签按钮列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.content_labelbuttonlist_test@4b55ff0a</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.content_labelbuttonsearch_test.content_labelbuttonsearch_true()'><b>content_labelbuttonsearch_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.content_labelbuttonsearch_test<br>Test method: 标签按钮搜索</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.content_labelbuttonsearch_test@5e1a986c</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.content_recommendactive_index_test.content_recommendactive_index_true()'><b>content_recommendactive_index_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.content_recommendactive_index_test<br>Test method: 活动商品推荐</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.content_recommendactive_index_test@68af87ad</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.content_recommendactive_list_test.content_recommendactive_list_true()'><b>content_recommendactive_list_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.content_recommendactive_list_test<br>Test method: 活动商品推荐列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.content_recommendactive_list_test@43d65a81</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.content_speciallist_test.content_speciallist_true()'><b>content_speciallist_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.content_speciallist_test<br>Test method: 专题推荐列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.content_speciallist_test@44e4cb76</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.content_specialsearch_test.content_specialsearch_true()'><b>content_specialsearch_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.content_specialsearch_test<br>Test method: 专题推荐搜索</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.content_specialsearch_test@7675c171</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.content_titlebarmanage_index_test.content_titlebarmanage_index_true()'><b>content_titlebarmanage_index_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.content_titlebarmanage_index_test<br>Test method: 标题栏管理</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.content_titlebarmanage_index_test@44f0ff2b</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.content_titlebarmanage_list_test.content_titlebarmanage_list_true()'><b>content_titlebarmanage_list_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.content_titlebarmanage_list_test<br>Test method: 标题栏管理列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.content_titlebarmanage_list_test@22ead351</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.content_topnavigatelist_test.content_topnavigatelist_true()'><b>content_topnavigatelist_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.content_topnavigatelist_test<br>Test method: 导航管理列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.content_topnavigatelist_test@44aa2e13</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.content_topnavigatesearch_test.content_topnavigatesearch_true()'><b>content_topnavigatesearch_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.content_topnavigatesearch_test<br>Test method: 导航管理搜索</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.content_topnavigatesearch_test@7a83ccd2</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.content_wechataccountsettings_test.content_wechataccountsettings_true()'><b>content_wechataccountsettings_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.content_wechataccountsettings_test<br>Test method: 个人微信号设置</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.content_wechataccountsettings_test@50b734c4</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.coupon_alipay_activity_index_test.coupon_alipay_activity_index_true()'><b>coupon_alipay_activity_index_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.coupon_alipay_activity_index_test<br>Test method: 支付宝领券活动</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.coupon_alipay_activity_index_test@1c046c92</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.coupon_alipay_activity_list_test.coupon_alipay_activity_list_true()'><b>coupon_alipay_activity_list_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.coupon_alipay_activity_list_test<br>Test method: 支付宝领券活动列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.coupon_alipay_activity_list_test@27960b1e</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.coupon_alipay_autopush_list_test.coupon_alipay_autopush_list_true()'><b>coupon_alipay_autopush_list_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.coupon_alipay_autopush_list_test<br>Test method: 支付宝自动推券活动列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.coupon_alipay_autopush_list_test@3d3a1903</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.coupon_alipay_autopush_test.coupon_alipay_autopush_true()'><b>coupon_alipay_autopush_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.coupon_alipay_autopush_test<br>Test method: 支付宝自动推券活动</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.coupon_alipay_autopush_test@643ba1ed</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.coupon_alipay_template_list_test.coupon_alipay_template_list_true()'><b>coupon_alipay_template_list_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.coupon_alipay_template_list_test<br>Test method: 支付宝优惠券模板列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.coupon_alipay_template_list_test@1f78d415</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.coupon_alipay_template_test.coupon_alipay_template_true()'><b>coupon_alipay_template_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.coupon_alipay_template_test<br>Test method: 支付宝优惠券模板</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.coupon_alipay_template_test@528c8c1</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.coupon_alipay_usage_test.coupon_alipay_usage_true()'><b>coupon_alipay_usage_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.coupon_alipay_usage_test<br>Test method: 支付宝优惠券使用详情</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.coupon_alipay_usage_test@26582ca</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.dealer_dealeraudit_test.dealer_dealeraudit_true()'><b>dealer_dealeraudit_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.dealer_dealeraudit_test<br>Test method: 门店资质审核</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.dealer_dealeraudit_test@7f5614f9</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.dealer_dealerlicenselist_test.dealer_dealerlicenselist_true()'><b>dealer_dealerlicenselist_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.dealer_dealerlicenselist_test<br>Test method: 门店资质审核列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.dealer_dealerlicenselist_test@480cbe2e</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.express_trance_test.express_trance_true()'><b>express_trance_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.express_trance_test<br>Test method: 物流跟踪</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.express_trance_test@24876a7e</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.finance_statement_test.finance_statement_true()'><b>finance_statement_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.finance_statement_test<br>Test method: 财务对账</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.finance_statement_test@c4d2c44</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.finance_statementorder_test.finance_statementorder_true()'><b>finance_statementorder_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.finance_statementorder_test<br>Test method: 订单明细</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.finance_statementorder_test@13866329</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.finance_statementorderlist_test.finance_statementorderlist_true()'><b>finance_statementorderlist_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.finance_statementorderlist_test<br>Test method: 订单明细列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.finance_statementorderlist_test@2eda2062</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.launchbanner_banneredit_test.launchbanner_banneredit_true()'><b>launchbanner_banneredit_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.launchbanner_banneredit_test<br>Test method: 启动页</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.launchbanner_banneredit_test@2744dcae</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.launchbanner_banneronlinelist_test.launchbanner_banneronlinelist_true()'><b>launchbanner_banneronlinelist_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.launchbanner_banneronlinelist_test<br>Test method: 启动页列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.launchbanner_banneronlinelist_test@16d0e521</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.user_login_check_test.login_true()'><b>login_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.user_login_check_test<br>Test method: 用户成功登陆接口</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.user_login_check_test@2abafa97</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.market_actcodelist_test.market_actcodelist_true()'><b>market_actcodelist_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.market_actcodelist_test<br>Test method: 活动码列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.market_actcodelist_test@5460edd3</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.market_actcodesearch_test.market_actcodesearch_true()'><b>market_actcodesearch_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.market_actcodesearch_test<br>Test method: 活动码搜索</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.market_actcodesearch_test@29f3c438</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.market_couponactsearch_test.market_couponactsearch_true()'><b>market_couponactsearch_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.market_couponactsearch_test<br>Test method: 注册领券活动搜索</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.market_couponactsearch_test@5dbbb292</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.market_couponlist_test.market_couponlist_true()'><b>market_couponlist_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.market_couponlist_test<br>Test method: 商家优惠券列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.market_couponlist_test@565aa4ac</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.market_couponoprcdlist_test.market_couponoprcdlist_true()'><b>market_couponoprcdlist_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.market_couponoprcdlist_test<br>Test method: 优惠券使用明细列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.market_couponoprcdlist_test@587c5c1</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.market_couponsearch_test.market_couponsearch_true()'><b>market_couponsearch_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.market_couponsearch_test<br>Test method: 商家优惠券搜索</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.market_couponsearch_test@613f7eb7</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.market_firstorderdiscount_test.market_firstorderdiscount_true()'><b>market_firstorderdiscount_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.market_firstorderdiscount_test<br>Test method: 首单专享优惠</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.market_firstorderdiscount_test@153cb763</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.market_mtcevent_index_test.market_mtcevent_index_true()'><b>market_mtcevent_index_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.market_mtcevent_index_test<br>Test method: 定点消息推送(支付宝)</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.market_mtcevent_index_test@12952aff</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.market_mtcevent_list_test.market_mtcevent_list_true()'><b>market_mtcevent_list_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.market_mtcevent_list_test<br>Test method: 定点消息推送列表(支付宝)</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.market_mtcevent_list_test@76a7fcbd</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.market_mtceventnotify_list_test.market_mtceventnotify_list_true()'><b>market_mtceventnotify_list_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.market_mtceventnotify_list_test<br>Test method: 消息推送管理列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.market_mtceventnotify_list_test@2dd1086</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.market_mtceventnotify_show_test.market_mtceventnotify_show_true()'><b>market_mtceventnotify_show_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.market_mtceventnotify_show_test<br>Test method: 消息推送管理</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.market_mtceventnotify_show_test@28ee0a3c</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.market_mtcnotify_list_test.market_mtcnotify_list_true()'><b>market_mtcnotify_list_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.market_mtcnotify_list_test<br>Test method: 消息模板列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.market_mtcnotify_list_test@626e0c86</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.market_mtcnotifytpl_show_test.market_mtcnotifytpl_show_true()'><b>market_mtcnotifytpl_show_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.market_mtcnotifytpl_show_test<br>Test method: 消息模板管理</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.market_mtcnotifytpl_show_test@78d23d6a</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.merchant_brandverify_test.merchant_brandverify_true()'><b>merchant_brandverify_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.merchant_brandverify_test<br>Test method: 品牌授权审核</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.merchant_brandverify_test@446e7065</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.merchant_brandverifylist_test.merchant_brandverifylist_true()'><b>merchant_brandverifylist_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.merchant_brandverifylist_test<br>Test method: 品牌授权审核列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.merchant_brandverifylist_test@d653e41</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.merchant_couponverify_test.merchant_couponverify_true()'><b>merchant_couponverify_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.merchant_couponverify_test<br>Test method: 商家优惠券审核</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.merchant_couponverify_test@3b78c683</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.merchant_merchantverify_test.merchant_merchantverify_true()'><b>merchant_merchantverify_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.merchant_merchantverify_test<br>Test method: 基本信息审核</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.merchant_merchantverify_test@433ea2ac</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.merchant_merchantverifylist_test.merchant_merchantverifylist_true()'><b>merchant_merchantverifylist_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.merchant_merchantverifylist_test<br>Test method: 基本信息审核列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.merchant_merchantverifylist_test@7f977fba</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.sku_list_test.sku_list_true()'><b>sku_list_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.sku_list_test<br>Test method: 宝贝查询列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.sku_list_test@5a1dddba</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.sku_search_test.sku_search_true()'><b>sku_search_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.sku_search_test<br>Test method: 宝贝查询</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.sku_search_test@1625789b</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.sku_skuonlineverify_test.sku_skuonlineverify_true()'><b>sku_skuonlineverify_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.sku_skuonlineverify_test<br>Test method: 上架sku审核</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.sku_skuonlineverify_test@6c3f1658</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.stock_jointaobaolist_test.stock_jointaobaolist_true()'><b>stock_jointaobaolist_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.stock_jointaobaolist_test<br>Test method: 淘宝商品绑定管理列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.stock_jointaobaolist_test@1f84327b</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.stock_stock_jointaobao_test.stock_stock_jointaobao_true()'><b>stock_stock_jointaobao_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.stock_stock_jointaobao_test<br>Test method: 淘宝商品绑定管理</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.stock_stock_jointaobao_test@6f731759</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.system_adminappset_test.system_adminappset_true()'><b>system_adminappset_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.system_adminappset_test<br>Test method: APP升级配置</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.system_adminappset_test@79d7035</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.system_adminuseroploglist_test.system_adminuseroploglist_true()'><b>system_adminuseroploglist_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.system_adminuseroploglist_test<br>Test method: 操作日志列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.system_adminuseroploglist_test@457a5b2d</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.system_adminuseroplogsearch_test.system_adminuseroplogsearch_true()'><b>system_adminuseroplogsearch_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.system_adminuseroplogsearch_test<br>Test method: 操作日志搜索</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.system_adminuseroplogsearch_test@7ce29a2d</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.system_notice_list_test.system_notice_list_true()'><b>system_notice_list_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.system_notice_list_test<br>Test method: 用户端公告列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.system_notice_list_test@650aa077</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.system_notice_test.system_notice_true()'><b>system_notice_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.system_notice_test<br>Test method: 用户端公告</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.system_notice_test@62d40e31</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.system_systemconfig_list_test.system_systemconfig_list_true()'><b>system_systemconfig_list_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.system_systemconfig_list_test<br>Test method: 后台系统配置列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.system_systemconfig_list_test@5fffb692</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.system_systemconfig_set_test.system_systemconfig_set_true()'><b>system_systemconfig_set_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.system_systemconfig_set_test<br>Test method: 后台系统配置</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.system_systemconfig_set_test@372461a9</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.system_systemnotice_test.system_systemnotice_true()'><b>system_systemnotice_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.system_systemnotice_test<br>Test method: 商户端公告</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.system_systemnotice_test@6e1ae763</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.template_listinfo_test.template_listinfo_true()'><b>template_listinfo_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.template_listinfo_test<br>Test method: 首页模板配置列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.template_listinfo_test@2f3928ac</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.trade_nonuserapplyrefundlist_test.trade_nonuserapplyrefundlist_true()'><b>trade_nonuserapplyrefundlist_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.trade_nonuserapplyrefundlist_test<br>Test method: 未申诉订单</td>
+<td></td>
+<td>2</td>
+<td>com.duoweidu.cases.hsq.opadmin.trade_nonuserapplyrefundlist_test@59018eed</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.trade_orderlist_test.trade_orderlist_true()'><b>trade_orderlist_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.trade_orderlist_test<br>Test method: 订单查询列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.trade_orderlist_test@67f9cb52</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.trade_ordersearch_test.trade_ordersearch_true()'><b>trade_ordersearch_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.trade_ordersearch_test<br>Test method: 订单查询搜索</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.trade_ordersearch_test@73608eb0</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.trade_payment_abnormallist_test.trade_payment_abnormallist_true()'><b>trade_payment_abnormallist_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.trade_payment_abnormallist_test<br>Test method: 异常支付审核列表不正常的</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.trade_payment_abnormallist_test@71a4f441</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.trade_payment_orderpaymentlist_test.trade_payment_orderpaymentlist_true()'><b>trade_payment_orderpaymentlist_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.trade_payment_orderpaymentlist_test<br>Test method: 异常支付审核列表订单</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.trade_payment_orderpaymentlist_test@76973a6</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.trade_paymentabnormalsearch_test.trade_paymentabnormalsearch_true()'><b>trade_paymentabnormalsearch_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.trade_paymentabnormalsearch_test<br>Test method: 异常支付审核搜索</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.trade_paymentabnormalsearch_test@2ee39e73</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.trade_refundlist_test.trade_refundlist_true()'><b>trade_refundlist_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.trade_refundlist_test<br>Test method: 订单申诉</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.trade_refundlist_test@2de9ca6</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.ugc_ugclist_test.ugc_ugclist_true()'><b>ugc_ugclist_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.ugc_ugclist_test<br>Test method: 评论审核列表</td>
+<td></td>
+<td>1</td>
+<td>com.duoweidu.cases.hsq.opadmin.ugc_ugclist_test@5eb0a686</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.ugc_ugcsearch_test.ugc_ugcsearch_true()'><b>ugc_ugcsearch_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.ugc_ugcsearch_test<br>Test method: 评论审核搜索</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.ugc_ugcsearch_test@110e9982</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.user_channel_list_test.user_channel_list_true()'><b>user_channel_list_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.user_channel_list_test<br>Test method: 渠道信息列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.user_channel_list_test@6f6cc7da</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.wechat_wechatfanslist_test.wechat_wechatfanslist_true()'><b>wechat_wechatfanslist_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.wechat_wechatfanslist_test<br>Test method: 微信服务号粉丝信息获取列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.wechat_wechatfanslist_test@6ee88e21</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.wechat_wechatfanssearch_test.wechat_wechatfanssearch_true()'><b>wechat_wechatfanssearch_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.wechat_wechatfanssearch_test<br>Test method: 微信服务号粉丝信息获取搜索</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.wechat_wechatfanssearch_test@110b7837</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.wechattemplate_app_index_test.wechattemplate_app_index_true()'><b>wechattemplate_app_index_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.wechattemplate_app_index_test<br>Test method: 公众号/小程序管理</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.wechattemplate_app_index_test@1c297897</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.wechattemplate_app_list_test.wechattemplate_app_list_true()'><b>wechattemplate_app_list_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.wechattemplate_app_list_test<br>Test method: 公众号小程序管理列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.wechattemplate_app_list_test@33e0c716</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.wechattemplate_messagepush_index_test.wechattemplate_messagepush_index_true()'><b>wechattemplate_messagepush_index_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.wechattemplate_messagepush_index_test<br>Test method: 订单消息推送(微信)</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.wechattemplate_messagepush_index_test@35cec305</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.wechattemplate_subscribesmessagepush_index_test.wechattemplate_subscribesmessagepush_index_true()'><b>wechattemplate_subscribesmessagepush_index_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.wechattemplate_subscribesmessagepush_index_test<br>Test method: 订阅消息推送（微信）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.wechattemplate_subscribesmessagepush_index_test@237add</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.wechattemplate_subscribesmessagepush_list_test.wechattemplate_subscribesmessagepush_list_true()'><b>wechattemplate_subscribesmessagepush_list_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.wechattemplate_subscribesmessagepush_list_test<br>Test method: 订阅消息推送列表(微信)</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.wechattemplate_subscribesmessagepush_list_test@491cafec</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.wechattemplate_template_index_test.wechattemplate_template_index_true()'><b>wechattemplate_template_index_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.wechattemplate_template_index_test<br>Test method: 关联消息模板</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.wechattemplate_template_index_test@1d6a8386</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.wechattemplate_template_list_test.wechattemplate_template_list_true()'><b>wechattemplate_template_list_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.wechattemplate_template_list_test<br>Test method: 关联消息模板列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.wechattemplate_template_list_test@6274f21c</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.wechattemplate_templatelist_test.wechattemplate_templatelist_true()'><b>wechattemplate_templatelist_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.wechattemplate_templatelist_test<br>Test method: 微信模板消息</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.wechattemplate_templatelist_test@773c2214</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.wechattemplate_templateonlinelist_test.wechattemplate_templateonlinelist_true()'><b>wechattemplate_templateonlinelist_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.wechattemplate_templateonlinelist_test<br>Test method: 微信模板消息列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.wechattemplate_templateonlinelist_test@15e1f8fe</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.withdraw_account_list_show_test.withdraw_account_list_show_true()'><b>withdraw_account_list_show_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.withdraw_account_list_show_test<br>Test method: 商家提现</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.withdraw_account_list_show_test@1a9ec80e</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.withdraw_account_list_test.withdraw_account_list_true()'><b>withdraw_account_list_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.withdraw_account_list_test<br>Test method: 商家提现列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.withdraw_account_list_test@7fd4e815</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.withdraw_audit_list_show_test.withdraw_audit_list_show_true()'><b>withdraw_audit_list_show_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.withdraw_audit_list_show_test<br>Test method: 提现审核管理</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.withdraw_audit_list_show_test@5f6b53ed</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.withdraw_audit_list_test.withdraw_audit_list_true()'><b>withdraw_audit_list_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.withdraw_audit_list_test<br>Test method: 提现审核列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.withdraw_audit_list_test@20cdb152</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.withdraw_expenditure_list_show_test.withdraw_expenditure_list_show_true()'><b>withdraw_expenditure_list_show_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.withdraw_expenditure_list_show_test<br>Test method: 商户支出明细</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.withdraw_expenditure_list_show_test@1142d377</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.withdraw_expenditure_list_test.withdraw_expenditure_list_true()'><b>withdraw_expenditure_list_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.withdraw_expenditure_list_test<br>Test method: 商户支出明细列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.withdraw_expenditure_list_test@5c48b72c</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.withdraw_income_list_show_test.withdraw_income_list_show_true()'><b>withdraw_income_list_show_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.withdraw_income_list_show_test<br>Test method: 对账明细</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.withdraw_income_list_show_test@4cffd3fd</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.opadmin.withdraw_income_list_test.withdraw_income_list_true()'><b>withdraw_income_list_true</b><br>Test class: com.duoweidu.cases.hsq.opadmin.withdraw_income_list_test<br>Test method: 对账明细列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.opadmin.withdraw_income_list_test@14b31e37</td></tr>
+</table><p>
+</body>
+</html>
