@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>TestNG:  好食期接口测试用例(支付宝相关-信用购小程序)</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>好食期接口测试用例(支付宝相关-信用购小程序)</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jul 22 18:11:04 CST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>4 seconds (4774 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.CommonIndexZhima.commonIndexZhima()'><b>commonIndexZhima</b><br>Test class: com.duoweidu.cases.hsq.openapi.CommonIndexZhima<br>Test method: 芝麻信用购首页</td>
+<td></td>
+<td>2</td>
+<td>com.duoweidu.cases.hsq.openapi.CommonIndexZhima@34b7bfc0</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_orderinit_test.orderOrderinitXinyonggou()'><b>orderOrderinitXinyonggou</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_orderinit_test<br>Test method: 初始化订单（信用购）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_orderinit_test@36f6e879</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_submitorder_test.order_submitorder_xinyong()'><b>order_submitorder_xinyong</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_submitorder_test<br>Test method: 提交订单（信用购）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_submitorder_test@5a61f5df</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.ZhimaParticipatechange.zhimaParticipatechange()'><b>zhimaParticipatechange</b><br>Test class: com.duoweidu.cases.hsq.openapi.ZhimaParticipatechange<br>Test method: 用户合约上报</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.ZhimaParticipatechange@54a097cc</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.ZhimaParticipatelist.zhimaParticipatelist()'><b>zhimaParticipatelist</b><br>Test class: com.duoweidu.cases.hsq.openapi.ZhimaParticipatelist<br>Test method: 我的合约列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.ZhimaParticipatelist@531be3c5</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.ZhimaParticipatesync.zhimaParticipatesync()'><b>zhimaParticipatesync</b><br>Test class: com.duoweidu.cases.hsq.openapi.ZhimaParticipatesync<br>Test method: 用户合约数据同步</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.ZhimaParticipatesync@35fb3008</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.ZhimaZhimaskudetail.zhimaZhimaskudetail()'><b>zhimaZhimaskudetail</b><br>Test class: com.duoweidu.cases.hsq.openapi.ZhimaZhimaskudetail<br>Test method: 芝麻商品详情页</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.ZhimaZhimaskudetail@7225790e</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.ZhimaZhimaskulist.zhimaZhimaskulist()'><b>zhimaZhimaskulist</b><br>Test class: com.duoweidu.cases.hsq.openapi.ZhimaZhimaskulist<br>Test method: 芝麻首页商品列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.ZhimaZhimaskulist@3cbbc1e0</td></tr>
+</table><p>
+</body>
+</html>
