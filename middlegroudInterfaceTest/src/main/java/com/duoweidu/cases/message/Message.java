@@ -23,7 +23,7 @@ public class Message {
         list.add(new BasicNameValuePair("sendType", "1"));
         list.add(new BasicNameValuePair("content", content));
         list.add(new BasicNameValuePair("appId", appId));
-        CallbackInterface.postStringResult(ConfigFileUrl.getLimitTime(), url, 2, list);
+        CallbackInterface.postStringResult(ConfigFileUrl.getLimitTime1(), url, 2, list);
     }
 }
 
