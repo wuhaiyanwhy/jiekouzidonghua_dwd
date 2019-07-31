@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+<suite name="好食期接口测试">
+    <test name ="好食期接口测试用例(管理平台)">
+        <classes >
+        <class name="com.duoweidu.cases.hsq.opadmin.user_login_check_test">
+            <methods>
+                <include name = "login_true"/>
+            </methods>
+        </class>
+
+        <class name="com.duoweidu.cases.hsq.opadmin.user_channel_list_test">
+            <methods>
+                <include name = "user_channel_list_true"/>
+            </methods>
+        </class>
+
+        <class name="com.duoweidu.cases.hsq.opadmin.market_actcodesearch_test">
+            <methods>
+                <include name = "market_actcodesearch_true"/>
+            </methods>
+        </class>
+
+        <class name="com.duoweidu.cases.hsq.opadmin.market_actcodelist_test">
+            <methods>
+                <include name = "market_actcodelist_true"/>
+            </methods>
+        </class>
+
+        <class name="com.duoweidu.cases.hsq.opadmin.market_couponactsearch_test">
+            <methods>
+                <include name = "market_couponactsearch_true"/>
+            </methods>
+        </class>
+
+        <class name="com.duoweidu.cases.hsq.opadmin.market_couponsearch_test">
+            <methods>
+                <include name = "market_couponsearch_true"/>
+            </methods>
+        </class>
+        </classes>
+    </test>
+
+    <test name ="消息推送">
+        <classes >
+            <class name="com.duoweidu.cases.message.Build">
+                <methods>
+                    <include name="build"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <listeners>
+
+        <listener class-name="com.duoweidu.config.ExtentTestNGIReporterListener"/>
+    </listeners>
+
+</suite>

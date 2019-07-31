@@ -1,0 +1,874 @@
+<html>
+<head>
+<title>TestNG:  好食期接口测试用例(openapi)</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>好食期接口测试用例(openapi)</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>159/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jul 22 18:11:12 CST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>12 seconds (12355 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.category_categorylist_test.category_categorylist_true()'><b>category_categorylist_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.category_categorylist_test<br>Test method: 获取分类列表页</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.category_categorylist_test@6e06451e</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.CommonIndexV2.commonIndexV2()'><b>commonIndexV2</b><br>Test class: com.duoweidu.cases.hsq.openapi.CommonIndexV2<br>Test method: 新首页接口</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.CommonIndexV2@5cb9f472</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.CommonRecentpinevents.commonRecentpinevents()'><b>commonRecentpinevents</b><br>Test class: com.duoweidu.cases.hsq.openapi.CommonRecentpinevents<br>Test method: 近期开启或成功的拼团列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.CommonRecentpinevents@67b92f0a</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.common_alipayapploginsign_test.common_alipayapploginsign_true()'><b>common_alipayapploginsign_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.common_alipayapploginsign_test<br>Test method: 支付宝登录密钥</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.common_alipayapploginsign_test@370736d9</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.common_checkverifycode_test.common_checkverifycode_true()'><b>common_checkverifycode_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.common_checkverifycode_test<br>Test method: 校正验证码</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.common_checkverifycode_test@63753b6d</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.common_getverifycode_test.common_getverifycode_true()'><b>common_getverifycode_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.common_getverifycode_test<br>Test method: 获取验证码</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.common_getverifycode_test@5f9d02cb</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.common_gpstogeo_test.common_gpstogeo_true()'><b>common_gpstogeo_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.common_gpstogeo_test<br>Test method: 获取地理位置信息</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.common_gpstogeo_test@6e1567f1</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.common_hotsearchsug_test.common_hotsearchsug_true()'><b>common_hotsearchsug_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.common_hotsearchsug_test<br>Test method: 搜索热词</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.common_hotsearchsug_test@6b09bb57</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.common_index_test.common_index_true()'><b>common_index_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.common_index_test<br>Test method: 首页接口</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.common_index_test@13805618</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.common_index_v1_test.common_index_v1_true()'><b>common_index_v1_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.common_index_v1_test<br>Test method: 新首页接口</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.common_index_v1_test@cb644e</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.common_initconfig_test.common_initconfig_true()'><b>common_initconfig_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.common_initconfig_test<br>Test method: 初始化配置</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.common_initconfig_test@27c20538</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.common_logstats_test.common_logstats_true()'><b>common_logstats_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.common_logstats_test<br>Test method: 获取idfa</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.common_logstats_test@6536e911</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.common_pinindex_test.common_pinindex_true()'><b>common_pinindex_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.common_pinindex_test<br>Test method: 拼团首页</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.common_pinindex_test@4566e5bd</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.common_qiniutoken_test.common_qiniutoken_true()'><b>common_qiniutoken_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.common_qiniutoken_test<br>Test method: 获取青牛</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.common_qiniutoken_test@2ac273d3</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.common_serviceconfig_test.common_serviceconfig_true()'><b>common_serviceconfig_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.common_serviceconfig_test<br>Test method: 业务配置</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.common_serviceconfig_test@3108bc</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.common_topnavigatelist_test.common_topnavigatelist_true()'><b>common_topnavigatelist_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.common_topnavigatelist_test<br>Test method: 首页导航栏</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.common_topnavigatelist_test@59494225</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.common_verifyupgrade_test.common_verifyupgrade_true()'><b>common_verifyupgrade_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.common_verifyupgrade_test<br>Test method: app检查更新</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.common_verifyupgrade_test@72d818d1</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.coupon_couponredeem_test.coupon_couponredeem_true()'><b>coupon_couponredeem_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.coupon_couponredeem_test<br>Test method: 领取优惠券</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.coupon_couponredeem_test@1d16f93d</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.coupon_couponskulist_test.coupon_couponskulist_true()'><b>coupon_couponskulist_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.coupon_couponskulist_test<br>Test method: 获取单品优惠券sku列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.coupon_couponskulist_test@4e1d422d</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_login_test.login_true()'><b>login_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_login_test<br>Test method: 用户成功登陆接口</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_login_test@31ef45e3</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.market_lotteryactivityinfo_test.market_lotteryactivityinfo_true()'><b>market_lotteryactivityinfo_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.market_lotteryactivityinfo_test<br>Test method: 抽奖团活动信息</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.market_lotteryactivityinfo_test@5649fd9b</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.market_lotteryactivitylist_test.market_lotteryactivitylist_true()'><b>market_lotteryactivitylist_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.market_lotteryactivitylist_test<br>Test method: 抽奖团列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.market_lotteryactivitylist_test@29ca901e</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.market_newskulist_test.market_newskulist_true()'><b>market_newskulist_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.market_newskulist_test<br>Test method: 今日新品</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.market_newskulist_test@49993335</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.market_pinactivitiessearch_test.market_pinactivitiessearch_true()'><b>market_pinactivitiessearch_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.market_pinactivitiessearch_test<br>Test method: 拼团搜索</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.market_pinactivitiessearch_test@5025a98f</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.market_pinactivitiesuserlist_test.market_pinactivitiesuserlist_true()'><b>market_pinactivitiesuserlist_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.market_pinactivitiesuserlist_test<br>Test method: 分享页拼团头像列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.market_pinactivitiesuserlist_test@21213b92</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.market_specialtopiccomponentgroupskulist_test.market_specialtopiccomponentgroupskulist_true()'><b>market_specialtopiccomponentgroupskulist_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.market_specialtopiccomponentgroupskulist_test<br>Test method: 五福页尾铺品</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.market_specialtopiccomponentgroupskulist_test@4e9ba398</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.market_specialtopiccomponentinfo_test.market_specialtopiccomponentinfo_true()'><b>market_specialtopiccomponentinfo_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.market_specialtopiccomponentinfo_test<br>Test method: 五福专题页</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.market_specialtopiccomponentinfo_test@2286778</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.market_subscribelottery_test.market_subscribelottery_true()'><b>market_subscribelottery_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.market_subscribelottery_test<br>Test method: 订阅抽奖团</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.market_subscribelottery_test@7791a895</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.merchant_coupleskulist_test.merchant_coupleskulist_true()'><b>merchant_coupleskulist_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.merchant_coupleskulist_test<br>Test method: 商家拼团列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.merchant_coupleskulist_test@148080bb</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.merchant_merchantinfo_test.merchant_merchantinfo_true()'><b>merchant_merchantinfo_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.merchant_merchantinfo_test<br>Test method: 获取商户信息</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.merchant_merchantinfo_test@dc24521</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.msgboard_getlistmsgboard_test.msgboard_getlistmsgboard_zhifubaoTrue()'><b>msgboard_getlistmsgboard_zhifubaoTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.msgboard_getlistmsgboard_test<br>Test method: 获取公告列表(支付宝)</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.msgboard_getlistmsgboard_test@71318ec4</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.msgboard_getlistmsgboard_test.msgboard_getlistmsgboard_zhuzhanTrue()'><b>msgboard_getlistmsgboard_zhuzhanTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.msgboard_getlistmsgboard_test<br>Test method: 获取公告列表(主站)</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.msgboard_getlistmsgboard_test@71318ec4</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.nation_citylist_test.nation_citylist_true()'><b>nation_citylist_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.nation_citylist_test<br>Test method: 获取城市列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.nation_citylist_test@5ec0a365</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.nation_districtlist_test.nation_districtlist_true()'><b>nation_districtlist_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.nation_districtlist_test<br>Test method: 获取行政区县列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.nation_districtlist_test@4fe3c938</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.nation_provincelist_test.nation_provincelist_true()'><b>nation_provincelist_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.nation_provincelist_test<br>Test method: 获取省份列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.nation_provincelist_test@2d928643</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_cancelorder_test.order_cancelorder_dandugouTrue()'><b>order_cancelorder_dandugouTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_cancelorder_test<br>Test method: 取消订单（单独购）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_cancelorder_test@31a5c39e</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_cancelorder_test.order_cancelorder_pintuanTrue()'><b>order_cancelorder_pintuanTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_cancelorder_test<br>Test method: 取消订单（拼团）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_cancelorder_test@31a5c39e</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_cancelorder_test.order_cancelorder_putongTrue()'><b>order_cancelorder_putongTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_cancelorder_test<br>Test method: 取消订单(普通)</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_cancelorder_test@31a5c39e</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_checkpromotion_test.order_checkpromotion_true()'><b>order_checkpromotion_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_checkpromotion_test<br>Test method: 确认订单-选择优惠券</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_checkpromotion_test@3632be31</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_coupleeventjoin_test.order_coupleeventjoin_true()'><b>order_coupleeventjoin_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_coupleeventjoin_test<br>Test method: 邀请好友参团</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_coupleeventjoin_test@5a8e6209</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test.order_coupleorderinit_activiteDiscountDandugou4()'><b>order_coupleorderinit_activiteDiscountDandugou4</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test<br>Test method: 初始化订单（拼团）（营销活动+多件优惠打折，打折第四件5折）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test@5f341870</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test.order_coupleorderinit_activiteDiscountPintuan2()'><b>order_coupleorderinit_activiteDiscountPintuan2</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test<br>Test method: 初始化订单（拼团）（营销活动+多件优惠打折，打折第二件9.9折）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test@5f341870</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test.order_coupleorderinit_activiteDiscountPintuan5()'><b>order_coupleorderinit_activiteDiscountPintuan5</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test<br>Test method: 初始化订单（拼团）（营销活动+多件优惠打折，打折第五件1折）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test@5f341870</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test.order_coupleorderinit_activiteLoseDandugou2()'><b>order_coupleorderinit_activiteLoseDandugou2</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test<br>Test method: 初始化订单（拼团）（营销活动+多件优惠减钱单独购）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test@5f341870</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test.order_coupleorderinit_activiteLosePintuan2()'><b>order_coupleorderinit_activiteLosePintuan2</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test<br>Test method: 初始化订单（拼团）（营销活动+多件优惠减钱，减钱金额>单个订单金额）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test@5f341870</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test.order_coupleorderinit_activiteLosePintuan3()'><b>order_coupleorderinit_activiteLosePintuan3</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test<br>Test method: 初始化订单（拼团）（营销活动+多件优惠减钱，减钱金额=单个订单金额）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test@5f341870</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test.order_coupleorderinit_activiteLosePintuan4()'><b>order_coupleorderinit_activiteLosePintuan4</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test<br>Test method: 初始化订单（拼团）（营销活动+多件优惠减钱，减钱金额<单个订单金额）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test@5f341870</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test.order_coupleorderinit_activiteLosePintuan5()'><b>order_coupleorderinit_activiteLosePintuan5</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test<br>Test method: 初始化订单（拼团）（营销活动+多件优惠减钱+优惠券）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test@5f341870</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test.order_coupleorderinit_activitePayPintuan2()'><b>order_coupleorderinit_activitePayPintuan2</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test<br>Test method: 初始化订单（拼团）（营销活动+多件优惠付钱，付钱金额<订单金额）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test@5f341870</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test.order_coupleorderinit_activitePayPintuan3()'><b>order_coupleorderinit_activitePayPintuan3</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test<br>Test method: 初始化订单（拼团）（营销活动+多件优惠付钱，付钱金额=订单金额）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test@5f341870</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test.order_coupleorderinit_activitePayPintuan5()'><b>order_coupleorderinit_activitePayPintuan5</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test<br>Test method: 初始化订单（拼团）（营销活动+多件优惠付钱，付钱金额>订单金额）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test@5f341870</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test.order_coupleorderinit_activitiePintuanTrue()'><b>order_coupleorderinit_activitiePintuanTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test<br>Test method: 初始化订单（拼团）（活动报名不用券）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test@5f341870</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test.order_coupleorderinit_chouDandugouTrue()'><b>order_coupleorderinit_chouDandugouTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test<br>Test method: 初始化订单（抽奖团单独购）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test@5f341870</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test.order_coupleorderinit_chouPintuanTrue()'><b>order_coupleorderinit_chouPintuanTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test<br>Test method: 初始化订单（抽奖团拼团）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test@5f341870</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test.order_coupleorderinit_dandugouTrue()'><b>order_coupleorderinit_dandugouTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test<br>Test method: 初始化订单（单独购）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test@5f341870</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test.order_coupleorderinit_discountDandugou245()'><b>order_coupleorderinit_discountDandugou245</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test<br>Test method: 初始化订单（拼团）（多件优惠打折 二四五件）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test@5f341870</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test.order_coupleorderinit_discountPintuan2345()'><b>order_coupleorderinit_discountPintuan2345</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test<br>Test method: 初始化订单（拼团）（多件优惠打折 二三四五件）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test@5f341870</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test.order_coupleorderinit_discountPintuan3()'><b>order_coupleorderinit_discountPintuan3</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test<br>Test method: 初始化订单（拼团）（多件优惠打折第三件）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test@5f341870</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test.order_coupleorderinit_discountPintuan34()'><b>order_coupleorderinit_discountPintuan34</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test<br>Test method: 初始化订单（拼团）（多件优惠打折 三四件）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test@5f341870</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test.order_coupleorderinit_discountPintuan35()'><b>order_coupleorderinit_discountPintuan35</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test<br>Test method: 初始化订单（拼团）（多件优惠打折 三五件）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test@5f341870</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test.order_coupleorderinit_loseDandugou2345()'><b>order_coupleorderinit_loseDandugou2345</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test<br>Test method: 初始化订单（单独够）（多件优惠减钱 2345）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test@5f341870</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test.order_coupleorderinit_losePintuan2()'><b>order_coupleorderinit_losePintuan2</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test<br>Test method: 初始化订单（拼团）（多件优惠减钱第二件）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test@5f341870</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test.order_coupleorderinit_losePintuan23()'><b>order_coupleorderinit_losePintuan23</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test<br>Test method: 初始化订单（拼团）（多件优惠减钱 23）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test@5f341870</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test.order_coupleorderinit_losePintuan24()'><b>order_coupleorderinit_losePintuan24</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test<br>Test method: 初始化订单（拼团）（多件优惠减钱 24）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test@5f341870</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test.order_coupleorderinit_noPayPintuan2345()'><b>order_coupleorderinit_noPayPintuan2345</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test<br>Test method: 初始化订单（拼团）（多件优惠付钱 二三四五件,未达到第五件）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test@5f341870</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test.order_coupleorderinit_nolosePintuan2()'><b>order_coupleorderinit_nolosePintuan2</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test<br>Test method: 初始化订单（拼团）（多件优惠减钱第二件，未达到优惠条件）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test@5f341870</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test.order_coupleorderinit_payDandugou45()'><b>order_coupleorderinit_payDandugou45</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test<br>Test method: 初始化订单（拼团）（多件优惠付钱 四五件）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test@5f341870</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test.order_coupleorderinit_payPintuan2345()'><b>order_coupleorderinit_payPintuan2345</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test<br>Test method: 初始化订单（拼团）（多件优惠付钱 二三四五件）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test@5f341870</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test.order_coupleorderinit_payPintuan235()'><b>order_coupleorderinit_payPintuan235</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test<br>Test method: 初始化订单（拼团）（多件优惠付钱 二三五件）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test@5f341870</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test.order_coupleorderinit_payPintuan25()'><b>order_coupleorderinit_payPintuan25</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test<br>Test method: 初始化订单（拼团）（多件优惠付钱 二五件）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test@5f341870</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test.order_coupleorderinit_payPintuan5()'><b>order_coupleorderinit_payPintuan5</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test<br>Test method: 初始化订单（拼团）（多件优惠付钱第五件）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test@5f341870</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test.order_coupleorderinit_pintuanTrue()'><b>order_coupleorderinit_pintuanTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test<br>Test method: 初始化订单（拼团）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_coupleorderinit_test@5f341870</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_deliverymessage_test.order_deliverymessage_true()'><b>order_deliverymessage_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_deliverymessage_test<br>Test method: 查看物流</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_deliverymessage_test@5383967b</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_getuserorders_test.order_getuserorders_daifukuanTrue()'><b>order_getuserorders_daifukuanTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_getuserorders_test<br>Test method: 用户订单列表(待付款)</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_getuserorders_test@20322d26</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_getuserorders_test.order_getuserorders_daishouhuoTrue()'><b>order_getuserorders_daishouhuoTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_getuserorders_test<br>Test method: 用户订单列表(待收货)</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_getuserorders_test@20322d26</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_getuserorders_test.order_getuserorders_quanbuTrue()'><b>order_getuserorders_quanbuTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_getuserorders_test<br>Test method: 用户订单列表(全部)</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_getuserorders_test@20322d26</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_orderdetail_test.order_orderdetail_pintuanTrue()'><b>order_orderdetail_pintuanTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_orderdetail_test<br>Test method: 订单详情（拼团）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_orderdetail_test@56ac3a89</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_orderinit_test.order_orderinit_putongTrue()'><b>order_orderinit_putongTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_orderinit_test<br>Test method: 初始化订单（普通）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_orderinit_test@14bf9759</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_orderpay_test.order_orderpay_dandugouTrue()'><b>order_orderpay_dandugouTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_orderpay_test<br>Test method: 提交订单（单独购）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_orderpay_test@73ad2d6</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_orderpay_test.order_orderpay_pintuanTrue()'><b>order_orderpay_pintuanTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_orderpay_test<br>Test method: 提交支付（拼团）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_orderpay_test@73ad2d6</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_orderpay_test.order_orderpay_putongTrue()'><b>order_orderpay_putongTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_orderpay_test<br>Test method: 提交支付(普通)</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_orderpay_test@73ad2d6</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_orderpayconfirm_test.order_orderpayconfirm_dandugouTrue()'><b>order_orderpayconfirm_dandugouTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_orderpayconfirm_test<br>Test method: 确认支付状态（单独购）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_orderpayconfirm_test@6fd02e5</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_orderpayconfirm_test.order_orderpayconfirm_pintuanTrue()'><b>order_orderpayconfirm_pintuanTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_orderpayconfirm_test<br>Test method: 确认支付状态（拼团）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_orderpayconfirm_test@6fd02e5</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_orderpayconfirm_test.order_orderpayconfirm_putongTrue()'><b>order_orderpayconfirm_putongTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_orderpayconfirm_test<br>Test method: 确认支付状态(普通)</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_orderpayconfirm_test@6fd02e5</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_submitorder_test.order_submitorder_activiteDiscountDandugou4()'><b>order_submitorder_activiteDiscountDandugou4</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_submitorder_test<br>Test method: 提交订单（单独购）(活动报名+多件优惠打折)</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_submitorder_test@4f7d0008</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_submitorder_test.order_submitorder_activitePayPintuan2()'><b>order_submitorder_activitePayPintuan2</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_submitorder_test<br>Test method: 提交订单（拼团）(活动报名+多件优惠付钱)</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_submitorder_test@4f7d0008</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_submitorder_test.order_submitorder_activitrPintuanTrue()'><b>order_submitorder_activitrPintuanTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_submitorder_test<br>Test method: 提交订单（拼团）(活动报名)</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_submitorder_test@4f7d0008</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_submitorder_test.order_submitorder_dandugouTrue()'><b>order_submitorder_dandugouTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_submitorder_test<br>Test method: 提交订单（单独购）(用券)</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_submitorder_test@4f7d0008</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_submitorder_test.order_submitorder_losePintuanTrue2()'><b>order_submitorder_losePintuanTrue2</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_submitorder_test<br>Test method: 提交订单（拼团）(多件优惠减钱)</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_submitorder_test@4f7d0008</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_submitorder_test.order_submitorder_pintuanTrue()'><b>order_submitorder_pintuanTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_submitorder_test<br>Test method: 提交订单（拼团）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_submitorder_test@4f7d0008</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_submitorder_test.order_submitorder_putongTrue()'><b>order_submitorder_putongTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_submitorder_test<br>Test method: 提交订单（普通）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_submitorder_test@4f7d0008</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_userorderconfirm_test.order_userorderconfirm_pintuanTrue()'><b>order_userorderconfirm_pintuanTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_userorderconfirm_test<br>Test method: 确认收货</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_userorderconfirm_test@6fc6f14e</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_userordersearch_test.order_userordersearch_true()'><b>order_userordersearch_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_userordersearch_test<br>Test method: 订单搜索</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_userordersearch_test@6d7b4f4c</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_userserviceorders_test.order_userserviceorders_true()'><b>order_userserviceorders_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_userserviceorders_test<br>Test method: 获取用户售后订单</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_userserviceorders_test@64bfbc86</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.order_waitcommentlist_test.order_waitcommentlist_true()'><b>order_waitcommentlist_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.order_waitcommentlist_test<br>Test method: 获取用户待评论订单</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.order_waitcommentlist_test@192b07fd</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.product_browseskulist_test.product_browseskulist_true()'><b>product_browseskulist_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.product_browseskulist_test<br>Test method: 浏览记录</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.product_browseskulist_test@4b4523f8</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.product_checkdelivery_test.product_checkdelivery_true()'><b>product_checkdelivery_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.product_checkdelivery_test<br>Test method: 检查单品是否符合配送范围</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.product_checkdelivery_test@369f73a2</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.product_coupleskudetail_test.product_coupleskudetail_activitieTrue()'><b>product_coupleskudetail_activitieTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.product_coupleskudetail_test<br>Test method: 二人购商品详情（参加活动报名）</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.product_coupleskudetail_test@3159c4b8</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.product_coupleskudetail_test.product_coupleskudetail_true()'><b>product_coupleskudetail_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.product_coupleskudetail_test<br>Test method: 二人购商品详情</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.product_coupleskudetail_test@3159c4b8</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.product_coupleskulist_test.product_coupleskulist_true()'><b>product_coupleskulist_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.product_coupleskulist_test<br>Test method: 二人购商品列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.product_coupleskulist_test@4b952a2d</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.product_iteminfo_test.product_iteminfo_true()'><b>product_iteminfo_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.product_iteminfo_test<br>Test method: 单品详情页信息</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.product_iteminfo_test@25bbe1b6</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.product_itemssearch_test.product_itemssearch_true()'><b>product_itemssearch_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.product_itemssearch_test<br>Test method: 普通搜索</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.product_itemssearch_test@7d907bac</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.product_productdetail_test.product_productdetail_true()'><b>product_productdetail_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.product_productdetail_test<br>Test method: 获取图文详情</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.product_productdetail_test@5702b3b1</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.product_recommendproducts_test.product_recommendproducts_true()'><b>product_recommendproducts_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.product_recommendproducts_test<br>Test method: 获取推荐商品列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.product_recommendproducts_test@56ef9176</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.product_searchcouponsku_test.product_searchcouponsku_true()'><b>product_searchcouponsku_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.product_searchcouponsku_test<br>Test method: 优惠券搜索</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.product_searchcouponsku_test@1f28c152</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.product_selfrecommendlist_test.product_selfrecommendlist_true()'><b>product_selfrecommendlist_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.product_selfrecommendlist_test<br>Test method: 个人中心推荐商品</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.product_selfrecommendlist_test@731a74c</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.product_topicskulist_test.product_topicskulist_true()'><b>product_topicskulist_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.product_topicskulist_test<br>Test method: 获取专题商品列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.product_topicskulist_test@4bec1f0c</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.product_topicskusinfo_test.product_topicskusinfo_true()'><b>product_topicskusinfo_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.product_topicskusinfo_test<br>Test method: 获取专题sku信息</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.product_topicskusinfo_test@73846619</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.refund_apply_test.refund_apply_true()'><b>refund_apply_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.refund_apply_test<br>Test method: 申请退款</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.refund_apply_test@5ce81285</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.refund_complaint_test.refund_complaint_true()'><b>refund_complaint_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.refund_complaint_test<br>Test method: 退款申诉</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.refund_complaint_test@56235b8e</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.refund_detail_test.refund_detail_true()'><b>refund_detail_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.refund_detail_test<br>Test method: 退款详情</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.refund_detail_test@52a86356</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.refund_init_test.refund_init_true()'><b>refund_init_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.refund_init_test<br>Test method: 退款申请初始化</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.refund_init_test@66480dd7</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.reward_coderedeem_test.reward_coderedeem_true()'><b>reward_coderedeem_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.reward_coderedeem_test<br>Test method: 兑换活动码</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.reward_coderedeem_test@3327bd23</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.reward_shareactivityinfo_test.reward_shareactivityinfo_true()'><b>reward_shareactivityinfo_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.reward_shareactivityinfo_test<br>Test method: 获取分享活动信息</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.reward_shareactivityinfo_test@6adede5</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.shop_shopaptitude_test.shop_shopaptitude_true()'><b>shop_shopaptitude_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.shop_shopaptitude_test<br>Test method: 工商资质</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.shop_shopaptitude_test@13a5fe33</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.tradecenter_ordercancel_test.tradecenter_ordercancel_true()'><b>tradecenter_ordercancel_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.tradecenter_ordercancel_test<br>Test method: 积分取消订单</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.tradecenter_ordercancel_test@71423665</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.tradecenter_ordersuccess_test.tradecenter_ordersuccess_true()'><b>tradecenter_ordersuccess_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.tradecenter_ordersuccess_test<br>Test method: 积分订单成功页</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.tradecenter_ordersuccess_test@20398b7c</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.ugc_ugclist_openapi_test.ugc_ugclist_openapi_true()'><b>ugc_ugclist_openapi_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.ugc_ugclist_openapi_test<br>Test method: 获取单品评论列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.ugc_ugclist_openapi_test@3a5ed7a6</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.ugc_usercomment_test.ugc_usercomment_true()'><b>ugc_usercomment_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.ugc_usercomment_test<br>Test method: 评价</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.ugc_usercomment_test@6325a3ee</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_addaddress_test.user_addaddress_true()'><b>user_addaddress_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_addaddress_test<br>Test method: 添加用户地址</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_addaddress_test@31dc339b</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_addresslist_test.user_addresslist_true()'><b>user_addresslist_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_addresslist_test<br>Test method: 获取用户地址列表</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_addresslist_test@3c0f93f1</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_addskutocart_test.user_addskutocart_true()'><b>user_addskutocart_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_addskutocart_test<br>Test method: 更新购物车商品</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_addskutocart_test@553f17c</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_bindalipay_test.user_bindalipay_true()'><b>user_bindalipay_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_bindalipay_test<br>Test method: 绑定支付宝</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_bindalipay_test@185d8b6</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_bindmobile_test.user_bindmobile_true()'><b>user_bindmobile_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_bindmobile_test<br>Test method: 绑定手机号</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_bindmobile_test@6f1fba17</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_bindprotocol_test.user_bindprotocol_true()'><b>user_bindprotocol_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_bindprotocol_test<br>Test method: 隐私协议</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_bindprotocol_test@527740a2</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_bindpushclient_test.user_bindpushclient_true()'><b>user_bindpushclient_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_bindpushclient_test<br>Test method: 绑定用户推送设备</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_bindpushclient_test@210366b4</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_bindwechat_test.user_bindwechat_true()'><b>user_bindwechat_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_bindwechat_test<br>Test method: 绑定微信</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_bindwechat_test@6c3708b3</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_changemobile_test.user_changemobile_true()'><b>user_changemobile_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_changemobile_test<br>Test method: 更换手机号</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_changemobile_test@3e9b1010</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_checkusercart_test.user_checkusercart_true()'><b>user_checkusercart_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_checkusercart_test<br>Test method: 检查购物车是否合法</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_checkusercart_test@69ea3742</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_clearcart_test.user_clearcart_true()'><b>user_clearcart_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_clearcart_test<br>Test method: 清空购物车</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_clearcart_test@6ddf90b0</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_clearinvalidcartskus_test.user_clearinvalidcartskus_true()'><b>user_clearinvalidcartskus_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_clearinvalidcartskus_test<br>Test method: 清空购物车失效商品</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_clearinvalidcartskus_test@57536d79</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_coupleactivitiedetail_test.user_coupleactivitiedetail_true()'><b>user_coupleactivitiedetail_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_coupleactivitiedetail_test<br>Test method: 分享详情</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_coupleactivitiedetail_test@a67c67e</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_couponlist_test.user_couponlist_weishiyongTrue()'><b>user_couponlist_weishiyongTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_couponlist_test<br>Test method: 获取用户优惠券(未使用)</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_couponlist_test@64bf3bbf</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_couponlist_test.user_couponlist_yiguoqiTrue()'><b>user_couponlist_yiguoqiTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_couponlist_test<br>Test method: 获取用户优惠券(已过期)</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_couponlist_test@64bf3bbf</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_couponlist_test.user_couponlist_yishiyongTrue()'><b>user_couponlist_yishiyongTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_couponlist_test<br>Test method: 用户订单列表(已使用)</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_couponlist_test@64bf3bbf</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_deleteaddress_test.user_deleteaddress_true()'><b>user_deleteaddress_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_deleteaddress_test<br>Test method: 删除用户地址</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_deleteaddress_test@544fe44c</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_deletecartsku_test.user_deletecartsku_true()'><b>user_deletecartsku_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_deletecartsku_test<br>Test method: 删除购物车</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_deletecartsku_test@2b2948e2</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_feedback_test.user_feedback_true()'><b>user_feedback_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_feedback_test<br>Test method: 意见反馈</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_feedback_test@335eadca</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_getcouponinfo_test.user_getcouponinfo_true()'><b>user_getcouponinfo_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_getcouponinfo_test<br>Test method: 获取用户领用的优惠券</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_getcouponinfo_test@5abca1e0</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_getdealerlicense_test.user_getdealerlicense_true()'><b>user_getdealerlicense_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_getdealerlicense_test<br>Test method: 获取门店资质信息</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_getdealerlicense_test@2038ae61</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_getudesk_test.user_getudesk_true()'><b>user_getudesk_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_getudesk_test<br>Test method: 获取udesk信息</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_getudesk_test@eec5a4a</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_getusercart_test.user_getusercart_true()'><b>user_getusercart_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_getusercart_test<br>Test method: 获取用户购物车</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_getusercart_test@1ed4004b</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_likemerchant_test.user_likemerchant_true()'><b>user_likemerchant_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_likemerchant_test<br>Test method: 收藏店铺</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_likemerchant_test@6e1ec318</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_likeproduct_test.user_likeproduct_true()'><b>user_likeproduct_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_likeproduct_test<br>Test method: 收藏商品</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_likeproduct_test@617faa95</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_likeproductfromcart_test.user_likeproductfromcart_true()'><b>user_likeproductfromcart_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_likeproductfromcart_test<br>Test method: 移入收藏</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_likeproductfromcart_test@3b0143d3</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_likeproductlist_test.user_likeproductlist_dianpuTrue()'><b>user_likeproductlist_dianpuTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_likeproductlist_test<br>Test method: 收藏列表(店铺)</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_likeproductlist_test@60c6f5b</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_likeproductlist_test.user_likeproductlist_shangpinTrue()'><b>user_likeproductlist_shangpinTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_likeproductlist_test<br>Test method: 收藏列表(商品)</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_likeproductlist_test@60c6f5b</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_register_test.user_register_true()'><b>user_register_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_register_test<br>Test method: 注册</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_register_test@520a3426</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_resetpwd_test.user_resetpwd_true()'><b>user_resetpwd_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_resetpwd_test<br>Test method: 重置密码</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_resetpwd_test@18eed359</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_setdefaultaddress_test.user_setdefaultaddress_true()'><b>user_setdefaultaddress_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_setdefaultaddress_test<br>Test method: 设置默认收货地址</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_setdefaultaddress_test@78c03f1f</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_unlikemerchant_test.user_unlikemerchant_true()'><b>user_unlikemerchant_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_unlikemerchant_test<br>Test method: 取消收藏店铺</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_unlikemerchant_test@7e0b0338</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_unlikeproduct_test.user_unlikeproduct_true()'><b>user_unlikeproduct_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_unlikeproduct_test<br>Test method: 取消收藏商品</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_unlikeproduct_test@1e127982</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_updateaddress_test.user_updateaddress_true()'><b>user_updateaddress_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_updateaddress_test<br>Test method: 更新地址</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_updateaddress_test@67784306</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_updateuser_test.user_updateuser_true()'><b>user_updateuser_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_updateuser_test<br>Test method: 更新用户信息</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_updateuser_test@10bdf5e5</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_usercenter_test.user_usercenter_true()'><b>user_usercenter_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_usercenter_test<br>Test method: 用户中心</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_usercenter_test@ff5b51f</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_usercouplelist_test.user_usercouplelist_pintuanchenggongTrue()'><b>user_usercouplelist_pintuanchenggongTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_usercouplelist_test<br>Test method: 二人购用户订单列表(拼团成功)</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_usercouplelist_test@55d56113</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_usercouplelist_test.user_usercouplelist_pintuanshibaiTrue()'><b>user_usercouplelist_pintuanshibaiTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_usercouplelist_test<br>Test method: 二人购用户订单列表(拼团失败)</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_usercouplelist_test@55d56113</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_usercouplelist_test.user_usercouplelist_pintuanzhongTrue()'><b>user_usercouplelist_pintuanzhongTrue</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_usercouplelist_test<br>Test method: 二人购用户订单列表(拼团中)</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_usercouplelist_test@55d56113</td></tr>
+<tr>
+<td title='com.duoweidu.cases.hsq.openapi.user_userinfo_test.user_userinfo_true()'><b>user_userinfo_true</b><br>Test class: com.duoweidu.cases.hsq.openapi.user_userinfo_test<br>Test method: 用户信息</td>
+<td></td>
+<td>0</td>
+<td>com.duoweidu.cases.hsq.openapi.user_userinfo_test@598067a5</td></tr>
+</table><p>
+</body>
+</html>
