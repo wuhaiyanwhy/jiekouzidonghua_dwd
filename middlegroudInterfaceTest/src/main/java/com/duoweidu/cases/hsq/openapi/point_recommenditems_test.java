@@ -43,7 +43,7 @@ public class point_recommenditems_test extends HsqInterfaceTest {
             detailAssertTest("data.get(i).id", model.data.get(i).id);
             detailAssertTest("data.get(i).thumbnail", model.data.get(i).thumbnail);
             detailAssertTest("data.get(i).point", model.data.get(i).point);
-            detailAssertTest("data.get(i).price", model.data.get(i).price);
+            detailAssertTest("data.get(i).price", String.valueOf(model.data.get(i).price));
             detailAssertTest("data.get(i).name", model.data.get(i).name);
             detailAssertTest("data.get(i).merchant_type", model.data.get(i).merchant_type);
             detailAssertTest("data.get(i).enabled", String.valueOf(model.data.get(i).enabled));

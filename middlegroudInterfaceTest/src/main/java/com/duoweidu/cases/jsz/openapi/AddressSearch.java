@@ -6,21 +6,21 @@ import com.duoweidu.model.jsz.AddressSearchData;
 import com.duoweidu.utils.ConfigFileUrl;
 import org.testng.annotations.Test;
 
-public class AddressSearch extends JszInterfaceTest{
+public class AddressSearch extends JszInterfaceTest {
 
     private AddressSearchData model;
 
     @Test(description = "地址搜索")
     public void addressSearch() {
         setUrl("address.search.uri");
-        param = "keyword=" + SqlDetail.getInstance().getParamValue(0,"keyword") +
-                "&city=" + SqlDetail.getInstance().getParamValue(0,"city") ;
+        param = "keyword=" + SqlDetail.getInstance().getParamValue(0, "keyword") +
+                "&city=" + SqlDetail.getInstance().getParamValue(0, "city");
         process(true, false);
         model = sparseJson(AddressSearchData.class);
-        if ("beta".equals(ConfigFileUrl.getEnv())) {
+//        if ("beta".equals(ConfigFileUrl.getEnv())) {
             detailAssert();
         }
-    }
+//    }
 
     private void detailAssert() {
         detailAssertTest("status", model.status);
@@ -39,10 +39,16 @@ public class AddressSearch extends JszInterfaceTest{
             detailAssertTest("adname", model.pois.get(i).adname);
             detailAssertTest("shopinfo", model.pois.get(i).shopinfo);
             detailAssertTest("pname", model.pois.get(i).pname);
-            detailAssertTest("photos", model.pois.get(i).photos);
+//            detailAssertTest("photos",model.pois.get(i).photos);
 
-            for (int j = 0; j < model.pois.get(j).photos.size(); j++) {
-                detailAssertTest("url", model.pois.get(i).photos.get(j).url);
+            if (model.pois.get(i).photos.size() > 0) {
+                for (int j = 0; j < model.pois.get(i).photos.size(); j++) {
+                    detailAssertTest("url", model.pois.get(i).photos.get(j).url);
+                }
             }
         }
     }
+}
+
+
+

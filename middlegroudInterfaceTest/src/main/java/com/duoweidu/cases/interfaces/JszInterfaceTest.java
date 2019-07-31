@@ -3,6 +3,7 @@ package com.duoweidu.cases.interfaces;
 import com.duoweidu.config.sql.SqlDetail;
 import com.duoweidu.utils.CallbackInterface;
 import org.apache.http.NameValuePair;
+import org.apache.http.client.utils.URLEncodedUtils;
 import org.apache.http.message.BasicNameValuePair;
 
 import java.util.List;
@@ -25,7 +26,8 @@ public class JszInterfaceTest extends InterfaceTest {
         }else {
             this.param = par;
         }
-        result = CallbackInterface.getStringResult(url, pathId, this.param);
+        System.out.println("参数：" + param);
+        result = CallbackInterface.getStringResult(limitTime(), url, pathId, this.param);
     }
 
     //post请求
@@ -39,7 +41,8 @@ public class JszInterfaceTest extends InterfaceTest {
         list.add(new BasicNameValuePair("lng", SqlDetail.getInstance().getParamValue(0,"lng")));
         list.add(new BasicNameValuePair("lat", SqlDetail.getInstance().getParamValue(0,"lat")));
         list.add(new BasicNameValuePair("oauth_appid", SqlDetail.getInstance().getParamValue(0,"oauth_appid")));
-        param = list.toString();
-        result = CallbackInterface.postStringResult(url, pathId, list);
+        param = URLEncodedUtils.format(list, "Utf-8");
+        System.out.println("参数：" + param);
+        result = CallbackInterface.postStringResult(limitTime(), url, pathId, list);
     }
 }

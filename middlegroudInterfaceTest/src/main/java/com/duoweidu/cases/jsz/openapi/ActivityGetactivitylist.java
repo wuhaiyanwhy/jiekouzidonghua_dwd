@@ -21,9 +21,9 @@ public class ActivityGetactivitylist extends JszInterfaceTest {
         process(true,false);
         model = sparseJson(ActivityGetactivitylistData.class);
 //        detailAssert();
-        if ("beta".equals(ConfigFileUrl.getEnv())) {
+//        if ("beta".equals(ConfigFileUrl.getEnv())) {
             detailAssert();
-        }
+//        }
     }
 
     private void detailAssert() {

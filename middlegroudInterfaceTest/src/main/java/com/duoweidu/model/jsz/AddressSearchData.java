@@ -6,12 +6,12 @@ public class AddressSearchData {
 
     public int status;
     public int count;
-    public int info;
+    public String info;
     public int infocode;
 
     public ArrayList<PoisModel> pois;
     public static class PoisModel {
-        public int id;
+        public String id;
         public String name;
         public String type;
         public String typecode;

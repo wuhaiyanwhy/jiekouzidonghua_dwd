@@ -6,6 +6,7 @@ import com.duoweidu.config.sql.SqlGeneral;
 import com.duoweidu.utils.CallbackInterfaceChannel;
 import com.duoweidu.utils.ConfigFileUrl;
 import org.apache.http.NameValuePair;
+import org.apache.http.client.utils.URLEncodedUtils;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -24,6 +25,12 @@ public class InterfaceTest {
     protected String param;
     //用来储存返回的结果
     protected String result;
+
+
+    //设置接口响应的默认限制时间
+    protected long limitTime() {
+        return ConfigFileUrl.getLimitTime();
+    }
 
     /**
      * 获取渠道id
@@ -177,7 +184,8 @@ public class InterfaceTest {
      */
     protected void process() {
         System.out.println(url);
-        result = CallbackInterfaceChannel.getStringResult(channel_id(), url, pathId, this.param);
+        System.out.println("参数：" + param);
+        result = CallbackInterfaceChannel.getStringResult(channel_id(), limitTime(), url, pathId, this.param);
     }
 
     /**
@@ -205,8 +213,9 @@ public class InterfaceTest {
      */
     protected void process(List<NameValuePair> list) {
         System.out.println(url);
-        param = list.toString();
-        result = CallbackInterfaceChannel.postStringResult(channel_id(), url, pathId, list);
+        param = URLEncodedUtils.format(list, "Utf-8");
+        System.out.println("参数：" + param);
+        result = CallbackInterfaceChannel.postStringResult(channel_id(), limitTime(), url, pathId, list);
     }
 
     /**
@@ -234,7 +243,8 @@ public class InterfaceTest {
      */
     protected void process(String param) {
         System.out.println(url);
-        result = CallbackInterfaceChannel.postStringResult(channel_id(), url, pathId, param);
+        System.out.println("参数：" + param);
+        result = CallbackInterfaceChannel.postStringResult(channel_id(), limitTime(), url, pathId, param);
     }
 
     /**
@@ -262,7 +272,8 @@ public class InterfaceTest {
      */
     protected void processDelete() {
         System.out.println(url);
-        result = CallbackInterfaceChannel.deleteStringResult(channel_id(), url, pathId, this.param);
+        System.out.println("参数：" + param);
+        result = CallbackInterfaceChannel.deleteStringResult(channel_id(), limitTime(), url, pathId, this.param);
     }
 
     /**
