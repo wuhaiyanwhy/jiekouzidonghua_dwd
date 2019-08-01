@@ -7,4 +7,6 @@
 *.iml
 out
 gen
-/src/main/resources/hsq-dayan-test.xml
+src/main/resources/hsq-dayan-test.xml
+src/test/
+target/generated-sources/

@@ -101,17 +101,28 @@ public class GeneralAssertChannel extends Assert {
     }
 
 
-    public static void timeTest(int channel_id, long limitTime, long responseTime, HttpResponse response, String uri, int path_id, String param) {
+    /**
+     * 判断超时时间
+     * @param channel_id
+     * @param limitTime
+     * @param responseTime
+     * @param response
+     * @param uri
+     * @param path_id
+     * @param param
+     */
+    public static void timeAssert(int channel_id, long limitTime, long responseTime, HttpResponse response, String uri, int path_id, String param) {
         if(responseTime >= limitTime){
             //需要一个HTTP_好的状态从响应和不得到它，你仍然必须消耗实体
             if (response.getEntity() != null) {
                 try {
-                    response.getEntity().consumeContent();
+                    response.getEntity().getContent().close();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
-            fail(distinguishParamFailed(channel_id, "接口响应超时;\n限制时间：" + limitTime + "ms;  实际响应时间：" + responseTime + "ms", uri, path_id, param, 1, null));
+            GeneralConfig.limitTimeList.add(uri);
+            fail(distinguishParamFailed(channel_id, "接口响应超时;\n限制时间：" + limitTime + "ms;  实际响应时间：" + responseTime + "ms", uri, path_id, param, 0, null));
         }
 
     }
@@ -129,7 +140,7 @@ public class GeneralAssertChannel extends Assert {
             //需要一个HTTP_好的状态从响应和不得到它，你仍然必须消耗实体
             if (response.getEntity() != null) {
                 try {
-                    response.getEntity().consumeContent();
+                    response.getEntity().getContent().close();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
