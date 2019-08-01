@@ -16,8 +16,11 @@ public class Build {
     public static void build() {
         int enabled = 1;
         int message_status = 0;
-        String errno_message = "报错的接口总个数：" + GeneralConfig.errnoList.size()
-                 + "\n超时的接口个数：" + GeneralConfig.limitTimeList.size();
+
+        int errnoCount = GeneralConfig.errnoList.size() - GeneralConfig.limitTimeList.size();
+        String errno_message = "超时的接口个数：" + GeneralConfig.limitTimeList.size() +
+                "\n报错的接口个数：" + errnoCount +
+                "\n错误接口总个数：" + GeneralConfig.errnoList.size();
 
         //当构建失败时 enabled为0
         if (GeneralConfig.errnoList != null && GeneralConfig.errnoList.size() >0) {
@@ -36,7 +39,7 @@ public class Build {
                 }
 
                 //如果多个接口报错时报错文案改变
-                if (GeneralConfig.errnoList.size() >= 5) {
+                if (errnoCount >= 5) {
                     message = "项目已崩（多个接口报错），快去看测试报告！！！\n" + errno_message;
                 }
 
@@ -52,8 +55,7 @@ public class Build {
                 //如果表里有数据再走此逻辑
                 String content = "接口已经多次报错了，快去钉钉查看测试报告！！！\n" + errno_message;
                 if (SqlDetail.getInstance().getBuildEnabled().size() >0 && SqlDetail.getInstance().getBuildMessageStatus().size() > 0) {
-                    if (GeneralConfig.errnoList.size() >= 5 ) {
-                        System.out.println(SqlDetail.getInstance().getBuildEnabled().size());
+                    if (errnoCount >= 5 ) {
                         message_status = 1;
                         content = "项目已崩（多个接口报错），快去钉钉查看测试报告！！！\n" + errno_message;
                         sendMessage(content);
