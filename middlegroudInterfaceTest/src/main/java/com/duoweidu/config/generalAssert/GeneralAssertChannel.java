@@ -205,7 +205,7 @@ public class GeneralAssertChannel extends Assert {
      * @param param
      * @param result
      */
-    public static void dataAssert(int channel_id, Object data, String uri, int path_id, String param, String result) {
+    public static void dataAssert(int channel_id, String data, String uri, int path_id, String param, String result) {
         if (data.equals("{}")) {
             fail(distinguishParamFailed(channel_id, "返回的data数据为空;", uri, path_id, param, 4, result));
         }
