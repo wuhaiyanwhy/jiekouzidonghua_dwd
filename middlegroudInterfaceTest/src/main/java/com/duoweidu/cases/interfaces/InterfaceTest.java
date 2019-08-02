@@ -308,7 +308,7 @@ public class InterfaceTest {
      */
     protected void generalAssertTest() {
         statusAssertTest();
-        GeneralAssertChannel.dataAssert(channel_id(), JsonStringKeyObj(result, "data"), url, pathId, param, result);
+        GeneralAssertChannel.dataAssert(channel_id(), JsonStringKeyObj(result, "data").toString(), url, pathId, param, result);
     }
 
     /**

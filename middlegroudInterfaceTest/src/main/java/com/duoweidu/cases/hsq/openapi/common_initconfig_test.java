@@ -38,16 +38,15 @@ public class common_initconfig_test extends HsqInterfaceTest {
             detailAssertTest("paymentway.get(i).icon", model.paymentway.get(i).icon);
         }
         detailAssertTest("customerName", model.customerName);
-        detailAssertTest("hotSearch", String.valueOf(model.hotSearch));
-        detailAssertTest("hotSearch.id", model.hotSearch.id);
-        detailAssertTest("hotSearch.value", model.hotSearch.value);
-        detailAssertTest("hotSearch.priority", String.valueOf(model.hotSearch.priority));
-        detailAssertTest("hotSearch.search_cnt", String.valueOf(model.hotSearch.search_cnt));
-        detailAssertTest("hotSearch.url", model.hotSearch.url);
-        detailAssertTest("hotSearch.type", model.hotSearch.type);
-        detailAssertTest("hotSearch.status", model.hotSearch.status);
-        detailAssertTest("hotSearch.channel", model.hotSearch.channel);
-        detailAssertTest("hotSearch.position", model.hotSearch.position);
+//        detailAssertTest("hotSearch.id", model.hotSearch.id);
+//        detailAssertTest("hotSearch.value", model.hotSearch.value);
+//        detailAssertTest("hotSearch.priority", String.valueOf(model.hotSearch.priority));
+//        detailAssertTest("hotSearch.search_cnt", String.valueOf(model.hotSearch.search_cnt));
+//        detailAssertTest("hotSearch.url", model.hotSearch.url);
+//        detailAssertTest("hotSearch.type", model.hotSearch.type);
+//        detailAssertTest("hotSearch.status", model.hotSearch.status);
+//        detailAssertTest("hotSearch.channel", model.hotSearch.channel);
+//        detailAssertTest("hotSearch.position", model.hotSearch.position);
 
         detailAssertTest("defaultLocation", String.valueOf(model.defaultLocation));
         detailAssertTest("defaultLocation.aMapId", model.defaultLocation.aMapId);
