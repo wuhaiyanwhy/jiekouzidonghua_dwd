@@ -18,15 +18,26 @@ public class JenkinsBuild {
 
     public static void jenkinsLastBuild() {
         String uri = "hsq.prod.lastBuild.uri";
-        if (ConfigFileUrl.getChannel() == 2){
-            uri = "iqg.prod.lastBuild.uri";
-        }else if (ConfigFileUrl.getChannel() == 3) {
-            uri = "msf.prod.lastBuild.uri";
-        }else if (ConfigFileUrl.getChannel() == 4) {
-            uri = "fyb.prod.lastBuild.uri";
-        }else if (ConfigFileUrl.getChannel() == 5) {
-            uri = "jsz.prod.lastBuild.uri";
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            if (ConfigFileUrl.getChannel() == 1){
+                uri = "hsq.beta.lastBuild.uri";
+            }else if (ConfigFileUrl.getChannel() == 2) {
+                uri = "iqg.beta.lastBuild.uri";
+            }else if (ConfigFileUrl.getChannel() == 3) {
+                uri = "msf.beta.lastBuild.uri";
+            }
+        }else if ("prod".equals(ConfigFileUrl.getEnv())) {
+            if (ConfigFileUrl.getChannel() == 2){
+                uri = "iqg.prod.lastBuild.uri";
+            }else if (ConfigFileUrl.getChannel() == 3) {
+                uri = "msf.prod.lastBuild.uri";
+            }else if (ConfigFileUrl.getChannel() == 4) {
+                uri = "fyb.prod.lastBuild.uri";
+            }else if (ConfigFileUrl.getChannel() == 5) {
+                uri = "jsz.prod.lastBuild.uri";
+            }
         }
+
 
         String url = ConfigFileUrl.getUrlByKey(11, 0, uri);
         System.out.println(url);

@@ -23,10 +23,10 @@ public class Build {
                 "\n错误接口总个数：" + GeneralConfig.errnoList.size();
 
         //当构建失败时 enabled为0
-        if (GeneralConfig.errnoList != null && GeneralConfig.errnoList.size() >0) {
+        if (GeneralConfig.errnoList != null & GeneralConfig.errnoList.size() > 0) {
             enabled = 0;
-            //如果是线上并且不是调试状态则发送短信和钉钉提醒
-            if ("prod".equals(ConfigFileUrl.getEnv()) && "false".equals(ConfigFileUrl.getDebug())) {
+            //如果是不是调试状态则发送钉钉提醒
+            if ("false".equals(ConfigFileUrl.getDebug())) {
 
                 JenkinsBuild.jenkinsLastBuild();
                 String name = "【" + SqlDetail.getInstance().getChannelName() + "】";
@@ -34,7 +34,7 @@ public class Build {
                 String message = "接口又挂了，快去看测试报告！！！\n" + errno_message ;
 
                 //如果接口超时&超时的数组长度不等于总的数组长度时报错文案改变
-                if (GeneralConfig.limitTimeList.size() > 0 && GeneralConfig.errnoList.size() == GeneralConfig.limitTimeList.size()) {
+                if (GeneralConfig.limitTimeList.size() > 0 & GeneralConfig.errnoList.size() == GeneralConfig.limitTimeList.size()) {
                     message = "接口又超时了，快去看测试报告！！！\n" + errno_message;
                 }
 
@@ -52,9 +52,9 @@ public class Build {
 
                 //1.当连续2次构建失败并且最近10次未发送短信的时候发送短信
                 //2.当当前构建有多个接口（例如：>=5）报错时发送短信
-                //如果表里有数据再走此逻辑
+                //如果是线上环境&表里有数据再走此逻辑
                 String content = "接口已经多次报错了，快去钉钉查看测试报告！！！\n" + errno_message;
-                if (SqlDetail.getInstance().getBuildEnabled().size() >0 && SqlDetail.getInstance().getBuildMessageStatus().size() > 0) {
+                if ("prod".equals(ConfigFileUrl.getEnv()) & SqlDetail.getInstance().getBuildEnabled().size() >0 & SqlDetail.getInstance().getBuildMessageStatus().size() > 0) {
                     if (errnoCount >= 5 ) {
                         message_status = 1;
                         content = "项目已崩（多个接口报错），快去钉钉查看测试报告！！！\n" + errno_message;
