@@ -8,7 +8,7 @@
 
 
 
-    <test name ="好食期接口测试用例(openapi)">
+    <test name ="好食期接口测试用例(openapi)" preserve-order="true">
         <classes>
 
             <class name="com.duoweidu.cases.hsq.openapi.user_login_test">
@@ -22,15 +22,7 @@
                     <include name = "user_userinfo_true"/>
                 </methods>
             </class>
-            <class name="com.duoweidu.cases.hsq.openapi.user_getgetusercartv1_test">
-                <methods>
-                    <include name="user_getgetusercartv1_true"></include>
-                </methods>
-
-            </class>
-            <!--<class name="com.duoweidu.cases.hsq.openapi.user_removeinvalidcartsku_test">
-                <methods name="user_removeinvalidcartsku_true"></methods>
-            </class>-->
+            <!--添加购物车-->
             <class name="com.duoweidu.cases.hsq.openapi.user_addskutocartv1_test">
                 <methods name="user_addskutocartv1_true">
                 </methods>
@@ -38,16 +30,29 @@
 
                 </methods>
             </class>
-           <!-- <class name="com.duoweidu.cases.hsq.openapi.user_deletecartskuv1_test">
-                <methods name="user_deletecartskuv1_true"></methods>
-            </class>
+            <!--选择规格-->
             <class name="com.duoweidu.cases.hsq.openapi.UserGetcanchoosesku">
                 <methods name="userGetcanchoosesku">
                 </methods>
             </class>
-            <class name="com.duoweidu.cases.hsq.openapi.UserEditcartsku">
-                <methods name="userEditcartsku"></methods>
-            </class>-->
+            <!--购物车页面-->
+            <class name="com.duoweidu.cases.hsq.openapi.user_getgetusercartv1_test">
+                <methods>
+                    <include name="user_getgetusercartv1_true"></include>
+                </methods>
+            </class>
+
+          <class name="com.duoweidu.cases.hsq.openapi.UserEditcartsku">
+               <methods name="userEditcartsku"></methods>
+           </class>
+           <class name="com.duoweidu.cases.hsq.openapi.user_removeinvalidcartsku_test">
+                <methods name="user_removeinvalidcartsku_true"></methods>
+            </class>
+             <class name="com.duoweidu.cases.hsq.openapi.user_deletecartskuv1_test">
+                 <methods name="user_deletecartskuv1_true"></methods>
+            </class>
+
+
 
         </classes>
 

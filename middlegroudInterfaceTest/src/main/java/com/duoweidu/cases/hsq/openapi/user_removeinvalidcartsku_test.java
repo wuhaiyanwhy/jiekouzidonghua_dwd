@@ -10,12 +10,12 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class user_removeinvalidcartsku_test extends HsqInterfaceTest {
-    @Test(dependsOnGroups = "loginTrue",description = "清空失效商品")
+    @Test(dependsOnGroups = {"addskutocart"},description = "清空失效商品",priority = 4)
     public void user_removeinvalidcartsku_true(){
         setUrl("user.removeinvalidcartsku.uri");
         List<NameValuePair> list = new LinkedList<>();
         list.add(new BasicNameValuePair("Content-Type", SqlDetail.getInstance().getParamValue(0,"Content-Type")));
-        process(list,false,false);
+        process(list,true,false);
     }
 
 }

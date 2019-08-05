@@ -8,28 +8,29 @@ import org.testng.annotations.Test;
 
 import java.util.LinkedList;
 import java.util.List;
-
 public class user_addskutocartv1_test extends HsqInterfaceTest {
     List<NameValuePair> list = new LinkedList<>();
     public void getParam(){
         list.add(new BasicNameValuePair("Content-Type",SqlDetail.getInstance().getParamValue(0,"Content-Type")));
-        list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue(0,"goskuId")));
-        list.add(new BasicNameValuePair("amount", SqlDetail.getInstance().getParamValue(0,"goamount")));
+        list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue("goskuId")));
+        list.add(new BasicNameValuePair("amount", SqlDetail.getInstance().getParamValue("goamount")));
     }
 
-    @Test(dependsOnGroups = "loginTrue",description = "加入购物车")
+
+    @Test(dependsOnGroups = "loginTrue",description = "加入购物车", groups = "addskutocart")
     public void user_addskutocartv1_true(){
         setUrl("user.addskutocartv1.uri");
         getParam();
-        list.add(new BasicNameValuePair("type", SqlDetail.getInstance().getParamValue(0,"gotype")));
-        process(list,false,false);
+        list.add(new BasicNameValuePair("type", SqlDetail.getInstance().getParamValue("gotype")));
+        process(list,true,false);
     }
+
     @Test(dependsOnGroups = "loginTrue",description = "加入购物车")
     public void user_addskutocartv1_true2(){
         setUrl("user.addskutocartv1.uri");
         getParam();
-        list.add(new BasicNameValuePair("type", SqlDetail.getInstance().getParamValue(0,"gotype2")));
-        process(list,false,false);
+        list.add(new BasicNameValuePair("type", SqlDetail.getInstance().getParamValue("gotype2")));
+        process(list,true,false);
     }
 
 }

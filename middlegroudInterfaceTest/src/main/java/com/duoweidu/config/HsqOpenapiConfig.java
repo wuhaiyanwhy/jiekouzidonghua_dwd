@@ -52,8 +52,9 @@ public class HsqOpenapiConfig {
     public static int xinyongAddressId;
     //储存信用购订单初始化接口返回的接口信息
     public static String orderInitResult;
-
-
     //储存积分订单列表接口返回的总页数
     public static int totalPage;
+    //保存购物车商品id
+
+
 }

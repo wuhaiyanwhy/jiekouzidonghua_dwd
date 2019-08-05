@@ -4,9 +4,9 @@ import com.duoweidu.cases.interfaces.HsqInterfaceTest;
 import org.testng.annotations.Test;
 
 public class user_getgetusercartv1_test extends HsqInterfaceTest {
-    @Test(dependsOnGroups = "loginTrue",description = "购物车页面")
+    @Test(dependsOnGroups = {"addskutocart"},description = "购物车页面",priority = 0)
     public void user_getgetusercartv1_true(){
         setUrl("user.getusercartv1.uri");
-        process(false,true);
+        process(true,true);
     }
 }
