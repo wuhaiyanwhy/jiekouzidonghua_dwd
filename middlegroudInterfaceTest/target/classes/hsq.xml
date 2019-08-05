@@ -888,6 +888,18 @@
                 </methods>
             </class>
 
+            <class name="com.duoweidu.cases.hsq.openapi.CommonGetdatasourceinfo">
+                <methods>
+                    <include name="commonGetdatasourceinfo"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.openapi.MarketSpecialtopicTopicinfo">
+                <methods>
+                    <include name="marketSpecialtopicTopicinfo"/>
+                </methods>
+            </class>
+
         </classes>
 
     </test>
