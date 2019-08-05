@@ -43,6 +43,11 @@ public class Build {
                     message = "项目已崩（多个接口报错），快去看测试报告！！！\n" + errno_message;
                 }
 
+                //beta环境文案改变
+                if ("beta".equals(ConfigFileUrl.getEnv())) {
+                    message = "beta环境接口报错啦，快去看看是不是你提交的bug！！！\n" + errno_message;
+                }
+
                 String dingdingContent = name + message + "\n传送门：" + url;
                 DingDing.push(dingdingContent,
                         SqlDetail.getInstance().getParamValue(0, "mobile1"),
