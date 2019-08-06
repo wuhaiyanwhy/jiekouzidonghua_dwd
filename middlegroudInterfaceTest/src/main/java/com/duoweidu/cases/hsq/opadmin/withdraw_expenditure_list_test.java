@@ -6,6 +6,7 @@ import com.duoweidu.utils.ConfigFileUrl;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 import org.testng.annotations.Test;
 
@@ -27,9 +28,13 @@ public class withdraw_expenditure_list_test extends HsqOpadminInterfaceTest {
         list.add(new BasicNameValuePair("type","0"));
 
         process(list);
-        JSONObject jsonObject = new JSONObject(result);
-        JSONArray listJson = (JSONArray) jsonObject.get("list");
-        GeneralAssertChannel.listAssert(ConfigFileUrl.getChannel1(), listJson, url, pathId, param.toString(), result);
+        try {
+            JSONObject jsonObject = new JSONObject(result);
+            JSONArray listJson = (JSONArray) jsonObject.get("list");
+            GeneralAssertChannel.listAssert(ConfigFileUrl.getChannel1(), listJson, url, pathId, param, result);
+        }catch (JSONException e) {
+            GeneralAssertChannel.jsonAssert(ConfigFileUrl.getChannel1(), url, pathId, param, result, e);
+        }
 
     }
 

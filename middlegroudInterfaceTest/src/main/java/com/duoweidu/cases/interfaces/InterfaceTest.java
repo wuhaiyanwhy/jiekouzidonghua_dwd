@@ -392,7 +392,7 @@ public class InterfaceTest {
      */
     protected void detailAssertTest (String resultKey, String resultValue) {
         if (resultValue == null || resultValue.isEmpty() || resultValue.equals("{}")) {
-            GeneralAssertChannel.detailedAssert(channel_id(), "返回的" + resultKey + "不应为空/0" + "，实际返回：" +
+            GeneralAssertChannel.detailedAssert(channel_id(), "返回的" + resultKey + "不应为空" + "，实际返回：" +
                     resultValue, url, pathId, param, result);
         }
     }
