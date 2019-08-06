@@ -899,6 +899,44 @@
                     <include name="marketSpecialtopicTopicinfo"/>
                 </methods>
             </class>
+            <!--购物车流程-->
+            <!--添加购物车-->
+            <class name="com.duoweidu.cases.hsq.openapi.user_addskutocartv1_test">
+                <methods>
+                    <include name="user_addskutocartv1_true"/>
+                    <include name="user_addskutocartv1_true2"/>
+                </methods>
+            </class>
+            <!--选择规格-->
+            <class name="com.duoweidu.cases.hsq.openapi.UserGetcanchoosesku">
+                <methods>
+                    <include name="userGetcanchoosesku"/>
+                </methods>
+            </class>
+            <!--购物车页面-->
+            <class name="com.duoweidu.cases.hsq.openapi.user_getgetusercartv1_test">
+                <methods>
+                    <include name="user_getgetusercartv1_true"/>
+                </methods>
+            </class>
+            <!--编辑购物车-->
+            <class name="com.duoweidu.cases.hsq.openapi.UserEditcartsku">
+                <methods>
+                    <include name="userEditcartsku"/>
+                </methods>
+            </class>
+            <!--清除购物车的无效数据-->
+            <class name="com.duoweidu.cases.hsq.openapi.user_removeinvalidcartsku_test">
+                <methods>
+                    <include name="user_removeinvalidcartsku_true"/>
+                </methods>
+            </class>
+            <!--删除购物车-->
+            <class name="com.duoweidu.cases.hsq.openapi.user_deletecartskuv1_test">
+                <methods>
+                    <include name="user_deletecartskuv1_true"/>
+                </methods>
+            </class>
 
         </classes>
 
@@ -1881,6 +1919,7 @@
                     <include name="withdraw_expenditure_list_merchant_true"/>
                 </methods>
             </class>
+
 
         </classes>
     </test>
