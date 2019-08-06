@@ -10,7 +10,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class user_removeinvalidcartsku_test extends HsqInterfaceTest {
-    @Test(dependsOnGroups = {"addskutocart"},description = "清空失效商品",priority = 4)
+    @Test(dependsOnGroups = "addskutocart", description = "清空失效商品")
     public void user_removeinvalidcartsku_true(){
         setUrl("user.removeinvalidcartsku.uri");
         List<NameValuePair> list = new LinkedList<>();

@@ -877,34 +877,40 @@
             <!--购物车流程-->
             <!--添加购物车-->
             <class name="com.duoweidu.cases.hsq.openapi.user_addskutocartv1_test">
-                <methods name="user_addskutocartv1_true">
-                </methods>
-                <methods name="user_addskutocartv1_true2">
-
+                <methods>
+                    <include name="user_addskutocartv1_true"/>
+                    <include name="user_addskutocartv1_true2"/>
                 </methods>
             </class>
             <!--选择规格-->
             <class name="com.duoweidu.cases.hsq.openapi.UserGetcanchoosesku">
-                <methods name="userGetcanchoosesku">
+                <methods>
+                    <include name="userGetcanchoosesku"/>
                 </methods>
             </class>
             <!--购物车页面-->
             <class name="com.duoweidu.cases.hsq.openapi.user_getgetusercartv1_test">
                 <methods>
-                    <include name="user_getgetusercartv1_true"></include>
+                    <include name="user_getgetusercartv1_true"/>
                 </methods>
             </class>
             <!--编辑购物车-->
             <class name="com.duoweidu.cases.hsq.openapi.UserEditcartsku">
-                <methods name="userEditcartsku"></methods>
+                <methods>
+                    <include name="userEditcartsku"/>
+                </methods>
             </class>
             <!--清除购物车的无效数据-->
             <class name="com.duoweidu.cases.hsq.openapi.user_removeinvalidcartsku_test">
-                <methods name="user_removeinvalidcartsku_true"></methods>
+                <methods>
+                    <include name="user_removeinvalidcartsku_true"/>
+                </methods>
             </class>
             <!--删除购物车-->
             <class name="com.duoweidu.cases.hsq.openapi.user_deletecartskuv1_test">
-                <methods name="user_deletecartskuv1_true"></methods>
+                <methods>
+                    <include name="user_deletecartskuv1_true"/>
+                </methods>
             </class>
 
         </classes>

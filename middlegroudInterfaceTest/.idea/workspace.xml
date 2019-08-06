@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92d45266-f7ab-473e-b21c-2e6436d064d9" name="Default Changelist" comment="" />
+    <list default="true" id="92d45266-f7ab-473e-b21c-2e6436d064d9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserEditcartsku.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserEditcartsku.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserGetcanchoosesku.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserGetcanchoosesku.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/user_addskutocartv1_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/user_addskutocartv1_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/user_deletecartskuv1_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/user_deletecartskuv1_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/user_getgetusercartv1_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/user_getgetusercartv1_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/user_removeinvalidcartsku_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/user_removeinvalidcartsku_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hsq.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hsq.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/switch.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/switch.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/InterfaceReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/InterfaceReport.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,30 +31,30 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="14" />
+          <entry key="java" value="20" />
           <entry key="properties" value="2" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="14" />
+          <entry key="JAVA" value="20" />
           <entry key="Properties" value="2" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="9" />
-          <entry key="properties" value="8" />
-          <entry key="xml" value="27" />
+          <entry key="java" value="21" />
+          <entry key="properties" value="12" />
+          <entry key="xml" value="62" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="9" />
-          <entry key="Properties" value="8" />
-          <entry key="XML" value="27" />
+          <entry key="JAVA" value="21" />
+          <entry key="Properties" value="12" />
+          <entry key="XML" value="62" />
         </counts>
       </usages-collector>
     </session>
@@ -54,11 +64,65 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/hsq.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="907" column="20" selection-start-line="907" selection-start-column="20" selection-end-line="907" selection-end-column="20" />
+            <state relative-caret-position="85">
+              <caret line="909" column="68" lean-forward="true" selection-start-line="909" selection-start-column="68" selection-end-line="909" selection-end-column="68" />
               <folding>
                 <element signature="n#test#7;n#suite#0;n#!!top" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/user_deletecartskuv1_test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="12" column="65" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/user_removeinvalidcartsku_test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="12" column="66" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserEditcartsku.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="12" column="65" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/user_getgetusercartv1_test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="6" column="62" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserGetcanchoosesku.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/user_addskutocartv1_test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -87,35 +151,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/switch.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/user_bindalipay_test.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/message/DingDing.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/message/Build.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
+              <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -134,14 +171,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/user_deletecartskuv1_test.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/switch.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/message/Build.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/user_removeinvalidcartsku_test.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/hsq.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/user_addskutocartv1_test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/user_getgetusercartv1_test.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/switch.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserGetcanchoosesku.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/hsq.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserEditcartsku.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/user_removeinvalidcartsku_test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/user_deletecartskuv1_test.java" />
       </list>
     </option>
   </component>
@@ -253,7 +291,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565055447573" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565056157780" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Problems" />
@@ -301,14 +339,11 @@
       <option name="presentableId" value="Default" />
       <updated>1565006585025</updated>
       <workItem from="1565006586567" duration="2248000" />
-      <workItem from="1565054933431" duration="514000" />
+      <workItem from="1565054933431" duration="1223000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq_xml - 2019.08.05 at 20h 05m 05s.xml">
-      <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq_xml - 2019.08.05 at 20h 07m 19s.xml">
       <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" configurationId="TestNG" />
     </history-entry>
@@ -333,9 +368,15 @@
     <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq_xml - 2019.08.06 at 09h 27m 52s.xml">
       <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq_xml - 2019.08.06 at 09h 37m 48s.xml">
+      <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_zuohuajian_gitlab_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq_xml - 2019.08.06 at 09h 47m 49s.xml">
+      <configuration name="/Users/zuohuajian/gitlab/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2762000" />
+    <option name="totallyTimeSpent" value="3471000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="36" y="23" width="1244" height="777" extended-state="0" />
@@ -349,7 +390,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.37462234" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5302115" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -378,52 +419,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/user_deletecartskuv1_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="17" column="87" selection-start-line="17" selection-start-column="87" selection-end-line="17" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserEditcartsku.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/user_removeinvalidcartsku_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/product_iteminfov1_test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="10" column="51" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/user_addskutocartv1_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/user_getgetusercartv1_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserGetcanchoosesku.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -448,13 +447,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/switch.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/interfaces/HsqInterfaceTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -472,10 +464,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/switch.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/user_addskutocartv1_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserGetcanchoosesku.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/user_getgetusercartv1_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="62" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserEditcartsku.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="12" column="65" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/user_removeinvalidcartsku_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="12" column="66" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/user_deletecartskuv1_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="12" column="65" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/hsq.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="907" column="20" selection-start-line="907" selection-start-column="20" selection-end-line="907" selection-end-column="20" />
+        <state relative-caret-position="85">
+          <caret line="909" column="68" lean-forward="true" selection-start-line="909" selection-start-column="68" selection-end-line="909" selection-end-column="68" />
           <folding>
             <element signature="n#test#7;n#suite#0;n#!!top" />
           </folding>

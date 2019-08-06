@@ -10,7 +10,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class UserEditcartsku extends HsqInterfaceTest {
-    @Test(dependsOnGroups = "addskutocart",description = "编辑购物车",priority = 2)
+    @Test(dependsOnGroups = "addskutocart", description = "编辑购物车")
     public void userEditcartsku(){
         setUrl("user.editcartsku.uri");
         List<NameValuePair> list = new LinkedList<>();

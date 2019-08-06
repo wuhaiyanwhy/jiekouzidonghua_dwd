@@ -17,7 +17,7 @@ public class user_addskutocartv1_test extends HsqInterfaceTest {
     }
 
 
-    @Test(dependsOnGroups = "loginTrue",description = "加入购物车", groups = "addskutocart")
+    @Test(dependsOnGroups = "loginTrue", description = "加入购物车", groups = "addskutocart")
     public void user_addskutocartv1_true(){
         setUrl("user.addskutocartv1.uri");
         getParam();
@@ -25,7 +25,7 @@ public class user_addskutocartv1_test extends HsqInterfaceTest {
         process(list,true,false);
     }
 
-    @Test(dependsOnGroups = "loginTrue",description = "加入购物车")
+    @Test(dependsOnGroups = "loginTrue", description = "加入购物车")
     public void user_addskutocartv1_true2(){
         setUrl("user.addskutocartv1.uri");
         getParam();
