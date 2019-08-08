@@ -77,9 +77,8 @@ public class order_userserviceorders_test extends HsqInterfaceTest {
                 detailAssertTest("list.get(i).skuList.get(j).schema", model.list.get(i).skuList.get(j).schema);
 
             }
-//            detailAssertTest("list.get(i).refundId", model.list.get(i).refundId);
-//            detailAssertTest("list.get(i).refundStatusDesc", model.list.get(i).refundStatusDesc);
             detailAssertTest("list.get(i).merchantName", model.list.get(i).merchantName);
+            detailAssertTest("list.get(i).statusCode", model.list.get(i).statusCode);
             detailAssertTest("list.get(i).merchantId", model.list.get(i).merchantId);
             detailAssertTest("list.get(i).orderId", model.list.get(i).orderId);
             detailAssertTest("list.get(i).sourceType", model.list.get(i).sourceType);
