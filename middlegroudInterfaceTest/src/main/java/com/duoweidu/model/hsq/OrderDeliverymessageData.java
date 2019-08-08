@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class OrderDeliverymessageData {
 
-    public int order_id;
+    public String order_id;
     public int user_id;
     public int type;
     public String delivery_no;
@@ -15,7 +15,7 @@ public class OrderDeliverymessageData {
     public ArrayList<MsgModel> msg;
     public int platform;
     public int userId;
-    public int orderId;
+    public String orderId;
 
     public static class MsgModel {
         public String time;

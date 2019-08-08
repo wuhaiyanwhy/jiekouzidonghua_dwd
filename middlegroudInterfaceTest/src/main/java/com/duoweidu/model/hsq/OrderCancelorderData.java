@@ -2,7 +2,7 @@ package com.duoweidu.model.hsq;
 
 public class OrderCancelorderData {
 
-    public int id;
+    public String id;
     public int user_id;
     public int merchant_id;
     public String status;

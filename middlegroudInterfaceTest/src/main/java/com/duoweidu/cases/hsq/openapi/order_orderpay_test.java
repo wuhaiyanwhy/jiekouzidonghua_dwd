@@ -3,6 +3,7 @@ package com.duoweidu.cases.hsq.openapi;
 import com.duoweidu.cases.interfaces.HsqInterfaceTest;
 import com.duoweidu.config.HsqOpenapiConfig;
 import com.duoweidu.config.generalAssert.GeneralAssert;
+import com.duoweidu.model.hsq.OrderOrderpayData;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONException;
@@ -13,6 +14,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class order_orderpay_test extends HsqInterfaceTest {
+
+    private OrderOrderpayData model;
 
     private  void  genOrderpay(String orderResult, String type) {
         setUrl("order.orderpay.uri");
@@ -29,7 +32,7 @@ public class order_orderpay_test extends HsqInterfaceTest {
             list.add(new BasicNameValuePair("orderIds", order));
             list.add(new BasicNameValuePair("type", type));
             process(list,true,false);
-
+            model = sparseJson(OrderOrderpayData.class);
         }catch (JSONException e){
             GeneralAssert.jsonAssert(url, pathId, param, result, e);
         }
@@ -40,6 +43,7 @@ public class order_orderpay_test extends HsqInterfaceTest {
         genOrderpay(HsqOpenapiConfig.submitorderPutongResult, "3");
         //orderpay普通订单接口的返回数据确定默认值
         HsqOpenapiConfig.orderpayPutongResult = result;
+        putongDetailAssert();
 
     }
 
@@ -48,6 +52,7 @@ public class order_orderpay_test extends HsqInterfaceTest {
         genOrderpay(HsqOpenapiConfig.submitorderPintuanResult, "1");
         //orderpay普通订单接口的返回数据确定默认值
         HsqOpenapiConfig.orderpayPintuanResult = result;
+        pintuanDetailAssert();
 
     }
 
@@ -59,4 +64,24 @@ public class order_orderpay_test extends HsqInterfaceTest {
         HsqOpenapiConfig.orderpayDandugouResult = result;
     }
 
+    private void putongDetailAssert() {
+        detailAssertTest("partner", model.partner);
+        detailAssertTest("seller", model.seller);
+        detailAssertTest("paymentStr", model.paymentStr);
+        detailAssertTest("mergeType", model.mergeType);
+        detailAssertTest("paymentId", model.paymentId);
+    }
+
+    private void pintuanDetailAssert() {
+        detailAssertTest("appid", model.appid);
+        detailAssertTest("noncestr", model.noncestr);
+        detailAssertTest("package", model.page);
+        detailAssertTest("partnerid", model.partnerid);
+        detailAssertTest("prepayid", model.prepayid);
+        detailAssertTest("timestamp", model.timestamp);
+        detailAssertTest("paysign", model.paysign);
+
+        detailAssertTest("mergeType", model.mergeType);
+        detailAssertTest("paymentId", model.paymentId);
+    }
 }

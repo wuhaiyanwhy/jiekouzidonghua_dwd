@@ -31,9 +31,9 @@ public class order_deliverymessage_test extends HsqInterfaceTest {
         for (int i = 0; i < model.msg.size(); i++) {
             detailAssertTest("msg.get(i).time", model.msg.get(i).time);
             detailAssertTest("msg.get(i).context", model.msg.get(i).context);
-            detailAssertTest("msg.get(i).ftime", model.msg.get(i).ftime);
-            detailAssertTest("msg.get(i).areaName", model.msg.get(i).areaName);
-            detailAssertTest("msg.get(i).status", model.msg.get(i).status);
+//            detailAssertTest("msg.get(i).ftime", model.msg.get(i).ftime);
+//            detailAssertTest("msg.get(i).areaName", model.msg.get(i).areaName);
+//            detailAssertTest("msg.get(i).status", model.msg.get(i).status);
         }
         detailAssertTest("platform", model.platform);
         detailAssertTest("userId", model.userId);

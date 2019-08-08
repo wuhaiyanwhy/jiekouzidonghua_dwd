@@ -9,7 +9,7 @@ public class OrderGetuserordersData {
     public ArrayList<ListModel> list;
 
     public static class ListModel {
-        public int id;
+        public String id;
         public int user_id;
         public int merchant_id;
         public String status;
@@ -49,12 +49,12 @@ public class OrderGetuserordersData {
         public int point_payment_id;
         public int payways;
         public String pay_info;
-        public SkuListModel skuList;
+        public ArrayList<SkuListModel> skuList;
         public int refundId;
         public String refundStatusDesc;
         public String merchantName;
         public int merchantId;
-        public int orderId;
+        public String orderId;
         public int deliveryWay;
         public int sourceType;
         public String schema;
@@ -65,9 +65,9 @@ public class OrderGetuserordersData {
         public boolean canPay;
 
         public static class SkuListModel {
-            public int id;
+            public String id;
             public int user_id;
-            public int order_id;
+            public String order_id;
             public int product_id;
             public int sku_id;
             public int bu_sku_id;
@@ -79,7 +79,7 @@ public class OrderGetuserordersData {
             public int total_price;
             public int discount_price;
             public int pay_price;
-            public AttributeTagsModel attribute_tags;
+            public ArrayList<AttributeTagsModel> attribute_tags;
             public int status;
             public int comment_status;
             public int is_free;
@@ -98,9 +98,9 @@ public class OrderGetuserordersData {
             public int saved_money;
             public ArrayList<String> refundInfo;
             public int skuId;
-            public int orderId;
+            public String orderId;
             public int userId;
-            public int name;
+            public String  name;
             public ArrayList<AttrsModel> attrs;
             public ArrayList<String> attrs_desc;
             public String refundStatusDesc;
