@@ -66,7 +66,7 @@ public class GeneralAssert extends GeneralAssertChannel {
      * @param param
      * @param result
      */
-    public static void dataAssert(Object data, String uri, int path_id, String param, String result) {
+    public static void dataAssert(String data, String uri, int path_id, String param, String result) {
         GeneralAssertChannel.dataAssert(channel_id, data, uri, path_id, param, result);
     }
 
