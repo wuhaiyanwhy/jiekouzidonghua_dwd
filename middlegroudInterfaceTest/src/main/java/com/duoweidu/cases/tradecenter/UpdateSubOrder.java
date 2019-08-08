@@ -22,8 +22,8 @@ public class UpdateSubOrder extends TradeCenterInterfaceTest {
         list.add(new BasicNameValuePair("method", "order.update_sub_order"));
         list.add(new BasicNameValuePair("subOrderNo", TradecenterConfig.msfCreateOrderSubOrderNo));
         list.add(new BasicNameValuePair("orderStatus", SqlDetail.getInstance().getInstance().getParamValue(0, "orderStatus")));
-        list.add(new BasicNameValuePair("settleAmount", SqlDetail.getInstance().getParamValue(0, "settleAmount")));
-        list.add(new BasicNameValuePair("commissionAmount", SqlDetail.getInstance().getParamValue(0, "commissionAmount")));
+//        list.add(new BasicNameValuePair("settleAmount", SqlDetail.getInstance().getParamValue(0, "settleAmount")));
+//        list.add(new BasicNameValuePair("commissionAmount", SqlDetail.getInstance().getParamValue(0, "commissionAmount")));
         list.add(new BasicNameValuePair("refundStatus", SqlDetail.getInstance().getParamValue(0, "refundStatus")));
         list.add(new BasicNameValuePair("refundAmount", SqlDetail.getInstance().getParamValue(0, "refundAmount")));
         process(list, true, false);
@@ -40,7 +40,7 @@ public class UpdateSubOrder extends TradeCenterInterfaceTest {
         detailAssertTest(SqlDetail.getInstance().getParamValue(0, "orderStatus"), "order_status", model.changes.order_status);
         detailAssertTest(SqlDetail.getInstance().getParamValue(0, "refundStatus"), "refund_status", String.valueOf(model.changes.refund_status));
         detailAssertTest(SqlDetail.getInstance().getParamValue(0, "refundAmount"), "refund_amount", String.valueOf(model.changes.refund_amount));
-        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "commissionAmount"), "commission_amount", String.valueOf(model.changes.commission_amount));
+        //detailAssertTest(SqlDetail.getInstance().getParamValue(0, "commissionAmount"), "commission_amount", String.valueOf(model.changes.commission_amount));
         detailAssertTest("", "reverse", model.reverse);
 
     }

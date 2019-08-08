@@ -23,8 +23,8 @@ public class UpdateOrder extends TradeCenterInterfaceTest {
         list.add(new BasicNameValuePair("orderNo", TradecenterConfig.msfCreateOrderOrderNo));
         list.add(new BasicNameValuePair("orderStatus", SqlDetail.getInstance().getParamValue(0, "orderStatus")));
         list.add(new BasicNameValuePair("payStatus", SqlDetail.getInstance().getParamValue(0, "payStatus")));
-        list.add(new BasicNameValuePair("settleAmount", SqlDetail.getInstance().getParamValue(0, "settleAmount")));
-        list.add(new BasicNameValuePair("commissionAmount", SqlDetail.getInstance().getParamValue(0, "commissionAmount")));
+//        list.add(new BasicNameValuePair("settleAmount", SqlDetail.getInstance().getParamValue(0, "settleAmount")));
+//        list.add(new BasicNameValuePair("commissionAmount", SqlDetail.getInstance().getParamValue(0, "commissionAmount")));
         process(list, true, false);
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             model = sparseJson(UpdateOrderData.class);
@@ -36,7 +36,7 @@ public class UpdateOrder extends TradeCenterInterfaceTest {
         detailAssertTest(TradecenterConfig.msfCreateOrderOrderNo, "order_no", model.order_no);
         detailAssertTest("changes", model.changes.toString());
         detailAssertTest(SqlDetail.getInstance().getParamValue(0, "orderStatus"), "changes.order_status", String.valueOf(model.changes.order_status));
-        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "commissionAmount"), "changes.commission_amount", String.valueOf(model.changes.commission_amount));
+//        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "commissionAmount"), "changes.commission_amount", String.valueOf(model.changes.commission_amount));
 
     }
 }
