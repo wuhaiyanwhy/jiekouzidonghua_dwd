@@ -56,16 +56,16 @@ public class common_initconfig_test extends HsqInterfaceTest {
         detailAssertTest("defaultLocation.zoneId", model.defaultLocation.zoneId);
         detailAssertTest("defaultLocation.cityId", model.defaultLocation.cityId);
         detailAssertTest("is_write_log", model.is_write_log);
-        detailAssertTest("launchPic", model.launchPic);
-        for (int i = 0; i < model.launchPic.size(); i++) {
-            detailAssertTest("launchPic.get(i).img", model.launchPic.get(i).img);
-            detailAssertTest("launchPic.get(i).size", model.launchPic.get(i).size);
-            detailAssertTest("launchPic.get(i).type", model.launchPic.get(i).type);
+//        detailAssertTest("launchPic", model.launchPic);
+//        for (int i = 0; i < model.launchPic.size(); i++) {
+//            detailAssertTest("launchPic.get(i).img", model.launchPic.get(i).img);
+//            detailAssertTest("launchPic.get(i).size", model.launchPic.get(i).size);
+//            detailAssertTest("launchPic.get(i).type", model.launchPic.get(i).type);
 //            detailAssertTest("launchPic.get(i).url", model.launchPic.get(i).url);
 //            detailAssertTest("launchPic.get(i).link", model.launchPic.get(i).link);
 //            detailAssertTest("launchPic.get(i).version", model.launchPic.get(i).version);
 //            detailAssertTest("launchPic.get(i).highest_version", model.launchPic.get(i).highest_version);
-        }
+//        }
         detailAssertTest("launchPicConfig", String.valueOf(model.launchPicConfig));
         detailAssertTest("launchPicConfig.noWifiDisplay", model.launchPicConfig.noWifiDisplay);
         detailAssertTest("launchPicConfig.displayTime", model.launchPicConfig.displayTime);
