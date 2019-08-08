@@ -107,7 +107,7 @@ public class tradecenter_orderlist_test extends HsqInterfaceTest {
                             detailAssertTest(2848, "list.get(i).skuList.buSkuId", model.list.get(i).skuList.get(j).buSkuId);
                             detailAssertTest(34358, "list.get(i).skuList.skuId", model.list.get(i).skuList.get(j).skuId);
                             detailAssertTest("啊啊啊啊商品信息图", "list.get(i).skuList.skuName", model.list.get(i).skuList.get(j).skuName);
-                            detailAssertTest("http://img2.haoshiqi.net/mafa96f64265271d23bcdd2cdf3a5a163a.jpg?imageView2/0/w/200/h/200/q/70", "list.get(i).skuList.skuThumbnail", model.list.get(i).skuList.get(j).skuThumbnail);
+                            detailAssertTest("list.get(i).skuList.skuThumbnail", model.list.get(i).skuList.get(j).skuThumbnail);
                             detailAssertTest(1500, "list.get(i).skuList.marketPrice", model.list.get(i).skuList.get(j).marketPrice);
                             detailAssertTest(1, "list.get(i).skuList.totalPrice", model.list.get(i).skuList.get(j).totalPrice);
                             detailAssertTest(0, "list.get(i).skuList.payPrice", model.list.get(i).skuList.get(j).payPrice);
@@ -210,7 +210,7 @@ public class tradecenter_orderlist_test extends HsqInterfaceTest {
                             detailAssertTest(325, "list.get(i).skuList.buSkuId", model.list.get(i).skuList.get(j).buSkuId);
                             detailAssertTest(16905, "list.get(i).skuList.skuId", model.list.get(i).skuList.get(j).skuId);
                             detailAssertTest("中粮美滋滋 每日坚果（25g*7包）", "list.get(i).skuList.skuName", model.list.get(i).skuList.get(j).skuName);
-                            detailAssertTest("http://img2.haoshiqi.net/ma9e0cc24d85d52a77655fdd804f458c53.jpg?imageView2/0/w/200/h/200/q/70", "list.get(i).skuList.skuThumbnail", model.list.get(i).skuList.get(j).skuThumbnail);
+                            detailAssertTest("list.get(i).skuList.skuThumbnail", model.list.get(i).skuList.get(j).skuThumbnail);
                             detailAssertTest(5900, "list.get(i).skuList.marketPrice", model.list.get(i).skuList.get(j).marketPrice);
                             detailAssertTest(2800, "list.get(i).skuList.totalPrice", model.list.get(i).skuList.get(j).totalPrice);
                             detailAssertTest(0, "list.get(i).skuList.payPrice", model.list.get(i).skuList.get(j).payPrice);

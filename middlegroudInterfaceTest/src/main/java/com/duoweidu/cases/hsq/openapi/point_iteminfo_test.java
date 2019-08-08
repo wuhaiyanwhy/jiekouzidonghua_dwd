@@ -31,7 +31,7 @@ public class point_iteminfo_test extends HsqInterfaceTest {
             detailAssertTest("接口测试专用商品，勿动动", "name", model.name);
             detailAssertTest(1099, "price", model.price);
             detailAssertTest(5000, "lmarketPrice", model.marketPrice);
-            detailAssertTest("http://img2.haoshiqi.net/ma32483124920c8aea275a83545aa3b5aa.jpg?imageView2/0/w/420/h/420/q/70", "thumbnail", model.thumbnail);
+            detailAssertTest("thumbnail", model.thumbnail);
             detailAssertTest( "point", model.point);
             detailAssertTest( "pointMetaId", model.pointMetaId);
             detailAssertTest(1, "channelId", model.channelId);
@@ -103,8 +103,8 @@ public class point_iteminfo_test extends HsqInterfaceTest {
             detailAssertTest(0, "ugcBrief.totalCnt", model.ugcBrief.totalCnt);
 
             detailAssertTest("model.pics", model.pics);
-            detailAssertTest("http://img2.haoshiqi.net/ma32483124920c8aea275a83545aa3b5aa.jpg?imageView2/0/w/840/h/840/q/70", "lpics.get(0)", model.pics.get(0));
-            detailAssertTest("http://img2.haoshiqi.net/ma957f7a4f209ef5e58c7f8b8552d27af5.jpg?imageView2/0/w/840/h/840/q/70", "lpics.get(1)", model.pics.get(1));
+            detailAssertTest("lpics.get(0)", model.pics.get(0));
+            detailAssertTest("lpics.get(1)", model.pics.get(1));
 
 
             detailAssertTest("model.labels", model.labels);
@@ -147,7 +147,7 @@ public class point_iteminfo_test extends HsqInterfaceTest {
             detailAssertTest("压测专用（勿动）", "name", model.name);
             detailAssertTest("price", model.price);
             detailAssertTest(3, "lmarketPrice", model.marketPrice);
-            detailAssertTest("http://img2.haoshiqi.net/maaa938eac8efc626a53e043574c88cdc9.jpg?imageView2/0/w/420/h/420/q/70", "thumbnail", model.thumbnail);
+            detailAssertTest("thumbnail", model.thumbnail);
             detailAssertTest( "point", model.point);
             detailAssertTest("pointMetaId", model.pointMetaId);
             detailAssertTest(1, "channelId", model.channelId);
@@ -225,8 +225,8 @@ public class point_iteminfo_test extends HsqInterfaceTest {
             detailAssertTest(0, "ugcBrief.totalCnt", model.ugcBrief.totalCnt);
 
             detailAssertTest("model.pics", model.pics);
-            detailAssertTest("http://img2.haoshiqi.net/maaa938eac8efc626a53e043574c88cdc9.jpg?imageView2/0/w/840/h/840/q/70", "lpics.get(0)", model.pics.get(0));
-            detailAssertTest("http://img2.haoshiqi.net/ma25a4a7e863ae9850e316bdddee91c8ca.jpg?imageView2/0/w/840/h/840/q/70", "lpics.get(1)", model.pics.get(1));
+            detailAssertTest("lpics.get(0)", model.pics.get(0));
+            detailAssertTest("lpics.get(1)", model.pics.get(1));
 
 
             detailAssertTest("model.labels", model.labels);
