@@ -37,15 +37,15 @@ public class market_specialtopiccomponentinfo_test extends HsqInterfaceTest {
 //            detailAssertTest("list.get(i).margin_top", model.list.get(i).margin_top);
 //            detailAssertTest("list.get(i).bg_color", model.list.get(i).bg_color);
 //            detailAssertTest("list.get(i).width", model.list.get(i).width);
-            detailAssertTest("list.get(i).height", model.list.get(i).height);
+//            detailAssertTest("list.get(i).height", model.list.get(i).height);
             detailAssertTest("list.get(i).list", model.list.get(i).list);
-            for (int j = 0; j < model.list.get(i).list.size(); j++) {
-                detailAssertTest("list.get(i).list.get(j).image.w", model.list.get(i).list.get(j).image.w);
-                detailAssertTest("list.get(i).list.get(j).image.h", model.list.get(i).list.get(j).image.h);
-                detailAssertTest("list.get(i).list.get(j).image.url", model.list.get(i).list.get(j).image.url);
+//            for (int j = 0; j < model.list.get(i).list.size(); j++) {
+//                detailAssertTest("list.get(i).list.get(j).image.w", model.list.get(i).list.get(j).image.w);
+//                detailAssertTest("list.get(i).list.get(j).image.h", model.list.get(i).list.get(j).image.h);
+//                detailAssertTest("list.get(i).list.get(j).image.url", model.list.get(i).list.get(j).image.url);
 //                detailAssertTest("list.get(i).list.get(j).image.link", model.list.get(i).list.get(j).link);
 
-            }
+//            }
 
         }
 
