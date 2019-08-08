@@ -8,6 +8,7 @@ public class TradecenterConfig {
     //储存创建账户接口返回的账户账号
     public static String msfAccountNumber;
     public static String iqgAccountNumber;
+    public static String jszAccountNumber;
 
     //创建充值单返回的tradeNo
     public static String msfCreateRechargeTradeNo;

@@ -8,6 +8,7 @@
                 <methods>
                     <include name="msfCreate"/>
                     <include name="iqgCreate"/>
+                    <include name="jszCreate"/>
                 </methods>
             </class>
 
