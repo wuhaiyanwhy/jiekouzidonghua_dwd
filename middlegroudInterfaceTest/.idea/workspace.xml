@@ -2,8 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dd9f21c-4835-4a98-be8b-a85c413de519" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Create.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Create.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/interfaces/TradeCenterInterfaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/interfaces/TradeCenterInterfaceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Adjust.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Adjust.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/CreateAdjust.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/CreateAdjust.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/CreateOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/CreateOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/CreatePay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/CreatePay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/CreateRecharge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/CreateRecharge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/CreateRefund.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/CreateRefund.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Pay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Pay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Query.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Query.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/QueryAdjust.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/QueryAdjust.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/QueryAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/QueryAll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/QueryPay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/QueryPay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/QueryRecharge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/QueryRecharge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/QueryRefund.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/QueryRefund.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Recharge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Recharge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Refund.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Refund.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/UpdateOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/UpdateOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/UpdateSubOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/UpdateSubOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/config/TradecenterConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/config/TradecenterConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/tradeCenter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tradeCenter.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/interfaces/TradeCenterInterfaceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/interfaces/TradeCenterInterfaceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/tradecenter/Adjust.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/tradecenter/Adjust.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/tradecenter/CreateAdjust.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/tradecenter/CreateAdjust.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/tradecenter/CreateOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/tradecenter/CreateOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/tradecenter/CreatePay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/tradecenter/CreatePay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/tradecenter/CreateRecharge.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/tradecenter/CreateRecharge.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/tradecenter/CreateRefund.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/tradecenter/CreateRefund.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/tradecenter/Pay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/tradecenter/Pay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/tradecenter/Query.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/tradecenter/Query.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/tradecenter/QueryAdjust.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/tradecenter/QueryAdjust.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/tradecenter/QueryAll.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/tradecenter/QueryAll.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/tradecenter/QueryPay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/tradecenter/QueryPay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/tradecenter/QueryRecharge.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/tradecenter/QueryRecharge.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/tradecenter/QueryRefund.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/tradecenter/QueryRefund.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/tradecenter/Recharge.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/tradecenter/Recharge.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/tradecenter/Refund.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/tradecenter/Refund.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/tradecenter/UpdateOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/tradecenter/UpdateOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/tradecenter/UpdateSubOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/tradecenter/UpdateSubOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/config/TradecenterConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/config/TradecenterConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tradeCenter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tradeCenter.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/InterfaceReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/InterfaceReport.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -17,45 +56,46 @@
     <session id="-129064841">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="11" />
+          <entry key="class" value="23" />
           <entry key="gitignore" value="4" />
-          <entry key="java" value="106" />
-          <entry key="properties" value="1" />
-          <entry key="xml" value="11" />
+          <entry key="java" value="187" />
+          <entry key="properties" value="4" />
+          <entry key="xml" value="12" />
           <entry key="xsl" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="11" />
+          <entry key="CLASS" value="23" />
           <entry key="Git file" value="4" />
-          <entry key="JAVA" value="106" />
-          <entry key="Properties" value="1" />
-          <entry key="XML" value="12" />
+          <entry key="JAVA" value="187" />
+          <entry key="Properties" value="4" />
+          <entry key="XML" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="807" />
-          <entry key="properties" value="19" />
-          <entry key="xml" value="5" />
+          <entry key="java" value="2361" />
+          <entry key="properties" value="21" />
+          <entry key="xml" value="111" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="807" />
-          <entry key="Properties" value="19" />
-          <entry key="XML" value="5" />
+          <entry key="JAVA" value="2361" />
+          <entry key="Properties" value="21" />
+          <entry key="XML" value="111" />
         </counts>
       </usages-collector>
     </session>
@@ -65,35 +105,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/tradeCenter.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+            <state relative-caret-position="669">
+              <caret line="137" column="53" selection-start-line="137" selection-start-column="35" selection-end-line="137" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/switch.properties">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Adjust.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+            <state relative-caret-position="285">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/CreateAdjust.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/CreateOrder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="473">
+              <caret line="105" column="31" lean-forward="true" selection-start-line="105" selection-start-column="31" selection-end-line="105" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/CreatePay.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="80" column="37" lean-forward="true" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Create.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/config/TradecenterConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="155" column="79" selection-start-line="155" selection-start-column="79" selection-end-line="155" selection-end-column="79" />
+            <state relative-caret-position="480">
+              <caret line="32" column="51" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -115,6 +164,23 @@
       <find>90</find>
       <find>commission_amount</find>
       <find>msfCreate</find>
+      <find>msfCreateAdjust</find>
+      <find>msfQueryAdjust</find>
+      <find>msfCreateRecharge</find>
+      <find>iqgQueryRecharge</find>
+      <find>msfUpdateOrder</find>
+      <find>msfCreateOrder</find>
+      <find>msfCreatePay</find>
+      <find>account_number</find>
+      <find>msfQueryPay</find>
+      <find>msfQuery</find>
+      <find>iqgCreate</find>
+      <find>预</find>
+      <find>msfCreateSubOrder</find>
+      <find>jszCreatePay</find>
+      <find>jszCreateSettlePay</find>
+      <find>commonParameters</find>
+      <find>jszCreatePayTradeNo</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -132,15 +198,30 @@
         <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/point_topicinfo_test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/point_topicbuskulist_test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/point_recommenditems_test.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/switch.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/model/tradecenter/InfoTypeCodeData.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/InfoTypeCode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/CreateOrder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/UpdateOrder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/UpdateSubOrder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/config/TradecenterConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/tradeCenter.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Create.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/interfaces/TradeCenterInterfaceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/CreateAdjust.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/QueryAdjust.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/CreateRecharge.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Recharge.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/QueryRecharge.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/UpdateSubOrder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/UpdateOrder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Pay.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/QueryPay.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/CreateRefund.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Refund.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/QueryRefund.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Query.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/QueryAll.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Adjust.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/switch.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/tradeCenter.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/CreateOrder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/CreatePay.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/config/TradecenterConfig.java" />
       </list>
     </option>
   </component>
@@ -160,9 +241,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -236,13 +314,16 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/src/main/resources/hsq-dayan-test.xml" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565315643829" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565339484104" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -323,9 +404,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG./Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" />
+        <item itemvalue="TestNG./Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq-dayan-test.xml" />
         <item itemvalue="TestNG.Create" />
         <item itemvalue="TestNG./Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" />
-        <item itemvalue="TestNG./Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq-dayan-test.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -343,43 +424,46 @@
       <workItem from="1564740288690" duration="1394000" />
       <workItem from="1565254576848" duration="146000" />
       <workItem from="1565256422114" duration="8032000" />
+      <workItem from="1565318989581" duration="13132000" />
+      <workItem from="1565338144257" duration="418000" />
+      <workItem from="1565338591724" duration="814000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.08.08 at 19h 26m 13s.xml">
+    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.08.09 at 16h 15m 06s.xml">
       <configuration name="/Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.08.08 at 19h 29m 17s.xml">
+    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.08.09 at 16h 16m 45s.xml">
       <configuration name="/Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.08.08 at 19h 30m 26s.xml">
+    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.08.09 at 16h 17m 38s.xml">
       <configuration name="/Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.08.08 at 19h 40m 17s.xml">
+    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.08.09 at 16h 18m 24s.xml">
       <configuration name="/Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.08.08 at 19h 40m 40s.xml">
+    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.08.09 at 16h 19m 16s.xml">
       <configuration name="/Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.08.08 at 19h 41m 58s.xml">
+    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.08.09 at 16h 19m 55s.xml">
       <configuration name="/Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.08.08 at 19h 42m 40s.xml">
+    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.08.09 at 16h 20m 50s.xml">
       <configuration name="/Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.08.08 at 19h 43m 04s.xml">
+    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.08.09 at 16h 24m 24s.xml">
       <configuration name="/Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.08.08 at 19h 44m 44s.xml">
+    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.08.09 at 16h 25m 16s.xml">
       <configuration name="/Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.08.09 at 09h 50m 35s.xml">
+    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.08.09 at 16h 25m 52s.xml">
       <configuration name="/Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18427000" />
+    <option name="totallyTimeSpent" value="32735000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -394,8 +478,8 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27110156" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4983165" visible="true" weight="0.28183118" />
+      <window_info id="Structure" order="1" sideWeight="0.5016835" side_tool="true" weight="0.2746781" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
@@ -404,10 +488,10 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.28433734" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991655" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3987952" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32823366" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32771084" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.5" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
@@ -431,153 +515,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/point_topicinfo_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/config/GeneralConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/utils/IqgCallbackInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="34" column="53" lean-forward="true" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/point_index_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="13" column="46" selection-start-line="13" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/point_recommenditems_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="37" column="68" lean-forward="true" selection-start-line="37" selection-start-column="68" selection-end-line="37" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/order_cancelorder_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/order_orderpayconfirm_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/order_orderpay_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/order_submitorder_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/user_usercenter_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hsq.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2010">
-          <caret line="134" column="40" lean-forward="true" selection-start-line="134" selection-start-column="40" selection-end-line="134" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.10/testng-6.10.jar!/org/testng/internal/ClassHelper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="306" column="13" lean-forward="true" selection-start-line="306" selection-start-column="13" selection-end-line="306" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.10/testng-6.10.jar!/org/testng/internal/ObjectFactoryImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/utils/ConfigFileUrl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home/lib/src.zip!/java.base/jdk/internal/reflect/DelegatingConstructorAccessorImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenterOpadmin/History.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="29" column="33" lean-forward="true" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hsq-dayan-test.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.1.2/httpcore-4.1.2.jar!/org/apache/http/message/BasicNameValuePair.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/model/tradecenter/InfoTypeCodeData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/InfoTypeCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.10/testng-6.10.jar!/org/testng/annotations/Test.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-114">
@@ -599,125 +536,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/QueryRefund.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/interfaces/InterfaceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="38" lean-forward="true" selection-start-column="38" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/UpdateOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="29" column="54" lean-forward="true" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/UpdateSubOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="29" column="52" lean-forward="true" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/QueryAll.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/QueryPay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="22" column="58" lean-forward="true" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Pay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Query.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/CreateRefund.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/CreateRecharge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/CreatePay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/CreateOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/CreateAdjust.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Activate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="17" column="39" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Adjust.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Bill.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/interfaces/TradeCenterOpadminInterfaceTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -729,24 +547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/interfaces/TradeCenterInterfaceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="33" column="42" lean-forward="true" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/config/sql/SqlDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="114" selection-start-line="114" selection-end-line="114" />
-          <folding>
-            <element signature="e#1602#1603#0" expanded="true" />
-            <element signature="e#1687#1688#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -764,31 +564,311 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/config/TradecenterConfig.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.10/testng-6.10.jar!/org/testng/TestNG.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="287">
+          <caret line="1031" column="46" selection-start-line="1031" selection-start-column="46" selection-end-line="1031" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/switch.properties">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.10/testng-6.10.jar!/org/testng/SuiteRunnerWorker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.10/testng-6.10.jar!/org/testng/internal/TestMethodWorker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.10/testng-6.10.jar!/org/testng/TestRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="456" selection-start-line="456" selection-end-line="456" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/reflect/InvocationTargetException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="96" column="7" lean-forward="true" selection-start-line="96" selection-start-column="7" selection-end-line="96" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.10/testng-6.10.jar!/org/testng/internal/Invoker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="443" selection-start-line="443" selection-end-line="443" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.10/testng-6.10.jar!/org/testng/SuiteRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="254" column="25" selection-start-line="254" selection-start-column="25" selection-end-line="254" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="1011" selection-start-line="1011" selection-end-line="1011" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/io/PrintStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="880" selection-start-line="880" selection-end-line="880" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/StringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="447" selection-start-line="447" selection-end-line="447" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/config/sql/SqlDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1560">
+          <caret line="124" column="5" lean-forward="true" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/config/generalAssert/GeneralAssertChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="169" column="20" lean-forward="true" selection-start-line="169" selection-start-column="20" selection-end-line="169" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/interfaces/InterfaceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="238" column="5" lean-forward="true" selection-start-line="238" selection-start-column="5" selection-end-line="238" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/QueryAdjust.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/CreateRecharge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="42" column="58" selection-start-line="42" selection-start-column="58" selection-end-line="42" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/QueryRecharge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="55" column="76" selection-start-line="55" selection-start-column="76" selection-end-line="55" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/config/ExtentTestNGIReporterListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/QueryRefund.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <caret line="22" column="68" lean-forward="true" selection-start-line="22" selection-start-column="68" selection-end-line="22" selection-end-column="68" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/tradeCenter.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Pay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        <state relative-caret-position="274">
+          <caret line="38" column="55" lean-forward="true" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Cancel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="36" column="27" lean-forward="true" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Freeze.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Bill.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/History.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="17" column="70" lean-forward="true" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="22" column="58" lean-forward="true" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/interfaces/TradeCenterInterfaceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Create.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="155" column="79" selection-start-line="155" selection-start-column="79" selection-end-line="155" selection-end-column="79" />
+        <state relative-caret-position="525">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Activate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/QueryAll.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/UpdateOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="45" column="35" lean-forward="true" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/UpdateSubOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="46" column="55" lean-forward="true" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Refund.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="36" column="55" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Recharge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="38" column="20" lean-forward="true" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/QueryPay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Query.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="44" column="49" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/InfoTypeCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="28" column="56" lean-forward="true" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/CreateRefund.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="46" column="35" lean-forward="true" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/CreateAdjust.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home/lib/src.zip!/java.base/jdk/internal/reflect/DelegatingMethodAccessorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="30" column="39" lean-forward="true" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/switch.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Adjust.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/CreateOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="105" column="31" lean-forward="true" selection-start-line="105" selection-start-column="31" selection-end-line="105" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/tradeCenter.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="669">
+          <caret line="137" column="53" selection-start-line="137" selection-start-column="35" selection-end-line="137" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/CreatePay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="80" column="37" lean-forward="true" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/config/TradecenterConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="51" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
         </state>
       </provider>
     </entry>

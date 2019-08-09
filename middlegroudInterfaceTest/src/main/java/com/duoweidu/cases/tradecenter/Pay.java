@@ -25,15 +25,39 @@ public class Pay extends TradeCenterInterfaceTest {
         process(list, true , false);
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             model = sparseJson(PayData.class);
-            detailAssert();
+            msfDetailAssert();
         }
     }
 
-    private void detailAssert() {
+    @Test(dependsOnGroups = "iqgCreatePay", description = "支付")
+    public void iqgPay() {
+        List<NameValuePair> list = new LinkedList<>();
+        list.add(new BasicNameValuePair("method", "trade.pay"));
+        list.add(new BasicNameValuePair("tradeNo", TradecenterConfig.iqgCreatePayTradeNo));
+        list.add(new BasicNameValuePair("accountNumber", TradecenterConfig.iqgAccountNumber));
+
+        TradecenterConfig.accountType = "DWD_IQG_COIN";
+        process(list, true , false);
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            model = sparseJson(PayData.class);
+            iqgDetailAssert();
+        }
+    }
+
+    private void msfDetailAssert() {
         detailAssertTest(TradecenterConfig.msfCreatePayTradeNo, "trade_no", model.trade_no);
         detailAssertTest(SqlDetail.getInstance().getParamValue(0, "totalAmount"), "pay_amount", String.valueOf(model.pay_amount));
         detailAssertTest(3, "pay_status", model.pay_status);
         detailAssertTest(SqlDetail.getInstance().getParamValue(0, "msfCurrency"), "currency", String.valueOf(model.currency));
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "payTypeCode"), "pay_type_code", String.valueOf(model.pay_type_code));
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "payDesc"), "pay_type_desc", String.valueOf(model.pay_type_desc));
+        detailAssertTest("", "reverse", model.reverse);
+    }
+    private void iqgDetailAssert() {
+        detailAssertTest(TradecenterConfig.iqgCreatePayTradeNo, "trade_no", model.trade_no);
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "totalAmount"), "pay_amount", String.valueOf(model.pay_amount));
+        detailAssertTest(3, "pay_status", model.pay_status);
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "iqgCurrency"), "currency", String.valueOf(model.currency));
         detailAssertTest(SqlDetail.getInstance().getParamValue(0, "payTypeCode"), "pay_type_code", String.valueOf(model.pay_type_code));
         detailAssertTest(SqlDetail.getInstance().getParamValue(0, "payDesc"), "pay_type_desc", String.valueOf(model.pay_type_desc));
         detailAssertTest("", "reverse", model.reverse);
