@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-<suite name = "中台接口测试">
+<suite name="中台接口测试">
 
-    <test name ="交易中心">
-        <classes >
+    <test name="交易中心">
+        <classes>
             <class name="com.duoweidu.cases.tradecenter.Create">
                 <methods>
                     <include name="msfCreate"/>
@@ -173,38 +173,60 @@
                     <include name="iqgQueryRefund"/>
                 </methods>
             </class>
+            <!--巨食阵提现-->
+            <class name="com.duoweidu.cases.tradecenter.CreateWithdraw">
+                <methods>
+                    <include name="jszCreateWithdraw"/>
+                </methods>
+            </class>
+            <!--<class name="com.duoweidu.cases.tradecenter.Withdraw">-->
+            <!--<methods>-->
+            <!--<include name="jszWithdraw"/>-->
+            <!--</methods>-->
+            <!--</class>-->
+            <class name="com.duoweidu.cases.tradecenter.QueryWithdraw">
+                <methods>
+                    <include name="jszQueryWithdraw"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.tradecenter.WithdrawList">
+                <methods>
+                    <include name="jszWithdrawList"/>
+                </methods>
+            </class>
+
         </classes>
     </test>
 
-    <!--<test name ="交易中心管理平台">-->
-        <!--<classes >-->
-            <!--<class name="com.duoweidu.cases.tradecenterOpadmin.Account">-->
-                <!--<methods>-->
-                    <!--<include name="account"/>-->
-                <!--</methods>-->
-            <!--</class>-->
+    <test name="交易中心管理平台">
+        <classes>
+            <class name="com.duoweidu.cases.tradecenterOpadmin.Account">
+                <methods>
+                    <include name="account"/>
+                </methods>
+            </class>
 
-            <!--<class name="com.duoweidu.cases.tradecenterOpadmin.History">-->
-                <!--<methods>-->
-                    <!--<include name="history"/>-->
-                <!--</methods>-->
-            <!--</class>-->
-        <!--</classes>-->
-    <!--</test>-->
+            <class name="com.duoweidu.cases.tradecenterOpadmin.History">
+                <methods>
+                    <include name="history"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
 
-    <!--<test name ="消息推送">-->
-        <!--<classes >-->
-            <!--<class name="com.duoweidu.cases.message.Build">-->
-                <!--<methods>-->
-                    <!--<include name="build"/>-->
-                <!--</methods>-->
-            <!--</class>-->
-        <!--</classes>-->
-    <!--</test>-->
+    <test name="消息推送">
+        <classes>
+            <class name="com.duoweidu.cases.message.Build">
+                <methods>
+                    <include name="build"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
 
-    <!--<listeners>-->
+    <listeners>
 
-        <!--<listener class-name="com.duoweidu.config.ExtentTestNGIReporterListener"/>-->
-    <!--</listeners>-->
+        <listener class-name="com.duoweidu.config.ExtentTestNGIReporterListener"/>
+    </listeners>
 
 </suite>

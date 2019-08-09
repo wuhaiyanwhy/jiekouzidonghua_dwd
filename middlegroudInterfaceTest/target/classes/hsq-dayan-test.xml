@@ -76,7 +76,6 @@
     </test>
 
     <listeners>
-
         <listener class-name="com.duoweidu.config.ExtentTestNGIReporterListener"/>
     </listeners>
 

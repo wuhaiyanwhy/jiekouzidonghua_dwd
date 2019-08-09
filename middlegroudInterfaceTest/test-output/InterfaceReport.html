@@ -34,7 +34,8 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-						<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
+						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -48,7 +49,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Aug 9, 2019 04:09:44 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Aug 9, 2019 06:28:04 PM</span>
 				</a>
 			</li>
 			<li>
@@ -82,6 +83,38 @@
 			<!-- test toggle -->
 
 			<!-- category toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>中台接口测试</a></li>
+					<li><a href='#'>交易中心</a></li>
+					<li><a href='#'>msfCreate</a></li>
+					<li><a href='#'>iqgNewCreate</a></li>
+					<li><a href='#'>iqgCreate</a></li>
+					<li><a href='#'>jszCreate</a></li>
+					<li><a href='#'>iqgActivate</a></li>
+					<li><a href='#'>createRecharge</a></li>
+					<li><a href='#'>msfCreateAdjust</a></li>
+					<li><a href='#'>iqgCreateAdjust</a></li>
+					<li><a href='#'>msfCreateOrder</a></li>
+					<li><a href='#'>iqgCreateOrder</a></li>
+					<li><a href='#'>jszCreateOrder</a></li>
+					<li><a href='#'>iqgFreeze</a></li>
+					<li><a href='#'>msfCreatePay</a></li>
+					<li><a href='#'>iqgCreatePay</a></li>
+					<li><a href='#'>jszCreatePay</a></li>
+					<li><a href='#'>msfCreateRefund</a></li>
+					<li><a href='#'>iqgCreateRefund</a></li>
+					<li><a href='#'>msfRefund</a></li>
+					<li><a href='#'>iqgRefund</a></li>
+					<li><a href='#'>交易中心管理平台</a></li>
+					<li><a href='#'>消息推送</a></li>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
 			<!-- category toggle -->
 
 			<!-- clear filters -->
@@ -125,10 +158,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='72.727%'><span class='strong'>8</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='96.429%'><span class='strong'>54</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='27.273%'>3</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='3.571%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -140,10 +173,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='72.727%'><span class='strong'>8</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='96.364%'><span class='strong'>53</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='27.273%'>3</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='3.636%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -158,43 +191,1809 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>point_iteminfo_true</span>
-						<span class='test-time'>Aug 9, 2019 04:09:46 PM</span>
+						<span class='test-name'>中台接口测试 : 交易中心</span>
+						<span class='test-time'>Aug 9, 2019 06:28:04 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Aug 9, 2019 06:28:04 PM</span>
+	<span class='label end-time'>Aug 9, 2019 06:28:10 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+285ms</span>
+</div>
+	<div class='test-desc'>Pass: 53 ; Fail: 0 ; Skip: 0 ; </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>中台接口测试</span>
+				<span class='category label white-text'>交易中心</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='2'>
+					<div class='collapsible-header'>
+						<div class='node-name'>msfCreate</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:04 PM</span>
+						<span class='node-duration'>0h 0m 6s+590ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>msfCreate</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:10 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='3'>
+					<div class='collapsible-header'>
+						<div class='node-name'>iqgNewCreate</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:05 PM</span>
+						<span class='node-duration'>0h 0m 5s+981ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>iqgNewCreate</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='4'>
+					<div class='collapsible-header'>
+						<div class='node-name'>iqgCreate</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:05 PM</span>
+						<span class='node-duration'>0h 0m 5s+808ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>iqgCreate</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='5'>
+					<div class='collapsible-header'>
+						<div class='node-name'>jszCreate</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:05 PM</span>
+						<span class='node-duration'>0h 0m 5s+746ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>jszCreate</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='6'>
+					<div class='collapsible-header'>
+						<div class='node-name'>jszCreateWithdraw</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:05 PM</span>
+						<span class='node-duration'>0h 0m 5s+623ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='7'>
+					<div class='collapsible-header'>
+						<div class='node-name'>jszQueryWithdraw</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:05 PM</span>
+						<span class='node-duration'>0h 0m 5s+521ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='8'>
+					<div class='collapsible-header'>
+						<div class='node-name'>jszWithdrawList</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:05 PM</span>
+						<span class='node-duration'>0h 0m 5s+51ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='9'>
+					<div class='collapsible-header'>
+						<div class='node-name'>iqgActivate</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:06 PM</span>
+						<span class='node-duration'>0h 0m 4s+947ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>iqgActivate</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='10'>
+					<div class='collapsible-header'>
+						<div class='node-name'>msfQuery</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:06 PM</span>
+						<span class='node-duration'>0h 0m 4s+866ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='11'>
+					<div class='collapsible-header'>
+						<div class='node-name'>iqgQuery</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:06 PM</span>
+						<span class='node-duration'>0h 0m 4s+812ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='12'>
+					<div class='collapsible-header'>
+						<div class='node-name'>msfQueryAll</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:06 PM</span>
+						<span class='node-duration'>0h 0m 4s+746ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='13'>
+					<div class='collapsible-header'>
+						<div class='node-name'>iqgQueryAll</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:06 PM</span>
+						<span class='node-duration'>0h 0m 4s+667ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='14'>
+					<div class='collapsible-header'>
+						<div class='node-name'>msfHistory</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:06 PM</span>
+						<span class='node-duration'>0h 0m 4s+603ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='15'>
+					<div class='collapsible-header'>
+						<div class='node-name'>msfBill</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:06 PM</span>
+						<span class='node-duration'>0h 0m 4s+518ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='16'>
+					<div class='collapsible-header'>
+						<div class='node-name'>msfCreateRecharge</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:06 PM</span>
+						<span class='node-duration'>0h 0m 4s+441ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>createRecharge</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='17'>
+					<div class='collapsible-header'>
+						<div class='node-name'>iqgCreateRecharge</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:06 PM</span>
+						<span class='node-duration'>0h 0m 4s+285ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>createRecharge</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='18'>
+					<div class='collapsible-header'>
+						<div class='node-name'>msfCreateAdjust</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:06 PM</span>
+						<span class='node-duration'>0h 0m 4s+213ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>msfCreateAdjust</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='19'>
+					<div class='collapsible-header'>
+						<div class='node-name'>iqgCreateAdjust</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:06 PM</span>
+						<span class='node-duration'>0h 0m 4s+84ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>iqgCreateAdjust</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='20'>
+					<div class='collapsible-header'>
+						<div class='node-name'>msfInfoTypeCode</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:07 PM</span>
+						<span class='node-duration'>0h 0m 3s+994ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='21'>
+					<div class='collapsible-header'>
+						<div class='node-name'>msfCreateOrder</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:07 PM</span>
+						<span class='node-duration'>0h 0m 3s+917ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>msfCreateOrder</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='22'>
+					<div class='collapsible-header'>
+						<div class='node-name'>msfCreateSubOrder</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:07 PM</span>
+						<span class='node-duration'>0h 0m 3s+746ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='23'>
+					<div class='collapsible-header'>
+						<div class='node-name'>iqgCreateOrder</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:07 PM</span>
+						<span class='node-duration'>0h 0m 3s+665ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>iqgCreateOrder</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='24'>
+					<div class='collapsible-header'>
+						<div class='node-name'>iqgCreateSubOrder</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:07 PM</span>
+						<span class='node-duration'>0h 0m 3s+591ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='25'>
+					<div class='collapsible-header'>
+						<div class='node-name'>jszCreateOrder</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:07 PM</span>
+						<span class='node-duration'>0h 0m 3s+506ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>jszCreateOrder</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='26'>
+					<div class='collapsible-header'>
+						<div class='node-name'>jszCreateSettleOrder</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:07 PM</span>
+						<span class='node-duration'>0h 0m 3s+434ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='27'>
+					<div class='collapsible-header'>
+						<div class='node-name'>iqgFreeze</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:07 PM</span>
+						<span class='node-duration'>0h 0m 3s+354ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>iqgFreeze</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='28'>
+					<div class='collapsible-header'>
+						<div class='node-name'>msfRecharge</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:07 PM</span>
+						<span class='node-duration'>0h 0m 3s+288ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='29'>
+					<div class='collapsible-header'>
+						<div class='node-name'>iqgRecharge</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:07 PM</span>
+						<span class='node-duration'>0h 0m 3s+219ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='30'>
+					<div class='collapsible-header'>
+						<div class='node-name'>msfQueryRecharge</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:07 PM</span>
+						<span class='node-duration'>0h 0m 3s+137ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='31'>
+					<div class='collapsible-header'>
+						<div class='node-name'>iqgQueryRecharge</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:08 PM</span>
+						<span class='node-duration'>0h 0m 3s+14ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='32'>
+					<div class='collapsible-header'>
+						<div class='node-name'>msfAdjust</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:08 PM</span>
+						<span class='node-duration'>0h 0m 2s+955ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='33'>
+					<div class='collapsible-header'>
+						<div class='node-name'>iqgAdjust</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:08 PM</span>
+						<span class='node-duration'>0h 0m 2s+880ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='34'>
+					<div class='collapsible-header'>
+						<div class='node-name'>msfQueryAdjust</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:08 PM</span>
+						<span class='node-duration'>0h 0m 2s+794ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='35'>
+					<div class='collapsible-header'>
+						<div class='node-name'>iqgQueryAdjust</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:08 PM</span>
+						<span class='node-duration'>0h 0m 2s+702ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='36'>
+					<div class='collapsible-header'>
+						<div class='node-name'>msfUpdateOrder</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:08 PM</span>
+						<span class='node-duration'>0h 0m 2s+594ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='37'>
+					<div class='collapsible-header'>
+						<div class='node-name'>iqgUpdateOrder</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:08 PM</span>
+						<span class='node-duration'>0h 0m 2s+451ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='38'>
+					<div class='collapsible-header'>
+						<div class='node-name'>msfUpdateSubOrder</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:08 PM</span>
+						<span class='node-duration'>0h 0m 2s+385ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='39'>
+					<div class='collapsible-header'>
+						<div class='node-name'>iqgUpdateSubOrder</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:08 PM</span>
+						<span class='node-duration'>0h 0m 2s+275ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='40'>
+					<div class='collapsible-header'>
+						<div class='node-name'>msfCreatePay</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:08 PM</span>
+						<span class='node-duration'>0h 0m 2s+167ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>msfCreatePay</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='41'>
+					<div class='collapsible-header'>
+						<div class='node-name'>iqgCreatePay</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:08 PM</span>
+						<span class='node-duration'>0h 0m 2s+44ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>iqgCreatePay</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='42'>
+					<div class='collapsible-header'>
+						<div class='node-name'>jszCreatePay</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:09 PM</span>
+						<span class='node-duration'>0h 0m 1s+975ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>jszCreatePay</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='43'>
+					<div class='collapsible-header'>
+						<div class='node-name'>jszCreateSettlePay</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:09 PM</span>
+						<span class='node-duration'>0h 0m 1s+579ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='44'>
+					<div class='collapsible-header'>
+						<div class='node-name'>iqgCancel</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:09 PM</span>
+						<span class='node-duration'>0h 0m 1s+308ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='45'>
+					<div class='collapsible-header'>
+						<div class='node-name'>msfPay</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:09 PM</span>
+						<span class='node-duration'>0h 0m 1s+225ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='46'>
+					<div class='collapsible-header'>
+						<div class='node-name'>iqgPay</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:09 PM</span>
+						<span class='node-duration'>0h 0m 1s+126ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='47'>
+					<div class='collapsible-header'>
+						<div class='node-name'>msfQueryPay</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:10 PM</span>
+						<span class='node-duration'>0h 0m 1s+25ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='48'>
+					<div class='collapsible-header'>
+						<div class='node-name'>iqgQueryPay</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:10 PM</span>
+						<span class='node-duration'>0h 0m 0s+947ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='49'>
+					<div class='collapsible-header'>
+						<div class='node-name'>msfCreateRefund</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:10 PM</span>
+						<span class='node-duration'>0h 0m 0s+881ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>msfCreateRefund</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='50'>
+					<div class='collapsible-header'>
+						<div class='node-name'>iqgCreateRefund</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:10 PM</span>
+						<span class='node-duration'>0h 0m 0s+766ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>iqgCreateRefund</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='51'>
+					<div class='collapsible-header'>
+						<div class='node-name'>msfRefund</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:10 PM</span>
+						<span class='node-duration'>0h 0m 0s+662ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>msfRefund</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='52'>
+					<div class='collapsible-header'>
+						<div class='node-name'>iqgRefund</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:10 PM</span>
+						<span class='node-duration'>0h 0m 0s+570ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+											<span class='category label white-text'>iqgRefund</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='53'>
+					<div class='collapsible-header'>
+						<div class='node-name'>msfQueryRefund</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:10 PM</span>
+						<span class='node-duration'>0h 0m 0s+496ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='54'>
+					<div class='collapsible-header'>
+						<div class='node-name'>iqgQueryRefund</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:10 PM</span>
+						<span class='node-duration'>0h 0m 0s+427ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='55'>
+					<div class='test-heading'>
+						<span class='test-name'>中台接口测试 : 交易中心管理平台</span>
+						<span class='test-time'>Aug 9, 2019 06:28:10 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 9, 2019 04:09:46 PM</span>
-	<span class='label end-time'>Aug 9, 2019 04:09:46 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+248ms</span>
+	<span class='label start-time'>Aug 9, 2019 06:28:10 PM</span>
+	<span class='label end-time'>Aug 9, 2019 06:28:10 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+157ms</span>
 </div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>4:09:48 PM</td>
-					<td class='step-details'><pre>java.lang.AssertionError: 
-返回的thumbnail不正确，应返回：http://img2.haoshiqi.net/ma32483124920c8aea275a83545aa3b5aa.jpg?imageView2/0/w/420/h/420/q/70，实际返回：http://img2.haoshiqi.net/ma32483124920c8aea275a83545aa3b5aa.jpg?imageView2/0/w/420/h/420/q/90
-请求的url:https://m.betaapi.haoshiqi.net/point/iteminfo
-参数：v=3.4.6&pSkuId=2669
+	<div class='test-desc'>Pass: 0 ; Fail: 2 ; Skip: 0 ; </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>中台接口测试</span>
+				<span class='category label white-text'>交易中心管理平台</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf fail' status='fail' test-id='56'>
+					<div class='collapsible-header'>
+						<div class='node-name'>account</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:10 PM</span>
+						<span class='node-duration'>0h 0m 0s+356ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心管理平台</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'><pre>java.lang.AssertionError: 
+返回的errno不为0/errmsg不为success;
+返回的errno/errmsg:9300013/登录Token已经失效
+请求的url:https://trade.beta.doweidu.com/open/admin/http
+参数：method=get+account.account&token=NDQwNGJkZjVkOTllOTg4Y2M1MWE2MWYzMmE4YzM5MTc5&accountNumber=c4b9ba8a2810292f0ad2b5440436fc896c2733dc20968cd4
 cookie：null
-接口返回：{"errno":0,"errmsg":"success","data":{"skuId":28659,"productId":25302,"merchantId":616,"name":"接口测试专用商品，勿动动","price":1099,"marketPrice":5000,"thumbnail":"http://img2.haoshiqi.net/ma32483124920c8aea275a83545aa3b5aa.jpg?imageView2/0/w/420/h/420/q/90","point":10,"pointMetaId":40,"channelId":1,"startTime":1522512000,"endTime":1893427200,"auditStatus":2,"auditTime":1564735009,"enabled":1,"isDelete":0,"priority":0,"createdAt":1523873621,"updatedAt":1523873624,"type":1,"pointRules":"{\"1\":10}","listDisplay":1,"subchannel":"[\"1\",\"2\",\"3\"]","mappingId":544,"countLimit":0,"attrs":[{"name":"保质期","value":"2018/04/01生产-2028/02/08到期"}],"pointRulesDesc":[{"name":"","point":10,"grade":1}],"description":"","deliveryRangeTip":"不支持配送区域: 内蒙古自治区、西藏自治区、青海省、宁夏回族自治区、新疆维吾尔自治区","activity":{},"leftStock":999832,"merchantInfo":{"labels":[{"icon":"https://img2.haoshiqi.net/freeMail@3x.png","text":"本商品满1件包邮"}],"name":"蜜我食铺","udesk_merchant_id":"","udesk_merchant_name":"好食期-蜜我食铺"},"batchOptions":[{"batch":"1833552000","pSkuId":2669,"price":1099,"expired_date":1833552000,"manufactured_date":1522512000,"seller_time":1522512000,"lowest_price":1900,"offline_before_expired":2592000}],"attrOptions":[{"name":"保质期","list":[{"value":"2018/04/01-2028/02/08","pSkuId":2669}]}],"ugcBrief":{"list":[],"totalCnt":0},"pics":["http://img2.haoshiqi.net/ma32483124920c8aea275a83545aa3b5aa.jpg?imageView2/0/w/840/h/840/q/90","http://img2.haoshiqi.net/ma957f7a4f209ef5e58c7f8b8552d27af5.jpg?imageView2/0/w/840/h/840/q/90"],"labels":[{"icon":"https://img2.haoshiqi.net/item_detail_check@3x.png","text":"正品保证","link":"https://img1.haoshiqi.net/html/index.html?type=1"},{"icon":"https://img2.haoshiqi.net/item_detail_check@3x.png","text":"PICC承保","link":"https://img1.haoshiqi.net/html/index.html?type=2"},{"icon":"https://img2.haoshiqi.net/item_detail_check@3x.png","text":"24小时内发货","link":"https://img1.haoshiqi.net/html/index.html?type=4&time=24"},{"icon":"https://img2.haoshiqi.net/item_detail_check@3x.png","text":"售后无忧","link":"https://img1.haoshiqi.net/html/index.html?type=3"}],"pSkuId":2669,"manufactured_date":1522512000,"expired_date":1833552000,"offline_before_expired":2592000,"batch":"1833552000","skuType":"pointSku","merchant_type":1,"custom_service_id":100},"timestamp":1565338186,"serverlogid":"b2c5ccba-1fbc-4f96-b39c-f951aee3519f"}
+接口返回：{"errno":9300013,"errmsg":"登录Token已经失效","data":{},"timestamp":1565346490,"serverlogid":0}
 《-------------------------分割线-------------------------》
 	at org.testng.Assert.fail(Assert.java:94)
-	at com.duoweidu.config.generalAssert.GeneralAssertChannel.detailedAssert(GeneralAssertChannel.java:283)
-	at com.duoweidu.cases.interfaces.InterfaceTest.detailAssertTest(InterfaceTest.java:366)
-	at com.duoweidu.cases.hsq.openapi.point_iteminfo_test.pointIteminfoAssert(point_iteminfo_test.java:34)
-	at com.duoweidu.cases.hsq.openapi.point_iteminfo_test.point_iteminfo_true(point_iteminfo_test.java:22)
+	at com.duoweidu.config.generalAssert.GeneralAssertChannel.errnoAssert(GeneralAssertChannel.java:177)
+	at com.duoweidu.cases.interfaces.InterfaceTest.statusAssertTest(InterfaceTest.java:303)
+	at com.duoweidu.cases.interfaces.InterfaceTest.generalAssertTest(InterfaceTest.java:310)
+	at com.duoweidu.cases.interfaces.InterfaceTest.generalAssertTest(InterfaceTest.java:318)
+	at com.duoweidu.cases.interfaces.InterfaceTest.process(InterfaceTest.java:237)
+	at com.duoweidu.cases.tradecenterOpadmin.Account.account(Account.java:22)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -225,51 +2024,52 @@ cookie：null
 	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
 	at com.intellij.rt.execution.application.AppMainV2.main(AppMainV2.java:131)
 </pre></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
 				</li>
-				
-				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
-					<div class='test-heading'>
-						<span class='test-name'>tradecenter_orderlist_true</span>
-						<span class='test-time'>Aug 9, 2019 04:09:47 PM</span>
+				<li class='node level-1 leaf fail' status='fail' test-id='57'>
+					<div class='collapsible-header'>
+						<div class='node-name'>history</div>						
+						<span class='node-time'>Aug 9, 2019 06:28:10 PM</span>
+						<span class='node-duration'>0h 0m 0s+252ms</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Aug 9, 2019 04:09:47 PM</span>
-	<span class='label end-time'>Aug 9, 2019 04:09:47 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+364ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>4:09:48 PM</td>
-					<td class='step-details'><pre>java.lang.AssertionError: 
-返回的list.get(i).skuList.skuThumbnail不正确，应返回：http://img2.haoshiqi.net/mafa96f64265271d23bcdd2cdf3a5a163a.jpg?imageView2/0/w/200/h/200/q/70，实际返回：http://img2.haoshiqi.net/mafa96f64265271d23bcdd2cdf3a5a163a.jpg?imageView2/0/w/200/h/200/q/90
-请求的url:https://m.betaapi.haoshiqi.net/tradecenter/orderlist
-参数：v=3.4.6&token=03e7f32d012e26f02eb718fe580f9a5a
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>中台接口测试</span>
+											<span class='category label white-text'>交易中心管理平台</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>6:28:11 PM</td>
+													<td class='step-details'><pre>java.lang.AssertionError: 
+返回的errno不为0/errmsg不为success;
+返回的errno/errmsg:9300013/登录Token已经失效
+请求的url:https://trade.beta.doweidu.com/open/admin/http
+参数：method=get+account.history&pageNum=2&pageSize=10&token=NDQwNGJkZjVkOTllOTg4Y2M1MWE2MWYzMmE4YzM5MTc5&accountNumber=c4b9ba8a2810292f0ad2b5440436fc896c2733dc20968cd4
 cookie：null
-接口返回：{"errno":0,"errmsg":"success","data":{"list":[{"id":2163944870,"status":4,"consignee":"红红","note":"","payways":3,"orderId":2163944870,"userId":23391725,"merchantId":0,"addressId":1902,"pointPaymentId":1215,"point_payment_id":1215,"orderType":6,"deliveryType":1,"invoiceType":1,"invoiceTitle":"","consigneePhone":"130****6002","needPayPrice":1,"payPrice":0,"totalPrice":1,"deliveryPrice":0,"merchantDiscount":0,"platformDiscount":0,"totalPoint":10,"totalAmount":1,"deliveryStatus":1,"commentStatus":1,"deliveryProvince":"北京","deliveryCity":"北京市","deliveryDistrict":"东城区","deliveryDetailAddress":"110101","payTime":null,"deliveryTime":0,"confirmTime":0,"createdAt":1561091005,"updatedAt":1561091014,"discountPrice":0,"skuList":[{"id":16493030,"amount":1,"status":4,"point":10,"attribute_tags":"[{\"name\":\"\\u4e0b\\u5355\\u65f6\\u4fdd\\u8d28\\u671f\",\"value\":\"2019\\/01\\/01\\u751f\\u4ea7-2019\\/07\\/20\\u5230\\u671f\"},{\"name\":\"\\u89c4\\u683c\",\"value\":\"\\u7ed3\\u7b97\\u4ef7\"}]","userId":23391725,"orderId":2163944870,"productId":28620,"buSkuId":2845,"skuId":34333,"skuName":"test0415","skuThumbnail":"http://img2.haoshiqi.net/mab1285a0e58003c05ae633be7751b2b23.jpg?imageView2/0/w/200/h/200/q/90","marketPrice":20000,"totalPrice":1,"payPrice":0,"unitPrice":1,"commentStatus":1,"createdAt":1561091006,"updatedAt":1561091014,"confirmTime":0,"platform_discount":0,"saved_money":0,"discount_price":0,"attrs":[{"规格":"结算价"},{"批次":"1563552000"}],"canRefund":false}],"canRefund":false,"merchantName":"好食期","serviceTel":"4006458058","canCancel":false,"statusDesc":"交易关闭","statusLogo":""},{"id":2163944809,"status":4,"consignee":"红红","note":"","payways":3,"orderId":2163944809,"userId":23391725,"merchantId":0,"addressId":1902,"pointPaymentId":1214,"point_payment_id":1214,"orderType":6,"deliveryType":1,"invoiceType":1,"invoiceTitle":"","consigneePhone":"130****6002","needPayPrice":1,"payPrice":0,"totalPrice":1,"deliveryPrice":0,"merchantDiscount":0,"platformDiscount":0,"totalPoint":10,"totalAmount":1,"deliveryStatus":1,"commentStatus":1,"deliveryProvince":"北京","deliveryCity":"北京市","deliveryDistrict":"东城区","deliveryDetailAddress":"110101","payTime":null,"deliveryTime":0,"confirmTime":0,"createdAt":1561014887,"updatedAt":1561014892,"discountPrice":0,"skuList":[{"id":16492969,"amount":1,"status":4,"point":10,"attribute_tags":"[{\"name\":\"\\u4e0b\\u5355\\u65f6\\u4fdd\\u8d28\\u671f\",\"value\":\"2019\\/01\\/01\\u751f\\u4ea7-2019\\/07\\/20\\u5230\\u671f\"},{\"name\":\"\\u89c4\\u683c\",\"value\":\"\\u7ed3\\u7b97\\u4ef7\"}]","userId":23391725,"orderId":2163944809,"productId":28620,"buSkuId":2845,"skuId":34333,"skuName":"test0415","skuThumbnail":"http://img2.haoshiqi.net/mab1285a0e58003c05ae633be7751b2b23.jpg?imageView2/0/w/200/h/200/q/90","marketPrice":20000,"totalPrice":1,"payPrice":0,"unitPrice":1,"commentStatus":1,"createdAt":1561014887,"updatedAt":1561014892,"confirmTime":0,"platform_discount":0,"saved_money":0,"discount_price":0,"attrs":[{"规格":"结算价"},{"批次":"1563552000"}],"canRefund":false}],"canRefund":false,"merchantName":"好食期","serviceTel":"4006458058","canCancel":false,"statusDesc":"交易关闭","statusLogo":""},{"id":2163944808,"status":7,"consignee":"红红","note":"","payways":3,"orderId":2163944808,"userId":23391725,"merchantId":0,"addressId":1902,"pointPaymentId":1213,"point_payment_id":1213,"orderType":6,"deliveryType":1,"invoiceType":1,"invoiceTitle":"","consigneePhone":"130****6002","needPayPrice":1,"payPrice":1,"totalPrice":1,"deliveryPrice":0,"merchantDiscount":0,"platformDiscount":0,"totalPoint":10,"totalAmount":1,"deliveryStatus":1,"commentStatus":1,"deliveryProvince":"北京","deliveryCity":"北京市","deliveryDistrict":"东城区","deliveryDetailAddress":"110101","payTime":1561014878,"deliveryTime":0,"confirmTime":0,"createdAt":1561014872,"updatedAt":1561014912,"discountPrice":0,"skuList":[{"id":16492968,"amount":1,"status":7,"point":10,"attribute_tags":"[{\"name\":\"\\u4e0b\\u5355\\u65f6\\u4fdd\\u8d28\\u671f\",\"value\":\"2018\\/04\\/15\\u751f\\u4ea7-2019\\/07\\/09\\u5230\\u671f\"},{\"name\":\"\\u89c4\\u683c\",\"value\":\"600g\"}]","userId":23391725,"orderId":2163944808,"productId":28643,"buSkuId":2848,"skuId":34358,"skuName":"啊啊啊啊商品信息图","skuThumbnail":"http://img2.haoshiqi.net/mafa96f64265271d23bcdd2cdf3a5a163a.jpg?imageView2/0/w/200/h/200/q/90","marketPrice":1500,"totalPrice":1,"payPrice":0,"unitPrice":1,"commentStatus":1,"createdAt":1561014872,"updatedAt":1561014913,"confirmTime":0,"platform_discount":0,"saved_money":0,"discount_price":0,"attrs":[{"规格":"600g"},{"批次":"1562601600"}]}],"canRefund":false,"refundId":1007655,"refundStatus":3,"refundStatusDesc":"退款成功","merchantName":"好食期","serviceTel":"4006458058","canCancel":false,"statusDesc":"已退款","canViewDelivery":false,"statusLogo":"http://img1.haoshiqi.net/resource/trade_refund.png"}],"totalPage":1,"totalCnt":3},"timestamp":1565338187,"serverlogid":"547a1cea-cd1c-484b-a20d-6a9ba38b43e4"}
+接口返回：{"errno":9300013,"errmsg":"登录Token已经失效","data":{},"timestamp":1565346490,"serverlogid":0}
 《-------------------------分割线-------------------------》
 	at org.testng.Assert.fail(Assert.java:94)
-	at com.duoweidu.config.generalAssert.GeneralAssertChannel.detailedAssert(GeneralAssertChannel.java:283)
-	at com.duoweidu.cases.interfaces.InterfaceTest.detailAssertTest(InterfaceTest.java:366)
-	at com.duoweidu.cases.hsq.openapi.tradecenter_orderlist_test.tradecenterOrderlistAssert(tradecenter_orderlist_test.java:110)
-	at com.duoweidu.cases.hsq.openapi.tradecenter_orderlist_test.tradecenter_orderlist_true(tradecenter_orderlist_test.java:32)
+	at com.duoweidu.config.generalAssert.GeneralAssertChannel.errnoAssert(GeneralAssertChannel.java:177)
+	at com.duoweidu.cases.interfaces.InterfaceTest.statusAssertTest(InterfaceTest.java:303)
+	at com.duoweidu.cases.interfaces.InterfaceTest.generalAssertTest(InterfaceTest.java:310)
+	at com.duoweidu.cases.interfaces.InterfaceTest.generalAssertTest(InterfaceTest.java:318)
+	at com.duoweidu.cases.interfaces.InterfaceTest.process(InterfaceTest.java:237)
+	at com.duoweidu.cases.tradecenterOpadmin.History.history(History.java:23)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -300,356 +2100,35 @@ cookie：null
 	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
 	at com.intellij.rt.execution.application.AppMainV2.main(AppMainV2.java:131)
 </pre></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
 					</div>
 				</li>
 				
 				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='3'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='58'>
 					<div class='test-heading'>
-						<span class='test-name'>tradecenter_orderinfo_true</span>
-						<span class='test-time'>Aug 9, 2019 04:09:47 PM</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Aug 9, 2019 04:09:47 PM</span>
-	<span class='label end-time'>Aug 9, 2019 04:09:48 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+229ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>4:09:48 PM</td>
-					<td class='step-details'><pre>java.lang.AssertionError: 
-返回的model.skuList.skuThumbnail不正确，应返回：http://img2.haoshiqi.net/ma32483124920c8aea275a83545aa3b5aa.jpg?imageView2/0/w/200/h/200/q/70，实际返回：http://img2.haoshiqi.net/ma32483124920c8aea275a83545aa3b5aa.jpg?imageView2/0/w/200/h/200/q/90
-请求的url:https://m.betaapi.haoshiqi.net/tradecenter/orderinfo
-参数：v=3.4.6&token=03e7f32d012e26f02eb718fe580f9a5a&orderId=2163944807
-cookie：null
-接口返回：{"errno":0,"errmsg":"success","data":{"id":2163944807,"status":4,"consignee":"红红","note":"","payways":3,"orderId":2163944807,"userId":23391725,"merchantId":0,"addressId":1902,"pointPaymentId":0,"point_payment_id":0,"orderType":6,"deliveryType":1,"invoiceType":1,"invoiceTitle":"","consigneePhone":"130****6002","needPayPrice":1,"payPrice":0,"totalPrice":1099,"deliveryPrice":0,"merchantDiscount":0,"platformDiscount":0,"totalPoint":88,"totalAmount":1,"deliveryStatus":1,"commentStatus":1,"deliveryProvince":"北京","deliveryCity":"北京市","deliveryDistrict":"东城区","deliveryDetailAddress":"110101","payTime":null,"deliveryTime":0,"confirmTime":0,"createdAt":1561014860,"updatedAt":1561014861,"discountPrice":0,"saved_money":0,"solicitation_time":0,"deductible_amount":0,"premium_income":0,"sham_total_price":0,"merchant_order_note":"","spm":"point","cps_name":"","skuList":[{"id":16492967,"amount":1,"status":4,"point":88,"attribute_tags":"[{\"name\":\"\\u4e0b\\u5355\\u65f6\\u4fdd\\u8d28\\u671f\",\"value\":\"2018\\/04\\/01\\u751f\\u4ea7-2028\\/02\\/08\\u5230\\u671f\"}]","userId":23391725,"orderId":2163944807,"productId":25302,"buSkuId":2669,"skuId":28659,"skuName":"接口测试专用商品，勿动动","skuThumbnail":"http://img2.haoshiqi.net/ma32483124920c8aea275a83545aa3b5aa.jpg?imageView2/0/w/200/h/200/q/90","marketPrice":5000,"totalPrice":1099,"payPrice":0,"unitPrice":1099,"commentStatus":1,"createdAt":1561014860,"updatedAt":1561014861,"confirmTime":0,"platform_discount":0,"saved_money":0,"discount_price":0,"refundInfo":[],"attrs":[{"name":"下单时保质期","value":"2018/04/01生产-2028/02/08到期"}],"canRefund":false}],"canRefund":false,"merchantName":"好食期","serviceTel":"4006458058","canCancel":false,"statusDesc":"交易关闭","statusLogo":"","udesk_merchant_id":"","udesk_merchant_name":"好食期-蜜我食铺","custom_service_id":100,"message":{"id":18,"channel_id":1,"position":4,"start_time":1557987292,"end_time":1588240457,"title":"详情页测试公告","content":"确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告","status":2,"is_deleted":1}},"timestamp":1565338188,"serverlogid":"cf5ee320-9223-4629-a9cf-2266cb1feffc"}
-《-------------------------分割线-------------------------》
-	at org.testng.Assert.fail(Assert.java:94)
-	at com.duoweidu.config.generalAssert.GeneralAssertChannel.detailedAssert(GeneralAssertChannel.java:283)
-	at com.duoweidu.cases.interfaces.InterfaceTest.detailAssertTest(InterfaceTest.java:366)
-	at com.duoweidu.cases.hsq.openapi.tradecenter_orderinfo_test.tradecenterOrderinfoAssert(tradecenter_orderinfo_test.java:89)
-	at com.duoweidu.cases.hsq.openapi.tradecenter_orderinfo_test.tradecenter_orderinfo_true(tradecenter_orderinfo_test.java:22)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at com.intellij.rt.execution.application.AppMainV2.main(AppMainV2.java:131)
-</pre></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
-					<div class='test-heading'>
-						<span class='test-name'>point_index_true</span>
-						<span class='test-time'>Aug 9, 2019 04:09:44 PM</span>
+						<span class='test-name'>中台接口测试 : 消息推送</span>
+						<span class='test-time'>Aug 9, 2019 06:28:10 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 9, 2019 04:09:44 PM</span>
-	<span class='label end-time'>Aug 9, 2019 04:09:45 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+527ms</span>
+	<span class='label start-time'>Aug 9, 2019 06:28:10 PM</span>
+	<span class='label end-time'>Aug 9, 2019 06:28:10 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:09:48 PM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
-					<div class='test-heading'>
-						<span class='test-name'>point_recommenditems_true</span>
-						<span class='test-time'>Aug 9, 2019 04:09:45 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Aug 9, 2019 04:09:45 PM</span>
-	<span class='label end-time'>Aug 9, 2019 04:09:46 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+226ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:09:48 PM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
-					<div class='test-heading'>
-						<span class='test-name'>point_topicinfo_true</span>
-						<span class='test-time'>Aug 9, 2019 04:09:46 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Aug 9, 2019 04:09:46 PM</span>
-	<span class='label end-time'>Aug 9, 2019 04:09:46 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+129ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:09:48 PM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
-					<div class='test-heading'>
-						<span class='test-name'>point_topicbuskulist_true</span>
-						<span class='test-time'>Aug 9, 2019 04:09:46 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Aug 9, 2019 04:09:46 PM</span>
-	<span class='label end-time'>Aug 9, 2019 04:09:46 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+244ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:09:48 PM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
-					<div class='test-heading'>
-						<span class='test-name'>point_skulist_true</span>
-						<span class='test-time'>Aug 9, 2019 04:09:46 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Aug 9, 2019 04:09:46 PM</span>
-	<span class='label end-time'>Aug 9, 2019 04:09:46 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+201ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:09:48 PM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
-					<div class='test-heading'>
-						<span class='test-name'>tradecenter_pointorderpreview_true</span>
-						<span class='test-time'>Aug 9, 2019 04:09:46 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Aug 9, 2019 04:09:46 PM</span>
-	<span class='label end-time'>Aug 9, 2019 04:09:47 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+237ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:09:48 PM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
-					<div class='test-heading'>
-						<span class='test-name'>tradecenter_pointordersubmit_true</span>
-						<span class='test-time'>Aug 9, 2019 04:09:47 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Aug 9, 2019 04:09:47 PM</span>
-	<span class='label end-time'>Aug 9, 2019 04:09:47 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+104ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:09:48 PM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
-					<div class='test-heading'>
-						<span class='test-name'>order_linkmallpointorder_true</span>
-						<span class='test-time'>Aug 9, 2019 04:09:47 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Aug 9, 2019 04:09:47 PM</span>
-	<span class='label end-time'>Aug 9, 2019 04:09:47 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+290ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:09:48 PM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
+	<div class='test-desc'>Pass: 0 ; Fail: 0 ; Skip: 0 ; </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>中台接口测试</span>
+				<span class='category label white-text'>消息推送</span>
+			</div>
 	</div>
 					</div>
 				</li>
@@ -678,6 +2157,1390 @@ cookie：null
 
 </div>
 <!-- test view -->
+<div id='category-view' class='view hide'>
+
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+				
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Categories</h3>
+			<ul id='category-collection' class='category-collection'>
+				
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>中台接口测试</span>
+						<span class='category-status right'>
+							<span class='label pass'>55</span>
+							<span class='label fail'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 55</span>
+							<span class='label red lighten-1 white-text'>Failed: 3</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 9, 2019 06:28:04 PM</td>
+										<td class='linked' test-id='1'>交易中心</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:04 PM</td>
+										<td class='linked' test-id='2'>交易中心.msfCreate</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:05 PM</td>
+										<td class='linked' test-id='3'>交易中心.iqgNewCreate</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:05 PM</td>
+										<td class='linked' test-id='4'>交易中心.iqgCreate</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:05 PM</td>
+										<td class='linked' test-id='5'>交易中心.jszCreate</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:05 PM</td>
+										<td class='linked' test-id='6'>交易中心.jszCreateWithdraw</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:05 PM</td>
+										<td class='linked' test-id='7'>交易中心.jszQueryWithdraw</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:05 PM</td>
+										<td class='linked' test-id='8'>交易中心.jszWithdrawList</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:06 PM</td>
+										<td class='linked' test-id='9'>交易中心.iqgActivate</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:06 PM</td>
+										<td class='linked' test-id='10'>交易中心.msfQuery</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:06 PM</td>
+										<td class='linked' test-id='11'>交易中心.iqgQuery</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:06 PM</td>
+										<td class='linked' test-id='12'>交易中心.msfQueryAll</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:06 PM</td>
+										<td class='linked' test-id='13'>交易中心.iqgQueryAll</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:06 PM</td>
+										<td class='linked' test-id='14'>交易中心.msfHistory</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:06 PM</td>
+										<td class='linked' test-id='15'>交易中心.msfBill</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:06 PM</td>
+										<td class='linked' test-id='16'>交易中心.msfCreateRecharge</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:06 PM</td>
+										<td class='linked' test-id='17'>交易中心.iqgCreateRecharge</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:06 PM</td>
+										<td class='linked' test-id='18'>交易中心.msfCreateAdjust</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:06 PM</td>
+										<td class='linked' test-id='19'>交易中心.iqgCreateAdjust</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:07 PM</td>
+										<td class='linked' test-id='20'>交易中心.msfInfoTypeCode</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:07 PM</td>
+										<td class='linked' test-id='21'>交易中心.msfCreateOrder</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:07 PM</td>
+										<td class='linked' test-id='22'>交易中心.msfCreateSubOrder</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:07 PM</td>
+										<td class='linked' test-id='23'>交易中心.iqgCreateOrder</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:07 PM</td>
+										<td class='linked' test-id='24'>交易中心.iqgCreateSubOrder</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:07 PM</td>
+										<td class='linked' test-id='25'>交易中心.jszCreateOrder</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:07 PM</td>
+										<td class='linked' test-id='26'>交易中心.jszCreateSettleOrder</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:07 PM</td>
+										<td class='linked' test-id='27'>交易中心.iqgFreeze</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:07 PM</td>
+										<td class='linked' test-id='28'>交易中心.msfRecharge</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:07 PM</td>
+										<td class='linked' test-id='29'>交易中心.iqgRecharge</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:07 PM</td>
+										<td class='linked' test-id='30'>交易中心.msfQueryRecharge</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:08 PM</td>
+										<td class='linked' test-id='31'>交易中心.iqgQueryRecharge</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:08 PM</td>
+										<td class='linked' test-id='32'>交易中心.msfAdjust</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:08 PM</td>
+										<td class='linked' test-id='33'>交易中心.iqgAdjust</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:08 PM</td>
+										<td class='linked' test-id='34'>交易中心.msfQueryAdjust</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:08 PM</td>
+										<td class='linked' test-id='35'>交易中心.iqgQueryAdjust</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:08 PM</td>
+										<td class='linked' test-id='36'>交易中心.msfUpdateOrder</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:08 PM</td>
+										<td class='linked' test-id='37'>交易中心.iqgUpdateOrder</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:08 PM</td>
+										<td class='linked' test-id='38'>交易中心.msfUpdateSubOrder</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:08 PM</td>
+										<td class='linked' test-id='39'>交易中心.iqgUpdateSubOrder</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:08 PM</td>
+										<td class='linked' test-id='40'>交易中心.msfCreatePay</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:08 PM</td>
+										<td class='linked' test-id='41'>交易中心.iqgCreatePay</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:09 PM</td>
+										<td class='linked' test-id='42'>交易中心.jszCreatePay</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:09 PM</td>
+										<td class='linked' test-id='43'>交易中心.jszCreateSettlePay</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:09 PM</td>
+										<td class='linked' test-id='44'>交易中心.iqgCancel</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:09 PM</td>
+										<td class='linked' test-id='45'>交易中心.msfPay</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:09 PM</td>
+										<td class='linked' test-id='46'>交易中心.iqgPay</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:10 PM</td>
+										<td class='linked' test-id='47'>交易中心.msfQueryPay</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:10 PM</td>
+										<td class='linked' test-id='48'>交易中心.iqgQueryPay</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:10 PM</td>
+										<td class='linked' test-id='49'>交易中心.msfCreateRefund</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:10 PM</td>
+										<td class='linked' test-id='50'>交易中心.iqgCreateRefund</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:10 PM</td>
+										<td class='linked' test-id='51'>交易中心.msfRefund</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:10 PM</td>
+										<td class='linked' test-id='52'>交易中心.iqgRefund</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:10 PM</td>
+										<td class='linked' test-id='53'>交易中心.msfQueryRefund</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:10 PM</td>
+										<td class='linked' test-id='54'>交易中心.iqgQueryRefund</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:10 PM</td>
+										<td class='linked' test-id='55'>交易中心管理平台</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:10 PM</td>
+										<td class='linked' test-id='56'>交易中心管理平台.account</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:10 PM</td>
+										<td class='linked' test-id='57'>交易中心管理平台.history</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:10 PM</td>
+										<td class='linked' test-id='58'>消息推送</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>交易中心</span>
+						<span class='category-status right'>
+							<span class='label pass'>54</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 54</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 9, 2019 06:28:04 PM</td>
+										<td class='linked' test-id='1'>交易中心</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:04 PM</td>
+										<td class='linked' test-id='2'>交易中心.msfCreate</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:05 PM</td>
+										<td class='linked' test-id='3'>交易中心.iqgNewCreate</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:05 PM</td>
+										<td class='linked' test-id='4'>交易中心.iqgCreate</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:05 PM</td>
+										<td class='linked' test-id='5'>交易中心.jszCreate</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:05 PM</td>
+										<td class='linked' test-id='6'>交易中心.jszCreateWithdraw</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:05 PM</td>
+										<td class='linked' test-id='7'>交易中心.jszQueryWithdraw</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:05 PM</td>
+										<td class='linked' test-id='8'>交易中心.jszWithdrawList</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:06 PM</td>
+										<td class='linked' test-id='9'>交易中心.iqgActivate</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:06 PM</td>
+										<td class='linked' test-id='10'>交易中心.msfQuery</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:06 PM</td>
+										<td class='linked' test-id='11'>交易中心.iqgQuery</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:06 PM</td>
+										<td class='linked' test-id='12'>交易中心.msfQueryAll</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:06 PM</td>
+										<td class='linked' test-id='13'>交易中心.iqgQueryAll</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:06 PM</td>
+										<td class='linked' test-id='14'>交易中心.msfHistory</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:06 PM</td>
+										<td class='linked' test-id='15'>交易中心.msfBill</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:06 PM</td>
+										<td class='linked' test-id='16'>交易中心.msfCreateRecharge</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:06 PM</td>
+										<td class='linked' test-id='17'>交易中心.iqgCreateRecharge</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:06 PM</td>
+										<td class='linked' test-id='18'>交易中心.msfCreateAdjust</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:06 PM</td>
+										<td class='linked' test-id='19'>交易中心.iqgCreateAdjust</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:07 PM</td>
+										<td class='linked' test-id='20'>交易中心.msfInfoTypeCode</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:07 PM</td>
+										<td class='linked' test-id='21'>交易中心.msfCreateOrder</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:07 PM</td>
+										<td class='linked' test-id='22'>交易中心.msfCreateSubOrder</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:07 PM</td>
+										<td class='linked' test-id='23'>交易中心.iqgCreateOrder</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:07 PM</td>
+										<td class='linked' test-id='24'>交易中心.iqgCreateSubOrder</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:07 PM</td>
+										<td class='linked' test-id='25'>交易中心.jszCreateOrder</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:07 PM</td>
+										<td class='linked' test-id='26'>交易中心.jszCreateSettleOrder</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:07 PM</td>
+										<td class='linked' test-id='27'>交易中心.iqgFreeze</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:07 PM</td>
+										<td class='linked' test-id='28'>交易中心.msfRecharge</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:07 PM</td>
+										<td class='linked' test-id='29'>交易中心.iqgRecharge</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:07 PM</td>
+										<td class='linked' test-id='30'>交易中心.msfQueryRecharge</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:08 PM</td>
+										<td class='linked' test-id='31'>交易中心.iqgQueryRecharge</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:08 PM</td>
+										<td class='linked' test-id='32'>交易中心.msfAdjust</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:08 PM</td>
+										<td class='linked' test-id='33'>交易中心.iqgAdjust</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:08 PM</td>
+										<td class='linked' test-id='34'>交易中心.msfQueryAdjust</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:08 PM</td>
+										<td class='linked' test-id='35'>交易中心.iqgQueryAdjust</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:08 PM</td>
+										<td class='linked' test-id='36'>交易中心.msfUpdateOrder</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:08 PM</td>
+										<td class='linked' test-id='37'>交易中心.iqgUpdateOrder</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:08 PM</td>
+										<td class='linked' test-id='38'>交易中心.msfUpdateSubOrder</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:08 PM</td>
+										<td class='linked' test-id='39'>交易中心.iqgUpdateSubOrder</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:08 PM</td>
+										<td class='linked' test-id='40'>交易中心.msfCreatePay</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:08 PM</td>
+										<td class='linked' test-id='41'>交易中心.iqgCreatePay</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:09 PM</td>
+										<td class='linked' test-id='42'>交易中心.jszCreatePay</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:09 PM</td>
+										<td class='linked' test-id='43'>交易中心.jszCreateSettlePay</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:09 PM</td>
+										<td class='linked' test-id='44'>交易中心.iqgCancel</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:09 PM</td>
+										<td class='linked' test-id='45'>交易中心.msfPay</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:09 PM</td>
+										<td class='linked' test-id='46'>交易中心.iqgPay</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:10 PM</td>
+										<td class='linked' test-id='47'>交易中心.msfQueryPay</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:10 PM</td>
+										<td class='linked' test-id='48'>交易中心.iqgQueryPay</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:10 PM</td>
+										<td class='linked' test-id='49'>交易中心.msfCreateRefund</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:10 PM</td>
+										<td class='linked' test-id='50'>交易中心.iqgCreateRefund</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:10 PM</td>
+										<td class='linked' test-id='51'>交易中心.msfRefund</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:10 PM</td>
+										<td class='linked' test-id='52'>交易中心.iqgRefund</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:10 PM</td>
+										<td class='linked' test-id='53'>交易中心.msfQueryRefund</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:10 PM</td>
+										<td class='linked' test-id='54'>交易中心.iqgQueryRefund</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>msfCreate</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 9, 2019 06:28:04 PM</td>
+										<td class='linked' test-id='2'>交易中心.msfCreate</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>iqgNewCreate</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 9, 2019 06:28:05 PM</td>
+										<td class='linked' test-id='3'>交易中心.iqgNewCreate</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>iqgCreate</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 9, 2019 06:28:05 PM</td>
+										<td class='linked' test-id='4'>交易中心.iqgCreate</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>jszCreate</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 9, 2019 06:28:05 PM</td>
+										<td class='linked' test-id='5'>交易中心.jszCreate</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>iqgActivate</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 9, 2019 06:28:06 PM</td>
+										<td class='linked' test-id='9'>交易中心.iqgActivate</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>createRecharge</span>
+						<span class='category-status right'>
+							<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 9, 2019 06:28:06 PM</td>
+										<td class='linked' test-id='16'>交易中心.msfCreateRecharge</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:06 PM</td>
+										<td class='linked' test-id='17'>交易中心.iqgCreateRecharge</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>msfCreateAdjust</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 9, 2019 06:28:06 PM</td>
+										<td class='linked' test-id='18'>交易中心.msfCreateAdjust</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>iqgCreateAdjust</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 9, 2019 06:28:06 PM</td>
+										<td class='linked' test-id='19'>交易中心.iqgCreateAdjust</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>msfCreateOrder</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 9, 2019 06:28:07 PM</td>
+										<td class='linked' test-id='21'>交易中心.msfCreateOrder</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>iqgCreateOrder</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 9, 2019 06:28:07 PM</td>
+										<td class='linked' test-id='23'>交易中心.iqgCreateOrder</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>jszCreateOrder</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 9, 2019 06:28:07 PM</td>
+										<td class='linked' test-id='25'>交易中心.jszCreateOrder</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>iqgFreeze</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 9, 2019 06:28:07 PM</td>
+										<td class='linked' test-id='27'>交易中心.iqgFreeze</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>msfCreatePay</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 9, 2019 06:28:08 PM</td>
+										<td class='linked' test-id='40'>交易中心.msfCreatePay</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>iqgCreatePay</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 9, 2019 06:28:08 PM</td>
+										<td class='linked' test-id='41'>交易中心.iqgCreatePay</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>jszCreatePay</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 9, 2019 06:28:09 PM</td>
+										<td class='linked' test-id='42'>交易中心.jszCreatePay</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>msfCreateRefund</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 9, 2019 06:28:10 PM</td>
+										<td class='linked' test-id='49'>交易中心.msfCreateRefund</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>iqgCreateRefund</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 9, 2019 06:28:10 PM</td>
+										<td class='linked' test-id='50'>交易中心.iqgCreateRefund</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>msfRefund</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 9, 2019 06:28:10 PM</td>
+										<td class='linked' test-id='51'>交易中心.msfRefund</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>iqgRefund</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 9, 2019 06:28:10 PM</td>
+										<td class='linked' test-id='52'>交易中心.iqgRefund</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>交易中心管理平台</span>
+						<span class='category-status right'>
+							<span class='label fail'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 3</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 9, 2019 06:28:10 PM</td>
+										<td class='linked' test-id='55'>交易中心管理平台</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:10 PM</td>
+										<td class='linked' test-id='56'>交易中心管理平台.account</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Aug 9, 2019 06:28:10 PM</td>
+										<td class='linked' test-id='57'>交易中心管理平台.history</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>消息推送</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 9, 2019 06:28:10 PM</td>
+										<td class='linked' test-id='58'>消息推送</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
 <!-- category view -->
 <div id='exception-view' class='view hide'>
 
@@ -707,7 +3570,7 @@ cookie：null
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
                                 <span class='exception-name'>java.lang.AssertionError</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>3</span></span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
                             </div>
                             <div class='exception-content hide'>
                                 <div class='exception-tests'>
@@ -721,20 +3584,23 @@ cookie：null
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Aug 9, 2019 04:09:46 PM</td>
-                                                        <td class='linked' test-id='1'>point_iteminfo_true</td>
+                                                        <td>Aug 9, 2019 06:28:10 PM</td>
+                                                        <td class='linked' test-id='56'>交易中心管理平台.account</td>
                                                         <td><pre><pre>java.lang.AssertionError: 
-返回的thumbnail不正确，应返回：http://img2.haoshiqi.net/ma32483124920c8aea275a83545aa3b5aa.jpg?imageView2/0/w/420/h/420/q/70，实际返回：http://img2.haoshiqi.net/ma32483124920c8aea275a83545aa3b5aa.jpg?imageView2/0/w/420/h/420/q/90
-请求的url:https://m.betaapi.haoshiqi.net/point/iteminfo
-参数：v=3.4.6&pSkuId=2669
+返回的errno不为0/errmsg不为success;
+返回的errno/errmsg:9300013/登录Token已经失效
+请求的url:https://trade.beta.doweidu.com/open/admin/http
+参数：method=get+account.account&token=NDQwNGJkZjVkOTllOTg4Y2M1MWE2MWYzMmE4YzM5MTc5&accountNumber=c4b9ba8a2810292f0ad2b5440436fc896c2733dc20968cd4
 cookie：null
-接口返回：{"errno":0,"errmsg":"success","data":{"skuId":28659,"productId":25302,"merchantId":616,"name":"接口测试专用商品，勿动动","price":1099,"marketPrice":5000,"thumbnail":"http://img2.haoshiqi.net/ma32483124920c8aea275a83545aa3b5aa.jpg?imageView2/0/w/420/h/420/q/90","point":10,"pointMetaId":40,"channelId":1,"startTime":1522512000,"endTime":1893427200,"auditStatus":2,"auditTime":1564735009,"enabled":1,"isDelete":0,"priority":0,"createdAt":1523873621,"updatedAt":1523873624,"type":1,"pointRules":"{\"1\":10}","listDisplay":1,"subchannel":"[\"1\",\"2\",\"3\"]","mappingId":544,"countLimit":0,"attrs":[{"name":"保质期","value":"2018/04/01生产-2028/02/08到期"}],"pointRulesDesc":[{"name":"","point":10,"grade":1}],"description":"","deliveryRangeTip":"不支持配送区域: 内蒙古自治区、西藏自治区、青海省、宁夏回族自治区、新疆维吾尔自治区","activity":{},"leftStock":999832,"merchantInfo":{"labels":[{"icon":"https://img2.haoshiqi.net/freeMail@3x.png","text":"本商品满1件包邮"}],"name":"蜜我食铺","udesk_merchant_id":"","udesk_merchant_name":"好食期-蜜我食铺"},"batchOptions":[{"batch":"1833552000","pSkuId":2669,"price":1099,"expired_date":1833552000,"manufactured_date":1522512000,"seller_time":1522512000,"lowest_price":1900,"offline_before_expired":2592000}],"attrOptions":[{"name":"保质期","list":[{"value":"2018/04/01-2028/02/08","pSkuId":2669}]}],"ugcBrief":{"list":[],"totalCnt":0},"pics":["http://img2.haoshiqi.net/ma32483124920c8aea275a83545aa3b5aa.jpg?imageView2/0/w/840/h/840/q/90","http://img2.haoshiqi.net/ma957f7a4f209ef5e58c7f8b8552d27af5.jpg?imageView2/0/w/840/h/840/q/90"],"labels":[{"icon":"https://img2.haoshiqi.net/item_detail_check@3x.png","text":"正品保证","link":"https://img1.haoshiqi.net/html/index.html?type=1"},{"icon":"https://img2.haoshiqi.net/item_detail_check@3x.png","text":"PICC承保","link":"https://img1.haoshiqi.net/html/index.html?type=2"},{"icon":"https://img2.haoshiqi.net/item_detail_check@3x.png","text":"24小时内发货","link":"https://img1.haoshiqi.net/html/index.html?type=4&time=24"},{"icon":"https://img2.haoshiqi.net/item_detail_check@3x.png","text":"售后无忧","link":"https://img1.haoshiqi.net/html/index.html?type=3"}],"pSkuId":2669,"manufactured_date":1522512000,"expired_date":1833552000,"offline_before_expired":2592000,"batch":"1833552000","skuType":"pointSku","merchant_type":1,"custom_service_id":100},"timestamp":1565338186,"serverlogid":"b2c5ccba-1fbc-4f96-b39c-f951aee3519f"}
+接口返回：{"errno":9300013,"errmsg":"登录Token已经失效","data":{},"timestamp":1565346490,"serverlogid":0}
 《-------------------------分割线-------------------------》
 	at org.testng.Assert.fail(Assert.java:94)
-	at com.duoweidu.config.generalAssert.GeneralAssertChannel.detailedAssert(GeneralAssertChannel.java:283)
-	at com.duoweidu.cases.interfaces.InterfaceTest.detailAssertTest(InterfaceTest.java:366)
-	at com.duoweidu.cases.hsq.openapi.point_iteminfo_test.pointIteminfoAssert(point_iteminfo_test.java:34)
-	at com.duoweidu.cases.hsq.openapi.point_iteminfo_test.point_iteminfo_true(point_iteminfo_test.java:22)
+	at com.duoweidu.config.generalAssert.GeneralAssertChannel.errnoAssert(GeneralAssertChannel.java:177)
+	at com.duoweidu.cases.interfaces.InterfaceTest.statusAssertTest(InterfaceTest.java:303)
+	at com.duoweidu.cases.interfaces.InterfaceTest.generalAssertTest(InterfaceTest.java:310)
+	at com.duoweidu.cases.interfaces.InterfaceTest.generalAssertTest(InterfaceTest.java:318)
+	at com.duoweidu.cases.interfaces.InterfaceTest.process(InterfaceTest.java:237)
+	at com.duoweidu.cases.tradecenterOpadmin.Account.account(Account.java:22)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -767,66 +3633,23 @@ cookie：null
 </pre></pre></td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Aug 9, 2019 04:09:47 PM</td>
-                                                        <td class='linked' test-id='2'>tradecenter_orderlist_true</td>
+                                                        <td>Aug 9, 2019 06:28:10 PM</td>
+                                                        <td class='linked' test-id='57'>交易中心管理平台.history</td>
                                                         <td><pre><pre>java.lang.AssertionError: 
-返回的list.get(i).skuList.skuThumbnail不正确，应返回：http://img2.haoshiqi.net/mafa96f64265271d23bcdd2cdf3a5a163a.jpg?imageView2/0/w/200/h/200/q/70，实际返回：http://img2.haoshiqi.net/mafa96f64265271d23bcdd2cdf3a5a163a.jpg?imageView2/0/w/200/h/200/q/90
-请求的url:https://m.betaapi.haoshiqi.net/tradecenter/orderlist
-参数：v=3.4.6&token=03e7f32d012e26f02eb718fe580f9a5a
+返回的errno不为0/errmsg不为success;
+返回的errno/errmsg:9300013/登录Token已经失效
+请求的url:https://trade.beta.doweidu.com/open/admin/http
+参数：method=get+account.history&pageNum=2&pageSize=10&token=NDQwNGJkZjVkOTllOTg4Y2M1MWE2MWYzMmE4YzM5MTc5&accountNumber=c4b9ba8a2810292f0ad2b5440436fc896c2733dc20968cd4
 cookie：null
-接口返回：{"errno":0,"errmsg":"success","data":{"list":[{"id":2163944870,"status":4,"consignee":"红红","note":"","payways":3,"orderId":2163944870,"userId":23391725,"merchantId":0,"addressId":1902,"pointPaymentId":1215,"point_payment_id":1215,"orderType":6,"deliveryType":1,"invoiceType":1,"invoiceTitle":"","consigneePhone":"130****6002","needPayPrice":1,"payPrice":0,"totalPrice":1,"deliveryPrice":0,"merchantDiscount":0,"platformDiscount":0,"totalPoint":10,"totalAmount":1,"deliveryStatus":1,"commentStatus":1,"deliveryProvince":"北京","deliveryCity":"北京市","deliveryDistrict":"东城区","deliveryDetailAddress":"110101","payTime":null,"deliveryTime":0,"confirmTime":0,"createdAt":1561091005,"updatedAt":1561091014,"discountPrice":0,"skuList":[{"id":16493030,"amount":1,"status":4,"point":10,"attribute_tags":"[{\"name\":\"\\u4e0b\\u5355\\u65f6\\u4fdd\\u8d28\\u671f\",\"value\":\"2019\\/01\\/01\\u751f\\u4ea7-2019\\/07\\/20\\u5230\\u671f\"},{\"name\":\"\\u89c4\\u683c\",\"value\":\"\\u7ed3\\u7b97\\u4ef7\"}]","userId":23391725,"orderId":2163944870,"productId":28620,"buSkuId":2845,"skuId":34333,"skuName":"test0415","skuThumbnail":"http://img2.haoshiqi.net/mab1285a0e58003c05ae633be7751b2b23.jpg?imageView2/0/w/200/h/200/q/90","marketPrice":20000,"totalPrice":1,"payPrice":0,"unitPrice":1,"commentStatus":1,"createdAt":1561091006,"updatedAt":1561091014,"confirmTime":0,"platform_discount":0,"saved_money":0,"discount_price":0,"attrs":[{"规格":"结算价"},{"批次":"1563552000"}],"canRefund":false}],"canRefund":false,"merchantName":"好食期","serviceTel":"4006458058","canCancel":false,"statusDesc":"交易关闭","statusLogo":""},{"id":2163944809,"status":4,"consignee":"红红","note":"","payways":3,"orderId":2163944809,"userId":23391725,"merchantId":0,"addressId":1902,"pointPaymentId":1214,"point_payment_id":1214,"orderType":6,"deliveryType":1,"invoiceType":1,"invoiceTitle":"","consigneePhone":"130****6002","needPayPrice":1,"payPrice":0,"totalPrice":1,"deliveryPrice":0,"merchantDiscount":0,"platformDiscount":0,"totalPoint":10,"totalAmount":1,"deliveryStatus":1,"commentStatus":1,"deliveryProvince":"北京","deliveryCity":"北京市","deliveryDistrict":"东城区","deliveryDetailAddress":"110101","payTime":null,"deliveryTime":0,"confirmTime":0,"createdAt":1561014887,"updatedAt":1561014892,"discountPrice":0,"skuList":[{"id":16492969,"amount":1,"status":4,"point":10,"attribute_tags":"[{\"name\":\"\\u4e0b\\u5355\\u65f6\\u4fdd\\u8d28\\u671f\",\"value\":\"2019\\/01\\/01\\u751f\\u4ea7-2019\\/07\\/20\\u5230\\u671f\"},{\"name\":\"\\u89c4\\u683c\",\"value\":\"\\u7ed3\\u7b97\\u4ef7\"}]","userId":23391725,"orderId":2163944809,"productId":28620,"buSkuId":2845,"skuId":34333,"skuName":"test0415","skuThumbnail":"http://img2.haoshiqi.net/mab1285a0e58003c05ae633be7751b2b23.jpg?imageView2/0/w/200/h/200/q/90","marketPrice":20000,"totalPrice":1,"payPrice":0,"unitPrice":1,"commentStatus":1,"createdAt":1561014887,"updatedAt":1561014892,"confirmTime":0,"platform_discount":0,"saved_money":0,"discount_price":0,"attrs":[{"规格":"结算价"},{"批次":"1563552000"}],"canRefund":false}],"canRefund":false,"merchantName":"好食期","serviceTel":"4006458058","canCancel":false,"statusDesc":"交易关闭","statusLogo":""},{"id":2163944808,"status":7,"consignee":"红红","note":"","payways":3,"orderId":2163944808,"userId":23391725,"merchantId":0,"addressId":1902,"pointPaymentId":1213,"point_payment_id":1213,"orderType":6,"deliveryType":1,"invoiceType":1,"invoiceTitle":"","consigneePhone":"130****6002","needPayPrice":1,"payPrice":1,"totalPrice":1,"deliveryPrice":0,"merchantDiscount":0,"platformDiscount":0,"totalPoint":10,"totalAmount":1,"deliveryStatus":1,"commentStatus":1,"deliveryProvince":"北京","deliveryCity":"北京市","deliveryDistrict":"东城区","deliveryDetailAddress":"110101","payTime":1561014878,"deliveryTime":0,"confirmTime":0,"createdAt":1561014872,"updatedAt":1561014912,"discountPrice":0,"skuList":[{"id":16492968,"amount":1,"status":7,"point":10,"attribute_tags":"[{\"name\":\"\\u4e0b\\u5355\\u65f6\\u4fdd\\u8d28\\u671f\",\"value\":\"2018\\/04\\/15\\u751f\\u4ea7-2019\\/07\\/09\\u5230\\u671f\"},{\"name\":\"\\u89c4\\u683c\",\"value\":\"600g\"}]","userId":23391725,"orderId":2163944808,"productId":28643,"buSkuId":2848,"skuId":34358,"skuName":"啊啊啊啊商品信息图","skuThumbnail":"http://img2.haoshiqi.net/mafa96f64265271d23bcdd2cdf3a5a163a.jpg?imageView2/0/w/200/h/200/q/90","marketPrice":1500,"totalPrice":1,"payPrice":0,"unitPrice":1,"commentStatus":1,"createdAt":1561014872,"updatedAt":1561014913,"confirmTime":0,"platform_discount":0,"saved_money":0,"discount_price":0,"attrs":[{"规格":"600g"},{"批次":"1562601600"}]}],"canRefund":false,"refundId":1007655,"refundStatus":3,"refundStatusDesc":"退款成功","merchantName":"好食期","serviceTel":"4006458058","canCancel":false,"statusDesc":"已退款","canViewDelivery":false,"statusLogo":"http://img1.haoshiqi.net/resource/trade_refund.png"}],"totalPage":1,"totalCnt":3},"timestamp":1565338187,"serverlogid":"547a1cea-cd1c-484b-a20d-6a9ba38b43e4"}
+接口返回：{"errno":9300013,"errmsg":"登录Token已经失效","data":{},"timestamp":1565346490,"serverlogid":0}
 《-------------------------分割线-------------------------》
 	at org.testng.Assert.fail(Assert.java:94)
-	at com.duoweidu.config.generalAssert.GeneralAssertChannel.detailedAssert(GeneralAssertChannel.java:283)
-	at com.duoweidu.cases.interfaces.InterfaceTest.detailAssertTest(InterfaceTest.java:366)
-	at com.duoweidu.cases.hsq.openapi.tradecenter_orderlist_test.tradecenterOrderlistAssert(tradecenter_orderlist_test.java:110)
-	at com.duoweidu.cases.hsq.openapi.tradecenter_orderlist_test.tradecenter_orderlist_true(tradecenter_orderlist_test.java:32)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at com.intellij.rt.execution.application.AppMainV2.main(AppMainV2.java:131)
-</pre></pre></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Aug 9, 2019 04:09:47 PM</td>
-                                                        <td class='linked' test-id='3'>tradecenter_orderinfo_true</td>
-                                                        <td><pre><pre>java.lang.AssertionError: 
-返回的model.skuList.skuThumbnail不正确，应返回：http://img2.haoshiqi.net/ma32483124920c8aea275a83545aa3b5aa.jpg?imageView2/0/w/200/h/200/q/70，实际返回：http://img2.haoshiqi.net/ma32483124920c8aea275a83545aa3b5aa.jpg?imageView2/0/w/200/h/200/q/90
-请求的url:https://m.betaapi.haoshiqi.net/tradecenter/orderinfo
-参数：v=3.4.6&token=03e7f32d012e26f02eb718fe580f9a5a&orderId=2163944807
-cookie：null
-接口返回：{"errno":0,"errmsg":"success","data":{"id":2163944807,"status":4,"consignee":"红红","note":"","payways":3,"orderId":2163944807,"userId":23391725,"merchantId":0,"addressId":1902,"pointPaymentId":0,"point_payment_id":0,"orderType":6,"deliveryType":1,"invoiceType":1,"invoiceTitle":"","consigneePhone":"130****6002","needPayPrice":1,"payPrice":0,"totalPrice":1099,"deliveryPrice":0,"merchantDiscount":0,"platformDiscount":0,"totalPoint":88,"totalAmount":1,"deliveryStatus":1,"commentStatus":1,"deliveryProvince":"北京","deliveryCity":"北京市","deliveryDistrict":"东城区","deliveryDetailAddress":"110101","payTime":null,"deliveryTime":0,"confirmTime":0,"createdAt":1561014860,"updatedAt":1561014861,"discountPrice":0,"saved_money":0,"solicitation_time":0,"deductible_amount":0,"premium_income":0,"sham_total_price":0,"merchant_order_note":"","spm":"point","cps_name":"","skuList":[{"id":16492967,"amount":1,"status":4,"point":88,"attribute_tags":"[{\"name\":\"\\u4e0b\\u5355\\u65f6\\u4fdd\\u8d28\\u671f\",\"value\":\"2018\\/04\\/01\\u751f\\u4ea7-2028\\/02\\/08\\u5230\\u671f\"}]","userId":23391725,"orderId":2163944807,"productId":25302,"buSkuId":2669,"skuId":28659,"skuName":"接口测试专用商品，勿动动","skuThumbnail":"http://img2.haoshiqi.net/ma32483124920c8aea275a83545aa3b5aa.jpg?imageView2/0/w/200/h/200/q/90","marketPrice":5000,"totalPrice":1099,"payPrice":0,"unitPrice":1099,"commentStatus":1,"createdAt":1561014860,"updatedAt":1561014861,"confirmTime":0,"platform_discount":0,"saved_money":0,"discount_price":0,"refundInfo":[],"attrs":[{"name":"下单时保质期","value":"2018/04/01生产-2028/02/08到期"}],"canRefund":false}],"canRefund":false,"merchantName":"好食期","serviceTel":"4006458058","canCancel":false,"statusDesc":"交易关闭","statusLogo":"","udesk_merchant_id":"","udesk_merchant_name":"好食期-蜜我食铺","custom_service_id":100,"message":{"id":18,"channel_id":1,"position":4,"start_time":1557987292,"end_time":1588240457,"title":"详情页测试公告","content":"确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告","status":2,"is_deleted":1}},"timestamp":1565338188,"serverlogid":"cf5ee320-9223-4629-a9cf-2266cb1feffc"}
-《-------------------------分割线-------------------------》
-	at org.testng.Assert.fail(Assert.java:94)
-	at com.duoweidu.config.generalAssert.GeneralAssertChannel.detailedAssert(GeneralAssertChannel.java:283)
-	at com.duoweidu.cases.interfaces.InterfaceTest.detailAssertTest(InterfaceTest.java:366)
-	at com.duoweidu.cases.hsq.openapi.tradecenter_orderinfo_test.tradecenterOrderinfoAssert(tradecenter_orderinfo_test.java:89)
-	at com.duoweidu.cases.hsq.openapi.tradecenter_orderinfo_test.tradecenter_orderinfo_true(tradecenter_orderinfo_test.java:22)
+	at com.duoweidu.config.generalAssert.GeneralAssertChannel.errnoAssert(GeneralAssertChannel.java:177)
+	at com.duoweidu.cases.interfaces.InterfaceTest.statusAssertTest(InterfaceTest.java:303)
+	at com.duoweidu.cases.interfaces.InterfaceTest.generalAssertTest(InterfaceTest.java:310)
+	at com.duoweidu.cases.interfaces.InterfaceTest.generalAssertTest(InterfaceTest.java:318)
+	at com.duoweidu.cases.interfaces.InterfaceTest.process(InterfaceTest.java:237)
+	at com.duoweidu.cases.tradecenterOpadmin.History.history(History.java:23)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -882,31 +3705,183 @@ cookie：null
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>11</div>
+					<div class='panel-lead'>56</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>11</div>
+					<div class='panel-lead'>55</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug 9, 2019 04:09:44 PM</div>
+					<div class='panel-lead'>Aug 9, 2019 06:28:04 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug 9, 2019 04:09:45 PM</div>
+			 		<div class='panel-lead'>Aug 9, 2019 06:28:10 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>1,527ms</div>
+					<div class='panel-lead'>6,285ms</div>
+				</div>
+			</div>
+			<div class='col s4'>
+				<div class='card-panel'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Others</th>
+						</tr>
+						<tr>
+							<td>中台接口测试</td>
+							<td>55</td>
+							<td>3</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>交易中心</td>
+							<td>54</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>msfCreate</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>iqgNewCreate</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>iqgCreate</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>jszCreate</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>iqgActivate</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>createRecharge</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>msfCreateAdjust</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>iqgCreateAdjust</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>msfCreateOrder</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>iqgCreateOrder</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>jszCreateOrder</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>iqgFreeze</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>msfCreatePay</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>iqgCreatePay</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>jszCreatePay</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>msfCreateRefund</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>iqgCreateRefund</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>msfRefund</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>iqgRefund</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>交易中心管理平台</td>
+							<td>0</td>
+							<td>3</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>消息推送</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+					</table>
 				</div>
 			</div>
 		</div>
@@ -919,22 +3894,22 @@ cookie：null
 
 		<script>
 			var statusGroup = {
-				passParent: 8,
-				failParent: 3,
+				passParent: 54,
+				failParent: 2,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 3,
+				exceptionsParent: 2,
 				
-				passChild: 8,
-				failChild: 3,
+				passChild: 53,
+				failChild: 2,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 3,
+				exceptionsChild: 2,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

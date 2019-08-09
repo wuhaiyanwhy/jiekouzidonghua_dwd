@@ -33,4 +33,5 @@ public class TradecenterConfig {
     public static String jszCreatePaySettleTradeNo;
     public static String jszCreateSettleOrderOrderNo;
     public static String jszCreateSettleOrderSubOrderNo;
+    public static String jszCreateWithdrawTradeNo;
 }
