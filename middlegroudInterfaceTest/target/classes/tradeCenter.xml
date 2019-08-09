@@ -7,6 +7,7 @@
             <class name="com.duoweidu.cases.tradecenter.Create">
                 <methods>
                     <include name="msfCreate"/>
+                    <include name="iqgNewCreate"/>
                     <include name="iqgCreate"/>
                     <include name="jszCreate"/>
                 </methods>
