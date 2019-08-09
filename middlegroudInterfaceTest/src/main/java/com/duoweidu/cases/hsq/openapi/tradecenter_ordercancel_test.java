@@ -9,6 +9,9 @@ import org.testng.annotations.Test;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * 无法一直取消，暂时无需详细断言
+ */
 public class tradecenter_ordercancel_test extends HsqInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "积分取消订单")
