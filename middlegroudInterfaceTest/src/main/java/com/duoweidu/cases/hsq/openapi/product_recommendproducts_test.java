@@ -32,7 +32,7 @@ public class product_recommendproducts_test extends HsqInterfaceTest {
             detailAssertTest("list.get(i).offline_before_expired", model.list.get(i).offline_before_expired);
             detailAssertTest("list.get(i).today_discount", model.list.get(i).today_discount);
             detailAssertTest("list.get(i).delivery_time_after_buy", model.list.get(i).delivery_time_after_buy);
-            detailAssertTest("list.get(i).is_migrate", model.list.get(i).is_migrate);
+//            detailAssertTest("list.get(i).is_migrate", model.list.get(i).is_migrate);
             if (model.list.get(i).tags.size() > 0) {
                 for (int j = 0; j < model.list.get(i).tags.size(); j++) {
                     detailAssertTest("list.get(i).tags.get(j).text", model.list.get(i).tags.get(j).text);
@@ -49,7 +49,7 @@ public class product_recommendproducts_test extends HsqInterfaceTest {
                     detailAssertTest("list.get(i).skuInfo.value", model.list.get(i).skuInfo.attrs.get(j).value);
                 }
             }
-            detailAssertTest("list.get(i).skuInfo.left_stock", model.list.get(i).skuInfo.left_stock);
+            detailAssertTest("list.get(i).skuInfo.left_stock", String.valueOf(model.list.get(i).skuInfo.left_stock));
             detailAssertTest("list.get(i).skuInfo.id", model.list.get(i).skuInfo.id);
             detailAssertTest("list.get(i).skuInfo.source_type", model.list.get(i).skuInfo.source_type);
             detailAssertTest("list.get(i).skuInfo.merchant_id", model.list.get(i).skuInfo.merchant_id);

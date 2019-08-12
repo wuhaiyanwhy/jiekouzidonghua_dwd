@@ -29,7 +29,7 @@ public class product_iteminfo_test extends HsqInterfaceTest {
         detailAssertTest("merchant_id", model.merchant_id);
         detailAssertTest("product_id", model.product_id);
         detailAssertTest("name", model.name);
-        detailAssertTest("weight", model.weight);
+//        detailAssertTest("weight", model.weight);
         detailAssertTest("price", model.price);
         detailAssertTest("thumbnail", model.thumbnail);
         detailAssertTest("market_price", model.market_price);
@@ -49,7 +49,7 @@ public class product_iteminfo_test extends HsqInterfaceTest {
         detailAssertTest("audit_status", model.audit_status);
         detailAssertTest("audit_time", model.audit_time);
         detailAssertTest("restriction_amount", model.restriction_amount);
-        detailAssertTest("fpostage_amount", model.fpostage_amount);
+//        detailAssertTest("fpostage_amount", model.fpostage_amount);
         detailAssertTest("online_time", model.online_time);
 //        detailAssertTest("only_new_user", model.only_new_user);
         detailAssertTest("feature", model.feature);
@@ -145,7 +145,7 @@ public class product_iteminfo_test extends HsqInterfaceTest {
             detailAssertTest("attrDatas.merchant_id", entry.getValue().merchant_id);
             detailAssertTest("attrDatas.product_id", entry.getValue().product_id);
             detailAssertTest("attrDatas.name", entry.getValue().name);
-            detailAssertTest("attrDatas.weight", entry.getValue().weight);
+//            detailAssertTest("attrDatas.weight", entry.getValue().weight);
             detailAssertTest("attrDatas.price", entry.getValue().price);
             detailAssertTest("attrDatas.thumbnail", entry.getValue().thumbnail);
             detailAssertTest("attrDatas.market_price", entry.getValue().market_price);
@@ -162,7 +162,7 @@ public class product_iteminfo_test extends HsqInterfaceTest {
             detailAssertTest("attrDatas.audit_status", entry.getValue().audit_status);
             detailAssertTest("attrDatas.audit_time", entry.getValue().audit_time);
 //            detailAssertTest("attrDatas.restriction_amount", entry.getValue().restriction_amount);
-            detailAssertTest("attrDatas.fpostage_amount", entry.getValue().fpostage_amount);
+//            detailAssertTest("attrDatas.fpostage_amount", entry.getValue().fpostage_amount);
             detailAssertTest("attrDatas.online_time", entry.getValue().online_time);
 //            detailAssertTest("attrDatas.only_new_user", entry.getValue().only_new_user);
             detailAssertTest("attrDatas.feature", entry.getValue().feature);

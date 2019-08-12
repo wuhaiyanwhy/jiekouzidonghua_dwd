@@ -79,7 +79,7 @@ public class order_cancelorder_test extends HsqInterfaceTest {
         detailAssertTest("address_id", model.address_id);
         detailAssertTest("delivery_type", model.delivery_type);
         detailAssertTest("delivery_fee_way", model.delivery_fee_way);
-        detailAssertTest("is_delivery_free", model.is_delivery_free);
+//        detailAssertTest("is_delivery_free", model.is_delivery_free);
 //        detailAssertTest("note", model.note);
         detailAssertTest("delivery_province", model.delivery_province);
         detailAssertTest("invoice_type", model.invoice_type);

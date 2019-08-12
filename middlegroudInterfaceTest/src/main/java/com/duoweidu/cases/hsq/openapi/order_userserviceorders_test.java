@@ -23,7 +23,7 @@ public class order_userserviceorders_test extends HsqInterfaceTest {
             detailAssertTest("list.get(i).merchant_id", model.list.get(i).merchant_id);
             detailAssertTest("list.get(i).status", model.list.get(i).status);
             detailAssertTest("list.get(i).delivery_status", model.list.get(i).delivery_status);
-            detailAssertTest("list.get(i).need_pay_price", model.list.get(i).need_pay_price);
+            detailAssertTest("list.get(i).need_pay_price", String.valueOf(model.list.get(i).need_pay_price));
             detailAssertTest("list.get(i).consignee_phone", model.list.get(i).consignee_phone);
             detailAssertTest("list.get(i).order_type", model.list.get(i).order_type);
             detailAssertTest("list.get(i).skuList", model.list.get(i).skuList);
@@ -53,8 +53,8 @@ public class order_userserviceorders_test extends HsqInterfaceTest {
 //                detailAssertTest("list.get(i).skuList.get(j).is_free", model.list.get(i).skuList.get(j).is_free);
                 detailAssertTest("list.get(i).skuList.get(j).created_at", model.list.get(i).skuList.get(j).created_at);
                 detailAssertTest("list.get(i).skuList.get(j).updated_at", model.list.get(i).skuList.get(j).updated_at);
-                detailAssertTest("list.get(i).skuList.get(j).settlement_price", model.list.get(i).skuList.get(j).settlement_price);
-                detailAssertTest("list.get(i).skuList.get(j).settlement_way", model.list.get(i).skuList.get(j).settlement_way);
+//                detailAssertTest("list.get(i).skuList.get(j).settlement_price", model.list.get(i).skuList.get(j).settlement_price);
+//                detailAssertTest("list.get(i).skuList.get(j).settlement_way", model.list.get(i).skuList.get(j).settlement_way);
 //                detailAssertTest("list.get(i).skuList.get(j).confirm_time", model.list.get(i).skuList.get(j).confirm_time);
 //                detailAssertTest("list.get(i).skuList.get(j).pin_activities_id", model.list.get(i).skuList.get(j).pin_activities_id);
 //                detailAssertTest("list.get(i).skuList.get(j).pin_event_id", model.list.get(i).skuList.get(j).pin_event_id);

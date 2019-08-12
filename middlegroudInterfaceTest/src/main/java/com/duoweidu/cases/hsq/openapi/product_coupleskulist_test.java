@@ -44,7 +44,7 @@ public class product_coupleskulist_test extends HsqInterfaceTest {
             detailAssertTest("list.get(i).canBought", model.list.get(i).canBought);
             detailAssertTest("list.get(i).onLine", model.list.get(i).onLine);
             detailAssertTest("list.get(i).inStock", model.list.get(i).inStock);
-            detailAssertTest("list.get(i).request_id", model.list.get(i).request_id);
+//            detailAssertTest("list.get(i).request_id", model.list.get(i).request_id);
 
         }
         detailAssertTest("totalPage", model.totalPage);

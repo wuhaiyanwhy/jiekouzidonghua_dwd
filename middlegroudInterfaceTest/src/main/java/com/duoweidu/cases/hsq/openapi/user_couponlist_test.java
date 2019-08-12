@@ -45,8 +45,8 @@ public class user_couponlist_test extends HsqInterfaceTest {
             detailAssertTest("list.get(i).sub_title", model.list.get(i).sub_title);
             detailAssertTest("list.get(i).usage_title", model.list.get(i).usage_title);
             detailAssertTest("list.get(i).value", model.list.get(i).value);
-            detailAssertTest("list.get(i).is_at_least", model.list.get(i).is_at_least);
-            detailAssertTest("list.get(i).at_least", model.list.get(i).at_least);
+//            detailAssertTest("list.get(i).is_at_least", model.list.get(i).is_at_least);
+//            detailAssertTest("list.get(i).at_least", model.list.get(i).at_least);
             detailAssertTest("list.get(i).start_at", model.list.get(i).start_at);
             detailAssertTest("list.get(i).end_at", model.list.get(i).end_at);
             detailAssertTest("list.get(i).usage_desc", model.list.get(i).usage_desc);

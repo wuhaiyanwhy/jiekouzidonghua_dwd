@@ -3,6 +3,7 @@ package com.duoweidu.cases.hsq.openapi;
 import com.duoweidu.cases.interfaces.HsqInterfaceTest;
 import com.duoweidu.config.sql.SqlDetail;
 import com.duoweidu.model.hsq.OrderDeliverymessageData;
+import com.duoweidu.utils.ConfigFileUrl;
 import org.testng.annotations.Test;
 
 public class order_deliverymessage_test extends HsqInterfaceTest {
@@ -13,9 +14,12 @@ public class order_deliverymessage_test extends HsqInterfaceTest {
     public void order_deliverymessage_true() {
         setUrl("order.deliverymessage.uri");
         param = "orderId=" + SqlDetail.getInstance().getParamValue("orderId");
-        process(true, false);
-        model = sparseJson(OrderDeliverymessageData.class);
-        detailAssert();
+        process(false, false);
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            generalAssertTest(false);
+            model = sparseJson(OrderDeliverymessageData.class);
+            detailAssert();
+        }
     }
 
     private void detailAssert() {

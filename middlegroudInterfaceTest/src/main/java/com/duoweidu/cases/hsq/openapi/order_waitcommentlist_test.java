@@ -3,6 +3,7 @@ package com.duoweidu.cases.hsq.openapi;
 import com.duoweidu.cases.interfaces.HsqInterfaceTest;
 import com.duoweidu.model.hsq.OrderGetuserordersData;
 import com.duoweidu.model.hsq.OrderWaitcommentlistData;
+import com.duoweidu.utils.ConfigFileUrl;
 import org.testng.annotations.Test;
 
 public class order_waitcommentlist_test extends HsqInterfaceTest {
@@ -13,8 +14,10 @@ public class order_waitcommentlist_test extends HsqInterfaceTest {
     public void order_waitcommentlist_true() {
         setUrl("order.waitcommentlist.uri");
         process(true,false);
-        model = sparseJson(OrderWaitcommentlistData.class);
-        detailAssert();
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            model = sparseJson(OrderWaitcommentlistData.class);
+            detailAssert();
+        }
     }
 
     private void detailAssert() {

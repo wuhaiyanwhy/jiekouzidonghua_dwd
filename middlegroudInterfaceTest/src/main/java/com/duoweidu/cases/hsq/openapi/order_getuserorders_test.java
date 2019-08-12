@@ -57,7 +57,7 @@ public class order_getuserorders_test extends HsqInterfaceTest {
             detailAssertTest("list.get(i).address_id", model.list.get(i).address_id);
             detailAssertTest("list.get(i).delivery_type", model.list.get(i).delivery_type);
             detailAssertTest("list.get(i).delivery_fee_way", model.list.get(i).delivery_fee_way);
-            detailAssertTest("list.get(i).is_delivery_free", model.list.get(i).is_delivery_free);
+//            detailAssertTest("list.get(i).is_delivery_free", model.list.get(i).is_delivery_free);
 //            detailAssertTest("list.get(i).note", model.list.get(i).note);
             detailAssertTest("list.get(i).delivery_province", model.list.get(i).delivery_province);
             detailAssertTest("list.get(i).invoice_type", model.list.get(i).invoice_type);
@@ -105,14 +105,14 @@ public class order_getuserorders_test extends HsqInterfaceTest {
                 detailAssertTest("list.get(i).skuList.get(j).last_update", model.list.get(i).skuList.get(j).last_update);
 //                detailAssertTest("list.get(i).skuList.get(j).platform_discount", model.list.get(i).skuList.get(j).platform_discount);
 //                detailAssertTest("list.get(i).skuList.get(j).merchant_discount", model.list.get(i).skuList.get(j).merchant_discount);
-                detailAssertTest("list.get(i).skuList.get(j).settlement_price", model.list.get(i).skuList.get(j).settlement_price);
-                detailAssertTest("list.get(i).skuList.get(j).settlement_way", model.list.get(i).skuList.get(j).settlement_way);
+//                detailAssertTest("list.get(i).skuList.get(j).settlement_price", model.list.get(i).skuList.get(j).settlement_price);
+//                detailAssertTest("list.get(i).skuList.get(j).settlement_way", model.list.get(i).skuList.get(j).settlement_way);
 //                detailAssertTest("list.get(i).skuList.get(j).confirm_time", model.list.get(i).skuList.get(j).confirm_time);
 //                detailAssertTest("list.get(i).skuList.get(j).pin_activities_id", model.list.get(i).skuList.get(j).pin_activities_id);
 //                detailAssertTest("list.get(i).skuList.get(j).pin_event_id", model.list.get(i).skuList.get(j).pin_event_id);
 //                detailAssertTest("list.get(i).skuList.get(j).point", model.list.get(i).skuList.get(j).point);
                 detailAssertTest("list.get(i).skuList.get(j).source_type", model.list.get(i).skuList.get(j).source_type);
-                detailAssertTest("list.get(i).skuList.get(j).saved_money", model.list.get(i).skuList.get(j).saved_money);
+//                detailAssertTest("list.get(i).skuList.get(j).saved_money", model.list.get(i).skuList.get(j).saved_money);
 //                detailAssertTest("list.get(i).skuList.get(j).refundInfo", model.list.get(i).skuList.get(j).refundInfo);
                 detailAssertTest("list.get(i).skuList.get(j).skuId", model.list.get(i).skuList.get(j).skuId);
                 detailAssertTest("list.get(i).skuList.get(j).orderId", model.list.get(i).skuList.get(j).orderId);

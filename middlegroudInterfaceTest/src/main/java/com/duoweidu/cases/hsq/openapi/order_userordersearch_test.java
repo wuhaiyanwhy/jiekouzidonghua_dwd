@@ -41,7 +41,7 @@ public class order_userordersearch_test extends HsqInterfaceTest {
             detailAssertTest("list.get(i).address_id", model.list.get(i).address_id);
             detailAssertTest("list.get(i).delivery_type", model.list.get(i).delivery_type);
             detailAssertTest("list.get(i).delivery_fee_way", model.list.get(i).delivery_fee_way);
-            detailAssertTest("list.get(i).is_delivery_free", model.list.get(i).is_delivery_free);
+//            detailAssertTest("list.get(i).is_delivery_free", model.list.get(i).is_delivery_free);
 //            detailAssertTest("list.get(i).note", model.list.get(i).note);
             detailAssertTest("list.get(i).delivery_province", model.list.get(i).delivery_province);
             detailAssertTest("list.get(i).invoice_type", model.list.get(i).invoice_type);

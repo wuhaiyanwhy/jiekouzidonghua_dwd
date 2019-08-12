@@ -5,6 +5,8 @@ import java.util.ArrayList;
 public class UserLikeproductlistData {
 
     public ArrayList<ListModel> list;
+    public int totalPage;
+    public int totalCnt;
 
     public static class ListModel {
         //店铺
