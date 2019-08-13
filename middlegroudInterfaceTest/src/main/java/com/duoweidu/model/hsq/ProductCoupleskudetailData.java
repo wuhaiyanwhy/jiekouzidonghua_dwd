@@ -36,6 +36,7 @@ public class ProductCoupleskudetailData {
     public int lowest_web_price;
     public int version_id;
     public ArrayList<AttrsModel> attrs;
+
     public int couplePrice;
     public int singlePrice;
     public int coupleEndTime;

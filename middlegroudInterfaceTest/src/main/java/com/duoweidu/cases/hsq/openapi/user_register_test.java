@@ -8,6 +8,9 @@ import org.testng.annotations.Test;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * 无法一直注册，暂时无需详细断言
+ */
 public class user_register_test extends HsqInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "注册")

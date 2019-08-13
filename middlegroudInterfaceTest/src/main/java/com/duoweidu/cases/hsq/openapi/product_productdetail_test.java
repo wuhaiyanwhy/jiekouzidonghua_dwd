@@ -12,7 +12,7 @@ public class product_productdetail_test extends HsqInterfaceTest {
 
     private ProductProductdetailData model;
 
-    @Test(dependsOnGroups = "loginTrue", description = "获取图文详情")
+    @Test(description = "获取图文详情")
     public void product_productdetail_true() throws IOException {
         setUrl("product.productdetail.uri");
         param = "productId=" + SqlDetail.getInstance().getParamValue("productId");
