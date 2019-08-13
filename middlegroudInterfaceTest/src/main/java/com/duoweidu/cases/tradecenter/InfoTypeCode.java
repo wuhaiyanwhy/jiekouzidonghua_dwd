@@ -32,11 +32,14 @@ public class InfoTypeCode extends TradeCenterInterfaceTest {
         detailAssertTest("平台优惠", "promotion.PLATFORM", model.promotion.PLATFORM);
         detailAssertTest("商家优惠", "promotion.SELLER", model.promotion.SELLER);
         detailAssertTest("活动优惠", "promotion.ACTIVITY", model.promotion.ACTIVITY);
-        detailAssertTest("settle", model.settle.toString());
-        detailAssertTest("线上结算-佣金", "settle.ONLINE_COMMISSION", model.settle.ONLINE_COMMISSION);
-        detailAssertTest("线上结算-结算价", "settle.ONLINE_SETTLE_PRICE", model.settle.ONLINE_SETTLE_PRICE);
-        detailAssertTest("线下结算", "settle.OFFLINE", model.settle.OFFLINE);
-        detailAssertTest("不结算", "settle.NO_SETTLE", model.settle.NO_SETTLE);
+        detailAssertTest("settle_type", model.settle_type.toString());
+        detailAssertTest("用户返佣", "settle.ONLINE_COMMISSION", model.settle_type.USER_COMMISSION);
+        detailAssertTest("商家结算", "settle.ONLINE_SETTLE_PRICE", model.settle_type.SELLER_SETTLEMENT);
+        detailAssertTest("settle_method", model.settle_method.toString());
+        detailAssertTest("线上结算-佣金", "settle.ONLINE_COMMISSION", model.settle_method.ONLINE_COMMISSION);
+        detailAssertTest("线上结算-结算价", "settle.ONLINE_SETTLE_PRICE", model.settle_method.ONLINE_SETTLE_PRICE);
+        detailAssertTest("线下结算", "settle.OFFLINE", model.settle_method.OFFLINE);
+        detailAssertTest("不结算", "settle.NO_SETTLE", model.settle_method.NO_SETTLE);
         detailAssertTest("", "reverse", model.reverse);
 
     }

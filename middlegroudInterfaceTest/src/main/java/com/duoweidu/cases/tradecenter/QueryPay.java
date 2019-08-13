@@ -24,11 +24,25 @@ public class QueryPay extends TradeCenterInterfaceTest {
         process(list, true, false);
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             model = sparseJson(QueryPayData.class);
-            detailAssert();
+            msfDetailAssert();
         }
     }
 
-    private void detailAssert() {
+    @Test(dependsOnGroups = "iqgCreatePay", description = "查询支付单")
+    public void iqgQueryPay() {
+        List<NameValuePair> list = new LinkedList<>();
+        list.add(new BasicNameValuePair("method", "trade.query_pay"));
+        list.add(new BasicNameValuePair("tradeNo", TradecenterConfig.iqgCreatePayTradeNo));
+
+        TradecenterConfig.accountType = "DWD_IQG_COIN";
+        process(list, true, false);
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            model = sparseJson(QueryPayData.class);
+            iqgDetailAssert();
+        }
+    }
+
+    private void msfDetailAssert() {
         detailAssertTest(false, "has_refund", model.has_refund);
         detailAssertTest(3, "status", model.status);
         detailAssertTest(SqlDetail.getInstance().getParamValue(0, "totalAmount"), "total_amount", String.valueOf(model.total_amount));
@@ -42,6 +56,26 @@ public class QueryPay extends TradeCenterInterfaceTest {
         detailAssertTest(SqlDetail.getInstance().getParamValue(0, "channelName"), "origin_data.channel_name", model.origin_data.channel_name);
         detailAssertTest(SqlDetail.getInstance().getParamValue(0, "channel"), "origin_data.channel_code", model.origin_data.channel_code);
         detailAssertTest(TradecenterConfig.msfAccountNumber, "origin_data.account_number", model.origin_data.account_number);
+        detailAssertTest(3, "origin_data.pay_status", model.origin_data.pay_status);
+        detailAssertTest(1, "origin_data.pay_finished", model.origin_data.pay_finished);
+        detailAssertTest("origin_data.created_at", model.origin_data.created_at);
+        detailAssertTest("origin_data.updated_at", model.origin_data.updated_at);
+        detailAssertTest("", "reverse", model.reverse);
+    }
+    private void iqgDetailAssert() {
+        detailAssertTest(false, "has_refund", model.has_refund);
+        detailAssertTest(3, "status", model.status);
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "totalAmount"), "total_amount", String.valueOf(model.total_amount));
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "payTypeCode"), "pay_type_code", model.pay_type_code);
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "payDesc"), "pay_desc", model.pay_desc);
+        detailAssertTest("origin_data", model.origin_data.toString());
+        detailAssertTest(TradecenterConfig.iqgCreatePayTradeNo, "origin_data.trade_no", model.origin_data.trade_no);
+        detailAssertTest(TradecenterConfig.iqgCreateOrderOrderNo, "origin_data.order_no", model.origin_data.order_no);
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "totalAmount"), "origin_data.pay_amount", String.valueOf(model.origin_data.pay_amount));
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "iqgCurrency"), "origin_data.currency", model.origin_data.currency);
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "channelName"), "origin_data.channel_name", model.origin_data.channel_name);
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "channel"), "origin_data.channel_code", model.origin_data.channel_code);
+        detailAssertTest(TradecenterConfig.iqgAccountNumber, "origin_data.account_number", model.origin_data.account_number);
         detailAssertTest(3, "origin_data.pay_status", model.origin_data.pay_status);
         detailAssertTest(1, "origin_data.pay_finished", model.origin_data.pay_finished);
         detailAssertTest("origin_data.created_at", model.origin_data.created_at);

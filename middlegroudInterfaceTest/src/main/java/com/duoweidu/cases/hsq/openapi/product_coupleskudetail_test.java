@@ -88,7 +88,7 @@ public class product_coupleskudetail_test extends HsqInterfaceTest {
             detailAssertTest("接口测试专用商品，勿动动", "name", model.name);
             detailAssertTest(100,"weight", model.weight);
             detailAssertTest(1900,"price", model.price);
-            detailAssertTest("http://img2.haoshiqi.net/ma32483124920c8aea275a83545aa3b5aa.jpg?imageView2/0/q/70","thumbnail", model.thumbnail);
+            detailAssertTest("thumbnail", model.thumbnail);
             detailAssertTest(5000,"market_price", model.market_price);
 //            detailAssertTest(1900,"lowest_price", model.lowest_price);
             detailAssertTest(1523873005,"seller_time", model.seller_time);
@@ -131,7 +131,7 @@ public class product_coupleskudetail_test extends HsqInterfaceTest {
                 detailAssertTest("接口测试专用商品，勿动动", "attrDatas.name", entry.getValue().name);
                 detailAssertTest(100, "attrDatas.weight", entry.getValue().weight);
                 detailAssertTest(1900, "attrDatas.price", entry.getValue().price);
-                detailAssertTest("http://img2.haoshiqi.net/ma32483124920c8aea275a83545aa3b5aa.jpg?imageView2/0/q/70", "attrDatas.thumbnail", entry.getValue().thumbnail);
+                detailAssertTest("attrDatas.thumbnail", entry.getValue().thumbnail);
                 detailAssertTest(5000, "attrDatas.market_price", entry.getValue().market_price);
 //                detailAssertTest(1900, "attrDatas.lowest_price", entry.getValue().lowest_price);
                 detailAssertTest(1523873005, "attrDatas.seller_time", entry.getValue().seller_time);
@@ -173,8 +173,8 @@ public class product_coupleskudetail_test extends HsqInterfaceTest {
             detailAssertTest("1833552000", "batch", model.batch);
 
             for (int i = 0; i < model.pics.size(); i++) {
-                detailAssertTest("http://img2.haoshiqi.net/ma32483124920c8aea275a83545aa3b5aa.jpg?imageView2/0/w/840/h/840/q/70", "batch", model.pics.get(0));
-                detailAssertTest("http://img2.haoshiqi.net/ma957f7a4f209ef5e58c7f8b8552d27af5.jpg?imageView2/0/w/840/h/840/q/70", "batch", model.pics.get(1));
+                detailAssertTest("batch", model.pics.get(0));
+                detailAssertTest("batch", model.pics.get(1));
             }
 
             detailAssertTest(28659, "skuId", model.skuId);
@@ -182,29 +182,29 @@ public class product_coupleskudetail_test extends HsqInterfaceTest {
             detailAssertTest(616, "merchantId", model.merchantId);
             detailAssertTest(616, "merchantInfo.id", model.merchantInfo.id);
             detailAssertTest("蜜我食铺", "merchantInfo.name", model.merchantInfo.name);
-            detailAssertTest("http://img2.haoshiqi.net/ma17de1c5d5369f354d8b24a3458319d93?imageView2/0/w/200/h/200/q/70", "merchantInfo.logo", model.merchantInfo.logo);
+            detailAssertTest("merchantInfo.logo", model.merchantInfo.logo);
             detailAssertTest("haoshiqi://hybrid?compid=haoshiqi&comppage=merchant&merchantid=616", "merchantInfo.schema", model.merchantInfo.schema);
             detailAssertTest("http://m.beta.haoshiqi.net/#couple_rules", "coupleRuleUrl", model.coupleRuleUrl);
             detailAssertTest("价格", "pricePrefix", model.pricePrefix);
             detailAssertTest("haoshiqi://com.doweidu/couplesbuydetail?pinActivityId=11836", "schema", model.schema);
             detailAssertTest("http://m.beta.haoshiqi.net//#couple_detail?pinactivitiesid=11836&sid=28659", "h5Link", model.h5Link);
 
-            detailAssertTest("http://img2.haoshiqi.net/ma32483124920c8aea275a83545aa3b5aa.jpg?imageView2/0/q/70", "model.shareInfo.firendsZone.thumbnail", model.shareInfo.firendsZone.thumbnail);
+            detailAssertTest("model.shareInfo.firendsZone.thumbnail", model.shareInfo.firendsZone.thumbnail);
             detailAssertTest("pages/index/index?jumplink=detail%3Fid%3D11836&minishare=1", "model.shareInfo.firendsZone.link", model.shareInfo.firendsZone.link);
             detailAssertTest("1.00元接口测试专用商品，勿动动", "model.shareInfo.firendsZone.content", model.shareInfo.firendsZone.content);
             detailAssertTest(true, "shareInfo.wechat.isMini", model.shareInfo.wechat.isMini);
             detailAssertTest("pages/index/index?jumplink=detail%3Fid%3D11836&minishare=1", "shareInfo.wechat.pagePath", model.shareInfo.wechat.pagePath);
             detailAssertTest("gh_9b3866e4e1ae", "shareInfo.wechat.userName", model.shareInfo.wechat.userName);
             detailAssertTest("我买了1.00元接口测试专用商品，勿动动", "shareInfo.wechat.title", model.shareInfo.wechat.title);
-            detailAssertTest("http://img2.haoshiqi.net/ma32483124920c8aea275a83545aa3b5aa.jpg?imageView2/0/q/70", "model.shareInfo.wechat.thumbnail", model.shareInfo.wechat.thumbnail);
+            detailAssertTest("model.shareInfo.wechat.thumbnail", model.shareInfo.wechat.thumbnail);
             detailAssertTest("pages/index/index?jumplink=detail%3Fid%3D11836&minishare=1", "model.shareInfo.wechat.link", model.shareInfo.wechat.link);
             detailAssertTest("2人团，成团必发货，好食期优选，正品保证", "model.shareInfo.wechat.content", model.shareInfo.wechat.content);
             detailAssertTest("我买了1.00元接口测试专用商品，勿动动", "shareInfo.mobileQQ.title", model.shareInfo.mobileQQ.title);
-            detailAssertTest("http://img2.haoshiqi.net/ma32483124920c8aea275a83545aa3b5aa.jpg?imageView2/0/q/70", "model.shareInfo.mobileQQ.thumbnail", model.shareInfo.mobileQQ.thumbnail);
+            detailAssertTest("model.shareInfo.mobileQQ.thumbnail", model.shareInfo.mobileQQ.thumbnail);
             detailAssertTest("pages/index/index?jumplink=detail%3Fid%3D11836&minishare=1", "model.shareInfo.mobileQQ.link", model.shareInfo.mobileQQ.link);
             detailAssertTest("2人团，成团必发货，好食期优选，正品保证", "model.shareInfo.mobileQQ.content", model.shareInfo.mobileQQ.content);
             detailAssertTest("我买了1.00元接口测试专用商品，勿动动", "shareInfo.mobileQQ.title", model.shareInfo.mobileQQ.title);
-            detailAssertTest("http://img2.haoshiqi.net/ma32483124920c8aea275a83545aa3b5aa.jpg?imageView2/0/q/70", "model.shareInfo.alipay.thumbnail", model.shareInfo.alipay.thumbnail);
+            detailAssertTest("model.shareInfo.alipay.thumbnail", model.shareInfo.alipay.thumbnail);
             detailAssertTest("pages/index/index?jumplink=detail%3Fid%3D11836&minishare=1", "model.shareInfo.alipay.link", model.shareInfo.alipay.link);
             detailAssertTest("2人团，成团必发货，好食期优选，正品保证", "model.shareInfo.alipay.content", model.shareInfo.alipay.content);
 
@@ -217,7 +217,7 @@ public class product_coupleskudetail_test extends HsqInterfaceTest {
             detailAssertTest("压测专用（勿动） 200g", "name", model.name);
             detailAssertTest(0,"weight", model.weight);
             detailAssertTest(3,"price", model.price);
-            detailAssertTest("http://img2.haoshiqi.net/maaa938eac8efc626a53e043574c88cdc9.jpg?imageView2/0/q/70","thumbnail", model.thumbnail);
+            detailAssertTest("thumbnail", model.thumbnail);
             detailAssertTest(3,"market_price", model.market_price);
 //            detailAssertTest(3,"lowest_price", model.lowest_price);
             detailAssertTest(1557365804,"seller_time", model.seller_time);
@@ -259,7 +259,7 @@ public class product_coupleskudetail_test extends HsqInterfaceTest {
                 detailAssertTest("压测专用（勿动） 200g", "attrDatas.name", entry.getValue().name);
                 detailAssertTest(0, "attrDatas.weight", entry.getValue().weight);
                 detailAssertTest(3, "attrDatas.price", entry.getValue().price);
-                detailAssertTest("http://img2.haoshiqi.net/maaa938eac8efc626a53e043574c88cdc9.jpg?imageView2/0/q/70", "attrDatas.thumbnail", entry.getValue().thumbnail);
+                detailAssertTest("attrDatas.thumbnail", entry.getValue().thumbnail);
                 detailAssertTest(3, "attrDatas.market_price", entry.getValue().market_price);
 //                detailAssertTest(3, "attrDatas.lowest_price", entry.getValue().lowest_price);
                 detailAssertTest(1557365804, "attrDatas.seller_time", entry.getValue().seller_time);
@@ -300,8 +300,8 @@ public class product_coupleskudetail_test extends HsqInterfaceTest {
             }
             detailAssertTest("2127312000", "batch", model.batch);
             for (int i = 0; i < model.pics.size(); i++) {
-                detailAssertTest("http://img2.haoshiqi.net/maaa938eac8efc626a53e043574c88cdc9.jpg?imageView2/0/w/840/h/840/q/70", "batch", model.pics.get(0));
-                detailAssertTest("http://img2.haoshiqi.net/ma25a4a7e863ae9850e316bdddee91c8ca.jpg?imageView2/0/w/840/h/840/q/70", "batch", model.pics.get(1));
+                detailAssertTest("batch", model.pics.get(0));
+                detailAssertTest("batch", model.pics.get(1));
             }
 
             detailAssertTest(85486, "skuId", model.skuId);
@@ -309,25 +309,25 @@ public class product_coupleskudetail_test extends HsqInterfaceTest {
             detailAssertTest(1786, "merchantId", model.merchantId);
             detailAssertTest(1786, "merchantInfo.id", model.merchantInfo.id);
             detailAssertTest("淘食铺", "merchantInfo.name", model.merchantInfo.name);
-            detailAssertTest("http://img2.haoshiqi.net/ma4078597d4135f9d8ee1be8859a7842a3.jpg?imageView2/0/w/200/h/200/q/70", "merchantInfo.logo", model.merchantInfo.logo);
+            detailAssertTest("merchantInfo.logo", model.merchantInfo.logo);
             detailAssertTest("haoshiqi://hybrid?compid=haoshiqi&comppage=merchant&merchantid=1786", "merchantInfo.schema", model.merchantInfo.schema);
 
-            detailAssertTest("http://img2.haoshiqi.net/maaa938eac8efc626a53e043574c88cdc9.jpg?imageView2/0/q/70", "model.shareInfo.firendsZone.thumbnail", model.shareInfo.firendsZone.thumbnail);
+            detailAssertTest("model.shareInfo.firendsZone.thumbnail", model.shareInfo.firendsZone.thumbnail);
             detailAssertTest("pages/index/index?jumplink=detail%3Fid%3D60627&minishare=1", "model.shareInfo.firendsZone.link", model.shareInfo.firendsZone.link);
             detailAssertTest("0.02元压测专用（勿动） 200g", "model.shareInfo.firendsZone.content", model.shareInfo.firendsZone.content);
             detailAssertTest(true, "shareInfo.wechat.isMini", model.shareInfo.wechat.isMini);
             detailAssertTest("pages/index/index?jumplink=detail%3Fid%3D60627&minishare=1", "shareInfo.wechat.pagePath", model.shareInfo.wechat.pagePath);
             detailAssertTest("gh_9b3866e4e1ae", "shareInfo.wechat.userName", model.shareInfo.wechat.userName);
             detailAssertTest("我买了0.02元压测专用（勿动） 200g", "shareInfo.wechat.title", model.shareInfo.wechat.title);
-            detailAssertTest("http://img2.haoshiqi.net/maaa938eac8efc626a53e043574c88cdc9.jpg?imageView2/0/q/70", "model.shareInfo.wechat.thumbnail", model.shareInfo.wechat.thumbnail);
+            detailAssertTest("model.shareInfo.wechat.thumbnail", model.shareInfo.wechat.thumbnail);
             detailAssertTest("pages/index/index?jumplink=detail%3Fid%3D60627&minishare=1", "model.shareInfo.wechat.link", model.shareInfo.wechat.link);
             detailAssertTest("2人团，成团必发货，好食期优选，正品保证", "model.shareInfo.wechat.content", model.shareInfo.wechat.content);
             detailAssertTest("我买了0.02元压测专用（勿动） 200g", "shareInfo.mobileQQ.title", model.shareInfo.mobileQQ.title);
-            detailAssertTest("http://img2.haoshiqi.net/maaa938eac8efc626a53e043574c88cdc9.jpg?imageView2/0/q/70", "model.shareInfo.mobileQQ.thumbnail", model.shareInfo.mobileQQ.thumbnail);
+            detailAssertTest("model.shareInfo.mobileQQ.thumbnail", model.shareInfo.mobileQQ.thumbnail);
             detailAssertTest("pages/index/index?jumplink=detail%3Fid%3D60627&minishare=1", "model.shareInfo.mobileQQ.link", model.shareInfo.mobileQQ.link);
             detailAssertTest("2人团，成团必发货，好食期优选，正品保证", "model.shareInfo.mobileQQ.content", model.shareInfo.mobileQQ.content);
             detailAssertTest("我买了0.02元压测专用（勿动） 200g", "shareInfo.mobileQQ.title", model.shareInfo.mobileQQ.title);
-            detailAssertTest("http://img2.haoshiqi.net/maaa938eac8efc626a53e043574c88cdc9.jpg?imageView2/0/q/70", "model.shareInfo.alipay.thumbnail", model.shareInfo.alipay.thumbnail);
+            detailAssertTest("model.shareInfo.alipay.thumbnail", model.shareInfo.alipay.thumbnail);
             detailAssertTest("pages/index/index?jumplink=detail%3Fid%3D60627&minishare=1", "model.shareInfo.alipay.link", model.shareInfo.alipay.link);
             detailAssertTest("2人团，成团必发货，好食期优选，正品保证", "model.shareInfo.alipay.content", model.shareInfo.alipay.content);
 

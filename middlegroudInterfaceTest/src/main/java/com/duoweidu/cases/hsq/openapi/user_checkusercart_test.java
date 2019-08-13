@@ -9,6 +9,9 @@ import org.testng.annotations.Test;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * 无返回数据，暂时无需通用断言
+ */
 public class user_checkusercart_test extends HsqInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "检查购物车是否合法")

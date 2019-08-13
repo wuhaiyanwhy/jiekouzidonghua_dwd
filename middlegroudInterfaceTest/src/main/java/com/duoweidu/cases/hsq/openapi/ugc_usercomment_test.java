@@ -7,6 +7,9 @@ import org.testng.annotations.Test;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * 无法一直评价，暂时无需通用断言
+ */
 public class ugc_usercomment_test extends HsqInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "评价")

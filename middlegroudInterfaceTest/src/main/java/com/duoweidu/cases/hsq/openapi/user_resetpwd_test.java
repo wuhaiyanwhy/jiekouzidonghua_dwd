@@ -8,6 +8,9 @@ import org.testng.annotations.Test;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * 无法一直获取验证码，暂时无需详细断言
+ */
 public class user_resetpwd_test extends HsqInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "重置密码")

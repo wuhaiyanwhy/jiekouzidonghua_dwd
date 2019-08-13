@@ -7,6 +7,9 @@ import org.testng.annotations.Test;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * 不频繁写入脏数据，暂时无需详细断言
+ */
 public class user_feedback_test extends HsqInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "意见反馈")

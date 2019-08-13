@@ -9,6 +9,9 @@ import org.testng.annotations.Test;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * 订单状态无法确认收货，暂时无需详细断言
+ */
 public class order_userorderconfirm_test extends HsqInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "确认收货")
