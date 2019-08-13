@@ -8,6 +8,9 @@ import org.testng.annotations.Test;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * 无法一直申诉，暂时无需详细断言
+ */
 public class refund_complaint_test extends HsqInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "退款申诉")

@@ -3,6 +3,7 @@ package com.duoweidu.cases.hsq.openapi;
 import com.duoweidu.cases.interfaces.HsqInterfaceTest;
 import com.duoweidu.config.HsqOpenapiConfig;
 import com.duoweidu.config.generalAssert.GeneralAssert;
+import com.duoweidu.model.hsq.ResData;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONException;
@@ -13,6 +14,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class user_setdefaultaddress_test extends HsqInterfaceTest {
+
+    private ResData model;
 
     @Test(dependsOnGroups = "orderinitPutong",description = "设置默认收货地址")
     public void user_setdefaultaddress_true() {
@@ -25,9 +28,15 @@ public class user_setdefaultaddress_test extends HsqInterfaceTest {
             List<NameValuePair> list = new LinkedList<>();
             list.add(new BasicNameValuePair("addressId", id));
             process(list,true,false);
+            model = sparseJson(ResData.class);
+            detailAssert();
         }catch (JSONException e) {
             GeneralAssert.jsonAssert(url,pathId,param,result,e);
         }
+    }
+
+    private void detailAssert() {
+        detailAssertTest(true, "res", model.res);
     }
 
 }

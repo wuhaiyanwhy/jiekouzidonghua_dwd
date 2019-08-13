@@ -8,6 +8,9 @@ import org.testng.annotations.Test;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * 无法一直绑定手机号，暂时无需详细断言
+ */
 public class user_bindmobile_test extends HsqInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "绑定手机号")
