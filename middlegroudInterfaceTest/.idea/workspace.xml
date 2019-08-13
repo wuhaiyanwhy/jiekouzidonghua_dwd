@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6dd9f21c-4835-4a98-be8b-a85c413de519" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/CreateWithdraw.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/QueryWithdraw.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Withdraw.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/WithdrawList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/model/tradecenter/CreateWithdrawData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/model/tradecenter/QueryWithdrawData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/model/tradecenter/WithdrawListData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/config/TradecenterConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/config/TradecenterConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tradeCenter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tradeCenter.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/config/TradecenterConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/config/TradecenterConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hsq-dayan-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hsq-dayan-test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tradeCenter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tradeCenter.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/InterfaceReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/InterfaceReport.html" afterDir="false" />
-    </list>
+    <list default="true" id="6dd9f21c-4835-4a98-be8b-a85c413de519" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +13,7 @@
     <session id="-129064841">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.7" value="2" />
@@ -77,8 +62,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/tradeCenter.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="176" column="13" selection-end-line="231" selection-end-column="8" />
+            <state relative-caret-position="405">
+              <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -259,37 +244,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="duoweidu" type="462c0819:PsiDirectoryNode" />
-              <item name="cases" type="462c0819:PsiDirectoryNode" />
-              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="middlegroudInterfaceTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="middlegroudInterfaceTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="duoweidu" type="462c0819:PsiDirectoryNode" />
-              <item name="cases" type="462c0819:PsiDirectoryNode" />
-              <item name="tradecenter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="middlegroudInterfaceTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="middlegroudInterfaceTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="duoweidu" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="middlegroudInterfaceTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="middlegroudInterfaceTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="duoweidu" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="tradecenter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="middlegroudInterfaceTest" type="b2602c69:ProjectViewProjectNode" />
@@ -311,7 +266,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/src/main/resources/hsq-dayan-test.xml" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565346478934" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565661504391" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -414,14 +369,11 @@
       <workItem from="1565256422114" duration="8032000" />
       <workItem from="1565318989581" duration="13132000" />
       <workItem from="1565338144257" duration="418000" />
-      <workItem from="1565338591724" duration="7674000" />
+      <workItem from="1565338591724" duration="7819000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.08.09 at 17h 28m 55s.xml">
-      <configuration name="/Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.08.09 at 17h 33m 59s.xml">
       <configuration name="/Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" configurationId="TestNG" />
     </history-entry>
@@ -449,9 +401,12 @@
     <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.08.09 at 18h 24m 37s.xml">
       <configuration name="/Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_tradeCenter_xml - 2019.08.09 at 18h 28m 11s.xml">
+      <configuration name="/Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39595000" />
+    <option name="totallyTimeSpent" value="39740000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -466,7 +421,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4983165" visible="true" weight="0.28183118" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4983165" visible="true" weight="0.28183118" />
       <window_info id="Structure" order="1" sideWeight="0.5016835" side_tool="true" weight="0.2746781" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -867,8 +822,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/tradeCenter.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="176" column="13" selection-end-line="231" selection-end-column="8" />
+        <state relative-caret-position="405">
+          <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
         </state>
       </provider>
     </entry>

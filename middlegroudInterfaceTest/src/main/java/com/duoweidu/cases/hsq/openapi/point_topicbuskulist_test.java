@@ -14,7 +14,7 @@ public class point_topicbuskulist_test extends HsqInterfaceTest {
     public void point_topicbuskulist_true() {
         setUrl("point.topicbuskulist.uri");
 
-        param = "pointChannelId=1&topicCode=" + SqlDetail.getInstance().getParamValue("point_topicCode");
+        param = "pointChannelId=1&topicCode=" + SqlDetail.getInstance().getParamValue("pointTopicCode");
         process(true, true);
         model = sparseJson(PointTopicbuskulistData.class);
         detailAssert();
