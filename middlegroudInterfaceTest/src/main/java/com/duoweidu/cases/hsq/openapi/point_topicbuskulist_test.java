@@ -6,6 +6,9 @@ import com.duoweidu.model.hsq.PointTopicbuskulistData;
 import com.duoweidu.utils.ConfigFileUrl;
 import org.testng.annotations.Test;
 
+/**
+ * 暂时无需详细断言
+ */
 public class point_topicbuskulist_test extends HsqInterfaceTest {
 
     private PointTopicbuskulistData model;

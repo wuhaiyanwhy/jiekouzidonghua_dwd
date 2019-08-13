@@ -86,7 +86,7 @@ public class tradecenter_orderinfo_test extends HsqInterfaceTest {
                     detailAssertTest(2669, "model.skuList.buSkuId", model.skuList.get(i).buSkuId);
                     detailAssertTest(28659, "model.skuList.skuId", model.skuList.get(i).skuId);
                     detailAssertTest("接口测试专用商品，勿动动", "model.skuList.skuName", model.skuList.get(i).skuName);
-                    detailAssertTest("http://img2.haoshiqi.net/ma32483124920c8aea275a83545aa3b5aa.jpg?imageView2/0/w/200/h/200/q/70", "model.skuList.skuThumbnail", model.skuList.get(i).skuThumbnail);
+                    detailAssertTest("model.skuList.skuThumbnail", model.skuList.get(i).skuThumbnail);
                     detailAssertTest(5000, "model.skuList.marketPrice", model.skuList.get(i).marketPrice);
                     detailAssertTest(1099, "modelskuList.totalPrice", model.skuList.get(i).totalPrice);
                     detailAssertTest(0, "model.skuList.payPrice", model.skuList.get(i).payPrice);
@@ -195,7 +195,7 @@ public class tradecenter_orderinfo_test extends HsqInterfaceTest {
                     detailAssertTest(9429, "model.skuList.buSkuId", model.skuList.get(i).buSkuId);
                     detailAssertTest(85486, "model.skuList.skuId", model.skuList.get(i).skuId);
                     detailAssertTest("压测专用（勿动） 200g", "model.skuList.skuName", model.skuList.get(i).skuName);
-                    detailAssertTest("http://img2.haoshiqi.net/maaa938eac8efc626a53e043574c88cdc9.jpg?imageView2/0/w/200/h/200/q/70", "model.skuList.skuThumbnail", model.skuList.get(i).skuThumbnail);
+                    detailAssertTest("model.skuList.skuThumbnail", model.skuList.get(i).skuThumbnail);
                     detailAssertTest(3, "model.skuList.marketPrice", model.skuList.get(i).marketPrice);
                     detailAssertTest(1, "modelskuList.totalPrice", model.skuList.get(i).totalPrice);
                     detailAssertTest(1, "model.skuList.payPrice", model.skuList.get(i).payPrice);

@@ -4,6 +4,9 @@ import com.duoweidu.cases.interfaces.HsqInterfaceTest;
 import com.duoweidu.config.sql.SqlDetail;
 import org.testng.annotations.Test;
 
+/**
+ * 已切到积分入淘流程，暂时无需详细断言
+ */
 public class tradecenter_ordersuccess_test extends HsqInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "积分订单成功页")

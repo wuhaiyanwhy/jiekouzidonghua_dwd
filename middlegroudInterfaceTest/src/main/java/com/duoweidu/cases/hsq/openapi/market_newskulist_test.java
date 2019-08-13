@@ -8,7 +8,7 @@ public class market_newskulist_test extends HsqInterfaceTest {
 
     private MarketNewskulistData model;
 
-    @Test(dependsOnGroups = "loginTrue",description ="今日新品")
+    @Test(description ="今日新品")
     public void market_newskulist_true() {
         setUrl("market.newskulist.uri");
         process(true,true);
