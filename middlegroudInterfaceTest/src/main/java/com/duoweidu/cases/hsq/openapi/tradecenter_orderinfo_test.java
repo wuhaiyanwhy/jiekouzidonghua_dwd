@@ -16,7 +16,7 @@ public class tradecenter_orderinfo_test extends HsqInterfaceTest {
 
         setUrl("tradecenter.orderinfo.uri");
         param = "token=" + SqlDetail.getInstance().getParamValue("token") + "&orderId=" + SqlDetail.getInstance().getParamValue("pointOrderId");
-        process(false, false);
+        process(true, false);
 
         model = sparseJson(TradecenterOrderinfoData.class);
         tradecenterOrderinfoAssert();
@@ -86,7 +86,7 @@ public class tradecenter_orderinfo_test extends HsqInterfaceTest {
                     detailAssertTest(2669, "model.skuList.buSkuId", model.skuList.get(i).buSkuId);
                     detailAssertTest(28659, "model.skuList.skuId", model.skuList.get(i).skuId);
                     detailAssertTest("接口测试专用商品，勿动动", "model.skuList.skuName", model.skuList.get(i).skuName);
-                    detailAssertTest("http://img2.haoshiqi.net/ma32483124920c8aea275a83545aa3b5aa.jpg?imageView2/0/w/200/h/200/q/70", "model.skuList.skuThumbnail", model.skuList.get(i).skuThumbnail);
+                    detailAssertTest("model.skuList.skuThumbnail", model.skuList.get(i).skuThumbnail);
                     detailAssertTest(5000, "model.skuList.marketPrice", model.skuList.get(i).marketPrice);
                     detailAssertTest(1099, "modelskuList.totalPrice", model.skuList.get(i).totalPrice);
                     detailAssertTest(0, "model.skuList.payPrice", model.skuList.get(i).payPrice);
@@ -121,15 +121,15 @@ public class tradecenter_orderinfo_test extends HsqInterfaceTest {
 
             //确认订单页，公告显示，公告ID存在
             if (model.message != null) {
-                detailAssertTest(18, "model.message.id", model.message.id);
-                detailAssertTest(1, "model.message.channel_id", model.message.channel_id);
-                detailAssertTest(4, "model.message.position", model.message.position);
-                detailAssertTest(1557987292, "model.message.start_time", model.message.start_time);
-                detailAssertTest(1588240457, "model.message.end_time", model.message.end_time);
-                detailAssertTest("详情页测试公告", "model.message.title", model.message.title);
-                detailAssertTest("确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告", "model.message.content", model.message.content);
-                detailAssertTest(2, "model.message.status", model.message.status);
-                detailAssertTest(1, "model.message.is_deleted", model.message.is_deleted);
+                detailAssertTest("model.message.id", model.message.id);
+                detailAssertTest("model.message.channel_id", model.message.channel_id);
+                detailAssertTest( "model.message.position", model.message.position);
+                detailAssertTest( "model.message.start_time", model.message.start_time);
+                detailAssertTest( "model.message.end_time", model.message.end_time);
+                detailAssertTest( "model.message.title", model.message.title);
+                detailAssertTest("model.message.content", model.message.content);
+                detailAssertTest( "model.message.status", model.message.status);
+                detailAssertTest( "model.message.is_deleted", model.message.is_deleted);
             }
         }
 
@@ -195,7 +195,7 @@ public class tradecenter_orderinfo_test extends HsqInterfaceTest {
                     detailAssertTest(9429, "model.skuList.buSkuId", model.skuList.get(i).buSkuId);
                     detailAssertTest(85486, "model.skuList.skuId", model.skuList.get(i).skuId);
                     detailAssertTest("压测专用（勿动） 200g", "model.skuList.skuName", model.skuList.get(i).skuName);
-                    detailAssertTest("http://img2.haoshiqi.net/maaa938eac8efc626a53e043574c88cdc9.jpg?imageView2/0/w/200/h/200/q/70", "model.skuList.skuThumbnail", model.skuList.get(i).skuThumbnail);
+                    detailAssertTest("model.skuList.skuThumbnail", model.skuList.get(i).skuThumbnail);
                     detailAssertTest(3, "model.skuList.marketPrice", model.skuList.get(i).marketPrice);
                     detailAssertTest(1, "modelskuList.totalPrice", model.skuList.get(i).totalPrice);
                     detailAssertTest(1, "model.skuList.payPrice", model.skuList.get(i).payPrice);
@@ -237,16 +237,15 @@ public class tradecenter_orderinfo_test extends HsqInterfaceTest {
 
             //确认订单页，公告显示，公告ID存在
             if (model.message != null) {
-//            detailAssertTest(18, "model.message.id", model.message.id);
-//            detailAssertTest(1, "model.message.channel_id", model.message.channel_id);
-//            detailAssertTest(4, "model.message.position", model.message.position);
-//            detailAssertTest(1557987292, "model.message.start_time", model.message.start_time);
-//            detailAssertTest(1588240457, "model.message.end_time", model.message.end_time);
-//            detailAssertTest("详情页测试公告", "model.message.title", model.message.title);
-//            detailAssertTest("确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告确认页测试公告", "model.message.content", model.message.content);
-//            detailAssertTest(2, "model.message.status", model.message.status);
-//            detailAssertTest(1, "model.message.is_deleted", model.message.is_deleted);
-
+                detailAssertTest("model.message.id", model.message.id);
+                detailAssertTest("model.message.channel_id", model.message.channel_id);
+                detailAssertTest("model.message.position", model.message.position);
+                detailAssertTest("model.message.start_time", model.message.start_time);
+                detailAssertTest("model.message.end_time", model.message.end_time);
+                detailAssertTest("model.message.title", model.message.title);
+                detailAssertTest("model.message.content", model.message.content);
+                detailAssertTest("model.message.status", model.message.status);
+                detailAssertTest("model.message.is_deleted", model.message.is_deleted);
             }
         }
     }

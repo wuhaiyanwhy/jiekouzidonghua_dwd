@@ -3,6 +3,7 @@ package com.duoweidu.cases.hsq.openapi;
 import com.duoweidu.cases.interfaces.HsqInterfaceTest;
 import com.duoweidu.config.generalAssert.GeneralAssert;
 import com.duoweidu.config.sql.SqlDetail;
+import com.duoweidu.model.hsq.ResData;
 import com.duoweidu.utils.ConfigFileUrl;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
@@ -15,6 +16,8 @@ import java.util.List;
 
 public class reward_coderedeem_test extends HsqInterfaceTest {
 
+    private ResData model;
+
     @Test(dependsOnGroups = "orderinitPintuan", description = "兑换活动码", groups = "coderedeem")
     public void reward_coderedeem_true() {
         setUrl("reward.coderedeem.uri");
@@ -22,18 +25,14 @@ public class reward_coderedeem_test extends HsqInterfaceTest {
         list.add(new BasicNameValuePair("code", SqlDetail.getInstance().getParamValue(2, "code")));
         process(list,false,false);
         if ("beta".equals(ConfigFileUrl.getEnv())){
-            try {
-                generalAssertTest(false);
-                JSONObject jsonObject = new JSONObject(result);
-                JSONObject data = (JSONObject) jsonObject.get("data");
-                boolean res = (boolean) data.get("res");
-                if (res != true) {
-                    GeneralAssert.detailedAssert("领券失败，返回的res应是true；", url, pathId, param, result);
-                }
-            }catch (JSONException e) {
-                GeneralAssert.jsonAssert(url, pathId, param, result, e);
-            }
+        generalAssertTest(false);
+        model = sparseJson(ResData.class);
+        detailAssert();
         }
+    }
+
+    private void detailAssert() {
+        detailAssertTest(true, "res", model.res);
     }
 
 }

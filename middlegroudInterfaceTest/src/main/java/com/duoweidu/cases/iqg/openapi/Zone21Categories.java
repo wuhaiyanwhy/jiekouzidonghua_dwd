@@ -9,6 +9,6 @@ public class Zone21Categories extends IqgInterfaceTest {
     public void zone_21_categories_true() {
         setUrl("zone.21.categories.uri");
         process(false,false);
-        generalAssertTest(false, true);
+        generalAssertTest(true, false);
     }
 }

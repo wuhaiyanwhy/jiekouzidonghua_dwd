@@ -338,6 +338,17 @@
         </classes>
     </test>
 
+
+    <test name ="觅食蜂接口测试用例(管理平台)">
+        <classes>
+            <class name="com.duoweidu.cases.msf.opadmin.AdminMerchantList">
+                <methods>
+                    <include name = "merchantList"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
     <test name ="消息推送">
         <classes >
             <class name="com.duoweidu.cases.message.Build">
