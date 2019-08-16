@@ -491,7 +491,7 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
     }
 
     /**
-     * 判断返回的数据是否按特定的顺序包含相同元素(Object[])
+     * 判断返回的数据是否相等，但没有特定但顺序(Object[])
      * @param channelId
      * @param actual
      * @param expected
@@ -509,7 +509,7 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
             tmp = e.getMessage();
         }
 
-        fail("\n" + tmp + "\n" + distinguishParamFailed(channelId, "返回的" + resultKey + "不正确，不应不按特定的顺序包含相同元素;", uri, pathId, param, 7, result));
+        fail("\n" + tmp + "\n" + distinguishParamFailed(channelId, "返回的" + resultKey + "不正确(顺序是否相等);", uri, pathId, param, 7, result));
 
     }
 
