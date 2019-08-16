@@ -732,4 +732,40 @@ public class InterfaceTest {
     protected void assertNotEquals(String resultKey, double actual1, double actual2, double delta) {
         GeneralAssertDetail.assertNotEquals(channel_id(), resultKey, actual1, actual2, delta, url, pathId, param, result);
     }
+
+    /**
+     * 判断返回的数据是否为空(ArrayList)
+     * @param resultKey
+     * @param actual
+     */
+    protected void assertEmpty(String resultKey, ArrayList actual) {
+        GeneralAssertDetail.assertEmpty(channel_id(), resultKey, actual, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回的数据是否为空(String)
+     * @param resultKey
+     * @param actual
+     */
+    protected void assertEmpty(String resultKey, String actual) {
+        GeneralAssertDetail.assertEmpty(channel_id(), resultKey, actual, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回的数据是否为空/0(int)
+     * @param resultKey
+     * @param actual
+     */
+    protected void assertEmpty(String resultKey, int actual) {
+        GeneralAssertDetail.assertEmpty(channel_id(), resultKey, actual, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回的数据是否为空(boolean)
+     * @param resultKey
+     * @param actual
+     */
+    protected void assertEmpty(String resultKey, boolean actual) {
+        GeneralAssertDetail.assertEmpty(channel_id(), resultKey, actual, url, pathId, param, result);
+    }
 }

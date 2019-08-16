@@ -2,10 +2,7 @@ package com.duoweidu.config.generalAssert;
 
 import org.testng.Assert;
 
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class GeneralAssertDetail extends GeneralAssertChannel {
 
@@ -334,7 +331,7 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
     }
 
     /**
-     * 判断返回的结果为空(Object)
+     * 判断返回的结果是否为空(Object)
      * @param channelId
      * @param object
      * @param resultKey
@@ -770,5 +767,71 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
         fail("\n" + tmp + "\n" + notEqualsFailed(channelId, resultKey, uri, pathId, param, result));
 
     }
+
+    /**
+     * 判断返回的数据是否为空(ArrayList)
+     * @param channelId
+     * @param resultKey
+     * @param actual
+     * @param uri
+     * @param pathId
+     * @param param
+     * @param result
+     */
+    static public void assertEmpty(int channelId, String resultKey, ArrayList actual, String uri, int pathId, String param, String result) {
+        if (actual.size() <= 0) {
+            GeneralAssertChannel.detailedAssert(channelId, "返回的" + resultKey + "不应为空；", uri, pathId, param, result);
+        }
+    }
+
+    /**
+     * 判断返回的数据是否为空(String)
+     * @param channelId
+     * @param resultKey
+     * @param actual
+     * @param uri
+     * @param pathId
+     * @param param
+     * @param result
+     */
+    static public void assertEmpty(int channelId, String resultKey, String actual, String uri, int pathId, String param, String result) {
+        if (actual == null || actual.isEmpty()) {
+            GeneralAssertChannel.detailedAssert(channelId, "返回的" + resultKey + "不应为空" + "，实际返回：" +
+                    actual, uri, pathId, param, result);
+        }
+    }
+
+    /**
+     * 判断返回的数据是否为空/0(int)
+     * @param channelId
+     * @param resultKey
+     * @param actual
+     * @param uri
+     * @param pathId
+     * @param param
+     * @param result
+     */
+    static public void assertEmpty(int channelId, String resultKey, int actual, String uri, int pathId, String param, String result) {
+        String actuals = String.valueOf(actual);
+        if (actuals == null || actuals.isEmpty() || actuals.equals("0") ) {
+            GeneralAssertChannel.detailedAssert(channelId, "返回的" + resultKey + "不应为空/0" + "，实际返回：" +
+                    actual, uri, pathId, param, result);
+        }
+    }
+
+    /**
+     * 判断返回的数据是否为空(boolean)
+     * @param channelId
+     * @param resultKey
+     * @param actual
+     * @param uri
+     * @param pathId
+     * @param param
+     * @param result
+     */
+    static public void assertEmpty(int channelId, String resultKey, boolean actual, String uri, int pathId, String param, String result) {
+        assertEmpty(channelId, resultKey, String.valueOf(actual), uri, pathId, param, result);
+    }
+
 
 }
