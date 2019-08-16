@@ -25,7 +25,7 @@ public class Activate extends InterfaceTest {
     public void iqgActivate() {
         List<NameValuePair> list = new LinkedList<>();
         list.add(new BasicNameValuePair("method", "account.activate"));
-        list.add(new BasicNameValuePair("accountNumber", TradecenterConfig.iqgAccountNumber));
+        list.add(new BasicNameValuePair("accountNumber", TradecenterConfig.iqgNewAccountNumber));
         list.add(new BasicNameValuePair("version", SqlDetail.getInstance().getParamValue(0, "version")));
         list.add(new BasicNameValuePair("ip", SqlDetail.getInstance().getParamValue(0, "ip")));
         list.add(new BasicNameValuePair("userId", SqlDetail.getInstance().getParamValue(0, "createUserId")));

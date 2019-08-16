@@ -4,7 +4,8 @@ public class InfoTypeCodeData {
 
     public FeesModel fees;
     public PromotionModel promotion;
-    public SettleModel settle;
+    public SettleTypeModel settle_type;
+    public SettleMethodModel settle_method;
     public String reverse;
 
     public static class FeesModel {
@@ -17,7 +18,12 @@ public class InfoTypeCodeData {
         public String ACTIVITY;
     }
 
-    public static class SettleModel {
+    public static class SettleTypeModel {
+        public String USER_COMMISSION;
+        public String SELLER_SETTLEMENT;
+
+    }
+    public static class SettleMethodModel {
         public String ONLINE_COMMISSION;
         public String ONLINE_SETTLE_PRICE;
         public String OFFLINE;

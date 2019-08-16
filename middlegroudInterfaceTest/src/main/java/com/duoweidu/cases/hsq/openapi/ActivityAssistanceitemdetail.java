@@ -49,8 +49,8 @@ public class ActivityAssistanceitemdetail extends HsqInterfaceTest {
     private void noPayDetailAssert() {
         detailAssertTest(139, "activity_id", model.activity_id);
         detailAssertTest(34535, "sku_id", model.sku_id);
-        detailAssertTest("http://img2.haoshiqi.net/ma83cfe38517bb7812d3562f7d1486f3e1.jpg?imageView2/0/w/840/h/840/q/70", "pics.get(0)", model.pics.get(0));
-        detailAssertTest("http://img2.haoshiqi.net/ma3cb8313f7b965464f25b142d28218c1e.jpg?imageView2/0/w/840/h/840/q/70", "pics.get(1)", model.pics.get(1));
+        detailAssertTest("pics.get(0)", model.pics.get(0));
+        detailAssertTest("pics.get(1)", model.pics.get(1));
         detailAssertTest("接口自动化测试专用助力免单 100g", "name", model.name);
         detailAssertTest("接口自动化测试专用助力免单 （勿动）", "activity_title", model.activity_title);
         detailAssertTest("活动规则", "activity_rule", model.activity_rule);

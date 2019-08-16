@@ -8,7 +8,7 @@ public class market_lotteryactivitylist_test extends HsqInterfaceTest {
 
     private MarketLotteryactivitylistData model;
 
-    @Test(dependsOnGroups = "loginTrue",description = "抽奖团列表")
+    @Test(description = "抽奖团列表")
     public void market_lotteryactivitylist_true() {
         setUrl("market.lotteryactivitylist.uri");
         process(true,true);
