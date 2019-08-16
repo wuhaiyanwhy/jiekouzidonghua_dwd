@@ -7,6 +7,9 @@ import org.testng.annotations.Test;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * 暂时无需详细断言
+ */
 public class user_getdealerlicense_test extends HsqInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "获取门店资质信息")

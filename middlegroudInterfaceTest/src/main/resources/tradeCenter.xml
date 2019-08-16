@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-<suite name = "中台接口测试">
+<suite name="中台接口测试">
 
-    <test name ="交易中心">
-        <classes >
+    <test name="交易中心">
+        <classes>
             <class name="com.duoweidu.cases.tradecenter.Create">
                 <methods>
                     <include name="msfCreate"/>
+                    <include name="iqgNewCreate"/>
                     <include name="iqgCreate"/>
+                    <include name="jszCreate"/>
                 </methods>
             </class>
 
@@ -32,12 +34,14 @@
             <class name="com.duoweidu.cases.tradecenter.Query">
                 <methods>
                     <include name="msfQuery"/>
+                    <include name="iqgQuery"/>
                 </methods>
             </class>
 
             <class name="com.duoweidu.cases.tradecenter.QueryAll">
                 <methods>
                     <include name="msfQueryAll"/>
+                    <include name="iqgQueryAll"/>
                 </methods>
             </class>
 
@@ -56,36 +60,42 @@
             <class name="com.duoweidu.cases.tradecenter.CreateRecharge">
                 <methods>
                     <include name="msfCreateRecharge"/>
+                    <include name="iqgCreateRecharge"/>
                 </methods>
             </class>
 
             <class name="com.duoweidu.cases.tradecenter.Recharge">
                 <methods>
                     <include name="msfRecharge"/>
+                    <include name="iqgRecharge"/>
                 </methods>
             </class>
 
             <class name="com.duoweidu.cases.tradecenter.QueryRecharge">
                 <methods>
                     <include name="msfQueryRecharge"/>
+                    <include name="iqgQueryRecharge"/>
                 </methods>
             </class>
 
             <class name="com.duoweidu.cases.tradecenter.CreateAdjust">
                 <methods>
                     <include name="msfCreateAdjust"/>
+                    <include name="iqgCreateAdjust"/>
                 </methods>
             </class>
 
             <class name="com.duoweidu.cases.tradecenter.Adjust">
                 <methods>
                     <include name="msfAdjust"/>
+                    <include name="iqgAdjust"/>
                 </methods>
             </class>
 
             <class name="com.duoweidu.cases.tradecenter.QueryAdjust">
                 <methods>
                     <include name="msfQueryAdjust"/>
+                    <include name="iqgQueryAdjust"/>
                 </methods>
             </class>
 
@@ -99,61 +109,97 @@
                 <methods>
                     <include name="msfCreateOrder"/>
                     <include name="msfCreateSubOrder"/>
+                    <include name="iqgCreateOrder"/>
+                    <include name="iqgCreateSubOrder"/>
+                    <include name="jszCreateOrder"/>
+                    <include name="jszCreateSettleOrder"/>
                 </methods>
             </class>
 
             <class name="com.duoweidu.cases.tradecenter.UpdateOrder">
                 <methods>
                     <include name="msfUpdateOrder"/>
+                    <include name="iqgUpdateOrder"/>
                 </methods>
             </class>
 
             <class name="com.duoweidu.cases.tradecenter.UpdateSubOrder">
                 <methods>
                     <include name="msfUpdateSubOrder"/>
+                    <include name="iqgUpdateSubOrder"/>
                 </methods>
             </class>
 
             <class name="com.duoweidu.cases.tradecenter.CreatePay">
                 <methods>
                     <include name="msfCreatePay"/>
+                    <include name="iqgCreatePay"/>
+                    <include name="jszCreatePay"/>
+                    <include name="jszCreateSettlePay"/>
                 </methods>
             </class>
 
             <class name="com.duoweidu.cases.tradecenter.Pay">
                 <methods>
                     <include name="msfPay"/>
+                    <include name="iqgPay"/>
                 </methods>
             </class>
 
             <class name="com.duoweidu.cases.tradecenter.QueryPay">
                 <methods>
                     <include name="msfQueryPay"/>
+                    <include name="iqgQueryPay"/>
                 </methods>
             </class>
 
             <class name="com.duoweidu.cases.tradecenter.CreateRefund">
                 <methods>
                     <include name="msfCreateRefund"/>
+                    <include name="iqgCreateRefund"/>
                 </methods>
             </class>
 
             <class name="com.duoweidu.cases.tradecenter.Refund">
                 <methods>
                     <include name="msfRefund"/>
+                    <include name="iqgRefund"/>
                 </methods>
             </class>
 
             <class name="com.duoweidu.cases.tradecenter.QueryRefund">
                 <methods>
                     <include name="msfQueryRefund"/>
+                    <include name="iqgQueryRefund"/>
                 </methods>
             </class>
+            <!--巨食阵提现-->
+            <class name="com.duoweidu.cases.tradecenter.CreateWithdraw">
+                <methods>
+                    <include name="jszCreateWithdraw"/>
+                </methods>
+            </class>
+            <!--<class name="com.duoweidu.cases.tradecenter.Withdraw">-->
+            <!--<methods>-->
+            <!--<include name="jszWithdraw"/>-->
+            <!--</methods>-->
+            <!--</class>-->
+            <class name="com.duoweidu.cases.tradecenter.QueryWithdraw">
+                <methods>
+                    <include name="jszQueryWithdraw"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.tradecenter.WithdrawList">
+                <methods>
+                    <include name="jszWithdrawList"/>
+                </methods>
+            </class>
+
         </classes>
     </test>
 
-    <test name ="交易中心管理平台">
-        <classes >
+    <test name="交易中心管理平台">
+        <classes>
             <class name="com.duoweidu.cases.tradecenterOpadmin.Account">
                 <methods>
                     <include name="account"/>
@@ -168,8 +214,8 @@
         </classes>
     </test>
 
-    <test name ="消息推送">
-        <classes >
+    <test name="消息推送">
+        <classes>
             <class name="com.duoweidu.cases.message.Build">
                 <methods>
                     <include name="build"/>
