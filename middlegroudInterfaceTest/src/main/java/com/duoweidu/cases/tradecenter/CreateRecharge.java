@@ -35,6 +35,27 @@ public class CreateRecharge extends TradeCenterInterfaceTest {
         }
     }
 
+    @Test(dependsOnGroups = "iqgCreate", description = "创建充值单", groups = "createRecharge")
+    public void iqgCreateRecharge() {
+        List<NameValuePair> list = new LinkedList<>();
+        list.add(new BasicNameValuePair("method", "trade.create_recharge"));
+        list.add(new BasicNameValuePair("rechargeAmount", SqlDetail.getInstance().getParamValue(0, "rechargeAmount")));
+        list.add(new BasicNameValuePair("rechargeTypeCode", SqlDetail.getInstance().getParamValue(0, "rechargeTypeCode")));
+        list.add(new BasicNameValuePair("rechargeDesc", SqlDetail.getInstance().getParamValue(0, "rechargeDesc")));
+        list.add(new BasicNameValuePair("accountNumber", TradecenterConfig.iqgAccountNumber));
+        list.add(new BasicNameValuePair("channel", SqlDetail.getInstance().getParamValue(0, "channel")));
+        list.add(new BasicNameValuePair("currency", SqlDetail.getInstance().getParamValue(0, "iqgCurrency")));
+
+        TradecenterConfig.accountType = "DWD_IQG_COIN";
+        process(list, true, false);
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            model = sparseJson(TradeNoData.class);
+            detailAssert();
+            //储存返回的trade_no
+            TradecenterConfig.iqgCreateRechargeTradeNo = model.trade_no;
+        }
+    }
+
     private void detailAssert() {
 
         detailAssertTest("trade_no", model.trade_no);

@@ -43,14 +43,14 @@ public class CommonIndexV2 extends HsqInterfaceTest {
             detailAssertTest("list.get(i).width", String.valueOf(model.list.get(i).width));
             detailAssertTest("list.get(i).height", String.valueOf(model.list.get(i).height));
             detailAssertTest("list.get(i).comment", model.list.get(i).comment);
-            detailAssertTest("list.get(i).list", model.list.get(i).list);
-            for (int j = 0; j < model.list.get(i).list.size(); j++) {
-                detailAssertTest("list.get(i).list.get(j).image", String.valueOf(model.list.get(i).list.get(j).image));
+//            detailAssertTest("list.get(i).list", model.list.get(i).list);
+//            for (int j = 0; j < model.list.get(i).list.size(); j++) {
+//                detailAssertTest("list.get(i).list.get(j).image", String.valueOf(model.list.get(i).list.get(j).image));
 //                detailAssertTest("list.get(i).list.get(j).image.url", model.list.get(i).list.get(j).image.url);
 //                detailAssertTest("list.get(i).list.get(j).image.w", model.list.get(i).list.get(j).image.w);
 //                detailAssertTest("list.get(i).list.get(j).image.h", model.list.get(i).list.get(j).image.h);
 //                detailAssertTest("list.get(i).list.get(j).link", model.list.get(i).list.get(j).link);
-            }
+//            }
             detailAssertTest("list.get(i).type", model.list.get(i).type);
             detailAssertTest("list.get(i).id", model.list.get(i).id);
             detailAssertTest("list.get(i).active", model.list.get(i).active);

@@ -2,6 +2,7 @@ package com.duoweidu.cases.hsq.openapi;
 
 import com.duoweidu.cases.interfaces.HsqInterfaceTest;
 import com.duoweidu.config.sql.SqlDetail;
+import com.duoweidu.model.hsq.ResData;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.testng.annotations.Test;
@@ -11,6 +12,8 @@ import java.util.List;
 
 public class market_subscribelottery_test extends HsqInterfaceTest {
 
+    private ResData model;
+
     @Test(dependsOnGroups = "loginTrue",description = "订阅抽奖团")
     public void market_subscribelottery_true() {
         setUrl("market.subscribelottery.uri");
@@ -18,6 +21,12 @@ public class market_subscribelottery_test extends HsqInterfaceTest {
         list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue("chouActivitiesId")));
         list.add(new BasicNameValuePair("type", "1"));
         process(list,true,false);
+        model = sparseJson(ResData.class);
+        detailAssert();
+    }
+
+    private void detailAssert() {
+        detailAssertTest(true, "res", model.res);
     }
 
 }

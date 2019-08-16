@@ -7,6 +7,9 @@ import org.testng.annotations.Test;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * 只能清空一次，暂时无需通用断言
+ */
 public class user_clearinvalidcartskus_test extends HsqInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "清空购物车失效商品")

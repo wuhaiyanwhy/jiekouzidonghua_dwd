@@ -18,7 +18,7 @@
                     <include name="point_recommenditems_true"/>
                 </methods>
             </class>
-            <!--获取积分专题信息(老专题)-->
+            获取积分专题信息(老专题)
             <class name="com.duoweidu.cases.hsq.openapi.point_topicinfo_test">
                 <methods>
                     <include name="point_topicinfo_true"/>
@@ -76,7 +76,6 @@
     </test>
 
     <listeners>
-
         <listener class-name="com.duoweidu.config.ExtentTestNGIReporterListener"/>
     </listeners>
 
