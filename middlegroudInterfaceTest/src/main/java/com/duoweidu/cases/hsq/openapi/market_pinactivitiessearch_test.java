@@ -8,7 +8,7 @@ public class market_pinactivitiessearch_test extends HsqInterfaceTest {
 
     private MarketPinactivitiessearchData model;
 
-    @Test(dependsOnGroups = "loginTrue",description = "拼团搜索")
+    @Test(description = "拼团搜索")
     public void market_pinactivitiessearch_true() {
         setUrl("market.pinactivitiessearch.uri");
         param = "q=饼干";

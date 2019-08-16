@@ -9,6 +9,9 @@ import org.testng.annotations.Test;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * 已切到积分入淘流程，暂时无需详细断言
+ */
 public class tradecenter_pointorderpreview_test extends HsqInterfaceTest {
 
     @Test(description = "积分订单初始化")
