@@ -2,6 +2,7 @@ package com.duoweidu.cases.hsq.openapi;
 
 import com.duoweidu.cases.interfaces.HsqInterfaceTest;
 import com.duoweidu.config.sql.SqlDetail;
+import com.duoweidu.model.hsq.ResData;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.testng.annotations.Test;
@@ -11,6 +12,8 @@ import java.util.List;
 
 public class user_likeproduct_test extends HsqInterfaceTest {
 
+    private ResData model;
+
     @Test(dependsOnGroups = "loginTrue",description = "收藏商品")
     public void user_likeproduct_true() {
         setUrl("user.likeproduct.uri");
@@ -18,5 +21,11 @@ public class user_likeproduct_test extends HsqInterfaceTest {
         list.add(new BasicNameValuePair("activityId", SqlDetail.getInstance().getParamValue("pinActivitiesId")));
         list.add(new BasicNameValuePair("skuIds", SqlDetail.getInstance().getParamValue("skuId")));
         process(list,true,false);
+        model = sparseJson(ResData.class);
+        detailAssert();
+    }
+
+    private void detailAssert() {
+        detailAssertTest(true, "res", model.res);
     }
 }

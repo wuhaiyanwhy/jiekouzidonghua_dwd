@@ -30,7 +30,7 @@ public class ZhimaZhimaskudetail extends HsqInterfaceTest {
         detailAssertTest("接口自动化测试专用商品（勿动） 100g", "name", model.name);
         detailAssertTest("weight", String.valueOf(model.weight));
         detailAssertTest(6666, "price", model.price);
-        detailAssertTest("http://img2.haoshiqi.net/ma775648f49d5b7fc726fbe01d8a2325f2.jpg?imageView2/0/w/200/h/200/q/70", "thumbnail", model.thumbnail);
+        detailAssertTest("thumbnail", model.thumbnail);
         detailAssertTest(8888, "market_price", model.market_price);
         detailAssertTest(6666, "lowest_price", model.lowest_price);
         detailAssertTest(1560847502, "seller_time", model.seller_time);
@@ -109,12 +109,12 @@ public class ZhimaZhimaskudetail extends HsqInterfaceTest {
         detailAssertTest("", "description", model.description);
         detailAssertTest(false, "is_like", model.is_like);
         detailAssertTest("pics", model.pics);
-        detailAssertTest("http://img2.haoshiqi.net/ma775648f49d5b7fc726fbe01d8a2325f2.jpg?imageView2/0/w/840/h/840/q/70", "pics.get(0)", model.pics.get(0));
-        detailAssertTest( "http://img2.haoshiqi.net/maefe678e4531abc17a8295e0a610e8198.jpg?imageView2/0/w/840/h/840/q/70", "pics.get(1)", model.pics.get(1));
+        detailAssertTest("pics.get(0)", model.pics.get(0));
+        detailAssertTest( "pics.get(1)", model.pics.get(1));
         detailAssertTest("labels", model.labels);
         detailAssertTest(616, "merchantInfo.id", model.merchantInfo.id);
         detailAssertTest("蜜我食铺", "merchantInfo.name", model.merchantInfo.name);
-        detailAssertTest("http://img2.haoshiqi.net/ma17de1c5d5369f354d8b24a3458319d93?imageView2/0/w/200/h/200/q/70", "merchantInfo.logo", model.merchantInfo.logo);
+        detailAssertTest("merchantInfo.logo", model.merchantInfo.logo);
         detailAssertTest("haoshiqi://hybrid?compid=haoshiqi&comppage=merchant&merchantid=616", "merchantInfo.schema", model.merchantInfo.schema);
 
         detailAssertTest("http://img2.haoshiqi.net/ma775648f49d5b7fc726fbe01d8a2325f2.jpg", "model.shareInfo.firendsZone.thumbnail", model.shareInfo.firendsZone.thumbnail);

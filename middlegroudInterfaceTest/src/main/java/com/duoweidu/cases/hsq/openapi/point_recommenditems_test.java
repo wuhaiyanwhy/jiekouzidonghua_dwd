@@ -25,11 +25,14 @@ public class point_recommenditems_test extends HsqInterfaceTest {
 
         try {
             JSONObject jsonObject = new JSONObject(result);
-            JSONArray dataList = jsonObject.getJSONArray("data");
-            if (dataList.length() > 0) {
-                generalAssertTest(true, false);
-                model = sparseJsonResult(PointRecommenditemsData.class);
-                detailAssert();
+            String stringResult = jsonObject.get("data").toString();
+            if (stringResult.substring(0, 2).equals("[{")) {
+                JSONArray dataList = jsonObject.getJSONArray("data");
+                if (dataList.length() > 0) {
+                    generalAssertTest(true, false);
+                    model = sparseJsonResult(PointRecommenditemsData.class);
+                    detailAssert();
+                }
             }
         } catch (JSONException e) {
             GeneralAssert.jsonAssert(url, pathId, param, result, e);

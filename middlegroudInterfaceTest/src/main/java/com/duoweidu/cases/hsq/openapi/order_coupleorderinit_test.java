@@ -596,7 +596,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
             detailAssertTest("接口测试专用商品，勿动动", "packageInfo.itemList.get(0).skuList.get(0).name", model.packageInfo.itemList.get(0).skuList.get(0).name);
             detailAssertTest(100, "packageInfo.itemList.get(0).skuList.get(0).weight", model.packageInfo.itemList.get(0).skuList.get(0).weight);
             detailAssertTest(1900, "packageInfo.itemList.get(0).skuList.get(0).price", model.packageInfo.itemList.get(0).skuList.get(0).price);
-            detailAssertTest("http://img2.haoshiqi.net/ma32483124920c8aea275a83545aa3b5aa.jpg?imageView2/0/w/200/h/200/q/70", "packageInfo.itemList.get(0).skuList.get(0).thumbnail", model.packageInfo.itemList.get(0).skuList.get(0).thumbnail);
+            detailAssertTest("packageInfo.itemList.get(0).skuList.get(0).thumbnail", model.packageInfo.itemList.get(0).skuList.get(0).thumbnail);
             detailAssertTest(5000, "packageInfo.itemList.get(0).skuList.get(0).market_price", model.packageInfo.itemList.get(0).skuList.get(0).market_price);
             detailAssertTest(1523873005, "packageInfo.itemList.get(0).skuList.get(0).seller_time", model.packageInfo.itemList.get(0).skuList.get(0).seller_time);
             detailAssertTest("1833552000", "packageInfo.itemList.get(0).skuList.get(0).expired_date", model.packageInfo.itemList.get(0).skuList.get(0).expired_date);
@@ -626,7 +626,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
             detailAssertTest(1, "packageInfo.itemList.get(0).skuList.get(0).orderAmount", model.packageInfo.itemList.get(0).skuList.get(0).orderAmount);
             detailAssertTest(28659, "packageInfo.itemList.get(0).skuList.get(0).skuId", model.packageInfo.itemList.get(0).skuList.get(0).skuId);
             detailAssertTest("接口测试专用商品，勿动动", "packageInfo.itemList.get(0).skuList.get(0).sku_name", model.packageInfo.itemList.get(0).skuList.get(0).sku_name);
-            detailAssertTest("http://img2.haoshiqi.net/ma32483124920c8aea275a83545aa3b5aa.jpg?imageView2/0/w/200/h/200/q/70", "packageInfo.itemList.get(0).skuList.get(0).skuThumbnail", model.packageInfo.itemList.get(0).skuList.get(0).skuThumbnail);
+            detailAssertTest("packageInfo.itemList.get(0).skuList.get(0).skuThumbnail", model.packageInfo.itemList.get(0).skuList.get(0).skuThumbnail);
             detailAssertTest(0, "packageInfo.itemList.get(0).skuList.get(0).platformDiscount", model.packageInfo.itemList.get(0).skuList.get(0).platformDiscount);
             detailAssertTest("haoshiqi://com.doweidu/couplesbuydetail?pinActivityId=11836", "packageInfo.itemList.get(0).skuList.get(0).schema", model.packageInfo.itemList.get(0).skuList.get(0).schema);
             detailAssertTest(0, "packageInfo.doubleDiscount", model.packageInfo.doubleDiscount);
@@ -666,7 +666,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
             detailAssertTest("压测专用（勿动） 200g", "packageInfo.itemList.get(0).skuList.get(0).name", model.packageInfo.itemList.get(0).skuList.get(0).name);
             detailAssertTest(0, "packageInfo.itemList.get(0).skuList.get(0).weight", model.packageInfo.itemList.get(0).skuList.get(0).weight);
             detailAssertTest(3, "packageInfo.itemList.get(0).skuList.get(0).price", model.packageInfo.itemList.get(0).skuList.get(0).price);
-            detailAssertTest("http://img2.haoshiqi.net/maaa938eac8efc626a53e043574c88cdc9.jpg?imageView2/0/w/200/h/200/q/70", "packageInfo.itemList.get(0).skuList.get(0).thumbnail", model.packageInfo.itemList.get(0).skuList.get(0).thumbnail);
+            detailAssertTest("packageInfo.itemList.get(0).skuList.get(0).thumbnail", model.packageInfo.itemList.get(0).skuList.get(0).thumbnail);
             detailAssertTest(3, "packageInfo.itemList.get(0).skuList.get(0).market_price", model.packageInfo.itemList.get(0).skuList.get(0).market_price);
 //            detailAssertTest(3, "packageInfo.itemList.get(0).skuList.get(0).lowest_price", model.packageInfo.itemList.get(0).skuList.get(0).lowest_price);
             detailAssertTest(1557365804, "packageInfo.itemList.get(0).skuList.get(0).seller_time", model.packageInfo.itemList.get(0).skuList.get(0).seller_time);
@@ -697,7 +697,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
             detailAssertTest(1, "packageInfo.itemList.get(0).skuList.get(0).orderAmount", model.packageInfo.itemList.get(0).skuList.get(0).orderAmount);
             detailAssertTest(85486, "packageInfo.itemList.get(0).skuList.get(0).skuId", model.packageInfo.itemList.get(0).skuList.get(0).skuId);
             detailAssertTest("压测专用（勿动） 200g", "packageInfo.itemList.get(0).skuList.get(0).sku_name", model.packageInfo.itemList.get(0).skuList.get(0).sku_name);
-            detailAssertTest("http://img2.haoshiqi.net/maaa938eac8efc626a53e043574c88cdc9.jpg?imageView2/0/w/200/h/200/q/70", "packageInfo.itemList.get(0).skuList.get(0).skuThumbnail", model.packageInfo.itemList.get(0).skuList.get(0).skuThumbnail);
+            detailAssertTest("packageInfo.itemList.get(0).skuList.get(0).skuThumbnail", model.packageInfo.itemList.get(0).skuList.get(0).skuThumbnail);
             detailAssertTest(0, "packageInfo.itemList.get(0).skuList.get(0).platformDiscount", model.packageInfo.itemList.get(0).skuList.get(0).platformDiscount);
             detailAssertTest("haoshiqi://com.doweidu/couplesbuydetail?pinActivityId=60627", "packageInfo.itemList.get(0).skuList.get(0).schema", model.packageInfo.itemList.get(0).skuList.get(0).schema);
             detailAssertTest(0, "packageInfo.doubleDiscount", model.packageInfo.doubleDiscount);

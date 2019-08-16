@@ -2,6 +2,7 @@ package com.duoweidu.cases.interfaces;
 
 import com.alibaba.fastjson.JSON;
 import com.duoweidu.config.generalAssert.GeneralAssertChannel;
+import com.duoweidu.config.generalAssert.GeneralAssertDetail;
 import com.duoweidu.config.sql.SqlGeneral;
 import com.duoweidu.utils.CallbackInterfaceChannel;
 import com.duoweidu.utils.ConfigFileUrl;
@@ -11,8 +12,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class InterfaceTest {
 
@@ -415,4 +415,357 @@ public class InterfaceTest {
         detailAssertTest(resultKey, String.valueOf(resultValue));
     }
 
+    /**
+     * 判断返回结果是否为true
+     * @param resultKey
+     * @param condition
+     */
+    protected void assertTrue(String resultKey, boolean condition) {
+        GeneralAssertDetail.assertTrue(channel_id(), resultKey, condition, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回结果为false
+     * @param resultKey
+     * @param condition
+     */
+    protected void assertFalse(String resultKey, boolean condition) {
+        GeneralAssertDetail.assertFalse(channel_id(), resultKey, condition, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回结果是否相等(Object)
+     * @param resultKey
+     * @param actual
+     * @param expected
+     */
+    protected void assertEquals(String resultKey, Object actual, Object expected) {
+        GeneralAssertDetail.assertEquals(channel_id(), resultKey, actual, expected, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回结果是否相等(String)
+     * @param resultKey
+     * @param actual
+     * @param expected
+     */
+    protected void assertEquals(String resultKey, String actual, String expected) {
+        GeneralAssertDetail.assertEquals(channel_id(), resultKey, actual, expected, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回结果是否相等(double)
+     * @param resultKey
+     * @param actual
+     * @param expected
+     */
+    protected void assertEquals(String resultKey, double actual, double expected) {
+        GeneralAssertDetail.assertEquals(channel_id(), resultKey, actual, expected, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回结果是否相等(float)
+     * @param resultKey
+     * @param actual
+     * @param expected
+     */
+    protected void assertEquals(String resultKey, float actual, float expected) {
+        GeneralAssertDetail.assertEquals(channel_id(), resultKey, actual, expected, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回结果是否相等(long)
+     * @param resultKey
+     * @param actual
+     * @param expected
+     */
+    protected void assertEquals(String resultKey, long actual, long expected) {
+        GeneralAssertDetail.assertEquals(channel_id(), resultKey, actual, expected, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回结果是否相等(boolean)
+     * @param resultKey
+     * @param actual
+     * @param expected
+     */
+    protected void assertEquals(String resultKey, boolean actual, boolean expected) {
+        GeneralAssertDetail.assertEquals(channel_id(), resultKey, actual, expected, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回结果是否相等(byte)
+     * @param resultKey
+     * @param actual
+     * @param expected
+     */
+    protected void assertEquals(String resultKey, byte actual, byte expected) {
+        GeneralAssertDetail.assertEquals(channel_id(), resultKey, actual, expected, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回结果是否相等(char)
+     * @param resultKey
+     * @param actual
+     * @param expected
+     */
+    protected void assertEquals(String resultKey, char actual, char expected) {
+        GeneralAssertDetail.assertEquals(channel_id(), resultKey, actual, expected, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回结果是否相等(short)
+     * @param resultKey
+     * @param actual
+     * @param expected
+     */
+    protected void assertEquals(String resultKey, short actual, short expected) {
+        GeneralAssertDetail.assertEquals(channel_id(), resultKey, actual, expected, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回结果是否相等(int)
+     * @param resultKey
+     * @param actual
+     * @param expected
+     */
+    protected void assertEquals(String resultKey, int actual, int expected) {
+        GeneralAssertDetail.assertEquals(channel_id(), resultKey, actual, expected, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回结果不为空(Object)
+     * @param resultKey
+     * @param object
+     */
+    protected void assertNotNull(String resultKey, Object object) {
+        GeneralAssertDetail.assertNotNull(channel_id(), resultKey, object, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回结果不为空(Object)
+     * @param resultKey
+     * @param object
+     */
+    protected void assertNull(String resultKey, Object object) {
+        GeneralAssertDetail.assertNull(channel_id(), resultKey, object, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回的结果是否相同(Object)
+     * @param resultKey
+     * @param actual
+     * @param expected
+     */
+    protected void assertSame(String resultKey, Object actual, Object expected) {
+        GeneralAssertDetail.assertSame(channel_id(), resultKey, actual, expected, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回的结果是否不相同(Object)
+     * @param resultKey
+     * @param actual
+     * @param expected
+     */
+    protected void assertNotSame(String resultKey, Object actual, Object expected) {
+        GeneralAssertDetail.assertNotSame(channel_id(), resultKey, actual, expected, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回结果是否相等(Collection<?>)
+     * @param resultKey
+     * @param actual
+     * @param expected
+     */
+    protected void assertEquals(String resultKey, Collection<?> actual, Collection<?> expected) {
+        GeneralAssertDetail.assertEquals(channel_id(), resultKey, actual, expected, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回结果是否相等(Iterator<?>)
+     * @param resultKey
+     * @param actual
+     * @param expected
+     */
+    protected void assertEquals(String resultKey, Iterator<?> actual, Iterator<?> expected) {
+        GeneralAssertDetail.assertEquals(channel_id(), resultKey, actual, expected, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回结果是否相等(Iterable<?>)
+     * @param resultKey
+     * @param actual
+     * @param expected
+     */
+    protected void assertEquals(String resultKey, Iterable<?> actual, Iterable<?> expected) {
+        GeneralAssertDetail.assertEquals(channel_id(), resultKey, actual, expected, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回结果是否相等(Object[])
+     * @param resultKey
+     * @param actual
+     * @param expected
+     */
+    protected void assertEquals(String resultKey, Object[] actual, Object[] expected) {
+        GeneralAssertDetail.assertEquals(channel_id(), resultKey, actual, expected, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回的数据是否按特定的顺序包含相同元素(Object[])
+     * @param resultKey
+     * @param actual
+     * @param expected
+     */
+    protected void assertEqualsNoOrder(String resultKey, Object[] actual, Object[] expected) {
+        GeneralAssertDetail.assertEqualsNoOrder(channel_id(), resultKey, actual, expected, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回结果是否相等(Set<?>)
+     * @param resultKey
+     * @param actual
+     * @param expected
+     */
+    protected void assertEquals(String resultKey, Set<?> actual, Set<?> expected) {
+        GeneralAssertDetail.assertEquals(channel_id(), resultKey, actual, expected, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回结果是否相等(Map<?, ?>)
+     * @param resultKey
+     * @param actual
+     * @param expected
+     */
+    protected void assertEquals(String resultKey, Map<?, ?> actual, Map<?, ?> expected) {
+        GeneralAssertDetail.assertEquals(channel_id(), resultKey, actual, expected, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回结果是否不相等(Object)
+     * @param resultKey
+     * @param actual
+     * @param expected
+     */
+    protected void assertNotEquals(String resultKey, Object actual, Object expected) {
+        GeneralAssertDetail.assertNotEquals(channel_id(), resultKey, actual, expected, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回结果是否不相等(long)
+     * @param resultKey
+     * @param actual
+     * @param expected
+     */
+    protected void assertNotEquals(String resultKey, long actual, long expected) {
+        GeneralAssertDetail.assertNotEquals(channel_id(), resultKey, actual, expected, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回结果是否不相等(boolean)
+     * @param resultKey
+     * @param actual
+     * @param expected
+     */
+    protected void assertNotEquals(String resultKey, boolean actual, boolean expected) {
+        GeneralAssertDetail.assertNotEquals(channel_id(), resultKey, actual, expected, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回结果是否不相等(byte)
+     * @param resultKey
+     * @param actual
+     * @param expected
+     */
+    protected void assertNotEquals(String resultKey, byte actual, byte expected) {
+        GeneralAssertDetail.assertNotEquals(channel_id(), resultKey, actual, expected, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回结果是否不相等(char)
+     * @param resultKey
+     * @param actual
+     * @param expected
+     */
+    protected void assertNotEquals(String resultKey, char actual, char expected) {
+        GeneralAssertDetail.assertNotEquals(channel_id(), resultKey, actual, expected, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回结果是否不相等(short)
+     * @param resultKey
+     * @param actual
+     * @param expected
+     */
+    protected void assertNotEquals(String resultKey, short actual, short expected) {
+        GeneralAssertDetail.assertNotEquals(channel_id(), resultKey, actual, expected, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回结果是否不相等(int)
+     * @param resultKey
+     * @param actual
+     * @param expected
+     */
+    protected void assertNotEquals(String resultKey, int actual, int expected) {
+        GeneralAssertDetail.assertNotEquals(channel_id(), resultKey, actual, expected, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回结果是否不相等(float)
+     * @param resultKey
+     * @param actual1
+     * @param actual2
+     * @param delta
+     */
+    protected void assertNotEquals(String resultKey, float actual1, float actual2, float delta) {
+        GeneralAssertDetail.assertNotEquals(channel_id(), resultKey, actual1, actual2, delta, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回结果是否不相等(double)
+     * @param resultKey
+     * @param actual1
+     * @param actual2
+     * @param delta
+     */
+    protected void assertNotEquals(String resultKey, double actual1, double actual2, double delta) {
+        GeneralAssertDetail.assertNotEquals(channel_id(), resultKey, actual1, actual2, delta, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回的数据是否为空(ArrayList)
+     * @param resultKey
+     * @param actual
+     */
+    protected void assertEmpty(String resultKey, ArrayList actual) {
+        GeneralAssertDetail.assertEmpty(channel_id(), resultKey, actual, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回的数据是否为空(String)
+     * @param resultKey
+     * @param actual
+     */
+    protected void assertEmpty(String resultKey, String actual) {
+        GeneralAssertDetail.assertEmpty(channel_id(), resultKey, actual, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回的数据是否为空/0(int)
+     * @param resultKey
+     * @param actual
+     */
+    protected void assertEmpty(String resultKey, int actual) {
+        GeneralAssertDetail.assertEmpty(channel_id(), resultKey, actual, url, pathId, param, result);
+    }
+
+    /**
+     * 判断返回的数据是否为空(boolean)
+     * @param resultKey
+     * @param actual
+     */
+    protected void assertEmpty(String resultKey, boolean actual) {
+        GeneralAssertDetail.assertEmpty(channel_id(), resultKey, actual, url, pathId, param, result);
+    }
 }

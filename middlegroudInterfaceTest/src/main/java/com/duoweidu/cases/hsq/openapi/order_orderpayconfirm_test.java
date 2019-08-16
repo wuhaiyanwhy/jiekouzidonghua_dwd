@@ -9,6 +9,9 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
+/**
+ * 订单未支付，暂时无需详细断言
+ */
 public class order_orderpayconfirm_test extends HsqInterfaceTest {
 
     private void genOrderpayconfirm(String orderPayResult) {

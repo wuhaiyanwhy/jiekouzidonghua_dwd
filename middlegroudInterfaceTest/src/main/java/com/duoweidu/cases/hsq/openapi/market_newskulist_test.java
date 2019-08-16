@@ -8,7 +8,7 @@ public class market_newskulist_test extends HsqInterfaceTest {
 
     private MarketNewskulistData model;
 
-    @Test(dependsOnGroups = "loginTrue",description ="今日新品")
+    @Test(description ="今日新品")
     public void market_newskulist_true() {
         setUrl("market.newskulist.uri");
         process(true,true);
@@ -32,7 +32,7 @@ public class market_newskulist_test extends HsqInterfaceTest {
             detailAssertTest("canDelivery", model.list.get(i).canDelivery);
             detailAssertTest("merchant_id", model.list.get(i).merchant_id);
             detailAssertTest("merchant_type", model.list.get(i).merchant_type);
-            detailAssertTest("left_stock", model.list.get(i).left_stock);
+//            detailAssertTest("left_stock", model.list.get(i).left_stock);
             detailAssertTest("all_stock", model.list.get(i).all_stock);
             if (model.list.get(i).tags.size() > 0) {
                 detailAssertTest("tags", model.list.get(i).tags);

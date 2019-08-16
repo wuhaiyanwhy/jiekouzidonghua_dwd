@@ -68,7 +68,7 @@ public class TradecenterAssistanceorderinit extends HsqInterfaceTest {
         detailAssertTest("接口自动化测试专用助力免单 100g", "packageInfo.itemList.get(0).skuList.get(0).name", model.packageInfo.itemList.get(0).skuList.get(0).name);
         detailAssertTest(0, "packageInfo.itemList.get(0).skuList.get(0).weight", model.packageInfo.itemList.get(0).skuList.get(0).weight);
         detailAssertTest(8888, "packageInfo.itemList.get(0).skuList.get(0).price", model.packageInfo.itemList.get(0).skuList.get(0).price);
-        detailAssertTest("http://img2.haoshiqi.net/ma83cfe38517bb7812d3562f7d1486f3e1.jpg?imageView2/0/w/200/h/200/q/70", "packageInfo.itemList.get(0).skuList.get(0).thumbnail", model.packageInfo.itemList.get(0).skuList.get(0).thumbnail);
+        detailAssertTest("packageInfo.itemList.get(0).skuList.get(0).thumbnail", model.packageInfo.itemList.get(0).skuList.get(0).thumbnail);
         detailAssertTest(9999, "packageInfo.itemList.get(0).skuList.get(0).market_price", model.packageInfo.itemList.get(0).skuList.get(0).market_price);
         detailAssertTest(8888, "packageInfo.itemList.get(0).skuList.get(0).lowest_price", model.packageInfo.itemList.get(0).skuList.get(0).lowest_price);
         detailAssertTest(1559543748, "packageInfo.itemList.get(0).skuList.get(0).seller_time", model.packageInfo.itemList.get(0).skuList.get(0).seller_time);
@@ -105,7 +105,7 @@ public class TradecenterAssistanceorderinit extends HsqInterfaceTest {
         detailAssertTest("100g", "packageInfo.itemList.get(0).skuList.get(0).attribute_tags.get(0).value", model.packageInfo.itemList.get(0).skuList.get(0).attribute_tags.get(0).value);
 
         detailAssertTest(28745, "packageInfo.itemList.get(0).skuList.get(0).productId", model.packageInfo.itemList.get(0).skuList.get(0).productId);
-        detailAssertTest("http://img2.haoshiqi.net/ma83cfe38517bb7812d3562f7d1486f3e1.jpg?imageView2/0/w/200/h/200/q/70", "packageInfo.itemList.get(0).skuList.get(0).skuThumbnail", model.packageInfo.itemList.get(0).skuList.get(0).skuThumbnail);
+        detailAssertTest("packageInfo.itemList.get(0).skuList.get(0).skuThumbnail", model.packageInfo.itemList.get(0).skuList.get(0).skuThumbnail);
         detailAssertTest(0, "packageInfo.itemList.get(0).skuList.get(0).platformDiscount", model.packageInfo.itemList.get(0).skuList.get(0).platformDiscount);
         detailAssertTest("haoshiqi://hybrid?compid=haoshiqi&comppage=zl_detail&id=139", "packageInfo.itemList.get(0).skuList.get(0).schema", model.packageInfo.itemList.get(0).skuList.get(0).schema);
         detailAssertTest(0, "packageInfo.itemList.get(0).discountPrice", model.packageInfo.itemList.get(0).discountPrice);
