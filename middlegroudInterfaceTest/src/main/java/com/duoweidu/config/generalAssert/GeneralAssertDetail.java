@@ -876,7 +876,9 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param result
      */
     static public void assertNotEmpty(int channelId, String resultKey, Object[] actual, String uri, int pathId, String param, String result) {
-        assertNotEmpty(channelId, resultKey, String.valueOf(actual), uri, pathId, param, result);
+        if (actual.length <= 0) {
+            GeneralAssertChannel.detailedAssert(channelId, "返回的" + resultKey + "不应为空；", uri, pathId, param, result);
+        }
     }
 
     /**
@@ -890,7 +892,9 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param result
      */
     static public void assertNotEmpty(int channelId, String resultKey, Set<?> actual, String uri, int pathId, String param, String result) {
-        assertNotEmpty(channelId, resultKey, String.valueOf(actual), uri, pathId, param, result);
+        if (actual.size() <= 0) {
+            GeneralAssertChannel.detailedAssert(channelId, "返回的" + resultKey + "不应为空；", uri, pathId, param, result);
+        }
     }
 
     /**
@@ -904,7 +908,9 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param result
      */
     static public void assertNotEmpty(int channelId, String resultKey, Map<?, ?> actual, String uri, int pathId, String param, String result) {
-        assertNotEmpty(channelId, resultKey, String.valueOf(actual), uri, pathId, param, result);
+        if (actual.size() <= 0) {
+            GeneralAssertChannel.detailedAssert(channelId, "返回的" + resultKey + "不应为空；", uri, pathId, param, result);
+        }
     }
 
 
