@@ -673,7 +673,7 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
     }
 
     /**
-     * 判断返回的数据是否为空(ArrayList)
+     * 判断返回的数据是否为空(Collection)
      * @param channelId
      * @param resultKey
      * @param actual
@@ -682,7 +682,7 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param param
      * @param result
      */
-    static public void assertEmpty(int channelId, String resultKey, ArrayList actual, String uri, int pathId, String param, String result) {
+    static public void assertNotEmpty(int channelId, String resultKey, Collection<?> actual, String uri, int pathId, String param, String result) {
         if (actual.size() <= 0) {
             GeneralAssertChannel.detailedAssert(channelId, "返回的" + resultKey + "不应为空；", uri, pathId, param, result);
         }
@@ -698,7 +698,7 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param param
      * @param result
      */
-    static public void assertEmpty(int channelId, String resultKey, String actual, String uri, int pathId, String param, String result) {
+    static public void assertNotEmpty(int channelId, String resultKey, String actual, String uri, int pathId, String param, String result) {
         if (actual == null || actual.isEmpty()) {
             GeneralAssertChannel.detailedAssert(channelId, "返回的" + resultKey + "不应为空" + "，实际返回：" +
                     actual, uri, pathId, param, result);
@@ -715,7 +715,7 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param param
      * @param result
      */
-    static public void assertEmpty(int channelId, String resultKey, int actual, String uri, int pathId, String param, String result) {
+    static public void assertNotEmpty(int channelId, String resultKey, int actual, String uri, int pathId, String param, String result) {
         String actuals = String.valueOf(actual);
         if (actuals == null || actuals.isEmpty() || actuals.equals("0") ) {
             GeneralAssertChannel.detailedAssert(channelId, "返回的" + resultKey + "不应为空/0" + "，实际返回：" +
@@ -733,8 +733,178 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param param
      * @param result
      */
-    static public void assertEmpty(int channelId, String resultKey, boolean actual, String uri, int pathId, String param, String result) {
-        assertEmpty(channelId, resultKey, String.valueOf(actual), uri, pathId, param, result);
+    static public void assertNotEmpty(int channelId, String resultKey, boolean actual, String uri, int pathId, String param, String result) {
+        assertNotEmpty(channelId, resultKey, String.valueOf(actual), uri, pathId, param, result);
+    }
+
+    /**
+     * 判断返回的数据是否为空(Object)
+     * @param channelId
+     * @param resultKey
+     * @param actual
+     * @param uri
+     * @param pathId
+     * @param param
+     * @param result
+     */
+    static public void assertNotEmpty(int channelId, String resultKey, Object actual, String uri, int pathId, String param, String result) {
+        assertNotEmpty(channelId, resultKey, String.valueOf(actual), uri, pathId, param, result);
+    }
+
+    /**
+     * 判断返回的数据是否为空(long)
+     * @param channelId
+     * @param resultKey
+     * @param actual
+     * @param uri
+     * @param pathId
+     * @param param
+     * @param result
+     */
+    static public void assertNotEmpty(int channelId, String resultKey, long actual, String uri, int pathId, String param, String result) {
+        assertNotEmpty(channelId, resultKey, String.valueOf(actual), uri, pathId, param, result);
+    }
+
+    /**
+     * 判断返回的数据是否为空(byte)
+     * @param channelId
+     * @param resultKey
+     * @param actual
+     * @param uri
+     * @param pathId
+     * @param param
+     * @param result
+     */
+    static public void assertNotEmpty(int channelId, String resultKey, byte actual, String uri, int pathId, String param, String result) {
+        assertNotEmpty(channelId, resultKey, String.valueOf(actual), uri, pathId, param, result);
+    }
+
+    /**
+     * 判断返回的数据是否为空(char)
+     * @param channelId
+     * @param resultKey
+     * @param actual
+     * @param uri
+     * @param pathId
+     * @param param
+     * @param result
+     */
+    static public void assertNotEmpty(int channelId, String resultKey, char actual, String uri, int pathId, String param, String result) {
+        assertNotEmpty(channelId, resultKey, String.valueOf(actual), uri, pathId, param, result);
+    }
+
+
+    /**
+     * 判断返回的数据是否为空(short)
+     * @param channelId
+     * @param resultKey
+     * @param actual
+     * @param uri
+     * @param pathId
+     * @param param
+     * @param result
+     */
+    static public void assertNotEmpty(int channelId, String resultKey, short actual, String uri, int pathId, String param, String result) {
+        assertNotEmpty(channelId, resultKey, String.valueOf(actual), uri, pathId, param, result);
+    }
+
+
+    /**
+     * 判断返回的数据是否为空(float)
+     * @param channelId
+     * @param resultKey
+     * @param actual
+     * @param uri
+     * @param pathId
+     * @param param
+     * @param result
+     */
+    static public void assertNotEmpty(int channelId, String resultKey, float actual, String uri, int pathId, String param, String result) {
+        assertNotEmpty(channelId, resultKey, String.valueOf(actual), uri, pathId, param, result);
+    }
+
+    /**
+     * 判断返回的数据是否为空(double)
+     * @param channelId
+     * @param resultKey
+     * @param actual
+     * @param uri
+     * @param pathId
+     * @param param
+     * @param result
+     */
+    static public void assertNotEmpty(int channelId, String resultKey, double actual, String uri, int pathId, String param, String result) {
+        assertNotEmpty(channelId, resultKey, String.valueOf(actual), uri, pathId, param, result);
+    }
+
+    /**
+     * 判断返回的数据是否为空(Iterator<?>)
+     * @param channelId
+     * @param resultKey
+     * @param actual
+     * @param uri
+     * @param pathId
+     * @param param
+     * @param result
+     */
+    static public void assertNotEmpty(int channelId, String resultKey, Iterator<?> actual, String uri, int pathId, String param, String result) {
+        assertNotEmpty(channelId, resultKey, String.valueOf(actual), uri, pathId, param, result);
+    }
+
+    /**
+     * 判断返回的数据是否为空(Iterable<?>)
+     * @param channelId
+     * @param resultKey
+     * @param actual
+     * @param uri
+     * @param pathId
+     * @param param
+     * @param result
+     */
+    static public void assertNotEmpty(int channelId, String resultKey, Iterable<?> actual, String uri, int pathId, String param, String result) {
+        assertNotEmpty(channelId, resultKey, String.valueOf(actual), uri, pathId, param, result);
+    }
+
+    /**
+     * 判断返回的数据是否为空(Object[])
+     * @param channelId
+     * @param resultKey
+     * @param actual
+     * @param uri
+     * @param pathId
+     * @param param
+     * @param result
+     */
+    static public void assertNotEmpty(int channelId, String resultKey, Object[] actual, String uri, int pathId, String param, String result) {
+        assertNotEmpty(channelId, resultKey, String.valueOf(actual), uri, pathId, param, result);
+    }
+
+    /**
+     * 判断返回的数据是否为空(Set<?>)
+     * @param channelId
+     * @param resultKey
+     * @param actual
+     * @param uri
+     * @param pathId
+     * @param param
+     * @param result
+     */
+    static public void assertNotEmpty(int channelId, String resultKey, Set<?> actual, String uri, int pathId, String param, String result) {
+        assertNotEmpty(channelId, resultKey, String.valueOf(actual), uri, pathId, param, result);
+    }
+
+    /**
+     * 判断返回的数据是否为空(Map<?, ?>)
+     * @param channelId
+     * @param resultKey
+     * @param actual
+     * @param uri
+     * @param pathId
+     * @param param
+     * @param result
+     */
+    static public void assertNotEmpty(int channelId, String resultKey, Map<?, ?> actual, String uri, int pathId, String param, String result) {
+        assertNotEmpty(channelId, resultKey, String.valueOf(actual), uri, pathId, param, result);
     }
 
 
