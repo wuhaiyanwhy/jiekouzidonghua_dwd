@@ -45,14 +45,11 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param result
      */
     static public void assertTrue(int channelId, String resultKey, boolean condition,  String uri, int pathId, String param, String result) {
-        String tmp = "";
         try {
             Assert.assertTrue(condition);
         }catch (AssertionError e) {
-            tmp = e.getMessage();
+            fail( "\n" + e.getMessage() + "\n" + distinguishParamFailed(channelId, "返回的" + resultKey + "不为true;", uri, pathId, param, 7, result));
         }
-
-        fail( "\n" + tmp + "\n" + distinguishParamFailed(channelId, "返回的" + resultKey + "不为true;", uri, pathId, param, 7, result));
 
     }
 
@@ -67,14 +64,11 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param result
      */
     static public void assertFalse(int channelId, String resultKey, boolean condition, String uri, int pathId, String param, String result) {
-        String tmp = "";
         try {
             Assert.assertFalse(condition);
         }catch (AssertionError e) {
-            tmp = e.getMessage();
+            fail( "\n" + e.getMessage() + "\n" + distinguishParamFailed(channelId, "返回的" + resultKey + "不为false;", uri, pathId, param, 7, result));
         }
-
-        fail( "\n" + tmp + "\n" + distinguishParamFailed(channelId, "返回的" + resultKey + "不为false;", uri, pathId, param, 7, result));
 
     }
 
@@ -90,14 +84,11 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param result
      */
     static public void assertEquals(int channelId, String resultKey, Object actual, Object expected, String uri, int pathId, String param, String result) {
-        String tmp = "";
         try {
             Assert.assertEquals(actual, expected);
         }catch (AssertionError e) {
-            tmp = e.getMessage();
+            fail("\n" + e.getMessage() + "\n" + equalsFailed(channelId, resultKey, uri, pathId, param, result));
         }
-
-        fail("\n" + tmp + "\n" + equalsFailed(channelId, resultKey, uri, pathId, param, result));
     }
 
     /**
@@ -112,14 +103,12 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param result
      */
     static public void assertEquals(int channelId, String resultKey, String actual, String expected, String uri, int pathId, String param, String result) {
-        String tmp = "";
         try {
             Assert.assertEquals(actual, expected);
         }catch (AssertionError e) {
-            tmp = e.getMessage();
+            fail("\n" + e.getMessage() + "\n" + equalsFailed(channelId, resultKey, uri, pathId, param, result));
         }
 
-        fail("\n" + tmp + "\n" + equalsFailed(channelId, resultKey, uri, pathId, param, result));
     }
 
     /**
@@ -135,14 +124,11 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param result
      */
     static public void assertEquals(int channelId, String resultKey, double actual, double expected, double delta, String uri, int pathId, String param, String result) {
-        String tmp = "";
         try {
             Assert.assertEquals(actual, expected);
         }catch (AssertionError e) {
-            tmp = e.getMessage();
+            fail("\n" + e.getMessage() + "\n" + equalsFailed(channelId, resultKey, uri, pathId, param, result));
         }
-
-        fail("\n" + tmp + "\n" + equalsFailed(channelId, resultKey, uri, pathId, param, result));
 
     }
 
@@ -159,14 +145,11 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param result
      */
     static public void assertEquals(int channelId, String resultKey, float actual, float expected, float delta, String uri, int pathId, String param, String result) {
-        String tmp = "";
         try {
             Assert.assertEquals(actual, expected);
         }catch (AssertionError e) {
-            tmp = e.getMessage();
+            fail("\n" + e.getMessage() + "\n" + equalsFailed(channelId, resultKey, uri, pathId, param, result));
         }
-
-        fail("\n" + tmp + "\n" + equalsFailed(channelId, resultKey, uri, pathId, param, result));
 
     }
 
@@ -182,14 +165,11 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param result
      */
     static public void assertEquals(int channelId, String resultKey, long actual, long expected, String uri, int pathId, String param, String result) {
-        String tmp = "";
         try {
             Assert.assertEquals(actual, expected);
         }catch (AssertionError e) {
-            tmp = e.getMessage();
+            fail("\n" + e.getMessage() + "\n" + equalsFailed(channelId, resultKey, uri, pathId, param, result));
         }
-
-        fail("\n" + tmp + "\n" + equalsFailed(channelId, resultKey, uri, pathId, param, result));
 
     }
 
@@ -205,14 +185,11 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param result
      */
     static public void assertEquals(int channelId, String resultKey, boolean actual, boolean expected, String uri, int pathId, String param, String result) {
-        String tmp = "";
         try {
             Assert.assertEquals(actual, expected);
         }catch (AssertionError e) {
-            tmp = e.getMessage();
+            fail("\n" + e.getMessage() + "\n" + equalsFailed(channelId, resultKey, uri, pathId, param, result));
         }
-
-        fail("\n" + tmp + "\n" + equalsFailed(channelId, resultKey, uri, pathId, param, result));
 
     }
 
@@ -228,14 +205,11 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param result
      */
     static public void assertEquals(int channelId, String resultKey, byte actual, byte expected, String uri, int pathId, String param, String result) {
-        String tmp = "";
         try {
             Assert.assertEquals(actual, expected);
         }catch (AssertionError e) {
-            tmp = e.getMessage();
+            fail("\n" + e.getMessage() + "\n" + equalsFailed(channelId, resultKey, uri, pathId, param, result));
         }
-
-        fail("\n" + tmp + "\n" + equalsFailed(channelId, resultKey, uri, pathId, param, result));
 
     }
 
@@ -251,14 +225,11 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param result
      */
     static public void assertEquals(int channelId, String resultKey, char actual, char expected, String uri, int pathId, String param, String result) {
-        String tmp = "";
         try {
             Assert.assertEquals(actual, expected);
         }catch (AssertionError e) {
-            tmp = e.getMessage();
+            fail("\n" + e.getMessage() + "\n" + equalsFailed(channelId, resultKey, uri, pathId, param, result));
         }
-
-        fail("\n" + tmp + "\n" + equalsFailed(channelId, resultKey, uri, pathId, param, result));
 
     }
 
@@ -274,14 +245,11 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param result
      */
     static public void assertEquals(int channelId, String resultKey, short actual, short expected, String uri, int pathId, String param, String result) {
-        String tmp = "";
         try {
             Assert.assertEquals(actual, expected);
         }catch (AssertionError e) {
-            tmp = e.getMessage();
+            fail("\n" + e.getMessage() + "\n" + equalsFailed(channelId, resultKey, uri, pathId, param, result));
         }
-
-        fail("\n" + tmp + "\n" + equalsFailed(channelId, resultKey, uri, pathId, param, result));
 
     }
 
@@ -297,14 +265,11 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param result
      */
     static public void assertEquals(int channelId, String resultKey, int actual, int expected, String uri, int pathId, String param, String result) {
-        String tmp = "";
         try {
             Assert.assertEquals(actual, expected);
         }catch (AssertionError e) {
-            tmp = e.getMessage();
+            fail("\n" + e.getMessage() + "\n" + equalsFailed(channelId, resultKey, uri, pathId, param, result));
         }
-
-        fail("\n" + tmp + "\n" + equalsFailed(channelId, resultKey, uri, pathId, param, result));
 
     }
 
@@ -319,15 +284,11 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param result
      */
     static public void assertNotNull(int channelId, String resultKey, Object object, String uri, int pathId, String param, String result) {
-        String tmp = "";
         try {
             Assert.assertNotNull(object);
         }catch (AssertionError e) {
-            tmp = e.getMessage();
+            fail("\n" + e.getMessage() + "\n" + distinguishParamFailed(channelId, "返回的" + resultKey + "不应为空;", uri, pathId, param, 7, result));
         }
-
-        fail("\n" + tmp + "\n" + distinguishParamFailed(channelId, "返回的" + resultKey + "不应为空;", uri, pathId, param, 7, result));
-
     }
 
     /**
@@ -341,14 +302,11 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param result
      */
     static public void assertNull(int channelId, String resultKey, Object object, String uri, int pathId, String param, String result) {
-        String tmp = "";
         try {
             Assert.assertNull(object);
         }catch (AssertionError e) {
-            tmp = e.getMessage();
+            fail("\n" + e.getMessage() + "\n" + distinguishParamFailed(channelId, "返回的" + resultKey + "不为空;", uri, pathId, param, 7, result));
         }
-
-        fail("\n" + tmp + "\n" + distinguishParamFailed(channelId, "返回的" + resultKey + "不为空;", uri, pathId, param, 7, result));
 
     }
 
@@ -364,14 +322,11 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param result
      */
     static public void assertSame(int channelId, String resultKey, Object actual, Object expected, String uri, int pathId, String param, String result) {
-        String tmp = "";
         try {
             Assert.assertSame(actual, expected);
         }catch (AssertionError e) {
-            tmp = e.getMessage();
+            fail("\n" + e.getMessage() + "\n" + distinguishParamFailed(channelId, "返回的" + resultKey + "不正确（不相同）;", uri, pathId, param, 7, result));
         }
-
-        fail("\n" + tmp + "\n" + distinguishParamFailed(channelId, "返回的" + resultKey + "不正确（不相同）;", uri, pathId, param, 7, result));
 
     }
 
@@ -387,14 +342,11 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param result
      */
     static public void assertNotSame(int channelId, String resultKey, Object actual, Object expected, String uri, int pathId, String param, String result) {
-        String tmp = "";
         try {
             Assert.assertNotSame(actual, expected);
         }catch (AssertionError e) {
-            tmp = e.getMessage();
+            fail("\n" + e.getMessage() + "\n" + distinguishParamFailed(channelId, "返回的" + resultKey + "不正确（不应相同）;", uri, pathId, param, 7, result));
         }
-
-        fail("\n" + tmp + "\n" + distinguishParamFailed(channelId, "返回的" + resultKey + "不正确（不应相同）;", uri, pathId, param, 7, result));
 
     }
 
@@ -410,14 +362,11 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param result
      */
     static public void assertEquals(int channelId, String resultKey, Collection<?> actual, Collection<?> expected, String uri, int pathId, String param, String result) {
-        String tmp = "";
         try {
             Assert.assertEquals(actual, expected);
         }catch (AssertionError e) {
-            tmp = e.getMessage();
+            fail("\n" + e.getMessage() + "\n" + equalsFailed(channelId, resultKey, uri, pathId, param, result));
         }
-
-        fail("\n" + tmp + "\n" + equalsFailed(channelId, resultKey, uri, pathId, param, result));
 
     }
 
@@ -433,14 +382,11 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param result
      */
     static public void assertEquals(int channelId, String resultKey, Iterator<?> actual, Iterator<?> expected, String uri, int pathId, String param, String result) {
-        String tmp = "";
         try {
             Assert.assertEquals(actual, expected);
         }catch (AssertionError e) {
-            tmp = e.getMessage();
+            fail("\n" + e.getMessage() + "\n" + equalsFailed(channelId, resultKey, uri, pathId, param, result));
         }
-
-        fail("\n" + tmp + "\n" + equalsFailed(channelId, resultKey, uri, pathId, param, result));
 
     }
 
@@ -456,14 +402,11 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param result
      */
     static public void assertEquals(int channelId, String resultKey, Iterable<?> actual, Iterable<?> expected, String uri, int pathId, String param, String result) {
-        String tmp = "";
         try {
             Assert.assertEquals(actual, expected);
         }catch (AssertionError e) {
-            tmp = e.getMessage();
+            fail("\n" + e.getMessage() + "\n" + equalsFailed(channelId, resultKey, uri, pathId, param, result));
         }
-
-        fail("\n" + tmp + "\n" + equalsFailed(channelId, resultKey, uri, pathId, param, result));
 
     }
 
@@ -479,19 +422,16 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param result
      */
     static public void assertEquals(int channelId, String resultKey, Object[] actual, Object[] expected, String uri, int pathId, String param, String result) {
-        String tmp = "";
         try {
             Assert.assertEquals(actual, expected);
         }catch (AssertionError e) {
-            tmp = e.getMessage();
+            fail("\n" + e.getMessage() + "\n" + equalsFailed(channelId, resultKey, uri, pathId, param, result));
         }
-
-        fail("\n" + tmp + "\n" + equalsFailed(channelId, resultKey, uri, pathId, param, result));
 
     }
 
     /**
-     * 判断返回的数据是否按特定的顺序包含相同元素(Object[])
+     * 判断返回的数据是否相等，但没有特定但顺序(Object[])
      * @param channelId
      * @param actual
      * @param expected
@@ -502,14 +442,11 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param result
      */
     static public void assertEqualsNoOrder(int channelId, String resultKey, Object[] actual, Object[] expected, String uri, int pathId, String param, String result) {
-        String tmp = "";
         try {
             Assert.assertEqualsNoOrder(actual, expected);
         }catch (AssertionError e) {
-            tmp = e.getMessage();
+            fail("\n" + e.getMessage() + "\n" + distinguishParamFailed(channelId, "返回的" + resultKey + "不正确(顺序是否相等);", uri, pathId, param, 7, result));
         }
-
-        fail("\n" + tmp + "\n" + distinguishParamFailed(channelId, "返回的" + resultKey + "不正确，不应不按特定的顺序包含相同元素;", uri, pathId, param, 7, result));
 
     }
 
@@ -525,14 +462,11 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param result
      */
     static public void assertEquals(int channelId, String resultKey, Set<?> actual, Set<?> expected, String uri, int pathId, String param, String result) {
-        String tmp = "";
         try {
             Assert.assertEquals(actual, expected);
         }catch (AssertionError e) {
-            tmp = e.getMessage();
+            fail("\n" + e.getMessage() + "\n" + equalsFailed(channelId, resultKey, uri, pathId, param, result));
         }
-
-        fail("\n" + tmp + "\n" + equalsFailed(channelId, resultKey, uri, pathId, param, result));
 
     }
 
@@ -548,14 +482,11 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param result
      */
     static public void assertEquals(int channelId, String resultKey, Map<?, ?> actual, Map<?, ?> expected, String uri, int pathId, String param, String result) {
-        String tmp = "";
         try {
             Assert.assertEquals(actual, expected);
         }catch (AssertionError e) {
-            tmp = e.getMessage();
+            fail("\n" + e.getMessage() + "\n" + equalsFailed(channelId, resultKey, uri, pathId, param, result));
         }
-
-        fail("\n" + tmp + "\n" + equalsFailed(channelId, resultKey, uri, pathId, param, result));
 
     }
 
@@ -571,14 +502,11 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param result
      */
     static public void assertNotEquals(int channelId, String resultKey, Object actual, Object expected, String uri, int pathId, String param, String result) {
-        String tmp = "";
         try {
             Assert.assertNotEquals(actual, expected);
         }catch (AssertionError e) {
-            tmp = e.getMessage();
+            fail("\n" + e.getMessage() + "\n" + notEqualsFailed(channelId, resultKey, uri, pathId, param, result));
         }
-
-        fail("\n" + tmp + "\n" + notEqualsFailed(channelId, resultKey, uri, pathId, param, result));
 
     }
 
@@ -594,14 +522,11 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param result
      */
     static public void assertNotEquals(int channelId, String resultKey, long actual, long expected, String uri, int pathId, String param, String result) {
-        String tmp = "";
         try {
             Assert.assertNotEquals(actual, expected);
         }catch (AssertionError e) {
-            tmp = e.getMessage();
+            fail("\n" + e.getMessage() + "\n" + notEqualsFailed(channelId, resultKey, uri, pathId, param, result));
         }
-
-        fail("\n" + tmp + "\n" + notEqualsFailed(channelId, resultKey, uri, pathId, param, result));
 
     }
 
@@ -617,14 +542,11 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param result
      */
     static public void assertNotEquals(int channelId, String resultKey, boolean actual, boolean expected, String uri, int pathId, String param, String result) {
-        String tmp = "";
         try {
             Assert.assertNotEquals(actual, expected);
         }catch (AssertionError e) {
-            tmp = e.getMessage();
+            fail("\n" + e.getMessage() + "\n" + notEqualsFailed(channelId, resultKey, uri, pathId, param, result));
         }
-
-        fail("\n" + tmp + "\n" + notEqualsFailed(channelId, resultKey, uri, pathId, param, result));
 
     }
 
@@ -640,14 +562,11 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param result
      */
     static public void assertNotEquals(int channelId, String resultKey, byte actual, byte expected, String uri, int pathId, String param, String result) {
-        String tmp = "";
         try {
             Assert.assertNotEquals(actual, expected);
         }catch (AssertionError e) {
-            tmp = e.getMessage();
+            fail("\n" + e.getMessage() + "\n" + notEqualsFailed(channelId, resultKey, uri, pathId, param, result));
         }
-
-        fail("\n" + tmp + "\n" + notEqualsFailed(channelId, resultKey, uri, pathId, param, result));
 
     }
 
@@ -663,14 +582,11 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param result
      */
     static public void assertNotEquals(int channelId, String resultKey, char actual, char expected, String uri, int pathId, String param, String result) {
-        String tmp = "";
         try {
             Assert.assertNotEquals(actual, expected);
         }catch (AssertionError e) {
-            tmp = e.getMessage();
+            fail("\n" + e.getMessage() + "\n" + notEqualsFailed(channelId, resultKey, uri, pathId, param, result));
         }
-
-        fail("\n" + tmp + "\n" + notEqualsFailed(channelId, resultKey, uri, pathId, param, result));
 
     }
 
@@ -686,14 +602,11 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param result
      */
     static public void assertNotEquals(int channelId, String resultKey, short actual, short expected, String uri, int pathId, String param, String result) {
-        String tmp = "";
         try {
             Assert.assertNotEquals(actual, expected);
         }catch (AssertionError e) {
-            tmp = e.getMessage();
+            fail("\n" + e.getMessage() + "\n" + notEqualsFailed(channelId, resultKey, uri, pathId, param, result));
         }
-
-        fail("\n" + tmp + "\n" + notEqualsFailed(channelId, resultKey, uri, pathId, param, result));
 
     }
 
@@ -709,14 +622,11 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param result
      */
     static public void assertNotEquals(int channelId, String resultKey, int actual, int expected, String uri, int pathId, String param, String result) {
-        String tmp = "";
         try {
             Assert.assertNotEquals(actual, expected);
         }catch (AssertionError e) {
-            tmp = e.getMessage();
+            fail("\n" + e.getMessage() + "\n" + notEqualsFailed(channelId, resultKey, uri, pathId, param, result));
         }
-
-        fail("\n" + tmp + "\n" + notEqualsFailed(channelId, resultKey, uri, pathId, param, result));
 
     }
 
@@ -733,14 +643,11 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param result
      */
     static public void assertNotEquals(int channelId, String resultKey, float actual1, float actual2, float delta, String uri, int pathId, String param, String result) {
-        String tmp = "";
         try {
             Assert.assertNotEquals(actual1, actual2, delta);
         }catch (AssertionError e) {
-            tmp = e.getMessage();
+            fail("\n" + e.getMessage() + "\n" + notEqualsFailed(channelId, resultKey, uri, pathId, param, result));
         }
-
-        fail("\n" + tmp + "\n" + notEqualsFailed(channelId, resultKey, uri, pathId, param, result));
 
     }
 
@@ -757,14 +664,11 @@ public class GeneralAssertDetail extends GeneralAssertChannel {
      * @param result
      */
     static public void assertNotEquals(int channelId, String resultKey, double actual1, double actual2, double delta, String uri, int pathId, String param, String result) {
-        String tmp = "";
         try {
             Assert.assertNotEquals(actual1, actual2, delta);
         }catch (AssertionError e) {
-            tmp = e.getMessage();
+            fail("\n" + e.getMessage() + "\n" + notEqualsFailed(channelId, resultKey, uri, pathId, param, result));
         }
-
-        fail("\n" + tmp + "\n" + notEqualsFailed(channelId, resultKey, uri, pathId, param, result));
 
     }
 
