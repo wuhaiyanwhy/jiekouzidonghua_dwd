@@ -1,6 +1,7 @@
 package com.duoweidu.cases.iqg.openapi;
 
 import com.duoweidu.cases.interfaces.IqgInterfaceTest;
+import com.duoweidu.utils.ConfigFileUrl;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.testng.annotations.Test;
@@ -9,6 +10,10 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class CoinExchange extends IqgInterfaceTest {
+
+    protected long limitTime() {
+        return 3000;
+    }
 
     @Test(dependsOnGroups = "loginTrue",description = "金币兑换")
     public void coin_exchange_true() {
