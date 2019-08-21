@@ -63,4 +63,9 @@
         select name from channel where id = #{id} order by id desc limit 1
     </select>
 
+    <!--更新巨食阵token-->
+    <update token="updatePathName" parameterType="com.duoweidu.model.table.Param">
+        update mid_param set name = #{name} where token = #{token} and channel_id = #{channel_id}
+    </update>
+
 </mapper>

@@ -18,6 +18,7 @@ public class Param {
     private String value;
     private Timestamp created_at;
     private String note;
+    private String token;
 
     public  Param() {
 
