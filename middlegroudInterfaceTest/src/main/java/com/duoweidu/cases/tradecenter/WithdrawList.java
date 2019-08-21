@@ -37,14 +37,15 @@ public class WithdrawList extends TradeCenterInterfaceTest {
             for (int i = 0; i < model.list.size(); i++) {
 
                 detailAssertTest("list.get(i).trade_no", model.list.get(i).trade_no);
-                detailAssertTest("", "list.get(i).gateway_trade_no", model.list.get(i).gateway_trade_no);
+                if (model.list.get(i).withdraw_status == 4)
+                    detailAssertTest( "list.get(i).gateway_trade_no", model.list.get(i).gateway_trade_no);
                 detailAssertTest("list.get(i).channel_id", model.list.get(i).channel_id);
-                detailAssertTest( "ist.get(i).channel_code", model.list.get(i).channel_code);
+                detailAssertTest("ist.get(i).channel_code", model.list.get(i).channel_code);
                 detailAssertTest("list.get(i).channel_name", model.list.get(i).channel_name);
                 detailAssertTest("list.get(i).withdraw_status", model.list.get(i).withdraw_status);
                 detailAssertTest("list.get(i).withdraw_amount", model.list.get(i).withdraw_amount);
-                detailAssertTest("list.get(i).service_charge", model.list.get(i).service_charge);
-                detailAssertTest("list.get(i).real_service_charge",String.valueOf(model.list.get(i).real_service_charge));
+                detailAssertTest("list.get(i).service_charge", String.valueOf(model.list.get(i).service_charge));
+                detailAssertTest("list.get(i).real_service_charge", String.valueOf(model.list.get(i).real_service_charge));
                 detailAssertTest("CNY", "list.get(i).currency", model.list.get(i).currency);
                 detailAssertTest("list.get(i).target_account", model.list.get(i).target_account);
                 detailAssertTest("model.list.get(i).remark", model.list.get(i).remark);

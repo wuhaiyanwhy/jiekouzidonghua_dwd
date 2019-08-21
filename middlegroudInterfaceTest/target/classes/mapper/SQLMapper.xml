@@ -8,24 +8,28 @@
     <select id="getEnv" resultType="com.duoweidu.model.table.ServerHost">
         select * from server_host
         where channel_id = #{channel_id} and env = #{env}
+        order by id desc limit 1
     </select>
 
     <!--根据接口名称获取接口路径-->
     <select id="getPath" resultType="com.duoweidu.model.table.InterfacePath">
         select * from interface_path
         where channel_id = #{channel_id} and name = #{name}
+        order by id desc limit 1
     </select>
 
     <!--根据接口id获取接口相关信息-->
     <select id="getPathId" resultType="com.duoweidu.model.table.InterfacePath">
         select * from interface_path
         where id = #{id} and channel_id = #{channel_id}
+        order by id desc limit 1
     </select>
 
     <!--获取参数值-->
     <select id="getParam" resultType="com.duoweidu.model.table.Param">
         select * from mid_param
         where channel_id = #{channel_id} and env = #{env} and name = #{name}
+        order by id desc limit 1
     </select>
 
     <!--插入构建结果-->
@@ -60,7 +64,8 @@
     
     <!--获取当前渠道的名字-->
     <select id="getChannelName" resultType="String">
-        select name from channel where id = #{id} order by id desc limit 1
+        select name from channel where id = #{id}
+        order by id desc limit 1
     </select>
 
 </mapper>
