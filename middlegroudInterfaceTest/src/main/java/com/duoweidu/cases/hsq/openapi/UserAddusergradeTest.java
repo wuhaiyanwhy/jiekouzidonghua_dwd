@@ -15,12 +15,12 @@ public class UserAddusergradeTest extends HsqInterfaceTest {
     private ResData model;
 
     @Test(description = "用户Riskgo评分回传-营销反作弊")
-    public void userAddusergradeTrue() {
+    public void userAddusergradeMarketing() {
         commonParameters("RISKGO_MARKETANTICHEAT");
     }
 
     @Test(description = "用户Riskgo评分回传-异业联盟")
-    public void userAddusergradeTrue1() {
+    public void userAddusergradeAlliance() {
         commonParameters("RISKGO_CROSSOVER");
     }
 
@@ -37,6 +37,6 @@ public class UserAddusergradeTest extends HsqInterfaceTest {
     }
 
     private void detailAssert(){
-        assertNotEquals("res","true",model.res);
+        assertTrue("res", model.res);
     }
 }

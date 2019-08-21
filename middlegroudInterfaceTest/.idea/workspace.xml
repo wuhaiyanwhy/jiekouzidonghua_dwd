@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dd9f21c-4835-4a98-be8b-a85c413de519" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/ProductRiskbannerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserAddusergradeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserSyncalipayriskTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/model/hsq/ProductRiskbannerData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserRiskpreventcheat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/model/hsq/UserRiskpreventcheatData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/switch.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/switch.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hsq-dayan-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hsq-dayan-test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/ProductRiskbannerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/ProductRiskbannerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserAddusergradeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserAddusergradeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserGetcanchoosesku.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserGetcanchoosesku.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserSyncalipayriskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserSyncalipayriskTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hsq.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hsq.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/hsq/openapi/ProductRiskbannerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/hsq/openapi/ProductRiskbannerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/hsq/openapi/UserAddusergradeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/hsq/openapi/UserAddusergradeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/hsq/openapi/UserSyncalipayriskTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/duoweidu/cases/hsq/openapi/UserSyncalipayriskTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hsq.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hsq.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/switch.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/switch.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/InterfaceReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/InterfaceReport.html" afterDir="false" />
     </list>
@@ -66,26 +71,56 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1650796006">
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="2" />
+          <entry key="java" value="294" />
+          <entry key="properties" value="18" />
+          <entry key="xml" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="294" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Properties" value="18" />
+          <entry key="XML" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="6" />
+          <entry key="xml" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="6" />
+          <entry key="XML" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/tradeCenter.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/switch.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="132" column="58" lean-forward="true" selection-start-line="132" selection-start-column="58" selection-end-line="132" selection-end-column="58" />
-              <folding>
-                <element signature="n#test#1;n#suite#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="60">
+              <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/hsq-dayan-test.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/ProductRiskbannerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="89" column="18" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="18" />
+            <state relative-caret-position="196">
+              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,17 +128,58 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserAddusergradeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="563">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="181">
+              <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="101" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1191#1192#0" expanded="true" />
-                <element signature="e#1222#1223#0" expanded="true" />
-                <element signature="e#1333#1334#0" expanded="true" />
-                <element signature="e#1391#1392#0" expanded="true" />
-                <element signature="e#1176#1177#0" expanded="true" />
-                <element signature="e#1202#1203#0" expanded="true" />
+                <element signature="e#677#678#0" expanded="true" />
+                <element signature="e#729#730#0" expanded="true" />
+                <element signature="e#1427#1428#0" expanded="true" />
+                <element signature="e#1477#1478#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserRiskpreventcheat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="67">
+              <caret line="7" column="33" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/hsq.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="73">
+              <caret line="225" column="28" selection-start-line="225" selection-start-column="28" selection-end-line="225" selection-end-column="28" />
+              <folding>
+                <element signature="n#test#0;n#suite#0;n#!!top" />
+                <element signature="n#test#1;n#suite#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserGetcanchoosesku.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/model/hsq/UserRiskpreventcheatData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="37" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -111,37 +187,36 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserSyncalipayriskTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="43" lean-forward="true" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+            <state relative-caret-position="60">
+              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="78" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#396#397#0" expanded="true" />
-                <element signature="e#429#430#0" expanded="true" />
-                <element signature="e#554#555#0" expanded="true" />
-                <element signature="e#775#776#0" expanded="true" />
-                <element signature="e#832#833#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/ProductRiskbannerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#418#419#0" expanded="true" />
+                <element signature="e#503#504#0" expanded="true" />
+                <element signature="e#597#598#0" expanded="true" />
+                <element signature="e#684#685#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/switch.properties">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/fyb/openapi/CommonQiniutoken.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="129">
+              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/fyb/openapi/CommonRecommendproducts.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -158,10 +233,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>90</find>
-      <find>commission_amount</find>
-      <find>msfCreate</find>
-      <find>msfCreateAdjust</find>
       <find>msfQueryAdjust</find>
       <find>msfCreateRecharge</find>
       <find>iqgQueryRecharge</find>
@@ -188,9 +259,14 @@
       <find>order_linkmallpointorder_test</find>
       <find>res</find>
       <find>point_token</find>
+      <find>userAddusergradeTrue</find>
+      <find>UserAddusergradeTest</find>
+      <find>UserSyncalipayriskTest</find>
+      <find>ProductRiskbannerTest</find>
     </findStrings>
     <replaceStrings>
       <replace />
+      <replace>userAddusergradeMarketing</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -235,12 +311,17 @@
         <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/WithdrawList.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/QueryRefund.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserAddusergrade.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserAddusergradeTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/model/hsq/ProductRiskbannerData.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/switch.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserSyncalipayriskTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/hsq-dayan-test.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/ProductRiskbannerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserAddusergradeTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserSyncalipayriskTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/ProductRiskbanner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/model/hsq/UserRiskpreventcheatData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserRiskpreventcheat.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/hsq.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserGetcanchoosesku.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/switch.properties" />
       </list>
     </option>
   </component>
@@ -261,9 +342,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -311,6 +392,76 @@
               <item name="middlegroudInterfaceTest" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="duoweidu" type="462c0819:PsiDirectoryNode" />
+              <item name="cases" type="462c0819:PsiDirectoryNode" />
+              <item name="hsq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="middlegroudInterfaceTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="middlegroudInterfaceTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="duoweidu" type="462c0819:PsiDirectoryNode" />
+              <item name="cases" type="462c0819:PsiDirectoryNode" />
+              <item name="hsq" type="462c0819:PsiDirectoryNode" />
+              <item name="openapi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="middlegroudInterfaceTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="middlegroudInterfaceTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="duoweidu" type="462c0819:PsiDirectoryNode" />
+              <item name="cases" type="462c0819:PsiDirectoryNode" />
+              <item name="iqg" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="middlegroudInterfaceTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="middlegroudInterfaceTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="duoweidu" type="462c0819:PsiDirectoryNode" />
+              <item name="cases" type="462c0819:PsiDirectoryNode" />
+              <item name="message" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="middlegroudInterfaceTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="middlegroudInterfaceTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="duoweidu" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="middlegroudInterfaceTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="middlegroudInterfaceTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="duoweidu" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="fyb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="middlegroudInterfaceTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="middlegroudInterfaceTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="duoweidu" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="hsq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="middlegroudInterfaceTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="middlegroudInterfaceTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -323,7 +474,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/src/main/resources/hsq-dayan-test.xml" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566201685959" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566361254978" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -348,7 +499,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG./Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq-dayan-test.xml">
+  <component name="RunManager" selected="TestNG./Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml">
     <configuration name="Create" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="middlegroudInterfaceTest" />
       <extension name="coverage">
@@ -359,6 +510,24 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.duoweidu.cases.tradecenter" />
       <option name="MAIN_CLASS_NAME" value="com.duoweidu.cases.tradecenter.Create" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRiskpreventcheat.ProductRiskbannerTrue" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="middlegroudInterfaceTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.duoweidu.cases.hsq.openapi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.duoweidu.cases.hsq.openapi" />
+      <option name="MAIN_CLASS_NAME" value="com.duoweidu.cases.hsq.openapi.UserRiskpreventcheat" />
+      <option name="METHOD_NAME" value="ProductRiskbannerTrue" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -400,13 +569,15 @@
       <item itemvalue="TestNG./Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" />
       <item itemvalue="TestNG./Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" />
       <item itemvalue="TestNG.Create" />
+      <item itemvalue="TestNG.UserRiskpreventcheat.ProductRiskbannerTrue" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG./Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" />
+        <item itemvalue="TestNG.UserRiskpreventcheat.ProductRiskbannerTrue" />
         <item itemvalue="TestNG./Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq-dayan-test.xml" />
         <item itemvalue="TestNG./Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/tradeCenter.xml" />
         <item itemvalue="TestNG.Create" />
-        <item itemvalue="TestNG./Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -434,39 +605,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq-dayan-test_xml - 2019.08.19 at 15h 20m 10s.xml">
-      <configuration name="/Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq-dayan-test.xml" configurationId="TestNG" />
+    <history-entry file="ProductRiskbanner_ProductRiskbannerTrue - 2019.08.21 at 11h 24m 54s.xml">
+      <configuration name="ProductRiskbanner.ProductRiskbannerTrue" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq-dayan-test_xml - 2019.08.19 at 15h 22m 37s.xml">
-      <configuration name="/Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq-dayan-test.xml" configurationId="TestNG" />
+    <history-entry file="ProductRiskbanner_ProductRiskbannerTrue - 2019.08.21 at 11h 31m 45s.xml">
+      <configuration name="ProductRiskbanner.ProductRiskbannerTrue" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq-dayan-test_xml - 2019.08.19 at 15h 23m 03s.xml">
-      <configuration name="/Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq-dayan-test.xml" configurationId="TestNG" />
+    <history-entry file="ProductRiskbanner_ProductRiskbannerTrue - 2019.08.21 at 11h 32m 00s.xml">
+      <configuration name="ProductRiskbanner.ProductRiskbannerTrue" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq-dayan-test_xml - 2019.08.19 at 15h 27m 37s.xml">
-      <configuration name="/Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq-dayan-test.xml" configurationId="TestNG" />
+    <history-entry file="ProductRiskbanner_ProductRiskbannerTrue - 2019.08.21 at 11h 32m 19s.xml">
+      <configuration name="ProductRiskbanner.ProductRiskbannerTrue" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq-dayan-test_xml - 2019.08.19 at 15h 48m 18s.xml">
-      <configuration name="/Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq-dayan-test.xml" configurationId="TestNG" />
+    <history-entry file="UserRiskpreventcheat_ProductRiskbannerTrue - 2019.08.21 at 11h 39m 10s.xml">
+      <configuration name="UserRiskpreventcheat.ProductRiskbannerTrue" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq-dayan-test_xml - 2019.08.19 at 15h 48m 36s.xml">
-      <configuration name="/Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq-dayan-test.xml" configurationId="TestNG" />
+    <history-entry file="UserRiskpreventcheat_ProductRiskbannerTrue - 2019.08.21 at 11h 40m 00s.xml">
+      <configuration name="UserRiskpreventcheat.ProductRiskbannerTrue" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq-dayan-test_xml - 2019.08.19 at 15h 48m 50s.xml">
-      <configuration name="/Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq-dayan-test.xml" configurationId="TestNG" />
+    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq_xml - 2019.08.21 at 11h 42m 17s.xml">
+      <configuration name="/Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq-dayan-test_xml - 2019.08.19 at 15h 55m 35s.xml">
-      <configuration name="/Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq-dayan-test.xml" configurationId="TestNG" />
+    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq_xml - 2019.08.21 at 11h 44m 07s.xml">
+      <configuration name="/Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq-dayan-test_xml - 2019.08.19 at 15h 57m 00s.xml">
-      <configuration name="/Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq-dayan-test.xml" configurationId="TestNG" />
+    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq_xml - 2019.08.21 at 12h 16m 01s.xml">
+      <configuration name="/Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq-dayan-test_xml - 2019.08.19 at 16h 00m 09s.xml">
-      <configuration name="/Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq-dayan-test.xml" configurationId="TestNG" />
+    <history-entry file="_Users_dwd_Documents_dwdwork_hsqcode_middleground-onlineTest_middlegroudInterfaceTest_src_main_resources_hsq_xml - 2019.08.21 at 12h 18m 24s.xml">
+      <configuration name="/Users/dwd/Documents/dwdwork/hsqcode/middleground-onlineTest/middlegroudInterfaceTest/src/main/resources/hsq.xml" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49742000" />
+    <option name="totallyTimeSpent" value="52849000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -478,10 +649,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="823" extended-state="0" />
+    <frame x="29" y="23" width="1250" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4983165" visible="true" weight="0.2932761" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4983165" visible="true" weight="0.26241723" />
       <window_info id="Structure" order="1" sideWeight="0.5016835" side_tool="true" weight="0.2746781" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -490,7 +661,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.28317374" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.54833835" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3987952" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -517,49 +688,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Recharge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="38" column="20" lean-forward="true" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/QueryRecharge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-339">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/QueryAll.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/QueryAdjust.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-327">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Query.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="44" column="49" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/Pay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-72">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/model/tradecenter/WithdrawListData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -571,9 +704,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -595,9 +725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="31" column="61" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -646,13 +773,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/msfBetaDatabaseConfig.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserGetcanchoosesku.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/CommonIndexZhima.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -664,13 +784,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hsq.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="65" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
         </state>
       </provider>
     </entry>
@@ -695,16 +808,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserAddusergrade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserAddusergrade.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/model/hsq/ResData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -723,9 +827,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -763,13 +864,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserSyncalipayrisk.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserSyncalipayrisk.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/tradecenter/CreatePay.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-230">
@@ -843,13 +938,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/switch.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/config/generalAssert/GeneralAssertDetail.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
@@ -864,50 +952,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hsq-dayan-test.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hsq-dayan-test.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/fyb/openapi/CommonRecommendproducts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="89" column="18" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="18" />
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserAddusergradeTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/fyb/openapi/CommonHotsearchsug.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1191#1192#0" expanded="true" />
-            <element signature="e#1222#1223#0" expanded="true" />
-            <element signature="e#1333#1334#0" expanded="true" />
-            <element signature="e#1391#1392#0" expanded="true" />
-            <element signature="e#1176#1177#0" expanded="true" />
-            <element signature="e#1202#1203#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="79">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserSyncalipayriskTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="43" lean-forward="true" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+        <state relative-caret-position="60">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
-            <element signature="e#554#555#0" expanded="true" />
-            <element signature="e#775#776#0" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
+            <element signature="e#418#419#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#597#598#0" expanded="true" />
+            <element signature="e#684#685#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/ProductRiskbannerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+        <state relative-caret-position="196">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserAddusergradeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="101" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#677#678#0" expanded="true" />
+            <element signature="e#729#730#0" expanded="true" />
+            <element signature="e#1427#1428#0" expanded="true" />
+            <element signature="e#1477#1478#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/model/hsq/UserRiskpreventcheatData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="37" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserRiskpreventcheat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/fyb/openapi/CommonInitconfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/fyb/openapi/CommonNoticestatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/duoweidu/cases/hsq/openapi/UserGetcanchoosesku.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/switch.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hsq.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="225" column="28" selection-start-line="225" selection-start-column="28" selection-end-line="225" selection-end-column="28" />
+          <folding>
+            <element signature="n#test#0;n#suite#0;n#!!top" />
+            <element signature="n#test#1;n#suite#0;n#!!top" />
           </folding>
         </state>
       </provider>

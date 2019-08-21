@@ -11,6 +11,5 @@ public class UserGetcanchoosesku extends HsqInterfaceTest {
         param = "skuId=" + SqlDetail.getInstance().getParamValue("goskuId");
         process(true, false);
 
-
     }
 }
