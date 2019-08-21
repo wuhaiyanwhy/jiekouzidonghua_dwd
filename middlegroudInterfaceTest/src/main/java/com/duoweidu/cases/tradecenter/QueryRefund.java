@@ -32,6 +32,8 @@ public class QueryRefund extends TradeCenterInterfaceTest {
         List<NameValuePair> list = new LinkedList<>();
         list.add(new BasicNameValuePair("method", "trade.query_refund"));
         list.add(new BasicNameValuePair("tradeNo", TradecenterConfig.iqgCreateRefundTradeNo));
+
+        TradecenterConfig.accountType = "DWD_IQG_COIN";
         process(list, true, false);
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             model = sparseJson(QueryRefundData.class);
