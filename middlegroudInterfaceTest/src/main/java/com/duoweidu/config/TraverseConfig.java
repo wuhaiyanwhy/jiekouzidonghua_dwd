@@ -10,7 +10,12 @@ import java.util.Map;
  */
 public class TraverseConfig {
 
-    private Map<String, Object> traverse(Object obj){
+    /**
+     *数组或map格式
+     * @param obj
+     * @return
+     */
+    public static Map<String, Object> traverseCollection(Object obj){
         Map<String, Object> map = new HashMap<>();
         if (obj instanceof ArrayList) {
             ArrayList<?> list = (ArrayList<?>) obj;
@@ -31,7 +36,12 @@ public class TraverseConfig {
         return map;
     }
 
-    private Map<String, Object> traverseObj(Object obj) {
+    /**
+     * obj格式
+     * @param obj
+     * @return
+     */
+    public static Map<String, Object> traverseObj(Object obj) {
         Map<String, Object> map = new HashMap<>();
         Field[] fields = obj.getClass().getDeclaredFields();
         for(int i = 0 , len = fields.length; i < len; i++) {
