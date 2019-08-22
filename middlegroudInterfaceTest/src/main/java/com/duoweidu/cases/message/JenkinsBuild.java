@@ -25,6 +25,8 @@ public class JenkinsBuild {
                 uri = "iqg.beta.lastBuild.uri";
             }else if (ConfigFileUrl.getChannel() == 3) {
                 uri = "msf.beta.lastBuild.uri";
+            }else if (ConfigFileUrl.getChannel() == 5) {
+                uri = "jsz.beta.lastBuild.uri";
             }
         }else if ("prod".equals(ConfigFileUrl.getEnv())) {
             if (ConfigFileUrl.getChannel() == 2){
