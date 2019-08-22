@@ -14,7 +14,6 @@ public class UserAddaddress extends FybInterfaceTest {
     @Test(description = "添加用户地址",groups = "userAddaddress")
     public void userAddaddress() {
         setUrl("user.addaddress.uri");
-        System.out.println(url);
         List<NameValuePair> list = new LinkedList<>();
         list.add(new BasicNameValuePair("provinceId","2"));
         list.add(new BasicNameValuePair("province","北京"));
