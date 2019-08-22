@@ -25,15 +25,15 @@ public class OrderPayorder extends JszInterfaceTest {
     }
 
     private void detailAssert() {
-        detailAssertTest("", model.order_id);
-        detailAssertTest("", model.payment_id);
+        detailAssertTest("order_id", model.order_id);
+        detailAssertTest("payment_id", model.payment_id);
         for (int i = 0; i < model.sign_data.size(); i++) {
-            detailAssertTest("", model.sign_data.get(i).appId);
-            detailAssertTest("", model.sign_data.get(i).timeStamp);
-            detailAssertTest("", model.sign_data.get(i).nonceStr);
+            detailAssertTest("appId", model.sign_data.get(i).appId);
+            detailAssertTest("timeStamp", model.sign_data.get(i).timeStamp);
+            detailAssertTest("nonceStr", model.sign_data.get(i).nonceStr);
 //            detailAssertTest("",model.sign_data.get(i).package);
-            detailAssertTest("", model.sign_data.get(i).signType);
-            detailAssertTest("", model.sign_data.get(i).paySign);
+            detailAssertTest("signType", model.sign_data.get(i).signType);
+            detailAssertTest("paySign", model.sign_data.get(i).paySign);
         }
     }
 }
