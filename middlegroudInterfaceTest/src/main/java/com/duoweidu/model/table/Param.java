@@ -17,8 +17,8 @@ public class Param {
     private String name;
     private String value;
     private Timestamp created_at;
+    private Timestamp updated_at;
     private String note;
-    private String token;
 
     public  Param() {
 
@@ -28,5 +28,12 @@ public class Param {
         this.channel_id = channel_id;
         this.env = env;
         this.name = name;
+    }
+
+    public Param(int channel_id, int env, String name, String value) {
+        this.channel_id = channel_id;
+        this.env = env;
+        this.name = name;
+        this.value = value;
     }
 }

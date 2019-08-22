@@ -101,7 +101,17 @@ public class GeneralAssertChannel extends Assert {
     }
 
 
-    public static void timeTest(int channel_id, long limitTime, long responseTime, HttpResponse response, String uri, int path_id, String param) {
+    /**
+     * 判断超时时间
+     * @param channel_id
+     * @param limitTime
+     * @param responseTime
+     * @param response
+     * @param uri
+     * @param path_id
+     * @param param
+     */
+    public static void timeAssert(int channel_id, long limitTime, long responseTime, HttpResponse response, String uri, int path_id, String param) {
         if(responseTime >= limitTime){
             //需要一个HTTP_好的状态从响应和不得到它，你仍然必须消耗实体
             if (response.getEntity() != null) {
@@ -111,7 +121,8 @@ public class GeneralAssertChannel extends Assert {
                     e.printStackTrace();
                 }
             }
-            fail(distinguishParamFailed(channel_id, "接口响应超时;\n限制时间：" + limitTime + "ms;  实际响应时间：" + responseTime + "ms", uri, path_id, param, 1, null));
+            GeneralConfig.limitTimeList.add(uri);
+            fail(distinguishParamFailed(channel_id, "接口响应超时;\n限制时间：" + limitTime + "ms;  实际响应时间：" + responseTime + "ms", uri, path_id, param, 0, null));
         }
 
     }
@@ -194,7 +205,7 @@ public class GeneralAssertChannel extends Assert {
      * @param param
      * @param result
      */
-    public static void dataAssert(int channel_id, Object data, String uri, int path_id, String param, String result) {
+    public static void dataAssert(int channel_id, String data, String uri, int path_id, String param, String result) {
         if (data.equals("{}")) {
             fail(distinguishParamFailed(channel_id, "返回的data数据为空;", uri, path_id, param, 4, result));
         }

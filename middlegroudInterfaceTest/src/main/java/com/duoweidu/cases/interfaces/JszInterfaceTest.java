@@ -20,7 +20,8 @@ public class JszInterfaceTest extends InterfaceTest {
                 + "&zoneId=" + SqlDetail.getInstance().getParamValue(0,"zoneId")
                 + "&lng=" + SqlDetail.getInstance().getParamValue(0,"lng")
                 + "&lat=" + SqlDetail.getInstance().getParamValue(0,"lat")
-                + "&appId=" + SqlDetail.getInstance().getParamValue(0,"oauth_appid");
+                + "&appId=" + SqlDetail.getInstance().getParamValue(0,"oauth_appid")
+                + "&terminal=" + "jsz_wxapp";
         if (param != null) {
             this.param = par + "&" + param;
         }else {
@@ -41,6 +42,7 @@ public class JszInterfaceTest extends InterfaceTest {
         list.add(new BasicNameValuePair("lng", SqlDetail.getInstance().getParamValue(0,"lng")));
         list.add(new BasicNameValuePair("lat", SqlDetail.getInstance().getParamValue(0,"lat")));
         list.add(new BasicNameValuePair("oauth_appid", SqlDetail.getInstance().getParamValue(0,"oauth_appid")));
+        list.add(new BasicNameValuePair("terminal", "jsz_wxapp"));
         param = URLEncodedUtils.format(list, "Utf-8");
         System.out.println("参数：" + param);
         result = CallbackInterface.postStringResult(limitTime(), url, pathId, list);

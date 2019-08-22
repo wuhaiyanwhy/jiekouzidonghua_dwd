@@ -47,10 +47,10 @@ public class UserMyincome extends JszInterfaceTest {
             detailAssertTest("commission_type",model.list.get(i).commission_type);
             detailAssertTest("row_status",model.list.get(i).row_status);
             detailAssertTest("created_at",model.list.get(i).created_at);
-            detailAssertTest("order_created_at",model.list.get(i).order_created_at);
-            detailAssertTest("item_id",model.list.get(i).item_id);
-            detailAssertTest("activity_id",model.list.get(i).activity_id);
-            detailAssertTest("item_image",model.list.get(i).item_image);
+//            detailAssertTest("order_created_at",model.list.get(i).order_created_at);
+//            detailAssertTest("item_id",model.list.get(i).item_id);
+//            detailAssertTest("activity_id",model.list.get(i).activity_id);
+//            detailAssertTest("item_image",model.list.get(i).item_image);
         }
 //        detailAssertTest("total_cnt",model.total_cnt);
 //        detailAssertTest("total_page",model.total_page);

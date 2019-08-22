@@ -25,7 +25,7 @@ public class UserLogin2 extends JszInterfaceTest {
     private void detailAssert() {
             detailAssertTest("id", model.id);
             detailAssertTest("dwd_uid", model.dwd_uid);
-            detailAssertTest("dwd_oauth_id", model.dwd_oauth_id);
+//            detailAssertTest("dwd_oauth_id", model.dwd_oauth_id);
             detailAssertTest("nickname", model.nickname);
             detailAssertTest("15261875682", "mobile",model.mobile);
             detailAssertTest("avatar", model.avatar);
@@ -34,10 +34,10 @@ public class UserLogin2 extends JszInterfaceTest {
             detailAssertTest(1, "member_level", model.member_level);
             detailAssertTest("created_at", model.created_at);
             detailAssertTest("updated_at", model.updated_at);
-            detailAssertTest(1, "step",model.step);
+            detailAssertTest(0, "step",model.step);
             detailAssertTest("id", model.id);
             detailAssertTest("openid", model.openid);
-            detailAssertTest("wx95f64a24631b6324", "oauth_appid", model.oauth_appid);
+//            detailAssertTest("oauth_appid", model.oauth_appid);
     }
 }
 

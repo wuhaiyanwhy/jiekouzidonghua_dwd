@@ -145,6 +145,11 @@
                     <include name = "UserRegister2"/>
                 </methods>
             </class>
+            <class name="com.duoweidu.cases.jsz.openapi.UserRefreshlogin">
+                <methods>
+                    <include name = "userRefreshlogin"/>
+                </methods>
+            </class>
 
 
         </classes>

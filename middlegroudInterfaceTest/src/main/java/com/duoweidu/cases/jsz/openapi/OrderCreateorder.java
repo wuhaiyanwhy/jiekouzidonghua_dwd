@@ -49,7 +49,7 @@ public class OrderCreateorder extends JszInterfaceTest {
         detailAssertTest("",model.order_id);
         detailAssertTest("",model.payment_id);
         for( int i = 0; i<model.sign_data.size(); i++){
-            detailAssertTest("wx95f64a24631b6324","",model.sign_data.get(i).appId);
+            detailAssertTest("",model.sign_data.get(i).appId);
             detailAssertTest("",model.sign_data.get(i).timeStamp);
             detailAssertTest("",model.sign_data.get(i).nonceStr);
 //            detailAssertTest("",model.sign_data.get(i).package);

@@ -12,7 +12,7 @@ public class product_productdetail_test extends HsqInterfaceTest {
 
     private ProductProductdetailData model;
 
-    @Test(dependsOnGroups = "loginTrue", description = "获取图文详情")
+    @Test(description = "获取图文详情")
     public void product_productdetail_true() throws IOException {
         setUrl("product.productdetail.uri");
         param = "productId=" + SqlDetail.getInstance().getParamValue("productId");
@@ -39,7 +39,7 @@ public class product_productdetail_test extends HsqInterfaceTest {
 
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             detailAssertTest("接口测试专用商品，勿动动", "name", model.name);
-            detailAssertTest("http://img2.haoshiqi.net/ma32483124920c8aea275a83545aa3b5aa.jpg?imageView2/0/q/70","main_sku_pic", model.main_sku_pic);
+            detailAssertTest("main_sku_pic", model.main_sku_pic);
 //            detailAssertTest(999, "lowest_price", model.lowest_price);
             detailAssertTest(1900, "highest_price", model.highest_price);
             detailAssertTest(5000, "market_price", model.market_price);
@@ -52,7 +52,7 @@ public class product_productdetail_test extends HsqInterfaceTest {
 
         if ("prod".equals(ConfigFileUrl.getEnv())) {
             detailAssertTest("压测专用（勿动）", "name", model.name);
-            detailAssertTest("http://img2.haoshiqi.net/maaa938eac8efc626a53e043574c88cdc9.jpg?imageView2/0/q/70","main_sku_pic", model.main_sku_pic);
+            detailAssertTest("main_sku_pic", model.main_sku_pic);
 //            detailAssertTest(2, "lowest_price", model.lowest_price);
             detailAssertTest(3, "highest_price", model.highest_price);
             detailAssertTest(2, "market_price", model.market_price);

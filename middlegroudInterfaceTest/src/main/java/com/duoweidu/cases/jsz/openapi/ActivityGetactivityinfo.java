@@ -31,7 +31,7 @@ public class ActivityGetactivityinfo extends JszInterfaceTest {
         detailAssertTest("left_stock", model.left_stock);
         detailAssertTest("need_book", model.need_book);
         detailAssertTest("allow_take_out", model.allow_take_out);
-        detailAssertTest(1, "refund_type", model.refund_type);
+        detailAssertTest("refund_type", model.refund_type);
         detailAssertTest(1, "redeem_period", model.redeem_period);
         detailAssertTest("redeem_time", model.redeem_time);
         detailAssertTest("refund_expired", model.refund_expired);
@@ -65,7 +65,7 @@ public class ActivityGetactivityinfo extends JszInterfaceTest {
             detailAssertTest("text", model.tips_array.get(i).text);
         }
         detailAssertTest("兑换时间", "title", model.tips_array.get(0).title);
-        detailAssertTest("title", model.tips_array.get(1).title);
+        detailAssertTest("title", model.tips_array.get(0).title);
         detailAssertTest("text", model.tips_array.get(0).text);
     }
 }
