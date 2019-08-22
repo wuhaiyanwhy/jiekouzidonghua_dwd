@@ -3,6 +3,7 @@ package com.duoweidu.cases.fyb.openapi;
 import com.duoweidu.cases.interfaces.FybInterfaceTest;
 import com.duoweidu.config.FybConfig;
 import com.duoweidu.config.generalAssert.GeneralAssert;
+import com.duoweidu.model.fyb.OrderSubmitorderData;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONException;
@@ -13,6 +14,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class OrderSubmitorder extends FybInterfaceTest {
+
+    private OrderSubmitorderData model;
 
     @Test(dependsOnGroups = "orderOrderinit",description = "提交订单",groups = "orderSubmitorder")
     public void orderSubmitorder() {
@@ -32,11 +35,18 @@ public class OrderSubmitorder extends FybInterfaceTest {
             list.add(new BasicNameValuePair("useVoucherMoney", "1"));
 
             process(list,true,false);
+            model = sparseJson(OrderSubmitorderData.class);
+            detailAssert();
             //submitorder普通订单接口的返回数据确定默认值
             FybConfig.submitorderResult = result;
         }catch (JSONException e){
             GeneralAssert.jsonAssert(url, pathId, param, result, e);
         }
 
+    }
+
+    private void detailAssert() {
+        assertNotEmpty("orderIds", model.orderIds);
+        assertTrue("orderIds", model.needPay);
     }
 }
