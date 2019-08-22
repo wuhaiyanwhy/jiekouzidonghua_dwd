@@ -7,16 +7,7 @@
 *.iml
 out
 gen
-<<<<<<< HEAD
 /src/main/resources/hsq-dayan-test.xml
-=======
-src/main/resources/hsq-dayan-test.xml
 src/main/resources/switch.properties
 pom.xml
-src/test/
-<<<<<<< HEAD
 target/generated-sources/
->>>>>>> master
-=======
-target/generated-sources/
->>>>>>> master
