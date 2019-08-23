@@ -2,6 +2,7 @@ package com.duoweidu.cases.iqg.openapi;
 
 import com.duoweidu.cases.interfaces.IqgInterfaceTest;
 import com.duoweidu.config.IqgConfig;
+import com.duoweidu.config.sql.SqlDetail;
 import com.duoweidu.utils.ConfigFileUrl;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
@@ -17,7 +18,7 @@ public class Payment extends IqgInterfaceTest {
         setUrl("payment.uri");
         List<NameValuePair> list = new LinkedList<>();
         list.add(new BasicNameValuePair("order_id", IqgConfig.orderId));
-        list.add(new BasicNameValuePair("alipay","0.010000"));
+        list.add(new BasicNameValuePair("alipay", SqlDetail.getInstance().getParamValue(2, "alipay")));
         process(list,false,false);
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             generalAssertTest(false);

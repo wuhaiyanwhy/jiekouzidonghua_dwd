@@ -72,6 +72,26 @@
                     <include name="tradecenter_orderinfo_true"/>
                 </methods>
             </class>
+            <!--用户Riskgo评分回传-->
+            <class name="com.duoweidu.cases.hsq.openapi.UserAddusergradeTest">
+                <methods>
+                    <include name="userAddusergradeTrue"/>
+                    <include name="userAddusergradeTrue1"/>
+                </methods>
+            </class>
+            <!--风险商户数据同步-->
+            <class name="com.duoweidu.cases.hsq.openapi.UserSyncalipayriskTest">
+                <methods>
+                    <include name="userSyncalipayriskTrue"/>
+                    <include name="userSyncalipayriskTrue1"/>
+                </methods>
+            </class>
+            <!--获取riskgobanner-->
+            <class name="com.duoweidu.cases.hsq.openapi.ProductRiskbannerTest">
+                <methods>
+                    <include name="productRiskbannerTrue"/>
+                </methods>
+            </class>
         </classes>
     </test>
 
