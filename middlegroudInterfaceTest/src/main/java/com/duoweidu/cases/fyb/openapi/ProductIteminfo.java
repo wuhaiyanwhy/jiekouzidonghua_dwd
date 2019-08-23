@@ -25,7 +25,7 @@ public class ProductIteminfo extends FybInterfaceTest {
         Map<String, Object> mapData = TraverseConfig.traverseObj(model);
         Map<String, Object> mapAttrs = TraverseConfig.traverseCollection(model.attrs);
         Map<String, Object> mapAttrList = TraverseConfig.traverseCollection(model.attrList);
-        Map<String, Object> mapStocksList = TraverseConfig.traverseCollection(model.stocksList);
+//        Map<String, Object> mapStocksList = TraverseConfig.traverseCollection(model.stocksList);
         Map<String, Object> mapBatchOptions = TraverseConfig.traverseCollection(model.batchOptions);
         Map<String, Object> mapMerchantInfo = TraverseConfig.traverseObj(model.merchantInfo);
         Map<String, Object> mapShareInfoFirendsZone = TraverseConfig.traverseObj(model.shareInfo.firendsZone);
@@ -47,10 +47,10 @@ public class ProductIteminfo extends FybInterfaceTest {
                 mapAttrList.entrySet()) {
             assertNotNull(entry.getKey(), entry.getValue());
         }
-        for (Map.Entry<String, Object> entry:
-                mapStocksList.entrySet()) {
-            assertNotNull(entry.getKey(), entry.getValue());
-        }
+//        for (Map.Entry<String, Object> entry:
+//                mapStocksList.entrySet()) {
+//            assertNotNull(entry.getKey(), entry.getValue());
+//        }
         for (Map.Entry<String, Object> entry:
                 mapBatchOptions.entrySet()) {
             assertNotNull(entry.getKey(), entry.getValue());

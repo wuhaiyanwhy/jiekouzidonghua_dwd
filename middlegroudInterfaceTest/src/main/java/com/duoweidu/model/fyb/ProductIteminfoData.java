@@ -1,7 +1,5 @@
 package com.duoweidu.model.fyb;
 
-import com.duoweidu.model.hsq.ProductCoupleskudetailData;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -38,7 +36,7 @@ public class ProductIteminfoData {
     public int only_new_user;
 //    public String last_update;
     public int delete_flag;
-    public String feature;
+//    public String feature;
     public int priority;
     public String apply_audit_time;
     public int lowest_web_price;
@@ -56,7 +54,7 @@ public class ProductIteminfoData {
     public String reversion;
     public String deduction;
     public ArrayList<AttrListModel> attrList;
-    public HashMap<String, StocksListModel> stocksList;
+//    public HashMap<String, StocksListModel> stocksList;
     public int has_stock;
     public boolean canDelivery;
     public String deliveryWayName;
@@ -103,52 +101,52 @@ public class ProductIteminfoData {
         public String value;
     }
 
-    public static class StocksListModel {
-        public int id;
-        public int source_type;
-        public int product_id;
-        public int merchant_id;
-        public String name;
-        public int price;
-        public int old_price;
-        public String thumbnail;
-        public int market_price;
-        public int lowest_price;
-        public int seller_time;
-        public String expired_date;
-        public String manufactured_date;
-        public int enabled;
-        public int liked_cnt;
-        public int ugc_cnt;
-        public int selled_cnt;
-        public String created_at;
-        public String updated_at;
-        public String merchant_item_code;
-        public int actived;
-        public int weight;
-        public int audit_status;
-        public String audit_time;
-        public String online_time;
-        public String offline_time;
-        public int restriction_amount;
-        public int fpostage_amount;
-        public int only_new_user;
+//    public static class StocksListModel {
+//        public int id;
+//        public int source_type;
+//        public int product_id;
+//        public int merchant_id;
+//        public String name;
+//        public int price;
+//        public int old_price;
+//        public String thumbnail;
+//        public int market_price;
+//        public int lowest_price;
+//        public int seller_time;
+//        public String expired_date;
+//        public String manufactured_date;
+//        public int enabled;
+//        public int liked_cnt;
+//        public int ugc_cnt;
+//        public int selled_cnt;
+//        public String created_at;
+//        public String updated_at;
+//        public String merchant_item_code;
+//        public int actived;
+//        public int weight;
+//        public int audit_status;
+//        public String audit_time;
+//        public String online_time;
+//        public String offline_time;
+//        public int restriction_amount;
+//        public int fpostage_amount;
+//        public int only_new_user;
 //        public String last_update;
-        public int delete_flag;
-        public String feature;
-        public int priority;
-        public int apply_audit_time;
-        public int lowest_web_price;
-        public int version_id;
-        public int deductible_rate;
-        public int return_rate;
-        public int buy_limit_amount;
-        public String reversion;
-        public String deduction;
-        public int left_stock;
-
-
-    }
+//        public int delete_flag;
+//        public String feature;
+//        public int priority;
+//        public int apply_audit_time;
+//        public int lowest_web_price;
+//        public int version_id;
+//        public int deductible_rate;
+//        public int return_rate;
+//        public int buy_limit_amount;
+//        public String reversion;
+//        public String deduction;
+//        public int left_stock;
+//
+//
+//    }
 
     public static class BatchOptionsModel {
         public String batch;

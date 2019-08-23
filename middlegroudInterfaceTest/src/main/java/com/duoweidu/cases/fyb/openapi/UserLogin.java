@@ -8,6 +8,9 @@ import org.testng.annotations.Test;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * 无账号密码登录，暂时无需详细断言
+ */
 public class UserLogin extends FybInterfaceTest {
 
     @Test(groups = "loginTrue",description = "登录")

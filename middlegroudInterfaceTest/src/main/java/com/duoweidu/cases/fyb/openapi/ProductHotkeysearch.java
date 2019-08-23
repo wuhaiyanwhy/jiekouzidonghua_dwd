@@ -32,7 +32,7 @@ public class ProductHotkeysearch extends FybInterfaceTest {
             assertNotEmpty("list.get(i).thumbnail", model.list.get(i).thumbnail);
             assertNotEmpty("list.get(i).market_price", model.list.get(i).market_price);
             assertNotEmpty("list.get(i).price", model.list.get(i).price);
-            assertNotEmpty("list.get(i).reversion", model.list.get(i).reversion);
+            assertNotNull("list.get(i).reversion", model.list.get(i).reversion);
             assertNotEmpty("list.get(i).deduction", model.list.get(i).deduction);
             assertNotNull("list.get(i).selled_cnt", model.list.get(i).selled_cnt);
 

@@ -23,19 +23,19 @@ public class UserAddresslist extends FybInterfaceTest {
 
     private void detailAssert() {
         for (int i = 0; i < model.list.size(); i++) {
-            detailAssertTest("list.get(i).id", model.list.get(i).id);
-            detailAssertTest("list.get(i).user_id", model.list.get(i).user_id);
-            detailAssertTest("list.get(i).province_id", model.list.get(i).province_id);
-            detailAssertTest("list.get(i).province", model.list.get(i).province);
-            detailAssertTest("list.get(i).city_id", model.list.get(i).city_id);
-            detailAssertTest("list.get(i).city", model.list.get(i).city);
-            detailAssertTest("list.get(i).district_id", model.list.get(i).district_id);
-            detailAssertTest("list.get(i).district", model.list.get(i).district);
-            detailAssertTest("list.get(i).contacter", model.list.get(i).contacter);
-            detailAssertTest("list.get(i).mobile", model.list.get(i).mobile);
-            detailAssertTest("list.get(i).detail_address", model.list.get(i).detail_address);
-            detailAssertTest("list.get(i).delivery_type", model.list.get(i).delivery_type);
-            detailAssertTest("list.get(i).is_default", String.valueOf(model.list.get(i).is_default));
+            assertNotEmpty("list.get(i).id", model.list.get(i).id);
+            assertNotEmpty("list.get(i).user_id", model.list.get(i).user_id);
+            assertNotEmpty("list.get(i).province_id", model.list.get(i).province_id);
+            assertNotEmpty("list.get(i).province", model.list.get(i).province);
+            assertNotEmpty("list.get(i).city_id", model.list.get(i).city_id);
+            assertNotEmpty("list.get(i).city", model.list.get(i).city);
+            assertNotEmpty("list.get(i).district_id", model.list.get(i).district_id);
+            assertNotEmpty("list.get(i).district", model.list.get(i).district);
+            assertNotEmpty("list.get(i).contacter", model.list.get(i).contacter);
+            assertNotEmpty("list.get(i).mobile", model.list.get(i).mobile);
+            assertNotEmpty("list.get(i).detail_address", model.list.get(i).detail_address);
+            assertNotEmpty("list.get(i).delivery_type", model.list.get(i).delivery_type);
+            assertNotEmpty("list.get(i).is_default", String.valueOf(model.list.get(i).is_default));
 
         }
     }
