@@ -1,7 +1,6 @@
 package com.duoweidu.cases.iqg.openapi;
 
 import com.duoweidu.cases.interfaces.IqgInterfaceTest;
-import com.duoweidu.cases.jsz.openapi.AddressSearch;
 import com.duoweidu.config.sql.SqlDetail;
 import com.duoweidu.model.iqg.AdData;
 import org.testng.annotations.Test;
@@ -14,7 +13,7 @@ public class Ad extends IqgInterfaceTest {
     public void ad_true() {
         setUrl("ad.uri");
         param = "position_id=1&zone_id=" + SqlDetail.getInstance().getParamValue(0, "zone_id");
-        process(true,false);
+        process(true,true);
         model = sparseJson(AdData.class);
         detailAssert();
     }
