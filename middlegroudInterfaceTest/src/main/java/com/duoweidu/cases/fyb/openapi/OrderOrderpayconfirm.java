@@ -7,6 +7,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.testng.annotations.Test;
 
+/**
+ * 订单未支付，暂时无需详细断言
+ */
 public class OrderOrderpayconfirm extends FybInterfaceTest {
 
     @Test(dependsOnGroups = "orderOrderpay",description = "确认支付状态(普通)",groups = "orderOrderpayconfirm")
