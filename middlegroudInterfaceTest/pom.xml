@@ -108,7 +108,7 @@
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>
-                            ./src/main/resources/jsz.xml
+                            ./src/main/resources/hsq.xml
                         </suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
