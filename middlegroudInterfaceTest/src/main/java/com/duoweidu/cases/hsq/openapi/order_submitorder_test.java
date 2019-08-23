@@ -17,6 +17,11 @@ import java.util.List;
 
 public class order_submitorder_test extends HsqInterfaceTest {
 
+    @Override
+    protected long limitTime() {
+        return 3000;
+    }
+
     private OrderSubmitorderData model;
 
     private void submitorderConfig(List<NameValuePair> list, String orderinitResult) {
