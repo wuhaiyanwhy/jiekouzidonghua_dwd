@@ -9,6 +9,9 @@ import org.testng.annotations.Test;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * 无法一直申请退款，暂时无需详细断言
+ */
 public class RefundApply extends FybInterfaceTest {
 
     @Test(description = "申请退款")

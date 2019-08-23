@@ -202,6 +202,9 @@ public class SqlDetail {
         }
     }
 
+    /**
+     * 更新助力免单数据
+     */
     public void hsqUpdateAssistanceEvent() {
         McActivityAssistanceEvent mcActivityAssistanceEvent = new McActivityAssistanceEvent(1,
                 3,
@@ -214,7 +217,20 @@ public class SqlDetail {
         }
     }
 
+    /**
+     * 获取当前渠道的名字
+     * @return
+     */
     public String getChannelName() {
         return SqlGeneral.getChannelName(channel_id());
+    }
+
+    /**
+     * 根据渠道、环境、名称更新参数表value值
+     * @param name
+     * @param value
+     */
+    public void updatePathValue(String name, String value) {
+        SqlGeneral.updatePathValue(channel_id(), name, value);
     }
 }

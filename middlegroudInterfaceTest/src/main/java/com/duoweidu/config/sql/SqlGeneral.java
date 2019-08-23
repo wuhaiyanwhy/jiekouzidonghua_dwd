@@ -208,7 +208,27 @@ public class SqlGeneral {
 //        session.close();
     }
 
+    /**
+     * 获取当前渠道的名字
+     * @param channel_id
+     * @return
+     */
     public static String getChannelName(int channel_id) {
         return session.selectOne("getChannelName", channel_id);
+    }
+
+    /**
+     * 根据渠道、环境、名称更新参数表value值
+     * @param channel_id
+     * @param name
+     * @param value
+     */
+    public static void updatePathValue (int channel_id, String name, String value) {
+        Param param = new Param(channel_id, getEnv(), name, value);
+        int res = session.update("updatePathValue", param);
+        session.commit();
+        if (res > 0) {
+            System.out.println("参数值更新成功");
+        }
     }
 }

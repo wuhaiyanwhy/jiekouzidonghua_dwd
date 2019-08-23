@@ -5,51 +5,51 @@
     <test name ="返一半接口测试用例(openapi)">
         <classes >
             <!--无测试商家，禁用-->
-            <!--<class name="com.duoweidu.cases.fyb.openapi.UserAddskutocart">-->
-                <!--<methods>-->
-                    <!--<include name = "userAddskutocart"/>-->
-                <!--</methods>-->
-            <!--</class>-->
-            <!--<class name="com.duoweidu.cases.fyb.openapi.UserGetusercart">-->
-                <!--<methods>-->
-                    <!--<include name = "userGetusercart"/>-->
-                <!--</methods>-->
-            <!--</class>-->
-            <!--<class name="com.duoweidu.cases.fyb.openapi.UserDeletecartsku">-->
-                <!--<methods>-->
-                    <!--<include name = "userDeletecartsku"/>-->
-                <!--</methods>-->
-            <!--</class>-->
-            <!--<class name="com.duoweidu.cases.fyb.openapi.OrderOrderinit">-->
-                <!--<methods>-->
-                    <!--<include name = "orderOrderinit"/>-->
-                <!--</methods>-->
-            <!--</class>-->
-            <!--<class name="com.duoweidu.cases.fyb.openapi.OrderSubmitorder">-->
-                <!--<methods>-->
-                    <!--<include name = "orderSubmitorder"/>-->
-                <!--</methods>-->
-            <!--</class>-->
-            <!--<class name="com.duoweidu.cases.fyb.openapi.OrderOrderpay">-->
-                <!--<methods>-->
-                    <!--<include name = "orderOrderpay"/>-->
-                <!--</methods>-->
-            <!--</class>-->
-            <!--<class name="com.duoweidu.cases.fyb.openapi.OrderOrderpayconfirm">-->
-                <!--<methods>-->
-                    <!--<include name = "orderOrderpayconfirm"/>-->
-                <!--</methods>-->
-            <!--</class>-->
-            <!--<class name="com.duoweidu.cases.fyb.openapi.OrderCancelorder">-->
-                <!--<methods>-->
-                    <!--<include name = "orderCancelorder"/>-->
-                <!--</methods>-->
-            <!--</class>-->
-            <!--<class name="com.duoweidu.cases.fyb.openapi.UserSetdefaultaddress">-->
-                <!--<methods>-->
-                    <!--<include name = "userSetdefaultaddress"/>-->
-                <!--</methods>-->
-            <!--</class>-->
+            <class name="com.duoweidu.cases.fyb.openapi.UserAddskutocart">
+                <methods>
+                    <include name = "userAddskutocart"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.UserGetusercart">
+                <methods>
+                    <include name = "userGetusercart"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.UserDeletecartsku">
+                <methods>
+                    <include name = "userDeletecartsku"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.OrderOrderinit">
+                <methods>
+                    <include name = "orderOrderinit"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.OrderSubmitorder">
+                <methods>
+                    <include name = "orderSubmitorder"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.OrderOrderpay">
+                <methods>
+                    <include name = "orderOrderpay"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.OrderOrderpayconfirm">
+                <methods>
+                    <include name = "orderOrderpayconfirm"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.OrderCancelorder">
+                <methods>
+                    <include name = "orderCancelorder"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.fyb.openapi.UserSetdefaultaddress">
+                <methods>
+                    <include name = "userSetdefaultaddress"/>
+                </methods>
+            </class>
             <!--分割线-->
 
 
