@@ -12,8 +12,8 @@ public class BargainToday extends IqgInterfaceTest {
         url = ConfigFileUrl.getUrlByKey("bargain.today.uri");
         pathId = SqlDetail.getInstance().getPathId("bargain.today.uri");
         process(false,false);
-        if ("beta".equals(ConfigFileUrl.getEnv())) {
-            generalAssertTest(true, false);
-        }
+//        if ("beta".equals(ConfigFileUrl.getEnv())) {
+//            generalAssertTest(true, false);
+//        }
     }
 }
