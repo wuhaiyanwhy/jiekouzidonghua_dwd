@@ -32,29 +32,30 @@ public class QueryWithdraw extends TradeCenterInterfaceTest {
     }
 
     private void detailAssert() {
-        detailAssertTest(TradecenterConfig.jszCreateWithdrawTradeNo,"trade_no", model.trade_no);
-        detailAssertTest("","gateway_trade_no",model.gateway_trade_no);
-        detailAssertTest(3,"platform_id", model.platform_id);
-        detailAssertTest(Integer.parseInt(SqlDetail.getInstance().getParamValue(0,"userId")),"platform_user_id",model.platform_user_id);
-        detailAssertTest("global_user_id",String.valueOf(model.global_user_id));
-        detailAssertTest("withdraw_status",model.withdraw_status);
-        detailAssertTest("withdraw_amount",model.withdraw_amount);
-        detailAssertTest("service_charge",model.service_charge);
-        detailAssertTest("real_service_charge",model.real_service_charge);
-        detailAssertTest("CNY","currency",model.currency);
-        detailAssertTest(SqlDetail.getInstance().getParamValue(0,"jszOpenid"),"target_account",model.target_account);
-        detailAssertTest("测试提现","remark",model.remark);
-        detailAssertTest("","fail_reason",model.fail_reason);
-        detailAssertTest("process_at",String.valueOf(model.process_at));
-        detailAssertTest("origin.return_code",model.origin.return_code);
-        detailAssertTest("origin.return_msg",model.origin.return_msg);
-        detailAssertTest("origin.result_code",model.origin.result_code);
-        detailAssertTest("origin.err_code",model.origin.err_code);
-        detailAssertTest("origin.err_code_des",model.origin.err_code_des);
-        detailAssertTest(TradecenterConfig.jszCreateWithdrawTradeNo,"origin.partner_trade_no",model.origin.partner_trade_no);
-        detailAssertTest("origin.mch_id",model.origin.mch_id);
-        detailAssertTest("origin.appid",model.origin.appid);
-        detailAssertTest("","reverse",model.reverse);
+        detailAssertTest(TradecenterConfig.jszCreateWithdrawTradeNo, "trade_no", model.trade_no);
+        if (model.withdraw_status == 4)
+            detailAssertTest("gateway_trade_no", model.gateway_trade_no);
+        detailAssertTest(3, "platform_id", model.platform_id);
+        detailAssertTest(Integer.parseInt(SqlDetail.getInstance().getParamValue(0, "userId")), "platform_user_id", model.platform_user_id);
+        detailAssertTest("global_user_id", String.valueOf(model.global_user_id));
+        detailAssertTest("withdraw_status", model.withdraw_status);
+        detailAssertTest("withdraw_amount", model.withdraw_amount);
+        detailAssertTest("service_charge", String.valueOf(model.service_charge));
+        detailAssertTest("real_service_charge", String.valueOf(model.real_service_charge));
+        detailAssertTest("CNY", "currency", model.currency);
+        detailAssertTest(SqlDetail.getInstance().getParamValue(0, "jszOpenid"), "target_account", model.target_account);
+        detailAssertTest("测试提现", "remark", model.remark);
+        detailAssertTest("", "fail_reason", model.fail_reason);
+        detailAssertTest("process_at", String.valueOf(model.process_at));
+        detailAssertTest("origin.return_code", model.origin.return_code);
+        detailAssertTest("origin.return_msg", model.origin.return_msg);
+        detailAssertTest("origin.result_code", model.origin.result_code);
+        detailAssertTest("origin.err_code", model.origin.err_code);
+        detailAssertTest("origin.err_code_des", model.origin.err_code_des);
+        detailAssertTest(TradecenterConfig.jszCreateWithdrawTradeNo, "origin.partner_trade_no", model.origin.partner_trade_no);
+        detailAssertTest("origin.mch_id", model.origin.mch_id);
+        detailAssertTest("origin.appid", model.origin.appid);
+        detailAssertTest("", "reverse", model.reverse);
 
     }
 }

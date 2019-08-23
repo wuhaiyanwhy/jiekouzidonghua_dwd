@@ -96,7 +96,7 @@ public class order_userordersearch_test extends HsqInterfaceTest {
 //                detailAssertTest("list.get(i).skuList.get(j).pin_event_id", model.list.get(i).skuList.get(j).pin_event_id);
 //                detailAssertTest("list.get(i).skuList.get(j).point", model.list.get(i).skuList.get(j).point);
                 detailAssertTest("list.get(i).skuList.get(j).source_type", model.list.get(i).skuList.get(j).source_type);
-                detailAssertTest("list.get(i).skuList.get(j).saved_money", model.list.get(i).skuList.get(j).saved_money);
+//                detailAssertTest("list.get(i).skuList.get(j).saved_money", model.list.get(i).skuList.get(j).saved_money);
 //                detailAssertTest("list.get(i).skuList.get(j).refundInfo", model.list.get(i).skuList.get(j).refundInfo);
                 detailAssertTest("list.get(i).skuList.get(j).skuId", model.list.get(i).skuList.get(j).skuId);
                 detailAssertTest("list.get(i).skuList.get(j).orderId", model.list.get(i).skuList.get(j).orderId);
