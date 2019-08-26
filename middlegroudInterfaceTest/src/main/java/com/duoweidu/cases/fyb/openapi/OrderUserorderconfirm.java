@@ -9,6 +9,9 @@ import org.testng.annotations.Test;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * 无法一直确认收货，暂时无需详细断言
+ */
 public class OrderUserorderconfirm extends FybInterfaceTest {
 
     @Test(description = "确认收货")

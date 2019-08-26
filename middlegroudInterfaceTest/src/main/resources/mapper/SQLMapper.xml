@@ -68,4 +68,9 @@
         order by id desc limit 1
     </select>
 
+    <!--根据渠道、环境、名称更新参数表value值-->
+    <update id="updatePathValue" parameterType="com.duoweidu.model.table.Param">
+        update mid_param set value = #{value} where channel_id = #{channel_id} and env=#{env} and name = #{name}
+    </update>
+
 </mapper>

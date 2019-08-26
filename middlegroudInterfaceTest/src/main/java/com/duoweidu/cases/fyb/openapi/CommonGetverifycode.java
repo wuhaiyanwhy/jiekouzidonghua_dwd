@@ -3,6 +3,9 @@ package com.duoweidu.cases.fyb.openapi;
 import com.duoweidu.cases.interfaces.FybInterfaceTest;
 import org.testng.annotations.Test;
 
+/**
+ * 无法频繁获取验证码，暂时先禁用
+ */
 public class CommonGetverifycode extends FybInterfaceTest {
 
 

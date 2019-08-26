@@ -112,11 +112,12 @@
                 </methods>
             </class>
 
-            <class name="com.duoweidu.cases.hsq.openapi.AssistanceAlipayeventback">
-                <methods>
-                    <include name="assistanceAlipayeventback"/>
-                </methods>
-            </class>
+            <!--助力免单暂不可用，先禁用-->
+            <!--<class name="com.duoweidu.cases.hsq.openapi.AssistanceAlipayeventback">-->
+                <!--<methods>-->
+                    <!--<include name="assistanceAlipayeventback"/>-->
+                <!--</methods>-->
+            <!--</class>-->
 
             <class name="com.duoweidu.cases.hsq.openapi.ActivityAssistancecomplainttype">
                 <methods>
