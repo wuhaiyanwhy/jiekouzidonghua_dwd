@@ -16,17 +16,16 @@
                     <!--<include name = "activityBargain"/>-->
                 <!--</methods>-->
             <!--</class>-->
-            <!--接口需要优化，先禁用-->
-            <!--<class name="com.duoweidu.cases.msf.openapi.UserUpdateinfo">-->
-                <!--<methods>-->
-                    <!--<include name = "userUpdateinfo"/>-->
-                <!--</methods>-->
-            <!--</class>-->
-            <!--<class name="com.duoweidu.cases.msf.openapi.MessageType">-->
-                <!--<methods>-->
-                    <!--<include name = "messageType"/>-->
-                <!--</methods>-->
-            <!--</class>-->
+            <class name="com.duoweidu.cases.msf.openapi.UserUpdateinfo">
+                <methods>
+                    <include name = "userUpdateinfo"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.msf.openapi.MessageType">
+                <methods>
+                    <include name = "messageType"/>
+                </methods>
+            </class>
             <class name="com.duoweidu.cases.msf.openapi.CommonAppconfig">
                 <methods>
                     <include name = "commonAppconfig"/>
