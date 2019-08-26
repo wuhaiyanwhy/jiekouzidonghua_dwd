@@ -56,5 +56,6 @@ public class HsqOpenapiConfig {
     public static int totalPage;
     //保存购物车商品id
 
-
+    //储存riskgo是否更新接口的值
+    public static int riskgoSwitch;
 }
