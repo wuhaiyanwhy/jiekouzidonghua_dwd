@@ -10,7 +10,8 @@ public class UserRiskpreventcheat extends HsqInterfaceTest {
 
     private UserRiskpreventcheatData model;
 
-    @Test(description = "风险预防反作弊")
+    //组：groups="userRiskpreventcheat"
+    @Test(description = "风险预防反作弊", groups = "userRiskpreventcheat")
     public void userRiskpreventcheat() {
         setUrl("user.riskpreventcheat.uri");
         param = "token=" + SqlDetail.getInstance().getParamValue("point_token");

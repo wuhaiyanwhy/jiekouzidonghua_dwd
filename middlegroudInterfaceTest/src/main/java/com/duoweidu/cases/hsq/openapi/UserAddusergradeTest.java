@@ -15,7 +15,8 @@ public class UserAddusergradeTest extends HsqInterfaceTest {
 
     private ResData model;
 
-    @Test(description = "用户Riskgo评分回传-营销反作弊")
+    //依赖组：dependsOnGroups = "userRiskpreventcheat"
+    @Test(description = "用户Riskgo评分回传-营销反作弊", dependsOnGroups = "userRiskpreventcheat")
     public void userAddusergradeMarketing() {
         commonParameters("RISKGO_MARKETANTICHEAT");
     }
