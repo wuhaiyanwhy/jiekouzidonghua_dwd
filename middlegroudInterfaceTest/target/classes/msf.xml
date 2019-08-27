@@ -16,7 +16,6 @@
                     <!--<include name = "activityBargain"/>-->
                 <!--</methods>-->
             <!--</class>-->
-            <!--接口需要优化，先禁用-->
             <class name="com.duoweidu.cases.msf.openapi.UserUpdateinfo">
                 <methods>
                     <include name = "userUpdateinfo"/>
@@ -294,7 +293,7 @@
                     <include name = "articleCommentuserlist"/>
                 </methods>
             </class>
-            <class name="com.duoweidu.cases.msf.openapi.ArticleCommentuserlist">
+            <class name="com.duoweidu.cases.msf.openapi.ArticleCommentlist">
                 <methods>
                     <include name = "articleCommentlist"/>
                 </methods>
