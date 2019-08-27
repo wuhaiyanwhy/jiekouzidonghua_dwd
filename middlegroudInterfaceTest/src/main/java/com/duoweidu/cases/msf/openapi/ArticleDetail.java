@@ -6,11 +6,10 @@ import org.testng.annotations.Test;
 
 public class ArticleDetail extends MsfInterfaceTest {
 
-    @Test(dependsOnGroups = "loginTrue",description = "文章详情")
+    @Test(description = "文章详情")
     public void articleDetail() {
         setUrl("article.detail.uri");
         param = "id=" + SqlDetail.getInstance().getParamValue("article_id");
         process(true,false);
-
     }
 }

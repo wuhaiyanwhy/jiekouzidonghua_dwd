@@ -35,7 +35,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -49,7 +48,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Aug 27, 2019 09:06:32 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Aug 27, 2019 09:52:20 AM</span>
 				</a>
 			</li>
 			<li>
@@ -75,8 +74,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
-						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -91,10 +88,10 @@
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>觅食蜂接口测试</a></li>
 					<li><a href='#'>觅食蜂接口测试用例(openapi)</a></li>
-					<li><a href='#'>createArticle</a></li>
-					<li><a href='#'>commentArticle</a></li>
 					<li><a href='#'>loginTrue</a></li>
+					<li><a href='#'>createArticle</a></li>
 					<li><a href='#'>orderPaymentapply</a></li>
+					<li><a href='#'>commentArticle</a></li>
 					<li><a href='#'>觅食蜂接口测试用例(退出登录)</a></li>
 					<li><a href='#'>觅食蜂接口测试用例(管理平台)</a></li>
 					<li><a href='#'>消息推送</a></li>
@@ -145,10 +142,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='95.385%'><span class='strong'>62</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>65</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='1.538%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='3.077%'>2</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -160,10 +157,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='95.312%'><span class='strong'>61</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>64</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='1.562%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='3.125%'>2</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -178,19 +175,19 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>觅食蜂接口测试 : 觅食蜂接口测试用例(openapi)</span>
-						<span class='test-time'>Aug 27, 2019 09:06:32 AM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Aug 27, 2019 09:52:20 AM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 27, 2019 09:06:32 AM</span>
-	<span class='label end-time'>Aug 27, 2019 09:06:43 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 10s+557ms</span>
+	<span class='label start-time'>Aug 27, 2019 09:52:20 AM</span>
+	<span class='label end-time'>Aug 27, 2019 09:52:31 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 11s+745ms</span>
 </div>
-	<div class='test-desc'>Pass: 59 ; Fail: 1 ; Skip: 2 ; </div>
+	<div class='test-desc'>Pass: 62 ; Fail: 0 ; Skip: 0 ; </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
 				<span class='category label white-text'>觅食蜂接口测试</span>
@@ -199,183 +196,11 @@
 	</div>
 	<ul class='collapsible node-list' data-collapsible='accordion'>
 		
-				<li class='node level-1 leaf fail' status='fail' test-id='2'>
-					<div class='collapsible-header'>
-						<div class='node-name'>articleCreate</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:37 AM</span>
-						<span class='node-duration'>0h 0m 5s+935ms</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>觅食蜂接口测试</span>
-											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
-											<span class='category label white-text'>createArticle</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='fail'>
-													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
-													<td class='step-details'><pre>java.lang.AssertionError: 
-返回的errno不为0/errmsg不为success;
-返回的errno/errmsg:91210014/每分钟只能发布一篇文章，请稍后再试
-请求的url:https://m.betaapi.mishifeng.com/open/article/create
-参数：title=%E6%A0%87%E9%A2%98%E6%B5%8B%E8%AF%95%E7%9A%84&content=%E7%BE%8E%E9%A3%9F%E4%BD%93%E9%AA%8C%E7%9A%84%E5%86%85%E5%AE%B9%EF%BC%8C%E5%B1%85%E7%84%B6%E8%BF%98%E8%A6%8113%E4%B8%AA%E5%AD%97%E7%9C%9F%E7%9A%84%E6%98%AF%EF%BC%8C%E6%90%9E%E5%AE%9A&pic_list=%5B%7B%22height%22%3A399%2C%22width%22%3A360%2C%22pic%22%3A%22https%3A%5C%2F%5C%2Fimg.mishifeng.com%5C%2FFjsIIq6rvZanTL8YO2k-MtCLIMkB%22%7D%2C%7B%22pic%22%3A%22https%3A%5C%2F%5C%2Fimg.mishifeng.com%5C%2FFnNanPN6r2QM5ye0-y_l_8gcYZsd%22%2C%22height%22%3A909%2C%22width%22%3A880%7D%5D&stat_id=2EE6C938-EDE8-4E20-92C0-630A7A1F7066&timestamp=1562724496&os_version=12.2&device=iPhone&star=50&version=2.1.0&token=3c36560351c8f2885874e7363b041a20&lng=121.4306271701389&lat=31.16045817057292&zone_id=21&platform=ios
-CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
-接口返回：{"errno":91210014,"errmsg":"每分钟只能发布一篇文章，请稍后再试","data":{},"timestamp":1566867998,"serverlogid":0}
-《-------------------------分割线-------------------------》
-	at org.testng.Assert.fail(Assert.java:94)
-	at com.duoweidu.config.generalAssert.GeneralAssertChannel.errnoAssert(GeneralAssertChannel.java:177)
-	at com.duoweidu.cases.interfaces.InterfaceTest.statusAssertTest(InterfaceTest.java:303)
-	at com.duoweidu.cases.interfaces.InterfaceTest.generalAssertTest(InterfaceTest.java:310)
-	at com.duoweidu.cases.interfaces.InterfaceTest.generalAssertTest(InterfaceTest.java:318)
-	at com.duoweidu.cases.msf.openapi.ArticleCreate.articleCreate(ArticleCreate.java:33)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</pre></td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf skip' status='skip' test-id='3'>
-					<div class='collapsible-header'>
-						<div class='node-name'>articleCreatecomment</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:42 AM</span>
-						<span class='node-duration'>0h 0m 1s+40ms</span>
-						<span class='test-status right skip'>skip</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>觅食蜂接口测试</span>
-											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
-											<span class='category label white-text'>commentArticle</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='skip'>
-													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
-													<td class='step-details'><pre>java.lang.Throwable: Method ArticleCreatecomment.articleCreatecomment()[pri:0, instance:com.duoweidu.cases.msf.openapi.ArticleCreatecomment@797ca322] depends on not successfully finished methods in group "createArticle"
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</pre></td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf skip' status='skip' test-id='4'>
-					<div class='collapsible-header'>
-						<div class='node-name'>userArticledelete</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:43 AM</span>
-						<span class='node-duration'>0h 0m 0s+383ms</span>
-						<span class='test-status right skip'>skip</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>觅食蜂接口测试</span>
-											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='skip'>
-													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
-													<td class='step-details'><pre>java.lang.Throwable: Method UserArticledelete.userArticledelete()[pri:0, instance:com.duoweidu.cases.msf.openapi.UserArticledelete@206de1f] depends on not successfully finished methods in group "commentArticle"
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</pre></td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='5'>
+				<li class='node level-1 leaf pass' status='pass' test-id='2'>
 					<div class='collapsible-header'>
 						<div class='node-name'>userLogin</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:32 AM</span>
-						<span class='node-duration'>0h 0m 10s+900ms</span>
+						<span class='node-time'>Aug 27, 2019 09:52:20 AM</span>
+						<span class='node-duration'>0h 0m 12s+69ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -396,7 +221,103 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='3'>
+					<div class='collapsible-header'>
+						<div class='node-name'>ActivityList</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:22 AM</span>
+						<span class='node-duration'>0h 0m 9s+504ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:52:32 AM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='4'>
+					<div class='collapsible-header'>
+						<div class='node-name'>activityDetail</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:23 AM</span>
+						<span class='node-duration'>0h 0m 9s+141ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:52:32 AM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='5'>
+					<div class='collapsible-header'>
+						<div class='node-name'>articleArticlelist</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:23 AM</span>
+						<span class='node-duration'>0h 0m 8s+973ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -406,9 +327,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='6'>
 					<div class='collapsible-header'>
-						<div class='node-name'>ActivityList</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:35 AM</span>
-						<span class='node-duration'>0h 0m 8s+453ms</span>
+						<div class='node-name'>activityArticle</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:23 AM</span>
+						<span class='node-duration'>0h 0m 8s+802ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -428,7 +349,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -438,9 +359,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='7'>
 					<div class='collapsible-header'>
-						<div class='node-name'>activityDetail</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:35 AM</span>
-						<span class='node-duration'>0h 0m 8s+109ms</span>
+						<div class='node-name'>activitySharedetail</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:23 AM</span>
+						<span class='node-duration'>0h 0m 8s+701ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -460,7 +381,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -470,9 +391,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='8'>
 					<div class='collapsible-header'>
-						<div class='node-name'>articleArticlelist</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:35 AM</span>
-						<span class='node-duration'>0h 0m 7s+942ms</span>
+						<div class='node-name'>articleCommentlist</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:23 AM</span>
+						<span class='node-duration'>0h 0m 8s+519ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -492,7 +413,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -502,9 +423,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='9'>
 					<div class='collapsible-header'>
-						<div class='node-name'>activityArticle</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:36 AM</span>
-						<span class='node-duration'>0h 0m 7s+767ms</span>
+						<div class='node-name'>userUpdateinfo</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:23 AM</span>
+						<span class='node-duration'>0h 0m 8s+379ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -524,7 +445,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -534,9 +455,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='10'>
 					<div class='collapsible-header'>
-						<div class='node-name'>activitySharedetail</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:36 AM</span>
-						<span class='node-duration'>0h 0m 7s+674ms</span>
+						<div class='node-name'>messageType</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:23 AM</span>
+						<span class='node-duration'>0h 0m 8s+223ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -556,7 +477,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -566,9 +487,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='11'>
 					<div class='collapsible-header'>
-						<div class='node-name'>articleCommentlist</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:36 AM</span>
-						<span class='node-duration'>0h 0m 7s+531ms</span>
+						<div class='node-name'>commonAppconfig</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:24 AM</span>
+						<span class='node-duration'>0h 0m 8s+121ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -588,7 +509,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -598,9 +519,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='12'>
 					<div class='collapsible-header'>
-						<div class='node-name'>userUpdateinfo</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:36 AM</span>
-						<span class='node-duration'>0h 0m 7s+389ms</span>
+						<div class='node-name'>homeIndex</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:24 AM</span>
+						<span class='node-duration'>0h 0m 7s+957ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -620,7 +541,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -630,9 +551,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='13'>
 					<div class='collapsible-header'>
-						<div class='node-name'>messageType</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:36 AM</span>
-						<span class='node-duration'>0h 0m 7s+238ms</span>
+						<div class='node-name'>commonLocate</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:24 AM</span>
+						<span class='node-duration'>0h 0m 7s+647ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -652,7 +573,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -662,9 +583,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='14'>
 					<div class='collapsible-header'>
-						<div class='node-name'>commonAppconfig</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:36 AM</span>
-						<span class='node-duration'>0h 0m 7s+137ms</span>
+						<div class='node-name'>articleDetail</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:24 AM</span>
+						<span class='node-duration'>0h 0m 7s+561ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -684,7 +605,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -694,9 +615,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='15'>
 					<div class='collapsible-header'>
-						<div class='node-name'>homeIndex</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:36 AM</span>
-						<span class='node-duration'>0h 0m 7s+32ms</span>
+						<div class='node-name'>articleInterestlist</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:24 AM</span>
+						<span class='node-duration'>0h 0m 7s+432ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -716,7 +637,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -726,9 +647,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='16'>
 					<div class='collapsible-header'>
-						<div class='node-name'>commonLocate</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:37 AM</span>
-						<span class='node-duration'>0h 0m 6s+776ms</span>
+						<div class='node-name'>userTogglefollow</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:24 AM</span>
+						<span class='node-duration'>0h 0m 7s+308ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -748,7 +669,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -758,9 +679,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='17'>
 					<div class='collapsible-header'>
-						<div class='node-name'>articleDetail</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:37 AM</span>
-						<span class='node-duration'>0h 0m 6s+691ms</span>
+						<div class='node-name'>articleTogglefavorite</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:24 AM</span>
+						<span class='node-duration'>0h 0m 7s+199ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -780,7 +701,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -790,9 +711,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='18'>
 					<div class='collapsible-header'>
-						<div class='node-name'>articleInterestlist</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:37 AM</span>
-						<span class='node-duration'>0h 0m 6s+559ms</span>
+						<div class='node-name'>articleTogglelikes</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:25 AM</span>
+						<span class='node-duration'>0h 0m 7s+61ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -812,7 +733,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -822,9 +743,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='19'>
 					<div class='collapsible-header'>
-						<div class='node-name'>userTogglefollow</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:37 AM</span>
-						<span class='node-duration'>0h 0m 6s+433ms</span>
+						<div class='node-name'>messageUnread</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:25 AM</span>
+						<span class='node-duration'>0h 0m 6s+948ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -844,7 +765,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -854,15 +775,16 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='20'>
 					<div class='collapsible-header'>
-						<div class='node-name'>articleTogglefavorite</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:37 AM</span>
-						<span class='node-duration'>0h 0m 6s+312ms</span>
+						<div class='node-name'>articleCreate</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:25 AM</span>
+						<span class='node-duration'>0h 0m 6s+827ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
 											<span class='category label white-text'>觅食蜂接口测试</span>
 											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+											<span class='category label white-text'>createArticle</span>
 									</div>
 								<div class='node-steps'>
 									<table class='bordered table-results'>
@@ -876,7 +798,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -886,9 +808,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='21'>
 					<div class='collapsible-header'>
-						<div class='node-name'>articleTogglelikes</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:37 AM</span>
-						<span class='node-duration'>0h 0m 6s+200ms</span>
+						<div class='node-name'>userProfile</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:25 AM</span>
+						<span class='node-duration'>0h 0m 6s+595ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -908,7 +830,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -918,9 +840,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='22'>
 					<div class='collapsible-header'>
-						<div class='node-name'>messageUnread</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:37 AM</span>
-						<span class='node-duration'>0h 0m 6s+75ms</span>
+						<div class='node-name'>userFavoritelist</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:25 AM</span>
+						<span class='node-duration'>0h 0m 6s+426ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -940,7 +862,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -950,9 +872,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='23'>
 					<div class='collapsible-header'>
-						<div class='node-name'>userProfile</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:38 AM</span>
-						<span class='node-duration'>0h 0m 5s+755ms</span>
+						<div class='node-name'>articleLikeslist</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:25 AM</span>
+						<span class='node-duration'>0h 0m 6s+304ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -972,7 +894,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -982,9 +904,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='24'>
 					<div class='collapsible-header'>
-						<div class='node-name'>userFavoritelist</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:38 AM</span>
-						<span class='node-duration'>0h 0m 5s+517ms</span>
+						<div class='node-name'>commonAuthcode</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:26 AM</span>
+						<span class='node-duration'>0h 0m 6s+190ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1004,7 +926,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1014,9 +936,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='25'>
 					<div class='collapsible-header'>
-						<div class='node-name'>articleLikeslist</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:38 AM</span>
-						<span class='node-duration'>0h 0m 5s+405ms</span>
+						<div class='node-name'>userSetting</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:26 AM</span>
+						<span class='node-duration'>0h 0m 6s+57ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1036,7 +958,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1046,9 +968,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='26'>
 					<div class='collapsible-header'>
-						<div class='node-name'>commonAuthcode</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:38 AM</span>
-						<span class='node-duration'>0h 0m 5s+297ms</span>
+						<div class='node-name'>commonQiniutoken</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:26 AM</span>
+						<span class='node-duration'>0h 0m 5s+944ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1068,7 +990,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1078,9 +1000,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='27'>
 					<div class='collapsible-header'>
-						<div class='node-name'>userSetting</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:38 AM</span>
-						<span class='node-duration'>0h 0m 5s+151ms</span>
+						<div class='node-name'>userResetmobile</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:26 AM</span>
+						<span class='node-duration'>0h 0m 5s+878ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1100,7 +1022,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1110,9 +1032,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='28'>
 					<div class='collapsible-header'>
-						<div class='node-name'>commonQiniutoken</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:38 AM</span>
-						<span class='node-duration'>0h 0m 5s+37ms</span>
+						<div class='node-name'>commonZonelist</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:26 AM</span>
+						<span class='node-duration'>0h 0m 5s+811ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1132,7 +1054,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1142,9 +1064,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='29'>
 					<div class='collapsible-header'>
-						<div class='node-name'>userResetmobile</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:38 AM</span>
-						<span class='node-duration'>0h 0m 4s+975ms</span>
+						<div class='node-name'>branchNearcbd</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:26 AM</span>
+						<span class='node-duration'>0h 0m 5s+723ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1164,7 +1086,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1174,9 +1096,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='30'>
 					<div class='collapsible-header'>
-						<div class='node-name'>commonZonelist</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:38 AM</span>
-						<span class='node-duration'>0h 0m 4s+915ms</span>
+						<div class='node-name'>searchCbdnearlist</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:26 AM</span>
+						<span class='node-duration'>0h 0m 5s+562ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1196,7 +1118,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1206,9 +1128,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='31'>
 					<div class='collapsible-header'>
-						<div class='node-name'>branchNearcbd</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:39 AM</span>
-						<span class='node-duration'>0h 0m 4s+818ms</span>
+						<div class='node-name'>searchHottags</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:26 AM</span>
+						<span class='node-duration'>0h 0m 5s+398ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1228,7 +1150,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1238,9 +1160,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='32'>
 					<div class='collapsible-header'>
-						<div class='node-name'>searchCbdnearlist</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:39 AM</span>
-						<span class='node-duration'>0h 0m 4s+674ms</span>
+						<div class='node-name'>searchBranch</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:26 AM</span>
+						<span class='node-duration'>0h 0m 5s+301ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1260,7 +1182,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1270,9 +1192,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='33'>
 					<div class='collapsible-header'>
-						<div class='node-name'>searchHottags</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:39 AM</span>
-						<span class='node-duration'>0h 0m 4s+522ms</span>
+						<div class='node-name'>searchTaglist</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:27 AM</span>
+						<span class='node-duration'>0h 0m 5s+54ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1292,7 +1214,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1302,9 +1224,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='34'>
 					<div class='collapsible-header'>
-						<div class='node-name'>searchBranch</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:39 AM</span>
-						<span class='node-duration'>0h 0m 4s+432ms</span>
+						<div class='node-name'>articleInitdata</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:27 AM</span>
+						<span class='node-duration'>0h 0m 4s+906ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1324,7 +1246,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1334,9 +1256,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='35'>
 					<div class='collapsible-header'>
-						<div class='node-name'>searchTaglist</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:39 AM</span>
-						<span class='node-duration'>0h 0m 4s+209ms</span>
+						<div class='node-name'>orderPayment</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:27 AM</span>
+						<span class='node-duration'>0h 0m 4s+779ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1356,7 +1278,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1366,73 +1288,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='36'>
 					<div class='collapsible-header'>
-						<div class='node-name'>articleInitdata</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:39 AM</span>
-						<span class='node-duration'>0h 0m 4s+87ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>觅食蜂接口测试</span>
-											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='37'>
-					<div class='collapsible-header'>
-						<div class='node-name'>orderPayment</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:39 AM</span>
-						<span class='node-duration'>0h 0m 3s+943ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>觅食蜂接口测试</span>
-											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='38'>
-					<div class='collapsible-header'>
 						<div class='node-name'>orderPaymentapply</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:40 AM</span>
-						<span class='node-duration'>0h 0m 3s+760ms</span>
+						<span class='node-time'>Aug 27, 2019 09:52:27 AM</span>
+						<span class='node-duration'>0h 0m 4s+552ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1453,7 +1311,71 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='37'>
+					<div class='collapsible-header'>
+						<div class='node-name'>orderRedeem</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:28 AM</span>
+						<span class='node-duration'>0h 0m 4s+69ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:52:32 AM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='38'>
+					<div class='collapsible-header'>
+						<div class='node-name'>branchCatlist</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:28 AM</span>
+						<span class='node-duration'>0h 0m 3s+954ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>觅食蜂接口测试</span>
+											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1463,9 +1385,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='39'>
 					<div class='collapsible-header'>
-						<div class='node-name'>orderRedeem</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:40 AM</span>
-						<span class='node-duration'>0h 0m 3s+293ms</span>
+						<div class='node-name'>commonOpenim</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:28 AM</span>
+						<span class='node-duration'>0h 0m 3s+861ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1485,7 +1407,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1495,9 +1417,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='40'>
 					<div class='collapsible-header'>
-						<div class='node-name'>branchCatlist</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:40 AM</span>
-						<span class='node-duration'>0h 0m 3s+179ms</span>
+						<div class='node-name'>commonAppupdate</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:28 AM</span>
+						<span class='node-duration'>0h 0m 3s+795ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1517,7 +1439,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1527,9 +1449,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='41'>
 					<div class='collapsible-header'>
-						<div class='node-name'>commonOpenim</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:40 AM</span>
-						<span class='node-duration'>0h 0m 3s+62ms</span>
+						<div class='node-name'>orderList</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:28 AM</span>
+						<span class='node-duration'>0h 0m 3s+710ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1549,7 +1471,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1559,9 +1481,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='42'>
 					<div class='collapsible-header'>
-						<div class='node-name'>commonAppupdate</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:40 AM</span>
-						<span class='node-duration'>0h 0m 2s+992ms</span>
+						<div class='node-name'>orderRefund</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:28 AM</span>
+						<span class='node-duration'>0h 0m 3s+592ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1581,7 +1503,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1591,9 +1513,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='43'>
 					<div class='collapsible-header'>
-						<div class='node-name'>orderList</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:40 AM</span>
-						<span class='node-duration'>0h 0m 2s+891ms</span>
+						<div class='node-name'>orderRefundapply</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:28 AM</span>
+						<span class='node-duration'>0h 0m 3s+490ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1613,7 +1535,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1623,9 +1545,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='44'>
 					<div class='collapsible-header'>
-						<div class='node-name'>orderRefund</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:41 AM</span>
-						<span class='node-duration'>0h 0m 2s+773ms</span>
+						<div class='node-name'>orderNoticeack</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:28 AM</span>
+						<span class='node-duration'>0h 0m 3s+401ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1645,7 +1567,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1655,9 +1577,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='45'>
 					<div class='collapsible-header'>
-						<div class='node-name'>orderRefundapply</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:41 AM</span>
-						<span class='node-duration'>0h 0m 2s+684ms</span>
+						<div class='node-name'>orderNoticepop</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:28 AM</span>
+						<span class='node-duration'>0h 0m 3s+333ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1677,7 +1599,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1687,9 +1609,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='46'>
 					<div class='collapsible-header'>
-						<div class='node-name'>orderNoticeack</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:41 AM</span>
-						<span class='node-duration'>0h 0m 2s+591ms</span>
+						<div class='node-name'>userFollowlist</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:28 AM</span>
+						<span class='node-duration'>0h 0m 3s+263ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1709,7 +1631,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1719,9 +1641,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='47'>
 					<div class='collapsible-header'>
-						<div class='node-name'>orderNoticepop</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:41 AM</span>
-						<span class='node-duration'>0h 0m 2s+529ms</span>
+						<div class='node-name'>userArticlelist</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:29 AM</span>
+						<span class='node-duration'>0h 0m 3s+162ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1741,7 +1663,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1751,9 +1673,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='48'>
 					<div class='collapsible-header'>
-						<div class='node-name'>userFollowlist</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:41 AM</span>
-						<span class='node-duration'>0h 0m 2s+469ms</span>
+						<div class='node-name'>userDailybonus</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:29 AM</span>
+						<span class='node-duration'>0h 0m 3s+4ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1773,7 +1695,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1783,9 +1705,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='49'>
 					<div class='collapsible-header'>
-						<div class='node-name'>userArticlelist</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:41 AM</span>
-						<span class='node-duration'>0h 0m 2s+365ms</span>
+						<div class='node-name'>userGethoney</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:29 AM</span>
+						<span class='node-duration'>0h 0m 2s+906ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1805,7 +1727,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1815,9 +1737,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='50'>
 					<div class='collapsible-header'>
-						<div class='node-name'>userDailybonus</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:41 AM</span>
-						<span class='node-duration'>0h 0m 2s+249ms</span>
+						<div class='node-name'>userGethoneylog</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:29 AM</span>
+						<span class='node-duration'>0h 0m 2s+807ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1837,7 +1759,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1847,9 +1769,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='51'>
 					<div class='collapsible-header'>
-						<div class='node-name'>userGethoney</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:41 AM</span>
-						<span class='node-duration'>0h 0m 2s+156ms</span>
+						<div class='node-name'>inviteGetcode</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:29 AM</span>
+						<span class='node-duration'>0h 0m 2s+710ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1869,7 +1791,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1879,9 +1801,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='52'>
 					<div class='collapsible-header'>
-						<div class='node-name'>userGethoneylog</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:41 AM</span>
-						<span class='node-duration'>0h 0m 2s+65ms</span>
+						<div class='node-name'>messageGetlist</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:29 AM</span>
+						<span class='node-duration'>0h 0m 2s+623ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1901,7 +1823,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1911,9 +1833,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='53'>
 					<div class='collapsible-header'>
-						<div class='node-name'>inviteGetcode</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:41 AM</span>
-						<span class='node-duration'>0h 0m 1s+970ms</span>
+						<div class='node-name'>branchDetail</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:29 AM</span>
+						<span class='node-duration'>0h 0m 2s+478ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1933,7 +1855,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1943,9 +1865,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='54'>
 					<div class='collapsible-header'>
-						<div class='node-name'>messageGetlist</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:42 AM</span>
-						<span class='node-duration'>0h 0m 1s+826ms</span>
+						<div class='node-name'>articleCommentuserlist</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:29 AM</span>
+						<span class='node-duration'>0h 0m 2s+326ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1965,7 +1887,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1975,9 +1897,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='55'>
 					<div class='collapsible-header'>
-						<div class='node-name'>branchDetail</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:42 AM</span>
-						<span class='node-duration'>0h 0m 1s+701ms</span>
+						<div class='node-name'>articleSearchtags</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:29 AM</span>
+						<span class='node-duration'>0h 0m 2s+251ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1997,7 +1919,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -2007,9 +1929,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='56'>
 					<div class='collapsible-header'>
-						<div class='node-name'>articleCommentuserlist</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:42 AM</span>
-						<span class='node-duration'>0h 0m 1s+537ms</span>
+						<div class='node-name'>articleFavoritelist</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:30 AM</span>
+						<span class='node-duration'>0h 0m 2s+177ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -2029,7 +1951,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -2039,9 +1961,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='57'>
 					<div class='collapsible-header'>
-						<div class='node-name'>articleSearchtags</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:42 AM</span>
-						<span class='node-duration'>0h 0m 1s+469ms</span>
+						<div class='node-name'>commonStaticcontent</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:30 AM</span>
+						<span class='node-duration'>0h 0m 2s+80ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -2061,7 +1983,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -2071,9 +1993,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='58'>
 					<div class='collapsible-header'>
-						<div class='node-name'>articleFavoritelist</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:42 AM</span>
-						<span class='node-duration'>0h 0m 1s+406ms</span>
+						<div class='node-name'>inviteInitdata</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:30 AM</span>
+						<span class='node-duration'>0h 0m 2s+19ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -2093,7 +2015,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -2103,9 +2025,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='59'>
 					<div class='collapsible-header'>
-						<div class='node-name'>commonStaticcontent</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:42 AM</span>
-						<span class='node-duration'>0h 0m 1s+309ms</span>
+						<div class='node-name'>inviteReceiveboon</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:30 AM</span>
+						<span class='node-duration'>0h 0m 1s+918ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -2125,7 +2047,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -2135,15 +2057,16 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='60'>
 					<div class='collapsible-header'>
-						<div class='node-name'>inviteInitdata</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:42 AM</span>
-						<span class='node-duration'>0h 0m 1s+244ms</span>
+						<div class='node-name'>articleCreatecomment</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:30 AM</span>
+						<span class='node-duration'>0h 0m 1s+848ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
 											<span class='category label white-text'>觅食蜂接口测试</span>
 											<span class='category label white-text'>觅食蜂接口测试用例(openapi)</span>
+											<span class='category label white-text'>commentArticle</span>
 									</div>
 								<div class='node-steps'>
 									<table class='bordered table-results'>
@@ -2157,7 +2080,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -2167,9 +2090,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='61'>
 					<div class='collapsible-header'>
-						<div class='node-name'>inviteReceiveboon</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:42 AM</span>
-						<span class='node-duration'>0h 0m 1s+170ms</span>
+						<div class='node-name'>orderPaymentresult</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:30 AM</span>
+						<span class='node-duration'>0h 0m 1s+638ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -2189,7 +2112,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -2199,9 +2122,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='62'>
 					<div class='collapsible-header'>
-						<div class='node-name'>orderPaymentresult</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:42 AM</span>
-						<span class='node-duration'>0h 0m 1s+96ms</span>
+						<div class='node-name'>orderCancel</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:30 AM</span>
+						<span class='node-duration'>0h 0m 1s+239ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -2221,7 +2144,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -2231,9 +2154,9 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='63'>
 					<div class='collapsible-header'>
-						<div class='node-name'>orderCancel</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:43 AM</span>
-						<span class='node-duration'>0h 0m 0s+797ms</span>
+						<div class='node-name'>userArticledelete</div>						
+						<span class='node-time'>Aug 27, 2019 09:52:31 AM</span>
+						<span class='node-duration'>0h 0m 0s+606ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -2253,7 +2176,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -2269,14 +2192,14 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='64'>
 					<div class='test-heading'>
 						<span class='test-name'>觅食蜂接口测试 : 觅食蜂接口测试用例(退出登录)</span>
-						<span class='test-time'>Aug 27, 2019 09:06:43 AM</span>
+						<span class='test-time'>Aug 27, 2019 09:52:31 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 27, 2019 09:06:43 AM</span>
-	<span class='label end-time'>Aug 27, 2019 09:06:43 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+154ms</span>
+	<span class='label start-time'>Aug 27, 2019 09:52:31 AM</span>
+	<span class='label end-time'>Aug 27, 2019 09:52:31 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+161ms</span>
 </div>
 	<div class='test-desc'>Pass: 1 ; Fail: 0 ; Skip: 0 ; </div>
 	<div class='test-attributes'>
@@ -2290,8 +2213,8 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				<li class='node level-1 leaf pass' status='pass' test-id='65'>
 					<div class='collapsible-header'>
 						<div class='node-name'>userLogout</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:43 AM</span>
-						<span class='node-duration'>0h 0m 0s+439ms</span>
+						<span class='node-time'>Aug 27, 2019 09:52:31 AM</span>
+						<span class='node-duration'>0h 0m 0s+452ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -2311,7 +2234,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -2327,14 +2250,14 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='66'>
 					<div class='test-heading'>
 						<span class='test-name'>觅食蜂接口测试 : 觅食蜂接口测试用例(管理平台)</span>
-						<span class='test-time'>Aug 27, 2019 09:06:43 AM</span>
+						<span class='test-time'>Aug 27, 2019 09:52:31 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 27, 2019 09:06:43 AM</span>
-	<span class='label end-time'>Aug 27, 2019 09:06:43 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+76ms</span>
+	<span class='label start-time'>Aug 27, 2019 09:52:31 AM</span>
+	<span class='label end-time'>Aug 27, 2019 09:52:32 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+83ms</span>
 </div>
 	<div class='test-desc'>Pass: 1 ; Fail: 0 ; Skip: 0 ; </div>
 	<div class='test-attributes'>
@@ -2348,8 +2271,8 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				<li class='node level-1 leaf pass' status='pass' test-id='67'>
 					<div class='collapsible-header'>
 						<div class='node-name'>merchantList</div>						
-						<span class='node-time'>Aug 27, 2019 09:06:43 AM</span>
-						<span class='node-duration'>0h 0m 0s+287ms</span>
+						<span class='node-time'>Aug 27, 2019 09:52:31 AM</span>
+						<span class='node-duration'>0h 0m 0s+292ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -2369,7 +2292,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>9:06:43 AM</td>
+													<td class='timestamp'>9:52:32 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -2385,14 +2308,14 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='68'>
 					<div class='test-heading'>
 						<span class='test-name'>觅食蜂接口测试 : 消息推送</span>
-						<span class='test-time'>Aug 27, 2019 09:06:43 AM</span>
+						<span class='test-time'>Aug 27, 2019 09:52:32 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 27, 2019 09:06:43 AM</span>
-	<span class='label end-time'>Aug 27, 2019 09:06:43 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
+	<span class='label start-time'>Aug 27, 2019 09:52:32 AM</span>
+	<span class='label end-time'>Aug 27, 2019 09:52:32 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 	<div class='test-desc'>Pass: 0 ; Fail: 0 ; Skip: 0 ; </div>
 	<div class='test-attributes'>
@@ -2457,16 +2380,14 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 					<div class='category-heading'>
 						<span class='category-name'>觅食蜂接口测试</span>
 						<span class='category-status right'>
-							<span class='label pass'>64</span>
-							<span class='label fail'>2</span>
-							<span class='label others'>2</span>
+							<span class='label pass'>68</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 64</span>
-							<span class='label red lighten-1 white-text'>Failed: 2</span>
-							<span class='label yellow darken-2 white-text'>Others: 2</span>
+							<span class='label green accent-4 white-text'>Passed: 68</span>
+							
+							
 						</div>
 					
 						<div class='category-tests'>
@@ -2480,342 +2401,342 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 27, 2019 09:06:32 AM</td>
+										<td>Aug 27, 2019 09:52:20 AM</td>
 										<td class='linked' test-id='1'>觅食蜂接口测试用例(openapi)</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-									<tr>
-										<td>Aug 27, 2019 09:06:37 AM</td>
-										<td class='linked' test-id='2'>觅食蜂接口测试用例(openapi).articleCreate</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-									<tr>
-										<td>Aug 27, 2019 09:06:42 AM</td>
-										<td class='linked' test-id='3'>觅食蜂接口测试用例(openapi).articleCreatecomment</td>
-										<td><span class='test-status skip'>skip</span></td>
-									</tr>
-									<tr>
-										<td>Aug 27, 2019 09:06:43 AM</td>
-										<td class='linked' test-id='4'>觅食蜂接口测试用例(openapi).userArticledelete</td>
-										<td><span class='test-status skip'>skip</span></td>
-									</tr>
-									<tr>
-										<td>Aug 27, 2019 09:06:32 AM</td>
-										<td class='linked' test-id='5'>觅食蜂接口测试用例(openapi).userLogin</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:35 AM</td>
-										<td class='linked' test-id='6'>觅食蜂接口测试用例(openapi).ActivityList</td>
+										<td>Aug 27, 2019 09:52:20 AM</td>
+										<td class='linked' test-id='2'>觅食蜂接口测试用例(openapi).userLogin</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:35 AM</td>
-										<td class='linked' test-id='7'>觅食蜂接口测试用例(openapi).activityDetail</td>
+										<td>Aug 27, 2019 09:52:22 AM</td>
+										<td class='linked' test-id='3'>觅食蜂接口测试用例(openapi).ActivityList</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:35 AM</td>
-										<td class='linked' test-id='8'>觅食蜂接口测试用例(openapi).articleArticlelist</td>
+										<td>Aug 27, 2019 09:52:23 AM</td>
+										<td class='linked' test-id='4'>觅食蜂接口测试用例(openapi).activityDetail</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:36 AM</td>
-										<td class='linked' test-id='9'>觅食蜂接口测试用例(openapi).activityArticle</td>
+										<td>Aug 27, 2019 09:52:23 AM</td>
+										<td class='linked' test-id='5'>觅食蜂接口测试用例(openapi).articleArticlelist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:36 AM</td>
-										<td class='linked' test-id='10'>觅食蜂接口测试用例(openapi).activitySharedetail</td>
+										<td>Aug 27, 2019 09:52:23 AM</td>
+										<td class='linked' test-id='6'>觅食蜂接口测试用例(openapi).activityArticle</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:36 AM</td>
-										<td class='linked' test-id='11'>觅食蜂接口测试用例(openapi).articleCommentlist</td>
+										<td>Aug 27, 2019 09:52:23 AM</td>
+										<td class='linked' test-id='7'>觅食蜂接口测试用例(openapi).activitySharedetail</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:36 AM</td>
-										<td class='linked' test-id='12'>觅食蜂接口测试用例(openapi).userUpdateinfo</td>
+										<td>Aug 27, 2019 09:52:23 AM</td>
+										<td class='linked' test-id='8'>觅食蜂接口测试用例(openapi).articleCommentlist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:36 AM</td>
-										<td class='linked' test-id='13'>觅食蜂接口测试用例(openapi).messageType</td>
+										<td>Aug 27, 2019 09:52:23 AM</td>
+										<td class='linked' test-id='9'>觅食蜂接口测试用例(openapi).userUpdateinfo</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:36 AM</td>
-										<td class='linked' test-id='14'>觅食蜂接口测试用例(openapi).commonAppconfig</td>
+										<td>Aug 27, 2019 09:52:23 AM</td>
+										<td class='linked' test-id='10'>觅食蜂接口测试用例(openapi).messageType</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:36 AM</td>
-										<td class='linked' test-id='15'>觅食蜂接口测试用例(openapi).homeIndex</td>
+										<td>Aug 27, 2019 09:52:24 AM</td>
+										<td class='linked' test-id='11'>觅食蜂接口测试用例(openapi).commonAppconfig</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:37 AM</td>
-										<td class='linked' test-id='16'>觅食蜂接口测试用例(openapi).commonLocate</td>
+										<td>Aug 27, 2019 09:52:24 AM</td>
+										<td class='linked' test-id='12'>觅食蜂接口测试用例(openapi).homeIndex</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:37 AM</td>
-										<td class='linked' test-id='17'>觅食蜂接口测试用例(openapi).articleDetail</td>
+										<td>Aug 27, 2019 09:52:24 AM</td>
+										<td class='linked' test-id='13'>觅食蜂接口测试用例(openapi).commonLocate</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:37 AM</td>
-										<td class='linked' test-id='18'>觅食蜂接口测试用例(openapi).articleInterestlist</td>
+										<td>Aug 27, 2019 09:52:24 AM</td>
+										<td class='linked' test-id='14'>觅食蜂接口测试用例(openapi).articleDetail</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:37 AM</td>
-										<td class='linked' test-id='19'>觅食蜂接口测试用例(openapi).userTogglefollow</td>
+										<td>Aug 27, 2019 09:52:24 AM</td>
+										<td class='linked' test-id='15'>觅食蜂接口测试用例(openapi).articleInterestlist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:37 AM</td>
-										<td class='linked' test-id='20'>觅食蜂接口测试用例(openapi).articleTogglefavorite</td>
+										<td>Aug 27, 2019 09:52:24 AM</td>
+										<td class='linked' test-id='16'>觅食蜂接口测试用例(openapi).userTogglefollow</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:37 AM</td>
-										<td class='linked' test-id='21'>觅食蜂接口测试用例(openapi).articleTogglelikes</td>
+										<td>Aug 27, 2019 09:52:24 AM</td>
+										<td class='linked' test-id='17'>觅食蜂接口测试用例(openapi).articleTogglefavorite</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:37 AM</td>
-										<td class='linked' test-id='22'>觅食蜂接口测试用例(openapi).messageUnread</td>
+										<td>Aug 27, 2019 09:52:25 AM</td>
+										<td class='linked' test-id='18'>觅食蜂接口测试用例(openapi).articleTogglelikes</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:38 AM</td>
-										<td class='linked' test-id='23'>觅食蜂接口测试用例(openapi).userProfile</td>
+										<td>Aug 27, 2019 09:52:25 AM</td>
+										<td class='linked' test-id='19'>觅食蜂接口测试用例(openapi).messageUnread</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:38 AM</td>
-										<td class='linked' test-id='24'>觅食蜂接口测试用例(openapi).userFavoritelist</td>
+										<td>Aug 27, 2019 09:52:25 AM</td>
+										<td class='linked' test-id='20'>觅食蜂接口测试用例(openapi).articleCreate</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:38 AM</td>
-										<td class='linked' test-id='25'>觅食蜂接口测试用例(openapi).articleLikeslist</td>
+										<td>Aug 27, 2019 09:52:25 AM</td>
+										<td class='linked' test-id='21'>觅食蜂接口测试用例(openapi).userProfile</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:38 AM</td>
-										<td class='linked' test-id='26'>觅食蜂接口测试用例(openapi).commonAuthcode</td>
+										<td>Aug 27, 2019 09:52:25 AM</td>
+										<td class='linked' test-id='22'>觅食蜂接口测试用例(openapi).userFavoritelist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:38 AM</td>
-										<td class='linked' test-id='27'>觅食蜂接口测试用例(openapi).userSetting</td>
+										<td>Aug 27, 2019 09:52:25 AM</td>
+										<td class='linked' test-id='23'>觅食蜂接口测试用例(openapi).articleLikeslist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:38 AM</td>
-										<td class='linked' test-id='28'>觅食蜂接口测试用例(openapi).commonQiniutoken</td>
+										<td>Aug 27, 2019 09:52:26 AM</td>
+										<td class='linked' test-id='24'>觅食蜂接口测试用例(openapi).commonAuthcode</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:38 AM</td>
-										<td class='linked' test-id='29'>觅食蜂接口测试用例(openapi).userResetmobile</td>
+										<td>Aug 27, 2019 09:52:26 AM</td>
+										<td class='linked' test-id='25'>觅食蜂接口测试用例(openapi).userSetting</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:38 AM</td>
-										<td class='linked' test-id='30'>觅食蜂接口测试用例(openapi).commonZonelist</td>
+										<td>Aug 27, 2019 09:52:26 AM</td>
+										<td class='linked' test-id='26'>觅食蜂接口测试用例(openapi).commonQiniutoken</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:39 AM</td>
-										<td class='linked' test-id='31'>觅食蜂接口测试用例(openapi).branchNearcbd</td>
+										<td>Aug 27, 2019 09:52:26 AM</td>
+										<td class='linked' test-id='27'>觅食蜂接口测试用例(openapi).userResetmobile</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:39 AM</td>
-										<td class='linked' test-id='32'>觅食蜂接口测试用例(openapi).searchCbdnearlist</td>
+										<td>Aug 27, 2019 09:52:26 AM</td>
+										<td class='linked' test-id='28'>觅食蜂接口测试用例(openapi).commonZonelist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:39 AM</td>
-										<td class='linked' test-id='33'>觅食蜂接口测试用例(openapi).searchHottags</td>
+										<td>Aug 27, 2019 09:52:26 AM</td>
+										<td class='linked' test-id='29'>觅食蜂接口测试用例(openapi).branchNearcbd</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:39 AM</td>
-										<td class='linked' test-id='34'>觅食蜂接口测试用例(openapi).searchBranch</td>
+										<td>Aug 27, 2019 09:52:26 AM</td>
+										<td class='linked' test-id='30'>觅食蜂接口测试用例(openapi).searchCbdnearlist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:39 AM</td>
-										<td class='linked' test-id='35'>觅食蜂接口测试用例(openapi).searchTaglist</td>
+										<td>Aug 27, 2019 09:52:26 AM</td>
+										<td class='linked' test-id='31'>觅食蜂接口测试用例(openapi).searchHottags</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:39 AM</td>
-										<td class='linked' test-id='36'>觅食蜂接口测试用例(openapi).articleInitdata</td>
+										<td>Aug 27, 2019 09:52:26 AM</td>
+										<td class='linked' test-id='32'>觅食蜂接口测试用例(openapi).searchBranch</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:39 AM</td>
-										<td class='linked' test-id='37'>觅食蜂接口测试用例(openapi).orderPayment</td>
+										<td>Aug 27, 2019 09:52:27 AM</td>
+										<td class='linked' test-id='33'>觅食蜂接口测试用例(openapi).searchTaglist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:40 AM</td>
-										<td class='linked' test-id='38'>觅食蜂接口测试用例(openapi).orderPaymentapply</td>
+										<td>Aug 27, 2019 09:52:27 AM</td>
+										<td class='linked' test-id='34'>觅食蜂接口测试用例(openapi).articleInitdata</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:40 AM</td>
-										<td class='linked' test-id='39'>觅食蜂接口测试用例(openapi).orderRedeem</td>
+										<td>Aug 27, 2019 09:52:27 AM</td>
+										<td class='linked' test-id='35'>觅食蜂接口测试用例(openapi).orderPayment</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:40 AM</td>
-										<td class='linked' test-id='40'>觅食蜂接口测试用例(openapi).branchCatlist</td>
+										<td>Aug 27, 2019 09:52:27 AM</td>
+										<td class='linked' test-id='36'>觅食蜂接口测试用例(openapi).orderPaymentapply</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:40 AM</td>
-										<td class='linked' test-id='41'>觅食蜂接口测试用例(openapi).commonOpenim</td>
+										<td>Aug 27, 2019 09:52:28 AM</td>
+										<td class='linked' test-id='37'>觅食蜂接口测试用例(openapi).orderRedeem</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:40 AM</td>
-										<td class='linked' test-id='42'>觅食蜂接口测试用例(openapi).commonAppupdate</td>
+										<td>Aug 27, 2019 09:52:28 AM</td>
+										<td class='linked' test-id='38'>觅食蜂接口测试用例(openapi).branchCatlist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:40 AM</td>
-										<td class='linked' test-id='43'>觅食蜂接口测试用例(openapi).orderList</td>
+										<td>Aug 27, 2019 09:52:28 AM</td>
+										<td class='linked' test-id='39'>觅食蜂接口测试用例(openapi).commonOpenim</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:41 AM</td>
-										<td class='linked' test-id='44'>觅食蜂接口测试用例(openapi).orderRefund</td>
+										<td>Aug 27, 2019 09:52:28 AM</td>
+										<td class='linked' test-id='40'>觅食蜂接口测试用例(openapi).commonAppupdate</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:41 AM</td>
-										<td class='linked' test-id='45'>觅食蜂接口测试用例(openapi).orderRefundapply</td>
+										<td>Aug 27, 2019 09:52:28 AM</td>
+										<td class='linked' test-id='41'>觅食蜂接口测试用例(openapi).orderList</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:41 AM</td>
-										<td class='linked' test-id='46'>觅食蜂接口测试用例(openapi).orderNoticeack</td>
+										<td>Aug 27, 2019 09:52:28 AM</td>
+										<td class='linked' test-id='42'>觅食蜂接口测试用例(openapi).orderRefund</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:41 AM</td>
-										<td class='linked' test-id='47'>觅食蜂接口测试用例(openapi).orderNoticepop</td>
+										<td>Aug 27, 2019 09:52:28 AM</td>
+										<td class='linked' test-id='43'>觅食蜂接口测试用例(openapi).orderRefundapply</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:41 AM</td>
-										<td class='linked' test-id='48'>觅食蜂接口测试用例(openapi).userFollowlist</td>
+										<td>Aug 27, 2019 09:52:28 AM</td>
+										<td class='linked' test-id='44'>觅食蜂接口测试用例(openapi).orderNoticeack</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:41 AM</td>
-										<td class='linked' test-id='49'>觅食蜂接口测试用例(openapi).userArticlelist</td>
+										<td>Aug 27, 2019 09:52:28 AM</td>
+										<td class='linked' test-id='45'>觅食蜂接口测试用例(openapi).orderNoticepop</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:41 AM</td>
-										<td class='linked' test-id='50'>觅食蜂接口测试用例(openapi).userDailybonus</td>
+										<td>Aug 27, 2019 09:52:28 AM</td>
+										<td class='linked' test-id='46'>觅食蜂接口测试用例(openapi).userFollowlist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:41 AM</td>
-										<td class='linked' test-id='51'>觅食蜂接口测试用例(openapi).userGethoney</td>
+										<td>Aug 27, 2019 09:52:29 AM</td>
+										<td class='linked' test-id='47'>觅食蜂接口测试用例(openapi).userArticlelist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:41 AM</td>
-										<td class='linked' test-id='52'>觅食蜂接口测试用例(openapi).userGethoneylog</td>
+										<td>Aug 27, 2019 09:52:29 AM</td>
+										<td class='linked' test-id='48'>觅食蜂接口测试用例(openapi).userDailybonus</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:41 AM</td>
-										<td class='linked' test-id='53'>觅食蜂接口测试用例(openapi).inviteGetcode</td>
+										<td>Aug 27, 2019 09:52:29 AM</td>
+										<td class='linked' test-id='49'>觅食蜂接口测试用例(openapi).userGethoney</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:42 AM</td>
-										<td class='linked' test-id='54'>觅食蜂接口测试用例(openapi).messageGetlist</td>
+										<td>Aug 27, 2019 09:52:29 AM</td>
+										<td class='linked' test-id='50'>觅食蜂接口测试用例(openapi).userGethoneylog</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:42 AM</td>
-										<td class='linked' test-id='55'>觅食蜂接口测试用例(openapi).branchDetail</td>
+										<td>Aug 27, 2019 09:52:29 AM</td>
+										<td class='linked' test-id='51'>觅食蜂接口测试用例(openapi).inviteGetcode</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:42 AM</td>
-										<td class='linked' test-id='56'>觅食蜂接口测试用例(openapi).articleCommentuserlist</td>
+										<td>Aug 27, 2019 09:52:29 AM</td>
+										<td class='linked' test-id='52'>觅食蜂接口测试用例(openapi).messageGetlist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:42 AM</td>
-										<td class='linked' test-id='57'>觅食蜂接口测试用例(openapi).articleSearchtags</td>
+										<td>Aug 27, 2019 09:52:29 AM</td>
+										<td class='linked' test-id='53'>觅食蜂接口测试用例(openapi).branchDetail</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:42 AM</td>
-										<td class='linked' test-id='58'>觅食蜂接口测试用例(openapi).articleFavoritelist</td>
+										<td>Aug 27, 2019 09:52:29 AM</td>
+										<td class='linked' test-id='54'>觅食蜂接口测试用例(openapi).articleCommentuserlist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:42 AM</td>
-										<td class='linked' test-id='59'>觅食蜂接口测试用例(openapi).commonStaticcontent</td>
+										<td>Aug 27, 2019 09:52:29 AM</td>
+										<td class='linked' test-id='55'>觅食蜂接口测试用例(openapi).articleSearchtags</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:42 AM</td>
-										<td class='linked' test-id='60'>觅食蜂接口测试用例(openapi).inviteInitdata</td>
+										<td>Aug 27, 2019 09:52:30 AM</td>
+										<td class='linked' test-id='56'>觅食蜂接口测试用例(openapi).articleFavoritelist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:42 AM</td>
-										<td class='linked' test-id='61'>觅食蜂接口测试用例(openapi).inviteReceiveboon</td>
+										<td>Aug 27, 2019 09:52:30 AM</td>
+										<td class='linked' test-id='57'>觅食蜂接口测试用例(openapi).commonStaticcontent</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:42 AM</td>
-										<td class='linked' test-id='62'>觅食蜂接口测试用例(openapi).orderPaymentresult</td>
+										<td>Aug 27, 2019 09:52:30 AM</td>
+										<td class='linked' test-id='58'>觅食蜂接口测试用例(openapi).inviteInitdata</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:43 AM</td>
-										<td class='linked' test-id='63'>觅食蜂接口测试用例(openapi).orderCancel</td>
+										<td>Aug 27, 2019 09:52:30 AM</td>
+										<td class='linked' test-id='59'>觅食蜂接口测试用例(openapi).inviteReceiveboon</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:43 AM</td>
+										<td>Aug 27, 2019 09:52:30 AM</td>
+										<td class='linked' test-id='60'>觅食蜂接口测试用例(openapi).articleCreatecomment</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 27, 2019 09:52:30 AM</td>
+										<td class='linked' test-id='61'>觅食蜂接口测试用例(openapi).orderPaymentresult</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 27, 2019 09:52:30 AM</td>
+										<td class='linked' test-id='62'>觅食蜂接口测试用例(openapi).orderCancel</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 27, 2019 09:52:31 AM</td>
+										<td class='linked' test-id='63'>觅食蜂接口测试用例(openapi).userArticledelete</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 27, 2019 09:52:31 AM</td>
 										<td class='linked' test-id='64'>觅食蜂接口测试用例(退出登录)</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:43 AM</td>
+										<td>Aug 27, 2019 09:52:31 AM</td>
 										<td class='linked' test-id='65'>觅食蜂接口测试用例(退出登录).userLogout</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:43 AM</td>
+										<td>Aug 27, 2019 09:52:31 AM</td>
 										<td class='linked' test-id='66'>觅食蜂接口测试用例(管理平台)</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:43 AM</td>
+										<td>Aug 27, 2019 09:52:31 AM</td>
 										<td class='linked' test-id='67'>觅食蜂接口测试用例(管理平台).merchantList</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:43 AM</td>
+										<td>Aug 27, 2019 09:52:32 AM</td>
 										<td class='linked' test-id='68'>消息推送</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -2828,16 +2749,14 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 					<div class='category-heading'>
 						<span class='category-name'>觅食蜂接口测试用例(openapi)</span>
 						<span class='category-status right'>
-							<span class='label pass'>59</span>
-							<span class='label fail'>2</span>
-							<span class='label others'>2</span>
+							<span class='label pass'>63</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 59</span>
-							<span class='label red lighten-1 white-text'>Failed: 2</span>
-							<span class='label yellow darken-2 white-text'>Others: 2</span>
+							<span class='label green accent-4 white-text'>Passed: 63</span>
+							
+							
 						</div>
 					
 						<div class='category-tests'>
@@ -2851,387 +2770,319 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 27, 2019 09:06:32 AM</td>
+										<td>Aug 27, 2019 09:52:20 AM</td>
 										<td class='linked' test-id='1'>觅食蜂接口测试用例(openapi)</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-									<tr>
-										<td>Aug 27, 2019 09:06:37 AM</td>
-										<td class='linked' test-id='2'>觅食蜂接口测试用例(openapi).articleCreate</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-									<tr>
-										<td>Aug 27, 2019 09:06:42 AM</td>
-										<td class='linked' test-id='3'>觅食蜂接口测试用例(openapi).articleCreatecomment</td>
-										<td><span class='test-status skip'>skip</span></td>
-									</tr>
-									<tr>
-										<td>Aug 27, 2019 09:06:43 AM</td>
-										<td class='linked' test-id='4'>觅食蜂接口测试用例(openapi).userArticledelete</td>
-										<td><span class='test-status skip'>skip</span></td>
-									</tr>
-									<tr>
-										<td>Aug 27, 2019 09:06:32 AM</td>
-										<td class='linked' test-id='5'>觅食蜂接口测试用例(openapi).userLogin</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:35 AM</td>
-										<td class='linked' test-id='6'>觅食蜂接口测试用例(openapi).ActivityList</td>
+										<td>Aug 27, 2019 09:52:20 AM</td>
+										<td class='linked' test-id='2'>觅食蜂接口测试用例(openapi).userLogin</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:35 AM</td>
-										<td class='linked' test-id='7'>觅食蜂接口测试用例(openapi).activityDetail</td>
+										<td>Aug 27, 2019 09:52:22 AM</td>
+										<td class='linked' test-id='3'>觅食蜂接口测试用例(openapi).ActivityList</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:35 AM</td>
-										<td class='linked' test-id='8'>觅食蜂接口测试用例(openapi).articleArticlelist</td>
+										<td>Aug 27, 2019 09:52:23 AM</td>
+										<td class='linked' test-id='4'>觅食蜂接口测试用例(openapi).activityDetail</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:36 AM</td>
-										<td class='linked' test-id='9'>觅食蜂接口测试用例(openapi).activityArticle</td>
+										<td>Aug 27, 2019 09:52:23 AM</td>
+										<td class='linked' test-id='5'>觅食蜂接口测试用例(openapi).articleArticlelist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:36 AM</td>
-										<td class='linked' test-id='10'>觅食蜂接口测试用例(openapi).activitySharedetail</td>
+										<td>Aug 27, 2019 09:52:23 AM</td>
+										<td class='linked' test-id='6'>觅食蜂接口测试用例(openapi).activityArticle</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:36 AM</td>
-										<td class='linked' test-id='11'>觅食蜂接口测试用例(openapi).articleCommentlist</td>
+										<td>Aug 27, 2019 09:52:23 AM</td>
+										<td class='linked' test-id='7'>觅食蜂接口测试用例(openapi).activitySharedetail</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:36 AM</td>
-										<td class='linked' test-id='12'>觅食蜂接口测试用例(openapi).userUpdateinfo</td>
+										<td>Aug 27, 2019 09:52:23 AM</td>
+										<td class='linked' test-id='8'>觅食蜂接口测试用例(openapi).articleCommentlist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:36 AM</td>
-										<td class='linked' test-id='13'>觅食蜂接口测试用例(openapi).messageType</td>
+										<td>Aug 27, 2019 09:52:23 AM</td>
+										<td class='linked' test-id='9'>觅食蜂接口测试用例(openapi).userUpdateinfo</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:36 AM</td>
-										<td class='linked' test-id='14'>觅食蜂接口测试用例(openapi).commonAppconfig</td>
+										<td>Aug 27, 2019 09:52:23 AM</td>
+										<td class='linked' test-id='10'>觅食蜂接口测试用例(openapi).messageType</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:36 AM</td>
-										<td class='linked' test-id='15'>觅食蜂接口测试用例(openapi).homeIndex</td>
+										<td>Aug 27, 2019 09:52:24 AM</td>
+										<td class='linked' test-id='11'>觅食蜂接口测试用例(openapi).commonAppconfig</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:37 AM</td>
-										<td class='linked' test-id='16'>觅食蜂接口测试用例(openapi).commonLocate</td>
+										<td>Aug 27, 2019 09:52:24 AM</td>
+										<td class='linked' test-id='12'>觅食蜂接口测试用例(openapi).homeIndex</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:37 AM</td>
-										<td class='linked' test-id='17'>觅食蜂接口测试用例(openapi).articleDetail</td>
+										<td>Aug 27, 2019 09:52:24 AM</td>
+										<td class='linked' test-id='13'>觅食蜂接口测试用例(openapi).commonLocate</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:37 AM</td>
-										<td class='linked' test-id='18'>觅食蜂接口测试用例(openapi).articleInterestlist</td>
+										<td>Aug 27, 2019 09:52:24 AM</td>
+										<td class='linked' test-id='14'>觅食蜂接口测试用例(openapi).articleDetail</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:37 AM</td>
-										<td class='linked' test-id='19'>觅食蜂接口测试用例(openapi).userTogglefollow</td>
+										<td>Aug 27, 2019 09:52:24 AM</td>
+										<td class='linked' test-id='15'>觅食蜂接口测试用例(openapi).articleInterestlist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:37 AM</td>
-										<td class='linked' test-id='20'>觅食蜂接口测试用例(openapi).articleTogglefavorite</td>
+										<td>Aug 27, 2019 09:52:24 AM</td>
+										<td class='linked' test-id='16'>觅食蜂接口测试用例(openapi).userTogglefollow</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:37 AM</td>
-										<td class='linked' test-id='21'>觅食蜂接口测试用例(openapi).articleTogglelikes</td>
+										<td>Aug 27, 2019 09:52:24 AM</td>
+										<td class='linked' test-id='17'>觅食蜂接口测试用例(openapi).articleTogglefavorite</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:37 AM</td>
-										<td class='linked' test-id='22'>觅食蜂接口测试用例(openapi).messageUnread</td>
+										<td>Aug 27, 2019 09:52:25 AM</td>
+										<td class='linked' test-id='18'>觅食蜂接口测试用例(openapi).articleTogglelikes</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:38 AM</td>
-										<td class='linked' test-id='23'>觅食蜂接口测试用例(openapi).userProfile</td>
+										<td>Aug 27, 2019 09:52:25 AM</td>
+										<td class='linked' test-id='19'>觅食蜂接口测试用例(openapi).messageUnread</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:38 AM</td>
-										<td class='linked' test-id='24'>觅食蜂接口测试用例(openapi).userFavoritelist</td>
+										<td>Aug 27, 2019 09:52:25 AM</td>
+										<td class='linked' test-id='20'>觅食蜂接口测试用例(openapi).articleCreate</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:38 AM</td>
-										<td class='linked' test-id='25'>觅食蜂接口测试用例(openapi).articleLikeslist</td>
+										<td>Aug 27, 2019 09:52:25 AM</td>
+										<td class='linked' test-id='21'>觅食蜂接口测试用例(openapi).userProfile</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:38 AM</td>
-										<td class='linked' test-id='26'>觅食蜂接口测试用例(openapi).commonAuthcode</td>
+										<td>Aug 27, 2019 09:52:25 AM</td>
+										<td class='linked' test-id='22'>觅食蜂接口测试用例(openapi).userFavoritelist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:38 AM</td>
-										<td class='linked' test-id='27'>觅食蜂接口测试用例(openapi).userSetting</td>
+										<td>Aug 27, 2019 09:52:25 AM</td>
+										<td class='linked' test-id='23'>觅食蜂接口测试用例(openapi).articleLikeslist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:38 AM</td>
-										<td class='linked' test-id='28'>觅食蜂接口测试用例(openapi).commonQiniutoken</td>
+										<td>Aug 27, 2019 09:52:26 AM</td>
+										<td class='linked' test-id='24'>觅食蜂接口测试用例(openapi).commonAuthcode</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:38 AM</td>
-										<td class='linked' test-id='29'>觅食蜂接口测试用例(openapi).userResetmobile</td>
+										<td>Aug 27, 2019 09:52:26 AM</td>
+										<td class='linked' test-id='25'>觅食蜂接口测试用例(openapi).userSetting</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:38 AM</td>
-										<td class='linked' test-id='30'>觅食蜂接口测试用例(openapi).commonZonelist</td>
+										<td>Aug 27, 2019 09:52:26 AM</td>
+										<td class='linked' test-id='26'>觅食蜂接口测试用例(openapi).commonQiniutoken</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:39 AM</td>
-										<td class='linked' test-id='31'>觅食蜂接口测试用例(openapi).branchNearcbd</td>
+										<td>Aug 27, 2019 09:52:26 AM</td>
+										<td class='linked' test-id='27'>觅食蜂接口测试用例(openapi).userResetmobile</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:39 AM</td>
-										<td class='linked' test-id='32'>觅食蜂接口测试用例(openapi).searchCbdnearlist</td>
+										<td>Aug 27, 2019 09:52:26 AM</td>
+										<td class='linked' test-id='28'>觅食蜂接口测试用例(openapi).commonZonelist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:39 AM</td>
-										<td class='linked' test-id='33'>觅食蜂接口测试用例(openapi).searchHottags</td>
+										<td>Aug 27, 2019 09:52:26 AM</td>
+										<td class='linked' test-id='29'>觅食蜂接口测试用例(openapi).branchNearcbd</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:39 AM</td>
-										<td class='linked' test-id='34'>觅食蜂接口测试用例(openapi).searchBranch</td>
+										<td>Aug 27, 2019 09:52:26 AM</td>
+										<td class='linked' test-id='30'>觅食蜂接口测试用例(openapi).searchCbdnearlist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:39 AM</td>
-										<td class='linked' test-id='35'>觅食蜂接口测试用例(openapi).searchTaglist</td>
+										<td>Aug 27, 2019 09:52:26 AM</td>
+										<td class='linked' test-id='31'>觅食蜂接口测试用例(openapi).searchHottags</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:39 AM</td>
-										<td class='linked' test-id='36'>觅食蜂接口测试用例(openapi).articleInitdata</td>
+										<td>Aug 27, 2019 09:52:26 AM</td>
+										<td class='linked' test-id='32'>觅食蜂接口测试用例(openapi).searchBranch</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:39 AM</td>
-										<td class='linked' test-id='37'>觅食蜂接口测试用例(openapi).orderPayment</td>
+										<td>Aug 27, 2019 09:52:27 AM</td>
+										<td class='linked' test-id='33'>觅食蜂接口测试用例(openapi).searchTaglist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:40 AM</td>
-										<td class='linked' test-id='38'>觅食蜂接口测试用例(openapi).orderPaymentapply</td>
+										<td>Aug 27, 2019 09:52:27 AM</td>
+										<td class='linked' test-id='34'>觅食蜂接口测试用例(openapi).articleInitdata</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:40 AM</td>
-										<td class='linked' test-id='39'>觅食蜂接口测试用例(openapi).orderRedeem</td>
+										<td>Aug 27, 2019 09:52:27 AM</td>
+										<td class='linked' test-id='35'>觅食蜂接口测试用例(openapi).orderPayment</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:40 AM</td>
-										<td class='linked' test-id='40'>觅食蜂接口测试用例(openapi).branchCatlist</td>
+										<td>Aug 27, 2019 09:52:27 AM</td>
+										<td class='linked' test-id='36'>觅食蜂接口测试用例(openapi).orderPaymentapply</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:40 AM</td>
-										<td class='linked' test-id='41'>觅食蜂接口测试用例(openapi).commonOpenim</td>
+										<td>Aug 27, 2019 09:52:28 AM</td>
+										<td class='linked' test-id='37'>觅食蜂接口测试用例(openapi).orderRedeem</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:40 AM</td>
-										<td class='linked' test-id='42'>觅食蜂接口测试用例(openapi).commonAppupdate</td>
+										<td>Aug 27, 2019 09:52:28 AM</td>
+										<td class='linked' test-id='38'>觅食蜂接口测试用例(openapi).branchCatlist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:40 AM</td>
-										<td class='linked' test-id='43'>觅食蜂接口测试用例(openapi).orderList</td>
+										<td>Aug 27, 2019 09:52:28 AM</td>
+										<td class='linked' test-id='39'>觅食蜂接口测试用例(openapi).commonOpenim</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:41 AM</td>
-										<td class='linked' test-id='44'>觅食蜂接口测试用例(openapi).orderRefund</td>
+										<td>Aug 27, 2019 09:52:28 AM</td>
+										<td class='linked' test-id='40'>觅食蜂接口测试用例(openapi).commonAppupdate</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:41 AM</td>
-										<td class='linked' test-id='45'>觅食蜂接口测试用例(openapi).orderRefundapply</td>
+										<td>Aug 27, 2019 09:52:28 AM</td>
+										<td class='linked' test-id='41'>觅食蜂接口测试用例(openapi).orderList</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:41 AM</td>
-										<td class='linked' test-id='46'>觅食蜂接口测试用例(openapi).orderNoticeack</td>
+										<td>Aug 27, 2019 09:52:28 AM</td>
+										<td class='linked' test-id='42'>觅食蜂接口测试用例(openapi).orderRefund</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:41 AM</td>
-										<td class='linked' test-id='47'>觅食蜂接口测试用例(openapi).orderNoticepop</td>
+										<td>Aug 27, 2019 09:52:28 AM</td>
+										<td class='linked' test-id='43'>觅食蜂接口测试用例(openapi).orderRefundapply</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:41 AM</td>
-										<td class='linked' test-id='48'>觅食蜂接口测试用例(openapi).userFollowlist</td>
+										<td>Aug 27, 2019 09:52:28 AM</td>
+										<td class='linked' test-id='44'>觅食蜂接口测试用例(openapi).orderNoticeack</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:41 AM</td>
-										<td class='linked' test-id='49'>觅食蜂接口测试用例(openapi).userArticlelist</td>
+										<td>Aug 27, 2019 09:52:28 AM</td>
+										<td class='linked' test-id='45'>觅食蜂接口测试用例(openapi).orderNoticepop</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:41 AM</td>
-										<td class='linked' test-id='50'>觅食蜂接口测试用例(openapi).userDailybonus</td>
+										<td>Aug 27, 2019 09:52:28 AM</td>
+										<td class='linked' test-id='46'>觅食蜂接口测试用例(openapi).userFollowlist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:41 AM</td>
-										<td class='linked' test-id='51'>觅食蜂接口测试用例(openapi).userGethoney</td>
+										<td>Aug 27, 2019 09:52:29 AM</td>
+										<td class='linked' test-id='47'>觅食蜂接口测试用例(openapi).userArticlelist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:41 AM</td>
-										<td class='linked' test-id='52'>觅食蜂接口测试用例(openapi).userGethoneylog</td>
+										<td>Aug 27, 2019 09:52:29 AM</td>
+										<td class='linked' test-id='48'>觅食蜂接口测试用例(openapi).userDailybonus</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:41 AM</td>
-										<td class='linked' test-id='53'>觅食蜂接口测试用例(openapi).inviteGetcode</td>
+										<td>Aug 27, 2019 09:52:29 AM</td>
+										<td class='linked' test-id='49'>觅食蜂接口测试用例(openapi).userGethoney</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:42 AM</td>
-										<td class='linked' test-id='54'>觅食蜂接口测试用例(openapi).messageGetlist</td>
+										<td>Aug 27, 2019 09:52:29 AM</td>
+										<td class='linked' test-id='50'>觅食蜂接口测试用例(openapi).userGethoneylog</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:42 AM</td>
-										<td class='linked' test-id='55'>觅食蜂接口测试用例(openapi).branchDetail</td>
+										<td>Aug 27, 2019 09:52:29 AM</td>
+										<td class='linked' test-id='51'>觅食蜂接口测试用例(openapi).inviteGetcode</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:42 AM</td>
-										<td class='linked' test-id='56'>觅食蜂接口测试用例(openapi).articleCommentuserlist</td>
+										<td>Aug 27, 2019 09:52:29 AM</td>
+										<td class='linked' test-id='52'>觅食蜂接口测试用例(openapi).messageGetlist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:42 AM</td>
-										<td class='linked' test-id='57'>觅食蜂接口测试用例(openapi).articleSearchtags</td>
+										<td>Aug 27, 2019 09:52:29 AM</td>
+										<td class='linked' test-id='53'>觅食蜂接口测试用例(openapi).branchDetail</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:42 AM</td>
-										<td class='linked' test-id='58'>觅食蜂接口测试用例(openapi).articleFavoritelist</td>
+										<td>Aug 27, 2019 09:52:29 AM</td>
+										<td class='linked' test-id='54'>觅食蜂接口测试用例(openapi).articleCommentuserlist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:42 AM</td>
-										<td class='linked' test-id='59'>觅食蜂接口测试用例(openapi).commonStaticcontent</td>
+										<td>Aug 27, 2019 09:52:29 AM</td>
+										<td class='linked' test-id='55'>觅食蜂接口测试用例(openapi).articleSearchtags</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:42 AM</td>
-										<td class='linked' test-id='60'>觅食蜂接口测试用例(openapi).inviteInitdata</td>
+										<td>Aug 27, 2019 09:52:30 AM</td>
+										<td class='linked' test-id='56'>觅食蜂接口测试用例(openapi).articleFavoritelist</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:42 AM</td>
-										<td class='linked' test-id='61'>觅食蜂接口测试用例(openapi).inviteReceiveboon</td>
+										<td>Aug 27, 2019 09:52:30 AM</td>
+										<td class='linked' test-id='57'>觅食蜂接口测试用例(openapi).commonStaticcontent</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:42 AM</td>
-										<td class='linked' test-id='62'>觅食蜂接口测试用例(openapi).orderPaymentresult</td>
+										<td>Aug 27, 2019 09:52:30 AM</td>
+										<td class='linked' test-id='58'>觅食蜂接口测试用例(openapi).inviteInitdata</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:43 AM</td>
-										<td class='linked' test-id='63'>觅食蜂接口测试用例(openapi).orderCancel</td>
+										<td>Aug 27, 2019 09:52:30 AM</td>
+										<td class='linked' test-id='59'>觅食蜂接口测试用例(openapi).inviteReceiveboon</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>createArticle</span>
-						<span class='category-status right'>
-							<span class='label fail'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
 									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
+										<td>Aug 27, 2019 09:52:30 AM</td>
+										<td class='linked' test-id='60'>觅食蜂接口测试用例(openapi).articleCreatecomment</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
-								</thead>
-								<tbody>
 									<tr>
-										<td>Aug 27, 2019 09:06:37 AM</td>
-										<td class='linked' test-id='2'>觅食蜂接口测试用例(openapi).articleCreate</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td>Aug 27, 2019 09:52:30 AM</td>
+										<td class='linked' test-id='61'>觅食蜂接口测试用例(openapi).orderPaymentresult</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>commentArticle</span>
-						<span class='category-status right'>
-							<span class='label others'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							
-							
-							<span class='label yellow darken-2 white-text'>Others: 1</span>
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
 									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
+										<td>Aug 27, 2019 09:52:30 AM</td>
+										<td class='linked' test-id='62'>觅食蜂接口测试用例(openapi).orderCancel</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
-								</thead>
-								<tbody>
 									<tr>
-										<td>Aug 27, 2019 09:06:42 AM</td>
-										<td class='linked' test-id='3'>觅食蜂接口测试用例(openapi).articleCreatecomment</td>
-										<td><span class='test-status skip'>skip</span></td>
+										<td>Aug 27, 2019 09:52:31 AM</td>
+										<td class='linked' test-id='63'>觅食蜂接口测试用例(openapi).userArticledelete</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -3263,8 +3114,42 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 27, 2019 09:06:32 AM</td>
-										<td class='linked' test-id='5'>觅食蜂接口测试用例(openapi).userLogin</td>
+										<td>Aug 27, 2019 09:52:20 AM</td>
+										<td class='linked' test-id='2'>觅食蜂接口测试用例(openapi).userLogin</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>createArticle</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 27, 2019 09:52:25 AM</td>
+										<td class='linked' test-id='20'>觅食蜂接口测试用例(openapi).articleCreate</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -3297,8 +3182,42 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 27, 2019 09:06:40 AM</td>
-										<td class='linked' test-id='38'>觅食蜂接口测试用例(openapi).orderPaymentapply</td>
+										<td>Aug 27, 2019 09:52:27 AM</td>
+										<td class='linked' test-id='36'>觅食蜂接口测试用例(openapi).orderPaymentapply</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>commentArticle</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 27, 2019 09:52:30 AM</td>
+										<td class='linked' test-id='60'>觅食蜂接口测试用例(openapi).articleCreatecomment</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -3331,12 +3250,12 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 27, 2019 09:06:43 AM</td>
+										<td>Aug 27, 2019 09:52:31 AM</td>
 										<td class='linked' test-id='64'>觅食蜂接口测试用例(退出登录)</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:43 AM</td>
+										<td>Aug 27, 2019 09:52:31 AM</td>
 										<td class='linked' test-id='65'>觅食蜂接口测试用例(退出登录).userLogout</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -3370,12 +3289,12 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 27, 2019 09:06:43 AM</td>
+										<td>Aug 27, 2019 09:52:31 AM</td>
 										<td class='linked' test-id='66'>觅食蜂接口测试用例(管理平台)</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 27, 2019 09:06:43 AM</td>
+										<td>Aug 27, 2019 09:52:31 AM</td>
 										<td class='linked' test-id='67'>觅食蜂接口测试用例(管理平台).merchantList</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -3409,7 +3328,7 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 27, 2019 09:06:43 AM</td>
+										<td>Aug 27, 2019 09:52:32 AM</td>
 										<td class='linked' test-id='68'>消息推送</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -3430,172 +3349,6 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 	</div>
 </div>
 <!-- category view -->
-<div id='exception-view' class='view hide'>
-
-    <section id='controls'>
-        <div class='controls grey lighten-4'>
-            <!-- search -->
-            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
-                <a href="#" class='search-div'>
-                    <i class='material-icons'>search</i> Search
-                </a>
-
-                <div class='input-field left hide'>
-                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-                </div>
-
-            </div>
-            <!-- search -->
-        </div>
-    </section>
-
-    <div class='subview-left left'>
-
-        <div class='view-summary'>
-            <h5>Exceptions</h3>
-                <ul id='exception-collection' class='exception-collection'>
-
-                        <li class='exception displayed active'>
-                            <div class='exception-heading'>
-                                <span class='exception-name'>java.lang.AssertionError</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-                            </div>
-                            <div class='exception-content hide'>
-                                <div class='exception-tests'>
-                                    <table class='bordered table-results'>
-                                        <thead>
-                                        <tr>
-                                            <th>Timestamp</th>
-                                            <th>TestName</th>
-                                            <th>Status</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                                    <tr>
-                                                        <td>Aug 27, 2019 09:06:37 AM</td>
-                                                        <td class='linked' test-id='2'>觅食蜂接口测试用例(openapi).articleCreate</td>
-                                                        <td><pre><pre>java.lang.AssertionError: 
-返回的errno不为0/errmsg不为success;
-返回的errno/errmsg:91210014/每分钟只能发布一篇文章，请稍后再试
-请求的url:https://m.betaapi.mishifeng.com/open/article/create
-参数：title=%E6%A0%87%E9%A2%98%E6%B5%8B%E8%AF%95%E7%9A%84&content=%E7%BE%8E%E9%A3%9F%E4%BD%93%E9%AA%8C%E7%9A%84%E5%86%85%E5%AE%B9%EF%BC%8C%E5%B1%85%E7%84%B6%E8%BF%98%E8%A6%8113%E4%B8%AA%E5%AD%97%E7%9C%9F%E7%9A%84%E6%98%AF%EF%BC%8C%E6%90%9E%E5%AE%9A&pic_list=%5B%7B%22height%22%3A399%2C%22width%22%3A360%2C%22pic%22%3A%22https%3A%5C%2F%5C%2Fimg.mishifeng.com%5C%2FFjsIIq6rvZanTL8YO2k-MtCLIMkB%22%7D%2C%7B%22pic%22%3A%22https%3A%5C%2F%5C%2Fimg.mishifeng.com%5C%2FFnNanPN6r2QM5ye0-y_l_8gcYZsd%22%2C%22height%22%3A909%2C%22width%22%3A880%7D%5D&stat_id=2EE6C938-EDE8-4E20-92C0-630A7A1F7066&timestamp=1562724496&os_version=12.2&device=iPhone&star=50&version=2.1.0&token=3c36560351c8f2885874e7363b041a20&lng=121.4306271701389&lat=31.16045817057292&zone_id=21&platform=ios
-CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
-接口返回：{"errno":91210014,"errmsg":"每分钟只能发布一篇文章，请稍后再试","data":{},"timestamp":1566867998,"serverlogid":0}
-《-------------------------分割线-------------------------》
-	at org.testng.Assert.fail(Assert.java:94)
-	at com.duoweidu.config.generalAssert.GeneralAssertChannel.errnoAssert(GeneralAssertChannel.java:177)
-	at com.duoweidu.cases.interfaces.InterfaceTest.statusAssertTest(InterfaceTest.java:303)
-	at com.duoweidu.cases.interfaces.InterfaceTest.generalAssertTest(InterfaceTest.java:310)
-	at com.duoweidu.cases.interfaces.InterfaceTest.generalAssertTest(InterfaceTest.java:318)
-	at com.duoweidu.cases.msf.openapi.ArticleCreate.articleCreate(ArticleCreate.java:33)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</pre></pre></td>
-                                                    </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </li>
-                        <li class='exception displayed active'>
-                            <div class='exception-heading'>
-                                <span class='exception-name'>java.lang.Throwable</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
-                            </div>
-                            <div class='exception-content hide'>
-                                <div class='exception-tests'>
-                                    <table class='bordered table-results'>
-                                        <thead>
-                                        <tr>
-                                            <th>Timestamp</th>
-                                            <th>TestName</th>
-                                            <th>Status</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                                    <tr>
-                                                        <td>Aug 27, 2019 09:06:42 AM</td>
-                                                        <td class='linked' test-id='3'>觅食蜂接口测试用例(openapi).articleCreatecomment</td>
-                                                        <td><pre><pre>java.lang.Throwable: Method ArticleCreatecomment.articleCreatecomment()[pri:0, instance:com.duoweidu.cases.msf.openapi.ArticleCreatecomment@797ca322] depends on not successfully finished methods in group "createArticle"
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</pre></pre></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Aug 27, 2019 09:06:43 AM</td>
-                                                        <td class='linked' test-id='4'>觅食蜂接口测试用例(openapi).userArticledelete</td>
-                                                        <td><pre><pre>java.lang.Throwable: Method UserArticledelete.userArticledelete()[pri:0, instance:com.duoweidu.cases.msf.openapi.UserArticledelete@206de1f] depends on not successfully finished methods in group "commentArticle"
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</pre></pre></td>
-                                                    </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </li>
-                </ul>
-        </div>
-    </div>
-
-    <div class='subview-right left'>
-        <div class='view-summary'>
-            <h5 class='exception-name'></h5>
-        </div>
-    </div>
-</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -3617,19 +3370,19 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug 27, 2019 09:06:32 AM</div>
+					<div class='panel-lead'>Aug 27, 2019 09:52:20 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug 27, 2019 09:06:43 AM</div>
+			 		<div class='panel-lead'>Aug 27, 2019 09:52:31 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>10,557ms</div>
+					<div class='panel-lead'>11,745ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -3645,27 +3398,15 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 						</tr>
 						<tr>
 							<td>觅食蜂接口测试</td>
-							<td>64</td>
-							<td>2</td>
-							<td>2</td>
+							<td>68</td>
+							<td>0</td>
+							<td>0</td>
 						</tr>
 						<tr>
 							<td>觅食蜂接口测试用例(openapi)</td>
-							<td>59</td>
-							<td>2</td>
-							<td>2</td>
-						</tr>
-						<tr>
-							<td>createArticle</td>
-							<td>0</td>
-							<td>1</td>
-							<td>0</td>
-						</tr>
-						<tr>
-							<td>commentArticle</td>
+							<td>63</td>
 							<td>0</td>
 							<td>0</td>
-							<td>1</td>
 						</tr>
 						<tr>
 							<td>loginTrue</td>
@@ -3674,7 +3415,19 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 							<td>0</td>
 						</tr>
 						<tr>
+							<td>createArticle</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
 							<td>orderPaymentapply</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>commentArticle</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -3710,22 +3463,22 @@ CX-Request-ID: ffa764237b6b8487b0995a16ea87f110
 
 		<script>
 			var statusGroup = {
-				passParent: 62,
-				failParent: 1,
+				passParent: 65,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 2,
-				exceptionsParent: 3,
+				skipParent: 0,
+				exceptionsParent: 0,
 				
-				passChild: 61,
-				failChild: 1,
+				passChild: 64,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
-				skipChild: 2,
+				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 3,
+				exceptionsChild: 0,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,
