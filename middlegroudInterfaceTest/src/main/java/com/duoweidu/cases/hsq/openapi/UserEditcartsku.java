@@ -14,7 +14,7 @@ public class UserEditcartsku extends HsqInterfaceTest {
 
     private UserEditcartskuData model;
 
-    @Test(dependsOnGroups = "addskutocart", description = "编辑购物车")
+    @Test(dependsOnGroups = "addskutocart", description = "编辑购物车", groups = "editsku")
     public void userEditcartsku(){
         setUrl("user.editcartsku.uri");
         List<NameValuePair> list = new LinkedList<>();

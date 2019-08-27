@@ -214,6 +214,7 @@ public class SqlDetail {
         }
     }
 
+
     public String getChannelName() {
         return SqlGeneral.getChannelName(channel_id());
     }

@@ -54,7 +54,10 @@ public class HsqOpenapiConfig {
     public static String orderInitResult;
     //储存积分订单列表接口返回的总页数
     public static int totalPage;
-    //保存购物车商品id
+    //保存普通订单临时id
+    public static  String goconfirmSid;
+    //保存购物车普通订单的id
+    public static String orderIds;
 
 
 }
