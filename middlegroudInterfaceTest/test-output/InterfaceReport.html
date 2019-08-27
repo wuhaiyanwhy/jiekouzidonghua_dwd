@@ -49,7 +49,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Aug 23, 2019 07:13:48 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Aug 27, 2019 09:18:13 AM</span>
 				</a>
 			</li>
 			<li>
@@ -181,14 +181,14 @@
 				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>爱抢购接口测试 : 爱抢购接口测试用例(openapi)</span>
-						<span class='test-time'>Aug 23, 2019 07:13:48 PM</span>
+						<span class='test-time'>Aug 27, 2019 09:18:13 AM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 23, 2019 07:13:48 PM</span>
-	<span class='label end-time'>Aug 23, 2019 07:14:16 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 27s+940ms</span>
+	<span class='label start-time'>Aug 27, 2019 09:18:13 AM</span>
+	<span class='label end-time'>Aug 27, 2019 09:18:40 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 27s+298ms</span>
 </div>
 	<div class='test-desc'>Pass: 51 ; Fail: 1 ; Skip: 0 ; </div>
 	<div class='test-attributes'>
@@ -201,9 +201,9 @@
 		
 				<li class='node level-1 leaf fail' status='fail' test-id='2'>
 					<div class='collapsible-header'>
-						<div class='node-name'>bargainTodayTrue</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:16 PM</span>
-						<span class='node-duration'>0h 0m 2s+294ms</span>
+						<div class='node-name'>barginAvatarTrue</div>						
+						<span class='node-time'>Aug 27, 2019 09:18:40 AM</span>
+						<span class='node-duration'>0h 0m 2s+186ms</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 						<div class='collapsible-body'>
@@ -223,20 +223,20 @@
 										<tbody>
 												<tr class='log' status='fail'>
 													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'><pre>java.lang.AssertionError: 
 json解析错误;
 报错的代码:org.json.JSONException: JSONObject["data"] not found.
-请求的url:https://m.betaapi.iqianggou.com/api/item/bargain/today
-参数：version=5.7.0&lng=121.463&lat=31.234
-cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01][domain: .iqianggou.com][path: /][expiry: Sun Sep 22 19:13:52 CST 2019]]
-接口返回：{"status":{"code":10001,"message":"没有找到您请求的数据","alert":"","server_time":1566558856}}
+请求的url:https://m.betaapi.iqianggou.com/api/today_bargin/use_avatar
+参数：version=5.7.0&lng=121.463&lat=31.234&zone_id=21&campaign_branch_id=728591
+cookie：[[version: 0][name: PHPSESSID][value: 34ff83598baa272740e9680f5233bd03][domain: .iqianggou.com][path: /][expiry: Thu Sep 26 09:18:16 CST 2019]]
+接口返回：{"status":{"code":10001,"message":"没有找到您请求的数据","alert":"","server_time":1566868720}}
 《-------------------------分割线-------------------------》
 	at org.testng.Assert.fail(Assert.java:94)
 	at com.duoweidu.config.generalAssert.GeneralAssertChannel.jsonAssert(GeneralAssertChannel.java:269)
 	at com.duoweidu.config.generalAssert.GeneralAssert.jsonAssert(GeneralAssert.java:119)
-	at com.duoweidu.cases.interfaces.IqgInterfaceTest.generalAssertTest(IqgInterfaceTest.java:110)
-	at com.duoweidu.cases.iqg.openapi.BargainToday.bargainTodayTrue(BargainToday.java:16)
+	at com.duoweidu.cases.interfaces.IqgInterfaceTest.generalAssertTest(IqgInterfaceTest.java:89)
+	at com.duoweidu.cases.iqg.openapi.BarginAvatar.barginAvatarTrue(BarginAvatar.java:17)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -271,8 +271,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='3'>
 					<div class='collapsible-header'>
 						<div class='node-name'>user_login_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:13:49 PM</span>
-						<span class='node-duration'>0h 0m 29s+526ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:13 AM</span>
+						<span class='node-duration'>0h 0m 28s+889ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -293,7 +293,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -304,8 +304,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='4'>
 					<div class='collapsible-header'>
 						<div class='node-name'>userRefundprogressTrue</div>						
-						<span class='node-time'>Aug 23, 2019 07:13:52 PM</span>
-						<span class='node-duration'>0h 0m 25s+957ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:16 AM</span>
+						<span class='node-duration'>0h 0m 26s+25ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -326,7 +326,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -337,8 +337,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='5'>
 					<div class='collapsible-header'>
 						<div class='node-name'>order_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:13:52 PM</span>
-						<span class='node-duration'>0h 0m 25s+857ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:16 AM</span>
+						<span class='node-duration'>0h 0m 25s+928ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -359,7 +359,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -370,8 +370,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='6'>
 					<div class='collapsible-header'>
 						<div class='node-name'>item_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:13:53 PM</span>
-						<span class='node-duration'>0h 0m 25s+30ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:17 AM</span>
+						<span class='node-duration'>0h 0m 25s+20ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -391,7 +391,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -402,8 +402,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='7'>
 					<div class='collapsible-header'>
 						<div class='node-name'>ad_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:13:53 PM</span>
-						<span class='node-duration'>0h 0m 24s+684ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:17 AM</span>
+						<span class='node-duration'>0h 0m 24s+704ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -423,7 +423,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -434,8 +434,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='8'>
 					<div class='collapsible-header'>
 						<div class='node-name'>user_myprofile_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:13:54 PM</span>
-						<span class='node-duration'>0h 0m 24s+41ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:18 AM</span>
+						<span class='node-duration'>0h 0m 24s+33ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -455,7 +455,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -466,8 +466,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='9'>
 					<div class='collapsible-header'>
 						<div class='node-name'>appconfig_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:13:55 PM</span>
-						<span class='node-duration'>0h 0m 23s+525ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:18 AM</span>
+						<span class='node-duration'>0h 0m 23s+470ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -487,7 +487,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -498,8 +498,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='10'>
 					<div class='collapsible-header'>
 						<div class='node-name'>zone_21_categories_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:13:55 PM</span>
-						<span class='node-duration'>0h 0m 22s+912ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:19 AM</span>
+						<span class='node-duration'>0h 0m 22s+866ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -519,7 +519,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -530,8 +530,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='11'>
 					<div class='collapsible-header'>
 						<div class='node-name'>order_type_redeem_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:13:56 PM</span>
-						<span class='node-duration'>0h 0m 22s+429ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:19 AM</span>
+						<span class='node-duration'>0h 0m 22s+355ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -551,7 +551,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -562,8 +562,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='12'>
 					<div class='collapsible-header'>
 						<div class='node-name'>user_agreement_change_test</div>						
-						<span class='node-time'>Aug 23, 2019 07:13:56 PM</span>
-						<span class='node-duration'>0h 0m 21s+942ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:20 AM</span>
+						<span class='node-duration'>0h 0m 21s+865ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -583,7 +583,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -594,8 +594,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='13'>
 					<div class='collapsible-header'>
 						<div class='node-name'>item_bargain_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:13:57 PM</span>
-						<span class='node-duration'>0h 0m 21s+446ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:20 AM</span>
+						<span class='node-duration'>0h 0m 21s+375ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -616,7 +616,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -627,8 +627,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='14'>
 					<div class='collapsible-header'>
 						<div class='node-name'>item_detail_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:13:57 PM</span>
-						<span class='node-duration'>0h 0m 20s+899ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:21 AM</span>
+						<span class='node-duration'>0h 0m 20s+784ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -648,7 +648,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -659,8 +659,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='15'>
 					<div class='collapsible-header'>
 						<div class='node-name'>order_type_all_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:13:58 PM</span>
-						<span class='node-duration'>0h 0m 20s+386ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:21 AM</span>
+						<span class='node-duration'>0h 0m 20s+304ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -680,7 +680,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -691,8 +691,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='16'>
 					<div class='collapsible-header'>
 						<div class='node-name'>order_type_to_comment_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:13:58 PM</span>
-						<span class='node-duration'>0h 0m 19s+833ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:22 AM</span>
+						<span class='node-duration'>0h 0m 19s+704ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -712,7 +712,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -723,8 +723,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='17'>
 					<div class='collapsible-header'>
 						<div class='node-name'>order_type_refund_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:13:59 PM</span>
-						<span class='node-duration'>0h 0m 19s+249ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:23 AM</span>
+						<span class='node-duration'>0h 0m 19s+148ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -744,7 +744,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -755,8 +755,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='18'>
 					<div class='collapsible-header'>
 						<div class='node-name'>order_detail_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:13:59 PM</span>
-						<span class='node-duration'>0h 0m 18s+685ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:23 AM</span>
+						<span class='node-duration'>0h 0m 18s+545ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -776,7 +776,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -787,8 +787,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='19'>
 					<div class='collapsible-header'>
 						<div class='node-name'>coupon_activitylist_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:00 PM</span>
-						<span class='node-duration'>0h 0m 18s+57ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:24 AM</span>
+						<span class='node-duration'>0h 0m 17s+958ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -808,7 +808,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -819,8 +819,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='20'>
 					<div class='collapsible-header'>
 						<div class='node-name'>coupon_activitydetail_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:00 PM</span>
-						<span class='node-duration'>0h 0m 17s+839ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:24 AM</span>
+						<span class='node-duration'>0h 0m 17s+771ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -840,7 +840,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -851,8 +851,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='21'>
 					<div class='collapsible-header'>
 						<div class='node-name'>couponorder_beforecreate_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:00 PM</span>
-						<span class='node-duration'>0h 0m 17s+699ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:24 AM</span>
+						<span class='node-duration'>0h 0m 17s+647ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -872,7 +872,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -883,8 +883,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='22'>
 					<div class='collapsible-header'>
 						<div class='node-name'>couponorder_paymentapply_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:01 PM</span>
-						<span class='node-duration'>0h 0m 17s+444ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:24 AM</span>
+						<span class='node-duration'>0h 0m 17s+427ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -905,7 +905,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -916,8 +916,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='23'>
 					<div class='collapsible-header'>
 						<div class='node-name'>user_coupon_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:02 PM</span>
-						<span class='node-duration'>0h 0m 16s+557ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:25 AM</span>
+						<span class='node-duration'>0h 0m 16s+626ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -937,7 +937,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -948,8 +948,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='24'>
 					<div class='collapsible-header'>
 						<div class='node-name'>user_coupondetail_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:02 PM</span>
-						<span class='node-duration'>0h 0m 16s+355ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:25 AM</span>
+						<span class='node-duration'>0h 0m 16s+458ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -969,7 +969,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -980,8 +980,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='25'>
 					<div class='collapsible-header'>
 						<div class='node-name'>stats_user_share_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:02 PM</span>
-						<span class='node-duration'>0h 0m 16s+182ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:25 AM</span>
+						<span class='node-duration'>0h 0m 16s+353ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1001,7 +1001,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1012,8 +1012,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='26'>
 					<div class='collapsible-header'>
 						<div class='node-name'>coin_share_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:02 PM</span>
-						<span class='node-duration'>0h 0m 15s+644ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:26 AM</span>
+						<span class='node-duration'>0h 0m 15s+892ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1033,7 +1033,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1044,8 +1044,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='27'>
 					<div class='collapsible-header'>
 						<div class='node-name'>coin_status_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:03 PM</span>
-						<span class='node-duration'>0h 0m 15s+160ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:26 AM</span>
+						<span class='node-duration'>0h 0m 15s+388ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1065,7 +1065,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1076,8 +1076,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='28'>
 					<div class='collapsible-header'>
 						<div class='node-name'>coin_check_in_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:03 PM</span>
-						<span class='node-duration'>0h 0m 14s+681ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:27 AM</span>
+						<span class='node-duration'>0h 0m 14s+864ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1097,7 +1097,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1108,8 +1108,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='29'>
 					<div class='collapsible-header'>
 						<div class='node-name'>coindetail_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:04 PM</span>
-						<span class='node-duration'>0h 0m 14s+220ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:27 AM</span>
+						<span class='node-duration'>0h 0m 14s+402ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1129,7 +1129,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1140,8 +1140,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='30'>
 					<div class='collapsible-header'>
 						<div class='node-name'>user_auth_code_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:04 PM</span>
-						<span class='node-duration'>0h 0m 13s+748ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:28 AM</span>
+						<span class='node-duration'>0h 0m 13s+935ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1161,7 +1161,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1172,8 +1172,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='31'>
 					<div class='collapsible-header'>
 						<div class='node-name'>user_change_myprofile_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:05 PM</span>
-						<span class='node-duration'>0h 0m 13s+294ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:28 AM</span>
+						<span class='node-duration'>0h 0m 13s+483ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1193,7 +1193,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1204,8 +1204,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='32'>
 					<div class='collapsible-header'>
 						<div class='node-name'>user_oauth_userinfo_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:05 PM</span>
-						<span class='node-duration'>0h 0m 12s+822ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:29 AM</span>
+						<span class='node-duration'>0h 0m 13s+35ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1225,7 +1225,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1236,8 +1236,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='33'>
 					<div class='collapsible-header'>
 						<div class='node-name'>user_balance_detail_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:06 PM</span>
-						<span class='node-duration'>0h 0m 12s+233ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:29 AM</span>
+						<span class='node-duration'>0h 0m 12s+484ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1257,7 +1257,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1268,8 +1268,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='34'>
 					<div class='collapsible-header'>
 						<div class='node-name'>coin_exchange_list_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:06 PM</span>
-						<span class='node-duration'>0h 0m 11s+793ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:30 AM</span>
+						<span class='node-duration'>0h 0m 11s+967ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1289,7 +1289,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1300,8 +1300,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='35'>
 					<div class='collapsible-header'>
 						<div class='node-name'>coin_exchange_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:07 PM</span>
-						<span class='node-duration'>0h 0m 11s+317ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:30 AM</span>
+						<span class='node-duration'>0h 0m 11s+526ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1321,7 +1321,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1332,8 +1332,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='36'>
 					<div class='collapsible-header'>
 						<div class='node-name'>couponAvailableTrue</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:08 PM</span>
-						<span class='node-duration'>0h 0m 10s+421ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:31 AM</span>
+						<span class='node-duration'>0h 0m 10s+655ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1353,7 +1353,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1364,8 +1364,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='37'>
 					<div class='collapsible-header'>
 						<div class='node-name'>couponHistoryTrue</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:08 PM</span>
-						<span class='node-duration'>0h 0m 9s+940ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:32 AM</span>
+						<span class='node-duration'>0h 0m 10s+118ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1385,7 +1385,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1396,8 +1396,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='38'>
 					<div class='collapsible-header'>
 						<div class='node-name'>couponTrue</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:09 PM</span>
-						<span class='node-duration'>0h 0m 9s+488ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:32 AM</span>
+						<span class='node-duration'>0h 0m 9s+610ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1417,7 +1417,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1428,8 +1428,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='39'>
 					<div class='collapsible-header'>
 						<div class='node-name'>notifivationTrue</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:09 PM</span>
-						<span class='node-duration'>0h 0m 8s+939ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:33 AM</span>
+						<span class='node-duration'>0h 0m 9s+142ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1449,7 +1449,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1460,8 +1460,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='40'>
 					<div class='collapsible-header'>
 						<div class='node-name'>ZoneTrue</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:10 PM</span>
-						<span class='node-duration'>0h 0m 8s+423ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:33 AM</span>
+						<span class='node-duration'>0h 0m 8s+669ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1481,7 +1481,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1492,8 +1492,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='41'>
 					<div class='collapsible-header'>
 						<div class='node-name'>couponActivitybranchlistTrue</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:10 PM</span>
-						<span class='node-duration'>0h 0m 7s+979ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:34 AM</span>
+						<span class='node-duration'>0h 0m 8s+178ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1513,7 +1513,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1524,8 +1524,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='42'>
 					<div class='collapsible-header'>
 						<div class='node-name'>deleteCouponTrue</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:10 PM</span>
-						<span class='node-duration'>0h 0m 7s+861ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:34 AM</span>
+						<span class='node-duration'>0h 0m 8s+73ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1545,7 +1545,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1556,8 +1556,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='43'>
 					<div class='collapsible-header'>
 						<div class='node-name'>commentTrue</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:11 PM</span>
-						<span class='node-duration'>0h 0m 7s+406ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:34 AM</span>
+						<span class='node-duration'>0h 0m 7s+617ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1577,7 +1577,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1588,8 +1588,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='44'>
 					<div class='collapsible-header'>
 						<div class='node-name'>zoneTrue</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:11 PM</span>
-						<span class='node-duration'>0h 0m 6s+867ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:35 AM</span>
+						<span class='node-duration'>0h 0m 7s+111ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1609,7 +1609,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1619,9 +1619,9 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='45'>
 					<div class='collapsible-header'>
-						<div class='node-name'>barginAvatarTrue</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:12 PM</span>
-						<span class='node-duration'>0h 0m 6s+389ms</span>
+						<div class='node-name'>addressInfoTrue</div>						
+						<span class='node-time'>Aug 27, 2019 09:18:35 AM</span>
+						<span class='node-duration'>0h 0m 6s+632ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1641,7 +1641,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1651,9 +1651,9 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='46'>
 					<div class='collapsible-header'>
-						<div class='node-name'>addressInfoTrue</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:12 PM</span>
-						<span class='node-duration'>0h 0m 5s+892ms</span>
+						<div class='node-name'>calcelOrderTrue</div>						
+						<span class='node-time'>Aug 27, 2019 09:18:36 AM</span>
+						<span class='node-duration'>0h 0m 6s+44ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1673,7 +1673,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1683,9 +1683,9 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='47'>
 					<div class='collapsible-header'>
-						<div class='node-name'>calcelOrderTrue</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:13 PM</span>
-						<span class='node-duration'>0h 0m 5s+285ms</span>
+						<div class='node-name'>branchCommentsTrue</div>						
+						<span class='node-time'>Aug 27, 2019 09:18:36 AM</span>
+						<span class='node-duration'>0h 0m 5s+538ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1705,7 +1705,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1715,9 +1715,9 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='48'>
 					<div class='collapsible-header'>
-						<div class='node-name'>branchCommentsTrue</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:13 PM</span>
-						<span class='node-duration'>0h 0m 4s+798ms</span>
+						<div class='node-name'>payment_true</div>						
+						<span class='node-time'>Aug 27, 2019 09:18:37 AM</span>
+						<span class='node-duration'>0h 0m 5s+61ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1737,7 +1737,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1747,9 +1747,9 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='49'>
 					<div class='collapsible-header'>
-						<div class='node-name'>payment_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:14 PM</span>
-						<span class='node-duration'>0h 0m 4s+368ms</span>
+						<div class='node-name'>getpayment_true</div>						
+						<span class='node-time'>Aug 27, 2019 09:18:38 AM</span>
+						<span class='node-duration'>0h 0m 4s+267ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1769,7 +1769,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1779,9 +1779,9 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='50'>
 					<div class='collapsible-header'>
-						<div class='node-name'>getpayment_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:14 PM</span>
-						<span class='node-duration'>0h 0m 3s+672ms</span>
+						<div class='node-name'>order_redeem_with_pin_true</div>						
+						<span class='node-time'>Aug 27, 2019 09:18:38 AM</span>
+						<span class='node-duration'>0h 0m 3s+669ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1801,7 +1801,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1811,41 +1811,9 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='51'>
 					<div class='collapsible-header'>
-						<div class='node-name'>order_redeem_with_pin_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:15 PM</span>
-						<span class='node-duration'>0h 0m 3s+99ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>爱抢购接口测试</span>
-											<span class='category label white-text'>爱抢购接口测试用例(openapi)</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='52'>
-					<div class='collapsible-header'>
 						<div class='node-name'>couponorder_paymentresult_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:16 PM</span>
-						<span class='node-duration'>0h 0m 2s+566ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:39 AM</span>
+						<span class='node-duration'>0h 0m 3s+132ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1866,7 +1834,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1874,11 +1842,11 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 								</div>
 						</div>
 				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='53'>
+				<li class='node level-1 leaf pass' status='pass' test-id='52'>
 					<div class='collapsible-header'>
-						<div class='node-name'>couponRedeembypinTrue</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:16 PM</span>
-						<span class='node-duration'>0h 0m 1s+896ms</span>
+						<div class='node-name'>bargainTodayTrue</div>						
+						<span class='node-time'>Aug 27, 2019 09:18:39 AM</span>
+						<span class='node-duration'>0h 0m 2s+916ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1898,7 +1866,39 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='53'>
+					<div class='collapsible-header'>
+						<div class='node-name'>couponRedeembypinTrue</div>						
+						<span class='node-time'>Aug 27, 2019 09:18:40 AM</span>
+						<span class='node-duration'>0h 0m 1s+822ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>爱抢购接口测试</span>
+											<span class='category label white-text'>爱抢购接口测试用例(openapi)</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1914,14 +1914,14 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='54'>
 					<div class='test-heading'>
 						<span class='test-name'>爱抢购接口测试 : 爱抢购接口测试用例(退出登录)</span>
-						<span class='test-time'>Aug 23, 2019 07:14:16 PM</span>
+						<span class='test-time'>Aug 27, 2019 09:18:40 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 23, 2019 07:14:16 PM</span>
-	<span class='label end-time'>Aug 23, 2019 07:14:18 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+511ms</span>
+	<span class='label start-time'>Aug 27, 2019 09:18:40 AM</span>
+	<span class='label end-time'>Aug 27, 2019 09:18:42 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+483ms</span>
 </div>
 	<div class='test-desc'>Pass: 3 ; Fail: 0 ; Skip: 0 ; </div>
 	<div class='test-attributes'>
@@ -1935,8 +1935,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='55'>
 					<div class='collapsible-header'>
 						<div class='node-name'>user_login_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:16 PM</span>
-						<span class='node-duration'>0h 0m 1s+725ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:40 AM</span>
+						<span class='node-duration'>0h 0m 1s+684ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1957,7 +1957,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1968,8 +1968,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='56'>
 					<div class='collapsible-header'>
 						<div class='node-name'>user_oauth_register_and_login_true</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:17 PM</span>
-						<span class='node-duration'>0h 0m 1s+221ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:41 AM</span>
+						<span class='node-duration'>0h 0m 1s+170ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1990,7 +1990,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -2001,8 +2001,8 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='node level-1 leaf pass' status='pass' test-id='57'>
 					<div class='collapsible-header'>
 						<div class='node-name'>userLogoutTrue</div>						
-						<span class='node-time'>Aug 23, 2019 07:14:17 PM</span>
-						<span class='node-duration'>0h 0m 0s+687ms</span>
+						<span class='node-time'>Aug 27, 2019 09:18:41 AM</span>
+						<span class='node-duration'>0h 0m 0s+681ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -2022,7 +2022,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>7:14:18 PM</td>
+													<td class='timestamp'>9:18:42 AM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -2038,13 +2038,13 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='58'>
 					<div class='test-heading'>
 						<span class='test-name'>爱抢购接口测试 : 消息推送</span>
-						<span class='test-time'>Aug 23, 2019 07:14:18 PM</span>
+						<span class='test-time'>Aug 27, 2019 09:18:42 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 23, 2019 07:14:18 PM</span>
-	<span class='label end-time'>Aug 23, 2019 07:14:18 PM</span>
+	<span class='label start-time'>Aug 27, 2019 09:18:42 AM</span>
+	<span class='label end-time'>Aug 27, 2019 09:18:42 AM</span>
 	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
 </div>
 	<div class='test-desc'>Pass: 0 ; Fail: 0 ; Skip: 0 ; </div>
@@ -2132,292 +2132,292 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 23, 2019 07:13:48 PM</td>
+										<td>Aug 27, 2019 09:18:13 AM</td>
 										<td class='linked' test-id='1'>爱抢购接口测试用例(openapi)</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:16 PM</td>
-										<td class='linked' test-id='2'>爱抢购接口测试用例(openapi).bargainTodayTrue</td>
+										<td>Aug 27, 2019 09:18:40 AM</td>
+										<td class='linked' test-id='2'>爱抢购接口测试用例(openapi).barginAvatarTrue</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:13:49 PM</td>
+										<td>Aug 27, 2019 09:18:13 AM</td>
 										<td class='linked' test-id='3'>爱抢购接口测试用例(openapi).user_login_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:13:52 PM</td>
+										<td>Aug 27, 2019 09:18:16 AM</td>
 										<td class='linked' test-id='4'>爱抢购接口测试用例(openapi).userRefundprogressTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:13:52 PM</td>
+										<td>Aug 27, 2019 09:18:16 AM</td>
 										<td class='linked' test-id='5'>爱抢购接口测试用例(openapi).order_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:13:53 PM</td>
+										<td>Aug 27, 2019 09:18:17 AM</td>
 										<td class='linked' test-id='6'>爱抢购接口测试用例(openapi).item_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:13:53 PM</td>
+										<td>Aug 27, 2019 09:18:17 AM</td>
 										<td class='linked' test-id='7'>爱抢购接口测试用例(openapi).ad_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:13:54 PM</td>
+										<td>Aug 27, 2019 09:18:18 AM</td>
 										<td class='linked' test-id='8'>爱抢购接口测试用例(openapi).user_myprofile_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:13:55 PM</td>
+										<td>Aug 27, 2019 09:18:18 AM</td>
 										<td class='linked' test-id='9'>爱抢购接口测试用例(openapi).appconfig_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:13:55 PM</td>
+										<td>Aug 27, 2019 09:18:19 AM</td>
 										<td class='linked' test-id='10'>爱抢购接口测试用例(openapi).zone_21_categories_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:13:56 PM</td>
+										<td>Aug 27, 2019 09:18:19 AM</td>
 										<td class='linked' test-id='11'>爱抢购接口测试用例(openapi).order_type_redeem_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:13:56 PM</td>
+										<td>Aug 27, 2019 09:18:20 AM</td>
 										<td class='linked' test-id='12'>爱抢购接口测试用例(openapi).user_agreement_change_test</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:13:57 PM</td>
+										<td>Aug 27, 2019 09:18:20 AM</td>
 										<td class='linked' test-id='13'>爱抢购接口测试用例(openapi).item_bargain_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:13:57 PM</td>
+										<td>Aug 27, 2019 09:18:21 AM</td>
 										<td class='linked' test-id='14'>爱抢购接口测试用例(openapi).item_detail_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:13:58 PM</td>
+										<td>Aug 27, 2019 09:18:21 AM</td>
 										<td class='linked' test-id='15'>爱抢购接口测试用例(openapi).order_type_all_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:13:58 PM</td>
+										<td>Aug 27, 2019 09:18:22 AM</td>
 										<td class='linked' test-id='16'>爱抢购接口测试用例(openapi).order_type_to_comment_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:13:59 PM</td>
+										<td>Aug 27, 2019 09:18:23 AM</td>
 										<td class='linked' test-id='17'>爱抢购接口测试用例(openapi).order_type_refund_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:13:59 PM</td>
+										<td>Aug 27, 2019 09:18:23 AM</td>
 										<td class='linked' test-id='18'>爱抢购接口测试用例(openapi).order_detail_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:00 PM</td>
+										<td>Aug 27, 2019 09:18:24 AM</td>
 										<td class='linked' test-id='19'>爱抢购接口测试用例(openapi).coupon_activitylist_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:00 PM</td>
+										<td>Aug 27, 2019 09:18:24 AM</td>
 										<td class='linked' test-id='20'>爱抢购接口测试用例(openapi).coupon_activitydetail_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:00 PM</td>
+										<td>Aug 27, 2019 09:18:24 AM</td>
 										<td class='linked' test-id='21'>爱抢购接口测试用例(openapi).couponorder_beforecreate_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:01 PM</td>
+										<td>Aug 27, 2019 09:18:24 AM</td>
 										<td class='linked' test-id='22'>爱抢购接口测试用例(openapi).couponorder_paymentapply_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:02 PM</td>
+										<td>Aug 27, 2019 09:18:25 AM</td>
 										<td class='linked' test-id='23'>爱抢购接口测试用例(openapi).user_coupon_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:02 PM</td>
+										<td>Aug 27, 2019 09:18:25 AM</td>
 										<td class='linked' test-id='24'>爱抢购接口测试用例(openapi).user_coupondetail_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:02 PM</td>
+										<td>Aug 27, 2019 09:18:25 AM</td>
 										<td class='linked' test-id='25'>爱抢购接口测试用例(openapi).stats_user_share_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:02 PM</td>
+										<td>Aug 27, 2019 09:18:26 AM</td>
 										<td class='linked' test-id='26'>爱抢购接口测试用例(openapi).coin_share_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:03 PM</td>
+										<td>Aug 27, 2019 09:18:26 AM</td>
 										<td class='linked' test-id='27'>爱抢购接口测试用例(openapi).coin_status_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:03 PM</td>
+										<td>Aug 27, 2019 09:18:27 AM</td>
 										<td class='linked' test-id='28'>爱抢购接口测试用例(openapi).coin_check_in_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:04 PM</td>
+										<td>Aug 27, 2019 09:18:27 AM</td>
 										<td class='linked' test-id='29'>爱抢购接口测试用例(openapi).coindetail_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:04 PM</td>
+										<td>Aug 27, 2019 09:18:28 AM</td>
 										<td class='linked' test-id='30'>爱抢购接口测试用例(openapi).user_auth_code_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:05 PM</td>
+										<td>Aug 27, 2019 09:18:28 AM</td>
 										<td class='linked' test-id='31'>爱抢购接口测试用例(openapi).user_change_myprofile_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:05 PM</td>
+										<td>Aug 27, 2019 09:18:29 AM</td>
 										<td class='linked' test-id='32'>爱抢购接口测试用例(openapi).user_oauth_userinfo_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:06 PM</td>
+										<td>Aug 27, 2019 09:18:29 AM</td>
 										<td class='linked' test-id='33'>爱抢购接口测试用例(openapi).user_balance_detail_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:06 PM</td>
+										<td>Aug 27, 2019 09:18:30 AM</td>
 										<td class='linked' test-id='34'>爱抢购接口测试用例(openapi).coin_exchange_list_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:07 PM</td>
+										<td>Aug 27, 2019 09:18:30 AM</td>
 										<td class='linked' test-id='35'>爱抢购接口测试用例(openapi).coin_exchange_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:08 PM</td>
+										<td>Aug 27, 2019 09:18:31 AM</td>
 										<td class='linked' test-id='36'>爱抢购接口测试用例(openapi).couponAvailableTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:08 PM</td>
+										<td>Aug 27, 2019 09:18:32 AM</td>
 										<td class='linked' test-id='37'>爱抢购接口测试用例(openapi).couponHistoryTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:09 PM</td>
+										<td>Aug 27, 2019 09:18:32 AM</td>
 										<td class='linked' test-id='38'>爱抢购接口测试用例(openapi).couponTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:09 PM</td>
+										<td>Aug 27, 2019 09:18:33 AM</td>
 										<td class='linked' test-id='39'>爱抢购接口测试用例(openapi).notifivationTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:10 PM</td>
+										<td>Aug 27, 2019 09:18:33 AM</td>
 										<td class='linked' test-id='40'>爱抢购接口测试用例(openapi).ZoneTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:10 PM</td>
+										<td>Aug 27, 2019 09:18:34 AM</td>
 										<td class='linked' test-id='41'>爱抢购接口测试用例(openapi).couponActivitybranchlistTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:10 PM</td>
+										<td>Aug 27, 2019 09:18:34 AM</td>
 										<td class='linked' test-id='42'>爱抢购接口测试用例(openapi).deleteCouponTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:11 PM</td>
+										<td>Aug 27, 2019 09:18:34 AM</td>
 										<td class='linked' test-id='43'>爱抢购接口测试用例(openapi).commentTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:11 PM</td>
+										<td>Aug 27, 2019 09:18:35 AM</td>
 										<td class='linked' test-id='44'>爱抢购接口测试用例(openapi).zoneTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:12 PM</td>
-										<td class='linked' test-id='45'>爱抢购接口测试用例(openapi).barginAvatarTrue</td>
+										<td>Aug 27, 2019 09:18:35 AM</td>
+										<td class='linked' test-id='45'>爱抢购接口测试用例(openapi).addressInfoTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:12 PM</td>
-										<td class='linked' test-id='46'>爱抢购接口测试用例(openapi).addressInfoTrue</td>
+										<td>Aug 27, 2019 09:18:36 AM</td>
+										<td class='linked' test-id='46'>爱抢购接口测试用例(openapi).calcelOrderTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:13 PM</td>
-										<td class='linked' test-id='47'>爱抢购接口测试用例(openapi).calcelOrderTrue</td>
+										<td>Aug 27, 2019 09:18:36 AM</td>
+										<td class='linked' test-id='47'>爱抢购接口测试用例(openapi).branchCommentsTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:13 PM</td>
-										<td class='linked' test-id='48'>爱抢购接口测试用例(openapi).branchCommentsTrue</td>
+										<td>Aug 27, 2019 09:18:37 AM</td>
+										<td class='linked' test-id='48'>爱抢购接口测试用例(openapi).payment_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:14 PM</td>
-										<td class='linked' test-id='49'>爱抢购接口测试用例(openapi).payment_true</td>
+										<td>Aug 27, 2019 09:18:38 AM</td>
+										<td class='linked' test-id='49'>爱抢购接口测试用例(openapi).getpayment_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:14 PM</td>
-										<td class='linked' test-id='50'>爱抢购接口测试用例(openapi).getpayment_true</td>
+										<td>Aug 27, 2019 09:18:38 AM</td>
+										<td class='linked' test-id='50'>爱抢购接口测试用例(openapi).order_redeem_with_pin_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:15 PM</td>
-										<td class='linked' test-id='51'>爱抢购接口测试用例(openapi).order_redeem_with_pin_true</td>
+										<td>Aug 27, 2019 09:18:39 AM</td>
+										<td class='linked' test-id='51'>爱抢购接口测试用例(openapi).couponorder_paymentresult_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:16 PM</td>
-										<td class='linked' test-id='52'>爱抢购接口测试用例(openapi).couponorder_paymentresult_true</td>
+										<td>Aug 27, 2019 09:18:39 AM</td>
+										<td class='linked' test-id='52'>爱抢购接口测试用例(openapi).bargainTodayTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:16 PM</td>
+										<td>Aug 27, 2019 09:18:40 AM</td>
 										<td class='linked' test-id='53'>爱抢购接口测试用例(openapi).couponRedeembypinTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:16 PM</td>
+										<td>Aug 27, 2019 09:18:40 AM</td>
 										<td class='linked' test-id='54'>爱抢购接口测试用例(退出登录)</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:16 PM</td>
+										<td>Aug 27, 2019 09:18:40 AM</td>
 										<td class='linked' test-id='55'>爱抢购接口测试用例(退出登录).user_login_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:17 PM</td>
+										<td>Aug 27, 2019 09:18:41 AM</td>
 										<td class='linked' test-id='56'>爱抢购接口测试用例(退出登录).user_oauth_register_and_login_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:17 PM</td>
+										<td>Aug 27, 2019 09:18:41 AM</td>
 										<td class='linked' test-id='57'>爱抢购接口测试用例(退出登录).userLogoutTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:18 PM</td>
+										<td>Aug 27, 2019 09:18:42 AM</td>
 										<td class='linked' test-id='58'>消息推送</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -2452,267 +2452,267 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 23, 2019 07:13:48 PM</td>
+										<td>Aug 27, 2019 09:18:13 AM</td>
 										<td class='linked' test-id='1'>爱抢购接口测试用例(openapi)</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:16 PM</td>
-										<td class='linked' test-id='2'>爱抢购接口测试用例(openapi).bargainTodayTrue</td>
+										<td>Aug 27, 2019 09:18:40 AM</td>
+										<td class='linked' test-id='2'>爱抢购接口测试用例(openapi).barginAvatarTrue</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:13:49 PM</td>
+										<td>Aug 27, 2019 09:18:13 AM</td>
 										<td class='linked' test-id='3'>爱抢购接口测试用例(openapi).user_login_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:13:52 PM</td>
+										<td>Aug 27, 2019 09:18:16 AM</td>
 										<td class='linked' test-id='4'>爱抢购接口测试用例(openapi).userRefundprogressTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:13:52 PM</td>
+										<td>Aug 27, 2019 09:18:16 AM</td>
 										<td class='linked' test-id='5'>爱抢购接口测试用例(openapi).order_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:13:53 PM</td>
+										<td>Aug 27, 2019 09:18:17 AM</td>
 										<td class='linked' test-id='6'>爱抢购接口测试用例(openapi).item_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:13:53 PM</td>
+										<td>Aug 27, 2019 09:18:17 AM</td>
 										<td class='linked' test-id='7'>爱抢购接口测试用例(openapi).ad_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:13:54 PM</td>
+										<td>Aug 27, 2019 09:18:18 AM</td>
 										<td class='linked' test-id='8'>爱抢购接口测试用例(openapi).user_myprofile_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:13:55 PM</td>
+										<td>Aug 27, 2019 09:18:18 AM</td>
 										<td class='linked' test-id='9'>爱抢购接口测试用例(openapi).appconfig_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:13:55 PM</td>
+										<td>Aug 27, 2019 09:18:19 AM</td>
 										<td class='linked' test-id='10'>爱抢购接口测试用例(openapi).zone_21_categories_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:13:56 PM</td>
+										<td>Aug 27, 2019 09:18:19 AM</td>
 										<td class='linked' test-id='11'>爱抢购接口测试用例(openapi).order_type_redeem_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:13:56 PM</td>
+										<td>Aug 27, 2019 09:18:20 AM</td>
 										<td class='linked' test-id='12'>爱抢购接口测试用例(openapi).user_agreement_change_test</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:13:57 PM</td>
+										<td>Aug 27, 2019 09:18:20 AM</td>
 										<td class='linked' test-id='13'>爱抢购接口测试用例(openapi).item_bargain_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:13:57 PM</td>
+										<td>Aug 27, 2019 09:18:21 AM</td>
 										<td class='linked' test-id='14'>爱抢购接口测试用例(openapi).item_detail_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:13:58 PM</td>
+										<td>Aug 27, 2019 09:18:21 AM</td>
 										<td class='linked' test-id='15'>爱抢购接口测试用例(openapi).order_type_all_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:13:58 PM</td>
+										<td>Aug 27, 2019 09:18:22 AM</td>
 										<td class='linked' test-id='16'>爱抢购接口测试用例(openapi).order_type_to_comment_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:13:59 PM</td>
+										<td>Aug 27, 2019 09:18:23 AM</td>
 										<td class='linked' test-id='17'>爱抢购接口测试用例(openapi).order_type_refund_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:13:59 PM</td>
+										<td>Aug 27, 2019 09:18:23 AM</td>
 										<td class='linked' test-id='18'>爱抢购接口测试用例(openapi).order_detail_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:00 PM</td>
+										<td>Aug 27, 2019 09:18:24 AM</td>
 										<td class='linked' test-id='19'>爱抢购接口测试用例(openapi).coupon_activitylist_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:00 PM</td>
+										<td>Aug 27, 2019 09:18:24 AM</td>
 										<td class='linked' test-id='20'>爱抢购接口测试用例(openapi).coupon_activitydetail_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:00 PM</td>
+										<td>Aug 27, 2019 09:18:24 AM</td>
 										<td class='linked' test-id='21'>爱抢购接口测试用例(openapi).couponorder_beforecreate_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:01 PM</td>
+										<td>Aug 27, 2019 09:18:24 AM</td>
 										<td class='linked' test-id='22'>爱抢购接口测试用例(openapi).couponorder_paymentapply_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:02 PM</td>
+										<td>Aug 27, 2019 09:18:25 AM</td>
 										<td class='linked' test-id='23'>爱抢购接口测试用例(openapi).user_coupon_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:02 PM</td>
+										<td>Aug 27, 2019 09:18:25 AM</td>
 										<td class='linked' test-id='24'>爱抢购接口测试用例(openapi).user_coupondetail_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:02 PM</td>
+										<td>Aug 27, 2019 09:18:25 AM</td>
 										<td class='linked' test-id='25'>爱抢购接口测试用例(openapi).stats_user_share_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:02 PM</td>
+										<td>Aug 27, 2019 09:18:26 AM</td>
 										<td class='linked' test-id='26'>爱抢购接口测试用例(openapi).coin_share_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:03 PM</td>
+										<td>Aug 27, 2019 09:18:26 AM</td>
 										<td class='linked' test-id='27'>爱抢购接口测试用例(openapi).coin_status_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:03 PM</td>
+										<td>Aug 27, 2019 09:18:27 AM</td>
 										<td class='linked' test-id='28'>爱抢购接口测试用例(openapi).coin_check_in_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:04 PM</td>
+										<td>Aug 27, 2019 09:18:27 AM</td>
 										<td class='linked' test-id='29'>爱抢购接口测试用例(openapi).coindetail_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:04 PM</td>
+										<td>Aug 27, 2019 09:18:28 AM</td>
 										<td class='linked' test-id='30'>爱抢购接口测试用例(openapi).user_auth_code_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:05 PM</td>
+										<td>Aug 27, 2019 09:18:28 AM</td>
 										<td class='linked' test-id='31'>爱抢购接口测试用例(openapi).user_change_myprofile_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:05 PM</td>
+										<td>Aug 27, 2019 09:18:29 AM</td>
 										<td class='linked' test-id='32'>爱抢购接口测试用例(openapi).user_oauth_userinfo_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:06 PM</td>
+										<td>Aug 27, 2019 09:18:29 AM</td>
 										<td class='linked' test-id='33'>爱抢购接口测试用例(openapi).user_balance_detail_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:06 PM</td>
+										<td>Aug 27, 2019 09:18:30 AM</td>
 										<td class='linked' test-id='34'>爱抢购接口测试用例(openapi).coin_exchange_list_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:07 PM</td>
+										<td>Aug 27, 2019 09:18:30 AM</td>
 										<td class='linked' test-id='35'>爱抢购接口测试用例(openapi).coin_exchange_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:08 PM</td>
+										<td>Aug 27, 2019 09:18:31 AM</td>
 										<td class='linked' test-id='36'>爱抢购接口测试用例(openapi).couponAvailableTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:08 PM</td>
+										<td>Aug 27, 2019 09:18:32 AM</td>
 										<td class='linked' test-id='37'>爱抢购接口测试用例(openapi).couponHistoryTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:09 PM</td>
+										<td>Aug 27, 2019 09:18:32 AM</td>
 										<td class='linked' test-id='38'>爱抢购接口测试用例(openapi).couponTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:09 PM</td>
+										<td>Aug 27, 2019 09:18:33 AM</td>
 										<td class='linked' test-id='39'>爱抢购接口测试用例(openapi).notifivationTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:10 PM</td>
+										<td>Aug 27, 2019 09:18:33 AM</td>
 										<td class='linked' test-id='40'>爱抢购接口测试用例(openapi).ZoneTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:10 PM</td>
+										<td>Aug 27, 2019 09:18:34 AM</td>
 										<td class='linked' test-id='41'>爱抢购接口测试用例(openapi).couponActivitybranchlistTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:10 PM</td>
+										<td>Aug 27, 2019 09:18:34 AM</td>
 										<td class='linked' test-id='42'>爱抢购接口测试用例(openapi).deleteCouponTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:11 PM</td>
+										<td>Aug 27, 2019 09:18:34 AM</td>
 										<td class='linked' test-id='43'>爱抢购接口测试用例(openapi).commentTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:11 PM</td>
+										<td>Aug 27, 2019 09:18:35 AM</td>
 										<td class='linked' test-id='44'>爱抢购接口测试用例(openapi).zoneTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:12 PM</td>
-										<td class='linked' test-id='45'>爱抢购接口测试用例(openapi).barginAvatarTrue</td>
+										<td>Aug 27, 2019 09:18:35 AM</td>
+										<td class='linked' test-id='45'>爱抢购接口测试用例(openapi).addressInfoTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:12 PM</td>
-										<td class='linked' test-id='46'>爱抢购接口测试用例(openapi).addressInfoTrue</td>
+										<td>Aug 27, 2019 09:18:36 AM</td>
+										<td class='linked' test-id='46'>爱抢购接口测试用例(openapi).calcelOrderTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:13 PM</td>
-										<td class='linked' test-id='47'>爱抢购接口测试用例(openapi).calcelOrderTrue</td>
+										<td>Aug 27, 2019 09:18:36 AM</td>
+										<td class='linked' test-id='47'>爱抢购接口测试用例(openapi).branchCommentsTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:13 PM</td>
-										<td class='linked' test-id='48'>爱抢购接口测试用例(openapi).branchCommentsTrue</td>
+										<td>Aug 27, 2019 09:18:37 AM</td>
+										<td class='linked' test-id='48'>爱抢购接口测试用例(openapi).payment_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:14 PM</td>
-										<td class='linked' test-id='49'>爱抢购接口测试用例(openapi).payment_true</td>
+										<td>Aug 27, 2019 09:18:38 AM</td>
+										<td class='linked' test-id='49'>爱抢购接口测试用例(openapi).getpayment_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:14 PM</td>
-										<td class='linked' test-id='50'>爱抢购接口测试用例(openapi).getpayment_true</td>
+										<td>Aug 27, 2019 09:18:38 AM</td>
+										<td class='linked' test-id='50'>爱抢购接口测试用例(openapi).order_redeem_with_pin_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:15 PM</td>
-										<td class='linked' test-id='51'>爱抢购接口测试用例(openapi).order_redeem_with_pin_true</td>
+										<td>Aug 27, 2019 09:18:39 AM</td>
+										<td class='linked' test-id='51'>爱抢购接口测试用例(openapi).couponorder_paymentresult_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:16 PM</td>
-										<td class='linked' test-id='52'>爱抢购接口测试用例(openapi).couponorder_paymentresult_true</td>
+										<td>Aug 27, 2019 09:18:39 AM</td>
+										<td class='linked' test-id='52'>爱抢购接口测试用例(openapi).bargainTodayTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:16 PM</td>
+										<td>Aug 27, 2019 09:18:40 AM</td>
 										<td class='linked' test-id='53'>爱抢购接口测试用例(openapi).couponRedeembypinTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -2746,12 +2746,12 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 23, 2019 07:13:49 PM</td>
+										<td>Aug 27, 2019 09:18:13 AM</td>
 										<td class='linked' test-id='3'>爱抢购接口测试用例(openapi).user_login_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:16 PM</td>
+										<td>Aug 27, 2019 09:18:40 AM</td>
 										<td class='linked' test-id='55'>爱抢购接口测试用例(退出登录).user_login_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -2785,13 +2785,13 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 23, 2019 07:13:52 PM</td>
+										<td>Aug 27, 2019 09:18:16 AM</td>
 										<td class='linked' test-id='4'>爱抢购接口测试用例(openapi).userRefundprogressTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:16 PM</td>
-										<td class='linked' test-id='52'>爱抢购接口测试用例(openapi).couponorder_paymentresult_true</td>
+										<td>Aug 27, 2019 09:18:39 AM</td>
+										<td class='linked' test-id='51'>爱抢购接口测试用例(openapi).couponorder_paymentresult_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -2824,7 +2824,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 23, 2019 07:13:52 PM</td>
+										<td>Aug 27, 2019 09:18:16 AM</td>
 										<td class='linked' test-id='5'>爱抢购接口测试用例(openapi).order_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -2858,7 +2858,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 23, 2019 07:13:57 PM</td>
+										<td>Aug 27, 2019 09:18:20 AM</td>
 										<td class='linked' test-id='13'>爱抢购接口测试用例(openapi).item_bargain_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -2892,7 +2892,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 23, 2019 07:14:01 PM</td>
+										<td>Aug 27, 2019 09:18:24 AM</td>
 										<td class='linked' test-id='22'>爱抢购接口测试用例(openapi).couponorder_paymentapply_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -2926,22 +2926,22 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 23, 2019 07:14:16 PM</td>
+										<td>Aug 27, 2019 09:18:40 AM</td>
 										<td class='linked' test-id='54'>爱抢购接口测试用例(退出登录)</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:16 PM</td>
+										<td>Aug 27, 2019 09:18:40 AM</td>
 										<td class='linked' test-id='55'>爱抢购接口测试用例(退出登录).user_login_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:17 PM</td>
+										<td>Aug 27, 2019 09:18:41 AM</td>
 										<td class='linked' test-id='56'>爱抢购接口测试用例(退出登录).user_oauth_register_and_login_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 23, 2019 07:14:17 PM</td>
+										<td>Aug 27, 2019 09:18:41 AM</td>
 										<td class='linked' test-id='57'>爱抢购接口测试用例(退出登录).userLogoutTrue</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -2975,7 +2975,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 23, 2019 07:14:17 PM</td>
+										<td>Aug 27, 2019 09:18:41 AM</td>
 										<td class='linked' test-id='56'>爱抢购接口测试用例(退出登录).user_oauth_register_and_login_true</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -3009,7 +3009,7 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 23, 2019 07:14:18 PM</td>
+										<td>Aug 27, 2019 09:18:42 AM</td>
 										<td class='linked' test-id='58'>消息推送</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -3072,21 +3072,21 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Aug 23, 2019 07:14:16 PM</td>
-                                                        <td class='linked' test-id='2'>爱抢购接口测试用例(openapi).bargainTodayTrue</td>
+                                                        <td>Aug 27, 2019 09:18:40 AM</td>
+                                                        <td class='linked' test-id='2'>爱抢购接口测试用例(openapi).barginAvatarTrue</td>
                                                         <td><pre><pre>java.lang.AssertionError: 
 json解析错误;
 报错的代码:org.json.JSONException: JSONObject["data"] not found.
-请求的url:https://m.betaapi.iqianggou.com/api/item/bargain/today
-参数：version=5.7.0&lng=121.463&lat=31.234
-cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01][domain: .iqianggou.com][path: /][expiry: Sun Sep 22 19:13:52 CST 2019]]
-接口返回：{"status":{"code":10001,"message":"没有找到您请求的数据","alert":"","server_time":1566558856}}
+请求的url:https://m.betaapi.iqianggou.com/api/today_bargin/use_avatar
+参数：version=5.7.0&lng=121.463&lat=31.234&zone_id=21&campaign_branch_id=728591
+cookie：[[version: 0][name: PHPSESSID][value: 34ff83598baa272740e9680f5233bd03][domain: .iqianggou.com][path: /][expiry: Thu Sep 26 09:18:16 CST 2019]]
+接口返回：{"status":{"code":10001,"message":"没有找到您请求的数据","alert":"","server_time":1566868720}}
 《-------------------------分割线-------------------------》
 	at org.testng.Assert.fail(Assert.java:94)
 	at com.duoweidu.config.generalAssert.GeneralAssertChannel.jsonAssert(GeneralAssertChannel.java:269)
 	at com.duoweidu.config.generalAssert.GeneralAssert.jsonAssert(GeneralAssert.java:119)
-	at com.duoweidu.cases.interfaces.IqgInterfaceTest.generalAssertTest(IqgInterfaceTest.java:110)
-	at com.duoweidu.cases.iqg.openapi.BargainToday.bargainTodayTrue(BargainToday.java:16)
+	at com.duoweidu.cases.interfaces.IqgInterfaceTest.generalAssertTest(IqgInterfaceTest.java:89)
+	at com.duoweidu.cases.iqg.openapi.BarginAvatar.barginAvatarTrue(BarginAvatar.java:17)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -3149,19 +3149,19 @@ cookie：[[version: 0][name: PHPSESSID][value: 47953e3429ed496361cfecf45efcda01]
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug 23, 2019 07:13:48 PM</div>
+					<div class='panel-lead'>Aug 27, 2019 09:18:13 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug 23, 2019 07:14:16 PM</div>
+			 		<div class='panel-lead'>Aug 27, 2019 09:18:40 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>27,940ms</div>
+					<div class='panel-lead'>27,298ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
