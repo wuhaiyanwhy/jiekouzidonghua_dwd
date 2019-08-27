@@ -1,7 +1,7 @@
 package com.duoweidu.cases.fyb.openapi;
 
 import com.duoweidu.cases.interfaces.FybInterfaceTest;
-import com.duoweidu.config.TraverseConfig;
+import com.duoweidu.utils.TraverseResult;
 import com.duoweidu.config.sql.SqlDetail;
 import com.duoweidu.model.fyb.UserUpdateaddressData;
 import org.apache.http.NameValuePair;
@@ -35,7 +35,7 @@ public class UserUpdateaddress extends FybInterfaceTest {
     }
 
     private void detailAssert() {
-        Map<String, Object> mapData = TraverseConfig.traverseObj(model);
+        Map<String, Object> mapData = TraverseResult.traverseObj(model);
         for (Map.Entry<String, Object> entry:
              mapData.entrySet()) {
             assertNotEmpty(entry.getKey(), entry.getValue());

@@ -1,11 +1,8 @@
 package com.duoweidu.cases.fyb.openapi;
 
 import com.duoweidu.cases.interfaces.FybInterfaceTest;
-import com.duoweidu.config.TraverseConfig;
 import com.duoweidu.model.fyb.CommonNoticestatusData;
 import org.testng.annotations.Test;
-
-import java.util.Map;
 
 public class CommonNoticestatus extends FybInterfaceTest {
 

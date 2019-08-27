@@ -2,7 +2,7 @@ package com.duoweidu.cases.msf.openapi;
 
 import com.duoweidu.cases.interfaces.MsfInterfaceTest;
 import com.duoweidu.config.MsfConfig;
-import com.duoweidu.config.TraverseConfig;
+import com.duoweidu.utils.TraverseResult;
 import com.duoweidu.model.msf.ArticleCreatecommentData;
 import com.duoweidu.utils.ConfigFileUrl;
 import org.apache.http.NameValuePair;
@@ -34,7 +34,7 @@ public class ArticleCreatecomment extends MsfInterfaceTest {
     }
 
     private void detailAssert() {
-        Map<String, Object> mapData = TraverseConfig.traverseObj(model);
+        Map<String, Object> mapData = TraverseResult.traverseObj(model);
         for (Map.Entry<String, Object> entry:
              mapData.entrySet()) {
             assertNotNull(entry.getKey(), entry.getValue());
