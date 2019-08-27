@@ -13,8 +13,8 @@ public class BarginAvatar extends IqgInterfaceTest {
         param = "zone_id=" + SqlDetail.getInstance().getParamValue(0, "zone_id") +
                 "&campaign_branch_id=" + SqlDetail.getInstance().getParamValue(2, "activityId");
         process(false,false);
-        if ("beta".equals(ConfigFileUrl.getEnv())) {
-            generalAssertTest(false);
-        }
+//        if ("beta".equals(ConfigFileUrl.getEnv())) {
+//            generalAssertTest(false);
+//        }
     }
 }
