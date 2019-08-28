@@ -1199,7 +1199,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
         detailAssertTest("第4件减1元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(2)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(2));
         detailAssertTest(1300, "packageInfo.itemList.get(0).discountActivity.discountPinPrice.discountSinglePrice", model.packageInfo.itemList.get(0).discountActivity.discountPinPrice.discountSinglePrice);
         detailAssertTest(700, "packageInfo.itemList.get(0).discountActivity.discountPinPrice.discountGroupPrice", model.packageInfo.itemList.get(0).discountActivity.discountPinPrice.discountGroupPrice);
-        detailAssertTest("-7元", "packageInfo.itemList.get(0).discountActivity.latelyDoubleTips", model.packageInfo.itemList.get(0).discountActivity.latelyDoubleTips);
+        detailAssertTest("- ¥ 7.00", "packageInfo.itemList.get(0).discountActivity.latelyDoubleTips", model.packageInfo.itemList.get(0).discountActivity.latelyDoubleTips);
         detailAssertTest(700, "packageInfo.doubleDiscount", model.packageInfo.doubleDiscount);
 
     }
