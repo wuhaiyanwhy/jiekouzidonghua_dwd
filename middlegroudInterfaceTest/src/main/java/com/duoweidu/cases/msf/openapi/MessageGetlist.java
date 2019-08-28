@@ -26,7 +26,7 @@ public class MessageGetlist extends MsfInterfaceTest {
                 assertNotEmpty("list.get(i).title", model.list.get(i).title);
                 assertNotNull("list.get(i).content", model.list.get(i).content);
                 assertNotEmpty("list.get(i).type", model.list.get(i).type);
-                assertNotEmpty("list.get(i).related_id", model.list.get(i).related_id);
+                assertNotNull("list.get(i).related_id", model.list.get(i).related_id);
                 assertNotEmpty("list.get(i).status", model.list.get(i).status);
                 assertNotEmpty("list.get(i).publish_at", model.list.get(i).publish_at);
                 assertNotEmpty("list.get(i).created_at", model.list.get(i).created_at);

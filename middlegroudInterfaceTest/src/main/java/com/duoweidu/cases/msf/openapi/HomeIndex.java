@@ -49,7 +49,7 @@ public class HomeIndex extends MsfInterfaceTest {
             assertNotEmpty("article.list.get(i).user_id", model.article.list.get(i).user_id);
             assertNotEmpty("article.list.get(i).user_nickname", model.article.list.get(i).user_nickname);
             assertNotEmpty("article.list.get(i).user_avatar", model.article.list.get(i).user_avatar);
-            assertNotEmpty("article.list.get(i).quality_user", model.article.list.get(i).quality_user);
+            assertNotNull("article.list.get(i).quality_user", model.article.list.get(i).quality_user);
             assertNotEmpty("article.list.get(i).likes_num", model.article.list.get(i).likes_num);
             assertNotEmpty("article.list.get(i).likes_status", model.article.list.get(i).likes_status);
         }
