@@ -11,4 +11,6 @@ public class UserRiskpreventcheatData {
         public String risk_type;
         public String pid;
     }
+
+    public int riskgo_switch;
 }
