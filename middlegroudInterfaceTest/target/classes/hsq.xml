@@ -202,6 +202,12 @@
                 </methods>
             </class>
 
+            <!--风险预防反作弊-->
+            <class name="com.duoweidu.cases.hsq.openapi.UserRiskpreventcheat">
+                <methods>
+                    <include name="userRiskpreventcheat"/>
+                </methods>
+            </class>
             <!--用户Riskgo评分回传-->
             <class name="com.duoweidu.cases.hsq.openapi.UserAddusergradeTest">
                 <methods>
@@ -223,12 +229,6 @@
                 </methods>
             </class>
 
-            <!--风险预防反作弊-->
-            <class name="com.duoweidu.cases.hsq.openapi.UserRiskpreventcheat">
-                <methods>
-                    <include name="userRiskpreventcheat"/>
-                </methods>
-            </class>
         </classes>
     </test>
 
