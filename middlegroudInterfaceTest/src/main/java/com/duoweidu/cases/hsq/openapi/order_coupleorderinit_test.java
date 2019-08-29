@@ -656,7 +656,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
             detailAssertTest(2, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
             detailAssertTest(1, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
             detailAssertTest(3, "packageInfo.itemList.get(0).marketPrice", model.packageInfo.itemList.get(0).marketPrice);
-            detailAssertTest(0, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
+            detailAssertTest(2, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
             detailAssertTest(60627, "packageInfo.itemList.get(0).pinActivitiesId", model.packageInfo.itemList.get(0).pinActivitiesId);
             detailAssertTest("3", "packageInfo.itemList.get(0).orderType", model.packageInfo.itemList.get(0).orderType);
             detailAssertTest(85486, "packageInfo.itemList.get(0).skuList.get(0).id", model.packageInfo.itemList.get(0).skuList.get(0).id);
