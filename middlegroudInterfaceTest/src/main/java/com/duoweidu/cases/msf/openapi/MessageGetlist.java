@@ -31,15 +31,15 @@ public class MessageGetlist extends MsfInterfaceTest {
                 assertNotEmpty("list.get(i).publish_at", model.list.get(i).publish_at);
                 assertNotEmpty("list.get(i).created_at", model.list.get(i).created_at);
                 assertNotEmpty("list.get(i).updated_at", model.list.get(i).updated_at);
-                assertNotEmpty("list.get(i).article_id", model.list.get(i).article_id);
-                assertNotEmpty("list.get(i).article_title", model.list.get(i).article_title);
-                assertNotEmpty("list.get(i).article_pic", model.list.get(i).article_pic);
+                assertNotNull("list.get(i).article_id", model.list.get(i).article_id);
+//                assertNotNull("list.get(i).article_title", model.list.get(i).article_title);
+//                assertNotNull("list.get(i).article_pic", model.list.get(i).article_pic);
                 assertNotNull("list.get(i).article_pic_width", model.list.get(i).article_pic_width);
                 assertNotNull("list.get(i).article_pic_height", model.list.get(i).article_pic_height);
-                assertNotEmpty("list.get(i).article_status", model.list.get(i).article_status);
-                assertNotEmpty("list.get(i).media_type", model.list.get(i).media_type);
-                assertNotEmpty("list.get(i).sender_nickname", model.list.get(i).sender_nickname);
-                assertNotEmpty("list.get(i).sender_avatar", model.list.get(i).sender_avatar);
+                assertNotNull("list.get(i).article_status", model.list.get(i).article_status);
+                assertNotNull("list.get(i).media_type", model.list.get(i).media_type);
+                assertNotNull("list.get(i).sender_nickname", model.list.get(i).sender_nickname);
+                assertNotNull("list.get(i).sender_avatar", model.list.get(i).sender_avatar);
                 assertNotNull("list.get(i).sender_introduction", model.list.get(i).sender_introduction);
                 assertNotNull("list.get(i).sender_quality_user", model.list.get(i).sender_quality_user);
             }

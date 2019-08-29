@@ -48,7 +48,7 @@ public class CommonZonelist extends MsfInterfaceTest {
             assertNotEmpty("hotlist.get(i).first_pin_yin", model.hotlist.get(i).first_pin_yin);
             assertNotEmpty("hotlist.get(i).is_hot", model.hotlist.get(i).is_hot);
             assertNotEmpty("hotlist.get(i).status", model.hotlist.get(i).status);
-            assertNotEmpty("hotlist.get(i).cover", model.hotlist.get(i).cover);
+            assertNotNull("hotlist.get(i).cover", model.hotlist.get(i).cover);
             assertNotEmpty("hotlist.get(i).province_name", model.hotlist.get(i).province_name);
         }
     }
