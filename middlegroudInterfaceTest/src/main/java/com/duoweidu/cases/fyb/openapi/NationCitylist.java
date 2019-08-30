@@ -1,7 +1,7 @@
 package com.duoweidu.cases.fyb.openapi;
 
 import com.duoweidu.cases.interfaces.FybInterfaceTest;
-import com.duoweidu.config.TraverseConfig;
+import com.duoweidu.utils.TraverseResult;
 import com.duoweidu.model.fyb.NationCitylistData;
 import org.testng.annotations.Test;
 
@@ -21,7 +21,7 @@ public class NationCitylist extends FybInterfaceTest {
     }
 
     private void detailAssert() {
-        Map<String, Object> mapList = TraverseConfig.traverseCollection(model.list);
+        Map<String, Object> mapList = TraverseResult.traverseCollection(model.list);
         for (Map.Entry<String, Object> entry:
              mapList.entrySet()) {
             assertNotEmpty(entry.getKey(), entry.getValue());

@@ -1,7 +1,7 @@
 package com.duoweidu.cases.fyb.openapi;
 
 import com.duoweidu.cases.interfaces.FybInterfaceTest;
-import com.duoweidu.config.TraverseConfig;
+import com.duoweidu.utils.TraverseResult;
 import com.duoweidu.model.fyb.UserGetuserinviteinfoData;
 import org.testng.annotations.Test;
 
@@ -21,8 +21,8 @@ public class UserGetuserinviteinfo extends FybInterfaceTest {
     }
 
     private void detailAssert() {
-        Map<String, Object> mapData = TraverseConfig.traverseObj(model);
-        Map<String, Object> mapUserInfo = TraverseConfig.traverseObj(model.userInfo);
+        Map<String, Object> mapData = TraverseResult.traverseObj(model);
+        Map<String, Object> mapUserInfo = TraverseResult.traverseObj(model.userInfo);
 
         for (Map.Entry<String, Object> entry:
              mapData.entrySet()) {

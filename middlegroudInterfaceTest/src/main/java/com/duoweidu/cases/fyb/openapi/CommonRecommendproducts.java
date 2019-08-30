@@ -1,7 +1,7 @@
 package com.duoweidu.cases.fyb.openapi;
 
 import com.duoweidu.cases.interfaces.FybInterfaceTest;
-import com.duoweidu.config.TraverseConfig;
+import com.duoweidu.utils.TraverseResult;
 import com.duoweidu.model.fyb.CommonRecommendproductsData;
 import org.testng.annotations.Test;
 
@@ -21,13 +21,13 @@ public class CommonRecommendproducts extends FybInterfaceTest {
     }
 
     private void detailAssert() {
-        Map<String, Object> mapList = TraverseConfig.traverseCollection(model.list);
-        Map<String, Object> mapHasReturnList = TraverseConfig.traverseCollection(model.hasReturnList);
-        Map<String, Object> mapBannerList = TraverseConfig.traverseCollection(model.bannerList);
-        Map<String, Object> mapTopNavigateList = TraverseConfig.traverseCollection(model.topNavigateList);
-        Map<String, Object> mapIcon = TraverseConfig.traverseCollection(model.icon);
-        Map<String, Object> mapTodayHot = TraverseConfig.traverseCollection(model.todayHot);
-        Map<String, Object> mapAdvertisement = TraverseConfig.traverseCollection(model.advertisement);
+        Map<String, Object> mapList = TraverseResult.traverseCollection(model.list);
+        Map<String, Object> mapHasReturnList = TraverseResult.traverseCollection(model.hasReturnList);
+        Map<String, Object> mapBannerList = TraverseResult.traverseCollection(model.bannerList);
+        Map<String, Object> mapTopNavigateList = TraverseResult.traverseCollection(model.topNavigateList);
+        Map<String, Object> mapIcon = TraverseResult.traverseCollection(model.icon);
+        Map<String, Object> mapTodayHot = TraverseResult.traverseCollection(model.todayHot);
+        Map<String, Object> mapAdvertisement = TraverseResult.traverseCollection(model.advertisement);
         for (Map.Entry<String, Object> entry:
                 mapList.entrySet()) {
             System.out.println("key:" + entry.getKey() + " value:" + entry.getValue());
