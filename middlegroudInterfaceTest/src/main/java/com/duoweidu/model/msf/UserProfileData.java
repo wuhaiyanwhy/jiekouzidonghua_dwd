@@ -19,9 +19,13 @@ public class UserProfileData {
     public boolean is_followed;
     public String about_daily_bonus;
     public ArticleModel article;
+    public ArticleTabNumModel article_tab_num;
 
     public static class ArticleModel {
         public ArrayList<ListModel> list;
+        public int total_page;
+        public int total_cnt;
+        public int page_limit;
 
         public static class ListModel {
             public int id;
@@ -30,9 +34,19 @@ public class UserProfileData {
             public int width;
             public int height;
             public int media_type;
-            public int user_id;
+            public String user_id;
+            public String user_nickname;
+            public String user_avatar;
+            public int quality_user;
+            public int likes_num;
+            public boolean likes_status;
 
         }
+    }
+
+    public static class ArticleTabNumModel {
+        public int favorite_num;
+        public int article_num;
     }
 
 }
