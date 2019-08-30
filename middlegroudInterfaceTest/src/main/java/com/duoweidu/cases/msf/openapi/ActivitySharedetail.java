@@ -38,7 +38,7 @@ public class ActivitySharedetail extends MsfInterfaceTest {
         assertNotEmpty("branch.id", model.branch.id);
         assertNotEmpty("branch.branch_name", model.branch.branch_name);
         assertNotEmpty("branch.branch_head_pic", model.branch.branch_head_pic);
-        assertNotEmpty("branch.description", model.branch.description);
+        assertNotNull("branch.description", model.branch.description);
         assertNotEmpty("branch.address", model.branch.address);
         assertNotNull("branch.address_short", model.branch.address_short);
         assertNotNull("branch.phone", model.branch.phone);

@@ -29,7 +29,7 @@ public class OrderList extends MsfInterfaceTest {
             assertNotEmpty("list.get(i).expire_time", model.list.get(i).expire_time);
             assertNotEmpty("list.get(i).redeem_time", model.list.get(i).redeem_time);
             assertNotNull("list.get(i).status", model.list.get(i).status);
-            assertNotEmpty("list.get(i).article_id", model.list.get(i).article_id);
+            assertNotNull("list.get(i).article_id", model.list.get(i).article_id);
             assertNotEmpty("list.get(i).item_id", model.list.get(i).item_id);
             assertNotEmpty("list.get(i).item_name", model.list.get(i).item_name);
             assertNotEmpty("list.get(i).item_pic", model.list.get(i).item_pic);

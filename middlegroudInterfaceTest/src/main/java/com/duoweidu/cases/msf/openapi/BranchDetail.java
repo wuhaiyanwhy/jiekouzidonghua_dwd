@@ -27,7 +27,7 @@ public class BranchDetail extends MsfInterfaceTest {
         assertNotEmpty("contactor", model.contactor);
         assertNotNull("phone", model.phone);
         assertNotNull("mobile", model.mobile);
-        assertNotEmpty("contract_no", model.contract_no);
+        assertNotNull("contract_no", model.contract_no);
         assertNotNull("hygienic_license", model.hygienic_license);
         assertNotEmpty("lng", model.lng);
         assertNotEmpty("lat", model.lat);

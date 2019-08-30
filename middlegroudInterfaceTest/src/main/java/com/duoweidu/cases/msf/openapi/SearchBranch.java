@@ -30,8 +30,8 @@ public class SearchBranch extends MsfInterfaceTest {
             assertNotEmpty("list.get(i).lat", model.list.get(i).lat);
             assertNotEmpty("list.get(i).address", model.list.get(i).address);
             assertNotNull("list.get(i).cbd_id", model.list.get(i).cbd_id);
-            assertNotEmpty("list.get(i).zone_id", model.list.get(i).zone_id);
-            assertNotEmpty("list.get(i).cat_id", model.list.get(i).cat_id);
+            assertNotNull("list.get(i).zone_id", model.list.get(i).zone_id);
+            assertNotNull("list.get(i).cat_id", model.list.get(i).cat_id);
             assertNotNull("list.get(i).description", model.list.get(i).description);
             assertNotEmpty("list.get(i).status", model.list.get(i).status);
             assertNotEmpty("list.get(i).created_at", model.list.get(i).created_at);

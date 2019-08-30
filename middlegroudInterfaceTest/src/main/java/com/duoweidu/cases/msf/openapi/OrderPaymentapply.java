@@ -24,12 +24,14 @@ public class OrderPaymentapply extends MsfInterfaceTest {
         list.add(new BasicNameValuePair("activity_id", SqlDetail.getInstance().getParamValue(2, "pay_activity_id")));
         list.add(new BasicNameValuePair("pay_channel_id",SqlDetail.getInstance().getParamValue(0, "pay_channel_id")));
         process(list,false,false);
-        generalAssertTest(false);
-        model = sparseJson(OrderPaymentapplyData.class);
-        detailAssert();
-        SqlDetail.getInstance().msfUpdateOrder();
-        MsfConfig.orderId = String.valueOf(model.order_id);
-        MsfConfig.tradeNo = model.trade_no;
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            generalAssertTest(false);
+            model = sparseJson(OrderPaymentapplyData.class);
+            detailAssert();
+            SqlDetail.getInstance().msfUpdateOrder();
+            MsfConfig.orderId = String.valueOf(model.order_id);
+            MsfConfig.tradeNo = model.trade_no;
+        }
     }
 
     private void detailAssert() {

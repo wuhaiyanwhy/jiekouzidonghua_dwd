@@ -23,7 +23,7 @@ public class UserFollowlist extends MsfInterfaceTest {
             assertNotEmpty("list.get(i).user_type", model.list.get(i).user_type);
             assertNotEmpty("list.get(i).nickname", model.list.get(i).nickname);
             assertNotEmpty("list.get(i).avatar", model.list.get(i).avatar);
-            assertNotEmpty("list.get(i).introduction", model.list.get(i).introduction);
+            assertNotNull("list.get(i).introduction", model.list.get(i).introduction);
             assertNotNull("list.get(i).article_num", model.list.get(i).article_num);
             assertNotNull("list.get(i).fans_num", model.list.get(i).fans_num);
             assertNotEmpty("list.get(i).followed", model.list.get(i).followed);
