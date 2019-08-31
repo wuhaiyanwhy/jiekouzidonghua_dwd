@@ -33,8 +33,8 @@ public class ArticleArticlelist extends MsfInterfaceTest {
             assertNotEmpty("list.get(i).user_nickname", model.list.get(i).user_nickname);
             assertNotEmpty("list.get(i).user_avatar", model.list.get(i).user_avatar);
             assertNotNull("list.get(i).quality_user", model.list.get(i).quality_user);
-            assertNotEmpty("list.get(i).likes_num", model.list.get(i).likes_num);
-            assertNotEmpty("list.get(i).likes_status", model.list.get(i).likes_status);
+            assertNotNull("list.get(i).likes_num", model.list.get(i).likes_num);
+            assertNotNull("list.get(i).likes_status", model.list.get(i).likes_status);
 
         }
         assertNotEmpty("page_serial", model.page_serial);
