@@ -62,13 +62,13 @@ public class product_recommendproducts_test extends HsqInterfaceTest {
             detailAssertTest("list.get(i).skuInfo.seller_time", model.list.get(i).skuInfo.seller_time);
             detailAssertTest("list.get(i).skuInfo.expired_date", model.list.get(i).skuInfo.expired_date);
             detailAssertTest("list.get(i).skuInfo.manufactured_date", model.list.get(i).skuInfo.manufactured_date);
-            detailAssertTest("list.get(i).skuInfo.enabled", model.list.get(i).skuInfo.enabled);
-            detailAssertTest("list.get(i).skuInfo.actived", model.list.get(i).skuInfo.actived);
+//            detailAssertTest("list.get(i).skuInfo.enabled", model.list.get(i).skuInfo.enabled);
+//            detailAssertTest("list.get(i).skuInfo.actived", model.list.get(i).skuInfo.actived);
             detailAssertTest("list.get(i).skuInfo.created_at", model.list.get(i).skuInfo.created_at);
             detailAssertTest("list.get(i).skuInfo.updated_at", model.list.get(i).skuInfo.updated_at);
             detailAssertTest("list.get(i).skuInfo.audit_status", model.list.get(i).skuInfo.audit_status);
             detailAssertTest("list.get(i).skuInfo.audit_time", model.list.get(i).skuInfo.audit_time);
-            detailAssertTest("list.get(i).skuInfo.online_time", model.list.get(i).skuInfo.online_time);
+//            detailAssertTest("list.get(i).skuInfo.online_time", model.list.get(i).skuInfo.online_time);
             detailAssertTest("list.get(i).skuInfo.lowest_web_price", model.list.get(i).skuInfo.lowest_web_price);
             detailAssertTest("list.get(i).skuInfo.marketPriceCert", model.list.get(i).skuInfo.marketPriceCert);
             detailAssertTest("list.get(i).skuInfo.marketPriceUrl", model.list.get(i).skuInfo.marketPriceUrl);
