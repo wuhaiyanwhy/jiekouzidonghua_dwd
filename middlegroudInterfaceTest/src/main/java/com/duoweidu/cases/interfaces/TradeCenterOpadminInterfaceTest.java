@@ -3,6 +3,7 @@ package com.duoweidu.cases.interfaces;
 import com.duoweidu.config.sql.SqlDetail;
 import com.duoweidu.utils.CallbackInterface;
 import com.duoweidu.utils.ConfigFileUrl;
+import com.duoweidu.utils.Uuid;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.utils.URLEncodedUtils;
 import org.apache.http.message.BasicNameValuePair;
@@ -22,7 +23,8 @@ public class TradeCenterOpadminInterfaceTest extends InterfaceTest {
     protected void process() {
         System.out.println(url);
         //通用参数
-        String par = "token=" + SqlDetail.getInstance().getParamValue(0, "opadminToken")
+        String par = "interface_uuid=" + Uuid.getUuid()
+                + "&token=" + SqlDetail.getInstance().getParamValue(0, "opadminToken")
                 + "&accountNumber=" + SqlDetail.getInstance().getParamValue(0, "accountNumber");
         if (param != null) {
             this.param = par + "&" + param;
@@ -38,6 +40,7 @@ public class TradeCenterOpadminInterfaceTest extends InterfaceTest {
     protected void process(List<NameValuePair> list) {
         System.out.println(url);
         //通用参数
+        list.add(new BasicNameValuePair("interface_uuid", Uuid.getUuid()));
         list.add(new BasicNameValuePair("token", SqlDetail.getInstance().getParamValue(0, "opadminToken")));
         list.add(new BasicNameValuePair("accountNumber", SqlDetail.getInstance().getParamValue(0, "accountNumber")));
         param = URLEncodedUtils.format(list, "Utf-8");

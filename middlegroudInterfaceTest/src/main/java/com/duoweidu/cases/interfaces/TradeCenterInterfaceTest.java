@@ -4,6 +4,7 @@ import com.duoweidu.config.TradecenterConfig;
 import com.duoweidu.config.sql.SqlDetail;
 import com.duoweidu.utils.CallbackInterface;
 import com.duoweidu.utils.ConfigFileUrl;
+import com.duoweidu.utils.Uuid;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.utils.URLEncodedUtils;
 import org.apache.http.message.BasicNameValuePair;
@@ -23,7 +24,8 @@ public class TradeCenterInterfaceTest extends InterfaceTest {
     protected void process() {
         System.out.println(url);
         //通用参数
-        String par = "version=" + SqlDetail.getInstance().getParamValue(0, "version")
+        String par = "interface_uuid=" + Uuid.getUuid()
+                + "&version=" + SqlDetail.getInstance().getParamValue(0, "version")
                 + "&ip=" + SqlDetail.getInstance().getParamValue(0, "ip")
                 + "&userId=" + SqlDetail.getInstance().getParamValue(0, "userId");
 
@@ -51,6 +53,7 @@ public class TradeCenterInterfaceTest extends InterfaceTest {
     protected void process(List<NameValuePair> list) {
         System.out.println(url);
         //通用参数
+        list.add(new BasicNameValuePair("interface_uuid", Uuid.getUuid()));
         list.add(new BasicNameValuePair("version", SqlDetail.getInstance().getParamValue(0, "version")));
         list.add(new BasicNameValuePair("ip", SqlDetail.getInstance().getParamValue(0, "ip")));
         list.add(new BasicNameValuePair("userId", SqlDetail.getInstance().getParamValue(0, "userId")));

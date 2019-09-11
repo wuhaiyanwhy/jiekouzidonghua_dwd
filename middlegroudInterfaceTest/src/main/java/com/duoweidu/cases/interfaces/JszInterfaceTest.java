@@ -2,6 +2,7 @@ package com.duoweidu.cases.interfaces;
 
 import com.duoweidu.config.sql.SqlDetail;
 import com.duoweidu.utils.CallbackInterface;
+import com.duoweidu.utils.Uuid;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.utils.URLEncodedUtils;
 import org.apache.http.message.BasicNameValuePair;
@@ -15,7 +16,8 @@ public class JszInterfaceTest extends InterfaceTest {
     protected void process() {
         System.out.println(url);
         //通用参数
-        String par = "v=" + SqlDetail.getInstance().getParamValue(0, "v")
+        String par = "interface_uuid=" + Uuid.getUuid()
+                + "&v=" + SqlDetail.getInstance().getParamValue(0, "v")
                 + "&token=" + SqlDetail.getInstance().getParamValue("token")
                 + "&zoneId=" + SqlDetail.getInstance().getParamValue(0,"zoneId")
                 + "&lng=" + SqlDetail.getInstance().getParamValue(0,"lng")
@@ -36,6 +38,7 @@ public class JszInterfaceTest extends InterfaceTest {
     protected void process(List<NameValuePair> list) {
         System.out.println(url);
         //通用参数
+        list.add(new BasicNameValuePair("interface_uuid", Uuid.getUuid()));
         list.add(new BasicNameValuePair("v", SqlDetail.getInstance().getParamValue(0, "v")));
         list.add(new BasicNameValuePair("token", SqlDetail.getInstance().getParamValue("token")));
         list.add(new BasicNameValuePair("zoneId", SqlDetail.getInstance().getParamValue(0,"zoneId")));
