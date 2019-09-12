@@ -9,6 +9,9 @@ import org.testng.annotations.Test;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * 无法实际核销，暂时无需详细断言
+ */
 public class OrderRedeem extends MsfInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "核销/兑换接口")

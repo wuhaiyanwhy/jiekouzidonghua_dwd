@@ -1,11 +1,10 @@
 package com.duoweidu.cases.fyb.openapi;
 
 import com.duoweidu.cases.interfaces.FybInterfaceTest;
-import com.duoweidu.config.TraverseConfig;
+import com.duoweidu.utils.TraverseResult;
 import com.duoweidu.model.fyb.CommonHotsearchsugData;
 import org.testng.annotations.Test;
 
-import java.util.HashMap;
 import java.util.Map;
 
 public class CommonHotsearchsug extends FybInterfaceTest {
@@ -22,7 +21,7 @@ public class CommonHotsearchsug extends FybInterfaceTest {
 
     private void detailAssert() {
 
-        Map<String, Object> mapList = TraverseConfig.traverseCollection(model.list);
+        Map<String, Object> mapList = TraverseResult.traverseCollection(model.list);
         for (Map.Entry<String, Object> entry:
              mapList.entrySet()) {
             assertNotNull(entry.getKey(), entry.getValue());

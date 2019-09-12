@@ -1227,9 +1227,9 @@
                 </methods>
             </class>
 
-            <class name="com.duoweidu.cases.hsq.opadmin.activity_goods_index_test">
+            <class name="com.duoweidu.cases.hsq.opadmin.ActivityGoodsIndexTest">
                 <methods>
-                    <include name="activity_goods_index_true"/>
+                    <include name="activityGoodsIndexTrue"/>
                 </methods>
             </class>
 

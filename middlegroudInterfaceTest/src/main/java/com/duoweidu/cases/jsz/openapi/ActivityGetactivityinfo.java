@@ -23,28 +23,28 @@ public class ActivityGetactivityinfo extends JszInterfaceTest {
 
     private void detailAssert() {
         detailAssertTest(SqlDetail.getInstance().getParamValue("activityId"), "id", model.id);
-        detailAssertTest(34500, "market_price", model.market_price);
-        detailAssertTest(2, "sale_price", model.sale_price);
-        detailAssertTest(1, "commission_price", model.commission_price);
-        detailAssertTest("2019-05-30 15:59:58", "start_time", model.start_time);
-        detailAssertTest("2022-06-30 15:59:58", "end_time", model.end_time);
+        detailAssertTest("market_price", model.market_price);
+        detailAssertTest("sale_price", model.sale_price);
+        detailAssertTest("commission_price", model.commission_price);
+        detailAssertTest("start_time", model.start_time);
+        detailAssertTest("end_time", model.end_time);
         detailAssertTest("left_stock", model.left_stock);
         detailAssertTest("need_book", model.need_book);
         detailAssertTest("allow_take_out", model.allow_take_out);
         detailAssertTest("refund_type", model.refund_type);
-        detailAssertTest(1, "redeem_period", model.redeem_period);
+        detailAssertTest("redeem_period", model.redeem_period);
         detailAssertTest("redeem_time", model.redeem_time);
         detailAssertTest("refund_expired", model.refund_expired);
 //        detailAssertTest("poster", model.poster);
         detailAssertTest("sales_volume", model.sales_volume);
         detailAssertTest("images", model.item.images);
-        detailAssertTest("巨食阵接口测试品(勿动)", "name", model.item.name);
-        detailAssertTest("description", model.item.description);
-        detailAssertTest(1, "enabled", model.item.enabled);
+        detailAssertTest("name", model.item.name);
+//        detailAssertTest("description", model.item.description);
+        detailAssertTest(0, "enabled", model.item.enabled);
         detailAssertTest("tips", model.tips);
         detailAssertTest("description", model.description);
         detailAssertTest("commission_price", model.commission_price);
-        detailAssertTest(96718, "id", model.branch.id);
+        detailAssertTest("id", model.branch.id);
         detailAssertTest("lat", model.branch.lat);
         detailAssertTest("lng", model.branch.lng);
         detailAssertTest("name", model.branch.name);

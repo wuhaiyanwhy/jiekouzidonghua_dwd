@@ -9,9 +9,12 @@ import org.testng.annotations.Test;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * 无法一直发生短信验证码，暂时无需详细断言
+ */
 public class CommonAuthcode extends MsfInterfaceTest {
 
-    @Test(dependsOnGroups = "loginTrue",description = "发送短信验证码")
+    @Test(description = "发送短信验证码")
     public void commonAuthcode() {
         setUrl("common.authcode.uri");
         List<NameValuePair> list = new LinkedList<>();
