@@ -841,11 +841,11 @@
                     <include name="user_deletecartsku_true"/>
                 </methods>
             </class>
-            <class name="com.duoweidu.cases.hsq.openapi.user_clearcart_test">
+            <!--<class name="com.duoweidu.cases.hsq.openapi.user_clearcart_test">
                 <methods>
                     <include name="user_clearcart_true"/>
                 </methods>
-            </class>
+            </class>-->
             <class name="com.duoweidu.cases.hsq.openapi.user_clearinvalidcartskus_test">
                 <methods>
                     <include name="user_clearinvalidcartskus_true"/>
