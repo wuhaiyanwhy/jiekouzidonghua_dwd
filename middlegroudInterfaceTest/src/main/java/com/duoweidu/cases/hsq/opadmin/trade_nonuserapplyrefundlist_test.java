@@ -1,7 +1,6 @@
 package com.duoweidu.cases.hsq.opadmin;
 
 import com.duoweidu.cases.interfaces.HsqOpadminInterfaceTest;
-import com.duoweidu.utils.ConfigFileUrl;
 import org.testng.annotations.Test;
 
 
