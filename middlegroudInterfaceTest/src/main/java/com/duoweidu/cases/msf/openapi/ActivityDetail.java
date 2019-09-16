@@ -40,7 +40,7 @@ public class ActivityDetail extends MsfInterfaceTest {
             for (ActivityDetailData.MenusModel.ItemsModel items:
                     model.menus.get(i).items) {
                 assertNotEmpty("items.name", items.name);
-                assertNotEmpty("items.price", items.price);
+                assertNotNull("items.price", items.price);
             }
         }
         assertNotEmpty("pic_list", model.pic_list);
