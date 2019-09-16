@@ -183,7 +183,7 @@ public class product_coupleskudetail_test extends HsqInterfaceTest {
             detailAssertTest(616, "merchantInfo.id", model.merchantInfo.id);
             detailAssertTest("蜜我食铺", "merchantInfo.name", model.merchantInfo.name);
             detailAssertTest("merchantInfo.logo", model.merchantInfo.logo);
-            detailAssertTest("haoshiqi://hybrid?compid=haoshiqi&comppage=merchant&merchantid=616", "merchantInfo.schema", model.merchantInfo.schema);
+            detailAssertTest("http://m.beta.haoshiqi.net/v2/merchant?id=616", "merchantInfo.schema", model.merchantInfo.schema);
             detailAssertTest("http://m.beta.haoshiqi.net/#couple_rules", "coupleRuleUrl", model.coupleRuleUrl);
             detailAssertTest("价格", "pricePrefix", model.pricePrefix);
             detailAssertTest("haoshiqi://com.doweidu/couplesbuydetail?pinActivityId=11836", "schema", model.schema);
@@ -310,7 +310,7 @@ public class product_coupleskudetail_test extends HsqInterfaceTest {
             detailAssertTest(1786, "merchantInfo.id", model.merchantInfo.id);
             detailAssertTest("淘食铺", "merchantInfo.name", model.merchantInfo.name);
             detailAssertTest("merchantInfo.logo", model.merchantInfo.logo);
-            detailAssertTest("haoshiqi://hybrid?compid=haoshiqi&comppage=merchant&merchantid=1786", "merchantInfo.schema", model.merchantInfo.schema);
+            detailAssertTest("https://m.haoshiqi.net/v2/merchant?id=1786", "merchantInfo.schema", model.merchantInfo.schema);
 
             detailAssertTest("model.shareInfo.firendsZone.thumbnail", model.shareInfo.firendsZone.thumbnail);
             detailAssertTest("pages/index/index?jumplink=detail%3Fid%3D60627&minishare=1", "model.shareInfo.firendsZone.link", model.shareInfo.firendsZone.link);

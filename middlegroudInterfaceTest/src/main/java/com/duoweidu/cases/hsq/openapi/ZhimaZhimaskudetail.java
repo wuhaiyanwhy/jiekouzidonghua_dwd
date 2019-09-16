@@ -115,7 +115,7 @@ public class ZhimaZhimaskudetail extends HsqInterfaceTest {
         detailAssertTest(616, "merchantInfo.id", model.merchantInfo.id);
         detailAssertTest("蜜我食铺", "merchantInfo.name", model.merchantInfo.name);
         detailAssertTest("merchantInfo.logo", model.merchantInfo.logo);
-        detailAssertTest("haoshiqi://hybrid?compid=haoshiqi&comppage=merchant&merchantid=616", "merchantInfo.schema", model.merchantInfo.schema);
+        detailAssertTest("http://m.beta.haoshiqi.net/v2/merchant?id=616", "merchantInfo.schema", model.merchantInfo.schema);
 
         detailAssertTest("http://img2.haoshiqi.net/ma775648f49d5b7fc726fbe01d8a2325f2.jpg", "model.shareInfo.firendsZone.thumbnail", model.shareInfo.firendsZone.thumbnail);
         detailAssertTest("http://m.haoshiqi.net/index.html#detail?sid=34548&spm=hsq_unknown","model.shareInfo.firendsZone.link", model.shareInfo.firendsZone.link);
