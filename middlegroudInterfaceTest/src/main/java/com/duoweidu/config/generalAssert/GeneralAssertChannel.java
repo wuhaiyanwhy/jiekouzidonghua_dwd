@@ -26,8 +26,9 @@ public class GeneralAssertChannel extends Assert {
     public void genErrno(int channel_id, String uri, int path_id, String param, int status, String errnoResult) {
         if ("false".equals(ConfigFileUrl.getDebug())) {
             //插入报错数据
-            SqlGeneral.insertErrnoResult(channel_id, path_id, SqlGeneral.getBuildId().getId() + 1, param, status, errnoResult);
-            GeneralConfig.errnoList.add(uri);
+            SqlGeneral.insertErrnoResult(channel_id, path_id, 0, param, status, errnoResult);
+            //报错次数里面存的是报错结果id
+            GeneralConfig.errnoList.add(SqlGeneral.getErrnoResult(channel_id).getId());
             if ("prod".equals(ConfigFileUrl.getEnv())) {
                 //插入报错次数
                 SqlGeneral.updateInterfacePathErrnoCount(path_id, channel_id,

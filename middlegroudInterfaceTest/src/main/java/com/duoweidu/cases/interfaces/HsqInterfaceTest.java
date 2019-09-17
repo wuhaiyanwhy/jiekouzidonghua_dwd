@@ -18,7 +18,7 @@ public class HsqInterfaceTest extends InterfaceTest {
         System.out.println(url);
         //通用参数
         String par = "interface_uuid=" + Uuid.getUuid()
-                + "&v=" + SqlDetail.getInstance().getParamValue(0, "v");
+                + "&v=" + SqlDetail.getInstance().getParamValue(0, "v1");
         if (param != null) {
             this.param = par + "&" + param;
         }else {
