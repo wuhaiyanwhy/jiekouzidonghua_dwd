@@ -34,7 +34,7 @@ public class HsqInterfaceTest extends InterfaceTest {
         System.out.println(url);
         //通用参数
         list.add(new BasicNameValuePair("interface_uuid", Uuid.getUuid()));
-        list.add(new BasicNameValuePair("v", SqlDetail.getInstance().getParamValue(0, "v")));
+        list.add(new BasicNameValuePair("v", SqlDetail.getInstance().getParamValue(0, "v1")));
         param = URLEncodedUtils.format(list, "Utf-8");
         System.out.println("参数：" + param);
         result = CallbackInterface.postStringResult(limitTime(), url, pathId, list);
