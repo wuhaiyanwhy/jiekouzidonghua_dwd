@@ -188,6 +188,33 @@ public class SqlGeneral {
         return session.selectOne("getBuildId");
     }
 
+    /**
+     * 获取报错结果id
+     * @param channel_id
+     * @return
+     */
+    public static ErrnoResult getErrnoResult(int channel_id) {
+        ErrnoResult errnoResult = new ErrnoResult();
+        errnoResult.setChannel_id(channel_id);
+        errnoResult.setEnv_id(getEnv());
+        return session.selectOne("getErrnoResult", errnoResult);
+    }
+
+    /**
+     * 报错信息表中更新构建id
+     * @param id
+     * @param build_id
+     */
+    public static void updateErrnoResult(int id, int build_id) {
+        ErrnoResult errnoResult = new ErrnoResult();
+        errnoResult.setId(id);
+        errnoResult.setBuild_id(build_id);
+        int res = session.update("updateErrnoResult", errnoResult);
+        session.commit();
+        if (res > 0 ) {
+            System.out.println("报错信息表中构建状态更新成功");
+        }
+    }
 
     /**
      * 插入报错相关信息

@@ -10,6 +10,9 @@ import org.testng.annotations.Test;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * 不会实际支付，暂时无需详细断言
+ */
 public class OrderPaymentresult extends MsfInterfaceTest {
 
     @Test(dependsOnGroups = "orderPaymentapply",description = "订单支付结果查询")

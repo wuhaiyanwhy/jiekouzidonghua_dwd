@@ -3,6 +3,7 @@ package com.duoweidu.cases.interfaces;
 import com.duoweidu.config.generalAssert.GeneralAssert;
 import com.duoweidu.config.sql.SqlDetail;
 import com.duoweidu.utils.IqgCallbackInterface;
+import com.duoweidu.utils.Uuid;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.utils.URLEncodedUtils;
 import org.apache.http.message.BasicNameValuePair;
@@ -19,7 +20,8 @@ public class IqgInterfaceTest extends InterfaceTest {
     protected void process() {
         System.out.println(url);
         //通用参数
-        String par = "version=" + SqlDetail.getInstance().getParamValue(0, "version")
+        String par = "interface_uuid=" + Uuid.getUuid()
+                + "&version=" + SqlDetail.getInstance().getParamValue(0, "version")
                 + "&lng=" + SqlDetail.getInstance().getParamValue(0, "lng")
                 + "&lat=" +  SqlDetail.getInstance().getParamValue(0, "lat");
         if (param != null) {
@@ -36,6 +38,7 @@ public class IqgInterfaceTest extends InterfaceTest {
     protected void process(List<NameValuePair> list) {
         System.out.println(url);
         //通用参数
+        list.add(new BasicNameValuePair("interface_uuid", Uuid.getUuid()));
         list.add(new BasicNameValuePair("version", SqlDetail.getInstance().getParamValue(0, "version")));
         list.add(new BasicNameValuePair("lng", SqlDetail.getInstance().getParamValue(0, "lng")));
         list.add(new BasicNameValuePair("lat", SqlDetail.getInstance().getParamValue(0, "lat")));
@@ -50,7 +53,8 @@ public class IqgInterfaceTest extends InterfaceTest {
     protected void processDelete() {
         System.out.println(url);
         //通用参数
-        String par = "version=" + SqlDetail.getInstance().getParamValue(0, "version")
+        String par = "interface_uuid=" + Uuid.getUuid()
+                + "&version=" + SqlDetail.getInstance().getParamValue(0, "version")
                 + "&lng=" + SqlDetail.getInstance().getParamValue(0, "lng")
                 + "&lat=" +  SqlDetail.getInstance().getParamValue(0, "lat");
         if (param != null) {

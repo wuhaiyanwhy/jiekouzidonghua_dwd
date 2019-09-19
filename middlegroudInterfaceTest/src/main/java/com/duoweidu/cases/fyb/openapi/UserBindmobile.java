@@ -8,6 +8,9 @@ import org.testng.annotations.Test;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * 无法一只获取验证码，暂时无需详细断言
+ */
 public class UserBindmobile extends FybInterfaceTest {
 
     @Test(description = "绑定手机号")

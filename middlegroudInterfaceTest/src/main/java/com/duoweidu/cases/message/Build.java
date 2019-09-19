@@ -2,6 +2,7 @@ package com.duoweidu.cases.message;
 
 import com.duoweidu.config.GeneralConfig;
 import com.duoweidu.config.sql.SqlDetail;
+import com.duoweidu.config.sql.SqlGeneral;
 import com.duoweidu.utils.ConfigFileUrl;
 import org.testng.annotations.AfterSuite;
 
@@ -75,6 +76,12 @@ public class Build {
         }
         //插入构建状态
         SqlDetail.getInstance().insertBuild(enabled, message_status);
+        //回写构建id
+        if (GeneralConfig.errnoList.size() > 0) {
+            for (int i = 0; i < GeneralConfig.errnoList.size(); i++) {
+                SqlGeneral.updateErrnoResult(GeneralConfig.errnoList.get(i), SqlGeneral.getBuildId().getId());
+            }
+        }
 
 
     }
