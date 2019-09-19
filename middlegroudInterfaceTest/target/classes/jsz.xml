@@ -140,11 +140,12 @@
                     <include name = "UserMyincome2"/>
                 </methods>
             </class>
-            <class name="com.duoweidu.cases.jsz.openapi.UserRegister2">
-                <methods>
-                    <include name = "UserRegister2"/>
-                </methods>
-            </class>
+            <!--此接口废弃-->
+            <!--<class name="com.duoweidu.cases.jsz.openapi.UserRegister2">-->
+                <!--<methods>-->
+                    <!--<include name = "UserRegister2"/>-->
+                <!--</methods>-->
+            <!--</class>-->
             <class name="com.duoweidu.cases.jsz.openapi.UserRefreshlogin">
                 <methods>
                     <include name = "userRefreshlogin"/>
