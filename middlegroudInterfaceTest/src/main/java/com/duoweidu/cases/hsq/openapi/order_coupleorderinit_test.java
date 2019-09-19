@@ -579,14 +579,14 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
             detailAssertTest(0, "packageInfo.platformDiscount", model.packageInfo.platformDiscount);
             detailAssertTest(11836, "packageInfo.pinActivitiesId", model.packageInfo.pinActivitiesId);
             detailAssertTest("3", "packageInfo.orderType", model.packageInfo.orderType);
-            detailAssertTest(100, "needPayPrice", model.packageInfo.needPayPrice);
+            detailAssertTest(0, "needPayPrice", model.packageInfo.needPayPrice);
             detailAssertTest(616, "packageInfo.itemList.get(0).merchantId", model.packageInfo.itemList.get(0).merchantId);
             detailAssertTest("蜜我食铺", "packageInfo.itemList.get(0).merchantName", model.packageInfo.itemList.get(0).merchantName);
             detailAssertTest("http://m.beta.haoshiqi.net/v2/merchant?id=616", "packageInfo.itemList.get(0).schema", model.packageInfo.itemList.get(0).schema);
             detailAssertTest(100, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
             detailAssertTest(1, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
             detailAssertTest(5000, "packageInfo.itemList.get(0).marketPrice", model.packageInfo.itemList.get(0).marketPrice);
-            detailAssertTest(100, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
+            detailAssertTest(0, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
             detailAssertTest(11836, "packageInfo.itemList.get(0).pinActivitiesId", model.packageInfo.itemList.get(0).pinActivitiesId);
             detailAssertTest("3", "packageInfo.itemList.get(0).orderType", model.packageInfo.itemList.get(0).orderType);
             detailAssertTest(28659, "packageInfo.itemList.get(0).skuList.get(0).id", model.packageInfo.itemList.get(0).skuList.get(0).id);
@@ -717,17 +717,17 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
 
     }
 
-    //单独购断言,默认用券
+    //单独购断言,默认用券 +商家优惠券（店铺直减）
     public void ddgDetailAssert() {
 
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             detailAssertTest(1099, "packageInfo.totalPrice", model.packageInfo.totalPrice);
-            detailAssertTest(200, "packageInfo.platformDiscount", model.packageInfo.platformDiscount);
+            detailAssertTest(0, "packageInfo.platformDiscount", model.packageInfo.platformDiscount);
             detailAssertTest("2", "packageInfo.orderType", model.packageInfo.orderType);
-            detailAssertTest(899, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
+            detailAssertTest(699, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
 
             detailAssertTest(1099, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
-            detailAssertTest(1099, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
+            detailAssertTest(699, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
             detailAssertTest("2", "packageInfo.itemList.get(0).orderType", model.packageInfo.itemList.get(0).orderType);
             detailAssertTest(1099, "packageInfo.itemList.get(0).skuList.get(0).orderPrice", model.packageInfo.itemList.get(0).skuList.get(0).orderPrice);
             detailAssertTest(1099, "packageInfo.itemList.get(0).skuList.get(0).dealPrice", model.packageInfo.itemList.get(0).skuList.get(0).dealPrice);
@@ -759,13 +759,13 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
 
     }
 
-    //参加活动报名，不用券
+    //参加活动报名+商家优惠券（店铺直减）
     public void activitiePinDetailAssert() {
         detailAssertTest(1, "packageInfo.totalPrice", model.packageInfo.totalPrice);
-        detailAssertTest(1, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
+        detailAssertTest(0, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
         detailAssertTest(1, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
         detailAssertTest(9999, "packageInfo.itemList.get(0).marketPrice", model.packageInfo.itemList.get(0).marketPrice);
-        detailAssertTest(1, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
+        detailAssertTest(0, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
         detailAssertTest(8888, "packageInfo.itemList.get(0).skuList.get(0).price", model.packageInfo.itemList.get(0).skuList.get(0).price);
         detailAssertTest(9999, "packageInfo.itemList.get(0).skuList.get(0).market_price", model.packageInfo.itemList.get(0).skuList.get(0).market_price);
 //        detailAssertTest(8888, "packageInfo.itemList.get(0).skuList.get(0).lowest_price", model.packageInfo.itemList.get(0).skuList.get(0).lowest_price);
@@ -780,14 +780,14 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
 
     }
 
-    //多件优惠第二件，未达到优惠条件
+    //多件优惠第二件+商家优惠券（店铺直减）
     private void nolosePinDetailAssert() {
         detailAssertTest(1111, "packageInfo.totalPrice", model.packageInfo.totalPrice);
         detailAssertTest(1, "packageInfo.totalAmount", model.packageInfo.totalAmount);
-        detailAssertTest(911, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
+        detailAssertTest(511, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
         detailAssertTest(1111, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
         detailAssertTest(1, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
-        detailAssertTest(1111, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
+        detailAssertTest(711, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
 //        detailAssertTest(0, "packageInfo.itemList.get(0).discountActivity.discountActivityId", model.packageInfo.itemList.get(0).discountActivity.discountActivityId);
 //        detailAssertTest("第2件减11.1元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0));
 //        detailAssertTest("第2件减11.1元", "packageInfo.itemList.get(0).discountActivity.latelyDoubleTips", model.packageInfo.itemList.get(0).discountActivity.latelyDoubleTips);
@@ -800,10 +800,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             detailAssertTest(2222, "packageInfo.totalPrice", model.packageInfo.totalPrice);
             detailAssertTest(2, "packageInfo.totalAmount", model.packageInfo.totalAmount);
-            detailAssertTest(912, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
+            detailAssertTest(512, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
             detailAssertTest(2222, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
             detailAssertTest(2, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
-            detailAssertTest(1112, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
+            detailAssertTest(712, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
 //            detailAssertTest(65, "packageInfo.itemList.get(0).discountActivity.discountActivityId", model.packageInfo.itemList.get(0).discountActivity.discountActivityId);
 //            detailAssertTest("第2件减11.1元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0));
 //            detailAssertTest(1110, "packageInfo.itemList.get(0).discountActivity.discountPinPrice.discountSinglePrice", model.packageInfo.itemList.get(0).discountActivity.discountPinPrice.discountSinglePrice);
@@ -828,14 +828,14 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
 
     }
 
-    //多件优惠，多件优惠减钱 二三件
+    //多件优惠+商家优惠券（店铺直减），多件优惠减钱 二三件
     private void losePinDetailAssert23() {
         detailAssertTest(3366, "packageInfo.totalPrice", model.packageInfo.totalPrice);
         detailAssertTest(3, "packageInfo.totalAmount", model.packageInfo.totalAmount);
-        detailAssertTest(2566, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
+        detailAssertTest(2166, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
         detailAssertTest(3366, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
         detailAssertTest(3, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
-        detailAssertTest(2766, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
+        detailAssertTest(2366, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
 //        detailAssertTest(66, "packageInfo.itemList.get(0).discountActivity.discountActivityId", model.packageInfo.itemList.get(0).discountActivity.discountActivityId);
 //        detailAssertTest("第2件减1元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0));
 //        detailAssertTest("第3件减5元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1));
@@ -846,14 +846,14 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
 
     }
 
-    //多件优惠，多件优惠减钱 二四件
+    //多件优惠+商家优惠券（店铺直减），多件优惠减钱 二四件
     private void losePinDetailAssert24() {
         detailAssertTest(4532, "packageInfo.totalPrice", model.packageInfo.totalPrice);
         detailAssertTest(4, "packageInfo.totalAmount", model.packageInfo.totalAmount);
-        detailAssertTest(3100, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
+        detailAssertTest(2700, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
         detailAssertTest(4532, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
         detailAssertTest(4, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
-        detailAssertTest(3300, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
+        detailAssertTest(2900, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
 //        detailAssertTest(67, "packageInfo.itemList.get(0).discountActivity.discountActivityId", model.packageInfo.itemList.get(0).discountActivity.discountActivityId);
 //        detailAssertTest("第2件减11.32元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0));
 //        detailAssertTest("第4件减1元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1));
@@ -887,10 +887,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     private void loseDanDetailAssert2345() {
         detailAssertTest(11330, "packageInfo.totalPrice", model.packageInfo.totalPrice);
         detailAssertTest(5, "packageInfo.totalAmount", model.packageInfo.totalAmount);
-        detailAssertTest(8123, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
+        detailAssertTest(7723, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
         detailAssertTest(11330, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
         detailAssertTest(5, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
-        detailAssertTest(8323, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
+        detailAssertTest(7923, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
 //        detailAssertTest(69, "packageInfo.itemList.get(0).discountActivity.discountActivityId", model.packageInfo.itemList.get(0).discountActivity.discountActivityId);
 //        detailAssertTest("第2件减11.54元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0));
 //        detailAssertTest("第3件减1元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1));
@@ -903,14 +903,14 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
 
     }
 
-    //多件优惠，打折，第三件
+    //多件优惠，打折，第三件+商家优惠券（店铺直减）
     private void discountPinDetailAssert3() {
         detailAssertTest(3333, "packageInfo.totalPrice", model.packageInfo.totalPrice);
         detailAssertTest(3, "packageInfo.totalAmount", model.packageInfo.totalAmount);
-        detailAssertTest(2034, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
+        detailAssertTest(1634, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
         detailAssertTest(3333, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
         detailAssertTest(3, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
-        detailAssertTest(2234, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
+        detailAssertTest(1834, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
 //        detailAssertTest(70, "packageInfo.itemList.get(0).discountActivity.discountActivityId", model.packageInfo.itemList.get(0).discountActivity.discountActivityId);
 //        detailAssertTest("第3件0.1折", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0));
 //        detailAssertTest(2199, "packageInfo.itemList.get(0).discountActivity.discountPinPrice.discountSinglePrice", model.packageInfo.itemList.get(0).discountActivity.discountPinPrice.discountSinglePrice);
@@ -924,10 +924,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     private void discountPinDetailAssert34() {
         detailAssertTest(4488, "packageInfo.totalPrice", model.packageInfo.totalPrice);
         detailAssertTest(4, "packageInfo.totalAmount", model.packageInfo.totalAmount);
-        detailAssertTest(3166, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
+        detailAssertTest(2766, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
         detailAssertTest(4488, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
         detailAssertTest(4, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
-        detailAssertTest(3366, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
+        detailAssertTest(2966, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
 //        detailAssertTest(71, "packageInfo.itemList.get(0).discountActivity.discountActivityId", model.packageInfo.itemList.get(0).discountActivity.discountActivityId);
 //        detailAssertTest("第3件9.9折", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0));
 //        detailAssertTest("第4件0.1折", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1));
@@ -938,15 +938,15 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
 
     }
 
-    //多件优惠，打折，三五件
+    //多件优惠，打折+商家优惠券（店铺直减），三五件
     private void discountPinDetailAssert35() {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             detailAssertTest(5665, "packageInfo.totalPrice", model.packageInfo.totalPrice);
             detailAssertTest(5, "packageInfo.totalAmount", model.packageInfo.totalAmount);
-            detailAssertTest(4332, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
+            detailAssertTest(3932, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
             detailAssertTest(5665, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
             detailAssertTest(5, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
-            detailAssertTest(4532, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
+            detailAssertTest(4132, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
 //            detailAssertTest(72, "packageInfo.itemList.get(0).discountActivity.discountActivityId", model.packageInfo.itemList.get(0).discountActivity.discountActivityId);
 //            detailAssertTest("第3件9.9折", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0));
 //            detailAssertTest("第5件0.1折", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1));
@@ -974,14 +974,14 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
 
     }
 
-    //多件优惠，打折，二四五件
+    //多件优惠，打折，二四五件+商家优惠券（店铺直减）
     private void discountDanDetailAssert245() {
         detailAssertTest(11275, "packageInfo.totalPrice", model.packageInfo.totalPrice);
         detailAssertTest(5, "packageInfo.totalAmount", model.packageInfo.totalAmount);
-        detailAssertTest(9722, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
+        detailAssertTest(9322, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
         detailAssertTest(11275, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
         detailAssertTest(5, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
-        detailAssertTest(9922, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
+        detailAssertTest(9522, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
 //        detailAssertTest(73, "packageInfo.itemList.get(0).discountActivity.discountActivityId", model.packageInfo.itemList.get(0).discountActivity.discountActivityId);
 //        detailAssertTest("第2件9折", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0));
 //        detailAssertTest("第4件8折", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1));
@@ -993,14 +993,14 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
 
     }
 
-    //多件优惠，打折，三五件
+    //多件优惠，打折+商家优惠券（店铺直减），三五件
     private void discountPinDetailAssert2345() {
         detailAssertTest(5775, "packageInfo.totalPrice", model.packageInfo.totalPrice);
         detailAssertTest(5, "packageInfo.totalAmount", model.packageInfo.totalAmount);
-        detailAssertTest(3150, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
+        detailAssertTest(2750, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
         detailAssertTest(5775, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
         detailAssertTest(5, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
-        detailAssertTest(3350, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
+        detailAssertTest(2950, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
 //        detailAssertTest(74, "packageInfo.itemList.get(0).discountActivity.discountActivityId", model.packageInfo.itemList.get(0).discountActivity.discountActivityId);
 //        detailAssertTest("第2件9.9折", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0));
 //        detailAssertTest("第3件0.1折", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1));
@@ -1014,14 +1014,14 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
 
     }
 
-    //多件优惠，付钱，第五件
+    //多件优惠+商家优惠券（店铺直减），付钱，第五件
     private void payPinDetailAssert5() {
         detailAssertTest(5555, "packageInfo.totalPrice", model.packageInfo.totalPrice);
         detailAssertTest(5, "packageInfo.totalAmount", model.packageInfo.totalAmount);
-        detailAssertTest(5354, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
+        detailAssertTest(4954, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
         detailAssertTest(5555, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
         detailAssertTest(5, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
-        detailAssertTest(5554, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
+        detailAssertTest(5154, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
 //        detailAssertTest(75, "packageInfo.itemList.get(0).discountActivity.discountActivityId", model.packageInfo.itemList.get(0).discountActivity.discountActivityId);
 //        detailAssertTest("第5件11.1元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0));
 //        detailAssertTest(1112, "packageInfo.itemList.get(0).discountActivity.discountPinPrice.discountSinglePrice", model.packageInfo.itemList.get(0).discountActivity.discountPinPrice.discountSinglePrice);
@@ -1031,14 +1031,14 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
 
     }
 
-    //多件优惠，付钱，四五件
+    //多件优惠+商家优惠券（店铺直减），付钱，四五件
     private void payDanDetailAssert45() {
         detailAssertTest(11165, "packageInfo.totalPrice", model.packageInfo.totalPrice);
         detailAssertTest(5, "packageInfo.totalAmount", model.packageInfo.totalAmount);
-        detailAssertTest(7000, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
+        detailAssertTest(6600, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
         detailAssertTest(11165, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
         detailAssertTest(5, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
-        detailAssertTest(7200, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
+        detailAssertTest(6800, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
 //        detailAssertTest(76, "packageInfo.itemList.get(0).discountActivity.discountActivityId", model.packageInfo.itemList.get(0).discountActivity.discountActivityId);
 //        detailAssertTest("第4件5元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0));
 //        detailAssertTest("第5件0.01元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1));
@@ -1049,14 +1049,14 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
 
     }
 
-    //多件优惠，付钱，二五件
+    //多件优惠+商家优惠券（店铺直减），付钱，二五件
     private void payPinDetailAssert25() {
         detailAssertTest(5665, "packageInfo.totalPrice", model.packageInfo.totalPrice);
         detailAssertTest(5, "packageInfo.totalAmount", model.packageInfo.totalAmount);
-        detailAssertTest(4332, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
+        detailAssertTest(3932, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
         detailAssertTest(5665, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
         detailAssertTest(5, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
-        detailAssertTest(4532, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
+        detailAssertTest(4132, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
 //        detailAssertTest(77, "packageInfo.itemList.get(0).discountActivity.discountActivityId", model.packageInfo.itemList.get(0).discountActivity.discountActivityId);
 //        detailAssertTest("第2件0.01元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0));
 //        detailAssertTest("第5件11.32元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1));
@@ -1067,14 +1067,14 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
 
     }
 
-    //多件优惠，付钱，二三五件
+    //多件优惠+商家优惠券（店铺直减），付钱，二三五件
     private void payPinDetailAssert235() {
         detailAssertTest(5720, "packageInfo.totalPrice", model.packageInfo.totalPrice);
         detailAssertTest(5, "packageInfo.totalAmount", model.packageInfo.totalAmount);
-        detailAssertTest(4032, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
+        detailAssertTest(3632, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
         detailAssertTest(5720, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
         detailAssertTest(5, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
-        detailAssertTest(4232, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
+        detailAssertTest(3832, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
 //        detailAssertTest(78, "packageInfo.itemList.get(0).discountActivity.discountActivityId", model.packageInfo.itemList.get(0).discountActivity.discountActivityId);
 //        detailAssertTest("第3件11.43元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0));
 //        detailAssertTest("第4件8元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1));
@@ -1086,15 +1086,15 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
 
     }
 
-    //多件优惠，付钱，二三四五件
+    //多件优惠+商家优惠券（店铺直减），付钱，二三四五件
     private void payPinDetailAssert2345() {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             detailAssertTest(5775, "packageInfo.totalPrice", model.packageInfo.totalPrice);
             detailAssertTest(5, "packageInfo.totalAmount", model.packageInfo.totalAmount);
-            detailAssertTest(3410, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
+            detailAssertTest(3010, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
             detailAssertTest(5775, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
             detailAssertTest(5, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
-            detailAssertTest(3610, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
+            detailAssertTest(3210, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
 //            detailAssertTest(79, "packageInfo.itemList.get(0).discountActivity.discountActivityId", model.packageInfo.itemList.get(0).discountActivity.discountActivityId);
 //            detailAssertTest("第2件11.54元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0));
 //            detailAssertTest("第3件8元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1));
@@ -1127,14 +1127,14 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
 
     }
 
-    //多件优惠，付钱，二三四五件(未达到第五件优惠)
+    //多件优惠+商家优惠券（店铺直减），付钱，二三四五件(未达到第五件优惠)
     private void noPayPinDetailAssert2345() {
         detailAssertTest(4620, "packageInfo.totalPrice", model.packageInfo.totalPrice);
         detailAssertTest(4, "packageInfo.totalAmount", model.packageInfo.totalAmount);
-        detailAssertTest(2910, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
+        detailAssertTest(2510, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
         detailAssertTest(4620, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
         detailAssertTest(4, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
-        detailAssertTest(3110, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
+        detailAssertTest(2710, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
 //        detailAssertTest(79, "packageInfo.itemList.get(0).discountActivity.discountActivityId", model.packageInfo.itemList.get(0).discountActivity.discountActivityId);
 //        detailAssertTest("第2件11.54元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0));
 //        detailAssertTest("第3件8元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1));
@@ -1147,14 +1147,14 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
 
     }
 
-    //营销活动+多件优惠，减钱金额>订单金额
+    //营销活动+多件优惠+商家优惠券（店铺直减），减钱金额>订单金额
     private void activiteLosePinDetailAssert2() {
         detailAssertTest(600, "packageInfo.totalPrice", model.packageInfo.totalPrice);
         detailAssertTest(2, "packageInfo.totalAmount", model.packageInfo.totalAmount);
-        detailAssertTest(300, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
+        detailAssertTest(0, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
         detailAssertTest(600, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
         detailAssertTest(2, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
-        detailAssertTest(300, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
+        detailAssertTest(0, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
 //        detailAssertTest(83, "packageInfo.itemList.get(0).discountActivity.discountActivityId", model.packageInfo.itemList.get(0).discountActivity.discountActivityId);
 //        detailAssertTest("第2件减9元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0));
 //        detailAssertTest("第3件减3元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1));
@@ -1166,14 +1166,14 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
 
     }
 
-    //营销活动+多件优惠，减钱金额=订单金额
+    //营销活动+多件优惠+商家优惠券（店铺直减），减钱金额=订单金额
     private void activiteLosePinDetailAssert3() {
         detailAssertTest(900, "packageInfo.totalPrice", model.packageInfo.totalPrice);
         detailAssertTest(3, "packageInfo.totalAmount", model.packageInfo.totalAmount);
-        detailAssertTest(300, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
+        detailAssertTest(0, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
         detailAssertTest(900, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
         detailAssertTest(3, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
-        detailAssertTest(300, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
+        detailAssertTest(0, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
 //        detailAssertTest(83, "packageInfo.itemList.get(0).discountActivity.discountActivityId", model.packageInfo.itemList.get(0).discountActivity.discountActivityId);
 //        detailAssertTest("第2件减9元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0));
 //        detailAssertTest("第3件减3元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1));
@@ -1185,14 +1185,14 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
 
     }
 
-    //营销活动+多件优惠，减钱金额<订单金额
+    //营销活动+多件优惠+商家优惠券（店铺直减），减钱金额<订单金额
     private void activiteLosePinDetailAssert4() {
         detailAssertTest(1200, "packageInfo.totalPrice", model.packageInfo.totalPrice);
         detailAssertTest(4, "packageInfo.totalAmount", model.packageInfo.totalAmount);
-        detailAssertTest(500, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
+        detailAssertTest(100, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
         detailAssertTest(1200, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
         detailAssertTest(4, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
-        detailAssertTest(500, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
+        detailAssertTest(100, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
 //        detailAssertTest(83, "packageInfo.itemList.get(0).discountActivity.discountActivityId", model.packageInfo.itemList.get(0).discountActivity.discountActivityId);
 //        detailAssertTest("第2件减9元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0));
 //        detailAssertTest("第3件减3元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1));
@@ -1204,14 +1204,14 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
 
     }
 
-    //营销活动+多件优惠+优惠券
+    //营销活动+多件优惠+商家优惠券（店铺直减）
     private void activiteLosePinDetailAssert5() {
         detailAssertTest(1500, "packageInfo.totalPrice", model.packageInfo.totalPrice);
         detailAssertTest(5, "packageInfo.totalAmount", model.packageInfo.totalAmount);
-        detailAssertTest(600, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
+        detailAssertTest(400, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
         detailAssertTest(1500, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
         detailAssertTest(5, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
-        detailAssertTest(800, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
+        detailAssertTest(400, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
 //        detailAssertTest(83, "packageInfo.itemList.get(0).discountActivity.discountActivityId", model.packageInfo.itemList.get(0).discountActivity.discountActivityId);
 //        detailAssertTest("第2件减9元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0));
 //        detailAssertTest("第3件减3元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1));
@@ -1223,14 +1223,14 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
 
     }
 
-    //营销活动+多件优惠，减钱金额>订单金额单独够
+    //营销活动+多件优惠+商家优惠券（店铺直减），减钱金额>订单金额单独够
     private void activiteLoseDanDetailAssert2() {
         detailAssertTest(17776, "packageInfo.totalPrice", model.packageInfo.totalPrice);
         detailAssertTest(2, "packageInfo.totalAmount", model.packageInfo.totalAmount);
-        detailAssertTest(16676, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
+        detailAssertTest(16276, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
         detailAssertTest(17776, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
         detailAssertTest(2, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
-        detailAssertTest(16876, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
+        detailAssertTest(16476, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
 //        detailAssertTest(83, "packageInfo.itemList.get(0).discountActivity.discountActivityId", model.packageInfo.itemList.get(0).discountActivity.discountActivityId);
 //        detailAssertTest("第2件减9元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0));
 //        detailAssertTest("第3件减3元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1));
@@ -1242,14 +1242,14 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
 
     }
 
-    //营销活动+多件优惠，打折第二件9.9折
+    //营销活动+多件优惠+商家优惠券（店铺直减），打折第二件9.9折
     private void activiteDiscountPinDetailAssert2() {
         detailAssertTest(600, "packageInfo.totalPrice", model.packageInfo.totalPrice);
         detailAssertTest(2, "packageInfo.totalAmount", model.packageInfo.totalAmount);
-        detailAssertTest(597, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
+        detailAssertTest(197, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
         detailAssertTest(600, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
         detailAssertTest(2, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
-        detailAssertTest(597, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
+        detailAssertTest(197, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
 //        detailAssertTest(84, "packageInfo.itemList.get(0).discountActivity.discountActivityId", model.packageInfo.itemList.get(0).discountActivity.discountActivityId);
 //        detailAssertTest("第2件9.9折", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0));
 //        detailAssertTest("第4件5折", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1));
@@ -1260,14 +1260,14 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
 //        detailAssertTest(3, "packageInfo.doubleDiscount", model.packageInfo.doubleDiscount);
     }
 
-    //营销活动+多件优惠，打折第4件5折
+    //营销活动+多件优惠+商家优惠券（店铺直减），打折第4件5折
     private void activiteDiscountDanDetailAssert4() {
         detailAssertTest(35552, "packageInfo.totalPrice", model.packageInfo.totalPrice);
         detailAssertTest(4, "packageInfo.totalAmount", model.packageInfo.totalAmount);
-        detailAssertTest(30820, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
+        detailAssertTest(30420, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
         detailAssertTest(35552, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
         detailAssertTest(4, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
-        detailAssertTest(31020, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
+        detailAssertTest(30620, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
 //        detailAssertTest(84, "packageInfo.itemList.get(0).discountActivity.discountActivityId", model.packageInfo.itemList.get(0).discountActivity.discountActivityId);
 //        detailAssertTest("第2件9.9折", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0));
 //        detailAssertTest("第4件5折", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1));
@@ -1278,14 +1278,14 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
 //         detailAssertTest(4532, "packageInfo.doubleDiscount", model.packageInfo.doubleDiscount);
     }
 
-    //营销活动+多件优惠，打折第五件1折
+    //营销活动+多件优惠+商家优惠券（店铺直减），打折第五件1折
     private void activiteDiscountPinDetailAssert5() {
         detailAssertTest(1500, "packageInfo.totalPrice", model.packageInfo.totalPrice);
         detailAssertTest(5, "packageInfo.totalAmount", model.packageInfo.totalAmount);
-        detailAssertTest(877, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
+        detailAssertTest(677, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
         detailAssertTest(1500, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
         detailAssertTest(5, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
-        detailAssertTest(1077, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
+        detailAssertTest(677, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
 //        detailAssertTest(84, "packageInfo.itemList.get(0).discountActivity.discountActivityId", model.packageInfo.itemList.get(0).discountActivity.discountActivityId);
 //        detailAssertTest("第2件9.9折", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0));
 //        detailAssertTest("第4件5折", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1));
@@ -1296,14 +1296,14 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
 //        detailAssertTest(423, "packageInfo.doubleDiscount", model.packageInfo.doubleDiscount);
     }
 
-    //营销活动+多件优惠，付钱金额<订单金额
+    //营销活动+多件优惠+商家优惠券（店铺直减），付钱金额<订单金额
     private void activitePayPinDetailAssert2() {
         detailAssertTest(17776, "packageInfo.totalPrice", model.packageInfo.totalPrice);
         detailAssertTest(2, "packageInfo.totalAmount", model.packageInfo.totalAmount);
-        detailAssertTest(8888, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
+        detailAssertTest(8488, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
         detailAssertTest(17776, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
         detailAssertTest(2, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
-        detailAssertTest(9088, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
+        detailAssertTest(8688, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
 //        detailAssertTest(85, "packageInfo.itemList.get(0).discountActivity.discountActivityId", model.packageInfo.itemList.get(0).discountActivity.discountActivityId);
 //        detailAssertTest("第2件2元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0));
 //        detailAssertTest("第3件3元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1));
@@ -1315,14 +1315,14 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
 
     }
 
-    //营销活动+多件优惠，付钱金额=订单金额
+    //营销活动+多件优惠+商家优惠券（店铺直减），付钱金额=订单金额
     private void activitePayPinDetailAssert3() {
         detailAssertTest(26664, "packageInfo.totalPrice", model.packageInfo.totalPrice);
         detailAssertTest(3, "packageInfo.totalAmount", model.packageInfo.totalAmount);
-        detailAssertTest(9188, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
+        detailAssertTest(8788, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
         detailAssertTest(26664, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
         detailAssertTest(3, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
-        detailAssertTest(9388, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
+        detailAssertTest(8988, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
 //        detailAssertTest(85, "packageInfo.itemList.get(0).discountActivity.discountActivityId", model.packageInfo.itemList.get(0).discountActivity.discountActivityId);
 //        detailAssertTest("第2件2元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0));
 //        detailAssertTest("第3件3元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1));
@@ -1338,10 +1338,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     private void activitePayPinDetailAssert5() {
         detailAssertTest(44440, "packageInfo.totalPrice", model.packageInfo.totalPrice);
         detailAssertTest(5, "packageInfo.totalAmount", model.packageInfo.totalAmount);
-        detailAssertTest(20076, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
+        detailAssertTest(19676, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
         detailAssertTest(44440, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
         detailAssertTest(5, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
-        detailAssertTest(20276, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
+        detailAssertTest(19876, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
 //        detailAssertTest(85, "packageInfo.itemList.get(0).discountActivity.discountActivityId", model.packageInfo.itemList.get(0).discountActivity.discountActivityId);
 //        detailAssertTest("第2件2元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0));
 //        detailAssertTest("第3件3元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1));
