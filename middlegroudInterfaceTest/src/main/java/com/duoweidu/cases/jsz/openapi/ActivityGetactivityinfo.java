@@ -40,9 +40,9 @@ public class ActivityGetactivityinfo extends JszInterfaceTest {
         detailAssertTest("images", model.item.images);
         detailAssertTest("name", model.item.name);
 //        detailAssertTest("description", model.item.description);
-        detailAssertTest(0, "enabled", model.item.enabled);
+        detailAssertTest(1, "enabled", model.item.enabled);
         detailAssertTest("tips", model.tips);
-        detailAssertTest("description", model.description);
+//        detailAssertTest("description", model.description);
         detailAssertTest("commission_price", model.commission_price);
         detailAssertTest("id", model.branch.id);
         detailAssertTest("lat", model.branch.lat);
