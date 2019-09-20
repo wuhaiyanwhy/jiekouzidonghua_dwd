@@ -710,7 +710,7 @@
                 </methods>
             </class>
 
-            <!--参数错误转成500了，无法调接口-->
+            <!--该错误转成500了，无法调接口-->
             <!--<class name="com.duoweidu.cases.hsq.openapi.refund_complaint_test">-->
                 <!--<methods>-->
                     <!--<include name="refund_complaint_true"/>-->
@@ -763,17 +763,16 @@
                     <include name="common_alipayapploginsign_true"/>
                 </methods>
             </class>
-            <!--参数错误转成500了，无法调接口-->
-            <!--<class name="com.duoweidu.cases.hsq.openapi.common_getverifycode_test">-->
-                <!--<methods>-->
-                    <!--<include name="common_getverifycode_true"/>-->
-                <!--</methods>-->
-            <!--</class>-->
-            <!--<class name="com.duoweidu.cases.hsq.openapi.common_checkverifycode_test">-->
-                <!--<methods>-->
-                    <!--<include name="common_checkverifycode_true"/>-->
-                <!--</methods>-->
-            <!--</class>-->
+            <class name="com.duoweidu.cases.hsq.openapi.common_getverifycode_test">
+                <methods>
+                    <include name="common_getverifycode_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.openapi.common_checkverifycode_test">
+                <methods>
+                    <include name="common_checkverifycode_true"/>
+                </methods>
+            </class>
             <class name="com.duoweidu.cases.hsq.openapi.common_hotsearchsug_test">
                 <methods>
                     <include name="common_hotsearchsug_true"/>
@@ -825,12 +824,11 @@
                     <include name="user_updateaddress_true"/>
                 </methods>
             </class>
-            <!--参数错误转成500了，无法调接口-->
-            <!--<class name="com.duoweidu.cases.hsq.openapi.user_feedback_test">-->
-                <!--<methods>-->
-                    <!--<include name="user_feedback_true"/>-->
-                <!--</methods>-->
-            <!--</class>-->
+            <class name="com.duoweidu.cases.hsq.openapi.user_feedback_test">
+                <methods>
+                    <include name="user_feedback_true"/>
+                </methods>
+            </class>
             <class name="com.duoweidu.cases.hsq.openapi.user_bindpushclient_test">
                 <methods>
                     <include name="user_bindpushclient_true"/>
@@ -901,12 +899,11 @@
                     <include name="ugc_ugclist_openapi_true"/>
                 </methods>
             </class>
-            <!--参数错误转成500了，无法调接口-->
-            <!--<class name="com.duoweidu.cases.hsq.openapi.ugc_usercomment_test">-->
-                <!--<methods>-->
-                    <!--<include name="ugc_usercomment_true"/>-->
-                <!--</methods>-->
-            <!--</class>-->
+            <class name="com.duoweidu.cases.hsq.openapi.ugc_usercomment_test">
+                <methods>
+                    <include name="ugc_usercomment_true"/>
+                </methods>
+            </class>
             <class name="com.duoweidu.cases.hsq.openapi.coupon_couponredeem_test">
                 <methods>
                     <include name="coupon_couponredeem_true"/>
