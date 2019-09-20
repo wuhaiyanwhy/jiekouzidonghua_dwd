@@ -30,7 +30,7 @@ public class CommonGetdatasourceinfo extends HsqInterfaceTest {
             detailAssertTest("list.get(i).sku_price", model.list.get(i).sku_price);
             detailAssertTest("list.get(i).thumbnail", model.list.get(i).thumbnail);
             detailAssertTest("list.get(i).market_price", model.list.get(i).market_price);
-            detailAssertTest("list.get(i).enabled", model.list.get(i).enabled);
+//            detailAssertTest("list.get(i).enabled", model.list.get(i).enabled);
             detailAssertTest("list.get(i).expired_date", model.list.get(i).expired_date);
             detailAssertTest("list.get(i).left_stock", model.list.get(i).left_stock);
 //            detailAssertTest("list.get(i).product_id", model.list.get(i).product_id);

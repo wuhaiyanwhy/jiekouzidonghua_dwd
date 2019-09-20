@@ -23,8 +23,8 @@ public class UserEditcartsku extends HsqInterfaceTest {
         list.add(new BasicNameValuePair("newSkuId",SqlDetail.getInstance().getParamValue("gonewskuId")));
         list.add(new BasicNameValuePair("amount",SqlDetail.getInstance().getParamValue("gonewamount")));
         process(list,true,false);
-        model = sparseJson(UserEditcartskuData.class);
-        detailAssert();
+       // model = sparseJson(UserEditcartskuData.class);
+       // detailAssert();
     }
 
     private void detailAssert() {

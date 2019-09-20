@@ -1,6 +1,7 @@
 package com.duoweidu.cases.hsq.openapi;
 
 import com.duoweidu.cases.interfaces.HsqInterfaceTest;
+import com.duoweidu.config.HsqOpenapiConfig;
 import com.duoweidu.config.sql.SqlDetail;
 import com.duoweidu.model.hsq.UserRiskpreventcheatData;
 import org.testng.annotations.Test;
@@ -9,12 +10,14 @@ public class UserRiskpreventcheat extends HsqInterfaceTest {
 
     private UserRiskpreventcheatData model;
 
-    @Test(description = "风险预防反作弊")
+    //组：groups="userRiskpreventcheat"
+    @Test(description = "风险预防反作弊", groups = "userRiskpreventcheat")
     public void userRiskpreventcheat() {
         setUrl("user.riskpreventcheat.uri");
         param = "token=" + SqlDetail.getInstance().getParamValue("point_token");
         process(true);
         model = sparseJson(UserRiskpreventcheatData.class);
+        HsqOpenapiConfig.riskgoSwitch = model.riskgo_switch;
         detailAssert();
     }
 

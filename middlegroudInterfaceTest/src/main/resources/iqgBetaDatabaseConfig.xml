@@ -10,11 +10,11 @@
                 <!-- 1.加载数据库驱动 -->
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
                 <!-- 2.数据库连接地址 -->
-                <property name="url" value="jdbc:mysql://10.111.20.186:3306/iqg_db_beta?useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull"/>
+                <property name="url" value="jdbc:mysql://10.111.20.186:3308/app_db_iqg?useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull"/>
                 <!-- 数据库用户... -->
-                <property name="username" value="u_beta_all"/>
+                <property name="username" value="u_iqg_test"/>
                 <!-- 数据库密码... -->
-                <property name="password" value="BNNrl71Wma"/>
+                <property name="password" value="zjbJDAexK_4pbCyOzDzH"/>
             </dataSource>
         </environment>
     </environments>

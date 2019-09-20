@@ -50,6 +50,16 @@
         order by id desc limit 1
     </select>
 
+    <!--获取报错数据-->
+    <select id="getErrnoResult" resultType="com.duoweidu.model.table.ErrnoResult">
+        select * from mid_errno_result where channel_id = #{channel_id} and env_id = #{env_id}
+        order by id desc limit 1
+    </select>
+
+    <!--更新报错数据-->
+    <update id="updateErrnoResult" parameterType="com.duoweidu.model.table.ErrnoResult">
+        update mid_errno_result set build_id = #{build_id} where id = #{id}
+    </update>
 
     <!--插入报错结果-->
     <insert id="insertErrnoResult" parameterType="com.duoweidu.model.table.ErrnoResult">

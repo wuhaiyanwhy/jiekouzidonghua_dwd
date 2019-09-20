@@ -1,15 +1,20 @@
 package com.duoweidu.cases.fyb.openapi;
 
 import com.duoweidu.cases.interfaces.FybInterfaceTest;
+import com.duoweidu.utils.TraverseResult;
 import com.duoweidu.config.sql.SqlDetail;
+import com.duoweidu.model.fyb.UserUpdateaddressData;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.testng.annotations.Test;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 
 public class UserUpdateaddress extends FybInterfaceTest {
+
+    private UserUpdateaddressData model;
 
     @Test(description = "更新用户地址")
     public void userUpdateaddress() {
@@ -25,5 +30,15 @@ public class UserUpdateaddress extends FybInterfaceTest {
         list.add(new BasicNameValuePair("provinceId","857"));
         list.add(new BasicNameValuePair("mobile","13800000000"));
         process(list,true,false);
+        model = sparseJson(UserUpdateaddressData.class);
+        detailAssert();
+    }
+
+    private void detailAssert() {
+        Map<String, Object> mapData = TraverseResult.traverseObj(model);
+        for (Map.Entry<String, Object> entry:
+             mapData.entrySet()) {
+            assertNotEmpty(entry.getKey(), entry.getValue());
+        }
     }
 }

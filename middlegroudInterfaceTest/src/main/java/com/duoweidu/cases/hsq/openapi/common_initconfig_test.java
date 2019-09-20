@@ -29,8 +29,8 @@ public class common_initconfig_test extends HsqInterfaceTest {
         detailAssertTest("cacheClear", model.cacheClear);
         detailAssertTest("udeskEnabled", model.udeskEnabled);
         detailAssertTest("cartNum", String.valueOf(model.cartNum));
-        detailAssertTest("productionAreaOptions", model.productionAreaOptions);
-        detailAssertTest("priceOptions", model.priceOptions);
+//        detailAssertTest("productionAreaOptions", model.productionAreaOptions);
+//        detailAssertTest("priceOptions", model.priceOptions);
         detailAssertTest("paymentway", model.paymentway);
         for (int i = 0; i < model.paymentway.size(); i++) {
             detailAssertTest("paymentway.get(i).id", model.paymentway.get(i).id);
