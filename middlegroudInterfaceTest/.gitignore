@@ -12,3 +12,4 @@ src/main/resources/switch.properties
 pom.xml
 target/generated-sources/
 src/test/
+/src/main/resources/hsq2.xml

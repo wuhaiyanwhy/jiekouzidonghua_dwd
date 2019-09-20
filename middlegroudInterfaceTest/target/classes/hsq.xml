@@ -960,6 +960,21 @@
                     <include name="userEditcartsku"/>
                 </methods>
             </class>
+            <class name="com.duoweidu.cases.hsq.openapi.OrderOderinitv1">
+                <methods>
+                    <include name="orderOderinitv1"></include>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.openapi.OrderSubmitorderv1">
+                <methods>
+                    <include name="orderSubmitorderv1"></include>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.openapi.Tradecenter0rdersuccessv1">
+                <methods>
+                    <include name="tradecenterOrdersuccessv1"></include>
+                </methods>
+            </class>
             <!--清除购物车的无效数据-->
             <class name="com.duoweidu.cases.hsq.openapi.user_removeinvalidcartsku_test">
                 <methods>
