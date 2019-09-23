@@ -78,8 +78,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
         chouDdgDetailAssert();
     }
 
-
-    @Test(dependsOnGroups = "loginTrue",description = "初始化订单（拼团）（活动报名不用券）", groups = "orderinitActivitePintuan")
+    @Test(dependsOnGroups = "loginTrue",description = "初始化订单（拼团）（活动报名+商家优惠券）", groups = "orderinitActivitePintuan")
     public void order_coupleorderinit_activitiePintuanTrue() {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             List<NameValuePair> list = new LinkedList<>();
@@ -98,7 +97,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
         }
     }
 
-    @Test(dependsOnGroups = "loginTrue",description = "初始化订单（拼团）（多件优惠减钱第二件，未达到优惠条件）", groups = "orderinitLosePintuan2")
+    @Test(dependsOnGroups = "loginTrue",description = "初始化订单（拼团）（多件优惠减钱第二件，未达到优惠条件+商家优惠券）", groups = "orderinitLosePintuan2")
     public void order_coupleorderinit_nolosePintuan2() {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             List<NameValuePair> list = new LinkedList<>();
@@ -503,7 +502,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             List<NameValuePair> list = new LinkedList<>();
             list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue(2, "activitieDiscountPinActivitiesId")));
-            list.add(new BasicNameValuePair("amount", "5"));
+            list.add(new BasicNameValuePair("amount", "6"));
             list.add(new BasicNameValuePair("orderType", "3"));
             list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue(2, "activitieDiscountSkuId")));
             list.add(new BasicNameValuePair("conformNewUser", "1"));
@@ -1280,12 +1279,12 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
 
     //营销活动+多件优惠+商家优惠券（店铺直减），打折第五件1折
     private void activiteDiscountPinDetailAssert5() {
-        detailAssertTest(1500, "packageInfo.totalPrice", model.packageInfo.totalPrice);
-        detailAssertTest(5, "packageInfo.totalAmount", model.packageInfo.totalAmount);
-        detailAssertTest(677, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
-        detailAssertTest(1500, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
-        detailAssertTest(5, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
-        detailAssertTest(677, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
+        detailAssertTest(1800, "packageInfo.totalPrice", model.packageInfo.totalPrice);
+        detailAssertTest(6, "packageInfo.totalAmount", model.packageInfo.totalAmount);
+        detailAssertTest(777, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
+        detailAssertTest(1800, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
+        detailAssertTest(6, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
+        detailAssertTest(777, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
 //        detailAssertTest(84, "packageInfo.itemList.get(0).discountActivity.discountActivityId", model.packageInfo.itemList.get(0).discountActivity.discountActivityId);
 //        detailAssertTest("第2件9.9折", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0));
 //        detailAssertTest("第4件5折", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1));
