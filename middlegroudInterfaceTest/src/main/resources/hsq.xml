@@ -635,6 +635,7 @@
                     <include name="reward_coderedeem_true"/>
                     <include name="rewardCoderedeemMerchant1"/>
                     <include name="rewardCoderedeemMerchant2"/>
+                    <include name="rewardCoderedeemSku"/>
                 </methods>
             </class>
 

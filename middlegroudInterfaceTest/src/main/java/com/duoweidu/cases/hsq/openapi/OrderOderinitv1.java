@@ -35,7 +35,7 @@ public class OrderOderinitv1 extends HsqInterfaceTest {
         detailAssert();
     }
 
-    @Test(dependsOnGroups = "addskutocartMerchant" ,description = "普通订单初始化（只有商家优惠，2件）",groups = "oderinitMerchant")
+    @Test(dependsOnGroups = "addskutocartMerchant" ,description = "普通订单初始化（只有商家优惠，2件 + 商家优惠券）",groups = "oderinitMerchant")
     public void orderOderinitv1Merchant(){
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             List<NameValuePair> list = new LinkedList<>();
@@ -44,6 +44,235 @@ public class OrderOderinitv1 extends HsqInterfaceTest {
             getRequest(list);
             HsqOpenapiConfig.merchantConfirmSid = model.confirmSid;
             merchantAssert();
+        }else {
+            System.out.println("此环境无此case");
+        }
+    }
+
+    @Test(description = "普通订单初始化（多件优惠减钱第二件，未达到优惠条件+商家券+平台券）",groups = "oderinitNoLose2")
+    public void orderOderinitv1Nolose2(){
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            List<NameValuePair> list = new LinkedList<>();
+            list.add(new BasicNameValuePair("skusInfo", "[{\"skuId\":\"" + SqlDetail.getInstance().getParamValue("loseSkuId2")
+                    + "\",\"amount\":\"1\",\"price\":\"" + SqlDetail.getInstance().getParamValue("losePrice2") + "\"}]"));
+            list.add(new BasicNameValuePair("isFastbuy", "1"));
+            System.out.println(list.toString());
+            getRequest(list);
+            HsqOpenapiConfig.confirmSidNoLose2 = model.confirmSid;
+            assertNoLose2();
+        }else {
+            System.out.println("此环境无此case");
+        }
+    }
+
+    @Test(description = "普通订单初始化（多件优惠减钱第二件，达到优惠条件+商家券+平台券）",groups = "oderinitLose2")
+    public void orderOderinitv1lose2(){
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            List<NameValuePair> list = new LinkedList<>();
+            list.add(new BasicNameValuePair("skusInfo", "[{\"skuId\":\"" + SqlDetail.getInstance().getParamValue("loseSkuId2")
+                    + "\",\"amount\":\"2\",\"price\":\"" + SqlDetail.getInstance().getParamValue("losePrice2") + "\"}]"));
+            list.add(new BasicNameValuePair("isFastbuy", "1"));
+            System.out.println(list.toString());
+            getRequest(list);
+            HsqOpenapiConfig.confirmSidLose2 = model.confirmSid;
+            assertLose2();
+        }else {
+            System.out.println("此环境无此case");
+        }
+    }
+
+    @Test(description = "普通订单初始化（多件优惠减钱 23，商家券）",groups = "oderinitLose23")
+    public void orderOderinitv1lose23(){
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            List<NameValuePair> list = new LinkedList<>();
+            list.add(new BasicNameValuePair("skusInfo", "[{\"skuId\":\"" + SqlDetail.getInstance().getParamValue("loseSkuId23")
+                    + "\",\"amount\":\"3\",\"price\":\"" + SqlDetail.getInstance().getParamValue("losePrice23") + "\"}]"));
+            list.add(new BasicNameValuePair("isFastbuy", "1"));
+            System.out.println(list.toString());
+            getRequest(list);
+            HsqOpenapiConfig.confirmSidLose23 = model.confirmSid;
+            assertLose23();
+        }else {
+            System.out.println("此环境无此case");
+        }
+    }
+
+    @Test(description = "普通订单初始化（多件优惠减钱 24，商家券）",groups = "oderinitLose24")
+    public void orderOderinitv1lose24(){
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            List<NameValuePair> list = new LinkedList<>();
+            list.add(new BasicNameValuePair("skusInfo", "[{\"skuId\":\"" + SqlDetail.getInstance().getParamValue("loseSkuId24")
+                    + "\",\"amount\":\"4\",\"price\":\"" + SqlDetail.getInstance().getParamValue("losePrice24") + "\"}]"));
+            list.add(new BasicNameValuePair("isFastbuy", "1"));
+            System.out.println(list.toString());
+            getRequest(list);
+            HsqOpenapiConfig.confirmSidLose24 = model.confirmSid;
+            assertLose24();
+        }else {
+            System.out.println("此环境无此case");
+        }
+    }
+
+    @Test(description = "普通订单初始化（多件优惠减钱 235，商家券）",groups = "oderinitLose235")
+    public void orderOderinitv1lose235(){
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            List<NameValuePair> list = new LinkedList<>();
+            list.add(new BasicNameValuePair("skusInfo", "[{\"skuId\":\"" + SqlDetail.getInstance().getParamValue("loseSkuId235")
+                    + "\",\"amount\":\"5\",\"price\":\"" + SqlDetail.getInstance().getParamValue("losePrice235") + "\"}]"));
+            list.add(new BasicNameValuePair("isFastbuy", "1"));
+            getRequest(list);
+            HsqOpenapiConfig.confirmSidLose235 = model.confirmSid;
+            assertLose235();
+        }else {
+            System.out.println("此环境无此case");
+        }
+    }
+
+    @Test(description = "普通订单初始化（多件优惠打折 3，商家券）",groups = "oderinitDiscount3")
+    public void orderOderinitv1Discount3(){
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            List<NameValuePair> list = new LinkedList<>();
+            list.add(new BasicNameValuePair("skusInfo", "[{\"skuId\":\"" + SqlDetail.getInstance().getParamValue("discountSkuId3")
+                    + "\",\"amount\":\"3\",\"price\":\"" + SqlDetail.getInstance().getParamValue("discountPrice3") + "\"}]"));
+            list.add(new BasicNameValuePair("isFastbuy", "1"));
+            getRequest(list);
+            HsqOpenapiConfig.confirmSidDiscount3 = model.confirmSid;
+            assertDiscount3();
+        }else {
+            System.out.println("此环境无此case");
+        }
+    }
+
+    @Test(description = "普通订单初始化（多件优惠打折 34，商家券）",groups = "oderinitDiscount34")
+    public void orderOderinitv1Discount34(){
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            List<NameValuePair> list = new LinkedList<>();
+            list.add(new BasicNameValuePair("skusInfo", "[{\"skuId\":\"" + SqlDetail.getInstance().getParamValue("discountSkuId34")
+                    + "\",\"amount\":\"4\",\"price\":\"" + SqlDetail.getInstance().getParamValue("discountPrice34") + "\"}]"));
+            list.add(new BasicNameValuePair("isFastbuy", "1"));
+            getRequest(list);
+            HsqOpenapiConfig.confirmSidDiscount34 = model.confirmSid;
+            assertDiscount34();
+        }else {
+            System.out.println("此环境无此case");
+        }
+    }
+
+    @Test(description = "普通订单初始化（多件优惠打折 35，商家券+平台券）",groups = "oderinitDiscount35")
+    public void orderOderinitv1Discount35(){
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            List<NameValuePair> list = new LinkedList<>();
+            list.add(new BasicNameValuePair("skusInfo", "[{\"skuId\":\"" + SqlDetail.getInstance().getParamValue("discountSkuId35")
+                    + "\",\"amount\":\"5\",\"price\":\"" + SqlDetail.getInstance().getParamValue("discountPrice35") + "\"}]"));
+            list.add(new BasicNameValuePair("isFastbuy", "1"));
+            getRequest(list);
+            HsqOpenapiConfig.confirmSidDiscount35 = model.confirmSid;
+            assertDiscount35();
+        }else {
+            System.out.println("此环境无此case");
+        }
+    }
+
+    @Test(description = "普通订单初始化（多件优惠打折 245，商家券）",groups = "oderinitDiscount245")
+    public void orderOderinitv1Discount245(){
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            List<NameValuePair> list = new LinkedList<>();
+            list.add(new BasicNameValuePair("skusInfo", "[{\"skuId\":\"" + SqlDetail.getInstance().getParamValue("discountSkuId245")
+                    + "\",\"amount\":\"5\",\"price\":\"" + SqlDetail.getInstance().getParamValue("discountPrice245") + "\"}]"));
+            list.add(new BasicNameValuePair("isFastbuy", "1"));
+            getRequest(list);
+            HsqOpenapiConfig.confirmSidDiscount245 = model.confirmSid;
+            assertDiscount245();
+        }else {
+            System.out.println("此环境无此case");
+        }
+    }
+
+    @Test(description = "普通订单初始化（多件优惠打折 2345，商家券）",groups = "oderinitDiscount2345")
+    public void orderOderinitv1Discount2345(){
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            List<NameValuePair> list = new LinkedList<>();
+            list.add(new BasicNameValuePair("skusInfo", "[{\"skuId\":\"" + SqlDetail.getInstance().getParamValue("discountSkuId2345")
+                    + "\",\"amount\":\"5\",\"price\":\"" + SqlDetail.getInstance().getParamValue("discountPrice2345") + "\"}]"));
+            list.add(new BasicNameValuePair("isFastbuy", "1"));
+            getRequest(list);
+            HsqOpenapiConfig.confirmSidDiscount2345 = model.confirmSid;
+            assertDiscount2345();
+        }else {
+            System.out.println("此环境无此case");
+        }
+    }
+
+    @Test(description = "普通订单初始化（多件优惠付钱 5，商家券）",groups = "oderinitPay5")
+    public void orderOderinitv1Pay5(){
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            List<NameValuePair> list = new LinkedList<>();
+            list.add(new BasicNameValuePair("skusInfo", "[{\"skuId\":\"" + SqlDetail.getInstance().getParamValue("paySkuId5")
+                    + "\",\"amount\":\"5\",\"price\":\"" + SqlDetail.getInstance().getParamValue("payPrice5") + "\"}]"));
+            list.add(new BasicNameValuePair("isFastbuy", "1"));
+            getRequest(list);
+            HsqOpenapiConfig.confirmSidPay5 = model.confirmSid;
+            assertPay5();
+        }else {
+            System.out.println("此环境无此case");
+        }
+    }
+
+    @Test(description = "普通订单初始化（多件优惠付钱 45，商家券）",groups = "oderinitPay45")
+    public void orderOderinitv1Pay45(){
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            List<NameValuePair> list = new LinkedList<>();
+            list.add(new BasicNameValuePair("skusInfo", "[{\"skuId\":\"" + SqlDetail.getInstance().getParamValue("paySkuId45")
+                    + "\",\"amount\":\"5\",\"price\":\"" + SqlDetail.getInstance().getParamValue("payPrice45") + "\"}]"));
+            list.add(new BasicNameValuePair("isFastbuy", "1"));
+            getRequest(list);
+            HsqOpenapiConfig.confirmSidPay45 = model.confirmSid;
+            assertPay45();
+        }else {
+            System.out.println("此环境无此case");
+        }
+    }
+
+    @Test(description = "普通订单初始化（多件优惠付钱 25，商家券）",groups = "oderinitPay25")
+    public void orderOderinitv1Pay25(){
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            List<NameValuePair> list = new LinkedList<>();
+            list.add(new BasicNameValuePair("skusInfo", "[{\"skuId\":\"" + SqlDetail.getInstance().getParamValue("paySkuId25")
+                    + "\",\"amount\":\"5\",\"price\":\"" + SqlDetail.getInstance().getParamValue("payPrice25") + "\"}]"));
+            list.add(new BasicNameValuePair("isFastbuy", "1"));
+            getRequest(list);
+            HsqOpenapiConfig.confirmSidPay25 = model.confirmSid;
+            assertPay25();
+        }else {
+            System.out.println("此环境无此case");
+        }
+    }
+
+    @Test(description = "普通订单初始化（多件优惠付钱 345，商家券）",groups = "oderinitPay235")
+    public void orderOderinitv1Pay345(){
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            List<NameValuePair> list = new LinkedList<>();
+            list.add(new BasicNameValuePair("skusInfo", "[{\"skuId\":\"" + SqlDetail.getInstance().getParamValue("paySkuId345")
+                    + "\",\"amount\":\"5\",\"price\":\"" + SqlDetail.getInstance().getParamValue("payPrice345") + "\"}]"));
+            list.add(new BasicNameValuePair("isFastbuy", "1"));
+            getRequest(list);
+            HsqOpenapiConfig.confirmSidPay345 = model.confirmSid;
+            assertPay345();
+        }else {
+            System.out.println("此环境无此case");
+        }
+    }
+
+    @Test(description = "普通订单初始化（多件优惠付钱 2345，商家券+平台券）",groups = "oderinitPay2345")
+    public void orderOderinitv1Pay2345(){
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            List<NameValuePair> list = new LinkedList<>();
+            list.add(new BasicNameValuePair("skusInfo", "[{\"skuId\":\"" + SqlDetail.getInstance().getParamValue("paySkuId2345")
+                    + "\",\"amount\":\"5\",\"price\":\"" + SqlDetail.getInstance().getParamValue("payPrice2345") + "\"}]"));
+            list.add(new BasicNameValuePair("isFastbuy", "1"));
+            getRequest(list);
+            HsqOpenapiConfig.confirmSidPay2345 = model.confirmSid;
+            assertPay2345();
         }else {
             System.out.println("此环境无此case");
         }
@@ -272,7 +501,7 @@ public class OrderOderinitv1 extends HsqInterfaceTest {
     private void merchantAssert() {
         assertEquals("packageInfo.totalPrice", model.packageInfo.totalPrice, 15554);
         assertEquals("packageInfo.totalAmount", model.packageInfo.totalAmount, 2);
-        assertEquals("packageInfo.needPayPrice", model.packageInfo.needPayPrice, 15154);
+        assertEquals("packageInfo.needPayPrice", model.packageInfo.needPayPrice, 14854);
 
         for (int i = 0; i < model.packageInfo.itemList.size(); i++) {
             assertEquals("packageInfo.itemList.get(i).freeDeliveryPrice", model.packageInfo.itemList.get(i).freeDeliveryPrice, 0);
@@ -295,9 +524,392 @@ public class OrderOderinitv1 extends HsqInterfaceTest {
 
         }
 
-        assertEquals("packageInfo.platformDiscount", model.packageInfo.platformDiscount, 0);
-        assertEquals("packageInfo.discountTotal", model.packageInfo.discountTotal, 400);
-        assertEquals("packageInfo.savePrice", model.packageInfo.savePrice, 4844);
+        assertEquals("packageInfo.platformDiscount", model.packageInfo.platformDiscount, 300);
+        assertEquals("packageInfo.discountTotal", model.packageInfo.discountTotal, 700);
+        assertEquals("packageInfo.savePrice", model.packageInfo.savePrice, 5144);
 
     }
+
+    private void assertNoLose2() {
+        assertEquals("packageInfo.totalPrice", model.packageInfo.totalPrice, 2222);
+        assertEquals("packageInfo.totalAmount", model.packageInfo.totalAmount, 1);
+        assertEquals("packageInfo.needPayPrice", model.packageInfo.needPayPrice, 1522);
+
+        for (int i = 0; i < model.packageInfo.itemList.size(); i++) {
+            assertEquals("packageInfo.itemList.get(i).freeDeliveryPrice", model.packageInfo.itemList.get(i).freeDeliveryPrice, 0);
+            assertEquals("packageInfo.itemList.get(i).isFreeDelivery", model.packageInfo.itemList.get(i).isFreeDelivery, 1);
+            assertEquals("packageInfo.itemList.get(i).isFreeBaseWeight", model.packageInfo.itemList.get(i).isFreeBaseWeight, 0);
+
+            assertEquals("packageInfo.itemList.get(i).totalPrice", model.packageInfo.itemList.get(i).totalPrice, 2222);
+            assertEquals("packageInfo.itemList.get(i).totalAmount", model.packageInfo.itemList.get(i).totalAmount, 1);
+            assertEquals("packageInfo.itemList.get(i).marketPrice", model.packageInfo.itemList.get(i).marketPrice, 3333);
+            assertEquals("packageInfo.itemList.get(i).needPayPrice", model.packageInfo.itemList.get(i).needPayPrice, 1822);
+            assertEquals("packageInfo.itemList.get(i).total_double_discount_price", model.packageInfo.itemList.get(i).total_double_discount_price, 0);
+            assertEquals("packageInfo.itemList.get(i).lately_double_tips", model.packageInfo.itemList.get(i).lately_double_tips, "第2件减11.1元");
+
+            assertEquals("packageInfo.itemList.get(i).deliveryPrice", model.packageInfo.itemList.get(i).deliveryPrice, 0);
+            assertEquals("packageInfo.itemList.get(i).delivery_fee_way", model.packageInfo.itemList.get(i).delivery_fee_way, 1);
+            assertEquals("packageInfo.itemList.get(i).isDeliveryFree", model.packageInfo.itemList.get(i).isDeliveryFree, true);
+
+            assertEquals("packageInfo.itemList.get(i).merchantDiscount", model.packageInfo.itemList.get(i).merchantDiscount, 400);
+            assertEquals("packageInfo.itemList.get(i).needPayWithoutPlatformDiscount", model.packageInfo.itemList.get(i).needPayWithoutPlatformDiscount, 1822);
+
+        }
+
+        assertEquals("packageInfo.platformDiscount", model.packageInfo.platformDiscount, 300);
+        assertEquals("packageInfo.discountTotal", model.packageInfo.discountTotal, 700);
+        assertEquals("packageInfo.savePrice", model.packageInfo.savePrice, 1811);
+
+    }
+
+    private void assertLose2() {
+        assertEquals("packageInfo.totalPrice", model.packageInfo.totalPrice, 4444);
+        assertEquals("packageInfo.totalAmount", model.packageInfo.totalAmount, 2);
+        assertEquals("packageInfo.needPayPrice", model.packageInfo.needPayPrice, 2634);
+
+        for (int i = 0; i < model.packageInfo.itemList.size(); i++) {
+            assertEquals("packageInfo.itemList.get(i).totalPrice", model.packageInfo.itemList.get(i).totalPrice, 4444);
+            assertEquals("packageInfo.itemList.get(i).totalAmount", model.packageInfo.itemList.get(i).totalAmount, 2);
+            assertEquals("packageInfo.itemList.get(i).marketPrice", model.packageInfo.itemList.get(i).marketPrice, 6666);
+            assertEquals("packageInfo.itemList.get(i).needPayPrice", model.packageInfo.itemList.get(i).needPayPrice, 2934);
+            assertEquals("packageInfo.itemList.get(i).total_double_discount_price", model.packageInfo.itemList.get(i).total_double_discount_price, 1110);
+            assertEquals("packageInfo.itemList.get(i).lately_double_tips", model.packageInfo.itemList.get(i).lately_double_tips, "- ¥ 11.10");
+
+            assertEquals("packageInfo.itemList.get(i).merchantDiscount", model.packageInfo.itemList.get(i).merchantDiscount, 400);
+            assertEquals("packageInfo.itemList.get(i).needPayWithoutPlatformDiscount", model.packageInfo.itemList.get(i).needPayWithoutPlatformDiscount, 2934);
+
+        }
+
+        assertEquals("packageInfo.platformDiscount", model.packageInfo.platformDiscount, 300);
+        assertEquals("packageInfo.discountTotal", model.packageInfo.discountTotal, 1810);
+        assertEquals("packageInfo.savePrice", model.packageInfo.savePrice, 4032);
+
+    }
+
+    private void assertLose23() {
+        assertEquals("packageInfo.totalPrice", model.packageInfo.totalPrice, 6699);
+        assertEquals("packageInfo.totalAmount", model.packageInfo.totalAmount, 3);
+        assertEquals("packageInfo.needPayPrice", model.packageInfo.needPayPrice, 5699);
+
+        for (int i = 0; i < model.packageInfo.itemList.size(); i++) {
+
+            assertEquals("packageInfo.itemList.get(i).totalPrice", model.packageInfo.itemList.get(i).totalPrice, 6699);
+            assertEquals("packageInfo.itemList.get(i).totalAmount", model.packageInfo.itemList.get(i).totalAmount, 3);
+            assertEquals("packageInfo.itemList.get(i).marketPrice", model.packageInfo.itemList.get(i).marketPrice, 9999);
+            assertEquals("packageInfo.itemList.get(i).needPayPrice", model.packageInfo.itemList.get(i).needPayPrice, 5699);
+            assertEquals("packageInfo.itemList.get(i).total_double_discount_price", model.packageInfo.itemList.get(i).total_double_discount_price, 600);
+            assertEquals("packageInfo.itemList.get(i).lately_double_tips", model.packageInfo.itemList.get(i).lately_double_tips, "- ¥ 6.00");
+
+            assertEquals("packageInfo.itemList.get(i).merchantDiscount", model.packageInfo.itemList.get(i).merchantDiscount, 400);
+            assertEquals("packageInfo.itemList.get(i).needPayWithoutPlatformDiscount", model.packageInfo.itemList.get(i).needPayWithoutPlatformDiscount, 5699);
+
+        }
+
+        assertEquals("packageInfo.platformDiscount", model.packageInfo.platformDiscount, 0);
+        assertEquals("packageInfo.discountTotal", model.packageInfo.discountTotal, 1000);
+        assertEquals("packageInfo.savePrice", model.packageInfo.savePrice, 4300);
+
+    }
+
+    private void assertLose24() {
+        assertEquals("packageInfo.totalPrice", model.packageInfo.totalPrice, 8976);
+        assertEquals("packageInfo.totalAmount", model.packageInfo.totalAmount, 4);
+        assertEquals("packageInfo.needPayPrice", model.packageInfo.needPayPrice, 7344);
+
+        for (int i = 0; i < model.packageInfo.itemList.size(); i++) {
+
+            assertEquals("packageInfo.itemList.get(i).totalPrice", model.packageInfo.itemList.get(i).totalPrice, 8976);
+            assertEquals("packageInfo.itemList.get(i).totalAmount", model.packageInfo.itemList.get(i).totalAmount, 4);
+            assertEquals("packageInfo.itemList.get(i).marketPrice", model.packageInfo.itemList.get(i).marketPrice, 13332);
+            assertEquals("packageInfo.itemList.get(i).needPayPrice", model.packageInfo.itemList.get(i).needPayPrice, 7344);
+            assertEquals("packageInfo.itemList.get(i).total_double_discount_price", model.packageInfo.itemList.get(i).total_double_discount_price, 1232);
+            assertEquals("packageInfo.itemList.get(i).lately_double_tips", model.packageInfo.itemList.get(i).lately_double_tips, "- ¥ 12.32");
+
+            assertEquals("packageInfo.itemList.get(i).merchantDiscount", model.packageInfo.itemList.get(i).merchantDiscount, 400);
+            assertEquals("packageInfo.itemList.get(i).needPayWithoutPlatformDiscount", model.packageInfo.itemList.get(i).needPayWithoutPlatformDiscount, 7344);
+
+        }
+
+        assertEquals("packageInfo.platformDiscount", model.packageInfo.platformDiscount, 0);
+        assertEquals("packageInfo.discountTotal", model.packageInfo.discountTotal, 1632);
+        assertEquals("packageInfo.savePrice", model.packageInfo.savePrice, 5988);
+
+    }
+
+    private void assertLose235() {
+        assertEquals("packageInfo.totalPrice", model.packageInfo.totalPrice, 11275);
+        assertEquals("packageInfo.totalAmount", model.packageInfo.totalAmount, 5);
+        assertEquals("packageInfo.needPayPrice", model.packageInfo.needPayPrice, 10275);
+
+        for (int i = 0; i < model.packageInfo.itemList.size(); i++) {
+
+            assertEquals("packageInfo.itemList.get(i).totalPrice", model.packageInfo.itemList.get(i).totalPrice, 11275);
+            assertEquals("packageInfo.itemList.get(i).totalAmount", model.packageInfo.itemList.get(i).totalAmount, 5);
+            assertEquals("packageInfo.itemList.get(i).marketPrice", model.packageInfo.itemList.get(i).marketPrice, 16665);
+            assertEquals("packageInfo.itemList.get(i).needPayPrice", model.packageInfo.itemList.get(i).needPayPrice, 10275);
+            assertEquals("packageInfo.itemList.get(i).total_double_discount_price", model.packageInfo.itemList.get(i).total_double_discount_price, 600);
+            assertEquals("packageInfo.itemList.get(i).lately_double_tips", model.packageInfo.itemList.get(i).lately_double_tips, "- ¥ 6.00");
+
+            assertEquals("packageInfo.itemList.get(i).merchantDiscount", model.packageInfo.itemList.get(i).merchantDiscount, 400);
+            assertEquals("packageInfo.itemList.get(i).needPayWithoutPlatformDiscount", model.packageInfo.itemList.get(i).needPayWithoutPlatformDiscount, 10275);
+
+        }
+
+        assertEquals("packageInfo.platformDiscount", model.packageInfo.platformDiscount, 0);
+        assertEquals("packageInfo.discountTotal", model.packageInfo.discountTotal, 1000);
+        assertEquals("packageInfo.savePrice", model.packageInfo.savePrice, 6390);
+
+    }
+
+    private void assertDiscount3() {
+        assertEquals("packageInfo.totalPrice", model.packageInfo.totalPrice, 6666);
+        assertEquals("packageInfo.totalAmount", model.packageInfo.totalAmount, 3);
+        assertEquals("packageInfo.needPayPrice", model.packageInfo.needPayPrice, 4067);
+
+        for (int i = 0; i < model.packageInfo.itemList.size(); i++) {
+
+            assertEquals("packageInfo.itemList.get(i).totalPrice", model.packageInfo.itemList.get(i).totalPrice, 6666);
+            assertEquals("packageInfo.itemList.get(i).totalAmount", model.packageInfo.itemList.get(i).totalAmount, 3);
+            assertEquals("packageInfo.itemList.get(i).marketPrice", model.packageInfo.itemList.get(i).marketPrice, 9999);
+            assertEquals("packageInfo.itemList.get(i).needPayPrice", model.packageInfo.itemList.get(i).needPayPrice, 4067);
+            assertEquals("packageInfo.itemList.get(i).total_double_discount_price", model.packageInfo.itemList.get(i).total_double_discount_price, 2199);
+            assertEquals("packageInfo.itemList.get(i).lately_double_tips", model.packageInfo.itemList.get(i).lately_double_tips, "- ¥ 21.99");
+
+            assertEquals("packageInfo.itemList.get(i).merchantDiscount", model.packageInfo.itemList.get(i).merchantDiscount, 400);
+            assertEquals("packageInfo.itemList.get(i).needPayWithoutPlatformDiscount", model.packageInfo.itemList.get(i).needPayWithoutPlatformDiscount, 4067);
+
+        }
+
+        assertEquals("packageInfo.platformDiscount", model.packageInfo.platformDiscount, 0);
+        assertEquals("packageInfo.discountTotal", model.packageInfo.discountTotal, 2599);
+        assertEquals("packageInfo.savePrice", model.packageInfo.savePrice, 5932);
+
+    }
+
+    private void assertDiscount34() {
+        assertEquals("packageInfo.totalPrice", model.packageInfo.totalPrice, 8932);
+        assertEquals("packageInfo.totalAmount", model.packageInfo.totalAmount, 4);
+        assertEquals("packageInfo.needPayPrice", model.packageInfo.needPayPrice, 6299);
+
+        for (int i = 0; i < model.packageInfo.itemList.size(); i++) {
+
+            assertEquals("packageInfo.itemList.get(i).totalPrice", model.packageInfo.itemList.get(i).totalPrice, 8932);
+            assertEquals("packageInfo.itemList.get(i).totalAmount", model.packageInfo.itemList.get(i).totalAmount, 4);
+            assertEquals("packageInfo.itemList.get(i).marketPrice", model.packageInfo.itemList.get(i).marketPrice, 13332);
+            assertEquals("packageInfo.itemList.get(i).needPayPrice", model.packageInfo.itemList.get(i).needPayPrice, 6299);
+            assertEquals("packageInfo.itemList.get(i).total_double_discount_price", model.packageInfo.itemList.get(i).total_double_discount_price, 2233);
+            assertEquals("packageInfo.itemList.get(i).lately_double_tips", model.packageInfo.itemList.get(i).lately_double_tips, "- ¥ 22.33");
+
+            assertEquals("packageInfo.itemList.get(i).merchantDiscount", model.packageInfo.itemList.get(i).merchantDiscount, 400);
+            assertEquals("packageInfo.itemList.get(i).needPayWithoutPlatformDiscount", model.packageInfo.itemList.get(i).needPayWithoutPlatformDiscount, 6299);
+
+        }
+
+        assertEquals("packageInfo.platformDiscount", model.packageInfo.platformDiscount, 0);
+        assertEquals("packageInfo.discountTotal", model.packageInfo.discountTotal, 2633);
+        assertEquals("packageInfo.savePrice", model.packageInfo.savePrice, 7033);
+
+    }
+
+    private void assertDiscount35() {
+        assertEquals("packageInfo.totalPrice", model.packageInfo.totalPrice, 11220);
+        assertEquals("packageInfo.totalAmount", model.packageInfo.totalAmount, 5);
+        assertEquals("packageInfo.needPayPrice", model.packageInfo.needPayPrice, 8276);
+
+        for (int i = 0; i < model.packageInfo.itemList.size(); i++) {
+
+            assertEquals("packageInfo.itemList.get(i).totalPrice", model.packageInfo.itemList.get(i).totalPrice, 11220);
+            assertEquals("packageInfo.itemList.get(i).totalAmount", model.packageInfo.itemList.get(i).totalAmount, 5);
+            assertEquals("packageInfo.itemList.get(i).marketPrice", model.packageInfo.itemList.get(i).marketPrice, 16665);
+            assertEquals("packageInfo.itemList.get(i).needPayPrice", model.packageInfo.itemList.get(i).needPayPrice, 8576);
+            assertEquals("packageInfo.itemList.get(i).total_double_discount_price", model.packageInfo.itemList.get(i).total_double_discount_price, 2244);
+            assertEquals("packageInfo.itemList.get(i).lately_double_tips", model.packageInfo.itemList.get(i).lately_double_tips, "- ¥ 22.44");
+
+            assertEquals("packageInfo.itemList.get(i).merchantDiscount", model.packageInfo.itemList.get(i).merchantDiscount, 400);
+            assertEquals("packageInfo.itemList.get(i).needPayWithoutPlatformDiscount", model.packageInfo.itemList.get(i).needPayWithoutPlatformDiscount, 8576);
+
+        }
+
+        assertEquals("packageInfo.platformDiscount", model.packageInfo.platformDiscount, 300);
+        assertEquals("packageInfo.discountTotal", model.packageInfo.discountTotal, 2944);
+        assertEquals("packageInfo.savePrice", model.packageInfo.savePrice, 8389);
+
+    }
+
+    private void assertDiscount245() {
+        assertEquals("packageInfo.totalPrice", model.packageInfo.totalPrice, 11275);
+        assertEquals("packageInfo.totalAmount", model.packageInfo.totalAmount, 5);
+        assertEquals("packageInfo.needPayPrice", model.packageInfo.needPayPrice, 9522);
+
+        for (int i = 0; i < model.packageInfo.itemList.size(); i++) {
+
+            assertEquals("packageInfo.itemList.get(i).totalPrice", model.packageInfo.itemList.get(i).totalPrice, 11275);
+            assertEquals("packageInfo.itemList.get(i).totalAmount", model.packageInfo.itemList.get(i).totalAmount, 5);
+            assertEquals("packageInfo.itemList.get(i).marketPrice", model.packageInfo.itemList.get(i).marketPrice, 16665);
+            assertEquals("packageInfo.itemList.get(i).needPayPrice", model.packageInfo.itemList.get(i).needPayPrice, 9522);
+            assertEquals("packageInfo.itemList.get(i).total_double_discount_price", model.packageInfo.itemList.get(i).total_double_discount_price, 1353);
+            assertEquals("packageInfo.itemList.get(i).lately_double_tips", model.packageInfo.itemList.get(i).lately_double_tips, "- ¥ 13.53");
+
+            assertEquals("packageInfo.itemList.get(i).merchantDiscount", model.packageInfo.itemList.get(i).merchantDiscount, 400);
+            assertEquals("packageInfo.itemList.get(i).needPayWithoutPlatformDiscount", model.packageInfo.itemList.get(i).needPayWithoutPlatformDiscount, 9522);
+
+        }
+
+        assertEquals("packageInfo.platformDiscount", model.packageInfo.platformDiscount, 0);
+        assertEquals("packageInfo.discountTotal", model.packageInfo.discountTotal, 1753);
+        assertEquals("packageInfo.savePrice", model.packageInfo.savePrice, 7143);
+
+    }
+
+    private void assertDiscount2345() {
+        assertEquals("packageInfo.totalPrice", model.packageInfo.totalPrice, 11330);
+        assertEquals("packageInfo.totalAmount", model.packageInfo.totalAmount, 5);
+        assertEquals("packageInfo.needPayPrice", model.packageInfo.needPayPrice, 6172);
+
+        for (int i = 0; i < model.packageInfo.itemList.size(); i++) {
+
+            assertEquals("packageInfo.itemList.get(i).totalPrice", model.packageInfo.itemList.get(i).totalPrice, 11330);
+            assertEquals("packageInfo.itemList.get(i).totalAmount", model.packageInfo.itemList.get(i).totalAmount, 5);
+            assertEquals("packageInfo.itemList.get(i).marketPrice", model.packageInfo.itemList.get(i).marketPrice, 16665);
+            assertEquals("packageInfo.itemList.get(i).needPayPrice", model.packageInfo.itemList.get(i).needPayPrice, 6172);
+            assertEquals("packageInfo.itemList.get(i).total_double_discount_price", model.packageInfo.itemList.get(i).total_double_discount_price, 4758);
+            assertEquals("packageInfo.itemList.get(i).lately_double_tips", model.packageInfo.itemList.get(i).lately_double_tips, "- ¥ 47.58");
+
+            assertEquals("packageInfo.itemList.get(i).merchantDiscount", model.packageInfo.itemList.get(i).merchantDiscount, 400);
+            assertEquals("packageInfo.itemList.get(i).needPayWithoutPlatformDiscount", model.packageInfo.itemList.get(i).needPayWithoutPlatformDiscount, 6172);
+
+        }
+
+        assertEquals("packageInfo.platformDiscount", model.packageInfo.platformDiscount, 0);
+        assertEquals("packageInfo.discountTotal", model.packageInfo.discountTotal, 5158);
+        assertEquals("packageInfo.savePrice", model.packageInfo.savePrice, 10493);
+
+    }
+
+    private void assertPay5() {
+        assertEquals("packageInfo.totalPrice", model.packageInfo.totalPrice, 11110);
+        assertEquals("packageInfo.totalAmount", model.packageInfo.totalAmount, 5);
+        assertEquals("packageInfo.needPayPrice", model.packageInfo.needPayPrice, 9598);
+
+        for (int i = 0; i < model.packageInfo.itemList.size(); i++) {
+
+            assertEquals("packageInfo.itemList.get(i).totalPrice", model.packageInfo.itemList.get(i).totalPrice, 11110);
+            assertEquals("packageInfo.itemList.get(i).totalAmount", model.packageInfo.itemList.get(i).totalAmount, 5);
+            assertEquals("packageInfo.itemList.get(i).marketPrice", model.packageInfo.itemList.get(i).marketPrice, 16665);
+            assertEquals("packageInfo.itemList.get(i).needPayPrice", model.packageInfo.itemList.get(i).needPayPrice, 9598);
+            assertEquals("packageInfo.itemList.get(i).total_double_discount_price", model.packageInfo.itemList.get(i).total_double_discount_price, 1112);
+            assertEquals("packageInfo.itemList.get(i).lately_double_tips", model.packageInfo.itemList.get(i).lately_double_tips, "- ¥ 11.12");
+
+            assertEquals("packageInfo.itemList.get(i).merchantDiscount", model.packageInfo.itemList.get(i).merchantDiscount, 400);
+            assertEquals("packageInfo.itemList.get(i).needPayWithoutPlatformDiscount", model.packageInfo.itemList.get(i).needPayWithoutPlatformDiscount, 9598);
+
+        }
+
+        assertEquals("packageInfo.platformDiscount", model.packageInfo.platformDiscount, 0);
+        assertEquals("packageInfo.discountTotal", model.packageInfo.discountTotal, 1512);
+        assertEquals("packageInfo.savePrice", model.packageInfo.savePrice, 7067);
+
+    }
+
+    private void assertPay45() {
+        assertEquals("packageInfo.totalPrice", model.packageInfo.totalPrice, 11165);
+        assertEquals("packageInfo.totalAmount", model.packageInfo.totalAmount, 5);
+        assertEquals("packageInfo.needPayPrice", model.packageInfo.needPayPrice, 6800);
+
+        for (int i = 0; i < model.packageInfo.itemList.size(); i++) {
+
+            assertEquals("packageInfo.itemList.get(i).totalPrice", model.packageInfo.itemList.get(i).totalPrice, 11165);
+            assertEquals("packageInfo.itemList.get(i).totalAmount", model.packageInfo.itemList.get(i).totalAmount, 5);
+            assertEquals("packageInfo.itemList.get(i).marketPrice", model.packageInfo.itemList.get(i).marketPrice, 16665);
+            assertEquals("packageInfo.itemList.get(i).needPayPrice", model.packageInfo.itemList.get(i).needPayPrice, 6800);
+            assertEquals("packageInfo.itemList.get(i).total_double_discount_price", model.packageInfo.itemList.get(i).total_double_discount_price, 3965);
+            assertEquals("packageInfo.itemList.get(i).lately_double_tips", model.packageInfo.itemList.get(i).lately_double_tips, "- ¥ 39.65");
+
+            assertEquals("packageInfo.itemList.get(i).merchantDiscount", model.packageInfo.itemList.get(i).merchantDiscount, 400);
+            assertEquals("packageInfo.itemList.get(i).needPayWithoutPlatformDiscount", model.packageInfo.itemList.get(i).needPayWithoutPlatformDiscount, 6800);
+
+        }
+
+        assertEquals("packageInfo.platformDiscount", model.packageInfo.platformDiscount, 0);
+        assertEquals("packageInfo.discountTotal", model.packageInfo.discountTotal, 4365);
+        assertEquals("packageInfo.savePrice", model.packageInfo.savePrice, 9865);
+
+    }
+
+    private void assertPay25() {
+        assertEquals("packageInfo.totalPrice", model.packageInfo.totalPrice, 11220);
+        assertEquals("packageInfo.totalAmount", model.packageInfo.totalAmount, 5);
+        assertEquals("packageInfo.needPayPrice", model.packageInfo.needPayPrice, 7465);
+
+        for (int i = 0; i < model.packageInfo.itemList.size(); i++) {
+
+            assertEquals("packageInfo.itemList.get(i).totalPrice", model.packageInfo.itemList.get(i).totalPrice, 11220);
+            assertEquals("packageInfo.itemList.get(i).totalAmount", model.packageInfo.itemList.get(i).totalAmount, 5);
+            assertEquals("packageInfo.itemList.get(i).marketPrice", model.packageInfo.itemList.get(i).marketPrice, 16665);
+            assertEquals("packageInfo.itemList.get(i).needPayPrice", model.packageInfo.itemList.get(i).needPayPrice, 7465);
+            assertEquals("packageInfo.itemList.get(i).total_double_discount_price", model.packageInfo.itemList.get(i).total_double_discount_price, 3355);
+            assertEquals("packageInfo.itemList.get(i).lately_double_tips", model.packageInfo.itemList.get(i).lately_double_tips, "- ¥ 33.55");
+
+            assertEquals("packageInfo.itemList.get(i).merchantDiscount", model.packageInfo.itemList.get(i).merchantDiscount, 400);
+            assertEquals("packageInfo.itemList.get(i).needPayWithoutPlatformDiscount", model.packageInfo.itemList.get(i).needPayWithoutPlatformDiscount, 7465);
+
+        }
+
+        assertEquals("packageInfo.platformDiscount", model.packageInfo.platformDiscount, 0);
+        assertEquals("packageInfo.discountTotal", model.packageInfo.discountTotal, 3755);
+        assertEquals("packageInfo.savePrice", model.packageInfo.savePrice, 9200);
+
+    }
+
+    private void assertPay345() {
+        assertEquals("packageInfo.totalPrice", model.packageInfo.totalPrice, 11275);
+        assertEquals("packageInfo.totalAmount", model.packageInfo.totalAmount, 5);
+        assertEquals("packageInfo.needPayPrice", model.packageInfo.needPayPrice, 6054);
+
+        for (int i = 0; i < model.packageInfo.itemList.size(); i++) {
+
+            assertEquals("packageInfo.itemList.get(i).totalPrice", model.packageInfo.itemList.get(i).totalPrice, 11275);
+            assertEquals("packageInfo.itemList.get(i).totalAmount", model.packageInfo.itemList.get(i).totalAmount, 5);
+            assertEquals("packageInfo.itemList.get(i).marketPrice", model.packageInfo.itemList.get(i).marketPrice, 16665);
+            assertEquals("packageInfo.itemList.get(i).needPayPrice", model.packageInfo.itemList.get(i).needPayPrice, 6054);
+            assertEquals("packageInfo.itemList.get(i).total_double_discount_price", model.packageInfo.itemList.get(i).total_double_discount_price, 4821);
+            assertEquals("packageInfo.itemList.get(i).lately_double_tips", model.packageInfo.itemList.get(i).lately_double_tips, "- ¥ 48.21");
+
+            assertEquals("packageInfo.itemList.get(i).merchantDiscount", model.packageInfo.itemList.get(i).merchantDiscount, 400);
+            assertEquals("packageInfo.itemList.get(i).needPayWithoutPlatformDiscount", model.packageInfo.itemList.get(i).needPayWithoutPlatformDiscount, 6054);
+
+        }
+
+        assertEquals("packageInfo.platformDiscount", model.packageInfo.platformDiscount, 0);
+        assertEquals("packageInfo.discountTotal", model.packageInfo.discountTotal, 5221);
+        assertEquals("packageInfo.savePrice", model.packageInfo.savePrice, 10611);
+
+    }
+
+    private void assertPay2345() {
+        assertEquals("packageInfo.totalPrice", model.packageInfo.totalPrice, 11330);
+        assertEquals("packageInfo.totalAmount", model.packageInfo.totalAmount, 5);
+        assertEquals("packageInfo.needPayPrice", model.packageInfo.needPayPrice, 4021);
+
+        for (int i = 0; i < model.packageInfo.itemList.size(); i++) {
+
+            assertEquals("packageInfo.itemList.get(i).totalPrice", model.packageInfo.itemList.get(i).totalPrice, 11330);
+            assertEquals("packageInfo.itemList.get(i).totalAmount", model.packageInfo.itemList.get(i).totalAmount, 5);
+            assertEquals("packageInfo.itemList.get(i).marketPrice", model.packageInfo.itemList.get(i).marketPrice, 16665);
+            assertEquals("packageInfo.itemList.get(i).needPayPrice", model.packageInfo.itemList.get(i).needPayPrice, 4321);
+            assertEquals("packageInfo.itemList.get(i).total_double_discount_price", model.packageInfo.itemList.get(i).total_double_discount_price, 6609);
+            assertEquals("packageInfo.itemList.get(i).lately_double_tips", model.packageInfo.itemList.get(i).lately_double_tips, "- ¥ 66.09");
+
+            assertEquals("packageInfo.itemList.get(i).merchantDiscount", model.packageInfo.itemList.get(i).merchantDiscount, 400);
+            assertEquals("packageInfo.itemList.get(i).needPayWithoutPlatformDiscount", model.packageInfo.itemList.get(i).needPayWithoutPlatformDiscount, 4321);
+
+        }
+
+        assertEquals("packageInfo.platformDiscount", model.packageInfo.platformDiscount, 300);
+        assertEquals("packageInfo.discountTotal", model.packageInfo.discountTotal, 7309);
+        assertEquals("packageInfo.savePrice", model.packageInfo.savePrice, 12644);
+
+    }
+
+
 }

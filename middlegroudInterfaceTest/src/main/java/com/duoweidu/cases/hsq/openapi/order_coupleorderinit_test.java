@@ -1284,7 +1284,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
         detailAssertTest(777, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
         detailAssertTest(1800, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
         detailAssertTest(6, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
-        detailAssertTest(777, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
+        detailAssertTest(977, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
 //        detailAssertTest(84, "packageInfo.itemList.get(0).discountActivity.discountActivityId", model.packageInfo.itemList.get(0).discountActivity.discountActivityId);
 //        detailAssertTest("第2件9.9折", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0));
 //        detailAssertTest("第4件5折", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1));
