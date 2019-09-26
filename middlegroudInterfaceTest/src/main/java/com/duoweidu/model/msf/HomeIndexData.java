@@ -42,6 +42,7 @@ public class HomeIndexData {
         public static class ListModel {
             public int id;
             public String title;
+            public String gif;
             public String pic;
             public int width;
             public int height;

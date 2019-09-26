@@ -39,7 +39,7 @@ public class market_pinactivitiessearch_test extends HsqInterfaceTest {
                 detailAssertTest("list.get(i).tags", model.list.get(i).tags);
                 for (int j = 0; j < model.list.get(i).tags.size(); j++) {
                     detailAssertTest("list.get(i).tags.get(j).text", model.list.get(i).tags.get(j).text);
-                    detailAssertTest("list.get(i).tags.get(j).background", model.list.get(i).tags.get(j).background);
+//                    detailAssertTest("list.get(i).tags.get(j).background", model.list.get(i).tags.get(j).background);
                 }
             }
             detailAssertTest("list.get(i).canBought", model.list.get(i).canBought);

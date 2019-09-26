@@ -37,7 +37,7 @@ public class product_coupleskulist_test extends HsqInterfaceTest {
             if (model.list.get(i).tags.size() > 0) {
                 for (int j = 0; j < model.list.get(i).tags.size(); j++) {
                     detailAssertTest("list.get(i).tags.get(j).text", model.list.get(i).tags.get(j).text);
-                    detailAssertTest("list.get(i).tags.get(j).background", model.list.get(i).tags.get(j).background);
+//                    detailAssertTest("list.get(i).tags.get(j).background", model.list.get(i).tags.get(j).background);
 
                 }
             }

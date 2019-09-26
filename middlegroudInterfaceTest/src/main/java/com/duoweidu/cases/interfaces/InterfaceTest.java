@@ -26,7 +26,6 @@ public class InterfaceTest {
     //用来储存返回的结果
     protected String result;
 
-
     //设置接口响应的默认限制时间
     protected long limitTime() {
         return ConfigFileUrl.getLimitTime();
