@@ -3,6 +3,7 @@ package com.duoweidu.cases.hsq.openapi;
 import com.duoweidu.cases.interfaces.HsqInterfaceTest;
 import com.duoweidu.config.sql.SqlDetail;
 import com.duoweidu.model.hsq.ResData;
+import com.duoweidu.utils.ConfigFileUrl;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.testng.annotations.Test;
@@ -42,12 +43,16 @@ public class user_addskutocartv1_test extends HsqInterfaceTest {
         getRequest(list);
     }
 
-    @Test(dependsOnGroups = "loginTrue", description = "加入购物车（只有商家优惠）", groups = "addskutocartMerchant")
+    @Test(dependsOnGroups = "loginTrue", description = "加入购物车（只有商家优惠，2件）", groups = "addskutocartMerchant")
     public void userAddskutocartv1Merchant() {
-        list.add(new BasicNameValuePair("Content-Type",SqlDetail.getInstance().getParamValue(0,"Content-Type")));
-        list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue("merchantSkuId")));
-        list.add(new BasicNameValuePair("amount", "2"));
-        getRequest(list);
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            list.add(new BasicNameValuePair("Content-Type", SqlDetail.getInstance().getParamValue(0, "Content-Type")));
+            list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue("merchantSkuId")));
+            list.add(new BasicNameValuePair("amount", "2"));
+            getRequest(list);
+        }else {
+            System.out.println("此环境无此cases");
+        }
     }
 
     private void detailAssert() {

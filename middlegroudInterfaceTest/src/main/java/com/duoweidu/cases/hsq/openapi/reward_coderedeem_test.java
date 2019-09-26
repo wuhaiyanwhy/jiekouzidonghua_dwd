@@ -55,6 +55,16 @@ public class reward_coderedeem_test extends HsqInterfaceTest {
 
     }
 
+    @Test(dependsOnGroups = "orderinitPintuan", description = "兑换活动码（普通商品可用券）")
+    public void rewardCoderedeemSku() {
+        List<NameValuePair> list = new LinkedList<>();
+        list.add(new BasicNameValuePair("code", SqlDetail.getInstance().getParamValue(2, "codeSku")));
+        list.add(new BasicNameValuePair("type", "1"));
+
+        rewardCodeRedeem(list);
+
+    }
+
     private void detailAssert() {
         detailAssertTest(true, "res", model.res);
     }

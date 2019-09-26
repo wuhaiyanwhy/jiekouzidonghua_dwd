@@ -55,10 +55,28 @@ public class HsqOpenapiConfig {
     //储存积分订单列表接口返回的总页数
     public static int totalPage;
     //保存普通订单临时id
-    public static  String goconfirmSid;
+    public static String goconfirmSid;
     //保存购物车普通订单的id
     public static String orderIds;
 
+
     //储存riskgo是否更新接口的值
     public static int riskgoSwitch;
+    //保存普通订单临时id (商家优惠券2件)
+    public static String merchantConfirmSid;
+    public static String confirmSidNoLose2;
+    public static String confirmSidLose2;
+    public static String confirmSidLose23;
+    public static String confirmSidLose24;
+    public static String confirmSidLose235;
+    public static String confirmSidDiscount3;
+    public static String confirmSidDiscount34;
+    public static String confirmSidDiscount35;
+    public static String confirmSidDiscount245;
+    public static String confirmSidDiscount2345;
+    public static String confirmSidPay5;
+    public static String confirmSidPay45;
+    public static String confirmSidPay25;
+    public static String confirmSidPay345;
+    public static String confirmSidPay2345;
 }

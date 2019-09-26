@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+<suite name="好食期接口测试">
+    <test name="好食期接口测试用例(openapi)">
+        <classes>
+
+            <class name="com.duoweidu.cases.hsq.openapi.user_login_test">
+                <methods>
+                    <include name="login_true"/>
+                </methods>
+            </class>
+            <!--添加购物车-->
+            <class name="com.duoweidu.cases.hsq.openapi.user_addskutocartv1_test">
+                <methods>
+                    <include name="user_addskutocartv1_true"/>
+                    <include name="user_addskutocartv1_true2"/>
+                    <include name="userAddskutocartv1Merchant"/>
+                </methods>
+            </class>
+            <!--编辑购物车-->
+            <class name="com.duoweidu.cases.hsq.openapi.UserEditcartsku">
+                <methods>
+                    <include name="userEditcartsku"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.openapi.OrderOderinitv1">
+                <methods>
+                    <include name="orderOderinitv1"></include>
+                    <include name="orderOderinitv1Merchant"></include>
+                    <include name="orderOderinitv1Nolose2"></include>
+                    <include name="orderOderinitv1lose2"></include>
+                    <include name="orderOderinitv1lose23"></include>
+                    <include name="orderOderinitv1lose24"></include>
+                    <include name="orderOderinitv1lose235"></include>
+                    <include name="orderOderinitv1Discount3"></include>
+                    <include name="orderOderinitv1Discount34"></include>
+                    <include name="orderOderinitv1Discount35"></include>
+                    <include name="orderOderinitv1Discount245"></include>
+                    <include name="orderOderinitv1Discount2345"></include>
+                    <include name="orderOderinitv1Pay5"></include>
+                    <include name="orderOderinitv1Pay45"></include>
+                    <include name="orderOderinitv1Pay25"></include>
+                    <include name="orderOderinitv1Pay345"></include>
+                    <include name="orderOderinitv1Pay2345"></include>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.openapi.OrderSubmitorderv1">
+                <methods>
+                    <include name="orderSubmitorderv1"></include>
+                    <include name="orderSubmitorderv1Merchant"></include>
+                    <include name="orderSubmitorderv1NoLose2"></include>
+                    <include name="orderSubmitorderv1Lose2"></include>
+                    <include name="orderSubmitorderv1Lose23"></include>
+                    <include name="orderSubmitorderv1Lose24"></include>
+                    <include name="orderSubmitorderv1Lose235"></include>
+                    <include name="orderSubmitorderv1Discount3"></include>
+                    <include name="orderSubmitorderv1Discount34"></include>
+                    <include name="orderSubmitorderv1Discount35"></include>
+                    <include name="orderSubmitorderv1Discount245"></include>
+                    <include name="orderSubmitorderv1Discount2345"></include>
+                    <include name="orderSubmitorderv1Pay5"></include>
+                    <include name="orderSubmitorderv1Pay45"></include>
+                    <include name="orderSubmitorderv1Pay25"></include>
+                    <include name="orderSubmitorderv1Pa345"></include>
+                    <include name="orderSubmitorderv1Pa2345"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <listeners>
+
+        <listener class-name="com.duoweidu.config.ExtentTestNGIReporterListener"/>
+    </listeners>
+
+</suite>
