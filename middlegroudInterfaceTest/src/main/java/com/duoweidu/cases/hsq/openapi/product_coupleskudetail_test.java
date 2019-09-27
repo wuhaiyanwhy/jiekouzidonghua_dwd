@@ -96,7 +96,7 @@ public class product_coupleskudetail_test extends HsqInterfaceTest {
             detailAssertTest(1522512000,"manufactured_date", model.manufactured_date);
             detailAssertTest("","merchant_item_code", model.merchant_item_code);
             detailAssertTest(1523872988,"created_at", model.created_at);
-            detailAssertTest(1550815808,"updated_at", model.updated_at);
+            assertNotNull("updated_at", model.updated_at);
             detailAssertTest(1523873005,"audit_time", model.audit_time);
             detailAssertTest(1523873005,"online_time", model.online_time);
 //            detailAssertTest(1000,"lowest_web_price", model.lowest_web_price);
