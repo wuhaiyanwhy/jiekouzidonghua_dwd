@@ -142,7 +142,7 @@ public class product_coupleskudetail_test extends HsqInterfaceTest {
                 detailAssertTest(1, "attrDatas.actived", entry.getValue().actived);
                 detailAssertTest(0, "attrDatas.delete_flag", entry.getValue().delete_flag);
                 detailAssertTest(1523872988, "attrDatas.created_at", entry.getValue().created_at);
-                detailAssertTest(1550815808, "attrDatas.updated_at", entry.getValue().updated_at);
+                assertNotNull("attrDatas.updated_at", entry.getValue().updated_at);
                 detailAssertTest(2, "attrDatas.audit_status", entry.getValue().audit_status);
                 detailAssertTest(1523873005, "attrDatas.audit_time", entry.getValue().audit_time);
                 detailAssertTest(0, "attrDatas.restriction_amount", entry.getValue().restriction_amount);
