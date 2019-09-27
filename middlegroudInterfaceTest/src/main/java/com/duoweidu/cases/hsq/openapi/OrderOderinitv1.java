@@ -30,6 +30,8 @@ public class OrderOderinitv1 extends HsqInterfaceTest {
         List<NameValuePair> list = new LinkedList<>();
         list.add(new BasicNameValuePair("skusInfo","[{\"skuId\":\""+ SqlDetail.getInstance().getParamValue("gonewskuId")
                 + "\",\"amount\":\"1\",\"price\":\""+ SqlDetail.getInstance().getParamValue("goprice") + "\"}]"));
+        list.add(new BasicNameValuePair("isFastbuy", "0"));
+        System.out.println(list.toString());
         getRequest(list);
         HsqOpenapiConfig.goconfirmSid = model.confirmSid;
         detailAssert();
@@ -389,9 +391,9 @@ public class OrderOderinitv1 extends HsqInterfaceTest {
         }
 
         if ("prod".equals(ConfigFileUrl.getEnv())) {
-            assertEquals("packageInfo.totalPrice", model.packageInfo.totalPrice, 7000);
+            assertEquals("packageInfo.totalPrice", model.packageInfo.totalPrice, 10000);
             assertEquals("packageInfo.totalAmount", model.packageInfo.totalAmount, 1);
-            assertEquals("packageInfo.needPayPrice", model.packageInfo.needPayPrice, 7000);
+            assertEquals("packageInfo.needPayPrice", model.packageInfo.needPayPrice, 10000);
             for (int i = 0; i < model.packageInfo.itemList.size(); i++) {
                 assertEquals("packageInfo.itemList.get(i).merchant_id", model.packageInfo.itemList.get(i).merchant_id, 1786);
                 assertEquals("packageInfo.itemList.get(i).merchant_name", model.packageInfo.itemList.get(i).merchant_name, "淘食铺");
@@ -399,10 +401,10 @@ public class OrderOderinitv1 extends HsqInterfaceTest {
                 assertEquals("packageInfo.itemList.get(i).freeDeliveryPrice", model.packageInfo.itemList.get(i).freeDeliveryPrice, 0);
                 assertEquals("packageInfo.itemList.get(i).isFreeDelivery", model.packageInfo.itemList.get(i).isFreeDelivery, 1);
                 assertEquals("packageInfo.itemList.get(i).isFreeBaseWeight", model.packageInfo.itemList.get(i).isFreeBaseWeight, 0);
-                assertEquals("packageInfo.itemList.get(i).totalPrice", model.packageInfo.itemList.get(i).totalPrice, 7000);
+                assertEquals("packageInfo.itemList.get(i).totalPrice", model.packageInfo.itemList.get(i).totalPrice, 10000);
                 assertEquals("packageInfo.itemList.get(i).totalAmount", model.packageInfo.itemList.get(i).totalAmount, 1);
                 assertEquals("packageInfo.itemList.get(i).marketPrice", model.packageInfo.itemList.get(i).marketPrice, 10000);
-                assertEquals("packageInfo.itemList.get(i).needPayPrice", model.packageInfo.itemList.get(i).needPayPrice, 7000);
+                assertEquals("packageInfo.itemList.get(i).needPayPrice", model.packageInfo.itemList.get(i).needPayPrice, 10000);
                 assertEquals("packageInfo.itemList.get(i).needPayPrice", model.packageInfo.itemList.get(i).totalWeight, 0);
                 assertEquals("packageInfo.itemList.get(i).totalWeightSum", model.packageInfo.itemList.get(i).totalWeightSum, 0);
                 for (int j = 0; j < model.packageInfo.itemList.get(i).skuList.size(); j++) {
@@ -441,12 +443,12 @@ public class OrderOderinitv1 extends HsqInterfaceTest {
                     assertEquals("packageInfo.itemList.get(i).skuList.get(j).joinActivityId", model.packageInfo.itemList.get(i).skuList.get(j).joinActivityId, 0);
                     assertEquals("packageInfo.itemList.get(i).skuList.get(j).canDelivery", model.packageInfo.itemList.get(i).skuList.get(j).canDelivery, true);
                     assertEquals("packageInfo.itemList.get(i).skuList.get(j).dealAmount", model.packageInfo.itemList.get(i).skuList.get(j).dealAmount, 1);
-                    assertEquals("packageInfo.itemList.get(i).skuList.get(j).dealPrice", model.packageInfo.itemList.get(i).skuList.get(j).dealPrice, "7000");
-                    assertEquals("packageInfo.itemList.get(i).skuList.get(j).totalPrice", model.packageInfo.itemList.get(i).skuList.get(j).totalPrice, 7000);
+                    assertEquals("packageInfo.itemList.get(i).skuList.get(j).dealPrice", model.packageInfo.itemList.get(i).skuList.get(j).dealPrice, "10000");
+                    assertEquals("packageInfo.itemList.get(i).skuList.get(j).totalPrice", model.packageInfo.itemList.get(i).skuList.get(j).totalPrice, 10000);
                     assertNotNull("packageInfo.itemList.get(i).skuList.get(j).left_stock", model.packageInfo.itemList.get(i).skuList.get(j).left_stock);
                     assertNotNull("packageInfo.itemList.get(i).skuList.get(j).max_cart_nums", model.packageInfo.itemList.get(i).skuList.get(j).max_cart_nums);
                     assertEquals("packageInfo.itemList.get(i).skuList.get(j).amount", model.packageInfo.itemList.get(i).skuList.get(j).amount, 1);
-                    assertEquals("packageInfo.itemList.get(i).skuList.get(j).orderPrice", model.packageInfo.itemList.get(i).skuList.get(j).orderPrice, "7000");
+                    assertEquals("packageInfo.itemList.get(i).skuList.get(j).orderPrice", model.packageInfo.itemList.get(i).skuList.get(j).orderPrice, "10000");
                     assertEquals("packageInfo.itemList.get(i).skuList.get(j).skuId", model.packageInfo.itemList.get(i).skuList.get(j).skuId, 126072);
                     assertEquals("packageInfo.itemList.get(i).skuList.get(j).sku_name", model.packageInfo.itemList.get(i).skuList.get(j).sku_name, "购物车接口自动化勿动 购物车接口自动化测试勿动");
                     assertNotEmpty("packageInfo.itemList.get(i).skuList.get(j).attrs", model.packageInfo.itemList.get(i).skuList.get(j).attrs);
@@ -472,7 +474,7 @@ public class OrderOderinitv1 extends HsqInterfaceTest {
                 assertTrue("packageInfo.itemList.get(i).isDeliveryFree", model.packageInfo.itemList.get(i).isDeliveryFree);
                 assertNotNull("packageInfo.itemList.get(i).merchantDiscount", model.packageInfo.itemList.get(i).merchantDiscount);
                 assertNotNull("packageInfo.itemList.get(i).merchantCouponList", model.packageInfo.itemList.get(i).merchantCouponList);
-                assertEquals("packageInfo.itemList.get(i).needPayWithoutPlatformDiscount", model.packageInfo.itemList.get(i).needPayWithoutPlatformDiscount, 7000);
+                assertEquals("packageInfo.itemList.get(i).needPayWithoutPlatformDiscount", model.packageInfo.itemList.get(i).needPayWithoutPlatformDiscount, 10000);
                 assertEquals("packageInfo.itemList.get(i).merchant_url", model.packageInfo.itemList.get(i).merchant_url, "https://m.haoshiqi.net/v2/merchant?id=1786");
             }
             assertNotNull("packageInfo.platformCouponList", model.packageInfo.platformCouponList);
