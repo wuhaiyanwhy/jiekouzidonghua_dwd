@@ -17,8 +17,6 @@ public class SearchBranch extends MsfInterfaceTest {
     }
 
     private void detailAssert() {
-        assertNotEmpty("totalCnt", model.totalCnt);
-        assertNotEmpty("totalPage", model.totalPage);
         assertNotEmpty("list", model.list);
         for (int i = 0; i < model.list.size(); i++) {
             assertNotEmpty("list.get(i).id", model.list.get(i).id);

@@ -4,8 +4,6 @@ import java.util.ArrayList;
 
 public class SearchBranchData {
 
-    public int totalCnt;
-    public int totalPage;
     public ArrayList<ListModel> list;
     public int total_cnt;
     public int total_page;
