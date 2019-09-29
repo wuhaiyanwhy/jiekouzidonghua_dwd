@@ -604,7 +604,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
             detailAssertTest(1, "packageInfo.itemList.get(0).skuList.get(0).actived", model.packageInfo.itemList.get(0).skuList.get(0).actived);
             detailAssertTest(0, "packageInfo.itemList.get(0).skuList.get(0).delete_flag", model.packageInfo.itemList.get(0).skuList.get(0).delete_flag);
             detailAssertTest(1523872988, "packageInfo.itemList.get(0).skuList.get(0).created_at", model.packageInfo.itemList.get(0).skuList.get(0).created_at);
-            detailAssertTest(1550815808, "packageInfo.itemList.get(0).skuList.get(0).updated_at", model.packageInfo.itemList.get(0).skuList.get(0).updated_at);
+            assertNotNull("packageInfo.itemList.get(0).skuList.get(0).updated_at", model.packageInfo.itemList.get(0).skuList.get(0).updated_at);
             detailAssertTest(2, "packageInfo.itemList.get(0).skuList.get(0).audit_status", model.packageInfo.itemList.get(0).skuList.get(0).audit_status);
             detailAssertTest(1523873005, "packageInfo.itemList.get(0).skuList.get(0).audit_time", model.packageInfo.itemList.get(0).skuList.get(0).audit_time);
             detailAssertTest(1, "packageInfo.itemList.get(0).skuList.get(0).fpostage_amount", model.packageInfo.itemList.get(0).skuList.get(0).fpostage_amount);
