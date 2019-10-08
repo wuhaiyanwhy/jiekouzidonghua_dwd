@@ -264,6 +264,7 @@
                     <include name="order_coupleorderinit_losePintuan2"/>
                     <include name="order_coupleorderinit_losePintuan23"/>
                     <include name="order_coupleorderinit_losePintuan24"/>
+                    <include name="order_coupleorderinit_losePintuan235"/>
                     <include name="order_coupleorderinit_loseDandugou2345"/>
                     <include name="order_coupleorderinit_discountPintuan3"/>
                     <include name="order_coupleorderinit_discountPintuan34"/>
@@ -311,12 +312,12 @@
                     <include name="order_submitorder_losePintuanTrue2"/>
                     <include name="order_submitorder_losePintuanTrue23"/>
                     <include name="order_submitorder_losePintuanTrue24"/>
-                    <include name="order_submitorder_loseDandugou235"/>
-                    <include name="order_submitorder_losePintuanTrue2345"/>
+                    <include name="order_submitorder_losePintuanTrue235"/>
+                    <include name="order_submitorder_loseDandugouTrue2345"/>
                     <include name="order_submitorder_discountPintuan3"/>
                     <include name="order_submitorder_discountPintuan34"/>
                     <include name="order_submitorder_discountPintuan35"/>
-                    <include name="order_submitorder_discountPintuan245"/>
+                    <include name="order_submitorder_discountDandugou245"/>
                     <include name="order_submitorder_discountPintuan2345"/>
                     <include name="order_submitorder_payPintuan5"/>
                     <include name="order_submitorder_payDandugou45"/>
@@ -339,6 +340,7 @@
 
                 </methods>
             </class>
+
             <class name="com.duoweidu.cases.hsq.openapi.order_orderpay_test">
                 <methods>
                     <include name="order_orderpay_putongTrue"/>

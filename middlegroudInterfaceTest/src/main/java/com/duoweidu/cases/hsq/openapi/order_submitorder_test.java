@@ -46,6 +46,10 @@ public class order_submitorder_test extends HsqInterfaceTest {
         submitorderConfig(list, HsqOpenapiConfig.orderinitResult);
         //submitorder普通订单接口的返回数据确定默认值
         HsqOpenapiConfig.submitorderPutongResult = result;
+        //判断结算价
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(getOrderId()), 1804);
+        }
     }
 
     @Test(dependsOnGroups = "orderinitPintuan",description = "提交订单（拼团）",groups = "submitorderPintuan")
@@ -55,6 +59,9 @@ public class order_submitorder_test extends HsqInterfaceTest {
         submitorderConfig(list, HsqOpenapiConfig.coupleorderinitPintuanResult);
         //submitorder普通订单接口的返回数据确定默认值
         HsqOpenapiConfig.submitorderPintuanResult = result;
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(getOrderId()), 95);
+        }
     }
 
 
@@ -69,6 +76,10 @@ public class order_submitorder_test extends HsqInterfaceTest {
         submitorderConfig(list, HsqOpenapiConfig.coupleorderinitDandugouResult);
         //submitorder普通订单接口的返回数据确定默认值
         HsqOpenapiConfig.submitorderDandugouResult = result;
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(getOrderId()), 1044);
+        }
+
     }
 
     @Test(dependsOnGroups = "orderinitChouPintuan",description = "提交订单（抽奖团拼团）",groups = "submitorderChouPintuan")
@@ -78,6 +89,9 @@ public class order_submitorder_test extends HsqInterfaceTest {
         submitorderConfig(list, HsqOpenapiConfig.coupleorderinitChouPintuanResult);
         //submitorder普通订单接口的返回数据确定默认值
         HsqOpenapiConfig.submitorderChouPintuanResult = result;
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(getOrderId()), 284);
+        }
     }
 
     @Test(dependsOnGroups = "orderinitChouDandugou",description = "提交订单（抽奖团拼团）",groups = "submitorderChouDandugou")
@@ -87,6 +101,9 @@ public class order_submitorder_test extends HsqInterfaceTest {
         submitorderConfig(list, HsqOpenapiConfig.coupleorderinitChouDandugouResult);
         //submitorder普通订单接口的返回数据确定默认值
         HsqOpenapiConfig.submitorderChouDandugouResult = result;
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(getOrderId()), 9594);
+        }
     }
 
     @Test(dependsOnGroups = "orderinitActivitePintuan",description = "提交订单（拼团）(活动报名+商家优惠券)",groups = "submitorderActivitePintuan")
@@ -96,6 +113,7 @@ public class order_submitorder_test extends HsqInterfaceTest {
             List<NameValuePair> list = new LinkedList<>();
             list.add(new BasicNameValuePair("orderType", "3"));
             submitorderConfig(list, HsqOpenapiConfig.coupleorderinitActivitiePintuanResult);
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(getOrderId()), 1);
         }else {
             System.out.println("此环境无此cases");
         }
@@ -109,6 +127,7 @@ public class order_submitorder_test extends HsqInterfaceTest {
             List<NameValuePair> list = new LinkedList<>();
             list.add(new BasicNameValuePair("orderType", "3"));
             submitorderConfig(list, HsqOpenapiConfig.coupleorderinitNoLosePintuanResult2);
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(getOrderId()), 1055);
         }else {
             System.out.println("此环境无此cases");
         }
@@ -120,7 +139,9 @@ public class order_submitorder_test extends HsqInterfaceTest {
         List<NameValuePair> list = new LinkedList<>();
         list.add(new BasicNameValuePair("orderType", "3"));
         submitorderConfig(list, HsqOpenapiConfig.coupleorderinitLosePintuanResult2);
-
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(getOrderId()), 1056);
+        }
     }
 
     @Test(dependsOnGroups = "orderinitLosePintuan23",description = "提交订单（拼团）(多件优惠减钱 23)",groups = "submitorderLosePintuan23")
@@ -130,6 +151,7 @@ public class order_submitorder_test extends HsqInterfaceTest {
             List<NameValuePair> list = new LinkedList<>();
             list.add(new BasicNameValuePair("orderType", "3"));
             submitorderConfig(list, HsqOpenapiConfig.coupleorderinitLosePintuanResult23);
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(getOrderId()), 2628);
         }else {
             System.out.println("此环境无此cases");
         }
@@ -141,6 +163,7 @@ public class order_submitorder_test extends HsqInterfaceTest {
             List<NameValuePair> list = new LinkedList<>();
             list.add(new BasicNameValuePair("orderType", "3"));
             submitorderConfig(list, HsqOpenapiConfig.coupleorderinitLosePintuanResult24);
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(getOrderId()), 3135);
         }else {
             System.out.println("此环境无此cases");
         }
@@ -155,6 +178,7 @@ public class order_submitorder_test extends HsqInterfaceTest {
             List<NameValuePair> list = new LinkedList<>();
             list.add(new BasicNameValuePair("orderType", "3"));
             submitorderConfig(list, HsqOpenapiConfig.coupleorderinitLosePintuanResult235);
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(getOrderId()), 4864);
         }else {
             System.out.println("此环境无此cases");
         }
@@ -168,6 +192,7 @@ public class order_submitorder_test extends HsqInterfaceTest {
             List<NameValuePair> list = new LinkedList<>();
             list.add(new BasicNameValuePair("orderType", "2"));
             submitorderConfig(list, HsqOpenapiConfig.coupleorderinitLoseDandugouResult2345);
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(getOrderId()), 7907);
         }else {
             System.out.println("此环境无此cases");
         }
@@ -181,6 +206,7 @@ public class order_submitorder_test extends HsqInterfaceTest {
             List<NameValuePair> list = new LinkedList<>();
             list.add(new BasicNameValuePair("orderType", "3"));
             submitorderConfig(list, HsqOpenapiConfig.coupleorderinitDiscountPintuan3);
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(getOrderId()), 2122);
         }else {
             System.out.println("此环境无此cases");
         }
@@ -193,6 +219,7 @@ public class order_submitorder_test extends HsqInterfaceTest {
             List<NameValuePair> list = new LinkedList<>();
             list.add(new BasicNameValuePair("orderType", "3"));
             submitorderConfig(list, HsqOpenapiConfig.coupleorderinitDiscountPintuan34);
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(getOrderId()), 3198);
         }else {
             System.out.println("此环境无此cases");
         }
@@ -205,6 +232,9 @@ public class order_submitorder_test extends HsqInterfaceTest {
         List<NameValuePair> list = new LinkedList<>();
         list.add(new BasicNameValuePair("orderType", "3"));
         submitorderConfig(list, HsqOpenapiConfig.coupleorderinitDiscountPintuan35);
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(getOrderId()), 4305);
+        }
 
     }
 
@@ -215,6 +245,7 @@ public class order_submitorder_test extends HsqInterfaceTest {
             List<NameValuePair> list = new LinkedList<>();
             list.add(new BasicNameValuePair("orderType", "2"));
             submitorderConfig(list, HsqOpenapiConfig.coupleorderinitDiscountDandugou245);
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(getOrderId()), 9426);
         }else {
             System.out.println("此环境无此cases");
         }
@@ -228,6 +259,7 @@ public class order_submitorder_test extends HsqInterfaceTest {
             List<NameValuePair> list = new LinkedList<>();
             list.add(new BasicNameValuePair("orderType", "3"));
             submitorderConfig(list, HsqOpenapiConfig.coupleorderinitDiscountPintuan2345);
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(getOrderId()), 3183);
         }else {
             System.out.println("此环境无此cases");
         }
@@ -241,6 +273,8 @@ public class order_submitorder_test extends HsqInterfaceTest {
             List<NameValuePair> list = new LinkedList<>();
             list.add(new BasicNameValuePair("orderType", "3"));
             submitorderConfig(list, HsqOpenapiConfig.coupleorderinitPayPintuan5);
+
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(getOrderId()), 5276);
         }else {
             System.out.println("此环境无此cases");
         }
@@ -254,6 +288,8 @@ public class order_submitorder_test extends HsqInterfaceTest {
             List<NameValuePair> list = new LinkedList<>();
             list.add(new BasicNameValuePair("orderType", "2"));
             submitorderConfig(list, HsqOpenapiConfig.coupleorderinitPayDandugou45);
+
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(getOrderId()), 6840);
         }else {
             System.out.println("此环境无此cases");
         }
@@ -267,6 +303,8 @@ public class order_submitorder_test extends HsqInterfaceTest {
             List<NameValuePair> list = new LinkedList<>();
             list.add(new BasicNameValuePair("orderType", "3"));
             submitorderConfig(list, HsqOpenapiConfig.coupleorderinitPayPintuan25);
+
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(getOrderId()), 4305);
         }else {
             System.out.println("此环境无此cases");
         }
@@ -281,6 +319,8 @@ public class order_submitorder_test extends HsqInterfaceTest {
             List<NameValuePair> list = new LinkedList<>();
             list.add(new BasicNameValuePair("orderType", "3"));
             submitorderConfig(list, HsqOpenapiConfig.coupleorderinitPayPintuan235);
+
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(getOrderId()), 4020);
         }else {
             System.out.println("此环境无此cases");
         }
@@ -294,6 +334,10 @@ public class order_submitorder_test extends HsqInterfaceTest {
         list.add(new BasicNameValuePair("orderType", "3"));
         submitorderConfig(list, HsqOpenapiConfig.coupleorderinitPayPintuan2345);
 
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(getOrderId()), 3430);
+        }
+
     }
 
     @Test(dependsOnGroups = "orderinitNoPayPintuan2345",description = "提交订单（拼团）(多件优惠付钱 2345,未达到第五件)",groups = "submitorderNoPayPintuan2345")
@@ -303,6 +347,8 @@ public class order_submitorder_test extends HsqInterfaceTest {
             List<NameValuePair> list = new LinkedList<>();
             list.add(new BasicNameValuePair("orderType", "3"));
             submitorderConfig(list, HsqOpenapiConfig.coupleorderinitNoPayPintuan2345);
+
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(getOrderId()), 2955);
         }else {
             System.out.println("此环境无此cases");
         }
@@ -316,6 +362,8 @@ public class order_submitorder_test extends HsqInterfaceTest {
             List<NameValuePair> list = new LinkedList<>();
             list.add(new BasicNameValuePair("orderType", "3"));
             submitorderConfig(list, HsqOpenapiConfig.coupleorderinitActiviteLosePintuan2);
+
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(getOrderId()), 285);
         }else {
             System.out.println("此环境无此cases");
         }
@@ -330,6 +378,8 @@ public class order_submitorder_test extends HsqInterfaceTest {
             List<NameValuePair> list = new LinkedList<>();
             list.add(new BasicNameValuePair("orderType", "3"));
             submitorderConfig(list, HsqOpenapiConfig.coupleorderinitActiviteLosePintuan3);
+
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(getOrderId()), 285);
         }else {
             System.out.println("此环境无此cases");
         }
@@ -342,6 +392,8 @@ public class order_submitorder_test extends HsqInterfaceTest {
             List<NameValuePair> list = new LinkedList<>();
             list.add(new BasicNameValuePair("orderType", "3"));
             submitorderConfig(list, HsqOpenapiConfig.coupleorderinitActiviteLosePintuan4);
+
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(getOrderId()), 475);
         }else {
             System.out.println("此环境无此cases");
         }
@@ -355,6 +407,8 @@ public class order_submitorder_test extends HsqInterfaceTest {
             List<NameValuePair> list = new LinkedList<>();
             list.add(new BasicNameValuePair("orderType", "3"));
             submitorderConfig(list, HsqOpenapiConfig.coupleorderinitActiviteLosePintuan5);
+
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(getOrderId()), 760);
         }else {
             System.out.println("此环境无此cases");
         }
@@ -367,6 +421,8 @@ public class order_submitorder_test extends HsqInterfaceTest {
             List<NameValuePair> list = new LinkedList<>();
             list.add(new BasicNameValuePair("orderType", "2"));
             submitorderConfig(list, HsqOpenapiConfig.coupleorderinitActiviteLoseDandugou2);
+
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(getOrderId()), 16032);
         }else {
             System.out.println("此环境无此cases");
         }
@@ -379,6 +435,8 @@ public class order_submitorder_test extends HsqInterfaceTest {
             List<NameValuePair> list = new LinkedList<>();
             list.add(new BasicNameValuePair("orderType", "3"));
             submitorderConfig(list, HsqOpenapiConfig.coupleorderinitActiviteDiscountPintuan2);
+
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(getOrderId()), 567);
         }else {
             System.out.println("此环境无此cases");
         }
@@ -391,6 +449,8 @@ public class order_submitorder_test extends HsqInterfaceTest {
             List<NameValuePair> list = new LinkedList<>();
             list.add(new BasicNameValuePair("orderType", "2"));
             submitorderConfig(list, HsqOpenapiConfig.coupleorderinitActiviteDiscountDandugouResult4);
+
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(getOrderId()), 29469);
         }else {
             System.out.println("此环境无此cases");
         }
@@ -403,6 +463,8 @@ public class order_submitorder_test extends HsqInterfaceTest {
             List<NameValuePair> list = new LinkedList<>();
             list.add(new BasicNameValuePair("orderType", "3"));
             submitorderConfig(list, HsqOpenapiConfig.coupleorderinitActiviteDiscountPintuan5);
+
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(getOrderId()), 1308);
         }else {
             System.out.println("此环境无此cases");
         }
@@ -416,6 +478,8 @@ public class order_submitorder_test extends HsqInterfaceTest {
             List<NameValuePair> list = new LinkedList<>();
             list.add(new BasicNameValuePair("orderType", "3"));
             submitorderConfig(list, HsqOpenapiConfig.coupleorderinitActivitePayResult2);
+
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(getOrderId()), 475);
         }else {
             System.out.println("此环境无此cases");
         }
@@ -427,6 +491,8 @@ public class order_submitorder_test extends HsqInterfaceTest {
             List<NameValuePair> list = new LinkedList<>();
             list.add(new BasicNameValuePair("orderType", "3"));
             submitorderConfig(list, HsqOpenapiConfig.coupleorderinitActivitePayResult3);
+
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(getOrderId()), 760);
         }else {
             System.out.println("此环境无此cases");
         }
@@ -439,6 +505,8 @@ public class order_submitorder_test extends HsqInterfaceTest {
             List<NameValuePair> list = new LinkedList<>();
             list.add(new BasicNameValuePair("orderType", "3"));
             submitorderConfig(list, HsqOpenapiConfig.coupleorderinitActivitePayResult5);
+
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(getOrderId()), 1330);
         }else {
             System.out.println("此环境无此cases");
         }
@@ -452,13 +520,23 @@ public class order_submitorder_test extends HsqInterfaceTest {
             list.add(new BasicNameValuePair("orderType", "11"));
             list.add(new BasicNameValuePair("token", SqlDetail.getInstance().getParamValue("token")));
             submitorderConfig(list, HsqOpenapiConfig.orderInitResult);
+
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(getOrderId()), 10449);
         }
 
     }
 
-    public void generalDetailAssert() {
-        detailAssertTest(1, "model.needPay", model.orderIds.size());
+    private void generalDetailAssert() {
+        detailAssertTest(1, "model.orderIds", model.orderIds.size());
         detailAssertTest(true, "model.needPay", model.needPay);
+    }
+
+    /**
+     * 获取订单id
+     * @return
+     */
+    private String getOrderId() {
+        return model.orderIds.get(0).toString();
     }
 
 

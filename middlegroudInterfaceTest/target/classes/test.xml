@@ -53,7 +53,7 @@
 
 
             <class name="com.duoweidu.cases.hsq.openapi.order_submitorder_test">
-            <methods>
+                <methods>
                 <!--<include name="order_submitorder_putongTrue"/>-->
                 <include name="order_submitorder_pintuanTrue"/>
                 <include name="order_submitorder_dandugouTrue"/>
@@ -91,7 +91,7 @@
                 <!--<include name="orderinitXinyonggou"/>-->
 
             </methods>
-        </class>
+            </class>
         </classes>
     </test>
 
