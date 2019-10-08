@@ -304,10 +304,38 @@
                     <include name="order_submitorder_putongTrue"/>
                     <include name="order_submitorder_pintuanTrue"/>
                     <include name="order_submitorder_dandugouTrue"/>
-                    <include name="order_submitorder_activitrPintuanTrue"/>
+                    <include name="order_submitorder_chouPintuanTrue"/>
+                    <include name="order_submitorder_chouDandugouTrue"/>
+                    <include name="order_submitorder_activitePintuanTrue"/>
+                    <include name="order_submitorder_noLosePintuanTrue2"/>
                     <include name="order_submitorder_losePintuanTrue2"/>
+                    <include name="order_submitorder_losePintuanTrue23"/>
+                    <include name="order_submitorder_losePintuanTrue24"/>
+                    <include name="order_submitorder_loseDandugou235"/>
+                    <include name="order_submitorder_losePintuanTrue2345"/>
+                    <include name="order_submitorder_discountPintuan3"/>
+                    <include name="order_submitorder_discountPintuan34"/>
+                    <include name="order_submitorder_discountPintuan35"/>
+                    <include name="order_submitorder_discountPintuan245"/>
+                    <include name="order_submitorder_discountPintuan2345"/>
+                    <include name="order_submitorder_payPintuan5"/>
+                    <include name="order_submitorder_payDandugou45"/>
+                    <include name="order_submitorder_payPintua25"/>
+                    <include name="order_submitorder_payPintua235"/>
+                    <include name="order_submitorder_payPintua2345"/>
+                    <include name="order_submitorder_noPayPintua2345"/>
+                    <include name="order_submitorder_activiteLosePintuan2"/>
+                    <include name="order_submitorder_activiteLosePintuan3"/>
+                    <include name="order_submitorder_activiteLosePintuan4"/>
+                    <include name="order_submitorder_activiteLosePintuan5"/>
+                    <include name="order_submitorder_activiteLoseDandugou2"/>
+                    <include name="order_submitorder_ActiviteDiscountPintuan2"/>
+                    <include name="order_submitorder_ActiviteDiscountDandugou4"/>
+                    <include name="order_submitorder_ActiviteDiscountPintuan5"/>
                     <include name="order_submitorder_activitePayPintuan2"/>
-                    <include name="order_submitorder_activiteDiscountDandugou4"/>
+                    <include name="order_submitorder_activitePayPintuan3"/>
+                    <include name="order_submitorder_activitePayPintuan5"/>
+                    <include name="orderinitXinyonggou"/>
 
                 </methods>
             </class>
