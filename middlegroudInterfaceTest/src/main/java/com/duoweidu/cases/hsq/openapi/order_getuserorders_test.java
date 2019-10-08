@@ -141,7 +141,7 @@ public class order_getuserorders_test extends HsqInterfaceTest {
             detailAssertTest("list.get(i).canCancel", model.list.get(i).canCancel);
             detailAssertTest("list.get(i).canRefund", model.list.get(i).canRefund);
             detailAssertTest("list.get(i).order_status", model.list.get(i).order_status);
-            detailAssertTest("list.get(i).statusCode", model.list.get(i).statusCode);
+            assertNotNull("list.get(i).statusCode", model.list.get(i).statusCode);
             detailAssertTest("list.get(i).canPay", model.list.get(i).canPay);
         }
         detailAssertTest("totalCnt", model.totalCnt);

@@ -52,7 +52,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
         ddgDetailAssert();
     }
 
-    @Test(dependsOnGroups = "loginTrue",description = "初始化订单（抽奖团拼团）",groups = "orderinitPintuan")
+    @Test(dependsOnGroups = "loginTrue",description = "初始化订单（抽奖团拼团）",groups = "orderinitChouPintuan")
     public void order_coupleorderinit_chouPintuanTrue() {
         List<NameValuePair> list = new LinkedList<>();
         list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue("chouActivitiesId")));
@@ -62,10 +62,11 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
         list.add(new BasicNameValuePair("conformNewUser", "1"));
 
         interfaces(list);
+        HsqOpenapiConfig.coupleorderinitChouPintuanResult = result;
         chouPinDetailAssert();
     }
 
-    @Test(dependsOnGroups = "loginTrue",description = "初始化订单（抽奖团单独购）",groups = "orderinitDandugou")
+    @Test(dependsOnGroups = "loginTrue",description = "初始化订单（抽奖团单独购）",groups = "orderinitChouDandugou")
     public void order_coupleorderinit_chouDandugouTrue() {
         List<NameValuePair> list = new LinkedList<>();
         list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue("chouActivitiesId")));
@@ -75,6 +76,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
         list.add(new BasicNameValuePair("conformNewUser", "1"));
 
         interfaces(list);
+        HsqOpenapiConfig.coupleorderinitChouDandugouResult = result;
         chouDdgDetailAssert();
     }
 
@@ -97,7 +99,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
         }
     }
 
-    @Test(dependsOnGroups = "loginTrue",description = "初始化订单（拼团）（多件优惠减钱第二件，未达到优惠条件+商家优惠券）", groups = "orderinitLosePintuan2")
+    @Test(dependsOnGroups = "loginTrue",description = "初始化订单（拼团）（多件优惠减钱第二件，未达到优惠条件+商家优惠券）", groups = "orderinitNoLosePintuan2")
     public void order_coupleorderinit_nolosePintuan2() {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             List<NameValuePair> list = new LinkedList<>();
@@ -108,6 +110,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
+            HsqOpenapiConfig.coupleorderinitNoLosePintuanResult2 = result;
             nolosePinDetailAssert();
         }else {
             System.out.println("此环境无此case");
@@ -140,6 +143,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
+            HsqOpenapiConfig.coupleorderinitLosePintuanResult23 = result;
             losePinDetailAssert23();
         }else {
             System.out.println("此环境无此case");
@@ -157,6 +161,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
+            HsqOpenapiConfig.coupleorderinitLosePintuanResult24 = result;
             losePinDetailAssert24();
         }else {
             System.out.println("此环境无此case");
@@ -174,6 +179,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
+            HsqOpenapiConfig.coupleorderinitLosePintuanResult235 = result;
             losePinDetailAssert235();
         }else {
             System.out.println("此环境无此case");
@@ -191,6 +197,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
+            HsqOpenapiConfig.coupleorderinitLoseDandugouResult2345 = result;
             loseDanDetailAssert2345();
         }else {
             System.out.println("此环境无此case");
@@ -208,6 +215,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
+            HsqOpenapiConfig.coupleorderinitDiscountPintuan3 = result;
             discountPinDetailAssert3();
         }else {
             System.out.println("此环境无此case");
@@ -225,6 +233,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
+            HsqOpenapiConfig.coupleorderinitDiscountPintuan34 = result;
             discountPinDetailAssert34();
         }else {
             System.out.println("此环境无此case");
@@ -241,10 +250,11 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
         list.add(new BasicNameValuePair("conformNewUser", "1"));
 
         interfaces(list);
+        HsqOpenapiConfig.coupleorderinitDiscountPintuan35 = result;
         discountPinDetailAssert35();
     }
 
-    @Test(dependsOnGroups = "loginTrue",description = "初始化订单（拼团）（多件优惠打折 二四五件）", groups = "orderinitDiscountDan35")
+    @Test(dependsOnGroups = "loginTrue",description = "初始化订单（拼团）（多件优惠打折 二四五件）", groups = "orderinitDiscountDan245")
     public void order_coupleorderinit_discountDandugou245() {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             List<NameValuePair> list = new LinkedList<>();
@@ -255,6 +265,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
+            HsqOpenapiConfig.coupleorderinitDiscountDandugou245 = result;
             discountDanDetailAssert245();
         }else {
             System.out.println("此环境无此case");
@@ -272,6 +283,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
+            HsqOpenapiConfig.coupleorderinitDiscountPintuan2345 = result;
             discountPinDetailAssert2345();
         }else {
             System.out.println("此环境无此case");
@@ -289,6 +301,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
+            HsqOpenapiConfig.coupleorderinitPayPintuan5 = result;
             payPinDetailAssert5();
         }else {
             System.out.println("此环境无此case");
@@ -306,6 +319,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
+            HsqOpenapiConfig.coupleorderinitPayDandugou45 = result;
             payDanDetailAssert45();
         }else {
             System.out.println("此环境无此case");
@@ -323,6 +337,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
+            HsqOpenapiConfig.coupleorderinitPayPintuan25 = result;
             payPinDetailAssert25();
         }else {
             System.out.println("此环境无此case");
@@ -340,6 +355,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
+            HsqOpenapiConfig.coupleorderinitPayPintuan235 = result;
             payPinDetailAssert235();
         }else {
             System.out.println("此环境无此case");
@@ -356,6 +372,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
         list.add(new BasicNameValuePair("conformNewUser", "1"));
 
         interfaces(list);
+        HsqOpenapiConfig.coupleorderinitPayPintuan2345 = result;
         payPinDetailAssert2345();
     }
 
@@ -370,6 +387,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
+            HsqOpenapiConfig.coupleorderinitNoPayPintuan2345 = result;
             noPayPinDetailAssert2345();
         }else {
             System.out.println("此环境无此case");
@@ -387,6 +405,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
+            HsqOpenapiConfig.coupleorderinitActiviteLosePintuan2 = result;
             activiteLosePinDetailAssert2();
         }else {
             System.out.println("此环境无此case");
@@ -404,6 +423,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
+            HsqOpenapiConfig.coupleorderinitActiviteLosePintuan3 = result;
             activiteLosePinDetailAssert3();
         }else {
             System.out.println("此环境无此case");
@@ -421,13 +441,14 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
+            HsqOpenapiConfig.coupleorderinitActiviteLosePintuan4 = result;
             activiteLosePinDetailAssert4();
         }else {
             System.out.println("此环境无此case");
         }
     }
 
-    @Test(dependsOnGroups = "loginTrue",description = "初始化订单（拼团）（营销活动+多件优惠减钱+优惠券）", groups = "orderinitActiviteLosePintuan4")
+    @Test(dependsOnGroups = "loginTrue",description = "初始化订单（拼团）（营销活动+多件优惠减钱+优惠券）", groups = "orderinitActiviteLosePintuan5")
     public void order_coupleorderinit_activiteLosePintuan5() {
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             List<NameValuePair> list = new LinkedList<>();
@@ -438,6 +459,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
+            HsqOpenapiConfig.coupleorderinitActiviteLosePintuan5 = result;
             activiteLosePinDetailAssert5();
         }else {
             System.out.println("此环境无此case");
@@ -455,6 +477,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
+            HsqOpenapiConfig.coupleorderinitActiviteLoseDandugou2 = result;
             activiteLoseDanDetailAssert2();
         }else {
             System.out.println("此环境无此case");
@@ -472,6 +495,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
+            HsqOpenapiConfig.coupleorderinitActiviteDiscountPintuan2 = result;
             activiteDiscountPinDetailAssert2();
         }else {
             System.out.println("此环境无此case");
@@ -508,6 +532,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
+            HsqOpenapiConfig.coupleorderinitActiviteDiscountPintuan5 = result;
             activiteDiscountPinDetailAssert5();
         }else {
             System.out.println("此环境无此case");
@@ -520,11 +545,12 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
             List<NameValuePair> list = new LinkedList<>();
             list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue(2, "activitiePayPinActivitiesId")));
             list.add(new BasicNameValuePair("amount", "2"));
-            list.add(new BasicNameValuePair("orderType", "2"));
+            list.add(new BasicNameValuePair("orderType", "3"));
             list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue(2, "activitiePaySkuId")));
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
+            HsqOpenapiConfig.coupleorderinitActivitePayResult2 = result;
             activitePayPinDetailAssert2();
         }else {
             System.out.println("此环境无此case");
@@ -537,11 +563,12 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
             List<NameValuePair> list = new LinkedList<>();
             list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue(2, "activitiePayPinActivitiesId")));
             list.add(new BasicNameValuePair("amount", "3"));
-            list.add(new BasicNameValuePair("orderType", "2"));
+            list.add(new BasicNameValuePair("orderType", "3"));
             list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue(2, "activitiePaySkuId")));
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
             interfaces(list);
+            HsqOpenapiConfig.coupleorderinitActivitePayResult3 = result;
             activitePayPinDetailAssert3();
         }else {
             System.out.println("此环境无此case");
@@ -554,7 +581,7 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
             List<NameValuePair> list = new LinkedList<>();
             list.add(new BasicNameValuePair("pinActivitiesId", SqlDetail.getInstance().getParamValue(2, "activitiePayPinActivitiesId")));
             list.add(new BasicNameValuePair("amount", "5"));
-            list.add(new BasicNameValuePair("orderType", "2"));
+            list.add(new BasicNameValuePair("orderType", "3"));
             list.add(new BasicNameValuePair("skuId", SqlDetail.getInstance().getParamValue(2, "activitiePaySkuId")));
             list.add(new BasicNameValuePair("conformNewUser", "1"));
 
@@ -867,19 +894,10 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
     private void losePinDetailAssert235() {
         detailAssertTest(5720, "packageInfo.totalPrice", model.packageInfo.totalPrice);
         detailAssertTest(5, "packageInfo.totalAmount", model.packageInfo.totalAmount);
-        detailAssertTest(4920, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
+        detailAssertTest(4520, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
         detailAssertTest(5720, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
         detailAssertTest(5, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
-        detailAssertTest(4920, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
-        detailAssertTest(68, "packageInfo.itemList.get(0).discountActivity.discountActivityId", model.packageInfo.itemList.get(0).discountActivity.discountActivityId);
-        detailAssertTest("第2件减1元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0));
-        detailAssertTest("第3件减2元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1));
-        detailAssertTest("第5件减3元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(2)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(2));
-        detailAssertTest(600, "packageInfo.itemList.get(0).discountActivity.discountPinPrice.discountSinglePrice", model.packageInfo.itemList.get(0).discountActivity.discountPinPrice.discountSinglePrice);
-        detailAssertTest(600, "packageInfo.itemList.get(0).discountActivity.discountPinPrice.discountGroupPrice", model.packageInfo.itemList.get(0).discountActivity.discountPinPrice.discountGroupPrice);
-        detailAssertTest("-6元", "packageInfo.itemList.get(0).discountActivity.latelyDoubleTips", model.packageInfo.itemList.get(0).discountActivity.latelyDoubleTips);
-        detailAssertTest(600, "packageInfo.doubleDiscount", model.packageInfo.doubleDiscount);
-
+        detailAssertTest(4720, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
     }
 
     //多件优惠，多件优惠减钱 二三四五件
@@ -1297,59 +1315,32 @@ public class order_coupleorderinit_test extends HsqInterfaceTest {
 
     //营销活动+多件优惠+商家优惠券（店铺直减），付钱金额<订单金额
     private void activitePayPinDetailAssert2() {
-        detailAssertTest(17776, "packageInfo.totalPrice", model.packageInfo.totalPrice);
+        detailAssertTest(600, "packageInfo.totalPrice", model.packageInfo.totalPrice);
         detailAssertTest(2, "packageInfo.totalAmount", model.packageInfo.totalAmount);
-        detailAssertTest(8488, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
-        detailAssertTest(17776, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
+        detailAssertTest(100, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
+        detailAssertTest(600, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
         detailAssertTest(2, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
-        detailAssertTest(8688, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
-//        detailAssertTest(85, "packageInfo.itemList.get(0).discountActivity.discountActivityId", model.packageInfo.itemList.get(0).discountActivity.discountActivityId);
-//        detailAssertTest("第2件2元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0));
-//        detailAssertTest("第3件3元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1));
-//        detailAssertTest("第5件20元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(2)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(2));
-//        detailAssertTest(8688, "packageInfo.itemList.get(0).discountActivity.discountPinPrice.discountSinglePrice", model.packageInfo.itemList.get(0).discountActivity.discountPinPrice.discountSinglePrice);
-//        detailAssertTest(100, "packageInfo.itemList.get(0).discountActivity.discountPinPrice.discountGroupPrice", model.packageInfo.itemList.get(0).discountActivity.discountPinPrice.discountGroupPrice);
-//        detailAssertTest("已优惠86.88元,第3件3元", "packageInfo.itemList.get(0).discountActivity.latelyDoubleTips", model.packageInfo.itemList.get(0).discountActivity.latelyDoubleTips);
-//        detailAssertTest(8688, "packageInfo.doubleDiscount", model.packageInfo.doubleDiscount);
-
+        detailAssertTest(100, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
     }
 
     //营销活动+多件优惠+商家优惠券（店铺直减），付钱金额=订单金额
     private void activitePayPinDetailAssert3() {
-        detailAssertTest(26664, "packageInfo.totalPrice", model.packageInfo.totalPrice);
+        detailAssertTest(900, "packageInfo.totalPrice", model.packageInfo.totalPrice);
         detailAssertTest(3, "packageInfo.totalAmount", model.packageInfo.totalAmount);
-        detailAssertTest(8788, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
-        detailAssertTest(26664, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
+        detailAssertTest(400, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
+        detailAssertTest(900, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
         detailAssertTest(3, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
-        detailAssertTest(8988, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
-//        detailAssertTest(85, "packageInfo.itemList.get(0).discountActivity.discountActivityId", model.packageInfo.itemList.get(0).discountActivity.discountActivityId);
-//        detailAssertTest("第2件2元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0));
-//        detailAssertTest("第3件3元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1));
-//        detailAssertTest("第5件20元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(2)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(2));
-//        detailAssertTest(17276, "packageInfo.itemList.get(0).discountActivity.discountPinPrice.discountSinglePrice", model.packageInfo.itemList.get(0).discountActivity.discountPinPrice.discountSinglePrice);
-//        detailAssertTest(100, "packageInfo.itemList.get(0).discountActivity.discountPinPrice.discountGroupPrice", model.packageInfo.itemList.get(0).discountActivity.discountPinPrice.discountGroupPrice);
-//        detailAssertTest("已优惠172.76元,第5件20元", "packageInfo.itemList.get(0).discountActivity.latelyDoubleTips", model.packageInfo.itemList.get(0).discountActivity.latelyDoubleTips);
-//        detailAssertTest(17276, "packageInfo.doubleDiscount", model.packageInfo.doubleDiscount);
-
+        detailAssertTest(400, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
     }
 
     //营销活动+多件优惠，付钱金额>订单金额
     private void activitePayPinDetailAssert5() {
-        detailAssertTest(44440, "packageInfo.totalPrice", model.packageInfo.totalPrice);
+        detailAssertTest(1500, "packageInfo.totalPrice", model.packageInfo.totalPrice);
         detailAssertTest(5, "packageInfo.totalAmount", model.packageInfo.totalAmount);
-        detailAssertTest(19676, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
-        detailAssertTest(44440, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
+        detailAssertTest(800, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
+        detailAssertTest(1500, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);
         detailAssertTest(5, "packageInfo.itemList.get(0).totalAmount", model.packageInfo.itemList.get(0).totalAmount);
-        detailAssertTest(19876, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
-//        detailAssertTest(85, "packageInfo.itemList.get(0).discountActivity.discountActivityId", model.packageInfo.itemList.get(0).discountActivity.discountActivityId);
-//        detailAssertTest("第2件2元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(0));
-//        detailAssertTest("第3件3元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(1));
-//        detailAssertTest("第5件20元", "packageInfo.itemList.get(0).discountActivity.shopDiscount.get(2)", model.packageInfo.itemList.get(0).discountActivity.shopDiscount.get(2));
-//        detailAssertTest(24164, "packageInfo.itemList.get(0).discountActivity.discountPinPrice.discountSinglePrice", model.packageInfo.itemList.get(0).discountActivity.discountPinPrice.discountSinglePrice);
-//        detailAssertTest(100, "packageInfo.itemList.get(0).discountActivity.discountPinPrice.discountGroupPrice", model.packageInfo.itemList.get(0).discountActivity.discountPinPrice.discountGroupPrice);
-//        detailAssertTest("- ¥ 241.64", "packageInfo.itemList.get(0).discountActivity.latelyDoubleTips", model.packageInfo.itemList.get(0).discountActivity.latelyDoubleTips);
-//        detailAssertTest(24164, "packageInfo.doubleDiscount", model.packageInfo.doubleDiscount);
-
+        detailAssertTest(1000, "packageInfo.itemList.get(0).needPayPrice", model.packageInfo.itemList.get(0).needPayPrice);
     }
 
 

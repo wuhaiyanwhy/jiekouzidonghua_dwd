@@ -31,12 +31,17 @@ public class OrderSubmitorderv1 extends HsqInterfaceTest {
     public void orderSubmitorderv1(){
         getRequest(HsqOpenapiConfig.goconfirmSid);
         HsqOpenapiConfig.orderIds= model.orderIds.get(0);
+        //判断结算价
+        if ("beta".equals(ConfigFileUrl.getEnv())) {
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(model.orderIds.get(0)), 9900);
+        }
     }
 
     @Test(dependsOnGroups = "oderinitMerchant",description = "提交普通订单（只有商家优惠，2件）" ,groups = "submitOrderMerchant")
     public void orderSubmitorderv1Merchant(){
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             getRequest(HsqOpenapiConfig.merchantConfirmSid);
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(model.orderIds.get(0)), 14776);
         }else {
             System.out.println("此环境无此case");
         }
@@ -46,6 +51,7 @@ public class OrderSubmitorderv1 extends HsqInterfaceTest {
     public void orderSubmitorderv1NoLose2(){
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             getRequest(HsqOpenapiConfig.confirmSidNoLose2);
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(model.orderIds.get(0)), 2111);
         }else {
             System.out.println("此环境无此case");
         }
@@ -55,6 +61,7 @@ public class OrderSubmitorderv1 extends HsqInterfaceTest {
     public void orderSubmitorderv1Lose2(){
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             getRequest(HsqOpenapiConfig.confirmSidLose2);
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(model.orderIds.get(0)), 3167);
         }else {
             System.out.println("此环境无此case");
         }
@@ -64,6 +71,7 @@ public class OrderSubmitorderv1 extends HsqInterfaceTest {
     public void orderSubmitorderv1Lose23(){
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             getRequest(HsqOpenapiConfig.confirmSidLose23);
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(model.orderIds.get(0)), 5794);
         }else {
             System.out.println("此环境无此case");
         }
@@ -73,6 +81,7 @@ public class OrderSubmitorderv1 extends HsqInterfaceTest {
     public void orderSubmitorderv1Lose24(){
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             getRequest(HsqOpenapiConfig.confirmSidLose24);
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(model.orderIds.get(0)), 7357);
         }else {
             System.out.println("此环境无此case");
         }
@@ -82,6 +91,7 @@ public class OrderSubmitorderv1 extends HsqInterfaceTest {
     public void orderSubmitorderv1Lose235(){
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             getRequest(HsqOpenapiConfig.confirmSidLose235);
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(model.orderIds.get(0)), 10141);
         }else {
             System.out.println("此环境无此case");
         }
@@ -91,6 +101,7 @@ public class OrderSubmitorderv1 extends HsqInterfaceTest {
     public void orderSubmitorderv1Discount3(){
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             getRequest(HsqOpenapiConfig.confirmSidDiscount3);
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(model.orderIds.get(0)), 4244);
         }else {
             System.out.println("此环境无此case");
         }
@@ -100,6 +111,7 @@ public class OrderSubmitorderv1 extends HsqInterfaceTest {
     public void orderSubmitorderv1Discount34(){
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             getRequest(HsqOpenapiConfig.confirmSidDiscount34);
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(model.orderIds.get(0)), 6364);
         }else {
             System.out.println("此环境无此case");
         }
@@ -109,6 +121,7 @@ public class OrderSubmitorderv1 extends HsqInterfaceTest {
     public void orderSubmitorderv1Discount35(){
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             getRequest(HsqOpenapiConfig.confirmSidDiscount35);
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(model.orderIds.get(0)), 8527);
         }else {
             System.out.println("此环境无此case");
         }
@@ -118,6 +131,7 @@ public class OrderSubmitorderv1 extends HsqInterfaceTest {
     public void orderSubmitorderv1Discount245(){
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             getRequest(HsqOpenapiConfig.confirmSidDiscount245);
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(model.orderIds.get(0)), 9426);
         }else {
             System.out.println("此环境无此case");
         }
@@ -127,6 +141,8 @@ public class OrderSubmitorderv1 extends HsqInterfaceTest {
     public void orderSubmitorderv1Discount2345(){
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             getRequest(HsqOpenapiConfig.confirmSidDiscount2345);
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(model.orderIds.get(0)), 6243);
+
         }else {
             System.out.println("此环境无此case");
         }
@@ -136,6 +152,8 @@ public class OrderSubmitorderv1 extends HsqInterfaceTest {
     public void orderSubmitorderv1Pay5(){
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             getRequest(HsqOpenapiConfig.confirmSidPay5);
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(model.orderIds.get(0)), 9498);
+
         }else {
             System.out.println("此环境无此case");
         }
@@ -145,6 +163,8 @@ public class OrderSubmitorderv1 extends HsqInterfaceTest {
     public void orderSubmitorderv1Pay45(){
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             getRequest(HsqOpenapiConfig.confirmSidPay45);
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(model.orderIds.get(0)), 6840);
+
         }else {
             System.out.println("此环境无此case");
         }
@@ -154,6 +174,9 @@ public class OrderSubmitorderv1 extends HsqInterfaceTest {
     public void orderSubmitorderv1Pay25(){
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             getRequest(HsqOpenapiConfig.confirmSidPay25);
+
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(model.orderIds.get(0)), 7472);
+
         }else {
             System.out.println("此环境无此case");
         }
@@ -163,6 +186,8 @@ public class OrderSubmitorderv1 extends HsqInterfaceTest {
     public void orderSubmitorderv1Pay345(){
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             getRequest(HsqOpenapiConfig.confirmSidPay345);
+
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(model.orderIds.get(0)), 95);
         }else {
             System.out.println("此环境无此case");
         }
@@ -173,6 +198,8 @@ public class OrderSubmitorderv1 extends HsqInterfaceTest {
     public void orderSubmitorderv1Pay2345(){
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             getRequest(HsqOpenapiConfig.confirmSidPay2345);
+
+            assertEquals("settlementPrice", SqlDetail.getInstance().getSettlementPrice(model.orderIds.get(0)), 95);
         }else {
             System.out.println("此环境无此case");
         }
