@@ -54,7 +54,7 @@ public class ActivityGetactivityinfo extends JszInterfaceTest {
         detailAssertTest(1, "enabled", model.branch.enabled);
         detailAssertTest("distance", model.branch.distance);
         detailAssertTest("end_timestamp", model.end_timestamp);
-        detailAssertTest(true, "enabled", model.enabled);
+//        detailAssertTest(false, "enabled", model.enabled);
 
         for (int i = 0; i < model.special_tips.size(); i++) {
             detailAssertTest("icon", model.special_tips.get(i).icon);

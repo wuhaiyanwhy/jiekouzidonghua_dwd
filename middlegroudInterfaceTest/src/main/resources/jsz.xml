@@ -5,6 +5,35 @@
     <test name ="巨食阵接口测试用例(openapi)">
         <classes >
 
+            <!--线上没有测试商品，禁用-->
+            <!--<class name="com.duoweidu.cases.jsz.openapi.OrderCancelorder">-->
+                <!--<methods>-->
+                    <!--<include name = "OrderCancelorder"/>-->
+                <!--</methods>-->
+            <!--</class>-->
+            <!--<class name="com.duoweidu.cases.jsz.openapi.OrderCreateorder">-->
+                <!--<methods>-->
+                    <!--<include name = "OrderCreateorder"/>-->
+                <!--</methods>-->
+            <!--</class>-->
+            <!--<class name="com.duoweidu.cases.jsz.openapi.OrderPayorder">-->
+                <!--<methods>-->
+                    <!--<include name = "OrderPayorder"/>-->
+                <!--</methods>-->
+            <!--</class>-->
+            <!--<class name="com.duoweidu.cases.jsz.openapi.OrderQueryorder">-->
+                <!--<methods>-->
+                    <!--<include name = "OrderQueryorder"/>-->
+                <!--</methods>-->
+            <!--</class>-->
+            <!--因开发废弃此接口，此接口废弃-->
+            <!--<class name="com.duoweidu.cases.jsz.openapi.UserRegister2">-->
+                <!--<methods>-->
+                    <!--<include name = "UserRegister2"/>-->
+                <!--</methods>-->
+            <!--</class>-->
+            <!--分割线-->
+
             <class name="com.duoweidu.cases.jsz.openapi.ActivityGetactivityinfo">
                 <methods>
                     <include name = "ActivityGetactivityinfo"/>
@@ -72,19 +101,9 @@
                     <include name = "OrderBeforecreate"/>
                 </methods>
             </class>
-            <class name="com.duoweidu.cases.jsz.openapi.OrderCancelorder">
-                <methods>
-                    <include name = "OrderCancelorder"/>
-                </methods>
-            </class>
             <class name="com.duoweidu.cases.jsz.openapi.OrderCancreateorder">
                 <methods>
                     <include name = "OrderCancreateorder"/>
-                </methods>
-            </class>
-            <class name="com.duoweidu.cases.jsz.openapi.OrderCreateorder">
-                <methods>
-                    <include name = "OrderCreateorder"/>
                 </methods>
             </class>
             <class name="com.duoweidu.cases.jsz.openapi.OrderOrderdetail">
@@ -94,23 +113,13 @@
             </class>
             <class name="com.duoweidu.cases.jsz.openapi.OrderOrderlist">
                 <methods>
-                    <include name = "orderOrderlist1"/>
-                    <include name = "orderOrderlist2"/>
+                    <!--<include name = "orderOrderlist1"/>-->
+                    <!--<include name = "orderOrderlist2"/>-->
                     <include name = "orderOrderlist3"/>
                     <include name = "orderOrderlist4"/>
                     <include name = "orderOrderlist5"/>
                     <include name = "orderOrderlist6"/>
                     <include name = "orderOrderlist7"/>
-                </methods>
-            </class>
-            <class name="com.duoweidu.cases.jsz.openapi.OrderPayorder">
-                <methods>
-                    <include name = "OrderPayorder"/>
-                </methods>
-            </class>
-            <class name="com.duoweidu.cases.jsz.openapi.OrderQueryorder">
-                <methods>
-                    <include name = "OrderQueryorder"/>
                 </methods>
             </class>
             <class name="com.duoweidu.cases.jsz.openapi.UserHome">
@@ -140,18 +149,11 @@
                     <include name = "UserMyincome2"/>
                 </methods>
             </class>
-            <!--此接口废弃-->
-            <!--<class name="com.duoweidu.cases.jsz.openapi.UserRegister2">-->
-                <!--<methods>-->
-                    <!--<include name = "UserRegister2"/>-->
-                <!--</methods>-->
-            <!--</class>-->
             <class name="com.duoweidu.cases.jsz.openapi.UserRefreshlogin">
                 <methods>
                     <include name = "userRefreshlogin"/>
                 </methods>
             </class>
-
 
         </classes>
     </test>
