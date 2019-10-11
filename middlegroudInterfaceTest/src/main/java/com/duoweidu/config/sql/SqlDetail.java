@@ -165,7 +165,7 @@ public class SqlDetail {
      */
     public void iqgUptadeOrder() {
         ProductOrder productOrder = new ProductOrder(getParamValue(0, "created_at"),
-                getParamValue(0, "user_id"),
+                getParamValue(2, "user_id"),
                 "1", "5");
         int res = iqgBetaSession.update("updateProductOrder", productOrder);
         iqgBetaSession.commit();
@@ -180,7 +180,7 @@ public class SqlDetail {
      */
     public void iqgUptadeOneCouponOrder() {
         TrdCouponOrder trdCouponOrder = new TrdCouponOrder(getParamValue(0, "created_at"),
-                getParamValue(0, "user_id"),
+                getParamValue(2, "user_id"),
                 getParamValue(2, "oneCouponID"));
         int res = iqgBetaSession.update("updateTrdCouponOrder", trdCouponOrder);
         iqgBetaSession.commit();
