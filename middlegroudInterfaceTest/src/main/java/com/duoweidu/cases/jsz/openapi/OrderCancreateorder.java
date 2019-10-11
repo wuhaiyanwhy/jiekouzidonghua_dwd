@@ -14,7 +14,7 @@ public class OrderCancreateorder extends JszInterfaceTest {
     public void orderCancreateorder() {
         setUrl("order.cancreateorder.uri");
         param = "activityId=" + SqlDetail.getInstance().getParamValue("activityId");
-        process(true, false);
+        process(false, false);
 //        model = sparseJson(OrderCancreateorderData.class);
 //        detailAssert();
     }

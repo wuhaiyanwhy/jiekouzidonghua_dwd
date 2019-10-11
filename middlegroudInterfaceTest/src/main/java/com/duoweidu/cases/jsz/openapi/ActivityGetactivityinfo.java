@@ -40,9 +40,9 @@ public class ActivityGetactivityinfo extends JszInterfaceTest {
         detailAssertTest("images", model.item.images);
         detailAssertTest("name", model.item.name);
 //        detailAssertTest("description", model.item.description);
-        detailAssertTest(0, "enabled", model.item.enabled);
+        detailAssertTest(1, "enabled", model.item.enabled);
         detailAssertTest("tips", model.tips);
-        detailAssertTest("description", model.description);
+//        detailAssertTest("description", model.description);
         detailAssertTest("commission_price", model.commission_price);
         detailAssertTest("id", model.branch.id);
         detailAssertTest("lat", model.branch.lat);
@@ -54,7 +54,7 @@ public class ActivityGetactivityinfo extends JszInterfaceTest {
         detailAssertTest(1, "enabled", model.branch.enabled);
         detailAssertTest("distance", model.branch.distance);
         detailAssertTest("end_timestamp", model.end_timestamp);
-        detailAssertTest(true, "enabled", model.enabled);
+//        detailAssertTest(false, "enabled", model.enabled);
 
         for (int i = 0; i < model.special_tips.size(); i++) {
             detailAssertTest("icon", model.special_tips.get(i).icon);

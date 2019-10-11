@@ -12,13 +12,13 @@ import java.util.List;
 public class ItemBargain extends IqgInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "砍价",groups = "itemBargain")
-    public void item_bargain_true()  {
+    public void item_bargain_true() {
         url = ConfigFileUrl.getUrlByKey("item.bargain.uri") + "/" + SqlDetail.getInstance().getParamValue(2, "activityId") + "/bargain";
         List<NameValuePair> list = new LinkedList<>();
-        process(list,false,false);
+        process(list, false, false);
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             generalAssertTest(false);
         }
     }
-
 }
+
