@@ -5,6 +5,7 @@ import com.duoweidu.config.generalAssert.GeneralAssert;
 import com.duoweidu.config.GeneralConfig;
 import com.duoweidu.config.MsfConfig;
 import com.duoweidu.config.sql.SqlDetail;
+import com.duoweidu.model.msf.UserLoginData;
 import com.duoweidu.utils.CallbackInterface;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
@@ -16,6 +17,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class UserLogin extends MsfInterfaceTest {
+
+    private UserLoginData model;
 
 
     @Test(groups = "loginTrue",description = "用户成功登录接口")
@@ -32,13 +35,28 @@ public class UserLogin extends MsfInterfaceTest {
         //cookie信息储存未默认值
         GeneralConfig.store = CallbackInterface.defaultHttpClient.getCookieStore();
         System.out.println("cookie信息：" + GeneralConfig.store);
-        try {
-            JSONObject jsonObject = new JSONObject(result);
-            JSONObject data = (JSONObject) jsonObject.get("data");
-            MsfConfig.token = data.get("token").toString();
-            MsfConfig.userId = data.get("id").toString();
-        }catch (JSONException e){
-            GeneralAssert.jsonAssert(url, pathId, param, result, e);
-        }
+        model = sparseJson(UserLoginData.class);
+        detailAssert();
+        MsfConfig.token = model.token;
+        MsfConfig.userId = model.id;
+    }
+
+    private void detailAssert() {
+        assertNotEmpty("id", model.id);
+        assertNotEmpty("mobile", model.mobile);
+        assertNotEmpty("token", model.token);
+        assertNotEmpty("avatar", model.avatar);
+        assertNotEmpty("nickname", model.nickname);
+        assertNotEmpty("created_at", model.created_at);
+        assertNotEmpty("last_login", model.last_login);
+        assertNotEmpty("is_register", model.is_register);
+        assertNotEmpty("need_bind_mobile", model.need_bind_mobile);
+        assertNotNull("group_id", model.group_id);
+        assertNotNull("level_id", model.level_id);
+        assertNotNull("invite_user_id", model.invite_user_id);
+        assertNotNull("oauth_info", model.oauth_info);
+        assertNotEmpty("register_time", model.register_time);
+        assertNotEmpty("is_profile_complete", model.is_profile_complete);
+        assertNotEmpty("permissions.video", model.permissions.video);
     }
 }

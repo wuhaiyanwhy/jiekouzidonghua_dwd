@@ -1,4 +1,4 @@
-package com.duoweidu.config;
+package com.duoweidu.utils;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * 根据model遍历数据
  */
-public class TraverseConfig {
+public class TraverseResult {
 
     /**
      *数组或map格式

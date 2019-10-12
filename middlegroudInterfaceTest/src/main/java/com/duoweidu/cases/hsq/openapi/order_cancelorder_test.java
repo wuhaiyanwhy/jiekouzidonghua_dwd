@@ -3,6 +3,7 @@ import com.duoweidu.cases.interfaces.HsqInterfaceTest;
 import com.duoweidu.config.HsqOpenapiConfig;
 import com.duoweidu.config.generalAssert.GeneralAssert;
 import com.duoweidu.model.hsq.OrderCancelorderData;
+import com.duoweidu.utils.ConfigFileUrl;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONException;
@@ -13,6 +14,11 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class order_cancelorder_test extends HsqInterfaceTest {
+
+    @Override
+    protected long limitTime() {
+        return 3000;
+    }
 
     private OrderCancelorderData model;
 

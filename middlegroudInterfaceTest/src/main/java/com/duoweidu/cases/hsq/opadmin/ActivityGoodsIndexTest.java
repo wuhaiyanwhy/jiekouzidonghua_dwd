@@ -3,12 +3,12 @@ package com.duoweidu.cases.hsq.opadmin;
 import com.duoweidu.cases.interfaces.HsqOpadminInterfaceTest;
 import org.testng.annotations.Test;
 
-public class activity_goods_index_test extends HsqOpadminInterfaceTest {
+public class ActivityGoodsIndexTest extends HsqOpadminInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "商品列表排序管理")
-    public void activity_goods_index_true() {
+    public void activityGoodsIndexTrue() {
         setUrl("activity.goods.index.uri");
-        process(false, false);
+        process();
 
     }
 }

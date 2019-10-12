@@ -8,18 +8,17 @@ import org.testng.annotations.Test;
 
 public class OrderCancreateorder extends JszInterfaceTest {
 
-    private OrderCancreateorderData model;
+//    private OrderCancreateorderData model;
 
     @Test(description = "检测是否可以购买")
     public void orderCancreateorder() {
         setUrl("order.cancreateorder.uri");
         param = "activityId=" + SqlDetail.getInstance().getParamValue("activityId");
-        process(true, false);
-        model = sparseJson(OrderCancreateorderData.class);
-        detailAssert();
+        process(false, false);
+//        model = sparseJson(OrderCancreateorderData.class);
+//        detailAssert();
     }
-
-    private void detailAssert(){
-        detailAssertTest("true","ret",model.ret);
-    }
+//    private void detailAssert(){
+//        detailAssertTest("true","ret",model.ret);
+//    }
 }

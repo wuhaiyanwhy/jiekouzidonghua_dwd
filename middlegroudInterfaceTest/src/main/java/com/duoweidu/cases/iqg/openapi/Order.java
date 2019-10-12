@@ -16,7 +16,7 @@ import java.util.List;
 
 public class Order extends IqgInterfaceTest {
 
-    @Test(dependsOnGroups = "loginTrue",description = "提交订单",groups = "orderTrue")
+    @Test(dependsOnGroups = "loginTrue", description = "提交订单", groups = "orderTrue")
     public void order_true() {
         //修改用户订单数据，使其可以下单
         if ("beta".equals(ConfigFileUrl.getEnv())) {
@@ -26,8 +26,8 @@ public class Order extends IqgInterfaceTest {
         pathId = SqlDetail.getInstance().getPathId("order.uri");
         List<NameValuePair> list = new LinkedList<>();
         list.add(new BasicNameValuePair("item_id", SqlDetail.getInstance().getParamValue("buyActivityId")));
-        list.add(new BasicNameValuePair("price",SqlDetail.getInstance().getParamValue(2, "price")));
-        process(list,false,false);
+        list.add(new BasicNameValuePair("price", SqlDetail.getInstance().getParamValue(2, "price")));
+        process(list, false, false);
         IqgConfig.orderResult = result;
         if ("beta".equals(ConfigFileUrl.getEnv())) {
             generalAssertTest(false);
@@ -39,7 +39,7 @@ public class Order extends IqgInterfaceTest {
                 int id = (int) data.get("id");
                 String ids = String.valueOf(id);
                 IqgConfig.orderId = ids;
-            }catch (JSONException e){
+            } catch (JSONException e) {
                 GeneralAssert.jsonAssert(url, pathId, param, result, e);
             }
         }

@@ -1,7 +1,7 @@
 package com.duoweidu.cases.fyb.openapi;
 
 import com.duoweidu.cases.interfaces.FybInterfaceTest;
-import com.duoweidu.config.TraverseConfig;
+import com.duoweidu.utils.TraverseResult;
 import com.duoweidu.model.fyb.CommonGuesslikeproductsModel;
 import org.testng.annotations.Test;
 
@@ -23,8 +23,8 @@ public class CommonGuesslikeproducts extends FybInterfaceTest {
 
     private void detailAssert() {
 
-        Map<String, Object> mapObj = TraverseConfig.traverseObj(model);
-        Map<String, Object> mapList = TraverseConfig.traverseCollection(model.list);
+        Map<String, Object> mapObj = TraverseResult.traverseObj(model);
+        Map<String, Object> mapList = TraverseResult.traverseCollection(model.list);
         for (Map.Entry<String, Object> entry : mapObj.entrySet()) {
             System.out.println("key = " + entry.getKey() + ", value = " + entry.getValue());
             assertNotNull(entry.getKey(), entry.getValue());

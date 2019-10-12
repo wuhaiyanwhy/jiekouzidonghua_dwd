@@ -20,7 +20,7 @@ public class UserHome extends JszInterfaceTest {
         detailAssertTest("commission_accum_amount",model.commission_accum_amount);
 //        detailAssertTest("coming_soon_amount",model.coming_soon_amount);
         for ( int i = 0; i<model.order_cnt.size(); i++){
-            detailAssertTest("unpaid",model.order_cnt.get(i).unpaid);
+//            detailAssertTest("unpaid",model.order_cnt.get(i).unpaid);
 //            detailAssertTest("unused",model.order_cnt.get(i).unused);
         }
         for ( int i = 0; i<model.user_info.size(); i++){

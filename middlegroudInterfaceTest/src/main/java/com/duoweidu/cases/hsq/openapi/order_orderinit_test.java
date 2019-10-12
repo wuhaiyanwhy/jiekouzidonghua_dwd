@@ -92,13 +92,13 @@ public class order_orderinit_test extends HsqInterfaceTest {
         detailAssertTest(1, "packageInfo.totalAmount", model.packageInfo.totalAmount);
         detailAssertTest(76, "packageInfo.zhimaId", model.packageInfo.zhimaId);
 
-        detailAssertTest(1902, "address.id", model.address.id);
-        detailAssertTest("北京", "address.province", model.address.province);
-        detailAssertTest("北京市", "address.city", model.address.city);
-        detailAssertTest("东城区", "address.district", model.address.district);
-        detailAssertTest("红红", "address.contacter", model.address.contacter);
-        detailAssertTest("110101", "address.detail_address", model.address.detail_address);
-        detailAssertTest("130****6002", "address.mobile", model.address.mobile);
+        detailAssertTest(4206, "address.id", model.address.id);
+        detailAssertTest("上海", "address.province", model.address.province);
+        detailAssertTest("上海市", "address.city", model.address.city);
+        detailAssertTest("黄浦区", "address.district", model.address.district);
+        detailAssertTest("正在", "address.contacter", model.address.contacter);
+        detailAssertTest("将健健康康", "address.detail_address", model.address.detail_address);
+        detailAssertTest("138****6666", "address.mobile", model.address.mobile);
 
     }
 

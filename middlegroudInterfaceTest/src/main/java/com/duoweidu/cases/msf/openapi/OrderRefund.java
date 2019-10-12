@@ -4,6 +4,9 @@ import com.duoweidu.cases.interfaces.MsfInterfaceTest;
 import com.duoweidu.config.sql.SqlDetail;
 import org.testng.annotations.Test;
 
+/**
+ * 无法一直申请退款，暂时无需详细断言
+ */
 public class OrderRefund extends MsfInterfaceTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "申请退款页面接口")
