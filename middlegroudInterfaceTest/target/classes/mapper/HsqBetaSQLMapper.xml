@@ -12,4 +12,10 @@
         limit 1
     </update>
 
+    <!--查询订单信息-->
+    <select id="selectSubOrder" resultType="com.duoweidu.model.hsqTable.TraSubOrder">
+        select * from trade_sub_order where order_id=#{order_id}
+    </select>
+
+
 </mapper>

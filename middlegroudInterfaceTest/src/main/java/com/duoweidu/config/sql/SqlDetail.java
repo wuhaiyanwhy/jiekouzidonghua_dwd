@@ -1,6 +1,7 @@
 package com.duoweidu.config.sql;
 
 import com.duoweidu.model.hsqTable.McActivityAssistanceEvent;
+import com.duoweidu.model.hsqTable.TraSubOrder;
 import com.duoweidu.model.iqgTable.ProductOrder;
 import com.duoweidu.model.iqgTable.TrdCouponOrder;
 import com.duoweidu.model.msfTable.Order;
@@ -232,5 +233,19 @@ public class SqlDetail {
      */
     public void updatePathValue(String name, String value) {
         SqlGeneral.updatePathValue(channel_id(), name, value);
+    }
+
+    /**
+     * 获取结算价
+     * @param orderId
+     */
+    public int getSettlementPrice(String orderId) {
+
+        TraSubOrder traSubOrder = new TraSubOrder();
+        traSubOrder.setOrder_id(orderId);
+        TraSubOrder traSubOrder1 = hsqBetaSession.selectOne("selectSubOrder", traSubOrder);
+        int settlement_price = traSubOrder1.getSettlement_price();
+
+        return settlement_price;
     }
 }

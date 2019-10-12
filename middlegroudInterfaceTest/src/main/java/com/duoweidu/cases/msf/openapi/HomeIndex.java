@@ -42,7 +42,12 @@ public class HomeIndex extends MsfInterfaceTest {
         for (int i = 0; i < model.article.list.size(); i++) {
             assertNotEmpty("article.list.get(i).id", model.article.list.get(i).id);
             assertNotEmpty("article.list.get(i).title", model.article.list.get(i).title);
-            assertNotEmpty("article.list.get(i).pic", model.article.list.get(i).pic);
+            if ((model.article.list.get(i).gif == null || model.article.list.get(i).gif.isEmpty()) &&
+                    (model.article.list.get(i).pic == null || model.article.list.get(i).pic.isEmpty())) {
+                assertNotEmpty("list.get(i).gif", model.article.list.get(i).gif);
+                assertNotEmpty("list.get(i).pic", model.article.list.get(i).pic);
+            }
+
             assertNotEmpty("article.list.get(i).width", model.article.list.get(i).width);
             assertNotEmpty("article.list.get(i).height", model.article.list.get(i).height);
             assertNotEmpty("article.list.get(i).media_type", model.article.list.get(i).media_type);

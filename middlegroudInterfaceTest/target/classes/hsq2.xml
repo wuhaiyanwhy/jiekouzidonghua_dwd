@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+<suite name="好食期接口测试">
+
+
+
+
+
+
+    <test name ="好食期接口测试用例(openapi)">
+        <classes>
+
+            <class name="com.duoweidu.cases.hsq.openapi.user_login_test">
+                <methods>
+                    <include name = "login_true"/>
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.openapi.user_userinfo_test">
+                <methods>
+                    <include name = "user_userinfo_true"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.openapi.user_getgetusercartv1_test">
+                <methods>
+                    <include name="user_getgetusercartv1_true"></include>
+                </methods>
+
+            </class>
+            <class name="com.duoweidu.cases.hsq.openapi.user_addskutocartv1_test">
+                <methods name="user_addskutocartv1_true">
+                </methods>
+                <methods name="user_addskutocartv1_true2">
+
+                </methods>
+            </class>
+
+            <class name="com.duoweidu.cases.hsq.openapi.OrderOderinitv1">
+                <methods>
+                    <include name="orderOderinitv1"></include>
+                </methods>
+
+            </class>
+            <class name="com.duoweidu.cases.hsq.openapi.OrderSubmitorderv1">
+                <methods>
+                    <include name="orderSubmitorderv1"></include>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.openapi.Tradecenter0rdersuccessv1">
+                <methods>
+                    <include name="tradecenterOrdersuccessv1"></include>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+
+
+
+
+    <listeners>
+
+        <listener class-name="com.duoweidu.config.ExtentTestNGIReporterListener"/>
+    </listeners>
+
+</suite>

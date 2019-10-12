@@ -52,7 +52,7 @@ public class TradecenterAssistanceorderinit extends HsqInterfaceTest {
         detailAssertTest(0, "packageInfo.needPayPrice", model.packageInfo.needPayPrice);
         detailAssertTest(616, "packageInfo.itemList.get(0).merchantId", model.packageInfo.itemList.get(0).merchantId);
         detailAssertTest("蜜我食铺", "packageInfo.itemList.get(0).merchantName", model.packageInfo.itemList.get(0).merchantName);
-        detailAssertTest("haoshiqi://hybrid?compid=haoshiqi&comppage=merchant&merchantid=616", "packageInfo.itemList.get(0).schema", model.packageInfo.itemList.get(0).schema);
+        detailAssertTest("http://m.beta.haoshiqi.net/v2/merchant?id=616", "packageInfo.itemList.get(0).schema", model.packageInfo.itemList.get(0).schema);
         detailAssertTest(0, "packageInfo.itemList.get(0).freeDeliveryPrice", model.packageInfo.itemList.get(0).freeDeliveryPrice);
         detailAssertTest(1, "packageInfo.itemList.get(0).isFreeDelivery", model.packageInfo.itemList.get(0).isFreeDelivery);
         detailAssertTest(0, "packageInfo.itemList.get(0).totalPrice", model.packageInfo.itemList.get(0).totalPrice);

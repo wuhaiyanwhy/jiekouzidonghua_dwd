@@ -264,6 +264,7 @@
                     <include name="order_coupleorderinit_losePintuan2"/>
                     <include name="order_coupleorderinit_losePintuan23"/>
                     <include name="order_coupleorderinit_losePintuan24"/>
+                    <include name="order_coupleorderinit_losePintuan235"/>
                     <include name="order_coupleorderinit_loseDandugou2345"/>
                     <include name="order_coupleorderinit_discountPintuan3"/>
                     <include name="order_coupleorderinit_discountPintuan34"/>
@@ -304,13 +305,42 @@
                     <include name="order_submitorder_putongTrue"/>
                     <include name="order_submitorder_pintuanTrue"/>
                     <include name="order_submitorder_dandugouTrue"/>
-                    <include name="order_submitorder_activitrPintuanTrue"/>
+                    <include name="order_submitorder_chouPintuanTrue"/>
+                    <include name="order_submitorder_chouDandugouTrue"/>
+                    <include name="order_submitorder_activitePintuanTrue"/>
+                    <include name="order_submitorder_noLosePintuanTrue2"/>
                     <include name="order_submitorder_losePintuanTrue2"/>
+                    <include name="order_submitorder_losePintuanTrue23"/>
+                    <include name="order_submitorder_losePintuanTrue24"/>
+                    <include name="order_submitorder_losePintuanTrue235"/>
+                    <include name="order_submitorder_loseDandugouTrue2345"/>
+                    <include name="order_submitorder_discountPintuan3"/>
+                    <include name="order_submitorder_discountPintuan34"/>
+                    <include name="order_submitorder_discountPintuan35"/>
+                    <include name="order_submitorder_discountDandugou245"/>
+                    <include name="order_submitorder_discountPintuan2345"/>
+                    <include name="order_submitorder_payPintuan5"/>
+                    <include name="order_submitorder_payDandugou45"/>
+                    <include name="order_submitorder_payPintua25"/>
+                    <include name="order_submitorder_payPintua235"/>
+                    <include name="order_submitorder_payPintua2345"/>
+                    <include name="order_submitorder_noPayPintua2345"/>
+                    <include name="order_submitorder_activiteLosePintuan2"/>
+                    <include name="order_submitorder_activiteLosePintuan3"/>
+                    <include name="order_submitorder_activiteLosePintuan4"/>
+                    <include name="order_submitorder_activiteLosePintuan5"/>
+                    <include name="order_submitorder_activiteLoseDandugou2"/>
+                    <include name="order_submitorder_ActiviteDiscountPintuan2"/>
+                    <include name="order_submitorder_ActiviteDiscountDandugou4"/>
+                    <include name="order_submitorder_ActiviteDiscountPintuan5"/>
                     <include name="order_submitorder_activitePayPintuan2"/>
-                    <include name="order_submitorder_activiteDiscountDandugou4"/>
+                    <include name="order_submitorder_activitePayPintuan3"/>
+                    <include name="order_submitorder_activitePayPintuan5"/>
+                    <include name="orderinitXinyonggou"/>
 
                 </methods>
             </class>
+
             <class name="com.duoweidu.cases.hsq.openapi.order_orderpay_test">
                 <methods>
                     <include name="order_orderpay_putongTrue"/>
@@ -633,6 +663,9 @@
             <class name="com.duoweidu.cases.hsq.openapi.reward_coderedeem_test">
                 <methods>
                     <include name="reward_coderedeem_true"/>
+                    <include name="rewardCoderedeemMerchant1"/>
+                    <include name="rewardCoderedeemMerchant2"/>
+                    <include name="rewardCoderedeemSku"/>
                 </methods>
             </class>
 
@@ -708,11 +741,12 @@
                 </methods>
             </class>
 
-            <class name="com.duoweidu.cases.hsq.openapi.refund_complaint_test">
-                <methods>
-                    <include name="refund_complaint_true"/>
-                </methods>
-            </class>
+            <!--该错误转成500了，无法调接口-->
+            <!--<class name="com.duoweidu.cases.hsq.openapi.refund_complaint_test">-->
+                <!--<methods>-->
+                    <!--<include name="refund_complaint_true"/>-->
+                <!--</methods>-->
+            <!--</class>-->
 
             <class name="com.duoweidu.cases.hsq.openapi.order_checkpromotion_test">
                 <methods>
@@ -934,6 +968,7 @@
                 <methods>
                     <include name="user_addskutocartv1_true"/>
                     <include name="user_addskutocartv1_true2"/>
+                    <include name="userAddskutocartv1Merchant"/>
                 </methods>
             </class>
             <!--选择规格-->
@@ -952,6 +987,53 @@
             <class name="com.duoweidu.cases.hsq.openapi.UserEditcartsku">
                 <methods>
                     <include name="userEditcartsku"/>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.openapi.OrderOderinitv1">
+                <methods>
+                    <include name="orderOderinitv1"></include>
+                    <include name="orderOderinitv1Merchant"></include>
+                    <include name="orderOderinitv1Nolose2"></include>
+                    <include name="orderOderinitv1lose2"></include>
+                    <include name="orderOderinitv1lose23"></include>
+                    <include name="orderOderinitv1lose24"></include>
+                    <include name="orderOderinitv1lose235"></include>
+                    <include name="orderOderinitv1Discount3"></include>
+                    <include name="orderOderinitv1Discount34"></include>
+                    <include name="orderOderinitv1Discount35"></include>
+                    <include name="orderOderinitv1Discount245"></include>
+                    <include name="orderOderinitv1Discount2345"></include>
+                    <include name="orderOderinitv1Pay5"></include>
+                    <include name="orderOderinitv1Pay45"></include>
+                    <include name="orderOderinitv1Pay25"></include>
+                    <include name="orderOderinitv1Pay345"></include>
+                    <include name="orderOderinitv1Pay2345"></include>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.openapi.OrderSubmitorderv1">
+                <methods>
+                    <include name="orderSubmitorderv1"></include>
+                    <include name="orderSubmitorderv1Merchant"></include>
+                    <include name="orderSubmitorderv1NoLose2"></include>
+                    <include name="orderSubmitorderv1Lose2"></include>
+                    <include name="orderSubmitorderv1Lose23"></include>
+                    <include name="orderSubmitorderv1Lose24"></include>
+                    <include name="orderSubmitorderv1Lose235"></include>
+                    <include name="orderSubmitorderv1Discount3"></include>
+                    <include name="orderSubmitorderv1Discount34"></include>
+                    <include name="orderSubmitorderv1Discount35"></include>
+                    <include name="orderSubmitorderv1Discount245"></include>
+                    <include name="orderSubmitorderv1Discount2345"></include>
+                    <include name="orderSubmitorderv1Pay5"></include>
+                    <include name="orderSubmitorderv1Pay45"></include>
+                    <include name="orderSubmitorderv1Pay25"></include>
+                    <include name="orderSubmitorderv1Pa345"></include>
+                    <include name="orderSubmitorderv1Pa2345"></include>
+                </methods>
+            </class>
+            <class name="com.duoweidu.cases.hsq.openapi.Tradecenter0rdersuccessv1">
+                <methods>
+                    <include name="tradecenterOrdersuccessv1"></include>
                 </methods>
             </class>
             <!--清除购物车的无效数据-->

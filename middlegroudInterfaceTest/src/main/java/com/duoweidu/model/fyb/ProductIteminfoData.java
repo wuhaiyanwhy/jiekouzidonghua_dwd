@@ -72,7 +72,7 @@ public class ProductIteminfoData {
     public boolean is_like;
     public String pics;
     public ArrayList<LabelsModel> labels;
-    public String unit;
+//    public String unit;
     public MerchantInfoModel merchantInfo;
     public String graphicDetail;
     public ShareInfoModel shareInfo;

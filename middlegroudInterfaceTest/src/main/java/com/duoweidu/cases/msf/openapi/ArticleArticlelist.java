@@ -25,7 +25,12 @@ public class ArticleArticlelist extends MsfInterfaceTest {
         for (int i = 0; i < model.list.size(); i++) {
             assertNotEmpty("list.get(i).id", model.list.get(i).id);
             assertNotEmpty("list.get(i).title", model.list.get(i).title);
-            assertNotEmpty("list.get(i).pic", model.list.get(i).pic);
+
+            if ((model.list.get(i).gif == null || model.list.get(i).gif.isEmpty()) &&
+                    (model.list.get(i).pic == null || model.list.get(i).pic.isEmpty())) {
+                assertNotEmpty("list.get(i).gif", model.list.get(i).gif);
+                assertNotEmpty("list.get(i).pic", model.list.get(i).pic);
+            }
             assertNotNull("list.get(i).width", model.list.get(i).width);
             assertNotNull("list.get(i).height", model.list.get(i).height);
             assertNotNull("list.get(i).media_type", model.list.get(i).media_type);

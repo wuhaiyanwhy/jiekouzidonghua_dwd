@@ -35,7 +35,7 @@ public class OrderOrderinit extends FybInterfaceTest {
         assertNotEmpty("packageInfo.itemList", model.packageInfo.itemList);
         for (int i = 0; i < model.packageInfo.itemList.size(); i++) {
             assertNotEmpty("packageInfo.itemList.get(i).merchantId", model.packageInfo.itemList.get(i).merchantId);
-            assertNotEmpty("packageInfo.itemList.get(i).freeDeliveryPrice", model.packageInfo.itemList.get(i).freeDeliveryPrice);
+            assertNotNull("packageInfo.itemList.get(i).freeDeliveryPrice", model.packageInfo.itemList.get(i).freeDeliveryPrice);
             assertNotEmpty("packageInfo.itemList.get(i).isFreeDelivery", model.packageInfo.itemList.get(i).isFreeDelivery);
             assertNotEmpty("packageInfo.itemList.get(i).totalPrice", model.packageInfo.itemList.get(i).totalPrice);
             assertNotEmpty("packageInfo.itemList.get(i).totalAmount", model.packageInfo.itemList.get(i).totalAmount);
